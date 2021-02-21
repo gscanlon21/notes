@@ -1,0 +1,19 @@
+<header>
+    <dl>
+        <dt>Title</dt>
+        <dd>{{ page.title | default(value=section.title) }}</dd>
+
+        {% if page.description | default(value=section.description) %} 
+        <dt>Description</dt>
+        <dd>{{ page.description | default(value=section.description) }}</dd>
+        {% endif %}
+
+        {% if page.updated | default(value=section.updated) %} 
+        <dt>Last Updated</dt>
+        <dd>{{ page.updated | default(value=section.updated) }}</dd>
+        {% endif %}
+        
+        <dt>Reading Time</dt>
+        <dd>{{ page.reading_time | default(value=section.reading_time) }} minute(s)</dd>
+    </dl>
+</header>

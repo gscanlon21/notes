@@ -1,0 +1,15 @@
+// Site header
+header#header {
+  display: flex;
+  flex-wrap: wrap;
+
+  .header-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: $base-padding;
+    padding-right: $base-padding;
+  }
+}

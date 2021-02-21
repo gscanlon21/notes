@@ -1,0 +1,18 @@
+// Site footer
+footer#footer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap-reverse;
+
+  border-top: 2px solid color(--color-text);
+  padding-top: $base-padding;
+
+  > .footer-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    padding-left: $base-padding;
+    padding-right: $base-padding;
+  }
+}

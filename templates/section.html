@@ -1,0 +1,31 @@
+{% import "macros.html" as macros %}
+{% extends "partials/base.html" %}
+
+{% block content %}
+    <div class="section-header">
+        <div class="sidebar-left section-header">
+            <div class="summary">
+                {% include "partials/summary.html" %}
+            </div>
+            <div class="toc">
+                {% include "partials/toc.html" %}
+            </div>
+        </div>
+        <div class="sidebar-right">
+            <nav class="sitemap ">
+                <h3>Subsections</h3>
+                {{ macros::render_sitemap(path=section.relative_path) }}
+                <br>
+                <div class="screen-large">
+                    <h3>Sitemap</h3>
+                    {{ macros::render_sitemap(path="_index.md", max_recursion=1) }}
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <article id="content">
+        {{ section.content | safe }}
+    </article>
+{% endblock content %}
+

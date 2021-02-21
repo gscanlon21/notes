@@ -1,0 +1,84 @@
+
+// Site content
+main#main {
+  position: relative;
+  padding: $base-padding;
+
+  // Content files
+  article#content { 
+    width: auto;
+
+    *:not(li) {
+      // Let the leafiest node scroll when there is a long word or link in that node
+      overflow-x: auto;
+
+      // Blend in the scrollbar better with code blocks and code spans
+      scrollbar-width: 1em;
+      scrollbar-color: color(--color-scrollbar, .5) color(--color-scrollbar-bg);
+      &::-webkit-scrollbar {
+        height: 1em;
+        position: relative;
+        background-color: color(--color-scrollbar-bg);
+      }
+      &::-webkit-scrollbar-thumb {
+        border: .2em solid transparent;
+        border-radius: $border-radius;
+        background-clip: padding-box;
+        background-color: color(--color-scrollbar, .5);
+      }
+    }
+  }
+}
+
+@media screen and (min-width:130rem) {
+  // Move the table of contents to the left sidebar when the screen size is sufficiently large
+  .sidebar-left {
+    position: absolute;
+    top: 0;
+    left: -20rem;
+    width: 20rem;
+  }
+
+  // Show the sitemap on the page template when the screen size is sufficiently large
+  .sidebar-right { 
+    top: 0;
+    width: 20rem;
+    right: -20rem;
+    position: absolute;
+  }
+}
+
+// Sitemap
+.sitemap {
+  &.full .sitemap-list {
+    columns: /* minumum width for each column */ $min-content-width /* max # of columns */ 4;
+  }
+}
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+
+  .header-item {
+    flex: 1;
+    display: flex;
+    min-width: $min-content-width;
+  }
+}
+
+.section-header {
+  display: flex;
+  flex-wrap: wrap;
+
+  > :first-of-type {
+    flex: 1;
+    flex-grow: 2;
+    display: flex;
+    min-width: $min-content-width;
+  }
+
+  > :last-of-type {
+    flex: 1;
+    min-width: $min-content-width;
+  }
+}

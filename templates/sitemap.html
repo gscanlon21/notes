@@ -1,0 +1,13 @@
+{% import "macros.html" as macros %}
+{% extends "partials/base.html" %}
+
+{% block title %}{{ page.title }}{% endblock title %}
+
+{% block content %}
+    <nav class="sitemap full">
+        {{ macros::render_sitemap(path="_index.md") }}
+    </nav>
+
+    {% block debug %}
+    {% endblock debug %}
+{% endblock content %}

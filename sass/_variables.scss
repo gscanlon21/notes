@@ -1,0 +1,56 @@
+// Converts hex to an rgb comma-separated string
+@function to-rgb($hex) {
+    @return red($hex), green($hex), blue($hex);
+}
+
+// Grabs the rgba value from a rgb comma-separated string
+@function color($variable, $alpha: 1) {
+    @return rgba(var($variable), $alpha);
+}
+
+$border-radius: .5em;
+$base-padding: 1em;
+$min-content-width: 16rem;
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #{to-rgb(#333)};
+        --color-text: #{to-rgb(#fff)};
+
+        // Color of unhighlighted code
+        --color-code: #{to-rgb(#dcdcdc)};
+
+        // Search
+        --color-search: --color-text;
+        --color-search-bg: #{to-rgb(#555)};
+
+        // Link coloring
+        --color-link: 109,182,255;
+        --color-link-visited: 182,109,255;
+
+        // Scrollbar coloring
+        --color-scrollbar: #{to-rgb(#888)};
+        --color-scrollbar-bg: #{to-rgb(#444)};
+    }
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-bg: #{to-rgb(#fff)};
+        --color-text: #{to-rgb(#000)};
+
+        // Color of unhighlighted code
+        --color-code: --color-text;
+
+        // Search
+        --color-search: --color-text;
+        --color-search-bg: #{to-rgb(#ddd)};
+
+        // Link coloring
+        --color-link: 0,109,219;
+        --color-link-visited: 73,0,146;
+
+        // Scrollbar coloring
+        --color-scrollbar: #{to-rgb(#444)};
+        --color-scrollbar-bg: #{to-rgb(#888)};
+    }
+}

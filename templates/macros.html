@@ -1,0 +1,44 @@
+{% macro render_list_links(pages) %}
+{% for item in pages %}
+    {# Warning: using page as the loop variable causes bugs since it already exists in context #}
+    {% if item.extra.sitemapped | default(value=true) %}
+        <li><a href="{{ get_url(path="@/" ~ item.relative_path) }}">{{ item.title }}</a></li>
+    {% endif %}
+{% endfor %}
+{% endmacro header %}
+
+
+{% macro render_sitemap(path, title="", max_recursion=-1, recursive_index=0) %}
+{% set section_info = get_section(path=path) %}
+{% if recursive_index == 0 %}
+    {{ macros::render_sitemap(path=path, title=title, max_recursion=recursive_index, recursive_index=recursive_index + 1) }}
+    
+    {% for subsection in section_info.subsections %}
+    {{ macros::render_sitemap(path=subsection, max_recursion=max_recursion, recursive_index=recursive_index + 1) }}
+    {% endfor %}
+{% elif recursive_index == 1 and section_info.pages %}
+    <details open>
+        <summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{% if title == "" %}{{ section_info.title }}{% else %}{{ title }}{% endif %}</a></summary>
+        <ul class="sitemap-list">
+            {{ macros::render_list_links(pages=section_info.pages) }}
+
+            {% if max_recursion == -1 or recursive_index < max_recursion %}
+            {% for subsection in section_info.subsections %}
+                {{ macros::render_sitemap(path=subsection, max_recursion=max_recursion, recursive_index=recursive_index + 1) }}
+            {% endfor %}
+            {% endif %}
+        </ul>
+    </details>
+{% else %}
+    <li><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{% if title == "" %}{{ section_info.title }}{% else %}{{ title }}{% endif %}</a></li>
+    <ul>
+        {{ macros::render_list_links(pages=section_info.pages) }}
+
+        {% if max_recursion == -1 or recursive_index < max_recursion %}
+        {% for subsection in section_info.subsections %}
+            {{ macros::render_sitemap(path=subsection, max_recursion=max_recursion, recursive_index=recursive_index + 1) }}
+        {% endfor %}
+        {% endif %}
+    </ul>
+{% endif %}
+{% endmacro header %}

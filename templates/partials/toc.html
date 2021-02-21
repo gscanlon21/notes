@@ -1,0 +1,24 @@
+{% import "macros.html" as macros %}
+
+{% set toc = page.toc | default(value=section.toc) %}
+{% if toc %}
+<nav>
+    <h3>Table of Contents</h3>
+    <ul>
+        {% for h1 in toc %}
+        <li>
+            <a href="{{ h1.permalink }}">{{ h1.title }}</a>
+            {% if h1.children %}
+            <ul>
+                {% for h2 in h1.children %}
+                <li>
+                    <a href="{{ h2.permalink }}">{{ h2.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+{% endif %}
