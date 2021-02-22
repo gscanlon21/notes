@@ -7,18 +7,25 @@
 {% endfor %}
 {% endmacro header %}
 
-
-{% macro render_sitemap(path, title="", max_recursion=-1, recursive_index=0) %}
+{#
+    Iterates though the site's pages and subsection and renders nested lists for each
+    
+    A max_recursion of 0 will render just the current directory and it's pages.
+    A max_recursion or 1 will render the current directory's pages, subsections, and sub-pages.
+    A max_recursion or 2 will render the current directory's pages, subsections, sub-pages, and sub-pages' subsections.
+    And so on...
+#}
+{% macro render_sitemap(path, max_recursion=-1, recursive_index=0) %}
 {% set section_info = get_section(path=path) %}
 {% if recursive_index == 0 %}
-    {{ macros::render_sitemap(path=path, title=title, max_recursion=recursive_index, recursive_index=recursive_index + 1) }}
+    {{ macros::render_sitemap(path=path, max_recursion=recursive_index, recursive_index=recursive_index + 1) }}
     
     {% for subsection in section_info.subsections %}
     {{ macros::render_sitemap(path=subsection, max_recursion=max_recursion, recursive_index=recursive_index + 1) }}
     {% endfor %}
 {% elif recursive_index == 1 and section_info.pages %}
     <details open>
-        <summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{% if title == "" %}{{ section_info.title }}{% else %}{{ title }}{% endif %}</a></summary>
+        <summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></summary>
         <ul class="sitemap-list">
             {{ macros::render_list_links(pages=section_info.pages) }}
 
@@ -30,7 +37,7 @@
         </ul>
     </details>
 {% else %}
-    <li><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{% if title == "" %}{{ section_info.title }}{% else %}{{ title }}{% endif %}</a></li>
+    <li><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></li>
     <ul>
         {{ macros::render_list_links(pages=section_info.pages) }}
 
