@@ -10,5 +10,5 @@ updated = 2021-02-21
 
 ###### **`Powershell`**
 ```powershell
-curl "https://tscanlon.com/content/sample.json" -H @{ Accept = "application/json" } -ContentType 'application/json' -UseBasicParsing | ForEach-Object { echo $_.Content } | jq '.'
+curl "https://tscanlon.dev/content/sample.json" -H @{ Accept = "application/json" } -ContentType 'application/json' -UseBasicParsing | ForEach-Object { echo $_.Content } | jq '.'
 ```

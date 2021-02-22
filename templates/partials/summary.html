@@ -1,8 +1,6 @@
 <header>
+    <h1>{{ page.title | default(value=section.title) }}</h1>
     <dl>
-        <dt>Title</dt>
-        <dd>{{ page.title | default(value=section.title) }}</dd>
-
         {% if page.description | default(value=section.description) %} 
         <dt>Description</dt>
         <dd>{{ page.description | default(value=section.description) }}</dd>

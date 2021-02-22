@@ -63,6 +63,10 @@ a {
   &:visited {
     color: color(--color-link-visited);
   }
+
+  &.unstyle {
+    color: unset
+  }
 }
 
 summary {

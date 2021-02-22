@@ -10,10 +10,11 @@
   }
 
   > .search-results {
+    z-index: 1;
     position: absolute;
-    bottom: 2rem;
-    left: 0;
-    right: 0;
+    top: 2rem;
+    left: $base-padding;
+    right: $base-padding;
   
     color: color(--color-search);
     background-color: color(--color-search-bg);

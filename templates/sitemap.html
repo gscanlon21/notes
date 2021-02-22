@@ -1,9 +1,11 @@
 {% import "macros.html" as macros %}
 {% extends "partials/base.html" %}
 
-{% block title %}{{ page.title }}{% endblock title %}
-
 {% block content %}
+    <div>
+        <h1>Sitemap</h1>
+    </div>
+
     <nav class="sitemap full">
         {{ macros::render_sitemap(path="_index.md") }}
     </nav>
