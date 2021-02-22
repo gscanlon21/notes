@@ -1,9 +1,12 @@
 +++
 title = "Git"
 updated = 2021-02-21
+
+[extra]
+site = "https://git-scm.com/"
 +++
 
-# [Git](https://git-scm.com/)
+# Git
 > Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
 ##  git update-index

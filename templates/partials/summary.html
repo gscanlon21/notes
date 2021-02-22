@@ -6,6 +6,10 @@
         <dd>{{ page.description | default(value=section.description) }}</dd>
         {% endif %}
 
+        {% if page.extra.site %} 
+        <dt><a href="{{ page.extra.site }}">Site</a></dt>
+        {% endif %}
+
         {% if page.updated | default(value=section.updated) %} 
         <dt>Last Updated</dt>
         <dd>{{ page.updated | default(value=section.updated) }}</dd>

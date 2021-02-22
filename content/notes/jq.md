@@ -1,9 +1,12 @@
 +++
 title = "jq"
 updated = 2021-02-21
+
+[extra]
+site = "https://stedolan.github.io/jq/"
 +++
 
-# [jq](https://stedolan.github.io/jq/)
+# jq
 A command link json processor
 
 ## Pipeing

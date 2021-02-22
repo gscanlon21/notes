@@ -1,9 +1,12 @@
 +++
 title = "Conventional Commits"
 updated = 2021-02-21
+
+[extra]
+site = "https://www.conventionalcommits.org"
 +++
 
-# [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+# Conventional Commits
 > A specification for adding human and machine readable meaning to commit messages
 
 

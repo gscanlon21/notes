@@ -1,9 +1,12 @@
 +++
 title = "Redis"
 updated = 2021-02-21
+
+[extra]
+site = "https://redis.io/"
 +++
 
-# [Redis](https://redis.io/)
+# Redis
 An in-memory data structure store. 
 
 ## [Install Redis](https://redis.io/download)

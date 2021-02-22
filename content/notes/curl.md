@@ -1,9 +1,12 @@
 +++
 title = "Curl"
 updated = 2021-02-21
+
+[extra]
+site = "https://curl.se/"
 +++
 
-# [Curl](https://curl.se/)
+# Curl
 > Command line tool and library for transferring data with URLs
 
 ## Pretty-Print JSON Response
