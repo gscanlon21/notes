@@ -7,9 +7,9 @@ site = "https://stedolan.github.io/jq/"
 +++
 
 # jq
-A command link json processor
+A command line json processor
 
-## Pipeing
+## Piping
 The |= instead of the | passes the values along instead of stripping them.
 
 
