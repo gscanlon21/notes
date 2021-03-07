@@ -5,6 +5,7 @@ draft = true
 
 [extra]
 site = "https://jmeter.apache.org/"
+version = "5.4.1"
 +++
 
 # Apache JMeter™

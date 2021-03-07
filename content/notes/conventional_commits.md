@@ -4,6 +4,7 @@ updated = 2021-02-21
 
 [extra]
 site = "https://www.conventionalcommits.org"
+version = "1.0.0"
 +++
 
 # Conventional Commits

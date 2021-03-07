@@ -28,7 +28,6 @@ Navigate to C# Interactive's configuration file, here's the path:
 Copy over your necessary configuration elements
 
 ### Change the Config with Reflection
-<sub><sup>CC-BY-SA [Evk](https://stackoverflow.com/questions/50055648/is-there-any-way-to-initialize-the-web-config-in-c-sharp-interactive)</sub></sup>
 
 ```cs
 using System.Reflection;
@@ -59,3 +58,4 @@ public static void ChangeConfigTo(string path)
 
 ChangeConfigTo(Path.GetFullPath("app.config")); // Replace with web.config if running interactive in the context of a web application
 ```
+###### CC-BY-SA [Evk](https://stackoverflow.com/questions/50055648/is-there-any-way-to-initialize-the-web-config-in-c-sharp-interactive)

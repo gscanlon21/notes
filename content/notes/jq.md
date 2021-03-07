@@ -1,9 +1,10 @@
 +++
 title = "jq"
-updated = 2021-02-21
+updated = 2021-03-07
 
 [extra]
 site = "https://stedolan.github.io/jq/"
+version = "1.6"
 +++
 
 # jq
@@ -13,22 +14,29 @@ A command line json processor
 The |= instead of the | passes the values along instead of stripping them.
 
 
-###### **`Pretty print the contents from the clipboard`**
+## Interact with the Clipboard
+
+### Pretty print the clipboard contents
 ```powershell
 Get-ClipBoard | jq '.'
 ```
+######
 
-###### **`Set the results on the clipboard`**
+### Set the results to the clipboard
 ```powershell
 Get-ClipBoard | jq '.' | Set-ClipBoard
 ```
 
-###### **`Map a property to an array`**
+## Array Manipulation
+
+### Map a property to an array
 ```powershell
 Get-ClipBoard | jq '[.someprop]'
 ```
 
-## Compress/Minify JSON
+## Flags
+
+### Compress/Minify JSON
 ```powershell
 jq -c '.'
 ```
@@ -37,13 +45,16 @@ jq -c '.'
 ```powershell
 jq '. |= keys'
 ```
+######
 
 ### Two levels deep
 ```powershell
 jq '.| map_values(keys)'
 ```
 
-## Sort by keys then nested property
+## Sorting
+
+### Sort by keys then nested property
 ```powershell
  q '.[] |= sort | .[] |= sort_by(.uid) | .'
 ```

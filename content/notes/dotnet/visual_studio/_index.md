@@ -1,6 +1,9 @@
 +++
 title = "Visual Studio"
 updated = 2021-02-21
+
+[extra]
+version = ".NET 5"
 +++
 
 # [Visual Studio](https://visualstudio.microsoft.com/)
@@ -8,15 +11,13 @@ An IDE for the .NET stack
 
 ## Debugging
 
-### Data Breakpoints (>= .NET Core 3.0)
+### Data Breakpoints
 
 Data breakpoints are used to halt when a variable's value changes
 
 They can be enabled by right-clicking on a variable in the Autos/Locals/Watch window and selecting "Enable Data Breakpoint". The next time that variable changes, the debugger will halt and show you the changes value
 
 ### [DebuggerDisplay]
-
-<sub><sup>CC-BY-SA [Jens](https://stackoverflow.com/questions/4469001/can-the-debuggerdisplay-attribute-be-applied-to-types-one-doesnt-own)</sub></sup>
 
 The DebuggerDisplay attribute can be used to alter how the debugger shows variables
 
@@ -36,6 +37,7 @@ namespace ClassLibrary1
     }
 }
 ```
+######
 
 ###### **`ConsoleApp1`**:
 ```cs
@@ -62,6 +64,8 @@ namespace ConsoleApp1
     }
 }
 ```
+###### CC-BY-SA [Jens](https://stackoverflow.com/questions/4469001/can-the-debuggerdisplay-attribute-be-applied-to-types-one-doesnt-own)
+
 
 ### Customizing the Call Stack
 
