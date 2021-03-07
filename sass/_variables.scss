@@ -19,6 +19,7 @@ $min-content-width: 16rem;
 
         // Color of unhighlighted code
         --color-code: #{to-rgb(#dcdcdc)};
+        --color-code-bg: #{to-rgb(#1e1e1e)};
 
         // Search
         --color-search: --color-text;
@@ -40,6 +41,7 @@ $min-content-width: 16rem;
 
         // Color of unhighlighted code
         --color-code: --color-text;
+        --color-code-bg: #{to-rgb(#ddd)};
 
         // Search
         --color-search: --color-text;

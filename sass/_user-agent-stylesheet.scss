@@ -37,19 +37,63 @@ strong {
   display: inline-flex;
 }
 
-h6 {
-  color: color(--color-text) !important;
-  font-size: unset;
-  margin-block-end: 0;
-  margin-bottom: 0 !important;
+ul {
+  margin-top: 0;
+  padding-inline-start: $base-padding * 2;
 }
 
-ul {
-  padding-inline-start: $base-padding * 2;
+p {
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 0;
+}
+
+h1 { margin-top: $base-padding * 1.8; }
+h2 { margin-top: $base-padding * 1.4; }
+h3 { margin-top: $base-padding * 1.2; }
+h4 { margin-top: $base-padding * 1.1; }
+h5 { margin-top: $base-padding * 1.0; }
+
+h6 {
+  // Filename header for code blocks
+  color: color(--color-text);
+  margin-block-end: 0;
+  margin-bottom: 0;
+  background-color: color(--color-code-bg);
+  border-radius: $border-radius $border-radius 0 0;
+  width: max-content;
+  padding: $base-padding;
+}
+
+pre + h6 {
+  // Attribution footer for code blocks
+  margin-top: 0;
+  border-radius: 0 0 $border-radius $border-radius;
+  float: right;
+
+  &:empty {
+    display: none;
+  }
+}
+
+pre {
+  padding: $base-padding;
+  margin: 0;
+
+  > code::before {
+    // Display the code lang as the shell context
+    content: attr(data-lang) "$";
+    color: white;
+    padding-right: $base-padding;
+  }
 }
 
 code {
   color: color(--color-code);
+  font-size: large;
+  margin-bottom: 0;
 }
 
 a {

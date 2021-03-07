@@ -11,7 +11,6 @@ site = "https://curl.se/"
 
 ## Pretty-Print JSON Response
 
-###### **`Powershell`**
 ```powershell
 curl "https://tscanlon.dev/content/sample.json" -H @{ Accept = "application/json" } -ContentType 'application/json' -UseBasicParsing | ForEach-Object { echo $_.Content } | jq '.'
 ```

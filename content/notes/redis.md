@@ -11,7 +11,7 @@ An in-memory data structure store.
 
 ## [Install Redis](https://redis.io/download)
 
-###### **`Via scoop`**
+### Via scoop
 ```powershell
 scoop install redis
 ```

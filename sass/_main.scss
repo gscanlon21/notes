@@ -1,3 +1,9 @@
+// Sitemap
+.sitemap {
+  &.full .sitemap-list {
+    columns: /* minumum width for each column */ $min-content-width /* max # of columns */ 4;
+  }
+}
 
 // Site content
 main#main {
@@ -48,13 +54,6 @@ main#main {
   }
 }
 
-// Sitemap
-.sitemap {
-  &.full .sitemap-list {
-    columns: /* minumum width for each column */ $min-content-width /* max # of columns */ 4;
-  }
-}
-
 .page-header {
   display: flex;
   flex-wrap: wrap;
@@ -63,6 +62,16 @@ main#main {
     flex: 1;
     display: flex;
     min-width: $min-content-width;
+  }
+
+  #summary {
+    width: 100%;
+
+    .summary-item {
+      white-space: nowrap;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+    }
   }
 }
 
@@ -81,4 +90,8 @@ main#main {
     flex: 1;
     min-width: $min-content-width;
   }
+}
+
+.version {
+  font-size: small;
 }

@@ -10,7 +10,7 @@ references = [
 
 # T-SQL
 
-## Creating Indexes<sup>1</sup>
+## Creating Indexes<sup>[1]</sup>
 
 ### Create a unique index
 ```sql
