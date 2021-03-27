@@ -120,3 +120,8 @@ summary {
       outline: none;
     }
 }
+
+blockquote > :only-child {
+  border-left: .2em solid color(--color-text, .5);
+  padding-left: .5em;
+}
