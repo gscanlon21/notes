@@ -26,7 +26,12 @@
         {% if page.extra.references %} 
         <dt>References</dt>
         {% for ref in page.extra.references %}
-            <dd class="summary-item">{{ ref.mark }} - <a href="{{ ref.href }}">{{ ref.title | default(value=ref.href) | safe }}</a></dd>
+            <dd class="summary-item">
+                {% if ref.mark %}
+                {{ ref.mark }}&#32;-&#32;
+                {% endif %}
+                <a href="{{ ref.href }}">{{ ref.title | default(value=ref.href) | safe }}</a>
+            </dd>
         {% endfor %}
         {% endif %}
 

@@ -7,11 +7,11 @@ site = "https://www.openssl.org/"
 version = "1.1.1k"
 license = "Apache-style"
 references = [
-  { mark = "1", title = "OpenSSL", href = "https://www.openssl.org/" }
+  { mark = "1", title = "OpenSSL", href = "https://www.openssl.org/" },
+  { title = "Missing Intermediate Certificate", href = "https://unix.stackexchange.com/questions/559526/downloading-from-a-public-server-ssl-certificate-problem-unable-to-get-local-i" }
 ]
 see_also = [
-    { title = "Certificate Chains", href = "https://www.venafi.com/blog/how-do-certificate-chains-work" },
-    { title = "Missing Intermediate Certificate", href = "https://unix.stackexchange.com/questions/559526/downloading-from-a-public-server-ssl-certificate-problem-unable-to-get-local-i" }
+    { title = "Certificate Chains", href = "https://www.venafi.com/blog/how-do-certificate-chains-work" }
 ]
 +++
 
