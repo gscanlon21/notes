@@ -1,25 +1,14 @@
 +++
 title = "IIS Express"
-updated = 2021-02-21
+updated = 2021-03-27
+
+[extra]
+version = "10"
 +++
 
 # IIS Express
 
-## Enable Directory Browsing
-
-###### **`web.config`**
-```config
-<?xml version="1.0" encoding="utf-8"?>
-<!-- 
-For more information on how to configure your ASP.NET application, please visit http://go.microsoft.com/fwlink/?LinkId=169433 
--->
-<configuration>
-  <system.webServer>
-    <directoryBrowse enabled="true" />
-  </system.webServer>
-</configuration>
-```
-######
+## Configuration Info
 
 ###### **`applicationhost.config`**
 ```config
@@ -39,14 +28,46 @@ For more information on how to configure your ASP.NET application, please visit 
           %IIS_SITES_HOME% - The default home directory for sites
           %IIS_BIN% - The location of the IIS Express binaries
           %SYSTEMDRIVE% - The drive letter of %IIS_BIN%
-
 -->
+```
+
+### Location of applicationhost.config
+
+- **User default** `%userprofile%\documents\iisexpress\config\applicationhost.config`
+- **VS2019**: `<solution>\.vs\<project>\config\applicationhost.config`
+
+## Enable Directory Browsing
+
+###### **`<project>/web.config`**
+```config
 
 <configuration>
-    <configSections>
-        <sectionGroup name="system.webServer">
-            <section name="directoryBrowse" overrideModeDefault="Allow" />
-        </sectionGroup>
-    </configSections>
+  <system.webServer>
+    <directoryBrowse enabled="true" />
+  </system.webServer>
 </configuration>
+```
+######
+
+###### **`applicationhost.config`**
+```config
+
+<configuration>
+  <configSections>
+    <sectionGroup name="system.webServer">
+      <section name="directoryBrowse" overrideModeDefault="Allow" />
+    </sectionGroup>
+  </configSections>
+</configuration>
+```
+
+## Disable Logging
+
+Comment out the following modules
+
+###### **`applicationhost.config`**
+```config
+
+<!--<add name="HttpLoggingModule" image="%IIS_BIN%\loghttp.dll" />-->
+<!--<add name="HttpLoggingModule" lockItem="true" />-->
 ```
