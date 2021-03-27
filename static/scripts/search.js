@@ -168,7 +168,7 @@ function initSearch() {
   var currentTerm = "";
   var index = elasticlunr.Index.load(window.searchIndex);
 
-  $searchInput.addEventListener("keyup", debounce(function() {
+  $searchInput.addEventListener("input", debounce(function() {
     var term = $searchInput.value.trim();
     if (term === currentTerm || !index) {
       return;
