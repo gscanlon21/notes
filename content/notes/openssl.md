@@ -1,6 +1,6 @@
 +++
 title = "OpenSSL"
-updated = 2021-03-27
+updated = 2021-05-24
 
 [extra]
 site = "https://www.openssl.org/"
@@ -17,7 +17,7 @@ see_also = [
 
 # OpenSSL
 
-> OpenSSL is a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols<sup>[1]</sup>
+OpenSSL is a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols<sup>[1]</sup>
 
 ## Certificate Chain
 

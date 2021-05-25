@@ -1,10 +1,10 @@
 +++
 title = "Performance Monitor"
-updated = 2021-05-23
+updated = 2021-05-24
 +++
 
 # Performance Monitor
-> Performance Monitor is an integrated Windows tool that provides a high-level overview of system resources. Such as processor, hard drive, memory, and network usage
+Performance Monitor is an integrated Windows tool that provides a high-level overview of system resources. Such as processor, hard drive, memory, and network usage
 
 ## Start a collection
 
