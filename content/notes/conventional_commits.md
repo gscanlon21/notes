@@ -12,7 +12,7 @@ A specification for adding human and machine readable meaning to commit messages
 
 
 ## Format
-```bash
+```
 type(scope): subject
 
 Body
@@ -60,10 +60,10 @@ Can also be used to indicate breaking changes by starting with "BREAKING CHANGE"
 
 ## Eamples
 
-```bash
+```
 feat(store): add purchase order button
 ```
 
-```bash
+```
 docs(readme): document how to get started
 ```

@@ -15,6 +15,7 @@ Navigate to *Action -> New -> Data Collector Set* or right-click on *Performance
 Inside the new data collector set window, click the green plus (+) button (Ctrl-N) to add a performance counter to the window. 
 
 Some notable counters are:
+
 - .NET CLR Exceptions
 
   View thrown exceptions by a .NET application

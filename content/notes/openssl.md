@@ -30,7 +30,8 @@ Some servers may be misconfigured where only the server certificate is served. T
 You can query for missing certificates with 
 ```powershell
 openssl s_client -showcerts -connect www.tscanlon.com:443
-
+```
+```
 CONNECTED(0000019C)
 depth=1 C = US, O = Let's Encrypt, CN = R3
 verify error:num=20:unable to get local issuer certificate
@@ -212,6 +213,8 @@ The "-----BEGIN CERTIFICATE-----" and "-----END CERTIFICATE-----" delimiters are
 
 ```powershell 
 openssl x509 -text -noout
+```
+```
 -----BEGIN CERTIFICATE-----
 MIIEZTCCA02gAwIBAgIQQAF1BIMUpMghjISpDBbN3zANBgkqhkiG9w0BAQsFADA/
 MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT

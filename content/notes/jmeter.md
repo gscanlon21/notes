@@ -48,13 +48,11 @@ Open up the Firefox browser and navigate under Options -> Network Settings to th
 
 ### Recording a test
 
-Still in Firefox, navigate to the page you would like to test and proceed through a test round. Click *Stop* to halt the test recording
+Still in Firefox, navigate to the page you would like to test and proceed through a test round. Click *Stop* to halt the test recording.
 
-Under the `Recording Controller` node in JMeter, you should see requests to the pages you navigated to
+Under the `Recording Controller` node in JMeter, you should see requests to the pages you navigated to. Strip out any fluff from the captured requests (you can also add filters to the `Test Script Recorder`).
 
-Strip out any fluff from the captured requests (you can also add filters to the `Test Script Recorder`)
-
-You now should have a functioning JMeter test script
+You now should have a functioning JMeter test script.
 
 
 ## Debugging
@@ -68,7 +66,7 @@ If you need to inspect variables, right click on the `Thread Group` and select A
 
 While debugging the test from the GUI is great, it can cause slowdowns when testing for performance. The CLI mode can be used instead:
 
-###### **`Running a JMX File from the CLI`**
+###### Running a JMX File from the CLI
 ```powershell
 jmeter -n -e `
 -t "test_plan.jmx" `

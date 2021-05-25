@@ -10,7 +10,7 @@ version = "10"
 
 ## Configuration Info
 
-###### **`applicationhost.config`**
+###### applicationhost.config
 ```config
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
@@ -38,7 +38,7 @@ version = "10"
 
 ## Enable Directory Browsing
 
-###### **`<project>/web.config`**
+###### <project>/web.config
 ```config
 
 <configuration>
@@ -49,7 +49,7 @@ version = "10"
 ```
 ######
 
-###### **`applicationhost.config`**
+###### applicationhost.config
 ```config
 
 <configuration>
@@ -65,7 +65,7 @@ version = "10"
 
 Comment out the following modules
 
-###### **`applicationhost.config`**
+###### applicationhost.config
 ```config
 
 <!--<add name="HttpLoggingModule" image="%IIS_BIN%\loghttp.dll" />-->

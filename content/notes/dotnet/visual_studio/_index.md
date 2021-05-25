@@ -28,7 +28,7 @@ The DebuggerDisplay attribute can be used to alter how the debugger shows variab
 #### Add [DebuggerDisplay] to external types
 
 
-###### **`ClassLibrary1`**
+###### ClassLibrary1
 ```cs
 //using System.Diagnostics;
 
@@ -43,7 +43,7 @@ namespace ClassLibrary1
 ```
 ######
 
-###### **`ConsoleApp1`**:
+###### ConsoleApp1
 ```cs
 using System.Diagnostics;
 using System.Reflection;

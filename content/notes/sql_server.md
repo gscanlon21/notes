@@ -1,6 +1,6 @@
 +++
 title = "Microsoft SQL Server"
-updated = 2021-05-23
+updated = 2021-05-24
 
 [extra]
 references = [
@@ -31,9 +31,10 @@ CREATE INDEX idx_tablename_columnname ON tablename (columnname);
 
 ### Literals with Join
 
-While using literals in a query isn't an everyday occurance, they can be created using the [VALUES](https://docs.microsoft.com/en-us/sql/t-sql/queries/table-value-constructor-transact-sql?view=sql-server-ver15) constructor:
+The [VALUES](https://docs.microsoft.com/en-us/sql/t-sql/queries/table-value-constructor-transact-sql?view=sql-server-ver15) constructor can be used to create a table of literals for use inside a query:
 
 ```sql
+
 SELECT *
 FROM (VALUES (@Id, @title), (1123, 'title')) AS literals (Id, Title)
     LEFT JOIN Table_Name ON Table_Name.Id = literals.Id

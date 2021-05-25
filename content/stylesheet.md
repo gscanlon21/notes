@@ -44,11 +44,15 @@ They can be provided a language for syntax highlighting
 And can have multiple commands show together
 ```powershell
 echo "Hello"
+```
+```
 Hello
 ```
 
 ```powershell
 echo "World!"
+```
+```
 World!
 ```
 
@@ -61,6 +65,8 @@ Code blocks may contain attribution footers
 ###### 
 ```powershell
 echo "This is a multi-line fenced code block with attribution."
+```
+```
 This is a multi-line fenced code block with attribution.
 ```
 ###### [Attribution](#attribution)
