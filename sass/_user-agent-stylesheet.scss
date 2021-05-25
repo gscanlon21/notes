@@ -40,6 +40,11 @@ strong {
 ul {
   margin-top: 0;
   padding-inline-start: $base-padding * 2;
+
+  > li > :nth-child(1n+2):not(ul) {
+    margin-block-start: 0; 
+    margin-block-end: $base-padding; 
+  } 
 }
 
 h1, h2, h3, h4, h5, p {

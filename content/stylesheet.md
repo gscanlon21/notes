@@ -81,15 +81,15 @@ Code can also be displayed inline by surounding the code with back ticks. `/* Th
 # Lists
 
 ## Unordered List
-- li
+- list item
 
   With subtext
 
-- li
-- li
+- list item
+- list item
  
   Nested List
-  - li
-  - li
+  - list item
+  - list item
 
-- li
+- list item
