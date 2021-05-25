@@ -34,7 +34,7 @@ Footer
 
 **test** - Add missing tests
 
-**chore** - Changes to the build process
+**chore** or **build** - Changes to the build process
 
 **improvement** - Improves a current implementation without adding a new feature or fixing a bug
 

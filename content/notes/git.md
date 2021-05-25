@@ -1,6 +1,6 @@
 +++
 title = "Git"
-updated = 2021-03-07
+updated = 2021-05-23
 
 [extra]
 site = "https://git-scm.com/"
@@ -20,3 +20,9 @@ Useful when you instruct git not to touch a specific file ever because developer
 
 ### --assume-unchanged
 Assumes that a developer shouldn’t change a file. This flag is meant for improving performance for non-changing folders like SDKs.
+
+## Git push fails with 'missing tree'
+
+Not sure what causes this, but one of two things will usually clear it up. `Fetch` first and then run `git push --no-thin` or `git gc --aggressive --prune=now`.
+
+

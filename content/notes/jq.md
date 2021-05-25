@@ -7,12 +7,8 @@ site = "https://stedolan.github.io/jq/"
 version = "1.6"
 +++
 
-# jq
+# jq {#jq}
 A command line json processor
-
-## Piping
-The |= instead of the | passes the values along instead of stripping them.
-
 
 ## Interact with the Clipboard
 
@@ -20,41 +16,50 @@ The |= instead of the | passes the values along instead of stripping them.
 ```powershell
 Get-ClipBoard | jq '.'
 ```
-######
 
 ### Set the results to the clipboard
 ```powershell
-Get-ClipBoard | jq '.' | Set-ClipBoard
-```
-
-## Array Manipulation
-
-### Map a property to an array
-```powershell
-Get-ClipBoard | jq '[.someprop]'
+jq '.' | Set-ClipBoard
 ```
 
 ## Flags
 
 ### Compress/Minify JSON
+Minifies the JSON output
+
 ```powershell
 jq -c '.'
+```
+
+```powershell
+jq --compact-output '.'
+```
+
+```powershell
+echo '{ "beta": [ { "omega": 1 } ], "alpha": [ { "omega": 2 } ] }' | jq -c '.'
+{"beta":[{"omega":1}],"alpha":[{"omega":2}]}
+```
+
+### Slurp
+Wraps the input in an array so the filter is applied to the entire collection only once
+
+```powershell
+jq -s '.'
+```
+
+```powershell
+jq --slurp '.'
 ```
 
 ## Show the keys
 ```powershell
 jq '. |= keys'
 ```
-######
 
-### Two levels deep
 ```powershell
-jq '.| map_values(keys)'
-```
-
-## Sorting
-
-### Sort by keys then nested property
-```powershell
- q '.[] |= sort | .[] |= sort_by(.uid) | .'
+echo '{ "beta": [ { "omega": 1 } ], "alpha": [ { "omega": 2 } ] }' | jq '. | keys'
+[
+  "alpha",
+  "beta"
+]
 ```

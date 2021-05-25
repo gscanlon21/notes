@@ -1,12 +1,16 @@
 +++
 title = "Visual Studio"
-updated = 2021-02-21
+updated = 2021-05-23
 
 [extra]
+site = "https://visualstudio.microsoft.com/"
 version = ".NET 5"
+see_also = [
+  { title = "C# Format Specifiers", href = "https://docs.microsoft.com/en-us/visualstudio/debugger/format-specifiers-in-csharp" }
+]
 +++
 
-# [Visual Studio](https://visualstudio.microsoft.com/)
+# Visual Studio
 An IDE for the .NET stack
 
 ## Debugging
@@ -68,20 +72,34 @@ namespace ConsoleApp1
 
 
 ### Customizing the Call Stack
-
 You are able to customize the call stack window by right clicking on an item
 
-### View Value Returned By a Function
+### View Value Returned by a Function
+Step to the end closing bracket and view the Autos window, there should be a value that ends with 'returned'. Or you can add `$ReturnValue` to the watch window.
 
-Step to the end closing bracket and view the Autos window, there should be a value that ends with 'returned'
-
-Can also add `$ReturnValue` to the watch window
-
-Format Specifiers can also be applied. `$ReturnValue,nq`
+[Format Specifiers](@/notes/dotnet/visual_studio/_index.md#csharp-format-specifiers) can be applied to the `$ReturnValue` to alter how it is displayed in the output window.
 
 ### Step into Specific
-
 Allows you to step directly into nested function calls
 
 ### Trigger an Exception
 Use the Immediate Window to set a nullable variables value to null, use that to trigger a null reference exception when stepping though code
+
+### Format Specifiers (C#) {#csharp-format-specifiers}
+Format specifiers can be applied to any variable debugging display, such as the watch window or immediate window. To use a format specifier, enter the varible specifier followed by a comma and then the format specifier. `stringWhoShallNotBeNamed,nq`
+
+- `nq`
+
+  Removes quotes from the displayed string
+  
+- `nse`
+
+  Specifies that the expression should be evaluated with no side effects if possible. If the expression must be evaluated instead of interpreted, an error will be shown.
+
+- `hidden`
+
+  Includes hidden members in the output.
+
+- `results`
+
+  For use with `IEnumerable` and `IEnumnerable<T>` types. Displays the results of the query expresion. 

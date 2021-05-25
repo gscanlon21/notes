@@ -1,6 +1,6 @@
 +++
-title = "T-SQL"
-updated = 2021-03-07
+title = "Microsoft SQL Server"
+updated = 2021-05-23
 
 [extra]
 references = [
@@ -8,26 +8,28 @@ references = [
 ]
 +++
 
-# T-SQL
+# Microsoft SQL Server
 
-## Creating Indexes<sup>[1]</sup>
+## Syntax
 
-### Create a unique index
+### Creating Indexes<sup>[1]</sup>
+
+#### Create a unique index
 ```sql
 CREATE UNIQUE INDEX idx_tablename_columnname ON tablename (columnname);
 ```
 
-### Create a clustered index
+#### Create a clustered index
 ```sql
 CREATE UNIQUE INDEX idx_tablename_columnname ON tablename (columnname);
 ```
 
-### Create a non clustered index
+#### Create a non clustered index
 ```sql
 CREATE INDEX idx_tablename_columnname ON tablename (columnname);
 ```
 
-## Literals with Join
+### Literals with Join
 
 While using literals in a query isn't an everyday occurance, they can be created using the [VALUES](https://docs.microsoft.com/en-us/sql/t-sql/queries/table-value-constructor-transact-sql?view=sql-server-ver15) constructor:
 
