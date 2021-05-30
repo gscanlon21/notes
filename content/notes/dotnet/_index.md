@@ -1,6 +1,6 @@
 +++
 title = "DotNet"
-updated = 2021-02-21
+updated = 2021-05-29
 
 [extra]
 site = "https://dotnet.microsoft.com/"
