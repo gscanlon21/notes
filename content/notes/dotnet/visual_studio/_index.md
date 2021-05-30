@@ -1,10 +1,10 @@
 +++
 title = "Visual Studio"
-updated = 2021-05-23
+updated = 2021-05-29
 
 [extra]
 site = "https://visualstudio.microsoft.com/"
-version = ".NET 5"
+version = "2019"
 see_also = [
   { title = "C# Format Specifiers", href = "https://docs.microsoft.com/en-us/visualstudio/debugger/format-specifiers-in-csharp" }
 ]
