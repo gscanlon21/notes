@@ -57,9 +57,6 @@ World!
 ```
 
 ## This is a collection of multi-line fenced code blocks {#attribution}
-```cs
-// Code block
-```
 
 Code blocks may contain attribution footers
 ###### 
