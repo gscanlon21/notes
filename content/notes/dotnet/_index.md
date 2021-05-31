@@ -1,6 +1,6 @@
 +++
-title = "DotNet"
-updated = 2021-05-29
+title = ".NET"
+updated = 2021-05-31
 
 [extra]
 site = "https://dotnet.microsoft.com/"
@@ -13,3 +13,6 @@ see_also = [
   { title = "Roslyn Source Code", href = "https://sourceroslyn.io/" }
 ]
 +++
+
+# .NET
+.NET is a free, cross-platform, open source developer platform for building many different types of applications.
