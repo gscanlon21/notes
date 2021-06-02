@@ -1,11 +1,12 @@
 +++
 title = ".NET"
-updated = 2021-05-31
+updated = 2021-06-01
 
 [extra]
 site = "https://dotnet.microsoft.com/"
 version = ".NET 5"
 see_also = [
+  { title = ".NET Docs", href="https://docs.microsoft.com/en-us/dotnet/" },
   { title = ".NET Live Streams", href = "https://dotnet.microsoft.com/live" },
   { title = ".NET APIs", href = "https://apisof.net/" },
   { title = ".NET Issues", href = "https://issuesof.net/" },
