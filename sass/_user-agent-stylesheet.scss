@@ -79,13 +79,12 @@ pre + h6 {
   margin-block-start: 0;
   border-radius: 0 0 $border-radius $border-radius;
   float: right;
-  font-size: xx-small;
+  font-size: x-small;
 
   &:empty {
     display: none;
   }
 }
-
 
 pre {
   padding: $base-padding;
