@@ -103,3 +103,14 @@ Format specifiers can be applied to any variable debugging display, such as the 
 - `results`
 
   For use with `IEnumerable` and `IEnumnerable<T>` types. Displays the results of the query expresion. 
+
+
+## FAQ
+
+### Missing errors in the Editor or Error List
+
+Try deleting the `.sou` file located at `<SolutionFolder>\.vs\<ProjectName>\v16\.sou`.
+
+The `.sou` file contains user-defined solution settings, such as breakpoints and debug options. It can sometimes become corrupted causing erratic behavior.
+
+The file will get recreated when reloading the solution.
