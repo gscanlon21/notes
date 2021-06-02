@@ -34,7 +34,7 @@ version = "10"
 ### Location of applicationhost.config
 
 - **User default** `%userprofile%\documents\iisexpress\config\applicationhost.config`
-- **VS2019**: `<solution>\.vs\<project>\config\applicationhost.config`
+- **VS2019**: `<SolutionFolder>\.vs\<ProjectName>\config\applicationhost.config`
 
 ## Enable Directory Browsing
 
