@@ -13,6 +13,15 @@ references = [
 # Git
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
+## Backing Up a Repository
+
+Use `git bundle` to create a full or partial backup of a repository. The bundle itself functions as a repository so you can restore by cloning the bundle or adding it as a remote.
+
+```powershell
+git bundle create backup.bundle --all
+```
+###### Creating a full git bundle
+
 ##  git update-index<sup>[1]</sup>
 
 ### --skip-worktree
