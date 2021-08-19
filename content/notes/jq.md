@@ -12,14 +12,14 @@ A command line json processor
 
 ## Interact with the Clipboard
 
+### Set the results to the clipboard
+```powershell
+echo '{ "hello": "world"}' | jq '.' | Set-ClipBoard
+```
+
 ### Pretty print the clipboard contents
 ```powershell
 Get-ClipBoard | jq '.'
-```
-
-### Set the results to the clipboard
-```powershell
-jq '.' | Set-ClipBoard
 ```
 
 ## Flags
@@ -28,11 +28,11 @@ jq '.' | Set-ClipBoard
 Minifies the JSON output
 
 ```powershell
-jq -c '.'
+echo '{ "hello": "world"}' | jq -c '.'
 ```
 
 ```powershell
-jq --compact-output '.'
+echo '{ "hello": "world"}' | jq --compact-output '.'
 ```
 
 ```powershell
