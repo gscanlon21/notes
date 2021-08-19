@@ -1,6 +1,11 @@
 +++
 title = "Notes"
-updated = 2021-05-29
+updated = 2021-07-09
+
+[extra]
+see_also = [
+  { title = "Connection Strings Reference", href="https://www.connectionstrings.com" }
+]
 +++
 
 # Notes
