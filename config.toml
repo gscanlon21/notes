@@ -14,7 +14,6 @@ compile_sass = true
 build_search_index = true
 
 default_language = "en"
-languages = []
 
 [markdown]
 # Whether to do syntax highlighting

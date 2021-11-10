@@ -7,12 +7,23 @@
 {% endfor %}
 {% endmacro header %}
 
+{% macro render_list_linksy(pages) %}
+{% for item in pages %}
+    {# Warning: using page as the loop variable causes bugs since it already exists in context #}
+    {% set itemy = get_section(path=item) %}
+    {% if item.extra.sitemapped | default(value=true) %}
+        <li><a href="{{ get_url(path="@/" ~ itemy.relative_path) }}">{{ itemy.title }}</a></li>
+    {% endif %}
+{% endfor %}
+{% endmacro header %}
+
 {#
     Iterates though the site's pages and subsection and renders nested lists for each
     
     A max_recursion of 0 will render just the current directory and it's pages.
     A max_recursion or 1 will render the current directory's pages, subsections, and sub-pages.
     A max_recursion or 2 will render the current directory's pages, subsections, sub-pages, and sub-pages' subsections.
+    // FIXME .NET Framework not showing
     And so on...
 #}
 {% macro render_sitemap(path, max_recursion=-1, recursive_index=0) %}
@@ -40,6 +51,7 @@
     <li><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></li>
     <ul>
         {{ macros::render_list_links(pages=section_info.pages) }}
+        {{ macros::render_list_linksy(pages=section_info.subsections) }}
 
         {% if max_recursion == -1 or recursive_index < max_recursion %}
         {% for subsection in section_info.subsections %}

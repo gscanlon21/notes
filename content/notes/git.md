@@ -20,7 +20,6 @@ Use `git bundle` to create a full or partial backup of a repository. The bundle 
 ```powershell
 git bundle create backup.bundle --all
 ```
-###### Creating a full git bundle
 
 ##  git update-index<sup>[1]</sup>
 
