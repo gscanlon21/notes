@@ -1,8 +1,8 @@
 # Tab title
-title = "tscanlon"
+title = "ascallion"
 
 # The URL the site will be built for
-base_url = "https://tscanlon.dev"
+base_url = "https://ascallion.dev"
 
 # Whether to set rel="noreferrer" for all external links
 external_links_no_referrer = true
@@ -14,7 +14,6 @@ compile_sass = true
 build_search_index = true
 
 default_language = "en"
-languages = []
 
 [markdown]
 # Whether to do syntax highlighting

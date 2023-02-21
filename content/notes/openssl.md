@@ -29,18 +29,18 @@ Some servers may be misconfigured where only the server certificate is served. T
 
 You can query for missing certificates with 
 ```powershell
-openssl s_client -showcerts -connect www.tscanlon.com:443
+openssl s_client -showcerts -connect www.ascallion.com:443
 ```
 ```
 CONNECTED(0000019C)
 depth=1 C = US, O = Let's Encrypt, CN = R3
 verify error:num=20:unable to get local issuer certificate
 verify return:1
-depth=0 CN = tscanlon.com
+depth=0 CN = ascallion.com
 verify return:1
 ---
 Certificate chain
- 0 /*order of the certificate in the chain*/ s /*subject*/:CN = tscanlon.com
+ 0 /*order of the certificate in the chain*/ s /*subject*/:CN = ascallion.com
    i /*issuer -- should match the next certificates subject*/:C = US, O = Let's Encrypt, CN = R3
 -----BEGIN CERTIFICATE-----
 MIIGLjCCBRagAwIBAgISBKHvxXgqHiNKdFT82oNvR7SbMA0GCSqGSIb3DQEBCwUA
@@ -108,7 +108,7 @@ UdHkhVNcsAKX1H7GNNLOEADksd86wuoXvg==
 -----END CERTIFICATE-----
 ---
 Server certificate
-subject=CN = tscanlon.com
+subject=CN = ascallion.com
 
 issuer=C = US, O = Let's Encrypt, CN = R3
 
