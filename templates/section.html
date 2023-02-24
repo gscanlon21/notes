@@ -13,6 +13,9 @@
         </div>
         <div class="sidebar-right">
             <nav class="sitemap ">
+                <h3>Ancestors</h3>
+                {{ macros::render_ancestors(ancestors=section.ancestors) }}
+                <br>
                 <h3>Subsections</h3>
                 {{ macros::render_sitemap(path=section.relative_path) }}
                 <br>

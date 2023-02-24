@@ -16,6 +16,10 @@
     </article>
 
     <nav class="sitemap sidebar-right screen-large">
+        <h3>Ancestors</h3>
+        {{ macros::render_ancestors(ancestors=page.ancestors) }}
+        <br>
+        
         <h3>Sitemap</h3>
         {{ macros::render_sitemap(path="_index.md", max_recursion=2) }}
     </nav>

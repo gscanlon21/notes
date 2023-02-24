@@ -7,6 +7,7 @@
 {% endfor %}
 {% endmacro header %}
 
+
 {#
     Iterates though the site's pages and subsection and renders nested lists for each
     
@@ -48,4 +49,15 @@
         {% endif %}
     </ul>
 {% endif %}
+{% endmacro header %}
+
+
+{#
+    Iterates though the site's ancestors and renders lists for each
+#}
+{% macro render_ancestors(ancestors) %}
+{% for ancestor in ancestors | reverse %}
+    {% set ancestor_info = get_section(path=ancestor) %}
+    <li><a href="{{ get_url(path="@/" ~ ancestor_info.relative_path) }}">{{ ancestor_info.title }}</a></li>
+{% endfor %}
 {% endmacro header %}
