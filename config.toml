@@ -2,7 +2,7 @@
 title = "ascallion"
 
 # The URL the site will be built for
-base_url = "https://ascallion.dev"
+base_url = "https://ascallion.info"
 
 # Whether to set rel="noreferrer" for all external links
 external_links_no_referrer = true
