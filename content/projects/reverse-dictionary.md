@@ -3,7 +3,9 @@ title = "Reverse Dictionary"
 updated = 2021-02-21
 
 [extra]
-site = "https://github.com/gscanlon21/reversedictionary"
+see_also = [
+  { title = "Github", href="https://github.com/ascallion21/reverse-dictionary" }
+]
 +++
 
 # Reverse Dictionary
