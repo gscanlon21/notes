@@ -1,6 +1,7 @@
 +++
 title = "Reverse Dictionary"
-updated = 2021-02-21
+description = "An Android Dictionary, Thesaurus, and Reverse Dictionary."
+updated = 2023-02-28
 
 [extra]
 see_also = [
@@ -10,4 +11,4 @@ see_also = [
 
 # Reverse Dictionary
 
-An Android Dictionary, Thesaurus, and Reverse Dictionary
+Reverse Dictionary is an Android application that provides a front-end to the [Datamuse](https://www.datamuse.com/api/) word-finding API. The application is built with Kotlin Coroutines and the MVVM Architecture.
