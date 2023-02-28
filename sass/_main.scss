@@ -54,10 +54,24 @@ main#main {
   }
 }
 
-.page-header {
+.header-wrap {
   display: flex;
   flex-wrap: wrap;
 
+  > :first-of-type {
+    flex: 1;
+    flex-grow: 2;
+    display: flex;
+    min-width: $min-content-width;
+  }
+
+  > :last-of-type {
+    flex: 1;
+    min-width: $min-content-width;
+  }
+}
+
+.header {
   .header-item {
     flex: 1;
     display: flex;
@@ -72,23 +86,6 @@ main#main {
       overflow-x: hidden;
       text-overflow: ellipsis;
     }
-  }
-}
-
-.section-header {
-  display: flex;
-  flex-wrap: wrap;
-
-  > :first-of-type {
-    flex: 1;
-    flex-grow: 2;
-    display: flex;
-    min-width: $min-content-width;
-  }
-
-  > :last-of-type {
-    flex: 1;
-    min-width: $min-content-width;
   }
 }
 

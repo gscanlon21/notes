@@ -2,26 +2,30 @@
 {% extends "partials/base.html" %}
 
 {% block content %}
-    <div class="page-header sidebar-left">
-        <div class="header-item">
-            {% include "partials/summary.html" %}
+    <div class="header-wrap">
+        <div class="sidebar-left header header-wrap">
+            <div class="header-item">
+                {% include "partials/summary.html" %}
+            </div>
+            <div class="header-item">
+                {% include "partials/toc.html" %}
+            </div>
         </div>
-        <div class="header-item">
-            {% include "partials/toc.html" %}
+
+        <div class="sidebar-right">
+            <nav class="sitemap ">
+                <h3>Ancestors</h3>
+                {{ macros::render_ancestors(ancestors=page.ancestors) }}
+                <br>
+                <div class="screen-large">
+                    <h3>Sitemap</h3>
+                    {{ macros::render_sitemap(path="_index.md", open=false) }}
+                </div>
+            </nav>
         </div>
     </div>
-
     <article id="content">
         {{ page.content | safe }}
     </article>
-
-    <nav class="sitemap sidebar-right screen-large">
-        <h3>Ancestors</h3>
-        {{ macros::render_ancestors(ancestors=page.ancestors) }}
-        <br>
-        
-        <h3>Sitemap</h3>
-        {{ macros::render_sitemap(path="_index.md", max_recursion=2) }}
-    </nav>
 {% endblock content %}
   

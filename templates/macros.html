@@ -16,38 +16,28 @@
     A max_recursion or 2 will render the current directory's pages, subsections, sub-pages, and sub-pages' subsections.
     And so on...
 #}
-{% macro render_sitemap(path, max_recursion=-1, recursive_index=0) %}
+{% macro render_sitemap(path, open=true, first_pass=true) %}
 {% set section_info = get_section(path=path) %}
-{% if recursive_index == 0 %}
-    {{ macros::render_sitemap(path=path, max_recursion=recursive_index, recursive_index=recursive_index + 1) }}
-    
-    {% for subsection in section_info.subsections %}
-    {{ macros::render_sitemap(path=subsection, max_recursion=max_recursion, recursive_index=recursive_index + 1) }}
-    {% endfor %}
-{% elif recursive_index == 1 and section_info.pages %}
-    <details open>
-        <summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></summary>
-        <ul class="sitemap-list">
-            {{ macros::render_list_links(pages=section_info.pages) }}
+{% if first_pass %}
+    <ul class="sitemap-list">
+        {{ macros::render_list_links(pages=section_info.pages) }}
+    </ul>
 
-            {% if max_recursion == -1 or recursive_index < max_recursion %}
-            {% for subsection in section_info.subsections %}
-                {{ macros::render_sitemap(path=subsection, max_recursion=max_recursion, recursive_index=recursive_index + 1) }}
-            {% endfor %}
-            {% endif %}
-        </ul>
-    </details>
+    {% for subsection in section_info.subsections %}
+        {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
+    {% endfor %}
 {% else %}
-    <li><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></li>
-    <ul>
+<details {% if open %}open{% endif %}>
+    <summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></summary>
+    
+    <ul class="sitemap-list">
         {{ macros::render_list_links(pages=section_info.pages) }}
 
-        {% if max_recursion == -1 or recursive_index < max_recursion %}
         {% for subsection in section_info.subsections %}
-            {{ macros::render_sitemap(path=subsection, max_recursion=max_recursion, recursive_index=recursive_index + 1) }}
+            {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
         {% endfor %}
-        {% endif %}
     </ul>
+</details>
 {% endif %}
 {% endmacro header %}
 
@@ -56,8 +46,10 @@
     Iterates though the site's ancestors and renders lists for each
 #}
 {% macro render_ancestors(ancestors) %}
-{% for ancestor in ancestors | reverse %}
-    {% set ancestor_info = get_section(path=ancestor) %}
-    <li><a href="{{ get_url(path="@/" ~ ancestor_info.relative_path) }}">{{ ancestor_info.title }}</a></li>
-{% endfor %}
+<ul>
+    {% for ancestor in ancestors | reverse %}
+        {% set ancestor_info = get_section(path=ancestor) %}
+        <li><a href="{{ get_url(path="@/" ~ ancestor_info.relative_path) }}">{{ ancestor_info.title }}</a></li>
+    {% endfor %}
+</ul>
 {% endmacro header %}
