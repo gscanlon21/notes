@@ -1,6 +1,6 @@
 +++
 title = "Git"
-updated = 2021-05-24
+updated = 2023-03-04
 
 [extra]
 site = "https://git-scm.com/"
@@ -13,6 +13,8 @@ references = [
 # Git
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
+
+
 ## Backing Up a Repository
 
 Use `git bundle` to create a full or partial backup of a repository. The bundle itself functions as a repository so you can restore by cloning the bundle or adding it as a remote.
@@ -21,6 +23,19 @@ Use `git bundle` to create a full or partial backup of a repository. The bundle 
 git bundle create backup.bundle --all
 ```
 ###### Creating a full git bundle
+
+
+
+## Shrinking the .git Folder
+
+Use `-f` to "drop all old deltas".
+
+```powershell
+git repack -a -d --depth=250 --window=250 #-f
+```
+###### [Source](https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html)
+
+
 
 ##  git update-index<sup>[1]</sup>
 
