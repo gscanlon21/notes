@@ -99,7 +99,7 @@ pre {
   > code[data-lang]::before {
     // Display the code lang as the shell context
     content: attr(data-lang) "$";
-    color: white;
+    color: color(--color-code, 0.75);
     padding-right: $base-padding;
   }
 }
