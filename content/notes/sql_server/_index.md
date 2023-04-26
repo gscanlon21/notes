@@ -1,6 +1,6 @@
 +++
-title = "Microsoft SQL Server"
-updated = 2021-07-27
+title = "SQL Server"
+updated = 2023-04-26
 
 [extra]
 version = 2019
@@ -11,6 +11,7 @@ see_also = [
     { title = "Powershell Commands", href = "https://dbatools.io/" }
 ]
 +++
+
 
 # Microsoft SQL Server
 
@@ -53,4 +54,15 @@ The [VALUES](https://docs.microsoft.com/en-us/sql/t-sql/queries/table-value-cons
 SELECT *
 FROM (VALUES (@Id, @title), (1123, 'title')) AS literals (Id, Title)
     LEFT JOIN Table_Name ON Table_Name.Id = literals.Id
+```
+
+## Table Types
+
+View user-defined table types
+
+```sql
+
+SELECT * FROM [sys].[objects]
+WHERE [type] = 'TT'
+ORDER BY create_date DESC
 ```

@@ -5,7 +5,7 @@ updated = 2023-02-28
 
 [extra]
 see_also = [
-  { title = "Github", href="https://github.com/ascallion21/system-sql" }
+  { title = "Github", href="https://github.com/gscanlon21/system-sql" }
 ]
 +++
 

@@ -6,7 +6,7 @@ updated = 2023-02-28
 [extra]
 site = "https://aworkoutaday.com/"
 see_also = [
-  { title = "Github", href="https://github.com/ascallion21/finer-fettle" }
+  { title = "Github", href="https://github.com/gscanlon21/a-workout-a-day" }
 ]
 +++
 
