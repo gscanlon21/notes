@@ -1,7 +1,7 @@
 // Sitemap
 .sitemap {
-  &.full .sitemap-list {
-    columns: /* minumum width for each column */ $min-content-width /* max # of columns */ 4;
+  & > * {
+    margin-block-end: 1em;
   }
 }
 

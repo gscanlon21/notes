@@ -2,12 +2,9 @@
 {% extends "partials/base.html" %}
 
 {% block content %}
-    <div>
-        <h1>Sitemap</h1>
-    </div>
-
+    <h1>Sitemap</h1>
     <nav class="sitemap full">
-        {{ macros::render_sitemap(path="_index.md") }}
+        {{ macros::render_sitemap(path="_index.md", open=false) }}
     </nav>
 
     {% block debug %}

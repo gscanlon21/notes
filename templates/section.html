@@ -12,18 +12,22 @@
             </div>
         </div>
         <div class="sidebar-right">
+            <h3>Ancestors</h3>
             <nav class="sitemap">
-                <h3>Ancestors</h3>
                 {{ macros::render_ancestors(ancestors=section.ancestors) }}
-                <br>
-                <h3>Subsections</h3>
-                {{ macros::render_sitemap(path=section.relative_path, open=false) }}
-                <br>
-                <div class="screen-large">
-                    <h3>Sitemap</h3>
-                    {{ macros::render_sitemap(path="_index.md", open=false) }}
-                </div>
             </nav>
+
+            <h3>Subsections</h3>
+            <nav class="sitemap">
+                {{ macros::render_sitemap(path=section.relative_path, open=false) }}
+            </nav>
+
+            <div class="screen-large">
+                <h3>Sitemap</h3>
+                <nav class="sitemap">
+                    {{ macros::render_sitemap(path="_index.md", open=false) }}
+                </nav>
+            </div>
         </div>
     </div>
 
