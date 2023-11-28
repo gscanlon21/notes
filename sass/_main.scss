@@ -3,6 +3,10 @@
   & > * {
     margin-block-end: 1em;
   }
+
+  .sitemap-list > details {
+    margin-inline-start: -2ch;
+  }
 }
 
 // Site content
