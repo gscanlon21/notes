@@ -1,5 +1,5 @@
 +++
-title = "Notes"
+title = "User Notes"
 updated = 2021-07-09
 
 [extra]
