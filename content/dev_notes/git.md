@@ -50,3 +50,9 @@ Assumes that a developer shouldn’t change a file. This flag is meant for impro
 Not sure what causes this, but one of two things will usually clear it up. `Fetch` first and then run `git push --no-thin` or `git gc --aggressive --prune=now`.
 
 
+## Split Up a Large (feature) Branch
+
+- Pull and make sure the feature branch is up-to-date with main.
+- Checkout a new branch from the main branch.
+- Merge the feature branch into the working tree.
+- Unstage or discard unwanted changes and commit staged changes.
