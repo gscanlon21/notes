@@ -71,3 +71,13 @@ Comment out the following modules
 <!--<add name="HttpLoggingModule" image="%IIS_BIN%\loghttp.dll" />-->
 <!--<add name="HttpLoggingModule" lockItem="true" />-->
 ```
+
+## SSL Support
+
+### Use a self-signed certificate
+
+```powershell
+
+cd "C:\Program Files\IIS Express"
+.\IisExpressAdminCmd.exe setupsslUrl -url:https://localhost:443/ -UseSelfSigned
+```
