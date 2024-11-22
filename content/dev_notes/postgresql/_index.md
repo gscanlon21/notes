@@ -1,6 +1,5 @@
 +++
 title = "PostgreSQL"
-updated = 2023-05-15
 
 [extra]
 version = 14.7

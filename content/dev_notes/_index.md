@@ -1,6 +1,5 @@
 +++
 title = "Dev Notes"
-updated = 2021-07-09
 
 [extra]
 see_also = [

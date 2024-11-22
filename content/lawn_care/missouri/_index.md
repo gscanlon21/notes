@@ -1,6 +1,5 @@
 +++
 title = "Missouri Lawn Care"
-updated = 2023-08-13
 
 [extra]
 site = "https://extension.missouri.edu/find-your-interest/agriculture-and-environment"

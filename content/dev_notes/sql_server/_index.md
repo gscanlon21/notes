@@ -1,6 +1,5 @@
 +++
 title = "SQL Server"
-updated = 2023-04-26
 
 [extra]
 version = 2019

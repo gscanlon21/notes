@@ -1,6 +1,5 @@
 +++
 title = ".NET Framework"
-updated = 2021-05-23
 +++
 
 # .NET Framework

@@ -1,6 +1,5 @@
 +++
 title = "Lawn Care"
-updated = 2023-08-13
 
 [extra]
 references = [

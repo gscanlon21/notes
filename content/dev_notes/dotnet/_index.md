@@ -1,6 +1,5 @@
 +++
 title = ".NET"
-updated = 2021-06-01
 
 [extra]
 site = "https://dotnet.microsoft.com/"

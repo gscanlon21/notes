@@ -1,6 +1,5 @@
 +++
 title = "Visual Studio"
-updated = 2021-05-29
 
 [extra]
 site = "https://visualstudio.microsoft.com/"
