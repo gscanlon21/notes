@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang=lang>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>ascallion</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="https://ascallion.com/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://ascallion.com/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://ascallion.com/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://ascallion.com/site.webmanifest?h=d3283d8cdd099d8504a1">
+
+        <link media="all" href="https://ascallion.com/site.css?h=3802ddddfbdd218d52ad" rel="stylesheet">
+        
+        <script src="https://ascallion.com/elasticlunr.min.js?h=4f648b9e42abdef9c436"></script>
+        <script src="https://ascallion.com/search_index.en.js?h=db15817384040cee7db6"></script>
+        <script async src="https://ascallion.com/scripts/search.js?h=62fc04a7b5e3ceaa995f"></script>
+    </head>
+
+    <body>
+        
+        <header id="header">
+          <span class="header-item">
+
+<div class="search-container">
+  <input id="search" type="search" placeholder="Search">
+
+  <div class="search-results" style="display: none;">
+      <div class="search-results__items"></div>
+  </div>
+</div></span>
+          <span class="header-item"><a class="unstyle" href="https://ascallion.com/">ascallion</a></span>
+          <span class="header-item"><a href="https://ascallion.com/sitemap/">Sitemap</a></span>
+        </header>
+        
+
+        <main id="main" class="markdown-body">
+          
+    <div class="header-wrap">
+        <div class="sidebar-left header header-wrap">
+            <div class="header-item">
+                <header id="summary">
+    <h2 class="title">
+    
+        Architecting
+    
+    
+    </h2> 
+    
+    <dl>
+        
+
+         
+        <dt>See Also</dt>
+        
+            <dd class="summary-item"><a href="https:&#x2F;&#x2F;codekarle.com">System Design and Software Architecture</a></dd>
+        
+            <dd class="summary-item"><a href="https:&#x2F;&#x2F;github.com&#x2F;donnemartin&#x2F;system-design-primer">System Design Primer</a></dd>
+        
+        
+
+        
+
+         
+        <dt>Last Updated</dt>
+        <dd>2021-06-01</dd>
+        
+        
+        <dt>Reading Time</dt>
+        <dd>1 minute(s)</dd>
+    </dl>
+</header>
+            </div>
+            <div class="header-item">
+                
+
+<nav>
+    <h3>Table of Contents</h3>
+    <ul>
+        
+        <li>
+            <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev_notes&#x2F;architecting&#x2F;#architecting">Architecting</a>
+            
+        </li>
+        
+    </ul>
+</nav>
+
+            </div>
+        </div>
+
+        <div class="sidebar-right">
+            <nav class="sitemap ">
+                <h3>Ancestors</h3>
+                
+<ul>
+    
+        
+        <li><a href="https://ascallion.com/dev_notes/">Dev Notes</a></li>
+    
+        
+        <li><a href="https://ascallion.com/">ascallion</a></li>
+    
+</ul>
+
+                <br>
+                <div class="screen-large">
+                    <h3>Sitemap</h3>
+                    
+
+
+    
+        <ul class="sitemap-list">
+            
+
+    
+    
+        <li><a href="https://ascallion.com/about/">About</a></li>
+    
+
+    
+    
+
+    
+    
+
+
+        </ul>
+    
+    
+    
+        
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev_notes/">Dev Notes</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/architecting/">Architecting</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/conventional-commits/">Conventional Commits</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/curl/">Curl</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/encryption/">Encryption</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/exceptions/">Exceptions</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/git/">Git</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/iisexpress/">IIS Express</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/jmeter/">JMeter</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/openssl/">OpenSSL</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/powershell/">Powershell</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/redis/">Redis</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/regex/">Regex</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/rust/">Rust</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/ssh/">SSH</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/jq/">jq</a></li>
+    
+
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev_notes/dotnet/">.NET</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/dotnet/csharp/">CSharp</a></li>
+    
+
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev_notes/dotnet/framework/">.NET Framework</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev_notes/dotnet/framework/tools/">Tools</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/dotnet/framework/tools/fuslogvw/">Fuslogvw.exe</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev_notes/dotnet/visual_studio/">Visual Studio</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/dotnet/visual_studio/interactive/">C# Interactive</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev_notes/postgresql/">PostgreSQL</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/postgresql/permissions/">Permissions</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev_notes/sql_server/">SQL Server</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev_notes/windows/">Windows</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/windows/performance-monitor/">Performance Monitor</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/windows/chkdsk/">chkdsk</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev_notes/windows/netsh/">netsh</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+    </ul>
+</details>
+
+
+    
+        
+
+
+<details >
+    <summary><a href="https://ascallion.com/notes/">User Notes</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/notes/android/">Android</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+    
+        
+
+
+<details >
+    <summary><a href="https://ascallion.com/plants/">Plants</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/plants/missouri/">Missouri Lawn Care</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/plants/missouri/lawn_care/">Lawn Care</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/plants/missouri/native_plants/">Native Plants</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+    </ul>
+</details>
+
+
+        
+    </ul>
+</details>
+
+
+    
+        
+
+
+<details >
+    <summary><a href="https://ascallion.com/projects/">Projects</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-feast-a-day/">A Feast a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-mood-a-day/">A Mood a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-workout-a-day/">A Workout a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/reverse-dictionary/">Reverse Dictionary</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/system-sql/">System SQL</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+    
+
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <article id="content">
+        <h1 id="architecting">Architecting</h1>
+<p>A collection of architecture related docs and blogs. See the 'See Also' section.</p>
+
+    </article>
+  
+        </main>
+
+        
+          <footer id="footer">
+    <span class="footer-item"><a href="https://ascallion.com/about/">About</a></span>
+    <span class="footer-item"><a class="unstyle" href="#">Back to Top</a></span>
+    <span class="footer-item"><a href="https://github.com/gscanlon21">Github</a></span>
+</footer>
+           
+        
+        
+        
+    </body>
+</html>
