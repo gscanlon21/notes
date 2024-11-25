@@ -1,5 +1,5 @@
 +++
-title = "Missouri Lawn Care"
+title = "Plants"
 
 [extra]
 site = "https://extension.missouri.edu/find-your-interest/agriculture-and-environment"
@@ -12,4 +12,4 @@ see_also = [
 
 +++
 
-# Missouri Lawn Care
+# Plants

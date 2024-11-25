@@ -1,5 +1,5 @@
 +++
-title = "User Notes"
+title = "Notes"
 
 [extra]
 see_also = [

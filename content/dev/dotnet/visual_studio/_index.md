@@ -76,7 +76,7 @@ You are able to customize the call stack window by right clicking on an item
 ### View Value Returned by a Function
 Step to the end closing bracket and view the Autos window, there should be a value that ends with 'returned'. Or you can add `$ReturnValue` to the watch window.
 
-[Format Specifiers](@/dev_notes/dotnet/visual_studio/_index.md#csharp-format-specifiers) can be applied to the `$ReturnValue` to alter how it is displayed in the output window.
+[Format Specifiers](@/dev/dotnet/visual_studio/_index.md#csharp-format-specifiers) can be applied to the `$ReturnValue` to alter how it is displayed in the output window.
 
 ### Step into Specific
 Allows you to step directly into nested function calls
