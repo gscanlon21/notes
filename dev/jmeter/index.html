@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang=lang>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>ascallion</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="https://ascallion.com/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://ascallion.com/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://ascallion.com/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://ascallion.com/site.webmanifest?h=d3283d8cdd099d8504a1">
+
+        <link media="all" href="https://ascallion.com/site.css?h=b2f115cd5d07e3da0a2f" rel="stylesheet">
+        
+        <script src="https://ascallion.com/elasticlunr.min.js?h=4f648b9e42abdef9c436"></script>
+        <script src="https://ascallion.com/search_index.en.js?h=bd2f9f2da725e84a8867"></script>
+        <script async src="https://ascallion.com/scripts/search.js?h=62fc04a7b5e3ceaa995f"></script>
+    </head>
+
+    <body>
+        
+        <header id="header">
+          <span class="header-item">
+
+<div class="search-container">
+  <input id="search" type="search" placeholder="Search">
+
+  <div class="search-results" style="display: none;">
+      <div class="search-results__items"></div>
+  </div>
+</div></span>
+          <span class="header-item"><a class="unstyle" href="https://ascallion.com/">ascallion</a></span>
+          <span class="header-item"><a href="https://ascallion.com/sitemap/">Sitemap</a></span>
+        </header>
+        
+
+        <main id="main" class="markdown-body">
+          
+    <div class="header-wrap">
+        <div class="sidebar-left header header-wrap">
+            <div class="header-item">
+                <header id="summary">
+    <h2 class="title">
+     
+        <a href="https://jmeter.apache.org/">JMeter</a>
+    
+     
+        <sub class="version">5.4.1</sub>
+    
+    </h2> 
+    
+    <dl>
+        
+
+        
+
+        
+
+         
+        <dt>Last Updated</dt>
+        <dd>2021-05-24</dd>
+        
+        
+        <dt>Reading Time</dt>
+        <dd>3 minute(s)</dd>
+    </dl>
+</header>
+            </div>
+            <div class="header-item">
+                
+
+<nav>
+    <h3>Table of Contents</h3>
+    <ul>
+        
+        <li>
+            <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;jmeter&#x2F;#apache-jmetertm">Apache JMeter™</a>
+            
+            <ul>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;jmeter&#x2F;#configuration">Configuration</a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;jmeter&#x2F;#recording-a-test">Recording a Test</a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;jmeter&#x2F;#debugging">Debugging</a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;jmeter&#x2F;#performance-testing">Performance Testing</a>
+                </li>
+                
+            </ul>
+            
+        </li>
+        
+    </ul>
+</nav>
+
+            </div>
+        </div>
+
+        <div class="sidebar-right">
+            <nav class="sitemap ">
+                <h3>Ancestors</h3>
+                
+<ul>
+    
+        
+        <li><a href="https://ascallion.com/dev/">Dev</a></li>
+    
+        
+        <li><a href="https://ascallion.com/">ascallion</a></li>
+    
+</ul>
+
+                <br>
+                <div class="screen-large">
+                    <h3>Sitemap</h3>
+                    
+
+
+    
+        <ul class="sitemap-list">
+            
+
+    
+    
+        <li><a href="https://ascallion.com/about/">About</a></li>
+    
+
+    
+    
+
+    
+    
+
+
+        </ul>
+    
+    
+    
+        
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/">Dev</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev/architecting/">Architecting</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/conventional-commits/">Conventional Commits</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/curl/">Curl</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/encryption/">Encryption</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/exceptions/">Exceptions</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/git/">Git</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/iisexpress/">IIS Express</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/jmeter/">JMeter</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/openssl/">OpenSSL</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/powershell/">Powershell</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/redis/">Redis</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/regex/">Regex</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/rust/">Rust</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/ssh/">SSH</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/jq/">jq</a></li>
+    
+
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/dotnet/">.NET</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev/dotnet/csharp/">CSharp</a></li>
+    
+
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/dotnet/framework/">.NET Framework</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/dotnet/framework/tools/">Tools</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev/dotnet/framework/tools/fuslogvw/">Fuslogvw.exe</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/dotnet/visual_studio/">Visual Studio</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev/dotnet/visual_studio/interactive/">C# Interactive</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/postgresql/">PostgreSQL</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev/postgresql/permissions/">Permissions</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/sql_server/">SQL Server</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/windows/">Windows</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/performance-monitor/">Performance Monitor</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/chkdsk/">chkdsk</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/netsh/">netsh</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+    </ul>
+</details>
+
+
+    
+        
+
+
+<details >
+    <summary><a href="https://ascallion.com/notes/">Notes</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/notes/android/">Android</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+    
+        
+
+
+<details >
+    <summary><a href="https://ascallion.com/plants/">Plants</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/plants/lawn_care/">Lawn Care</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/plants/native_plants/">Native Plants</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+    </ul>
+</details>
+
+
+    
+        
+
+
+<details >
+    <summary><a href="https://ascallion.com/projects/">Projects</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-feast-a-day/">A Feast a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-mood-a-day/">A Mood a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-workout-a-day/">A Workout a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/reverse-dictionary/">Reverse Dictionary</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/system-sql/">System SQL</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+    
+
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <article id="content">
+        <h1 id="apache-jmetertm">Apache JMeter™</h1>
+<p>The Apache JMeter™ application is open source software, a 100% pure Java application designed to load test functional behavior and measure performance. It was originally designed for testing Web Applications but has since expanded to other test functions.</p>
+<h2 id="configuration">Configuration</h2>
+<h3 id="connect-to-a-sql-server-database">Connect to a SQL Server database</h3>
+<p>We need the <a rel="noreferrer" href="https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15">SQL Server JDBC driver</a> so that we can connect to the database</p>
+<p>Unzip the folder to a memorable directory</p>
+<p>Under the root <code>Test Plan</code> node set the classpath to include the .jar file you just downloaded</p>
+<h3 id="simulating-users">Simulating users</h3>
+<p>The <code>Thread Group</code> node allows you specify how many users you want to test at a time. Each thread essentially acts as a single user</p>
+<p>A <code>Ramp-up period</code> of 5 seconds with 5 users will create 1 thread (user) per second, while a <code>Ramp-up period</code> of 0 will create all 5 threads (users) instantly</p>
+<h3 id="variables">Variables</h3>
+<p>Variables are a powerful feature in JMeter that can be utilized to pipe response data from one request into the request body of the next</p>
+<p>The simplest way to capture response data into variables is to setup a <code>JSON Extractor</code> for your request. Right click on the request node and select Add -&gt; Post-processors -&gt; JSON Extractor. You specify the response property you want to save with JsonPath and the variable name to save into just above it</p>
+<p>Variables can be interpolated into request bodies with the <code>${variable_name}</code> syntax</p>
+<h3 id="built-in-functions">Built-In Functions</h3>
+<p>JMeter has many built-in <a rel="noreferrer" href="https://jmeter.apache.org/usermanual/functions.html">functions</a> that can helpful in scripting a test. All functions are prefixed with two (2) underscores (<code>__</code>)</p>
+<h2 id="recording-a-test">Recording a Test</h2>
+<h3 id="configuring-the-recording-proxy">Configuring the Recording Proxy</h3>
+<p>Navigate to the <code>HTTP(S) Test Script Recorder</code> node. Note the port number for the next step. Click <em>Start</em> and accept/decline any self-signed certificates that pop up</p>
+<p>Open up the Firefox browser and navigate under Options -&gt; Network Settings to the proxy connection settings. Select the <code>Manual Proxy Configuration</code> radio button, set <strong>Http Proxy</strong> to "localhost" and the <strong>Port</strong> to match JMeter's port</p>
+<h3 id="recording-a-test-1">Recording a test</h3>
+<p>Still in Firefox, navigate to the page you would like to test and proceed through a test round. Click <em>Stop</em> to halt the test recording.</p>
+<p>Under the <code>Recording Controller</code> node in JMeter, you should see requests to the pages you navigated to. Strip out any fluff from the captured requests (you can also add filters to the <code>Test Script Recorder</code>).</p>
+<p>You now should have a functioning JMeter test script.</p>
+<h2 id="debugging">Debugging</h2>
+<p>To debug your test you can click the green <em>Start</em> icon in the navbar. Requests will be visible in the <code>View Results Tree</code> node after a couple of seconds.</p>
+<p>If you need to inspect variables, right click on the <code>Thread Group</code> and select Add -&gt; Sampler -&gt; Debug Sampler. Drag the <code>Debug Sampler</code> to where you want the view the variables, run the <code>Test Plan</code>, and view the variables in the <code>View Results Tree</code></p>
+<h2 id="performance-testing">Performance Testing</h2>
+<p>While debugging the test from the GUI is great, it can cause slowdowns when testing for performance. The CLI mode can be used instead:</p>
+<h6 id="running-a-jmx-file-from-the-cli">Running a JMX File from the CLI</h6>
+<pre data-lang="powershell" style="background-color:#1e1e1e;color:#dcdcdc;" class="language-powershell "><code class="language-powershell" data-lang="powershell"><span>jmeter -n -e </span><span style="color:#569cd6;">`
+</span><span>-t </span><span style="color:#d69d85;">&quot;test_plan.jmx&quot; </span><span style="color:#569cd6;">`
+</span><span>-l </span><span style="color:#d69d85;">&quot;results&quot; </span><span style="color:#569cd6;">`
+</span><span>-o </span><span style="color:#d69d85;">&quot;report&quot;
+</span></code></pre>
+<p>The report folder contains a statically generated web page that contains a bunch of useful information on how well your feature performed</p>
+
+    </article>
+  
+        </main>
+
+        
+          <footer id="footer">
+    <span class="footer-item"><a href="https://ascallion.com/about/">About</a></span>
+    <span class="footer-item"><a class="unstyle" href="#">Back to Top</a></span>
+    <span class="footer-item"><a href="https://github.com/gscanlon21">Github</a></span>
+</footer>
+           
+        
+        
+        
+    </body>
+</html>
