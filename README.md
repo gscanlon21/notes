@@ -1,0 +1,1 @@
+NOTE: Repo must be public for the free Github pages feature to work.
