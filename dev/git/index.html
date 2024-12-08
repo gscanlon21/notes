@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang=lang>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>ascallion</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="https://ascallion.com/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://ascallion.com/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://ascallion.com/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://ascallion.com/site.webmanifest?h=d3283d8cdd099d8504a1">
+
+        <link media="all" href="https://ascallion.com/site.css?h=b2f115cd5d07e3da0a2f" rel="stylesheet">
+        
+        <script src="https://ascallion.com/elasticlunr.min.js?h=4f648b9e42abdef9c436"></script>
+        <script src="https://ascallion.com/search_index.en.js?h=b87ea318404ff76179cd"></script>
+        <script async src="https://ascallion.com/scripts/search.js?h=62fc04a7b5e3ceaa995f"></script>
+    </head>
+
+    <body>
+        
+        <header id="header">
+          <span class="header-item">
+
+<div class="search-container">
+  <input id="search" type="search" placeholder="Search">
+
+  <div class="search-results" style="display: none;">
+      <div class="search-results__items"></div>
+  </div>
+</div></span>
+          <span class="header-item"><a class="unstyle" href="https://ascallion.com/">ascallion</a></span>
+          <span class="header-item"><a href="https://ascallion.com/sitemap/">Sitemap</a></span>
+        </header>
+        
+
+        <main id="main" class="markdown-body">
+          
+    <div class="header-wrap">
+        <div class="sidebar-left header header-wrap">
+            <div class="header-item">
+                <header id="summary">
+    <h2 class="title">
+     
+        <a href="https://git-scm.com/">Git</a>
+    
+     
+        <sub class="version">2.30.1</sub>
+    
+    </h2> 
+    
+    <dl>
+        
+
+        
+
+         
+        <dt>References</dt>
+        
+            <dd class="summary-item">
+                
+                1&#32;-&#32;
+                
+                <a href="https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;13630849&#x2F;git-difference-between-assume-unchanged-and-skip-worktree">CC-BY-SA Borealid</a>
+            </dd>
+        
+        
+
+         
+        <dt>Last Updated</dt>
+        <dd>2023-03-04</dd>
+        
+        
+        <dt>Reading Time</dt>
+        <dd>2 minute(s)</dd>
+    </dl>
+</header>
+            </div>
+            <div class="header-item">
+                
+
+<nav>
+    <h3>Table of Contents</h3>
+    <ul>
+        
+        <li>
+            <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;git&#x2F;#git">Git</a>
+            
+            <ul>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;git&#x2F;#backing-up-a-repository">Backing Up a Repository</a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;git&#x2F;#shrinking-the-git-folder">Shrinking the .git Folder</a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;git&#x2F;#git-update-index-1">git update-index[1]</a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;git&#x2F;#git-push-fails-with-missing-tree">Git push fails with &#x27;missing tree&#x27;</a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;git&#x2F;#split-up-a-large-feature-branch">Split Up a Large (feature) Branch</a>
+                </li>
+                
+            </ul>
+            
+        </li>
+        
+    </ul>
+</nav>
+
+            </div>
+        </div>
+
+        <div class="sidebar-right">
+            <nav class="sitemap ">
+                <h3>Ancestors</h3>
+                
+<ul>
+    
+        
+        <li><a href="https://ascallion.com/dev/">Dev</a></li>
+    
+        
+        <li><a href="https://ascallion.com/">ascallion</a></li>
+    
+</ul>
+
+                <br>
+                <div class="screen-large">
+                    <h3>Sitemap</h3>
+                    
+
+
+    
+        <ul class="sitemap-list">
+            
+
+    
+    
+        <li><a href="https://ascallion.com/about/">About</a></li>
+    
+
+    
+    
+
+    
+    
+
+
+        </ul>
+    
+    
+    
+        
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/">Dev</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev/architecting/">Architecting</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/conventional-commits/">Conventional Commits</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/curl/">Curl</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/encryption/">Encryption</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/exceptions/">Exceptions</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/git/">Git</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/iisexpress/">IIS Express</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/jmeter/">JMeter</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/openssl/">OpenSSL</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/powershell/">Powershell</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/redis/">Redis</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/regex/">Regex</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/rust/">Rust</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/ssh/">SSH</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/jq/">jq</a></li>
+    
+
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/dotnet/">.NET</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev/dotnet/csharp/">CSharp</a></li>
+    
+
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/dotnet/framework/">.NET Framework</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/dotnet/framework/tools/">Tools</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev/dotnet/framework/tools/fuslogvw/">Fuslogvw.exe</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/dotnet/visual_studio/">Visual Studio</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev/dotnet/visual_studio/interactive/">C# Interactive</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/postgresql/">PostgreSQL</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev/postgresql/permissions/">Permissions</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/sql_server/">SQL Server</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/dev/windows/">Windows</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/performance-monitor/">Performance Monitor</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/chkdsk/">chkdsk</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/netsh/">netsh</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+    </ul>
+</details>
+
+
+    
+        
+
+
+<details >
+    <summary><a href="https://ascallion.com/notes/">Notes</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/notes/android/">Android</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+    
+        
+
+
+<details >
+    <summary><a href="https://ascallion.com/plants/">Plants</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/plants/lawn_care/">Lawn Care</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+            
+
+
+<details >
+    <summary><a href="https://ascallion.com/plants/native_plants/">Native Plants</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+
+
+        
+    </ul>
+</details>
+
+
+        
+    </ul>
+</details>
+
+
+    
+        
+
+
+<details >
+    <summary><a href="https://ascallion.com/projects/">Projects</a></summary>
+    
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-diary-a-day/">A Diary a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-feast-a-day/">A Feast a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-workout-a-day/">A Workout a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/reverse-dictionary/">Reverse Dictionary</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/system-sql/">System SQL</a></li>
+    
+
+
+
+        
+    </ul>
+</details>
+
+
+    
+
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <article id="content">
+        <h1 id="git">Git</h1>
+<p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+<h2 id="backing-up-a-repository">Backing Up a Repository</h2>
+<p>Use <code>git bundle</code> to create a full or partial backup of a repository. The bundle itself functions as a repository so you can restore by cloning the bundle or adding it as a remote.</p>
+<pre data-lang="powershell" style="background-color:#1e1e1e;color:#dcdcdc;" class="language-powershell "><code class="language-powershell" data-lang="powershell"><span>git bundle create backup.bundle --all
+</span></code></pre>
+<h6 id="creating-a-full-git-bundle">Creating a full git bundle</h6>
+<h2 id="shrinking-the-git-folder">Shrinking the .git Folder</h2>
+<p>Use <code>-f</code> to "drop all old deltas".</p>
+<pre data-lang="powershell" style="background-color:#1e1e1e;color:#dcdcdc;" class="language-powershell "><code class="language-powershell" data-lang="powershell"><span>git repack -a -d --depth=</span><span style="color:#b5cea8;">250 </span><span>--window=</span><span style="color:#b5cea8;">250 </span><span style="color:#608b4e;">#-f
+</span></code></pre>
+<h6 id="source"><a rel="noreferrer" href="https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html">Source</a></h6>
+<h2 id="git-update-index-1">git update-index<sup>[1]</sup></h2>
+<h3 id="skip-worktree">--skip-worktree</h3>
+<p>Useful when you instruct git not to touch a specific file ever because developers should change it. For example, if the main repository upstream hosts some production-ready configuration files and you don’t want to accidentally commit changes to those files, --skip-worktree is exactly what you want.</p>
+<h3 id="assume-unchanged">--assume-unchanged</h3>
+<p>Assumes that a developer shouldn’t change a file. This flag is meant for improving performance for non-changing folders like SDKs.</p>
+<h2 id="git-push-fails-with-missing-tree">Git push fails with 'missing tree'</h2>
+<p>Not sure what causes this, but one of two things will usually clear it up. <code>Fetch</code> first and then run <code>git push --no-thin</code> or <code>git gc --aggressive --prune=now</code>.</p>
+<h2 id="split-up-a-large-feature-branch">Split Up a Large (feature) Branch</h2>
+<ul>
+<li>Pull and make sure the feature branch is up-to-date with main.</li>
+<li>Checkout a new branch from the main branch.</li>
+<li>Merge the feature branch into the working tree.</li>
+<li>Unstage or discard unwanted changes and commit staged changes.</li>
+</ul>
+
+    </article>
+  
+        </main>
+
+        
+          <footer id="footer">
+    <span class="footer-item"><a href="https://ascallion.com/about/">About</a></span>
+    <span class="footer-item"><a class="unstyle" href="#">Back to Top</a></span>
+    <span class="footer-item"><a href="https://github.com/gscanlon21">Github</a></span>
+</footer>
+           
+        
+        
+        
+    </body>
+</html>
