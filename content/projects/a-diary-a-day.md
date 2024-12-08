@@ -1,23 +1,23 @@
 +++
-title = "A Feast a Day"
-description = "A personalizable recipe newsletter."
+title = "A Diary a Day"
+description = "A personalizable mood tracking newsletter."
 updated = 2024-12-08
 
 [extra]
-site = "https://afeastaday.com/"
+site = "https://adiaryaday.com/"
 see_also = [
-  { title = "Github", href="https://github.com/gscanlon21/a-feast-a-day" }
+  { title = "Github", href="https://github.com/gscanlon21/a-diary-a-day" }
 ]
 +++
 
 
-# A Feast a Day
+# A Diary a Day
 
-A Feast a Day is a recipe newsletter aimed at making it easy and simple to meal plan.
+A Diary a Day is a diary newsletter aimed at making it easy and simple to track tasks.
 
 ## App
 
-[Download the app](https://github.com/gscanlon21/a-feast-a-day/releases). App tokens are generated from the preferences page on the [website](https://afeastaday.com). 
+[Download the app](https://github.com/gscanlon21/a-adiary-a-day/releases). App tokens are generated from the preferences page on the [website](https://adiaryaday.com). 
 
 The program [Obtainium](https://github.com/ImranR98/Obtainium) can be used for automatic updates. 
 

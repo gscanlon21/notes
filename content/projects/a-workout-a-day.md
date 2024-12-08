@@ -1,7 +1,7 @@
 +++
 title = "A Workout a Day"
 description = "A personalizable workout routine newsletter."
-updated = 2023-02-28
+updated = 2024-12-08
 
 [extra]
 site = "https://aworkoutaday.com/"
