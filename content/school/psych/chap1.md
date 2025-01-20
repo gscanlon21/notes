@@ -10,14 +10,24 @@ see_also = []
 
 ## Exam Questions
 
-How does a subfield of psychology relate to the three aspects of psych?
+### How does a subfield of psychology relate to the three roles of psych?
 
 For example:
 
 Conservation Psychology
-- Research - How does 
-- Practice - 
-- Education - 
+- Research - How do people respond and react to natural elements? Listening to, or surveying them.
+- Practice - How to design signs to better message people to protect nature?
+- Education - Teaching classes on conservation efforts.
+
+### Integrative Themes of Psychology
+
+- Relies on emperical evidence and adapts as new data develops.
+- Explains general principles that govern behaivior while recognizing individual differences.
+- Psychological, bio, social, and cultural factors influence behaviors and mental processes.
+- Psychology values diversity, promotes equity, and fosters inclusion.
+- Our perceptions and biases filter our experiences through an imperfect lens.
+- Applying psychological principles can change our lives, communities, orgs, in positive ways.
+- Ethical principles guide psychology research and practice.
 
 ## Introducing Psychology
 
@@ -58,11 +68,11 @@ Help students understand, apply, and value psychological science.
 
 How do all areas of psychology help people connect and interact with the natural world.
 
-##### Researchers - How to get people interested in conservation?
+##### Researchers - How do people respond and react to natural elements? Listening to, or surveying them.
 
-##### Practitioners -
+##### Practitioners - How to design signs to better message people to protect nature?
 
-##### Educators - 
+##### Educators - Teaching classes on conservation efforts.
 
 ### Major Figures
 
