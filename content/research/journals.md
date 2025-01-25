@@ -10,7 +10,7 @@ see_also = []
 
 # Scientific Journals
 
-## Behavior and in Psychopathology
+## Behavior and Psychopathology
 
 ### [Neural Plasticity](https://onlinelibrary.wiley.com/journal/6020)
 
