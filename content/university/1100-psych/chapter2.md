@@ -1,5 +1,5 @@
 +++
-title = "Psych - Chapter 2"
+title = "Chapter 2"
 updated = 2025-01-22
 
 [extra]
@@ -20,7 +20,7 @@ A theory is an integrated set of principles that explains and predicts many, but
 
 ## IRB = Institutional Review Board
 
-A group fo regular people and scientists that make sure an experiement is ethical.
+A group of regular people and scientists that make sure an experiement is ethical.
 
 ## Research Designs
 

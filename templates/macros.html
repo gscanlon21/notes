@@ -1,7 +1,13 @@
-{% macro render_list_links(pages) %}
+{# Uses the Tera templating engine. https://keats.github.io/tera/ #}
+
+
+{#
+    Renders a list of pages.
+#}
+{% macro render_list_links(pages, exclude='') %}
 {% for item in pages | sort(attribute="title") %}
     {# Warning: using page as the loop variable causes bugs since it already exists in context #}
-    {% if item.extra.sitemapped | default(value=true) %}
+    {% if item.extra.sitemapped | default(value=true) and item.relative_path != exclude %}
         <li><a href="{{ get_url(path="@/" ~ item.relative_path) }}">{{ item.title }}</a></li>
     {% endif %}
 {% endfor %}
@@ -9,12 +15,7 @@
 
 
 {#
-    Iterates though the site's pages and subsection and renders nested lists for each
-    
-    A max_recursion of 0 will render just the current directory and it's pages.
-    A max_recursion or 1 will render the current directory's pages, subsections, and sub-pages.
-    A max_recursion or 2 will render the current directory's pages, subsections, sub-pages, and sub-pages' subsections.
-    And so on...
+    Iterates though the site's pages and subsection and renders nested lists for each.
 #}
 {% macro render_sitemap(path, open=true, first_pass=true) %}
 {% set section_info = get_section(path=path) %}
@@ -45,7 +46,7 @@
 
 
 {#
-    Iterates though the site's ancestors and renders lists for each
+    Iterates though the site's ancestors and renders lists for each.
 #}
 {% macro render_ancestors(ancestors) %}
 <ul>
@@ -53,5 +54,16 @@
         {% set ancestor_info = get_section(path=ancestor) %}
         <li><a href="{{ get_url(path="@/" ~ ancestor_info.relative_path) }}">{{ ancestor_info.title }}</a></li>
     {% endfor %}
+</ul>
+{% endmacro header %}
+
+
+{#
+    Renders a page's siblings.
+#}
+{% macro render_siblings(for) %}
+{% set ancestor_section = get_section(path=for.ancestors | last) %}
+<ul class="sitemap-list">
+    {{ macros::render_list_links(pages=ancestor_section.pages, exclude=for.relative_path) }}
 </ul>
 {% endmacro header %}

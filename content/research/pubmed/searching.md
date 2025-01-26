@@ -1,10 +1,14 @@
 +++
 title = "Pubmed - Searching"
-updated = 2025-01-17
+updated = 2025-01-26
 
 [extra]
-site = "https://guides.library.harvard.edu/c.php?g=310308&p=9009447"
-see_also = []
+site = "https://pubmed.ncbi.nlm.nih.gov/advanced/"
+see_also = [
+  { title = "User Guide", href="https://pubmed.ncbi.nlm.nih.gov/help/" },
+  { title = "Searching in PubMed", href="https://guides.library.harvard.edu/c.php?g=310308&p=9009447" },
+  { title = "Find Evidence-Based Articles", href="https://hslib.jabsom.hawaii.edu/pubmed/find-ebm-articles" }
+]
 +++
 
 # Searching
@@ -67,3 +71,31 @@ There are many techniques to refine your search in PubMed, including Boolean Ope
 Often, you may want to find a particular citation in PubMed. There are a couple of quick and easy ways to do this, so that you don't have to go through a formal search.
 
 One way is the PubMed ID (PMID). It is a series of number and appears with each citation. If you have that, simply type (or copy and paste) it into the search box and the citation appears.
+
+
+
+## Find Evidence-Based Articles
+
+### Filter (Limit) to Article Type
+Most citations in PubMed are for journal articles. However, you may limit your retrieval based on the type of material the article represents. Use the Filters on the Results page sidebar and look at the Article Types checklist which contains a list of frequently searched publication types.
+
+For example, choose Randomized Controlled Trial or Clinical Trial or Meta-Analysis from the list.
+ 
+
+### PubMed Clinical Queries
+Enter your search terms, and evidence-filtered citations will appear under Clinical Study Categories. Systematic Reviews or Medical Genetics. The Clinical Queries link is found on the PubMed homepage under Find.
+
+#### Clinical Study Categories
+This specialized search query with built-in research methodology search filters is intended for clinicians. Five study categories or filters are provided: etiology, diagnosis, therapy, prognosis, and clinical prediction guides. Two emphasis categories or filters are provided: broad/sensitive search (includes relevant articles but probably some less relevant) and narrow/specific search (more precise articles, with less retrieval).
+NOTE: We suggest changing to Narrow scope rather than Broad.
+
+#### Systematic Reviews
+This feature is provided to help clinicians locate systematic reviews and similar articles. It combines your search term(s) with citations identified as systematic reviews, meta-analyses, reviews of clinical trials, evidence-based medicine, consensus development conferences, and guidelines.
+
+The resulting retrieval in PubMed Clinical Queries can be further refined using PubMed's Filters, e.g., English language, humans.
+ 
+
+### Limit to Articles with Structured Abstracts
+Many abstracts that are added to PubMed include section labels such as BACKGROUND, OBJECTIVE, METHODS, RESULTS, and CONCLUSIONS. These 'structured' abstracts appear in many different article types, such as review articles, original research, and practice guidelines, and facilitate skimming of citations for relevance and specific information, such as research design within the Methods section.  The presence of structured abstracts in citations is a searchable feature in PubMed.  To limit to citations containing structured abstracts, include the term hasstructuredabstract in the search box.
+
+Example: valerian AND sleep AND hasstructuredabstract
