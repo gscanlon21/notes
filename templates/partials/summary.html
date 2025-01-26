@@ -19,7 +19,13 @@
         {% if page.extra.see_also | default(value=section.extra.see_also) %} 
         <dt>See Also</dt>
         {% for also in page.extra.see_also | default(value=section.extra.see_also) %}
-            <dd class="summary-item"><a href="{{ also.href }}">{{ also.title | default(value=also.href) | safe }}</a></dd>
+            <dd class="summary-item">
+                {% if also.href %} 
+                    <a href="{{ also.href }}">{{ also.title | default(value=also.href) | safe }}</a>
+                {% else %}
+                    <span>{{ also.title }}</span>
+                {% endif %}
+            </dd>
         {% endfor %}
         {% endif %}
 
