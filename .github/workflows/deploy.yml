@@ -15,9 +15,12 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      # Checkout
-      - uses: actions/checkout@v4
-      # Build & deploy
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          ssh-key: '${{ secrets.NOTES_SSH_KEY }}'
+
       - name: Deploy to gh-pages branch
         uses: shalzz/zola-deploy-action@master
         env:
