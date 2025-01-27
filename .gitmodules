@@ -1,0 +1,3 @@
+[submodule "content/hidden"]
+	path = content/hidden
+	url = https://github.com/gscanlon21/_notes
