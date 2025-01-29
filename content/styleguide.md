@@ -1,5 +1,5 @@
 +++
-title = "Stylesheet"
+title = "Styleguide"
 
 [extra]
 sitemapped = false
