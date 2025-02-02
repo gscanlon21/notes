@@ -139,3 +139,13 @@ blockquote > :only-child {
   border-left: .2em solid color(--color-text, .5);
   padding-left: .5em;
 }
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 1em;
+    border: 1px solid color(--color-text, .5);
+  }
+}
