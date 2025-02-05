@@ -1,9 +1,10 @@
 // Sitemap
 .sitemap {
+  /* If we want the sitemap to span multiple columns.
   &.full {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
+  }*/
   
   & > * {
     margin-block-end: 1em;
