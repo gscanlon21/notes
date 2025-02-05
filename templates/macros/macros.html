@@ -20,7 +20,7 @@
 {% macro render_sitemap(path, open=true, first_pass=true) %}
 {% set section_info = get_section(path=path) %}
 {% if first_pass %}
-    {% if section_info.pages %}
+    {% if section_info.pages and not section_info.pages | filter(attribute="extra.sitemapped", value=false) | length > 0 %}
         <ul class="sitemap-list">
             {{ macros::render_list_links(pages=section_info.pages) }}
         </ul>

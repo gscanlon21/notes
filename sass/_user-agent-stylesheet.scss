@@ -18,11 +18,11 @@ body {
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   
-  padding: 0;
   margin: $base-padding;
+  max-width: var(--body-width);
   width: 100%;
-  max-width: 80rem;
-  
+  padding: 0;
+
   // Sticky footer
   min-height: calc(100% - 2rem);
   display: flex;

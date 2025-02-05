@@ -1,5 +1,10 @@
 // Sitemap
 .sitemap {
+  &.full {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
   & > * {
     margin-block-end: 1em;
   }
@@ -40,25 +45,26 @@ main#main {
   }
 }
 
-@media screen and (min-width:130rem) {
+@media screen and (min-width: $large-width) {
   // Move the table of contents to the left sidebar when the screen size is sufficiently large
   .sidebar-left {
-    position: absolute;
     top: 0;
-    left: -20rem;
-    width: 19.5rem;
+    position: absolute;
+    width: $sidebar-width;
+    left: -$sidebar-width - .5rem;
   }
 
   // Show the sitemap on the page template when the screen size is sufficiently large
-  .sidebar-right { 
+  .sidebar-right {
+    top: 0; 
     position: absolute;
-    top: 0;
-    right: -20rem;
-    width: 19.5rem;
+    width: $sidebar-width;
+    right: -$sidebar-width - .5rem;
   }
 }
 
 .header-wrap {
+  gap: 1rem;
   display: flex;
   flex-wrap: wrap;
 

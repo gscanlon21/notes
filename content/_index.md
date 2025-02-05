@@ -1,4 +1,6 @@
 +++
 title = "ascallion"
-redirect_to = "sitemap"
+template = "sitemap.html"
 +++
+
+# ascallion

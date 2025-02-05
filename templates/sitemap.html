@@ -1,4 +1,4 @@
-{% import "macros.html" as macros %}
+{% import "macros/macros.html" as macros %}
 {% extends "partials/base.html" %}
 
 {% block content %}
@@ -7,6 +7,9 @@
         {{ macros::render_sitemap(path="_index.md", open=false) }}
     </nav>
 
-    {% block debug %}
-    {% endblock debug %}
+    {% if section.content | default(value=page.content) %}
+        <article id="content">
+            {{ section.content | default(value=page.content) | safe }}
+        </article>
+    {% endif %}
 {% endblock content %}

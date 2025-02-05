@@ -1,5 +1,6 @@
 +++
 title = "Styleguide"
+in_search_index = false
 
 [extra]
 sitemapped = false
