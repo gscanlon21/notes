@@ -63,7 +63,12 @@
 #}
 {% macro render_siblings(for) %}
 {% set ancestor_section = get_section(path=for.ancestors | last) %}
-<ul class="sitemap-list">
-    {{ macros::render_list_links(pages=ancestor_section.pages, exclude=for.relative_path) }}
-</ul>
+{% if ancestor_section.pages and ancestor_section.pages | length > 1 %}
+<h3>Siblings</h3>
+<nav class="sitemap">
+    <ul class="sitemap-list">
+        {{ macros::render_list_links(pages=ancestor_section.pages, exclude=for.relative_path) }}
+    </ul>
+</nav>
+{% endif %}
 {% endmacro header %}

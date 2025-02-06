@@ -18,10 +18,7 @@
                 {{ macros::render_ancestors(ancestors=page.ancestors) }}
             </nav>
             
-            <h3>Siblings</h3>
-            <nav class="sitemap">
-                {{ macros::render_siblings(for=page) }}
-            </nav>
+            {{ macros::render_siblings(for=page) }}
             
             <div class="screen-large">
                 <h3>Sitemap</h3>
