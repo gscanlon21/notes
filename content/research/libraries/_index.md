@@ -1,3 +1,3 @@
 +++
-title = "Libraries
+title = "Libraries"
 +++
