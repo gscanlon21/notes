@@ -1,7 +1,7 @@
 <header id="summary">
     <h2 class="title">
     {% if page.extra.site | default(value=section.extra.site) %} 
-        <a href="{{ page.extra.site | default(value=section.extra.site) | safe }}">{{ page.title | default(value=section.title) }}</a>
+        <a href="{{ page.extra.site | default(value=section.extra.site) | safe }}" rel="noreferrer">{{ page.title | default(value=section.title) }}</a>
     {% else %}
         {{ page.title | default(value=section.title) }}
     {% endif %}
@@ -21,7 +21,7 @@
         {% for also in page.extra.see_also | default(value=section.extra.see_also) %}
             <dd class="summary-item">
                 {% if also.href %} 
-                    <a href="{{ also.href }}">{{ also.title | default(value=also.href) | safe }}</a>
+                    <a href="{{ also.href }}" rel="noreferrer">{{ also.title | default(value=also.href) | safe }}</a>
                 {% else %}
                     <span>{{ also.title }}</span>
                 {% endif %}
