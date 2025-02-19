@@ -18,12 +18,10 @@
                 {{ macros::render_ancestors(ancestors=section.ancestors) }}
             </nav>
 
-            {% if section.subsections | length > 0 or section.pages | length > 0 %}
-                <h3>Subsections</h3>
-                <nav class="sitemap">
-                    {{ macros::render_sitemap(path=section.relative_path, open=false) }}
-                </nav>
-            {% endif %}
+            <h3>Subsections</h3>
+            <nav class="sitemap">
+                {{ macros::render_sitemap(path=section.relative_path, open=false) }}
+            </nav>
 
             <div class="screen-large">
                 <h3>Sitemap</h3>

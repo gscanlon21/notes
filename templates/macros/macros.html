@@ -30,17 +30,23 @@
         {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
     {% endfor %}
 {% elif config.base_url == "http://127.0.0.1:1111" or section_info.extra.in_sitemap | default(value=true) %}
-<details {% if open or section_info.transparent %}open{% endif %}>
-    <summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></summary>
-    
-    <ul class="sitemap-list">
-        {{ macros::render_list_links(pages=section_info.pages) }}
-
+    {% if section_info.transparent %}
         {% for subsection in section_info.subsections | sort %}
             {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
         {% endfor %}
-    </ul>
-</details>
+    {% else %}
+        <details {% if open %}open{% endif %}>
+            <summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></summary>
+            
+            <ul class="sitemap-list">
+                {{ macros::render_list_links(pages=section_info.pages) }}
+        
+                {% for subsection in section_info.subsections | sort %}
+                    {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
+                {% endfor %}
+            </ul>
+        </details>
+    {% endif %}
 {% endif %}
 {% endmacro header %}
 
