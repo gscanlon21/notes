@@ -7,7 +7,7 @@
 {% macro render_list_links(pages, exclude='') %}
 {% for item in pages | sort(attribute="title") %}
     {# Warning: using page as the loop variable causes bugs since it already exists in context #}
-    {% if item.extra.sitemapped | default(value=true) and item.relative_path != exclude %}
+    {% if item.extra.in_sitemap | default(value=true) and item.relative_path != exclude %}
         <li><a href="{{ get_url(path="@/" ~ item.relative_path) }}">{{ item.title }}</a></li>
     {% endif %}
 {% endfor %}
@@ -20,7 +20,7 @@
 {% macro render_sitemap(path, open=true, first_pass=true) %}
 {% set section_info = get_section(path=path) %}
 {% if first_pass %}
-    {% if config.base_url == "http://127.0.0.1:1111" or not section_info.pages | filter(attribute="extra.sitemapped", value=false) | length > 0 %}
+    {% if config.base_url == "http://127.0.0.1:1111" or not section_info.pages | filter(attribute="extra.in_sitemap", value=false) | length > 0 %}
         <ul class="sitemap-list">
             {{ macros::render_list_links(pages=section_info.pages) }}
         </ul>
@@ -29,8 +29,8 @@
     {% for subsection in section_info.subsections | sort %}
         {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
     {% endfor %}
-{% elif config.base_url == "http://127.0.0.1:1111" or section_info.extra.sitemapped | default(value=true) %}
-<details {% if open %}open{% endif %}>
+{% elif config.base_url == "http://127.0.0.1:1111" or section_info.extra.in_sitemap | default(value=true) %}
+<details {% if open or section_info.transparent %}open{% endif %}>
     <summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></summary>
     
     <ul class="sitemap-list">
@@ -52,7 +52,7 @@
 <ul>
     {% for ancestor in ancestors %}
         {% set ancestor_info = get_section(path=ancestor) %}
-        {% if not ancestor_info.extra.hide_ancestor | default(value=false) %}
+        {% if not ancestor_info.transparent %}
             <li><a href="{{ get_url(path="@/" ~ ancestor_info.relative_path) }}">{{ ancestor_info.title }}</a></li>
         {% endif %}
     {% endfor %}

@@ -4,7 +4,7 @@ description = "A command line utility that allows you to query your native file 
 updated = 2023-02-28
 
 [extra]
-sitemapped = false
+in_sitemap = false
 see_also = [
   { title = "Github", href="https://github.com/gscanlon21/system-sql" }
 ]

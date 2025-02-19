@@ -3,7 +3,7 @@ title = "Styleguide"
 in_search_index = false
 
 [extra]
-sitemapped = false
+in_sitemap = false
 +++
 
 # Headers
