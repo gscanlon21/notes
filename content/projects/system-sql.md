@@ -2,6 +2,7 @@
 title = "System SQL"
 description = "A command line utility that allows you to query your native file system using SQL."
 updated = 2023-02-28
+in_search_index = false
 
 [extra]
 in_sitemap = false

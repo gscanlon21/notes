@@ -19,9 +19,9 @@
 #}
 {% macro render_sitemap(path, open=true, first_pass=true) %}
 {% set section_info = get_section(path=path) %}
+{% set show_localhost = section_info.transparent and config.base_url == "http://127.0.0.1:1111" %}
 {% if first_pass %}
-    {% if section_info.pages | length > section_info.pages | filter(attribute="extra.in_sitemap", value=false) | length
-        or config.base_url == "http://127.0.0.1:1111" %}
+    {% if section_info.pages | length > section_info.pages | filter(attribute="extra.in_sitemap", value=false) | length %}
         <ul class="sitemap-list">
             {{ macros::render_list_links(pages=section_info.pages) }}
         </ul>
@@ -30,7 +30,7 @@
     {% for subsection in section_info.subsections | sort %}
         {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
     {% endfor %}
-{% elif section_info.extra.in_sitemap | default(value=true) or config.base_url == "http://127.0.0.1:1111" %}
+{% elif section_info.extra.in_sitemap | default(value=true) or show_localhost %}
     {% if section_info.transparent %}
         {% for subsection in section_info.subsections | sort %}
             {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
