@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang=lang>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>ascallion</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="https://ascallion.com/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://ascallion.com/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://ascallion.com/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://ascallion.com/site.webmanifest?h=d3283d8cdd099d8504a1">
+
+        <link media="all" href="https://ascallion.com/site.css?h=38eb9baa1fbaa6656347" rel="stylesheet">
+        
+        <script src="https://ascallion.com/elasticlunr.min.js?h=4f648b9e42abdef9c436"></script>
+        <script src="https://ascallion.com/search_index.en.js?h=da5b0eb414c160cb976e"></script>
+        <script async src="https://ascallion.com/scripts/search.js?h=62fc04a7b5e3ceaa995f"></script>
+    </head>
+
+    <body>
+        
+        <header id="header">
+          <span class="header-item">
+
+<div class="search-container">
+  <input id="search" type="search" placeholder="Search">
+
+  <div class="search-results" style="display: none;">
+      <div class="search-results__items"></div>
+  </div>
+</div></span>
+          <span class="header-item"><a class="unstyle" href="https://ascallion.com/">ascallion</a></span>
+          <span class="header-item"><a href="https://ascallion.com/sitemap/">Sitemap</a></span>
+        </header>
+        
+
+        <main id="main" class="markdown-body">
+          
+    <div class="header-wrap">
+        <div class="sidebar-left header header-wrap">
+            <div class="header-item">
+                <header id="summary">
+    <h2 class="title">
+    
+        SQL Server
+    
+     
+        <sub class="version">2019</sub>
+    
+    </h2> 
+    
+    <dl>
+        
+
+         
+        <dt>See Also</dt>
+        
+            <dd class="summary-item">
+                 
+                    <a href="https:&#x2F;&#x2F;dbatools.io&#x2F;" rel="noreferrer">Powershell Commands</a>
+                
+            </dd>
+        
+        
+
+         
+        <dt>References</dt>
+        
+            <dd class="summary-item">
+                
+                1&#32;-&#32;
+                
+                <a href="https:&#x2F;&#x2F;docs.microsoft.com&#x2F;en-us&#x2F;sql&#x2F;t-sql&#x2F;statements&#x2F;create-index-transact-sql?view=sql-server-ver15">Creating Indexes</a>
+            </dd>
+        
+        
+
+        
+        
+        <dt>Reading Time</dt>
+        <dd>1 minute(s)</dd>
+    </dl>
+</header>
+            </div>
+            <div class="header-item">
+                
+
+<nav>
+    <h3>Table of Contents</h3>
+    <ul>
+        
+        <li>
+            <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;sql_server&#x2F;#microsoft-sql-server">Microsoft SQL Server</a>
+            
+            <ul>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;sql_server&#x2F;#metadata">Metadata</a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;sql_server&#x2F;#syntax">Syntax</a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;sql_server&#x2F;#table-types">Table Types</a>
+                </li>
+                
+            </ul>
+            
+        </li>
+        
+    </ul>
+</nav>
+
+            </div>
+        </div>
+        
+        <div class="sidebar-right">
+            <h3>Ancestors</h3>
+            <nav class="sitemap">
+                
+<ul>
+    
+        
+        
+            <li><a href="https://ascallion.com/">ascallion</a></li>
+        
+    
+        
+        
+            <li><a href="https://ascallion.com/dev/">Dev</a></li>
+        
+    
+</ul>
+
+            </nav>
+
+            <h3>Subsections</h3>
+            <nav class="sitemap">
+                
+
+
+
+    
+    
+    
+
+
+            </nav>
+
+            <div class="screen-large">
+                <h3>Sitemap</h3>
+                <nav class="sitemap">
+                    
+
+
+
+    
+    
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/">Dev</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/architecting/">Architecting</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/conventional-commits/">Conventional Commits</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/curl/">Curl</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/encryption/">Encryption</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/exceptions/">Exceptions</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/iisexpress/">IIS Express</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/jmeter/">JMeter</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/openssl/">OpenSSL</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/powershell/">Powershell</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/redis/">Redis</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/regex/">Regex</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/rust/">Rust</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/ssh/">SSH</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/jq/">jq</a></li>
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/dotnet/">.NET</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/dotnet/csharp/">CSharp</a></li>
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/dotnet/framework/">.NET Framework</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/dotnet/framework/tools/">Tools</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/dotnet/framework/tools/fuslogvw/">Fuslogvw.exe</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/dotnet/visual_studio/">Visual Studio</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/dotnet/visual_studio/interactive/">C# Interactive</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/git/">Git</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/git/config/">Git Config</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/git/submodules/">Git Submodules</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/postgresql/">PostgreSQL</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/postgresql/permissions/">Permissions</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/sql_server/">SQL Server</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/windows/">Windows</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/performance-monitor/">Performance Monitor</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/chkdsk/">chkdsk</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/netsh/">netsh</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/notes/">Notes</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/notes/android/">Android</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/notes/everything/">Everything</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/">Plants</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/ikebana/">Ikebana</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/native_plants/">Native Plants</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/plants/native_plants/nurseries/">Native Plants Nurseries</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/plant_impressions/">Plant Impressions</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/plant_labels/">Plant Labels</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/pressed_flowers/">Pressed Flowers</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/projects/">Projects</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-diary-a-day/">A Diary a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-feast-a-day/">A Feast a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-workout-a-day/">A Workout a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/reverse-dictionary/">Reverse Dictionary</a></li>
+    
+
+    
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/">Research</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/research/journals/">Scientific Journals</a></li>
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/citation-managers/">Citation Managers</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/research/citation-managers/endnote/">EndNote</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/research/citation-managers/zotero/">Zotero</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/libraries/">Libraries</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/research/libraries/webster-library/">Webster Library</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/pubmed/">Pubmed</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/research/pubmed/mesh/">Pubmed - MeSH</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/research/pubmed/searching/">Pubmed - Searching</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/references/">References</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/research/references/apa/">APA</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/writing/">Writing</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/research/writing/academic-phrasebank/">Academic Phrasebank</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/research/writing/persuasion/">Persuasion</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/studies/">Studies</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/studies/hpa-axis/">HPA Axis</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/studies/neuroimmune-network-hypothesis/">Neuroimmune Network Hypothesis</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/studies/sam-axis/">SAM Axis</a></li>
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/studies/epigenetics/">Epigenetics</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+
+    
+
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <article id="content">
+        <h1 id="microsoft-sql-server">Microsoft SQL Server</h1>
+<h2 id="metadata">Metadata</h2>
+<h3 id="view-the-service-name-and-account">View the service name and account</h3>
+<pre data-lang="sql" style="background-color:#1e1e1e;color:#dcdcdc;" class="language-sql "><code class="language-sql" data-lang="sql"><span>
+</span><span style="color:#569cd6;">SELECT</span><span> servicename, service_account
+</span><span style="color:#569cd6;">FROM </span><span style="color:#b4cea8;">sys</span><span>.</span><span style="color:#b4cea8;">dm_server_services
+</span><span>GO
+</span></code></pre>
+<h2 id="syntax">Syntax</h2>
+<h3 id="creating-indexes-1">Creating Indexes<sup>[1]</sup></h3>
+<h4 id="create-a-unique-index">Create a unique index</h4>
+<pre data-lang="sql" style="background-color:#1e1e1e;color:#dcdcdc;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#569cd6;">CREATE UNIQUE INDEX </span><span>idx_tablename_columnname ON tablename (columnname);
+</span></code></pre>
+<h4 id="create-a-clustered-index">Create a clustered index</h4>
+<pre data-lang="sql" style="background-color:#1e1e1e;color:#dcdcdc;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#569cd6;">CREATE UNIQUE INDEX </span><span>idx_tablename_columnname ON tablename (columnname);
+</span></code></pre>
+<h4 id="create-a-non-clustered-index">Create a non clustered index</h4>
+<pre data-lang="sql" style="background-color:#1e1e1e;color:#dcdcdc;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#569cd6;">CREATE INDEX </span><span>idx_tablename_columnname ON tablename (columnname);
+</span></code></pre>
+<h3 id="literals-with-join">Literals with Join</h3>
+<p>The <a rel="noreferrer" href="https://docs.microsoft.com/en-us/sql/t-sql/queries/table-value-constructor-transact-sql?view=sql-server-ver15">VALUES</a> constructor can be used to create a table of literals for use inside a query:</p>
+<pre data-lang="sql" style="background-color:#1e1e1e;color:#dcdcdc;" class="language-sql "><code class="language-sql" data-lang="sql"><span>
+</span><span style="color:#569cd6;">SELECT </span><span>*
+</span><span style="color:#569cd6;">FROM</span><span> (</span><span style="color:#569cd6;">VALUES</span><span> (@Id, @title), (</span><span style="color:#b5cea8;">1123</span><span>, </span><span style="color:#d69d85;">&#39;title&#39;</span><span>)) AS literals (Id, Title)
+</span><span>    </span><span style="color:#569cd6;">LEFT JOIN</span><span> Table_Name ON </span><span style="color:#b4cea8;">Table_Name</span><span>.</span><span style="color:#b4cea8;">Id </span><span>= </span><span style="color:#b4cea8;">literals</span><span>.</span><span style="color:#b4cea8;">Id
+</span></code></pre>
+<h2 id="table-types">Table Types</h2>
+<p>View user-defined table types</p>
+<pre data-lang="sql" style="background-color:#1e1e1e;color:#dcdcdc;" class="language-sql "><code class="language-sql" data-lang="sql"><span>
+</span><span style="color:#569cd6;">SELECT </span><span>* </span><span style="color:#569cd6;">FROM</span><span> [sys].[objects]
+</span><span style="color:#569cd6;">WHERE</span><span> [type] = </span><span style="color:#d69d85;">&#39;TT&#39;
+</span><span style="color:#569cd6;">ORDER BY</span><span> create_date </span><span style="color:#569cd6;">DESC
+</span></code></pre>
+
+    </article>
+
+        </main>
+
+        
+          <footer id="footer">
+    <span class="footer-item"><a href="https://ascallion.com/#content">About</a></span>
+    <span class="footer-item"><a class="unstyle" href="#">Back to Top</a></span>
+    <span class="footer-item"><a href="https://github.com/gscanlon21">Github</a></span>
+</footer>
+           
+        
+        
+        
+    </body>
+</html>
