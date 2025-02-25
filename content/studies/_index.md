@@ -2,6 +2,8 @@
 title = "Studies"
 +++
 
-# Studies
+# Goals
+- Finish adding microbiome and genetic recommendations to AFeastADay and ADiaryADay.
 
-Advocacy organizations.
+# Jobs
+- Advocacy organizations.
