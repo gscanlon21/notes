@@ -23,7 +23,7 @@ OpenSSL is a robust, commercial-grade, and full-featured toolkit for the Transpo
 
 There are several parts to a certificate chain: the root certificate authority (CA) certificate; the intermediate certificates; and the server certificate. All of these certificates must be trusted (chain of trust) for the client to accept an SSL connection. 
 
-### Missing indermediate certificate
+### Missing intermediate certificate
 
 Some servers may be misconfigured where only the server certificate is served. This causes problems on clients that aren't configured to look up intermediate certificates using [Authority Information Access](https://en.wikipedia.org/wiki/PKI_Resource_Query_Protocol#Certificate_Extensions).
 
