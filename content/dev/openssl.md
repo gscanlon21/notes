@@ -11,7 +11,7 @@ references = [
   { title = "Missing Intermediate Certificate", href = "https://unix.stackexchange.com/questions/559526/downloading-from-a-public-server-ssl-certificate-problem-unable-to-get-local-i" }
 ]
 see_also = [
-    { title = "Certificate Chains", href = "https://www.venafi.com/blog/how-do-certificate-chains-work" }
+  { title = "Certificate Chains", href = "https://www.venafi.com/blog/how-do-certificate-chains-work" }
 ]
 +++
 
