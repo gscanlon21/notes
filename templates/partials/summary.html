@@ -21,7 +21,13 @@
         {% for also in page.extra.see_also | default(value=section.extra.see_also) %}
             <dd class="summary-item">
                 {% if also.href %} 
-                    <a href="{{ also.href }}" rel="noreferrer">{{ also.title | default(value=also.href) | safe }}</a>
+                    <span><a href="{{ also.href }}" rel="noreferrer">{{ also.title | default(value=also.href) | safe }}</a>&#x1F517;</span>
+                {% elif also.file and also.file is starting_with("/") %}
+                    {% set url = get_url(path=also.file) %}
+                    <a href="{{ url }}">{{ also.title | default(value=also.file) | safe }}</a>
+                {% elif also.file and also.file is not starting_with("/") %}
+                    {% set url = get_url(path=current_path ~ also.file) %}
+                    <a href="{{ url }}">{{ also.title | default(value=also.file) | safe }}</a>
                 {% else %}
                     <span>{{ also.title }}</span>
                 {% endif %}
