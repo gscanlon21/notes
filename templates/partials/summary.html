@@ -1,13 +1,15 @@
 <header id="summary">
     <h2 class="title">
-    {% if page.extra.site | default(value=section.extra.site) %} 
-        <a href="{{ page.extra.site | default(value=section.extra.site) | safe }}" target="_blank" rel="noreferrer">{{ page.title | default(value=section.title) }}</a>
-    {% else %}
-        <span>{{ page.title | default(value=section.title) }}</span>
-    {% endif %}
-    {% if page.extra.version | default(value=section.extra.version) %} 
-        <sub class="version">{{ page.extra.version | default(value=section.extra.version) }}</sub>
-    {% endif %}
+        {% if page.extra.site | default(value=section.extra.site) %} 
+            <a href="{{ page.extra.site | default(value=section.extra.site) | safe }}" target="_blank" rel="noreferrer">
+                {{ page.title | default(value=section.title) }}
+            </a>
+        {% else %}
+            <span>{{ page.title | default(value=section.title) }}</span>
+        {% endif %}
+        {% if page.extra.version | default(value=section.extra.version) %} 
+            <sub class="version">{{ page.extra.version | default(value=section.extra.version) }}</sub>
+        {% endif %}
     </h2> 
     
     <dl>
