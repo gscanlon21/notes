@@ -1,5 +1,10 @@
 +++
 title = "Studies"
+
+[extra]
+see_also = [
+    { title = "Clinical Support: Comorbidities", file = "clinical-support-comorbidities.pdf" }
+]
 +++
 
 # Goals
