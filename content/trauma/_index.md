@@ -1,6 +1,8 @@
 +++
 title = "Trauma"
-render = false
+
+[extra]
+in_sitemap = false
 +++
 
 # AvPD
