@@ -1,5 +1,0 @@
-+++
-title = "Writings"
-+++
-
-# Writings
