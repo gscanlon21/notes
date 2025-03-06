@@ -1,8 +1,8 @@
 +++
-title = "Gut"
+title = "Laser"
 
 [extra]
 see_also = []
 +++
 
-# Gut
+# Laser
