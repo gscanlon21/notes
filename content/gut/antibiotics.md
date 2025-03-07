@@ -27,3 +27,7 @@ After the antibiotic course, the gut microbiome diversity is nuked. Taking probi
 
 # Oxalates
 Taking a course of antibiotics will likely kill of the bacteria that helps digest oxalates and other hard-to-digest foods. Probiotics and other digestive-aids may help. It's best to avoid foods high in oxalates for a while after taking a course of antibiotics.
+
+# Die-Off
+
+## Liver Support
