@@ -16,7 +16,9 @@ see_also = []
         - **26.00mm**: Use 52mm (max height of laser head) - 26mm (thickness of the stakes).
         - Use "Focus-Z" to reset the position of the laser head. "Move Z-" to lower the laser head for engraving.
 - Cuts / Layers
-    - Spd/Pwr: **400.0 / 40.0**
+    - Interval (mm): **0.044**
+    - Speed (mm/s): **400.00**
+    - Power (%): **40.00**
 
 ## Sanding
 
