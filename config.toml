@@ -1,5 +1,6 @@
 # https://www.getzola.org/documentation/getting-started/configuration/
 
+
 # Tab title
 title = "ascallion"
 
@@ -14,6 +15,7 @@ build_search_index = true
 
 default_language = "en"
 
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customized by setting the `highlight_theme` variable to a theme supported by Zola
@@ -25,6 +27,10 @@ highlight_theme = "visual-studio-dark" # idla, bbedit, inspired-github
 
 # Whether to set rel="noreferrer" for all external links
 external_links_no_referrer = true
+
+# Whether parsing of definition lists is enabled
+definition_list = false
+
 
 [extra]
 # Put all your custom variables here
