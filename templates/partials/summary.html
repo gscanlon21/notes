@@ -1,13 +1,15 @@
 <header id="summary">
     <h2 class="title">
-    {% if page.extra.site | default(value=section.extra.site) %} 
-        <a href="{{ page.extra.site | default(value=section.extra.site) | safe }}">{{ page.title | default(value=section.title) }}</a>
-    {% else %}
-        {{ page.title | default(value=section.title) }}
-    {% endif %}
-    {% if page.extra.version | default(value=section.extra.version) %} 
-        <sub class="version">{{ page.extra.version | default(value=section.extra.version) }}</sub>
-    {% endif %}
+        {% if page.extra.site | default(value=section.extra.site) %} 
+            <a href="{{ page.extra.site | default(value=section.extra.site) | safe }}" target="_blank" rel="noreferrer">
+                {{ page.title | default(value=section.title) }}
+            </a>
+        {% else %}
+            <span>{{ page.title | default(value=section.title) }}</span>
+        {% endif %}
+        {% if page.extra.version | default(value=section.extra.version) %} 
+            <sub class="version">{{ page.extra.version | default(value=section.extra.version) }}</sub>
+        {% endif %}
     </h2> 
     
     <dl>
@@ -19,7 +21,19 @@
         {% if page.extra.see_also | default(value=section.extra.see_also) %} 
         <dt>See Also</dt>
         {% for also in page.extra.see_also | default(value=section.extra.see_also) %}
-            <dd class="summary-item"><a href="{{ also.href }}">{{ also.title | default(value=also.href) | safe }}</a></dd>
+            <dd class="summary-item">
+                {% if also.href %} 
+                    <span><a href="{{ also.href }}" target="_blank" rel="noreferrer">{{ also.title | default(value=also.href) | safe }}</a>&#x1F517;</span>
+                {% elif also.file and also.file is starting_with("/") %}
+                    {% set url = get_url(path=also.file) %}
+                    <a href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
+                {% elif also.file and also.file is not starting_with("/") %}
+                    {% set url = get_url(path=current_path ~ also.file) %}
+                    <a href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
+                {% else %}
+                    <span>{{ also.title }}</span>
+                {% endif %}
+            </dd>
         {% endfor %}
         {% endif %}
 

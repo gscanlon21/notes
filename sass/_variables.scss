@@ -1,16 +1,20 @@
-// Converts hex to an rgb comma-separated string
-@function to-rgb($hex) {
-    @return red($hex), green($hex), blue($hex);
-}
-
-// Grabs the rgba value from a rgb comma-separated string
-@function color($variable, $alpha: 1) {
-    @return rgba(var($variable), $alpha);
-}
-
 $border-radius: .5em;
 $base-padding: 1em;
 $min-content-width: 16rem;
+$sidebar-width: 17.5rem;
+$small-width: 600px;
+$large-width: 1600px;
+
+@media (min-width: $large-width) {
+    :root {
+        --body-width: 60rem;
+    }
+}
+@media (max-width: ($large-width - 1px)) {
+    :root {
+        --body-width: 80rem;
+    }
+}
 
 @media (prefers-color-scheme: dark) {
     :root {

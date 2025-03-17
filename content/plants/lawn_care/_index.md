@@ -1,7 +1,9 @@
 +++
 title = "Lawn Care"
+in_search_index = false
 
 [extra]
+in_sitemap = false
 references = [
     { mark = "1", title = "buzzthelavenderman", href = "https://www.reddit.com/r/lawncare/comments/xvxumd/comment/ir3zckx" }
 ]

@@ -1,6 +1,5 @@
 +++
 title = "Git"
-updated = 2023-03-04
 
 [extra]
 site = "https://git-scm.com/"
