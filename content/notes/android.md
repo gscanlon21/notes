@@ -6,9 +6,7 @@ updated = 2023-12-21
 see_also = []
 +++
 
-# Android
-
-## Performance
+# Performance
 Compile all apps ahead of time
 
 ```
