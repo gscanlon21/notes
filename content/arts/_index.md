@@ -1,5 +1,3 @@
 +++
-title = "Reflections"
+title = "Arts"
 +++
-
-# Reflections
