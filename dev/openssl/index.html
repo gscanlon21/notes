@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang=lang>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>ascallion</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="https://ascallion.com/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://ascallion.com/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://ascallion.com/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://ascallion.com/site.webmanifest?h=d3283d8cdd099d8504a1">
+
+        <link media="all" href="https://ascallion.com/site.css?h=c70d4e98a4b2d1873d98" rel="stylesheet">
+        
+        <script src="https://ascallion.com/elasticlunr.min.js?h=4f648b9e42abdef9c436"></script>
+        <script src="https://ascallion.com/search_index.en.js?h=a809433e8ee88ab4342c"></script>
+        <script async src="https://ascallion.com/scripts/search.js?h=62fc04a7b5e3ceaa995f"></script>
+    </head>
+
+    <body>
+        
+        <header id="header">
+          <span class="header-item">
+
+<div class="search-container">
+  <input id="search" type="search" placeholder="Search">
+
+  <div class="search-results" style="display: none;">
+      <div class="search-results__items"></div>
+  </div>
+</div></span>
+          <span class="header-item"><a class="unstyle" href="https://ascallion.com/">ascallion</a></span>
+          <span class="header-item"><a href="https://ascallion.com/sitemap/">Sitemap</a></span>
+        </header>
+        
+
+        <main id="main" class="markdown-body">
+          
+    <div class="header-wrap">
+        <div class="sidebar-left header header-wrap">
+            <div class="header-item">
+                <header id="summary">
+    <h2 class="title">
+         
+            <a href="https://www.openssl.org/" target="_blank" rel="noreferrer">
+                OpenSSL
+            </a>
+        
+         
+            <sub class="version">1.1.1k</sub>
+        
+    </h2> 
+    
+    <dl>
+        
+
+         
+        <dt>See Also</dt>
+        
+            <dd class="summary-item">
+                 
+                    <span><a href="https:&#x2F;&#x2F;www.venafi.com&#x2F;blog&#x2F;how-do-certificate-chains-work" target="_blank" rel="noreferrer">Certificate Chains</a>&#x1F517;</span>
+                
+            </dd>
+        
+        
+
+         
+        <dt>References</dt>
+        
+            <dd class="summary-item">
+                
+                1&#32;-&#32;
+                
+                <a href="https:&#x2F;&#x2F;www.openssl.org&#x2F;">OpenSSL</a>
+            </dd>
+        
+            <dd class="summary-item">
+                
+                <a href="https:&#x2F;&#x2F;unix.stackexchange.com&#x2F;questions&#x2F;559526&#x2F;downloading-from-a-public-server-ssl-certificate-problem-unable-to-get-local-i">Missing Intermediate Certificate</a>
+            </dd>
+        
+        
+
+         
+        <dt>Last Updated</dt>
+        <dd>2021-05-24</dd>
+        
+        
+        <dt>Reading Time</dt>
+        <dd>1 minute(s)</dd>
+    </dl>
+</header>
+            </div>
+            <div class="header-item">
+                
+
+<nav>
+    <h3>Table of Contents</h3>
+    <ul>
+        
+        <li>
+            <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;openssl&#x2F;#openssl">OpenSSL</a>
+            
+            <ul>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;openssl&#x2F;#certificate-chain">Certificate Chain</a>
+                </li>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;ascallion.com&#x2F;dev&#x2F;openssl&#x2F;#pretty-printing-a-certificate">Pretty Printing a Certificate</a>
+                </li>
+                
+            </ul>
+            
+        </li>
+        
+    </ul>
+</nav>
+
+            </div>
+        </div>
+
+        <div class="sidebar-right">
+            <h3>Ancestors</h3>
+            <nav class="sitemap">
+                
+<ul>
+    
+        
+        
+            <li><a href="https://ascallion.com/">ascallion</a></li>
+        
+    
+        
+        
+            <li><a href="https://ascallion.com/dev/">Dev</a></li>
+        
+    
+</ul>
+
+            </nav>
+            
+            
+
+
+<h3>Siblings</h3>
+<nav class="sitemap">
+    <ul class="sitemap-list">
+        
+
+    
+    
+        <li><a href="https://ascallion.com/dev/architecting/">Architecting</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/conventional-commits/">Conventional Commits</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/curl/">Curl</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/encryption/">Encryption</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/exceptions/">Exceptions</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/iisexpress/">IIS Express</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/jmeter/">JMeter</a></li>
+    
+
+    
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/powershell/">Powershell</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/redis/">Redis</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/regex/">Regex</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/rust/">Rust</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/ssh/">SSH</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/jq/">jq</a></li>
+    
+
+
+    </ul>
+</nav>
+
+
+            
+            <div class="screen-large">
+                <h3>Sitemap</h3>
+                <nav class="sitemap">
+                    
+
+
+
+    
+    
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/apps/">Apps</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/apps/everything/">Everything</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/apps/lively/">Lively (Dynamic Wallpaper)</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/arts/">Arts</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/arts/haikus/">Haikus</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/">Dev</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/architecting/">Architecting</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/conventional-commits/">Conventional Commits</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/curl/">Curl</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/encryption/">Encryption</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/exceptions/">Exceptions</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/iisexpress/">IIS Express</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/jmeter/">JMeter</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/openssl/">OpenSSL</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/powershell/">Powershell</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/redis/">Redis</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/regex/">Regex</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/rust/">Rust</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/ssh/">SSH</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/jq/">jq</a></li>
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/dotnet/">.NET</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/dotnet/csharp/">CSharp</a></li>
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/dotnet/framework/">.NET Framework</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/dotnet/framework/tools/">Tools</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/dotnet/framework/tools/fuslogvw/">Fuslogvw.exe</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/dotnet/visual_studio/">Visual Studio</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/dotnet/visual_studio/interactive/">C# Interactive</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/dotnet/visual_studio/settings/">Visual Studio Settings</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/git/">Git</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/git/config/">Git Config</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/git/submodules/">Git Submodules</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/postgresql/">PostgreSQL</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/postgresql/permissions/">Permissions</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/sql_server/">SQL Server</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/dev/windows/">Windows</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/performance-monitor/">Performance Monitor</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/chkdsk/">chkdsk</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/dism/">dism</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/netsh/">netsh</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/dev/windows/sfc/">sfc</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/gut/">Gut</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/gut/antibiotics/">Antibiotics</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/laser/">Laser</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/laser/lightburn/">Lightburn</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/laser/polar/">Polar</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/micro/">Micro</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/micro/wled/">W-LED</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/notes/">Notes</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/notes/android/">Android</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/notes/symbols/">Symbols</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/">Plants</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/plants/ikebana/">Ikebana</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/plants/plant-impressions/">Plant Impressions</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/plants/plant-labels/">Plant Labels</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/plants/pressed-flowers/">Pressed Flowers</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/plants/rain-barrels/">Rain Barrels</a></li>
+    
+
+
+        
+                
+                    
+
+
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/native_plants/">Native Plants</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/plants/native_plants/nurseries/">Native Plants Nurseries</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/projects/">Projects</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-diary-a-day/">A Diary a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-feast-a-day/">A Feast a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/a-workout-a-day/">A Workout a Day</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/projects/reverse-dictionary/">Reverse Dictionary</a></li>
+    
+
+    
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/">Research</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/research/journals/">Scientific Journals</a></li>
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/citation-managers/">Citation Managers</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/research/citation-managers/endnote/">EndNote</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/research/citation-managers/zotero/">Zotero</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/libraries/">Libraries</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/research/libraries/webster-library/">Webster Library</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/pubmed/">Pubmed</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/research/pubmed/mesh/">Pubmed - MeSH</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/research/pubmed/searching/">Pubmed - Searching</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/references/">References</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/research/references/apa/">APA</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/writing/">Writing</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/research/writing/academic-phrasebank/">Academic Phrasebank</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/research/writing/persuasion/">Persuasion</a></li>
+    
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/studies/">Studies</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+    
+    
+        <li><a href="https://ascallion.com/studies/hpa-axis/">HPA Axis</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/studies/neuroimmune-network-hypothesis/">Neuroimmune Network Hypothesis</a></li>
+    
+
+    
+    
+        <li><a href="https://ascallion.com/studies/sam-axis/">SAM Axis</a></li>
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/studies/epigenetics/">Epigenetics</a></summary>
+            
+            <ul class="sitemap-list">
+                
+
+
+        
+                
+            </ul>
+        </details>
+    
+
+
+                
+            </ul>
+        </details>
+    
+
+
+    
+        
+
+
+
+
+    
+        
+
+
+
+
+    
+
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <article id="content">
+        <h1 id="openssl">OpenSSL</h1>
+<p>OpenSSL is a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols<sup>[1]</sup></p>
+<h2 id="certificate-chain">Certificate Chain</h2>
+<p>There are several parts to a certificate chain: the root certificate authority (CA) certificate; the intermediate certificates; and the server certificate. All of these certificates must be trusted (chain of trust) for the client to accept an SSL connection.</p>
+<h3 id="missing-intermediate-certificate">Missing intermediate certificate</h3>
+<p>Some servers may be misconfigured where only the server certificate is served. This causes problems on clients that aren't configured to look up intermediate certificates using <a rel="noreferrer" href="https://en.wikipedia.org/wiki/PKI_Resource_Query_Protocol#Certificate_Extensions">Authority Information Access</a>.</p>
+<p>You can query for missing certificates with</p>
+<pre data-lang="powershell" style="background-color:#1e1e1e;color:#dcdcdc;" class="language-powershell "><code class="language-powershell" data-lang="powershell"><span>openssl s_client -showcerts -connect www.ascallion.com:</span><span style="color:#b5cea8;">443
+</span></code></pre>
+<pre style="background-color:#1e1e1e;color:#dcdcdc;"><code><span>CONNECTED(0000019C)
+</span><span>depth=1 C = US, O = Let&#39;s Encrypt, CN = R3
+</span><span>verify error:num=20:unable to get local issuer certificate
+</span><span>verify return:1
+</span><span>depth=0 CN = ascallion.com
+</span><span>verify return:1
+</span><span>---
+</span><span>Certificate chain
+</span><span> 0 /*order of the certificate in the chain*/ s /*subject*/:CN = ascallion.com
+</span><span>   i /*issuer -- should match the next certificates subject*/:C = US, O = Let&#39;s Encrypt, CN = R3
+</span><span>-----BEGIN CERTIFICATE-----
+</span><span>MIIGLjCCBRagAwIBAgISBKHvxXgqHiNKdFT82oNvR7SbMA0GCSqGSIb3DQEBCwUA
+</span><span>MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+</span><span>EwJSMzAeFw0yMTAyMTEwMDE4MDlaFw0yMTA1MTIwMDE4MDlaMBcxFTATBgNVBAMT
+</span><span>DHRzY2FubG9uLmNvbTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAMNM
+</span><span>yOEfhehLZ2tiU5+nuD9M9/bZ3lp/9XFdysLhdnlVUb+HKidm2r3CCunjcGpKbbD3
+</span><span>T4IHfWyyzbDgS+vbLyAKLdzzGP/jsv2Bzc6VY8Q4IHVXVSg83gE3ac+ABddZfnDA
+</span><span>tO7cdzIOs8yLkVaznu2W9BzDOo+uvw3cQLutwOwOBXHaAeDeGYunweerASBqfA1p
+</span><span>/WUsFzf63fwAt9/WTtI63UR83rQjYOlCaqrbNpVeY+vJBE2sTJIcbbHTRFY0h6hN
+</span><span>hznTle5TdYWdWMr0dSDKMKCzHHQEGJomTbUZcDUWgS+VJDbMt2Z3OaUm67+0Ae3o
+</span><span>iXqatAg8h/3KhMMnwQKwxTHd7TYu6arHoGvvWvWpycP6dMaeLkIvxJJ6resRFrDm
+</span><span>1moLtyfiI+lU/kXzMs1H9dFGCGMuDydwMkWBarzFpHF9fKxvxMgDqs00t9k8bC0F
+</span><span>J+gvp44mI2U80FbUgg0vDOSqLbFJci81JyaQU0oJ/Q114EL+k0fHFVhFdQUZPsZU
+</span><span>AFQl34PSGm70qJlHexiXN3vieGaNMtW+H+G+jNS9xMgVjqYOQOjPKY0lBA2mK++2
+</span><span>OelBQ45Vn0XMVGisV3xjdEpPYLD+ewkgPGlQqZLZRkKb6IYVEYOPO9owLQzEg/rj
+</span><span>RUnHZ1BXjbNc1ukuyu8p3jMXILT+zMh9jcvRbbgPAgMBAAGjggJXMIICUzAOBgNV
+</span><span>HQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1Ud
+</span><span>EwEB/wQCMAAwHQYDVR0OBBYEFHSa8L7SC3Z9g0F2Kd3gzkARk4DYMB8GA1UdIwQY
+</span><span>MBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEF
+</span><span>BQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8v
+</span><span>cjMuaS5sZW5jci5vcmcvMCcGA1UdEQQgMB6CDioudHNjYW5sb24uY29tggx0c2Nh
+</span><span>bmxvbi5jb20wTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAm
+</span><span>BggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEE
+</span><span>AdZ5AgQCBIH1BIHyAPAAdgBvU3asMfAxGdiZAKRRFf93FRwR2QLBACkGjbIImjfZ
+</span><span>EwAAAXeOqrxPAAAEAwBHMEUCID1zQ9/LxP+g2wm5181w8Jls3RLi0bMVricJxZx4
+</span><span>/RQXAiEA0OSqFQUy9NFWH37Nblt8Owa9v1FH/qUVAWXTahwwVJwAdgB9PvL4j/+I
+</span><span>VWgkwsDKnlKJeSvFDngJfy5ql2iZfiLw1wAAAXeOqrxIAAAEAwBHMEUCIQDxWJOQ
+</span><span>zvzP7yd/y/Y4bzyNKqM1tHhimdE0cKoKz1x+JgIgFfKXLHzUL4m68Wjv6V/5nkUv
+</span><span>fckhrutCmods0FYv9E0wDQYJKoZIhvcNAQELBQADggEBACdaB5M/EJXE+flDGy3p
+</span><span>XnlsnmAnBfPSoDryqtYT/dtXwzhKKh+U7i/ngM8uGqgv3vvVGG0ywMn0gtCJxgPF
+</span><span>IXs3FoGhV+CTA3gvkCn1FpRX0iGRJx9GFCAXwLE4bg+MIDuzNyInjHB9RyybaELd
+</span><span>Tentf/sF2DCsuK+dVCxWs5ncyRSmq5XllSOM2PFSZ7iBsLV9pzTd3p3h2k3t+WyW
+</span><span>eN1RK6PRNlLsNxHOitOU2Ao71LmFy2+pmEGj8QD4vUN6Fd0jqp5dUo/+sAoPiKKq
+</span><span>zrJZNFVviY5zkfQNhCpXjKCX2r3VYa+D209VvuIoB4hFtZOWfJk6MbvjwrSK6MW7
+</span><span>ab8=
+</span><span>-----END CERTIFICATE-----
+</span><span> 1 /*second certificate in the chain*/ s /*subject -- should amtch the previous certificates issuer*/:C = US, O = Let&#39;s Encrypt, CN = R3
+</span><span>   i/*issuer -- should match up to a trusted root certificate on the client&#39;s device*/:O = Digital Signature Trust Co., CN = DST Root CA X3
+</span><span>-----BEGIN CERTIFICATE-----
+</span><span>MIIEZTCCA02gAwIBAgIQQAF1BIMUpMghjISpDBbN3zANBgkqhkiG9w0BAQsFADA/
+</span><span>MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT
+</span><span>DkRTVCBSb290IENBIFgzMB4XDTIwMTAwNzE5MjE0MFoXDTIxMDkyOTE5MjE0MFow
+</span><span>MjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUxldCdzIEVuY3J5cHQxCzAJBgNVBAMT
+</span><span>AlIzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuwIVKMz2oJTTDxLs
+</span><span>jVWSw/iC8ZmmekKIp10mqrUrucVMsa+Oa/l1yKPXD0eUFFU1V4yeqKI5GfWCPEKp
+</span><span>Tm71O8Mu243AsFzzWTjn7c9p8FoLG77AlCQlh/o3cbMT5xys4Zvv2+Q7RVJFlqnB
+</span><span>U840yFLuta7tj95gcOKlVKu2bQ6XpUA0ayvTvGbrZjR8+muLj1cpmfgwF126cm/7
+</span><span>gcWt0oZYPRfH5wm78Sv3htzB2nFd1EbjzK0lwYi8YGd1ZrPxGPeiXOZT/zqItkel
+</span><span>/xMY6pgJdz+dU/nPAeX1pnAXFK9jpP+Zs5Od3FOnBv5IhR2haa4ldbsTzFID9e1R
+</span><span>oYvbFQIDAQABo4IBaDCCAWQwEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8E
+</span><span>BAMCAYYwSwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5p
+</span><span>ZGVudHJ1c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTE
+</span><span>p7Gkeyxx+tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEE
+</span><span>AYLfEwEBATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2Vu
+</span><span>Y3J5cHQub3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0
+</span><span>LmNvbS9EU1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYf
+</span><span>r52LFMLGMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjANBgkqhkiG9w0B
+</span><span>AQsFAAOCAQEA2UzgyfWEiDcx27sT4rP8i2tiEmxYt0l+PAK3qB8oYevO4C5z70kH
+</span><span>ejWEHx2taPDY/laBL21/WKZuNTYQHHPD5b1tXgHXbnL7KqC401dk5VvCadTQsvd8
+</span><span>S8MXjohyc9z9/G2948kLjmE6Flh9dDYrVYA9x2O+hEPGOaEOa1eePynBgPayvUfL
+</span><span>qjBstzLhWVQLGAkXXmNs+5ZnPBxzDJOLxhF2JIbeQAcH5H0tZrUlo5ZYyOqA7s9p
+</span><span>O5b85o3AM/OJ+CktFBQtfvBhcJVd9wvlwPsk+uyOy2HI7mNxKKgsBTt375teA2Tw
+</span><span>UdHkhVNcsAKX1H7GNNLOEADksd86wuoXvg==
+</span><span>-----END CERTIFICATE-----
+</span><span>---
+</span><span>Server certificate
+</span><span>subject=CN = ascallion.com
+</span><span>
+</span><span>issuer=C = US, O = Let&#39;s Encrypt, CN = R3
+</span><span>
+</span><span>---
+</span><span>No client certificate CA names sent
+</span><span>Peer signing digest: SHA256
+</span><span>Peer signature type: RSA-PSS
+</span><span>Server Temp Key: X25519, 253 bits
+</span><span>---
+</span><span>SSL handshake has read 3536 bytes and written 398 bytes
+</span><span>Verification error: unable to get local issuer certificate
+</span><span>---
+</span><span>New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+</span><span>Server public key is 4096 bit
+</span><span>Secure Renegotiation IS NOT supported
+</span><span>Compression: NONE
+</span><span>Expansion: NONE
+</span><span>No ALPN negotiated
+</span><span>Early data was not sent
+</span><span>Verify return code: 20 (unable to get local issuer certificate)
+</span><span>---
+</span><span>---
+</span><span>Post-Handshake New Session Ticket arrived:
+</span><span>SSL-Session:
+</span><span>    Protocol  : TLSv1.3
+</span><span>    Cipher    : TLS_AES_256_GCM_SHA384
+</span><span>    Session-ID: F8F70A83FE8C5EF53957065EA29F5B51DE9197C0DE4F6C2E8C61B6E97492A473
+</span><span>    Session-ID-ctx:
+</span><span>    Resumption PSK: B4FAF6CAC78728153A86625B4C5153F2CB094A6229BB4D8A1B17EB979109FA943ACD504E2FFEDBB8DD7C0240390CD026
+</span><span>    PSK identity: None
+</span><span>    PSK identity hint: None
+</span><span>    SRP username: None
+</span><span>    TLS session ticket lifetime hint: 300 (seconds)
+</span><span>    TLS session ticket:
+</span><span>    0000 - 81 0c ab 65 eb e9 e7 74-fa 3f 69 c8 3f 0a f1 2d   ...e...t.?i.?..-
+</span><span>    0010 - 31 a9 2d eb dc 06 3e 93-98 4c 4b e5 4a 99 de cf   1.-...&gt;..LK.J...
+</span><span>    0020 - b0 b6 2f 68 6d d0 82 7a-07 21 ca 10 d9 22 13 75   ../hm..z.!...&quot;.u
+</span><span>    0030 - af ba 4b 18 d6 5a 81 fc-b0 da 4c 7f 6a 22 3b ab   ..K..Z....L.j&quot;;.
+</span><span>    0040 - e1 58 97 64 cc b6 13 7e-63 a5 90 93 51 1b 02 fa   .X.d...~c...Q...
+</span><span>    0050 - d7 69 a1 36 33 15 00 de-9b 76 50 88 c9 a1 bc ca   .i.63....vP.....
+</span><span>    0060 - fe ae ac 63 c9 18 dc 49-9e 8e cc bb 74 db e6 31   ...c...I....t..1
+</span><span>    0070 - 34 6f 78 5c 37 04 b8 ba-c0 9d 85 ce 8c a8 2a 78   4ox\7.........*x
+</span><span>    0080 - 5a 4e e4 c4 8d 04 20 e8-da 7a c2 2f 16 da 6b 7b   ZN.... ..z./..k{
+</span><span>    0090 - 43 d6 b9 60 7a 5f 04 fe-40 20 d3 1f 53 3b 04 b8   C..`z_..@ ..S;..
+</span><span>    00a0 - a5 b2 30 cb a1 cd dd 21-b6 b2 24 4e 86 71 32 7e   ..0....!..$N.q2~
+</span><span>    00b0 - f9 05 bc 81 fa 0b 65 8d-39 25 dd 67 c5 aa 40 fd   ......e.9%.g..@.
+</span><span>    00c0 - ee a6 bc 4e 22 02 3a b4-d8 13 7c 26 e8 88 ab cc   ...N&quot;.:...|&amp;....
+</span><span>    00d0 - b8 19 d4 fe 6e c7 26 6c-c7 04 13 d1 d4 58 76 58   ....n.&amp;l.....XvX
+</span><span>    00e0 - 2d 5a 12 37 77 88 5c 2f-ef 7c e5 5e 3d 98 e5 da   -Z.7w.\/.|.^=...
+</span><span>
+</span><span>    Start Time: 1616867776
+</span><span>    Timeout   : 7200 (sec)
+</span><span>    Verify return code: 20 (unable to get local issuer certificate)
+</span><span>    Extended master secret: no
+</span><span>    Max Early Data: 0
+</span><span>---
+</span><span>read R BLOCK
+</span><span>---
+</span><span>Post-Handshake New Session Ticket arrived:
+</span><span>SSL-Session:
+</span><span>    Protocol  : TLSv1.3
+</span><span>    Cipher    : TLS_AES_256_GCM_SHA384
+</span><span>    Session-ID: 4551684A5F3FB4F65AE2E538DD28741A73E1FA4B1EC67862C6CF6337C6D0ECB5
+</span><span>    Session-ID-ctx:
+</span><span>    Resumption PSK: AB8A8C34BC1C9265CD450F598F36E5FA97DCCE9F700719C0E28F1CDDA4632D3D5FEE793D39A6B74D914D8DF1C8079E4C
+</span><span>    PSK identity: None
+</span><span>    PSK identity hint: None
+</span><span>    SRP username: None
+</span><span>    TLS session ticket lifetime hint: 300 (seconds)
+</span><span>    TLS session ticket:
+</span><span>    0000 - 81 0c ab 65 eb e9 e7 74-fa 3f 69 c8 3f 0a f1 2d   ...e...t.?i.?..-
+</span><span>    0010 - 5f 7e a7 56 70 d6 45 ff-c8 ca e4 38 a6 91 2a 8e   _~.Vp.E....8..*.
+</span><span>    0020 - 21 cb 50 90 5b 82 62 51-cf 23 07 16 15 c7 8e 8a   !.P.[.bQ.#......
+</span><span>    0030 - 18 6d 13 22 d2 5d 24 fc-ed 21 4e ad 72 e4 95 68   .m.&quot;.]$..!N.r..h
+</span><span>    0040 - 86 89 32 e6 27 15 29 ba-98 77 ab d4 34 8e 56 52   ..2.&#39;.)..w..4.VR
+</span><span>    0050 - c0 6a 6c d9 bb 9f 27 b4-be e4 32 5d 85 cb 6b 9c   .jl...&#39;...2]..k.
+</span><span>    0060 - 9a f8 a4 f7 d1 20 a4 08-f9 10 1b 2e 8b c5 95 db   ..... ..........
+</span><span>    0070 - 34 5b 12 3f 6e c9 f5 ff-a9 d4 6b c5 ef 85 44 09   4[.?n.....k...D.
+</span><span>    0080 - 50 ce ca 80 20 3d b6 81-5e a6 6a a1 6f db e2 73   P... =..^.j.o..s
+</span><span>    0090 - 63 7b 86 f2 6c e2 ba e1-0e 9a f9 de 58 dd 0f 79   c{..l.......X..y
+</span><span>    00a0 - 9d f0 9a 6f ee 3d ec ea-91 a5 90 db fd 59 2d 5b   ...o.=.......Y-[
+</span><span>    00b0 - 7f 0c 72 f5 6a 8a 08 bb-4b 3e c1 06 d4 16 ad c8   ..r.j...K&gt;......
+</span><span>    00c0 - dd 50 d6 90 9f 07 16 0b-1a db 6c df d3 cb 18 eb   .P........l.....
+</span><span>    00d0 - 3a 6b 14 31 c6 83 2f bc-92 d7 20 6a 0f 05 e9 d5   :k.1../... j....
+</span><span>    00e0 - 28 45 79 d2 de 04 aa 61-a3 6a 1d 59 51 13 01 33   (Ey....a.j.YQ..3
+</span><span>
+</span><span>    Start Time: 1616867776
+</span><span>    Timeout   : 7200 (sec)
+</span><span>    Verify return code: 20 (unable to get local issuer certificate)
+</span><span>    Extended master secret: no
+</span><span>    Max Early Data: 0
+</span><span>---
+</span><span>read R BLOCK
+</span><span>closed
+</span></code></pre>
+<p>The relavant portion is under the "Certificate chain" block. Each certificate's issuer should match up to the next certificate's subject, all the way down to the root certificate that is stored on the client device (that one is not served from the server).</p>
+<h2 id="pretty-printing-a-certificate">Pretty Printing a Certificate</h2>
+<p>The "-----BEGIN CERTIFICATE-----" and "-----END CERTIFICATE-----" delimiters are required</p>
+<pre data-lang="powershell" style="background-color:#1e1e1e;color:#dcdcdc;" class="language-powershell "><code class="language-powershell" data-lang="powershell"><span>openssl x509 -text -noout
+</span></code></pre>
+<pre style="background-color:#1e1e1e;color:#dcdcdc;"><code><span>-----BEGIN CERTIFICATE-----
+</span><span>MIIEZTCCA02gAwIBAgIQQAF1BIMUpMghjISpDBbN3zANBgkqhkiG9w0BAQsFADA/
+</span><span>MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT
+</span><span>DkRTVCBSb290IENBIFgzMB4XDTIwMTAwNzE5MjE0MFoXDTIxMDkyOTE5MjE0MFow
+</span><span>MjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUxldCdzIEVuY3J5cHQxCzAJBgNVBAMT
+</span><span>AlIzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuwIVKMz2oJTTDxLs
+</span><span>jVWSw/iC8ZmmekKIp10mqrUrucVMsa+Oa/l1yKPXD0eUFFU1V4yeqKI5GfWCPEKp
+</span><span>Tm71O8Mu243AsFzzWTjn7c9p8FoLG77AlCQlh/o3cbMT5xys4Zvv2+Q7RVJFlqnB
+</span><span>U840yFLuta7tj95gcOKlVKu2bQ6XpUA0ayvTvGbrZjR8+muLj1cpmfgwF126cm/7
+</span><span>gcWt0oZYPRfH5wm78Sv3htzB2nFd1EbjzK0lwYi8YGd1ZrPxGPeiXOZT/zqItkel
+</span><span>/xMY6pgJdz+dU/nPAeX1pnAXFK9jpP+Zs5Od3FOnBv5IhR2haa4ldbsTzFID9e1R
+</span><span>oYvbFQIDAQABo4IBaDCCAWQwEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8E
+</span><span>BAMCAYYwSwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5p
+</span><span>ZGVudHJ1c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTE
+</span><span>p7Gkeyxx+tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEE
+</span><span>AYLfEwEBATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2Vu
+</span><span>Y3J5cHQub3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0
+</span><span>LmNvbS9EU1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYf
+</span><span>r52LFMLGMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjANBgkqhkiG9w0B
+</span><span>AQsFAAOCAQEA2UzgyfWEiDcx27sT4rP8i2tiEmxYt0l+PAK3qB8oYevO4C5z70kH
+</span><span>ejWEHx2taPDY/laBL21/WKZuNTYQHHPD5b1tXgHXbnL7KqC401dk5VvCadTQsvd8
+</span><span>S8MXjohyc9z9/G2948kLjmE6Flh9dDYrVYA9x2O+hEPGOaEOa1eePynBgPayvUfL
+</span><span>qjBstzLhWVQLGAkXXmNs+5ZnPBxzDJOLxhF2JIbeQAcH5H0tZrUlo5ZYyOqA7s9p
+</span><span>O5b85o3AM/OJ+CktFBQtfvBhcJVd9wvlwPsk+uyOy2HI7mNxKKgsBTt375teA2Tw
+</span><span>UdHkhVNcsAKX1H7GNNLOEADksd86wuoXvg==
+</span><span>-----END CERTIFICATE-----
+</span></code></pre>
+
+    </article>
+
+        </main>
+
+        
+          <footer id="footer">
+    <span class="footer-item"><a href="https://ascallion.com/#content">About</a></span>
+    <span class="footer-item"><a class="unstyle" href="#">Back to Top</a></span>
+    <span class="footer-item"><a href="https://github.com/gscanlon21">Github</a></span>
+</footer>
+           
+        
+        
+        
+    </body>
+</html>
