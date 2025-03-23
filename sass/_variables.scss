@@ -21,17 +21,19 @@ $large-width: 1600px;
         --color-bg: #{to-rgb(#333)};
         --color-text: #{to-rgb(#fff)};
 
-        // Color of unhighlighted code
-        --color-code: #{to-rgb(#dcdcdc)};
-        --color-code-bg: #{to-rgb(#1e1e1e)};
-
-        // Search
-        --color-search: --color-text;
-        --color-search-bg: #{to-rgb(#555)};
-
         // Link coloring
         --color-link: 109,182,255;
         --color-link-visited: 182,109,255;
+
+        // Color of code
+        --color-code: #{to-rgb(#dcdcdc)};
+        --color-code-bg: #{to-rgb(#1e1e1e)};
+        --color-code-link: var(--color-link);
+        --color-code-link-visited: var(--color-link-visited);
+
+        // Search
+        --color-search: var(--color-text);
+        --color-search-bg: #{to-rgb(#555)};
 
         // Scrollbar coloring
         --color-scrollbar: #{to-rgb(#888)};
@@ -43,12 +45,14 @@ $large-width: 1600px;
         --color-bg: #{to-rgb(#fff)};
         --color-text: #{to-rgb(#000)};
 
-        // Color of unhighlighted code
-        --color-code: --color-text;
-        --color-code-bg: #{to-rgb(#ddd)};
+        // Color of code
+        --color-code: #{to-rgb(#dcdcdc)};
+        --color-code-bg: #{to-rgb(#1e1e1e)};
+        --color-code-link: 109,182,255;
+        --color-code-link-visited: 182,109,255;
 
         // Search
-        --color-search: --color-text;
+        --color-search: var(--color-text);
         --color-search-bg: #{to-rgb(#ddd)};
 
         // Link coloring

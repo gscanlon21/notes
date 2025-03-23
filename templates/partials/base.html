@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang=lang>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="{{ config.description }}">
-        <title>{{ config.title }}</title>
 
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="/favicon/apple-touch-icon.png", cachebust=false) }}">
-        <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="/favicon/favicon-32x32.png", cachebust=false) }}">
-        <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="/favicon/favicon-16x16.png", cachebust=false) }}">
-        <link rel="manifest" href="{{ get_url(path="/site.webmanifest", cachebust=true) }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{{ config.description }}">
+	<title>{{ config.title }}</title>
 
-        <link media="all" href="{{ get_url(path="/site.css", cachebust=true) }}" rel="stylesheet">
-        
-        <script src="{{ get_url(path="/elasticlunr.min.js", cachebust=true) }}"></script>
-        <script src="{{ get_url(path="/search_index." ~ lang ~ ".js", cachebust=true) }}"></script>
-        <script async src="{{ get_url(path="/scripts/search.js", cachebust=true) }}"></script>
-    </head>
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="/favicon/apple-touch-icon.png", cachebust=false) }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="/favicon/favicon-32x32.png", cachebust=false) }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="/favicon/favicon-16x16.png", cachebust=false) }}">
+	<link rel="manifest" href="{{ get_url(path="/site.webmanifest", cachebust=true) }}">
 
-    <body>
-        {% block header %}
-        <header id="header">
-          <span class="header-item">{% include 'partials/search.html' %}</span>
-          <span class="header-item"><a class="unstyle" href="{{ get_url(path="@/_index.md") }}">ascallion</a></span>
-          <span class="header-item"><a href="{{ get_url(path="@/sitemap.md") }}">Sitemap</a></span>
-        </header>
-        {% endblock header %}
+	<link rel="stylesheet" type="text/css" href="{{ get_url(path="/site.css", cachebust=true) }}" media="all">
+	{% if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
+	<link rel="stylesheet" type="text/css" href="{{ get_url(path="/dark.css", cachebust=true) }}" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" href="{{ get_url(path="/light.css", cachebust=true) }}" media="(prefers-color-scheme: light)" />
+	{% endif %}
 
-        <main id="main" class="markdown-body">
-          {% block content %}
-          {% endblock content %}
-        </main>
+	<script src="{{ get_url(path="/elasticlunr.min.js", cachebust=true) }}"></script>
+	<script src="{{ get_url(path="/search_index." ~ lang ~ ".js" , cachebust=true) }}"></script>
+	<script async src="{{ get_url(path="/scripts/search.js", cachebust=true) }}"></script>
+</head>
 
-        {% block footer %}
-          {% include "partials/footer.html" %}
-        {% endblock footer %}   
-        
-        {# For debugging purposes #}
-        {% if config.base_url == "http://127.0.0.1:1111" %}
-        <br>
-        <details>
-          <summary>Tera Context</summary>
-          <pre>{{ __tera_context }}</pre>
-        </details>
-        {% endif %}
-    </body>
+<body>
+	{% block header %}
+	<header id="header">
+		<span class="header-item">{% include 'partials/search.html' %}</span>
+		<span class="header-item"><a class="unstyle" href="{{ get_url(path="@/_index.md") }}">ascallion</a></span>
+		<span class="header-item"><a href="{{ get_url(path="@/sitemap.md") }}">Sitemap</a></span>
+	</header>
+	{% endblock header %}
+
+	<main id="main" class="markdown-body">
+		{% block content %}
+		{% endblock content %}
+	</main>
+
+	{% block footer %}
+	{% include "partials/footer.html" %}
+	{% endblock footer %}
+
+	{# For debugging purposes #}
+	{% if config.base_url == "http://127.0.0.1:1111" %}
+	<br>
+	<details>
+		<summary>Tera Context</summary>
+		<pre>{{ __tera_context }}</pre>
+	</details>
+	{% endif %}
+</body>
+
 </html>

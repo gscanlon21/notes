@@ -1,0 +1,65 @@
+
+h6 {
+	// Filename header for code blocks
+	color: color(--color-code);
+	background-color: color(--color-code-bg);
+	margin-block-start: $base-padding / 2;
+	margin-block-end: $base-padding / -2;
+	padding: ($base-padding / 2) $base-padding;
+	border-radius: $border-radius $border-radius 0 0;
+	max-width: max-content;
+	font-size: small;
+
+	&:empty {
+		display: none;
+	}
+}
+
+pre+h6 {
+	// Attribution footer for code blocks
+	margin-block-start: 0;
+	border-radius: 0 0 $border-radius $border-radius;
+	float: right;
+	font-size: x-small;
+
+	&:empty {
+		display: none;
+	}
+
+    >a {
+        color: color(--color-code-link);
+
+        &:focus,
+        &:hover {
+            color: color(--color-code-link, 0.5);
+        }
+
+        &:visited {
+            color: color(--color-code-link-visited);
+        }
+    }
+}
+
+pre {
+	padding: $base-padding;
+	margin-block-start: $base-padding / 2;
+	margin-block-end: 0;
+
+	+pre {
+		margin-block-start: 0;
+		padding-top: 0;
+	}
+
+	>code[data-lang]::before {
+		// Display the code lang as the shell context
+		content: attr(data-lang) "$";
+		color: color(--color-code, 0.75);
+		padding-right: $base-padding;
+	}
+}
+
+code {
+	color: color(--color-code);
+	font-size: large;
+	margin-bottom: 0;
+}

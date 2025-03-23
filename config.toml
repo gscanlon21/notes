@@ -13,17 +13,21 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+# The default language.
 default_language = "en"
 
 
 [markdown]
 # Whether to do syntax highlighting
-# Theme can be customized by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
 # The theme to use for code highlighting.
-# See below for list of allowed values.
-highlight_theme = "visual-studio-dark" # idla, bbedit, inspired-github
+highlight_theme = "visual-studio-dark"
+#highlight_theme = "css"
+#highlight_themes_css = [
+#  { theme = "visual-studio-dark", filename = "dark.css" },
+#  { theme = "gruvbox-light", filename = "light.css" },
+#]
 
 # Whether to set rel="noreferrer" for all external links
 external_links_no_referrer = true
