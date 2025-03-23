@@ -1,7 +1,5 @@
 +++
 title = "Linux"
-updated = 2021-03-07
-draft = true
 
 [extra]
 site = "https://www.linux.org/"

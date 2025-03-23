@@ -1,6 +1,5 @@
 +++
 title = "Powershell"
-updated = 2021-07-09
 
 [extra]
 site = "https://docs.microsoft.com/en-us/powershell/"
