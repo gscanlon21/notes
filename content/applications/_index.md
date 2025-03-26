@@ -1,5 +1,5 @@
 +++
-title = "Apps"
+title = "Applications"
 
 [extra]
 see_also = []
