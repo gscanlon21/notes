@@ -1,6 +1,6 @@
 +++
 title = "Everything"
-updated = 2024-12-21
+updated = 2025-03-25
 
 [extra]
 site = "https://www.voidtools.com/"
@@ -12,5 +12,5 @@ see_also = []
 ## Find Duplicates
 
 ```powershell
-*.mp4 dupe:
+*.png|*.jpg|*.jpeg dupe:
 ```
