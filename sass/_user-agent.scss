@@ -105,6 +105,7 @@ a {
 
 summary {
 	cursor: pointer;
+	max-width: $small-width;
 
 	&:focus {
 		outline: none;
