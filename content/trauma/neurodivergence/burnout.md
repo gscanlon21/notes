@@ -2,7 +2,6 @@
 title = "Burnout"
 
 [extra]
-in_sitemap = false
 see_also = []
 +++
 

@@ -2,7 +2,6 @@
 title = "Mindfulness"
 
 [extra]
-in_sitemap = false
 see_also = []
 +++
 
