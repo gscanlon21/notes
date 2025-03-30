@@ -2,8 +2,8 @@
 title = "Pressed Flowers"
 
 [extra]
-see_also = []
-
+see_also = [
+    { title = "Aqua Liquid Glue (Tombow)", href = "https://www.tombowusa.com/mono-aqua-liquid-glue.html" }
+]
 +++
 
-# Pressed Flowers
