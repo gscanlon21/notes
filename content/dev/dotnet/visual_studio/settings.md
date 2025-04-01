@@ -10,3 +10,8 @@ updated = 2025-03-21
 ### General
 
 - [ ] Track Changes
+
+### CodeLens
+
+- [ ] Show Timeline
+- [ ] Show Authors & Changes
