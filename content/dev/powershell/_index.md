@@ -1,5 +1,6 @@
 +++
 title = "Powershell"
+sort_by = "title"
 
 [extra]
 site = "https://docs.microsoft.com/en-us/powershell/"

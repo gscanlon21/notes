@@ -1,5 +1,6 @@
 +++
 title = "Linux"
+sort_by = "title"
 
 [extra]
 site = "https://www.linux.org/"

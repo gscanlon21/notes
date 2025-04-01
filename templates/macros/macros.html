@@ -4,8 +4,8 @@
 {#
     Renders a list of pages.
 #}
-{% macro render_list_links(pages, exclude='') %}
-{% for item in pages | sort(attribute="title") %}
+{% macro render_list_links(pages, exclude='', sort=false) %}
+{% for item in pages %}
     {# Warning: using page as the loop variable causes bugs since it already exists in context #}
     {% if item.extra.in_sitemap | default(value=true) and item.relative_path != exclude %}
         <li><a href="{{ get_url(path="@/" ~ item.relative_path) }}">{{ item.title }}</a></li>

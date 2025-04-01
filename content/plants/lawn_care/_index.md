@@ -1,6 +1,7 @@
 +++
 title = "Lawn Care"
 in_search_index = false
+sort_by = "title"
 
 [extra]
 in_sitemap = false

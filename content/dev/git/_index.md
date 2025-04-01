@@ -1,5 +1,6 @@
 +++
 title = "Git"
+sort_by = "title"
 
 [extra]
 site = "https://git-scm.com/"

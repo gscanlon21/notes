@@ -1,5 +1,6 @@
 +++
 title = "PostgreSQL"
+sort_by = "title"
 
 [extra]
 version = 14.7

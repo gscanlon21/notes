@@ -4,6 +4,10 @@ in_search_index = false
 
 [extra]
 in_sitemap = false
+site = "https://www.getzola.org/documentation/getting-started/overview/"
+see_also = [
+  { title = "Tera Templating", href = "https://keats.github.io/tera/docs/"}
+]
 +++
 
 # Headers

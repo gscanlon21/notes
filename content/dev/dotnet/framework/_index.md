@@ -1,5 +1,6 @@
 +++
 title = ".NET Framework"
+sort_by = "title"
 +++
 
 # .NET Framework

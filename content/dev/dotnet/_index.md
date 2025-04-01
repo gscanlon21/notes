@@ -1,5 +1,6 @@
 +++
 title = ".NET"
+sort_by = "title"
 
 [extra]
 site = "https://dotnet.microsoft.com/"

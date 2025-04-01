@@ -1,5 +1,6 @@
 +++
 title = "Tools"
+sort_by = "title"
 +++
 
 # Tools

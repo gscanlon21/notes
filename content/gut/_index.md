@@ -1,5 +1,6 @@
 +++
 title = "Gut"
+sort_by = "title"
 
 [extra]
 see_also = [

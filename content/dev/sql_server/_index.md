@@ -1,5 +1,6 @@
 +++
 title = "SQL Server"
+sort_by = "title"
 
 [extra]
 version = 2019

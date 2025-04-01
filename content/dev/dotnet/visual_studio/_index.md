@@ -1,5 +1,6 @@
 +++
 title = "Visual Studio"
+sort_by = "title"
 
 [extra]
 site = "https://visualstudio.microsoft.com/"
