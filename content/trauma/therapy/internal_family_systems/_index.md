@@ -1,5 +1,6 @@
 +++
 title = "Internal Family Systems"
+sort_by = "title"
 
 [extra]
 see_also = []
