@@ -1,5 +1,5 @@
 +++
-title = "Native Plants"
+title = "MO Native Plants"
 sort_by = "title"
 
 [extra]
@@ -9,5 +9,3 @@ see_also = [
 ]
 
 +++
-
-# Native Plants
