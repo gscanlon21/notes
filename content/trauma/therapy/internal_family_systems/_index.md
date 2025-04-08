@@ -1,6 +1,6 @@
 +++
 title = "Internal Family Systems"
-sort_by = "title"
+sort_by = "weight"
 
 [extra]
 see_also = []

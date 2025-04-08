@@ -1,5 +1,6 @@
 +++
 title = "Identifying Managers and Firefighters using IFS Therapy"
+weight = 4
 
 [extra]
 see_also = []

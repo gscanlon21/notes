@@ -1,5 +1,6 @@
 +++
 title = "Understanding Our Relationship with a Part"
+weight = 5
 
 [extra]
 see_also = []
