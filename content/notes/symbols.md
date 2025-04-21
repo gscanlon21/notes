@@ -15,7 +15,14 @@ updated = 2025-03-03
 
 # Accent Marks
 
-## E
+## e
 ```
 é
+```
+
+# Fractions
+
+## ¼
+```
+¼
 ```
