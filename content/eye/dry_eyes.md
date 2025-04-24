@@ -20,3 +20,7 @@ see_also = []
 ## Vitamin A Deficiency
 
 ### Treatment
+
+## Malabsorbtion of the Gut
+
+## Autoimmune Disease
