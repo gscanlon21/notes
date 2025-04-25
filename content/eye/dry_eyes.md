@@ -2,7 +2,9 @@
 title = "Dry Eyes"
 
 [extra]
-see_also = []
+see_also = [
+    { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" }
+]
 +++
 
 # Causes
@@ -24,3 +26,7 @@ see_also = []
 ## Malabsorbtion of the Gut
 
 ## Autoimmune Disease
+
+## Binocular Vision Dysfunction
+
+Treated with visual therapy exercises.
