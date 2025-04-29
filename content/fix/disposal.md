@@ -6,7 +6,7 @@ see_also = []
 +++
 
 # Blades Not Turning
-Use a thick allen wrench to stick in the bottom of the disposal to turn the blades free and try again.
+Stick a thick allen wrench in the bottom of the disposal and turn it to free the stuck blades.
 
 # Disposal Not Working
-Check the red safety switch hasn't been triggered. Press it to reset it necessary.
+Check that the red safety switch/button on the bottom of the disposal hasn't been triggered.

@@ -9,8 +9,7 @@ see_also = [
 ]
 +++
 
-# (+) Features
-- Slanted or dual roller brushes are better for hair de-tangling.
-
-# (-) Features
-- Auto-empty base stations are too loud.
+# Features
+- [x] Slanted or dual roller brushes are better for hair de-tangling.
+- [x] Dual roller brushes are better for picking up hair off of carpets.
+- [ ] Auto-empty base stations are too loud.
