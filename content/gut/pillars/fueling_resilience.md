@@ -1,7 +1,7 @@
 +++
 title = "Pillar 1 - Food"
 updated = 2025-03-05
-order = 1
+weight = 1
 
 [extra]
 see_also = []

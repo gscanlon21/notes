@@ -1,6 +1,6 @@
 +++
 title = "Core Pillars of Gut Health"
-sort_by = "order"
+sort_by = "weight"
 
 [extra]
 see_also = []

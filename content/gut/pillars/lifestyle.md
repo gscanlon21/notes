@@ -1,7 +1,7 @@
 +++
 title = "Pillar 3 - Lifestyle"
 updated = 2025-03-05
-order = 3
+weight = 3
 
 [extra]
 see_also = []
