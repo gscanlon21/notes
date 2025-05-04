@@ -6,7 +6,6 @@ sort_by = "title"
 see_also = []
 +++
 
-
 **Self-Discrepancy Theory**: This theory is about how people compare themselves. It looks at the differences between how we see ourselves, how we want to see ourselves, and how we think others see us. When there's a big gap between these views, it can make us feel bad or anxious. The idea is to integrate those parts into a coherent whole to feel less anxious about identity disturbance issues.
 
 **Emotional Cascade Model**: The idea is that one bad thought leads to another, and it starts a chain reaction, like dominoes falling, making emotions more intense. This model tries to explain how this happens, especially in people with Borderline Personality Disorder (BPD), leading them to feel overwhelmed by their emotions, so they may act out in self-destructive ways (ie. self-harm).

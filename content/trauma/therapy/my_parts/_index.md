@@ -1,5 +1,5 @@
 +++
-title = "Mindfulness"
+title = "My Parts"
 sort_by = "title"
 
 [extra]
