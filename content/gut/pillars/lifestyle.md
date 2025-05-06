@@ -9,7 +9,7 @@ see_also = []
 
 
 ### Lifestyle
-- Space your meals at least 5-6 hours apart so migrating motor complex to function.
+- Space your meals at least 5-6 hours apart so the migrating motor complex has time to function.
     - Should feel hunber pains and feel gurgling.
 - Eat mindfully until 80% full, not 100% full.
 - Chew feed slowly and thouroughly.
