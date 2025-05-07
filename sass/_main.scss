@@ -105,6 +105,16 @@ main#main {
   }
 }
 
-.version {
-  font-size: small;
+.title {
+  .site {
+    display: inline-block;
+  }
+    
+  .version {
+    font-size: small;
+  }
+
+  + .subtitle {
+    margin-top: 0;
+  }
 }
