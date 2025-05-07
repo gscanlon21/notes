@@ -5,3 +5,18 @@ for (const element of document.getElementsByTagName('input')) {
         element.removeAttribute('disabled');
     }
 }
+
+// Remove whitespace from nav elements so they are :empty.
+for (const element of document.getElementsByTagName('nav')) {
+    element.innerHTML = element.innerHTML.trim();
+}
+
+// Remove whitespace from nav elements so they are :empty.
+for (const element of document.getElementsByClassName('defer')) {
+    element.classList.remove('defer');
+}
+
+// Remove whitespace from nav elements so they are :empty.
+for (const element of document.getElementsByClassName('async')) {
+    element.classList.remove('async');
+}

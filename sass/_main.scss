@@ -15,6 +15,11 @@
   }
 }
 
+// Sitemap titles
+h3:has(+ nav:empty) {
+  visibility: hidden;
+}
+
 // Site content
 main#main {
   position: relative;
