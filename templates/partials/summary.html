@@ -21,6 +21,14 @@
         <dd>{{ page.description | default(value=section.description) }}</dd>
         {% endif %}
 
+        {% if page.authors %} 
+        <dt>Authors</dt>
+        {% for author in page.authors %}
+            <dd>{{ author }}</dd>
+        {% endfor %}
+        {% endif %}
+
+
         {% if page.extra.see_also | default(value=section.extra.see_also) %} 
         <dt>See Also</dt>
         {% for also in page.extra.see_also | default(value=section.extra.see_also) %}
