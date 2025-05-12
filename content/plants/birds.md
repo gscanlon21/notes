@@ -29,7 +29,7 @@ Windows with screens should already be safe for birds.
 - - - 
 
 Here are some quick and affordable ways to protect birds from your windows. These should be applied to the outside of the glass.
-- Apple Tempera paint freehand with brush or sponge, or use a stencil as a template. Tempera is long-lasting, even in rain, and non-toxic, but comes off right with a damp rag or sponge.
+- Apply Tempera paint freehand with brush or sponge, or use a stencil as a template. Tempera is long-lasting, even in rain, and non-toxic, but comes off right with a damp rag or sponge.
 - Use tape to create patterns. Any opaque tape can work, but translucent ABC BirdTape transmits light and is made to last outdoors.
 - Most window films designed for external use are not patterned and will not deter birds. However, there are good options. White CollidEscape is see-through from the inside, opaque from the outside, Solyx Bird Safety Film has narrow horizontal or vertical stripes. With Feather Friendly's 'do it yourself' tape, the baking is pulled off, leaving just the pattern.
 - If you don't want to alter the glass itself, Acopian Bird Savers (also known as Zen Wind Curtains) are unobtrusive, as well as highly effective.

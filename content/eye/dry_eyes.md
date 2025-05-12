@@ -3,7 +3,8 @@ title = "Dry Eyes"
 
 [extra]
 see_also = [
-    { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" }
+    { title = "xdemvy", href = "https://xdemvy.com" },
+    { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
 ]
 +++
 
@@ -23,7 +24,7 @@ see_also = [
 
 ### Treatment
 
-## Malabsorbtion of the Gut
+## Malabsorption of the Gut
 
 ## Autoimmune Disease
 
