@@ -16,5 +16,5 @@ Shoe Size
 
 Socks
 : US Men's 12
-: White Crew
-: Maximum Padding
+: White Crew - Easier to spot ticks.
+: Maximum Padding - For heel and metatarsal pain.
