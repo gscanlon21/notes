@@ -1,5 +1,5 @@
 +++
-title = "Notes"
+title = "Items"
 sort_by = "title"
 
 [extra]
