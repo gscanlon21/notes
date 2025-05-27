@@ -4,7 +4,9 @@ title = "Ergonomics"
 [extra]
 see_also = [
     { title = "Waveform Lighting", href = "https://store.waveformlighting.com/" },
-    { title = "Sun Vision Display", href = "https://www.sunvisiondisplay.com/" }
+    { title = "Sun Vision Display", href = "https://www.sunvisiondisplay.com/" },
+    { title = "ZSA Moonlander Mark 1", href = "https://www.zsa.io/moonlander" },
+    { title = "Moonlander Configuration", href = "https://configure.zsa.io/moonlander/layouts/default/latest/0" },
 ]
 +++
 
