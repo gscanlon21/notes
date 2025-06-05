@@ -2,7 +2,9 @@
 title = "AvPD"
 
 [extra]
-see_also = []
+see_also = [
+    { title = "Self Loathing Man of Inaction", href = "https://www.youtube.com/watch?v=wMPTyjl-jvc" }
+]
 +++
 
 
