@@ -8,5 +8,3 @@ see_also = [
     { title = "Deviant Art", href = "https://www.deviantart.com/livelywallpaper/gallery" }
 ]
 +++
-
-# Lively
