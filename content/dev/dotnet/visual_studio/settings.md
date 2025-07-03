@@ -15,3 +15,9 @@ updated = 2025-03-21
 
 - [ ] Show Timeline
 - [ ] Show Authors & Changes
+
+## Debugging
+
+### General
+
+- [ ] Enable Diagnostic Tools while debugging
