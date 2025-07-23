@@ -37,6 +37,8 @@ see_also = [
 Treated with visual therapy exercises.
 
 # Treatment
+
+## Info
 - Dr. Kara Fitzgerald
     - New Frontiers in Functional Medicine
         - Episode 78, March 2 2020 - SIBO
@@ -64,11 +66,11 @@ Treated with visual therapy exercises.
 - Low Dose Naltrexone
     - 1mg x 1week increase dosage up to 4.5mg as tolerated.
 - Meibo (or EvoTears Omega)
-    - Can buy online from https://apohealth.de
+    - Can buy online from [apohealth.de](https://apohealth.de)
 - Thealoz Duo (or Hylo Dual Intense)
-    - Can buy online from https://apohealth.de
+    - Can buy online from [apohealth.de](https://apohealth.de)
 - Thealoz Duo Gel (or Hylo Dual Gel)
-    - Can buy online from https://apohealth.de
+    - Can buy online from [apohealth.de](https://apohealth.de)
 
 ## Nutrition
 - Xcellent A 3000mcg
@@ -77,7 +79,7 @@ Treated with visual therapy exercises.
     - Orthomolecular Products
     - Designs for Health
 - Specialized Pro-Resolving Mediators
-    - Can buy online from https://metagenics.com
+    - Can buy online from [metagenics.com](https://metagenics.com)
 - Magnesium L-Threonate
 - DHEA
     - Orthomolecular Products
@@ -97,5 +99,5 @@ Treated with visual therapy exercises.
 - Genova Diagnostics
     - Methylation Panel
 - SNP UGTIAI - Gilbert's 
-    - Billirubin should be less than 0.8
+    - Bilirubin should be less than 0.8
     - Glucoronidation 
