@@ -3,12 +3,15 @@ title = "Dry Eyes"
 
 [extra]
 see_also = [
+    { title = "tryptyr", href = "https://tryptyr.myalcon.com/" },
     { title = "xdemvy", href = "https://xdemvy.com" },
     { title = "xiidra", href = "https://xiidra.com" },
     { title = "apohealth", href = "https://apohealth.de" },
     { title = "Red Light Rising", href = "https://redlightrising.co.uk" },
     { title = "Metagenics SPM Active", href = "https://www.metagenics.com/en-us/product/spm-active" },
+    { title = "Metagenics SpectraZyme® Gluten Digest Enzymes", href = "https://www.metagenics.com/en-us/product/spectrazyme-gluten-digest-enzymes" },
     { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
+    { title = "8-OHdG Information Sheet", file = "8OHdG-Information-Sheet.pdf" },
 ]
 +++
 
@@ -60,6 +63,8 @@ Treated with visual therapy exercises.
     - 2x/day
 - iVizia
 - Vevye
+- Tryptyr
+    - Triggers the TRPM8 cold receptors. Those may also be triggered by menthol (peppermint), although too much may cause irritation.
 - Autologous Serum Tears
     - Higher quality of blood makes higher quality eye drops. 
         - Make sure serum vitamin A levels are in range before getting these made.
@@ -88,12 +93,16 @@ Treated with visual therapy exercises.
     - Selenium
 - Alpha-Lipoic Acid
 - Iron Bi-Glycinate
+- DPP-IV (no)
 
 ## Diet and Lifestyle
 - Red Light Rising
     - Target 2.0 - Red light only, no NIR.
 
 ## Labs
+- Get checked for blepharitis by a dermatologist 
+- Get checked for gastrointestinal illnesses by a GI doctor (sa. Crohn's)
+- 8-OHdG measures DNA damage from oxidative stress
 - Life Extension Labs
     - Homocysteine
 - Genova Diagnostics
