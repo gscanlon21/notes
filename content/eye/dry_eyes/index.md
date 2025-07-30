@@ -76,6 +76,7 @@ Treated with visual therapy exercises.
     - Can buy online from [apohealth.de](https://apohealth.de)
 - Thealoz Duo Gel (or Hylo Dual Gel)
     - Can buy online from [apohealth.de](https://apohealth.de)
+- Hylo Night Ointment
 
 ## Nutrition
 - Xcellent A 3000mcg
