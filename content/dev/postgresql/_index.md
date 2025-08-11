@@ -44,3 +44,11 @@ Restore a custom-format sql script (data-only for a specific table):
 
 ./pg_restore --host thehost-server.postgres.database.azure.com --username theusername --data-only -d thedatabasename -t thetabletorestore C:\thepath\backup.dump
 ```
+
+## Identity Sequences
+
+Reset the sequence to the next value after the maximum ID in the table
+```powershell
+
+SELECT setval((select pg_get_serial_sequence('footnote', 'Id')), (SELECT MAX("Id") + 1 FROM footnote));
+```
