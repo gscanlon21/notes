@@ -59,8 +59,20 @@ Treated with visual therapy exercises.
 - Xiidra Ophthalmic 
     - Pulse dose?
     - Heavy dose?
-- Xdemvy
+- [Xdemvy](https://xdemvy.com)
     - 2x/day
+    - Pharmacies
+        - BlinkRx
+            - 1-833-919-4942
+        - Carepoint Pharmacy
+            - 1-855-237-9112
+        - CVS Specialty Pharmacy
+            - 1-800-237-2767
+        - Walgreens Specialty Pharmacy
+            - 1-800-424-9002
+        - Walgreens Specialty Pharmacy
+            - 3527 Chouteau Ave; Kansas City, MO 63103
+            - (314) 771-2900
 - iVizia
 - Vevye
 - Tryptyr
