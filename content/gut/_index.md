@@ -4,6 +4,7 @@ sort_by = "title"
 
 [extra]
 see_also = [
+    { title = "BioCyc", href = "https://websvc.biocyc.org/" },
     { title = "Microbiome Prescription", href = "https://microbiomeprescription.com/" },
     { title = "Nutritional Epigenetics", href = "https://en.wikipedia.org/wiki/Nutritional_epigenetics" }
 ]
