@@ -98,9 +98,8 @@ main#main {
     width: 100%;
     
     .summary-item {
-      white-space: nowrap;
-      overflow-x: hidden;
-      text-overflow: ellipsis;
+      text-indent: $base-padding * -2;
+      padding-inline-start: $base-padding * 2;
     }
   }
 }
