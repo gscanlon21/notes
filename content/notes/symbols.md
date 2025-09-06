@@ -48,3 +48,12 @@ updated = 2025-03-03
 ```en Dash
 –
 ```
+
+
+# Subscripts
+
+## Numbers
+
+```2
+₂
+```
