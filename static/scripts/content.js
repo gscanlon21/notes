@@ -20,3 +20,27 @@ for (const element of document.getElementsByClassName('defer')) {
 for (const element of document.getElementsByClassName('async')) {
     element.classList.remove('async');
 }
+
+// Copy multi-line code elements when they are clicked. Flash the bg.
+for (const element of document.getElementsByTagName('pre')) {
+    element.addEventListener('click', () => {
+        navigator.clipboard.writeText(element.innerText.trim()).then(() => {
+            element.classList.add('copied');
+            setTimeout(() => {
+                element.classList.remove('copied');
+            }, 500);
+        });
+    })
+}
+
+// Copy inline code elements when they are clicked. Flash the bg.
+for (const element of document.getElementsByTagName('code')) {
+    element.addEventListener('click', () => {
+        navigator.clipboard.writeText(element.innerText.trim()).then(() => {
+            element.classList.add('copied');
+            setTimeout(() => {
+                element.classList.remove('copied');
+            }, 500);
+        });
+    })
+}

@@ -1,6 +1,6 @@
 
 h6 {
-	// Filename header for code blocks
+	// Filename header for code blocks.
 	color: color(--color-code);
 	background-color: color(--color-code-bg);
 	margin-block-start: $base-padding / 2;
@@ -16,7 +16,7 @@ h6 {
 }
 
 pre+h6 {
-	// Attribution footer for code blocks
+	// Attribution footer for code blocks.
 	margin-block-start: 0;
 	border-radius: 0 0 $border-radius $border-radius;
 	float: right;
@@ -41,6 +41,7 @@ pre+h6 {
 }
 
 pre {
+	cursor: pointer;
 	padding: $base-padding;
 	margin-block-start: $base-padding / 2;
 	margin-block-end: 0;
@@ -67,4 +68,26 @@ code {
     margin-inline: .1em;
 	font-size: large;
 	margin-bottom: 0;
+	cursor: pointer;
+}
+
+pre.copied {
+	> code > span {
+		animation: flash 500ms forwards linear normal;
+	}
+}
+
+code.copied:not(:has(span)) {
+	animation: flash 500ms forwards linear normal;
+}
+
+@keyframes flash {
+  0%, 100% {
+	text-decoration-line: none;
+  }
+  25% {
+	text-decoration-thickness: 3px;
+	text-decoration-line: underline;
+	text-decoration-color: color(--color-code);
+  }
 }

@@ -3,58 +3,48 @@ title = "Symbols"
 updated = 2025-03-03
 +++
 
-# Plus-Minus Symbol
-```
+# Math Symbols
+```Plus-Minus
 ±
 ```
 
-# Degree Symbol
-```
+# Cooking Symbols
+```Degree
 °
 ```
 
 # Accent Marks
 
-## e
-```
+```Spanish e
 é
 ```
 
 # Fractions
 
-## ¾
+
+```One-Eighth
+⅛
 ```
+```One-Fourth
+¼
+```
+```One-Third
+⅓
+```
+```One-Half
+½
+```
+```Three-Fourths
 ¾
 ```
 
-## ½
-```
-½
-```
 
-## ⅓
-```
-⅓
-```
-
-## ¼
-```
-¼
-```
-
-## ⅛
-```
-⅛
-```
 
 # Dashes
 
-## em Dash
-```
+```em Dash
 —
 ```
-
-## en Dash
-```
+```en Dash
 –
 ```
