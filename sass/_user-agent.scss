@@ -36,9 +36,13 @@ strong {
 	display: inline-flex;
 }
 
+h1+dl, h2+dl, h3+dl, h4+dl, h5+dl {
+	margin-top: $base-padding * 0.1;
+}
+
 ul,
 ol {
-	margin-top: 0;
+	margin-top: $base-padding * 0.1;
 	padding-inline-start: $base-padding * 2;
 
 	>li> :nth-child(1n+2):not(ul) {

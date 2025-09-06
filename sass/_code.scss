@@ -86,6 +86,7 @@ code.copied:not(:has(span)) {
 	text-decoration-line: none;
   }
   25% {
+	text-decoration-skip-ink: none;
 	text-decoration-thickness: 3px;
 	text-decoration-line: underline;
 	text-decoration-color: color(--color-code);

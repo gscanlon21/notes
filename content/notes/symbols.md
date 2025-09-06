@@ -49,6 +49,17 @@ updated = 2025-03-03
 –
 ```
 
+# Superscripts
+
+## Math Symbols
+
+```Plus
+⁺
+```
+```Minus
+⁻
+```
+
 
 # Subscripts
 
