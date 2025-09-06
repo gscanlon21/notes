@@ -37,14 +37,10 @@ strong {
 	display: inline-flex;
 }
 
-h1+dl, 
-h2+dl, 
-h3+dl, 
-h4+dl, 
-h5+dl {
-	// Reduce the height of a description list 
-	// ... if it immediately follows a header.
-	margin-top: $base-padding * 0.1;
+blockquote {
+	// Reduce the margin of a block quote.
+	margin-block-start: $base-padding * 0.1;
+	margin-block-end: 0;
 }
 
 ul,
@@ -52,7 +48,7 @@ ol {
 	margin-top: $base-padding * 0.1;
 	padding-inline-start: $base-padding * 2;
 
-	>li> :nth-child(1n+2):not(ul) {
+	>li> :nth-child(1n+2):not(ul):not(:has(+ul)) {
 		margin-block-start: 0;
 		margin-block-end: $base-padding;
 	}
@@ -68,33 +64,37 @@ p {
 }
 
 h1 {
-	margin-block-start: $base-padding * 1.8;
 	font-size: xx-large;
+	margin-block-start: $base-padding * 1.8;
 }
 
 h2 {
-	margin-block-start: $base-padding * 1.4;
 	font-size: x-large;
+	margin-block-start: $base-padding * 1.4;
 }
 
 h3 {
-	margin-block-start: $base-padding * 1.2;
 	font-size: larger;
+	margin-block-start: $base-padding * 1.2;
 }
 
 h4 {
-	margin-block-start: $base-padding * 1.1;
 	font-size: large;
+	margin-block-start: $base-padding * 1.1;
 }
 
 h5 {
-	margin-block-start: $base-padding * 1.0;
 	font-size: medium;
+	margin-block-start: $base-padding * 1.0;
 }
 
 p {
-	margin-block-start: $base-padding * 0.5;
 	font-size: medium;
+	margin-block-start: $base-padding * 0.25;
+
+	+p {
+		margin-block-start: $base-padding * 0.75;
+	}
 }
 
 a {
@@ -131,6 +131,7 @@ blockquote> :only-child {
 table {
 	border-spacing: 0;
 	border-collapse: collapse;
+	margin-block-start: $base-padding * 0.1;
 
 	th:empty {
 		display: none;
@@ -138,7 +139,7 @@ table {
 
 	th,
 	td {
-		padding: 1em;
+		padding: $base-padding;
 		border: 1px solid color(--color-text, .5);
 	}
 }

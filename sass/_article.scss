@@ -1,18 +1,17 @@
 article#content {
     dl {
         display: grid;
-        grid-column-gap: 1em;
+        grid-column-gap: $base-padding;
         grid-template-columns: max-content;
 
         dt,
         dd {
             margin: 0;
-            padding-top: .3rem;
-            padding-bottom: .3rem;
+            padding-block-end: $base-padding * 0.25;
         }
 
         dt {
-            padding-right: .5rem;
+            padding-inline-end: $base-padding * 0.5;
 
             &:not(.wrap) {
                 max-width: 70vw;
@@ -21,6 +20,18 @@ article#content {
 
         dd {
             grid-column: 2;
+
+            &:has(+dt) {
+                padding-block-end: $base-padding * 1;
+
+                &:has(blockquote) {
+                    margin-block-end: $base-padding * 0.5;
+                }
+            }
+
+            blockquote {
+                margin-inline-start: 0;
+            }
         }
 
         dt.wrap,
@@ -35,13 +46,11 @@ article#content {
             dt, dd, div {
                 grid-column-start: 1;
                 grid-column-end: 3;
-                padding: 0;
             }
 
             dd {
-                margin-left: revert;
-                padding-bottom: .5rem;
-        }
+                margin-inline-start: revert;
+            }
         }
 
         /*&.striped {
