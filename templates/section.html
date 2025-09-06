@@ -32,8 +32,11 @@
         </div>
     </div>
 
-    <article id="content" class="{{ section.title }}">
+    <article id="content" class="section">
         {{ section.content | safe }}
     </article>
+
+    {% set css = load_data(path=section.path ~ "_index.css", required=false) %}
+    {% if css %}<style>article#content.section { {{ css | safe }} }</style>{% endif %}
 {% endblock content %}
 

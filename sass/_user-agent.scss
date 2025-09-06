@@ -9,23 +9,24 @@ html {
 }
 
 body {
-	background-color: color(--color-bg);
-	color: color(--color-text);
 	line-height: 1.5;
+	color: color(--color-text);
+	background-color: color(--color-bg);
 	font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
 		"Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
 		"Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
 		"Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 
-	margin: $base-padding;
 	max-width: var(--body-width);
+	margin-block: $base-padding;
+	margin-inline: 0;
 	width: 100%;
 	padding: 0;
 
 	// Sticky footer
-	min-height: calc(100% - 2rem);
 	display: flex;
 	flex-direction: column;
+	min-height: calc(100% - 2rem);
 }
 
 main {
@@ -36,7 +37,13 @@ strong {
 	display: inline-flex;
 }
 
-h1+dl, h2+dl, h3+dl, h4+dl, h5+dl {
+h1+dl, 
+h2+dl, 
+h3+dl, 
+h4+dl, 
+h5+dl {
+	// Reduce the height of a description list 
+	// ... if it immediately follows a header.
 	margin-top: $base-padding * 0.1;
 }
 

@@ -8,7 +8,7 @@
     </nav>
 
     {% if section.content | default(value=page.content) %}
-        <article id="content" class="{{ section.title | default(value=page.slug) }}">
+        <article id="content" class="sitemap">
             {{ section.content | default(value=page.content) | safe }}
         </article>
     {% endif %}

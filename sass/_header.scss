@@ -1,14 +1,15 @@
 // Site header
 header#header {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  row-gap: $base-padding * 0.1;
 
   .header-item {
     flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     padding-left: $base-padding;
     padding-right: $base-padding;
