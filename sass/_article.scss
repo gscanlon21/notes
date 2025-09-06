@@ -50,6 +50,14 @@ article#content {
 
             dd {
                 margin-inline-start: revert;
+
+                &:has(+dt) {
+                    padding-block-end: $base-padding * 0.75;
+
+                    &:has(blockquote) {
+                        margin-block-end: $base-padding * 0.25;
+                    }
+                }
             }
         }
 
