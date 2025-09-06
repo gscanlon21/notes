@@ -51,6 +51,12 @@ updated = 2025-03-03
 
 # Superscripts
 
+## Numbers
+
+```Zero
+⁰
+```
+
 ## Math Symbols
 
 ```Plus
@@ -65,6 +71,6 @@ updated = 2025-03-03
 
 ## Numbers
 
-```2
+```Two
 ₂
 ```
