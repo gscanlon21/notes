@@ -37,7 +37,7 @@ strong {
 	display: inline-flex;
 }
 
-blockquote {
+blockquote:not(:has(+p)) {
 	// Reduce the margin of a block quote.
 	margin-block-end: 0;
 }
