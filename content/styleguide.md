@@ -90,14 +90,9 @@ Code can also be displayed inline by surounding the code with back ticks. `/* Th
 
 ## Unordered List
 - list item
-
-  With subtext
-
 - list item
 - list item
- 
-  Nested List
+- Nested List
   - list item
   - list item
-
 - list item

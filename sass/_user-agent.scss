@@ -47,9 +47,9 @@ ol {
 	margin-top: $base-padding * 0.1;
 	padding-inline-start: $base-padding * 2;
 
-	>li> :nth-child(1n+2):not(ul):not(:has(+ul)) {
+	ul, ol {
 		margin-block-start: 0;
-		margin-block-end: $base-padding;
+		margin-block-end: $base-padding * 0.1;
 	}
 }
 
