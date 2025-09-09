@@ -21,7 +21,11 @@
     border-radius: $border-radius;
   
     .search-results__items {
-      padding: $base-padding;
+      padding-block: $base-padding;
+      padding-inline-end: $base-padding;
+      padding-inline-start: $base-padding * 2;
+      // Remove user-agent margin.
+      margin-block-end: 0;
   
       li + li {
         margin-top: $base-padding;

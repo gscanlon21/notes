@@ -1,6 +1,11 @@
 article#content {
+    img {
+        max-width: 100%;
+    }
+
     dl {
         display: grid;
+        padding-block-start: 1px;
         grid-column-gap: $base-padding;
         grid-template-columns: max-content;
 
@@ -10,16 +15,23 @@ article#content {
         }
 
         dt {
+            margin-block-start: -1px;
+            border-top: 1px dashed currentColor;
             padding-inline-end: $base-padding * 0.5;
-
+            padding-block-start: $base-padding * 0.25;
+            
             &:not(.wrap) {
                 max-width: 70vw;
+            }
+
+            &+dd {
+                padding-block-start: $base-padding * 0.25;
             }
         }
 
         dd {
             grid-column: 2;
-            padding-block-end: $base-padding * 0.25;
+            padding-block-end: $base-padding * 0.5;
 
             &:has(+dt) {
                 padding-block-end: $base-padding * 0.75;
@@ -34,12 +46,6 @@ article#content {
                 margin-block-start: $base-padding * 0.1;
             }
         }
-
-        dt.wrap,
-        dd.wrap,
-        div.wrap {
-            column-span: 2;
-        }
         
         @media (max-width: ($small-width - 1px)) {
             grid-template-columns: auto;
@@ -47,6 +53,11 @@ article#content {
             dt, dd, div {
                 grid-column-start: 1;
                 grid-column-end: 3;
+            }
+
+            dt {
+                border-top: none;
+                margin-block-start: 0;
             }
 
             dd {
@@ -62,16 +73,19 @@ article#content {
             }
         }
 
-        /*&.striped {
-        dt,
-        dd {
-            margin-left: 0;
-            padding: .3rem .5rem;
+        dt.wrap ~ dd, dd.wrap {
+            grid-column: 1 / 3;
+        }
 
-            &:nth-of-type(2n+1) {
-                background-color: rgba(0, 0, 0, .3);
+        &.striped {
+            dt, dd {
+                margin-left: 0;
+                padding: .3rem .5rem;
+
+                &:nth-of-type(2n+1) {
+                    background-color: rgba(0, 0, 0, .3);
+                }
             }
-            }
-        }*/
+        }
     }
 }

@@ -106,7 +106,7 @@ Treated with visual therapy exercises.
     - Selenium
 - Alpha-Lipoic Acid
 - Iron Bi-Glycinate
-- DPP-IV (no)
+- ~~DPP-IV~~
 
 ## Diet and Lifestyle
 - Red Light Rising
