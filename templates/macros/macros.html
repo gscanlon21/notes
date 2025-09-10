@@ -18,8 +18,8 @@
     Iterates though the site's pages and subsection and renders nested lists for each.
 #}
 {% macro render_sitemap(path, open=true, first_pass=true) %}
+{% set show_localhost = config.base_url == "http://127.0.0.1:1111" %}
 {% set section_info = get_section(path=path) %}
-{% set show_localhost = section_info.transparent and config.base_url == "http://127.0.0.1:1111" %}
 {% if first_pass %}
     {% if section_info.pages | length > section_info.pages | filter(attribute="extra.in_sitemap", value=false) | length %}
         <ul class="sitemap-list">
