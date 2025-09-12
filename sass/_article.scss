@@ -15,11 +15,13 @@ article#content {
         }
 
         dt {
+            grid-row: span 2;
             margin-block-start: -1px;
-            border-top: 1px dashed currentColor;
+            margin-block-end: $base-padding * 0.5;
             padding-inline-end: $base-padding * 0.5;
             padding-block-start: $base-padding * 0.25;
-            
+            border-top: 1px dashed currentColor;
+
             &:not(.wrap) {
                 max-width: 70vw;
             }
@@ -27,9 +29,18 @@ article#content {
             &+dd {
                 padding-block-start: $base-padding * 0.25;
             }
+
+            strong {
+                display: block;
+            }
+        }
+
+        dt + dd:has(+dt) {
+            grid-row: span 2;
         }
 
         dd {
+            display: flex;
             grid-column: 2;
             padding-block-end: $base-padding * 0.5;
 
@@ -42,8 +53,38 @@ article#content {
             }
 
             blockquote {
+                display: contents;
                 margin-inline-start: 0;
                 margin-block-start: $base-padding * 0.1;
+
+                // Checkbox rating system.
+                &:has(input[type="checkbox"]) {
+                    input[type="checkbox"] {
+                        display: none;
+                    }
+
+                    ul {
+                        display: contents;
+                        padding: 0;
+                        border: 0;
+                    }
+
+                    li {
+                        width: 1em;
+                        align-items: center;
+                        display: inline-flex;
+
+                        &:has(input[type="checkbox"]:checked):before {
+                            content: "\2605";
+                            line-height: 1;
+                        }
+
+                        &:has(input[type="checkbox"]:not(:checked)):before {
+                            content: "\2606";
+                            line-height: 1;
+                        }
+                    }
+                }
             }
         }
         
@@ -56,8 +97,8 @@ article#content {
             }
 
             dt {
+                margin-block: 0;
                 border-top: none;
-                margin-block-start: 0;
             }
 
             dd {
