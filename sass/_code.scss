@@ -71,16 +71,47 @@ code {
 	cursor: pointer;
 }
 
-// Copy animation for inline code spans and code blocks.
-code.copied:not(:has(span)), pre.copied > code > span {
-	animation-name: flash;
+// Copy animation for inline code spans.
+code.copied:not(:has(span)) {
+	animation-duration: 500ms;
+	// We're using linear for a smoother
+	// ... animation, otherwise ease-in.
+	animation-timing-function: linear;
+	animation-name: copy-inline;
+}
+
+// Copy animation for code blocks.
+pre.copied > code > span {
 	animation-delay: 250ms;
 	animation-duration: 250ms;
 	animation-fill-mode: backwards;
-	animation-timing-function: ease-in;
+	// We're using linear for a smoother
+	// ... animation, otherwise ease-in.
+	animation-timing-function: linear;
+	animation-name: copy-block;
 }
 
-@keyframes flash {
+@keyframes copy-inline {
+	0% {
+		text-underline-offset: 1px;
+		text-underline-position: under;
+		text-decoration-skip-ink: none;
+		text-decoration-thickness: 4px;
+		text-decoration-line: underline;
+		text-decoration-color: color(--color-code);
+	}
+
+	100% {
+		text-underline-offset: -1.75em;
+		text-underline-position: under;
+		text-decoration-skip-ink: none;
+		text-decoration-thickness: 4px;
+		text-decoration-line: underline;
+		text-decoration-color: transparent;
+	}
+}
+
+@keyframes copy-block {
 	0% {
 		text-underline-offset: 0;
 		text-underline-position: under;
@@ -91,7 +122,7 @@ code.copied:not(:has(span)), pre.copied > code > span {
 	}
 
 	100% {
-		text-underline-offset: -1.75em;
+		text-underline-offset: -1.55em;
 		text-underline-position: under;
 		text-decoration-skip-ink: none;
 		text-decoration-thickness: 3px;
