@@ -73,6 +73,7 @@ article#content {
                         width: 1em;
                         align-items: center;
                         display: inline-flex;
+                        font-size: $base-padding * 1.25;
 
                         &:has(input[type="checkbox"]:checked):before {
                             content: "\2605";

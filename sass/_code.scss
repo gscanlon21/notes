@@ -71,24 +71,31 @@ code {
 	cursor: pointer;
 }
 
-pre.copied {
-	> code > span {
-		animation: flash 500ms forwards linear normal;
-	}
-}
-
-code.copied:not(:has(span)) {
-	animation: flash 500ms forwards linear normal;
+// Copy animation for inline code spans and code blocks.
+code.copied:not(:has(span)), pre.copied > code > span {
+	animation-name: flash;
+	animation-delay: 250ms;
+	animation-duration: 250ms;
+	animation-fill-mode: backwards;
+	animation-timing-function: ease-in;
 }
 
 @keyframes flash {
-  0%, 100% {
-	text-decoration-line: none;
-  }
-  25% {
-	text-decoration-skip-ink: none;
-	text-decoration-thickness: 3px;
-	text-decoration-line: underline;
-	text-decoration-color: color(--color-code);
-  }
+	0% {
+		text-underline-offset: 0;
+		text-underline-position: under;
+		text-decoration-skip-ink: none;
+		text-decoration-thickness: 3px;
+		text-decoration-line: underline;
+		text-decoration-color: color(--color-code);
+	}
+
+	100% {
+		text-underline-offset: -1.75em;
+		text-underline-position: under;
+		text-decoration-skip-ink: none;
+		text-decoration-thickness: 3px;
+		text-decoration-line: underline;
+		text-decoration-color: transparent;
+	}
 }

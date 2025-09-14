@@ -3,7 +3,10 @@ title = "Books"
 sort_by = "title"
 
 [extra]
-see_also = []
+see_also = [
+  { title = "Libro.fm", href = "https://libro.fm/" },
+  { title = "The StoryGraph", href = "https://thestorygraph.com/" },
+]
 +++
 
 # Science Fiction
@@ -38,6 +41,78 @@ Ursula K. Le Guin
 **The Moon is a Harsh Mistress**
 Robert A. Heinlein
 : ~~What was this book about?~~
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+
+**Armor**
+John Steakley
+: ~~What was this book about?~~
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+
+**Revelation Space**
+Alistair Reynolds
+: ~~What was this book about?~~
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+
+**Chasm City**
+Alistair Reynolds
+: ~~What was this book about?~~
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+
+**Slow Bullets**
+Alistair Reynolds
+: ~~What was this book about?~~
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+
+**Ringworld**
+Larry Niven
+: ~~What was this book about?~~
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+
+**The Forever War**
+Joe Haldeman
+: ~~What was this book about?~~
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+
+**Annihilation**
+Jeff VanderMeer
+: ~~What was this book about?~~
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+
+**Dichronauts**
+Greg Egan
+: You really have to be able to understand and visualize really complex math to be able to appreciate this book—I could not.
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -105,6 +180,15 @@ Alexander Darwin
 
 **A Psalm for the Wild-Built**
 Becky Chambers
+: ~~What was this book about?~~
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+
+**Perdido Street Station**
+China Miéville
 : ~~What was this book about?~~
 : > - [x] 
   > - [x] 
