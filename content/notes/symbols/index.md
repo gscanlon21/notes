@@ -18,6 +18,9 @@ updated = 2025-03-03
 ```Spanish e
 é
 ```
+```Bearded c
+ç
+```
 
 # Fractions
 
