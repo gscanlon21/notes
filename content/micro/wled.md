@@ -2,7 +2,12 @@
 title = "W-LED"
 
 [extra]
-see_also = []
+see_also = [
+    { title = "WLED", href = "https://github.com/wled/WLED" },
+    { title = "WLED Installer", href = "https://install.wled.me/" },
+    { title = "ESP Web Tools", href = "https://esphome.github.io/esp-web-tools/" },
+    { title = "QuinLED Dig-Quad", href = "https://quinled.info/pre-assembled-quinled-dig-quad/" },
+]
 +++
 
 # Agility Training LED Strip
