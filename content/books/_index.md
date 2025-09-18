@@ -110,7 +110,7 @@ Jeff VanderMeer
   > - [x] 
   > - [ ] 
 
-**Dichronauts**
+**[Dichronauts](https://www.gregegan.net/DICHRONAUTS/DICHRONAUTS.html)**
 Greg Egan
 : You really have to be able to understand and visualize really complex math to be able to appreciate this book—I could not.
 : > - [x] 
