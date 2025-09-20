@@ -1,5 +1,5 @@
 +++
-title = "Fix"
+title = "Fixes"
 sort_by = "title"
 
 [extra]
