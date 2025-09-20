@@ -6,7 +6,8 @@ weight = 5
 
 [extra]
 see_also = [
-    { title = "Psyllium Husk", href = "https://shop.organicindiausa.com/products/psyllium" }
+    { title = "Visbiome Probiotics", href = "https://www.visbiome.com/" },
+    { title = "Psyllium Husk Fiber", href = "https://shop.organicindiausa.com/products/psyllium" },
 ]
 +++
 
