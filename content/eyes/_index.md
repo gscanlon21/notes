@@ -1,6 +1,7 @@
 +++
-title = "Eye"
+title = "Eyes"
 sort_by = "title"
+aliases = ["eye"]
 
 [extra]
 see_also = [
