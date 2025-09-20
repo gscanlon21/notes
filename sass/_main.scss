@@ -1,6 +1,7 @@
 // Sitemap
 .sitemap {
   user-select: none;
+  margin-block-start: $base-padding;
   
   // If we want the sitemap to span multiple columns.
   &.full {
