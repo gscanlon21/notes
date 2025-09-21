@@ -42,23 +42,17 @@ blockquote:not(:has(+p)) {
 	margin-block-end: 0;
 }
 
-ul,
-ol {
+ul, ol, menu {
 	margin-top: $base-padding * 0.1;
 	padding-inline-start: $base-padding * 2;
 
-	ul, ol {
+	ul, ol, menu {
 		margin-block-start: 0;
 		margin-block-end: $base-padding * 0.1;
 	}
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
+h1, h2, h3, h4, h5, p {
 	margin-block-end: 0;
 }
 
@@ -136,8 +130,7 @@ table {
 		display: none;
 	}
 
-	th,
-	td {
+	th, td {
 		padding: $base-padding;
 		border: 1px solid color(--color-text, .5);
 	}

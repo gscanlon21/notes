@@ -2,17 +2,24 @@
 .sitemap {
   user-select: none;
   margin-block-start: $base-padding;
-  
+
   // If we want the sitemap to span multiple columns.
   &.full {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   
-  & > * {
+  // Pad between submenus.
+  & > menu, & > details {
     margin-block-end: 1em;
   }
 
+  // Remove extra padding from direct descendants.
+  & > .sitemap-list {
+    padding-inline-start: $base-padding * 1.1;
+  }
+
+  // Keep details inline w/ submenus.
   .sitemap-list > details {
     margin-inline-start: -2ch;
   }

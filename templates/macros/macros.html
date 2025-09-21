@@ -22,9 +22,9 @@
 {% set section_info = get_section(path=path) %}
 {% if first_pass %}
     {% if section_info.pages | length > section_info.pages | filter(attribute="extra.in_sitemap", value=false) | length %}
-        <ul class="sitemap-list">
+        <menu class="sitemap-list">
             {{ macros::render_list_links(pages=section_info.pages) }}
-        </ul>
+        </menu>
     {% endif %}
     
     {% for subsection in section_info.subsections | sort %}
@@ -39,13 +39,13 @@
         <details {% if open %}open{% endif %}>
             <summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></summary>
             
-            <ul class="sitemap-list">
+            <menu class="sitemap-list">
                 {{ macros::render_list_links(pages=section_info.pages) }}
         
                 {% for subsection in section_info.subsections | sort %}
                     {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
                 {% endfor %}
-            </ul>
+            </menu>
         </details>
     {% endif %}
 {% endif %}
@@ -56,14 +56,14 @@
     Iterates though the site's ancestors and renders lists for each.
 #}
 {% macro render_ancestors(ancestors) %}
-<ul>
+<menu class="sitemap-list">
     {% for ancestor in ancestors %}
         {% set ancestor_info = get_section(path=ancestor) %}
         {% if not ancestor_info.transparent %}
             <li><a href="{{ get_url(path="@/" ~ ancestor_info.relative_path) }}">{{ ancestor_info.title }}</a></li>
         {% endif %}
     {% endfor %}
-</ul>
+</menu>
 {% endmacro header %}
 
 
@@ -75,9 +75,9 @@
 {% if ancestor_section.pages and ancestor_section.pages | length > 1 %}
 <h3>Siblings</h3>
 <nav class="sitemap">
-    <ul class="sitemap-list">
+    <menu class="sitemap-list">
         {{ macros::render_list_links(pages=ancestor_section.pages, exclude=for.relative_path) }}
-    </ul>
+    </menu>
 </nav>
 {% endif %}
 {% endmacro header %}
