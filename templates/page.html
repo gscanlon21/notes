@@ -4,12 +4,8 @@
 {% block content %}
     <div class="header-wrap">
         <div class="sidebar-left header header-wrap">
-            <div class="header-item">
-                {% include "partials/summary.html" %}
-            </div>
-            <div class="header-item">
-                {% include "partials/toc.html" %}
-            </div>
+            {% include "partials/summary.html" %}
+            {% include "partials/toc.html" %}
         </div>
 
         <div class="sidebar-right">
