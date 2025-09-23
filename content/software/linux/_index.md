@@ -37,7 +37,7 @@ see_also = [
 
   - **/dev/null**
 
-    Can be piped to to detroy any data
+    Can be piped to to destroy any data
 
 - **/etc** - Configuration
 
