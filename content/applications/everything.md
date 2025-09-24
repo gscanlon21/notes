@@ -7,7 +7,7 @@ site = "https://www.voidtools.com/"
 see_also = []
 +++
 
-# Everything
+# Search
 
 ## Find Duplicates
 
