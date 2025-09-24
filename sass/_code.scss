@@ -42,7 +42,8 @@ pre+h6 {
 
 pre {
 	cursor: pointer;
-	padding: $base-padding;
+	padding-block: $base-padding;
+	padding-inline: $base-padding * 1.25;
 	margin-block-start: $base-padding / 2;
 	margin-block-end: 0;
 
@@ -51,11 +52,20 @@ pre {
 		padding-top: 0;
 	}
 
-	>code[data-lang]::before {
-		// Display the code lang as the shell context
-		content: attr(data-lang) "$";
-		color: color(--color-code, 0.75);
-		padding-right: $base-padding;
+	& > code {
+		margin: 0;
+		padding: 0;
+
+		&[data-lang]::before {
+			// Display the code lang as the shell context
+			content: attr(data-lang) "$";
+			color: color(--color-code, 0.75);
+			padding-right: $base-padding;
+		}
+
+		&[data-lang^="."]::before {
+			display: none;
+		}
 	}
 }
 
@@ -128,5 +138,23 @@ pre.copied > code > span {
 		text-decoration-thickness: 3px;
 		text-decoration-line: underline;
 		text-decoration-color: transparent;
+	}
+}
+
+code[data-lang*=".font-size--xx-large"] {
+    font-size: xx-large;
+}
+
+code[data-lang*=".line-height--1"] {
+	display: flex;
+	flex-wrap: wrap;
+	margin-block-end: $base-padding * 0.1;
+	margin-block-start: $base-padding * 0.25;
+    
+	& > span {
+		display: inline-flex;
+		overflow-y: hidden;
+		line-height: 1;
+		width: 100%
 	}
 }
