@@ -7,6 +7,7 @@ see_also = [
     { title = "Sun Vision Display", href = "https://www.sunvisiondisplay.com/" },
     { title = "ZSA Moonlander Mark 1", href = "https://www.zsa.io/moonlander" },
     { title = "Moonlander Configuration", href = "https://configure.zsa.io/moonlander/layouts/default/latest/0" },
+    { title = "Kinesis Keyboards", href = "https://kinesis-ergo.com/" },
 ]
 +++
 
