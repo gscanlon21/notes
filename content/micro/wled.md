@@ -2,6 +2,7 @@
 title = "W-LED"
 
 [extra]
+site = "https://github.com/wled/WLED"
 see_also = [
     { title = "WLED", href = "https://github.com/wled/WLED" },
     { title = "WLED Installer", href = "https://install.wled.me/" },
