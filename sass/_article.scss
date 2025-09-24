@@ -44,6 +44,10 @@ article#content {
             grid-column: 2;
             padding-block-end: $base-padding * 0.5;
 
+            &:has(ul) {
+                margin-block-start: $base-padding * -0.5;
+            }
+
             &:has(+dt) {
                 padding-block-end: $base-padding * 0.75;
 
