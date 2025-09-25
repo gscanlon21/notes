@@ -60,36 +60,6 @@ article#content {
                 display: contents;
                 margin-inline-start: 0;
                 margin-block-start: $base-padding * 0.1;
-
-                // Checkbox rating system.
-                &:has(input[type="checkbox"]) {
-                    input[type="checkbox"] {
-                        display: none;
-                    }
-
-                    ul {
-                        display: contents;
-                        padding: 0;
-                        border: 0;
-                    }
-
-                    li {
-                        width: 1em;
-                        align-items: center;
-                        display: inline-flex;
-                        font-size: $base-padding * 1.25;
-
-                        &:has(input[type="checkbox"]:checked):before {
-                            content: "\2605";
-                            line-height: 1;
-                        }
-
-                        &:has(input[type="checkbox"]:not(:checked)):before {
-                            content: "\2606";
-                            line-height: 1;
-                        }
-                    }
-                }
             }
         }
         

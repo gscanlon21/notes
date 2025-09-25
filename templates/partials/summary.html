@@ -29,6 +29,23 @@
             {% endfor %}
             {% endif %}
 
+            {% if page.extra.rating | default(value=section.extra.rating) %} 
+            <dt>Rating</dt>
+            <dd class="display--inline-flex">
+                <blockquote>
+                    <ul>
+                        {% set ratingEnd = page.extra.rating | default(value=section.extra.rating) %}
+                        {% set ratingStart = 5 - ratingEnd %}
+                        {% for rating in range(end=ratingEnd) %}
+                        <li><input type="checkbox" checked="" style="pointer-events: none;"></li>
+                        {% endfor %}
+                        {% for rating in range(end=ratingStart) %}
+                        <li><input type="checkbox" style="pointer-events: none;"></li>
+                        {% endfor %}
+                    </ul>
+                </blockquote>
+            </dd>
+            {% endif %}
 
             {% if page.extra.see_also | default(value=section.extra.see_also) %} 
             <dt>See Also</dt>
