@@ -16,16 +16,28 @@ see_also = [
 # Steps
 ## Observe Without Evaluation
 Separate observations from evaluations. Describe only what you can see or hear, i.e. things that can be captured in a video. Exclude your interpretations, analyses, or judgments.
+
 > I noticed that you are tapping your foot.
+
+> ~~Your foot is tapping off the beat of the music.~~
 
 ## Identify and Express How You Feel
 This is about identifying and expressing how you feel due to the observations. Be careful not to confuse your feelings with our thoughts or opinions.
+
 > I feel annoyed.
+
+> ~~You're being annoying.~~
 
 ## Identify and Express the Underlying Needs
 Your feelings come from your own needs, expectations, and perceptions. Other people’s words and actions might trigger feelings in you, but they cannot cause those feelings. This component is about taking emotional responsibility (rather than blaming others for how you feel), and uncovering the underlying needs or values that lead to your feelings.
+
 > I need peace and quiet to study. 
+
+> ~~You're interrupting my peace and quiet.~~
 
 ## Make Requests to Meet Your Needs
 After expressing your observations, feelings and needs, you can now convey clear, specific requests that would satisfy your needs and enrich your life. This component is about making your requests effectively, including getting specific feedback about others’ thoughts/feelings in response to what you’ve just shared.
+
 > Can you please leave the room or stop tapping your foot?
+
+> ~~For the love of god, stop tapping your foot.~~

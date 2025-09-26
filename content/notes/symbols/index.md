@@ -41,6 +41,12 @@ updated = 2025-03-03
 ¾
 ```
 
+# Units
+
+```micro
+μ
+```
+
 
 
 # Dashes
@@ -58,6 +64,11 @@ updated = 2025-03-03
 
 ```Zero
 ⁰
+```
+
+## Number Suffixes
+```th
+ᵗʰ
 ```
 
 ## Math Symbols
