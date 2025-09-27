@@ -25,9 +25,7 @@
         </div>
     </div>
 
-    <article id="content" class="page">
-        {{ page.content | safe }}
-    </article>
+    <article id="content" class="page">{{ page.content | safe }}</article>
 
     {% set css = load_data(path=page.path ~ "index.css", required=false) %}
     {% if css %}<style>article#content.page { {{ css | safe }} }</style>{% endif %}

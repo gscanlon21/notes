@@ -32,12 +32,28 @@ h3:has(+ nav:empty) {
 
 // Site content
 main#main {
+  display: flex;
   position: relative;
+  flex-direction: column;
   padding: $base-padding;
 
   // Content files
   article#content { 
+    height: 100%;
     width: auto;
+
+    &:empty::after {
+      content: 'See Subsections';
+      justify-content: center;
+      align-items: center;
+      font-style: italic;
+      display: flex;
+      height: 100%;
+
+      @media (max-width: ($large-width - 1px)) {
+          margin-block-start: $base-padding * 2;
+      }
+    }
 
     *:not(li) {
       // Let the leafiest node scroll when there is a long word or link in that node
