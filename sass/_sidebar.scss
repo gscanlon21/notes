@@ -1,0 +1,16 @@
+// Move the sidebars to the left and right sides of the screen when space is available.
+@media screen and (min-width: $large-width) {
+  .sidebar-left {
+    top: 0;
+    position: absolute;
+    width: $sidebar-width;
+    left: -$sidebar-width - .5rem;
+  }
+
+  .sidebar-right {
+    top: 0; 
+    position: absolute;
+    width: $sidebar-width;
+    right: -$sidebar-width - .5rem;
+  }
+}

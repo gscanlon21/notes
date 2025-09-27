@@ -1,6 +1,4 @@
-/*
-Element only styles
-*/
+/* Element only styles */
 
 html {
 	min-height: 100%;
@@ -31,6 +29,10 @@ body {
 
 main {
 	height: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	padding: $base-padding;
 }
 
 strong {
@@ -61,6 +63,8 @@ ul, ol, menu {
 }
 
 h1, h2, h3, h4, h5 {
+	line-height: normal;
+
 	+ul, +ol, +menu {
 		margin-block-start: $base-padding * 0.25;
 	}
@@ -72,7 +76,7 @@ h1, h2, h3, h4, h5, p {
 
 h1 {
 	font-size: $base-font-size * 2;
-	margin-block-start: $base-padding * 1.8;
+	margin-block-start: $base-padding * 1.75;
 }
 
 h2 {

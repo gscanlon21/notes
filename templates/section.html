@@ -9,18 +9,18 @@
         </div>
         
         <div class="sidebar-right">
-            <h3>Ancestors</h3>
+            <h3 class="sitemap-title section-title">Ancestors</h3>
             <nav class="sitemap">
                 {{ macros::render_ancestors(ancestors=section.ancestors) }}
             </nav>
 
-            <h3>Subsections</h3>
+            <h3 class="sitemap-title">Subsections</h3>
             <nav class="sitemap">
                 {{ macros::render_sitemap(path=section.relative_path, open=false) }}
             </nav>
 
             <div class="screen-large">
-                <h3>Sitemap</h3>
+                <h3 class="sitemap-title">Sitemap</h3>
                 <nav class="sitemap">
                     {{ macros::render_sitemap(path="_index.md", open=false) }}
                 </nav>

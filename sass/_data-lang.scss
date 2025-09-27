@@ -1,0 +1,17 @@
+code[data-lang*=".font-size--xx-large"] {
+    font-size: xx-large;
+}
+
+code[data-lang*=".line-height--1"] {
+	display: flex;
+	flex-wrap: wrap;
+	margin-block-end: $base-padding * 0.1;
+	margin-block-start: $base-padding * 0.25;
+    
+	& > span {
+		display: inline-flex;
+		overflow-y: hidden;
+		line-height: 1;
+		width: 100%
+	}
+}

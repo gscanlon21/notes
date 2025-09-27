@@ -31,11 +31,11 @@
 	<header id="header">
 		<span class="header-item">{% include 'partials/search.html' %}</span>
 		<span class="header-item"><a class="unstyle" href="{{ get_url(path="@/_index.md") }}">ascallion</a></span>
-		<span class="header-item"><a href="{{ get_url(path="@/sitemap.md") }}">Sitemap</a></span>
+		<span class="header-item"><a href="{{ get_url(path="@/_index.md") }}">Sitemap</a></span>
 	</header>
 	{% endblock header %}
 
-	<main id="main" class="markdown-body">
+	<main id="main">
 		{% block content %}
 		{% endblock content %}
 	</main>
@@ -46,8 +46,7 @@
 
 	{# For debugging purposes #}
 	{% if config.base_url == "http://127.0.0.1:1111" %}
-	<br>
-	<details>
+	<details id="templating-context">
 		<summary>Tera Context</summary>
 		<pre>{{ __tera_context }}</pre>
 	</details>

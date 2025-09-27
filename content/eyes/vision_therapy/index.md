@@ -8,3 +8,11 @@ see_also = [
     { title = "Dense Random Letters", file = "random_letters_dense.docx" },
 ]
 +++
+
+**Base-in**
+Diverging
+: The thick end of the lens (the base) should face towards your nose.
+
+**Base-out**
+Converging
+: The thick end of the lens (the base) should face away from your nose.

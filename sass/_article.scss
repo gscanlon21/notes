@@ -1,107 +1,145 @@
-article#content {
-    img {
-        max-width: 100%;
-    }
+article {
+	height: 100%;
+	width: auto;
 
-    dl {
-        display: grid;
-        padding-block-start: 1px;
-        grid-column-gap: $base-padding;
-        grid-template-columns: max-content;
+	> :first-child {
+		margin-block-start: $site-padding * 3;
+	}
 
-        dt,
-        dd {
-            margin: 0;
-        }
+	img {
+		max-width: 100%;
+	}
 
-        dt {
-            grid-row: span 2;
-            margin-block-start: -1px;
-            margin-block-end: $base-padding * 0.5;
-            padding-inline-end: $base-padding * 0.5;
-            padding-block-start: $base-padding * 0.25;
-            border-top: 1px dashed currentColor;
+	dl {
+		display: grid;
+		padding-block-start: 1px;
+		grid-column-gap: $base-padding;
+		grid-template-columns: max-content;
 
-            &:not(.wrap) {
-                max-width: 70vw;
-            }
+		dt,
+		dd {
+			margin: 0;
+		}
 
-            &+dd {
-                padding-block-start: $base-padding * 0.25;
-            }
+		dt {
+			grid-row: span 2;
+			margin-block-start: -1px;
+			margin-block-end: $base-padding * 0.5;
+			padding-inline-end: $base-padding * 0.5;
+			padding-block-start: $base-padding * 0.25;
+			border-top: 1px dashed currentColor;
 
-            strong {
-                display: block;
-            }
-        }
+			&:not(.wrap) {
+				max-width: 70vw;
+			}
 
-        dt + dd:has(+dt) {
-            grid-row: span 2;
-        }
+			&+dd {
+				padding-block-start: $base-padding * 0.25;
+			}
 
-        dd {
-            display: flex;
-            grid-column: 2;
-            padding-block-end: $base-padding * 0.5;
+			strong {
+				display: block;
+			}
+		}
 
-            &:has(ul) {
-                margin-block-start: $base-padding * -0.5;
-            }
+		dt+dd:has(+dt) {
+			grid-row: span 2;
+		}
 
-            &:has(+dt) {
-                padding-block-end: $base-padding * 0.75;
+		dd {
+			display: flex;
+			grid-column: 2;
+			padding-block-end: $base-padding * 0.5;
 
-                &:has(blockquote) {
-                    margin-block-end: $base-padding * 0.5;
-                }
-            }
+			&:has(ul) {
+				margin-block-start: $base-padding * -0.5;
+			}
 
-            blockquote {
-                display: contents;
-                margin-inline-start: 0;
-                margin-block-start: $base-padding * 0.1;
-            }
-        }
-        
-        @media (max-width: ($small-width - 1px)) {
-            grid-template-columns: auto;
+			&:has(+dt) {
+				padding-block-end: $base-padding * 0.75;
 
-            dt, dd, div {
-                grid-column-start: 1;
-                grid-column-end: 3;
-            }
+				&:has(blockquote) {
+					margin-block-end: $base-padding * 0.5;
+				}
+			}
 
-            dt {
-                margin-block: 0;
-                border-top: none;
-            }
+			blockquote {
+				display: contents;
+				margin-inline-start: 0;
+				margin-block-start: $base-padding * 0.1;
+			}
+		}
 
-            dd {
-                margin-inline-start: revert;
+		@media (max-width: ($small-width - 1px)) {
+			grid-template-columns: auto;
 
-                &:has(+dt) {
-                    padding-block-end: $base-padding * 0.5;
+			dt,
+			dd,
+			div {
+				grid-column-start: 1;
+				grid-column-end: 3;
+			}
 
-                    &:has(blockquote) {
-                        margin-block-end: $base-padding * 0.25;
-                    }
-                }
-            }
-        }
+			dt {
+				margin-block: 0;
+				border-top: none;
+			}
 
-        dt.wrap ~ dd, dd.wrap {
-            grid-column: 1 / 3;
-        }
+			dd {
+				margin-inline-start: revert;
 
-        &.striped {
-            dt, dd {
-                margin-left: 0;
-                padding: .3rem .5rem;
+				&:has(+dt) {
+					padding-block-end: $base-padding * 0.5;
 
-                &:nth-of-type(2n+1) {
-                    background-color: rgba(0, 0, 0, .3);
-                }
-            }
-        }
-    }
+					&:has(blockquote) {
+						margin-block-end: $base-padding * 0.25;
+					}
+				}
+			}
+		}
+
+		dt.wrap~dd,
+		dd.wrap {
+			grid-column: 1 / 3;
+		}
+
+		&.striped {
+
+			dt,
+			dd {
+				margin-left: 0;
+				padding: .3rem .5rem;
+
+				&:nth-of-type(2n+1) {
+					background-color: rgba(0, 0, 0, .3);
+				}
+			}
+		}
+	}
+
+	&.section:empty::after {
+		content: 'See Subsections';
+		justify-content: center;
+		align-items: center;
+		font-style: italic;
+		display: flex;
+		height: 100%;
+
+		@media (max-width: ($large-width - 1px)) {
+			margin-block-start: $base-padding * 2;
+		}
+	}
+
+	&.page:empty::after {
+		content: 'See Sidebar';
+		justify-content: center;
+		align-items: center;
+		font-style: italic;
+		display: flex;
+		height: 100%;
+
+		@media (max-width: ($large-width - 1px)) {
+			margin-block-start: $base-padding * 2;
+		}
+	}
 }

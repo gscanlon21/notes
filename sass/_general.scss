@@ -1,13 +1,3 @@
-.screen-large {
-  display: none;
-}
-
-@media screen and (min-width: $large-width) {
-  .screen-large {
-    display: unset;
-  }
-}
-
 .defer {
   visibility: hidden;
 }
@@ -22,4 +12,14 @@
 
 .display--inline-flex {
   display: inline-flex;
+}
+
+.screen-large {
+  display: none;
+}
+
+@media screen and (min-width: $large-width) {
+  .screen-large {
+    display: unset;
+  }
 }
