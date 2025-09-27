@@ -27,7 +27,7 @@
 
 // Sitemap titles
 h3:has(+ nav:empty) {
-  visibility: hidden;
+  display: none;
 }
 
 // Site content
