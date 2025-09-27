@@ -43,12 +43,26 @@ blockquote:not(:has(+p)) {
 }
 
 ul, ol, menu {
-	margin-top: $base-padding * 0.1;
+	margin-block-start: $base-padding * 0.1;
 	padding-inline-start: $base-padding * 2;
 
 	ul, ol, menu {
 		margin-block-start: 0;
 		margin-block-end: $base-padding * 0.1;
+	}
+
+	&:has(input[type="checkbox"]) {
+		padding-inline-start: 0;
+
+		ul, ol, menu {
+			padding-inline-start: $base-padding * 3;
+		}
+	}
+}
+
+h1, h2, h3, h4, h5 {
+	+ul, +ol, +menu {
+		margin-block-start: $base-padding * 0.25;
 	}
 }
 

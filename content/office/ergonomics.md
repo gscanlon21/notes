@@ -15,6 +15,7 @@ see_also = [
 # Desk
 
 # Chair
+Don't get a rolling chair if you don't have carpet.
 
 # Monitor
 Reflective LCD monitors use ambient light to light up the screen and are easy on the eyes. They require either sunlight or 4000-6500K 1600 lumens flicker-free light bulbs to function. Transflective LCD monitors and R-LCD monitors with built-in front lights also exist.
@@ -26,5 +27,24 @@ Diffuser lamp shade covers exist and can be used to diffuse the light sufficient
 
 
 # Keyboard
+- [x] Tented Keyboard
+    - Keeps your wrists in a more natural/neutral position.
+- [x] Split Keyboard
+    - Keeps your wrists inline with your shoulders so they don't scrunch up.
+
+## Switches
+**Linear**
+: Smooth and consistent keystroke with a quiet noise.
+: > Kailh box red
+
+**Clicky**
+: A small bump on each keystroke with a loud click noise.
+: > Cherry MX Blue
+
+**Tactile**
+Preferred
+: A small bump on each keystroke with a moderate noise.
+: > Cherry MX Brown
+
 
 # Mouse
