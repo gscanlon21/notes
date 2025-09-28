@@ -4,7 +4,7 @@
 	flex-wrap: wrap;
 	position: relative;
 	margin-inline: $base-padding;
-	row-gap: $base-padding * 0.1;
+	row-gap: $base-padding * 0.5;
 	column-gap: $base-padding * 2;
 
 	.header-item {

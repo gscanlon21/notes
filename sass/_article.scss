@@ -3,7 +3,7 @@ article {
 	width: auto;
 
 	> :first-child {
-		margin-block-start: $site-padding * 3;
+		margin-block-start: $site-padding * 3 !important;
 	}
 
 	img {

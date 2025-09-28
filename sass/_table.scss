@@ -1,0 +1,58 @@
+// Table headers
+h6:has(+ .table-wrapper) {
+	border-top-right-radius: $border-radius;
+	border-top-left-radius: $border-radius;
+	margin-block-end: $base-padding * -0.1;
+	margin-block-start: $base-padding / 2;
+	font-size: $base-font-size * 0.9;
+	padding-block: $base-padding / 2;
+	padding-inline: $base-padding;
+	max-width: max-content;
+
+	&:empty {
+		display: none;
+	}
+}
+
+.table-wrapper {
+	overflow-x: auto;
+
+	// Expand full width if they have an attribution footer.
+	&:has(+h6) > table {
+		width: 100%;
+	}
+
+	// Attribution footer for tables.
+	&+h6 {
+		font-size: $base-font-size * 0.75;
+		border-bottom-right-radius: $border-radius;
+		border-bottom-left-radius: $border-radius;
+		padding-block: $base-padding / 2;
+		padding-inline: $base-padding;
+		margin-block-start: 0;
+		float: right;
+		
+		&:empty {
+			display: none;
+		}
+
+		&:has(> code:last-child) {
+			padding-inline-end: 0;
+		}
+	}
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin-block-start: $base-padding * 0.1;
+
+	th:empty {
+		display: none;
+	}
+
+	th, td {
+		padding: $base-padding;
+		border: 1px solid color(--color-text, .5);
+	}
+}

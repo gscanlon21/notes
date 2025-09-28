@@ -1,37 +1,50 @@
+// Sitemap title
+main > .sitemap-title {
+	margin-block-start: $site-padding * 2;
+
+	@media (min-width: $large-width) {
+		margin-block-start: $site-padding * 3;
+	}
+}
+
 // Sitemap titles
 .sitemap-title:has(+ .sitemap:empty) {
-  display: none;
+	display: none;
 }
 
 // Sitemap
 .sitemap {
-  user-select: none;
-  margin-block-start: $base-padding * 0.75;
+	user-select: none;
+	margin-block-start: $base-padding * 0.75;
 
-  // If we want the sitemap to span multiple columns.
-  &.full {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-  
-  // Pad between submenus.
-  & > menu, & > details {
-    margin-block-end: 1em;
-  }
+	&.condensed {
+		margin-block-start: $base-padding * 0.5;
+	}
 
-  // Remove extra padding from direct descendants.
-  & > .sitemap-list, li > .sitemap-list {
-    padding-inline-start: $base-padding * 1.1;
-  }
+	// If we want the sitemap to span multiple columns.
+	&.full {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
 
-  .sitemap-list {
-    li.current {
-      font-weight: bold;
-    }
+	// Pad between submenus.
+	& > menu, & > details {
+		margin-block-end: 1em;
+	}
 
-    // Keep details inline w/ submenus.
-    & > details {
-      margin-inline-start: -2ch;
-    }
-  }
+	// Remove extra padding from direct descendants.
+	& > .sitemap-list, li > .sitemap-list {
+		padding-inline-start: $base-padding * 1.2;
+	}
+
+	.sitemap-list {
+		li.current {
+			font-weight: bold;
+		}
+
+		// Keep details inline w/ submenus.
+		& > details {
+			margin-inline-start: -2ch;
+		}
+	}
 }

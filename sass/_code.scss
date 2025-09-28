@@ -1,32 +1,38 @@
-
-h6 {
-	// Filename header for code blocks.
+// Filename header for code blocks.
+h6:has(+pre) {
 	color: color(--color-code);
 	background-color: color(--color-code-bg);
+	border-top-right-radius: $border-radius;
+	border-top-left-radius: $border-radius;
 	margin-block-start: $base-padding / 2;
 	margin-block-end: $base-padding / -2;
-	padding: ($base-padding / 2) $base-padding;
-	border-radius: $border-radius $border-radius 0 0;
+	font-size: $base-font-size * 0.9;
+	padding-block: $base-padding / 2;
+	padding-inline: $base-padding;
 	max-width: max-content;
-	font-size: small;
 
 	&:empty {
 		display: none;
 	}
 }
 
+// Attribution footer for code blocks.
 pre+h6 {
-	// Attribution footer for code blocks.
+	color: color(--color-code);
+	background-color: color(--color-code-bg);
+	border-bottom-right-radius: $border-radius;
+	border-bottom-left-radius: $border-radius;
+	font-size: $base-font-size * 0.75;
+	padding-block: $base-padding / 2;
+	padding-inline: $base-padding;
 	margin-block-start: 0;
-	border-radius: 0 0 $border-radius $border-radius;
 	float: right;
-	font-size: x-small;
-
+	
 	&:empty {
 		display: none;
 	}
 
-    >a {
+    & > a {
         color: color(--color-code-link);
 
         &:focus,

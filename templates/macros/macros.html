@@ -78,7 +78,7 @@
 {% set ancestor_section = get_section(path=for.ancestors | last) %}
 {% if ancestor_section.pages and ancestor_section.pages | length > ancestor_section.pages | filter(attribute="extra.in_sitemap", value=false) | length + 1 %}
 <h3 class="sitemap-title">Siblings</h3>
-<nav class="sitemap">
+<nav class="sitemap condensed">
     <menu class="sitemap-list">
         {{ macros::render_list_links(pages=ancestor_section.pages, exclude=for.relative_path) }}
     </menu>
