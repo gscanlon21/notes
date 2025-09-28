@@ -1,6 +1,6 @@
 <div class="header-item">
     <header id="summary">
-        <h2 class="section-title">
+        <h2 class="header-title">
             {% if page.extra.site | default(value=section.extra.site) %} 
                 <a class="site" href="{{ page.extra.site | default(value=section.extra.site) | safe }}" target="_blank" rel="noreferrer">
                     {{ page.title | default(value=section.title) }}

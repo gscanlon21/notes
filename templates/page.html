@@ -8,15 +8,19 @@
             {% include "partials/toc.html" %}
         </div>
 
-        <div class="sidebar-right">
-            <h3 class="sitemap-title section-title">Ancestors</h3>
-            <nav class="sitemap">
-                {{ macros::render_ancestors(ancestors=page.ancestors) }}
-            </nav>
+        <div class="sidebar-right header">
+			<div class="header-item">
+				<h3 class="sitemap-title header-title">Ancestors</h3>
+				<nav class="sitemap">
+					{{ macros::render_ancestors(ancestors=page.ancestors) }}
+				</nav>
+			</div>
             
-            {{ macros::render_siblings(for=page) }}
-            
-            <div class="screen-large">
+			<div class="header-item">
+            	{{ macros::render_siblings(for=page) }}
+            </div>
+
+            <div class="header-item screen-large">
                 <h3 class="sitemap-title">Sitemap</h3>
                 <nav class="sitemap">
                     {{ macros::render_sitemap(path="_index.md", open=false) }}

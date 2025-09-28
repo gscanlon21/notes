@@ -2,35 +2,46 @@
 {% extends "partials/base.html" %}
 
 {% block content %}
-    <div class="header-wrap">
-        <div class="sidebar-left header header-wrap">
-            {% include "partials/summary.html" %}
-            {% include "partials/toc.html" %}
-        </div>
-        
-        <div class="sidebar-right">
-            <h3 class="sitemap-title section-title">Ancestors</h3>
-            <nav class="sitemap">
-                {{ macros::render_ancestors(ancestors=section.ancestors) }}
-            </nav>
+<div class="header-wrap">
+	<div class="sidebar-left header header-wrap">
+		{% include "partials/summary.html" %}
+		{% include "partials/toc.html" %}
+	</div>
 
-            <h3 class="sitemap-title">Subsections</h3>
-            <nav class="sitemap">
-                {{ macros::render_sitemap(path=section.relative_path, open=false) }}
-            </nav>
+	<div class="sidebar-right header">
+		<div class="header-item">
+			<h3 class="sitemap-title header-title">Ancestors</h3>
+			<nav class="sitemap">
+				{{ macros::render_ancestors(ancestors=section.ancestors) }}
+			</nav>
+		</div>
 
-            <div class="screen-large">
-                <h3 class="sitemap-title">Sitemap</h3>
-                <nav class="sitemap">
-                    {{ macros::render_sitemap(path="_index.md", open=false) }}
-                </nav>
-            </div>
-        </div>
-    </div>
+		<div class="header-item">
+			<h3 class="sitemap-title">Subsections</h3>
+			<nav class="sitemap">
+				{{ macros::render_sitemap(path=section.relative_path, open=false) }}
+			</nav>
+		</div>
+		
+		<div class="header-item screen-large">
+			<h3 class="sitemap-title">Sitemap</h3>
+			<nav class="sitemap">
+				{{ macros::render_sitemap(path="_index.md", open=false) }}
+			</nav>
+		</div>
+	</div>
+</div>
 
-    <article id="content" class="section">{{ section.content | safe }}</article>
+<article id="content" class="section">{{ section.content | safe }}</article>
 
-    {% set css = load_data(path=section.path ~ "_index.css", required=false) %}
-    {% if css %}<style>article#content.section { {{ css | safe }} }</style>{% endif %}
+{% set css = load_data(path=section.path ~ "_index.css", required=false) %}
+{% if css %}<style>
+	article#content.section {
+			{
+				{
+				css | safe
+			}
+		}
+	}
+</style>{% endif %}
 {% endblock content %}
-

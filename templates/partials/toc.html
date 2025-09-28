@@ -1,24 +1,24 @@
 {% set toc = page.toc | default(value=section.toc) %}
 {% if toc %}
 <div class="header-item">
-    <nav>
-        <h3 class="section-title">Table of Contents</h3>
-        <ul>
-            {% for h1 in toc %}
-            <li>
-                <a href="{{ h1.permalink }}">{{ h1.title }}</a>
-                {% if h1.children %}
-                <ul>
-                    {% for h2 in h1.children %}
-                    <li>
-                        <a href="{{ h2.permalink }}">{{ h2.title }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-            </li>
-            {% endfor %}
-        </ul>
-    </nav>
+	<h3 class="sitemap-title header-title">Table of Contents</h3>
+	<nav class="sitemap">
+		<ul class="sitemap-list">
+			{% for h1 in toc %}
+			<li>
+				<a href="{{ h1.permalink }}">{{ h1.title }}</a>
+				{% if h1.children %}
+				<ul class="sitemap-list">
+					{% for h2 in h1.children %}
+					<li>
+						<a href="{{ h2.permalink }}">{{ h2.title }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+	</nav>
 </div>
 {% endif %}

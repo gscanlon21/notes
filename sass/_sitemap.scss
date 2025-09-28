@@ -6,7 +6,7 @@
 // Sitemap
 .sitemap {
   user-select: none;
-  margin-block-start: $base-padding;
+  margin-block-start: $base-padding * 0.75;
 
   // If we want the sitemap to span multiple columns.
   &.full {
@@ -20,7 +20,7 @@
   }
 
   // Remove extra padding from direct descendants.
-  & > .sitemap-list {
+  & > .sitemap-list, li > .sitemap-list {
     padding-inline-start: $base-padding * 1.1;
   }
 

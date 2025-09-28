@@ -14,12 +14,8 @@
   display: inline-flex;
 }
 
-.screen-large {
-  display: none;
-}
-
-@media screen and (min-width: $large-width) {
+@media screen and (max-width: ($large-width - 1px)) {
   .screen-large {
-    display: unset;
+    display: none !important;
   }
 }
