@@ -23,6 +23,7 @@ blockquote:has(input[type="checkbox"]) {
       width: 1em;
       align-items: center;
       display: inline-flex;
+	  list-style-type: none;
       font-size: $base-padding * 1.25;
 
       &:has(input[type="checkbox"]:checked):before {

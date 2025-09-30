@@ -56,6 +56,10 @@ ul, ol, menu {
 	&:has(input[type="checkbox"]) {
 		padding-inline-start: 0;
 
+		& > li {
+			list-style-type: none;
+		}
+
 		ul, ol, menu {
 			padding-inline-start: $base-padding * 3;
 		}
