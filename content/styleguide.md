@@ -4,35 +4,124 @@ in_search_index = false
 
 [extra]
 in_sitemap = false
-site = "https://www.getzola.org/documentation/getting-started/overview/"
 see_also = [
-  { title = "Tera Templating", href = "https://keats.github.io/tera/docs/"}
+	{ title = "Tera Templating", href = "https://keats.github.io/tera/docs/"},
+	{ title = "Zola Documentation", href = "https://www.getzola.org/documentation/getting-started/overview/"},
 ]
 +++
 
-# Headers
+# `Headers`
 # h1
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
 ## h2
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
 ### h3
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
 #### h4
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
 ##### h5
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
-No h6. That has been hijacked for code block headers and footers.
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
-# Paragraphs
-## Five Paragraphs of Lorem Ipsum
-Harum molestiae quo non mollitia aut voluptas sint. Velit vero est saepe necessitatibus. Autem molestiae facere accusantium maxime autem. Veritatis magnam expedita dolorem. Totam voluptatem ullam repellendus.
+###### ~~No h6. That has been hijacked for code block headers and footers.~~
 
-Odio dolor molestias totam nihil et alias. Consequuntur nobis sunt rem sit quia quis aut. Et et beatae tenetur molestias et asperiores doloribus tempore. Ipsa at nemo officiis iure rem enim labore saepe.
-
-Ipsam earum velit voluptates et iure repellat. Ut ratione enim dolorem non. Quo quisquam ut impedit itaque quis dolore harum dicta. Et fugiat sequi vel. Totam fuga nostrum quisquam mollitia aut. Nemo consequatur ex fugiat adipisci.
-
-Ut animi unde reiciendis tempore. Officia dolore quis quo ducimus quo. Provident nostrum odio accusamus facilis. Illum ut veniam et natus ut et ipsam. Voluptas excepturi ullam nemo ut illo est vel. Pariatur magni esse ut.
-
-Assumenda aut ad iure. Quod explicabo ut ea. Et blanditiis dolore ut repudiandae assumenda culpa maxime ut.
 <br>
+<hr>
 
-# Code Blocks
+# `Lists`
+# h1
+- The quick brown fox jumps over the lazy dog.
+- The quick brown fox jumps over the lazy dog.
+
+## h2
+- The quick brown fox jumps over the lazy dog.
+- The quick brown fox jumps over the lazy dog.
+
+### h3
+- The quick brown fox jumps over the lazy dog.
+- The quick brown fox jumps over the lazy dog.
+
+#### h4
+- The quick brown fox jumps over the lazy dog.
+- The quick brown fox jumps over the lazy dog.
+
+##### h5
+- The quick brown fox jumps over the lazy dog.
+- The quick brown fox jumps over the lazy dog.
+
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+- The quick brown fox jumps over the lazy dog.
+	- The quick brown fox jumps over the lazy dog.
+- The quick brown fox jumps over the lazy dog.
+
+
+<br>
+<hr>
+
+# `Blockquotes`
+
+# h1
+> The quick brown fox jumps over the lazy dog.
+
+## h2
+> The quick brown fox jumps over the lazy dog.
+
+### h3
+> The quick brown fox jumps over the lazy dog.
+
+#### h4
+> The quick brown fox jumps over the lazy dog.
+
+##### h5
+> The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+> The quick brown fox jumps over the lazy dog.
+
+<br>
+<hr>
+
+# `Description Lists`
+
+**One**
+With Context
+: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+**Two**
+: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+: - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+**Three**
+: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+: > Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+**Four**
+: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ]
+
+<br>
+<hr>
+
+
+# `Code Blocks`
 
 ## This is a collection of single-line fenced code blocks
 
@@ -86,13 +175,21 @@ As well as filename headers
 Code can also be displayed inline by surounding the code with back ticks. `/* This is one such inline code block */`
 
 
-# Lists
+<br>
+<hr>
 
-## Unordered List
-- list item
-- list item
-- list item
-- Nested List
-  - list item
-  - list item
-- list item
+
+# `Tables`
+
+{% table(header="Cooking Temperature & Safety", footer="The Food Lab by J. Kenji López-Alt `362`") %}
+| Degrees Fahrenheit | Time for Chicken | Time for Turkey | Time for Beef |
+|:------------------:|:----------------:|:---------------:|:-------------:|
+| 135                | 63.3 minutes     | 64 minutes      | 37 minutes    |
+| 140                | 25.2 minutes     | 28.1 minutes    | 12 minutes    |
+| 145                | 8.4 minutes      | 10.5 minutes    | 4 minutes     |
+| 150                | 2.7 minutes      | 3.8 minutes     | 72 seconds    |
+| 155                | 44.2 seconds     | 1.2 minutes     | 23 seconds    |
+| 160                | 13.7 seconds     | 25.6 seconds    | Instantaneous |
+| 165                | Instantaneous    | Instantaneous   | Instantaneous |
+{% end %}
+

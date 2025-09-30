@@ -7,6 +7,9 @@ updated = 2025-03-03
 ```Plus-Minus
 ±
 ```
+```Approximately
+≈
+```
 
 # Cooking Symbols
 ```Degree

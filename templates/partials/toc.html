@@ -1,24 +1,15 @@
+{% import "macros/macros.html" as macros %}
+
 {% set toc = page.toc | default(value=section.toc) %}
 {% if toc %}
 <div class="header-item">
 	<h3 class="sitemap-title header-title">Table of Contents</h3>
 	<nav class="sitemap condensed">
-		<ul class="sitemap-list">
-			{% for h1 in toc %}
-			<li>
-				<a href="{{ h1.permalink }}">{{ h1.title }}</a>
-				{% if h1.children %}
-				<ul class="sitemap-list">
-					{% for h2 in h1.children %}
-					<li>
-						<a href="{{ h2.permalink }}">{{ h2.title }}</a>
-					</li>
-					{% endfor %}
-				</ul>
-				{% endif %}
-			</li>
-			{% endfor %}
-		</ul>
+		{% if page.slug and page.slug == "styleguide" %}
+			{{ macros::render_toc(toc=toc, max_level=1, exclude="h1") }}
+		{% else %}
+			{{ macros::render_toc(toc=toc, max_level=2) }}
+		{% endif %}
 	</nav>
 </div>
 {% endif %}
