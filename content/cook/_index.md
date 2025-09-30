@@ -8,6 +8,8 @@ see_also = [
 ]
 +++
 
+# Temperature & Safety
+
 {% table(header="Cooking Temperature & Safety", footer="The Food Lab by J. Kenji López-Alt `362`") %}
 | Degrees Fahrenheit | Time for Chicken | Time for Turkey | Time for Beef |
 |:------------------:|:----------------:|:---------------:|:-------------:|
@@ -19,3 +21,11 @@ see_also = [
 | 160                | 13.7 seconds     | 25.6 seconds    | Instantaneous |
 | 165                | Instantaneous    | Instantaneous   | Instantaneous |
 {% end %}
+
+
+# Pesticides
+## How to Remove Pesticides from Fruit
+- Mix together **3 cups of cold water** with a **1½ teaspoon baking soda**. 
+- Add the fruit. Let the fruit sit for 10 to 15 minutes, then rinse it off, let it dry, and enjoy.
+
+Baking soda helps “loosen” the pesticides if you will. Plain water will get some off but because of how well they adhere to the fruit you need something stronger to break those adhesive bonds
