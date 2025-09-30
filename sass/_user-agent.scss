@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
 	line-height: normal;
 
 	+ul, +ol, +menu {
-		margin-block-start: $base-padding * 0.25;
+		margin-block-start: $base-padding * 0.5;
 	}
 }
 

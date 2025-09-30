@@ -24,7 +24,7 @@ see_also = [
 
 
 # Pesticides
-## How to Remove Pesticides from Fruit
+##### How to Remove Pesticides from Fruit
 - Mix together **3 cups of cold water** with a **1½ teaspoon baking soda**. 
 - Add the fruit. Let the fruit sit for 10 to 15 minutes, then rinse it off, let it dry, and enjoy.
 
