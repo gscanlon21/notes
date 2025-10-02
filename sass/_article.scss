@@ -10,6 +10,10 @@ article {
 		max-width: 100%;
 	}
 
+	li > dl {
+		margin-block-start: $base-padding * 0.5;
+	}
+
 	dl {
 		display: grid;
 		padding-block-start: 1px;

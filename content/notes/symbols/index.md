@@ -16,6 +16,8 @@ updated = 2025-03-03
 °
 ```
 
+
+
 # Accent Marks
 
 ```Spanish e
@@ -72,7 +74,7 @@ updated = 2025-03-03
 ⁰
 ```
 
-## Number Suffixes
+### Number Suffixes
 ```th
 ᵗʰ
 ```
@@ -93,4 +95,29 @@ updated = 2025-03-03
 
 ```Two
 ₂
+```
+
+
+
+
+# Arrows
+
+## Right Arrows
+```U+2B9E
+⮞
+```
+```U+27A4
+➤
+```
+```U+2794
+➔
+```
+```U+279C
+➜
+```
+```U+FF1E
+＞
+```
+```U+003E
+>
 ```
