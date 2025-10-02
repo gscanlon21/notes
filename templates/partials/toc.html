@@ -1,5 +1,6 @@
 {% import "macros/macros.html" as macros %}
 
+{% set max_level = page.extra.toc_level | default(value=section.extra.toc_level | default(value=2)) %}
 {% set toc = page.toc | default(value=section.toc) %}
 {% if toc %}
 <div class="header-item">
@@ -8,7 +9,7 @@
 		{% if page.slug and page.slug == "styleguide" %}
 			{{ macros::render_toc(toc=toc, max_level=1, exclude="h1") }}
 		{% else %}
-			{{ macros::render_toc(toc=toc, max_level=2) }}
+			{{ macros::render_toc(toc=toc, max_level=max_level) }}
 		{% endif %}
 	</nav>
 </div>
