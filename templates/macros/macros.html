@@ -1,19 +1,26 @@
 {# Uses the Tera templating engine. https://keats.github.io/tera/ #}
 
 {#
-    Renders a list of pages.
+    Renders the table of contents.
 #}
 {% macro render_toc(toc, max_level, exclude='') %}
 <ul class="sitemap-list">
 	{% for item in toc %}
-	{# starting_with(), ending_with(), containing() #}
 	{% if not exclude or item.id is not containing(exclude) %}
+	{% if item.title is not starting_with('"') or item.title is not ending_with('"') %}
+	{% if item.title is not starting_with('(') or item.title is not ending_with(')') %}
+	{% if item.title is not starting_with('[') or item.title is not ending_with(']') %}
+	{% if item.title is not starting_with('_') and item.title is not ending_with(':') %}
 		<li>
 			<a href="{{ item.permalink }}">{{ item.title }}</a>
 			{% if item.children and item.level < max_level %}
 				{{ macros::render_toc(toc=item.children, max_level=max_level) }}
 			{% endif %}
 		</li>
+	{% endif %}
+	{% endif %}
+	{% endif %}
+	{% endif %}
 	{% endif %}
 	{% endfor %}
 </ul>

@@ -3,7 +3,11 @@ blockquote > :only-child {
 	padding-left: .5em;
 }
 
-// Checkbox rating system.
+/******** Checkbox Rating System. ********/
+dd:has(blockquote input[type="checkbox"]) {
+	display: flex;
+}
+
 blockquote:has(input[type="checkbox"]) {
   display: contents;
   margin-inline-start: 0;

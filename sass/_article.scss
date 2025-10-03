@@ -26,7 +26,7 @@ article {
 		}
 
 		dt {
-			grid-row: span 2;
+			grid-row: span 3;
 			margin-block-start: -1px;
 			margin-block-end: $base-padding * 0.5;
 			padding-inline-end: $base-padding * 0.5;
@@ -37,21 +37,24 @@ article {
 				max-width: 70vw;
 			}
 
-			&+dd {
+			&+dd:not(:has(dl)) {
 				padding-block-start: $base-padding * 0.25;
 			}
 
-			strong {
+			strong, em {
 				display: block;
+			}
+
+			&+dd+dd:has(+dt) {
+				grid-row: span 2;
+			}
+
+			&+dd:has(+dt) {
+				grid-row: span 3;
 			}
 		}
 
-		dt+dd:has(+dt) {
-			grid-row: span 2;
-		}
-
 		dd {
-			display: flex;
 			grid-column: 2;
 			padding-block-end: $base-padding * 0.5;
 
@@ -71,6 +74,10 @@ article {
 				display: contents;
 				margin-inline-start: 0;
 				margin-block-start: $base-padding * 0.1;
+			}
+
+			dl {
+				padding-block-start: 0;
 			}
 		}
 
@@ -118,6 +125,11 @@ article {
 					background-color: rgba(0, 0, 0, .3);
 				}
 			}
+		}
+
+		// Since the headers use display: inline-block, there's no margin collapse.
+		&:has(+h1), &:has(+h2), &:has(+h3), &:has(+h4), &:has(+h5) {
+			margin-block-end: 0;
 		}
 	}
 
