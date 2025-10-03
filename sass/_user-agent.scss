@@ -70,6 +70,14 @@ ul, ol, menu {
 	&:has(+h1), &:has(+h2), &:has(+h3), &:has(+h4), &:has(+h5) {
 		margin-block-end: 0;
 	}
+
+	& > li {
+		& > blockquote {
+			margin-block-start: 0;
+			margin-inline-start: 0;
+			margin-block-end: $base-padding * 0.5;
+		}
+	}
 }
 
 h1, h2, h3, h4, h5, p {

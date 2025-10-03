@@ -29,11 +29,12 @@
 
 {#
     Renders a list of pages.
+	Warning: Don't use page as the loop variable b/c it already exists in context.
 #}
 {% macro render_list_links(pages, exclude='', sort=false) %}
+{% set show_localhost = config.base_url == "http://127.0.0.1:1111" %}
 {% for item in pages %}
-    {# Warning: using page as the loop variable causes bugs since it already exists in context #}
-    {% if item.extra.in_sitemap | default(value=true) %}
+    {% if item.extra.in_sitemap | default(value=true) or show_localhost %}
         {% if item.relative_path == exclude %}
             <li class="current">{{ item.title }}</li>
         {% else %}
@@ -51,7 +52,7 @@
 {% set show_localhost = config.base_url == "http://127.0.0.1:1111" %}
 {% set section_info = get_section(path=path) %}
 {% if first_pass %}
-    {% if section_info.pages | length > section_info.pages | filter(attribute="extra.in_sitemap", value=false) | length %}
+    {% if section_info.pages | length > section_info.pages | filter(attribute="extra.in_sitemap", value=false) | length or show_localhost %}
         <menu class="sitemap-list">
             {{ macros::render_list_links(pages=section_info.pages) }}
         </menu>

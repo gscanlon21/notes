@@ -11,6 +11,7 @@ see_also = [
 +++
 
 # `Headers`
+- - -
 # h1
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
@@ -41,7 +42,9 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 <br>
 <hr>
 
-# `Lists`
+
+# `Lists` 
+- - -
 # h1
 - The quick brown fox jumps over the lazy dog.
 - The quick brown fox jumps over the lazy dog.
@@ -72,8 +75,9 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 <br>
 <hr>
 
-# `Blockquotes`
 
+# `Blockquotes`
+- - -
 # h1
 > The quick brown fox jumps over the lazy dog.
 
@@ -95,8 +99,9 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 <br>
 <hr>
 
-# `Description Lists`
 
+# `Description Lists`
+- - -
 **One**
 With Context
 : Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -122,7 +127,7 @@ With Context
 
 
 # `Code Blocks`
-
+- - -
 ## This is a collection of single-line fenced code blocks
 
 Code blocks should be described using a regular header element or paragraph
@@ -180,6 +185,14 @@ Code can also be displayed inline by surounding the code with back ticks. `/* Th
 
 
 # `Tables`
+- - -
+{% table(header="Has an Empty Header") %}
+|             | **Yes**     | **No**            |
+|------------:|:-----------:|:-----------------:|
+| **Present** | Hit         | Miss              |
+| **Absent**  | False Alarm | Correct Rejection |
+{% end %}
+<br>
 
 {% table(header="Cooking Temperature & Safety", footer="The Food Lab by J. Kenji López-Alt `362`") %}
 | Degrees Fahrenheit | Time for Chicken | Time for Turkey | Time for Beef |
@@ -192,4 +205,3 @@ Code can also be displayed inline by surounding the code with back ticks. `/* Th
 | 160                | 13.7 seconds     | 25.6 seconds    | Instantaneous |
 | 165                | Instantaneous    | Instantaneous   | Instantaneous |
 {% end %}
-

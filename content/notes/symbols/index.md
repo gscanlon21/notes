@@ -10,6 +10,13 @@ updated = 2025-03-03
 ```Approximately
 ≈
 ```
+```Multiplication
+×
+```
+```Dot
+· 
+```
+
 
 # Cooking Symbols
 ```Degree
@@ -51,8 +58,14 @@ updated = 2025-03-03
 
 # Units
 
-```micro
+```Micro
 μ
+```
+```Feet
+′
+```
+```Inches
+″
 ```
 
 

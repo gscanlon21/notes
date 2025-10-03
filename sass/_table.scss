@@ -48,7 +48,7 @@ table {
 	margin-block-start: $base-padding * 0.1;
 
 	th:empty {
-		display: none;
+		border: 0;
 	}
 
 	th, td {

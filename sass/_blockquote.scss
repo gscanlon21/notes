@@ -1,4 +1,4 @@
-blockquote > :only-child {
+blockquote> :only-child {
 	border-left: .2em solid color(--color-text, .5);
 	padding-left: .5em;
 }
@@ -9,35 +9,35 @@ dd:has(blockquote input[type="checkbox"]) {
 }
 
 blockquote:has(input[type="checkbox"]) {
-  display: contents;
-  margin-inline-start: 0;
-  margin-block-start: $base-padding * 0.1;
-  
-  input[type="checkbox"] {
-      display: none;
-  }
+	display: contents;
+	margin-inline-start: 0;
+	margin-block-start: $base-padding * 0.1;
 
-  ul {
-      display: contents;
-      padding: 0;
-      border: 0;
-  }
+	input[type="checkbox"] {
+		display: none;
+	}
 
-  li {
-      width: 1em;
-      align-items: center;
-      display: inline-flex;
-	  list-style-type: none;
-      font-size: $base-padding * 1.25;
+	ul {
+		display: contents;
+		padding: 0;
+		border: 0;
+	}
 
-      &:has(input[type="checkbox"]:checked):before {
-          content: "\2605";
-          line-height: 1;
-      }
+	li {
+		width: 1em;
+		align-items: center;
+		display: inline-flex;
+		list-style-type: none;
+		font-size: $base-padding * 1.25;
 
-      &:has(input[type="checkbox"]:not(:checked)):before {
-          content: "\2606";
-          line-height: 1;
-      }
-  }
+		&:has(input[type="checkbox"]:checked):before {
+			content: "\2605";
+			line-height: 1;
+		}
+
+		&:has(input[type="checkbox"]:not(:checked)):before {
+			content: "\2606";
+			line-height: 1;
+		}
+	}
 }
