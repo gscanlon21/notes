@@ -29,10 +29,13 @@ article {
 		dt {
 			grid-row: span 3;
 			margin-block-start: -1px;
-			margin-block-end: $base-padding * 0.5;
 			padding-inline-end: $base-padding * 0.5;
 			padding-block-start: $base-padding * 0.25;
 			border-top: 1px dashed currentColor;
+
+			&:not(:last-of-type) {
+				margin-block-end: $base-padding * 0.5;
+			}
 
 			&:not(.wrap) {
 				max-width: 70vw;
@@ -57,7 +60,10 @@ article {
 
 		dd {
 			grid-column: 2;
-			padding-block-end: $base-padding * 0.5;
+
+			&:not(:last-child) {
+				padding-block-end: $base-padding * 0.5;
+			}
 
 			&:has(ul) {
 				margin-block-start: $base-padding * -0.5;
@@ -75,6 +81,10 @@ article {
 				display: contents;
 				margin-inline-start: 0;
 				margin-block-start: $base-padding * 0.1;
+			}
+
+			&:has(dl):has(+dt) {
+				margin-block-end: $base-padding * 0.5;
 			}
 
 			dl {
