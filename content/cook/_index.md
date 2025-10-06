@@ -8,6 +8,11 @@ see_also = [
 ]
 +++
 
+# Equipment
+
+**Parchment Paper**
+: Silicone Free, Unbleached, Uncoated
+
 # Temperature & Safety
 
 {% table(header="Cooking Temperature & Safety", footer="The Food Lab by J. Kenji López-Alt `362`") %}
