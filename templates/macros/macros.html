@@ -37,8 +37,14 @@
     {% if item.extra.in_sitemap | default(value=true) or show_localhost %}
         {% if item.relative_path == exclude %}
             <li class="current">{{ item.title }}</li>
-        {% else %}
-            <li><a href="{{ get_url(path="@/" ~ item.relative_path) }}">{{ item.title }}</a></li>
+        {#{% elif item.description %}
+            <li>
+				<a href="{{ get_url(path="@/" ~ item.relative_path) }}">{{ item.title }}
+					<ul><li>{{ item.description }}</li></ul>
+				</a>
+			</li>#}
+		{% else %}
+			<li><a href="{{ get_url(path="@/" ~ item.relative_path) }}">{{ item.title }}</a></li>
         {% endif %}
     {% endif %}
 {% endfor %}

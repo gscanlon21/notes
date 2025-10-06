@@ -86,6 +86,33 @@ updated = 2025-03-03
 ```Zero
 ⁰
 ```
+```One
+¹
+```
+```Two
+²
+```
+```Three
+³
+```
+```Four
+⁴
+```
+```Five
+⁵
+```
+```Six
+⁶
+```
+```Seven
+⁷
+```
+```Eight
+⁸
+```
+```Nine
+⁹
+```
 
 ### Number Suffixes
 ```th
@@ -106,10 +133,36 @@ updated = 2025-03-03
 
 ## Numbers
 
+```Zero
+₀
+```
+```One
+₁
+```
 ```Two
 ₂
 ```
-
+```Three
+₃
+```
+```Four
+₄
+```
+```Five
+₅
+```
+```Six
+₆
+```
+```Seven
+₇
+```
+```Eight
+₈
+```
+```Nine
+₉
+```
 
 
 
