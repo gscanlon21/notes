@@ -21,7 +21,8 @@ article {
 		grid-template-columns: max-content;
 
 		dt,
-		dd {
+		dd,
+		dd > p {
 			margin: 0;
 		}
 
@@ -115,7 +116,6 @@ article {
 		}
 
 		&.striped {
-
 			dt,
 			dd {
 				margin-left: 0;
