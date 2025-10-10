@@ -60,6 +60,7 @@ article {
 
 		dd {
 			grid-column: 2;
+			overflow-x: auto;
 
 			&:not(:last-child) {
 				padding-block-end: $base-padding * 0.5;
@@ -90,6 +91,18 @@ article {
 			dl {
 				padding-block-start: 0;
 			}
+
+			pre {
+				margin-block-start: 0;
+			}
+		}
+
+		@media (min-width: $small-width) {
+			dd {
+				&:has(pre) {
+					padding-block-start: 0 !important;
+				}
+			}		
 		}
 
 		@media (max-width: ($small-width - 1px)) {
