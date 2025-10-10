@@ -49,11 +49,11 @@ article {
 				display: block;
 			}
 
-			&+dd+dd:has(+dt) {
+			&+dd+dd:has(+dt), &+dd+dd:last-child {
 				grid-row: span 2;
 			}
 
-			&+dd:has(+dt) {
+			&+dd:has(+dt), &+dd:last-child {
 				grid-row: span 3;
 			}
 		}

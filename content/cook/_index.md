@@ -43,7 +43,7 @@ Baking soda helps “loosen” the pesticides if you will. Plain water will get 
 
 **Chef's Knife**
 _8–10 inch_
-: Curve of the blade allows you to rock back and forth for mincing.
+: The curve of the blade allows you to rock back and forth for mincing.
 
 **Santoku Knife**
 _6–8 inch_
@@ -52,12 +52,15 @@ _6–8 inch_
 **Pairing Knife**
 _Sheep's Foot_
 _3–4 inch_
-: Used to hack and chop small things.
+: Used to hack, chop, and peel small things.
+: You don't want to mince with this, so the blade should be straight.
+: - A straight blade will follow the curve of a peel better than an opposing curve.
 
-**Bread Knife**
-_Serrated_
+**Serrated Knife**
+or Bread Knife
 _10–12 inch_
-: For cutting bread.
+: For slicing bread, meat, and some fruits.
+: Ideal for cutting through thick skins without crushing the fleshy insides.
 
 **Honing Steel**
 _10 inch_

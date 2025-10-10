@@ -1,7 +1,9 @@
+/* Code block section headers */
 h1 > code {
 	line-height: 1.5;
 }
 
+/* Code block section headers */
 h1 + hr {
 	border: 0;
 	margin: 0;
@@ -9,8 +11,4 @@ h1 + hr {
 	& + * {
 		margin-top: 2rem;
 	}
-}
-
-h1 + *:not(hr) {
-	margin-top: 2rem;
 }
