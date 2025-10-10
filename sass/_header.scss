@@ -65,6 +65,10 @@
 		.summary-item {
 			text-indent: $base-padding * -2;
 			padding-inline-start: $base-padding * 2;
+
+			.link {
+				margin-inline-start: 0.1ch;
+			}
 		}
 	}
 }

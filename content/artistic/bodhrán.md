@@ -7,6 +7,7 @@ see_also = [
 	{ title = "Hedwitschak Drums", href = "https://www.bodhranmaker.de/" },
     { title = "Ruairi Glasheen", href = "https://www.ruairiglasheen.net/" },
 	{ title = "McNeela Lessons", href = "https://mcneela.teachable.com/courses/enrolled/462983" },
+	{ title = "McNeela Bonus Lessons", href = "https://mcneela.teachable.com/courses/enrolled/518120" },
 	{ title = "Nicolle Fig: Bodhrán Basics - Jig Groove", href = "https://www.youtube.com/watch?v=9ehZKxCueo4" },
 	{ title = "Ruairi Glasheen: How to Play Bodhrán - Lesson 1", href = "https://www.youtube.com/watch?v=56CWarax-88" },
 	{ title = "Bodhrán Practice Playlist", href = "https://open.spotify.com/playlist/30M3gw09edcTm3FUa7olt9" },

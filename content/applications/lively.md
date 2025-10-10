@@ -1,5 +1,6 @@
 +++
-title = "Lively (Dynamic Wallpaper)"
+title = "Lively"
+description = "Free and open-source software that allows users to set animated desktop wallpapers and screensavers."
 updated = 2025-02-27
 
 [extra]
