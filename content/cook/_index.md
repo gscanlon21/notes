@@ -8,11 +8,6 @@ see_also = [
 ]
 +++
 
-# Equipment
-
-**Parchment Paper**
-: Silicone Free, Unbleached, Uncoated
-
 # Temperature & Safety
 
 {% table(header="Cooking Temperature & Safety", footer="The Food Lab by J. Kenji López-Alt `362`") %}
@@ -28,9 +23,45 @@ see_also = [
 {% end %}
 
 
+
 # Pesticides
 ##### How to Remove Pesticides from Fruit
 - Mix together **3 cups of cold water** with a **1½ teaspoon baking soda**. 
 - Add the fruit. Let the fruit sit for 10 to 15 minutes, then rinse it off, let it dry, and enjoy.
 
 Baking soda helps “loosen” the pesticides if you will. Plain water will get some off but because of how well they adhere to the fruit you need something stronger to break those adhesive bonds
+
+
+
+# Equipment
+
+**Parchment Paper**
+: Silicone Free, Unbleached, Uncoated
+
+
+## Knives
+
+**Chef's Knife**
+_8–10 inch_
+: Curve of the blade allows you to rock back and forth for mincing.
+
+**Santoku Knife**
+_6–8 inch_
+: A straight blade is better for slicing and chopping, not mincing.
+
+**Pairing Knife**
+_Sheep's Foot_
+_3–4 inch_
+: Used to hack and chop small things.
+
+**Bread Knife**
+_Serrated_
+_10–12 inch_
+: For cutting bread.
+
+**Honing Steel**
+_10 inch_
+: Used to re-align the edge of the blade so that the sharpened bit is all facing in the right direction.
+: **Diamond Steels**
+  : Honing steels that have fine diamond powder embedded in them.
+  : This allows them to sharpen the edge as well as straighten it.
