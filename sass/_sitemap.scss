@@ -38,8 +38,26 @@ main > .sitemap-title {
 	}
 
 	.sitemap-list {
-		li.current {
-			font-weight: bold;
+		li {
+			&.current {
+				font-weight: bold;
+			}
+
+			&.circle {
+				list-style-type: circle;
+			}
+
+			&.square {
+				list-style-type: square;
+			}
+
+			&.disclosure-open {
+				list-style-type: disclosure-open;
+			}
+
+			&.disclosure-closed {
+				list-style-type: disclosure-closed;
+			}
 		}
 
 		// Keep details inline w/ submenus.

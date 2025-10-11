@@ -41,3 +41,16 @@ blockquote:has(input[type="checkbox"]) {
 		}
 	}
 }
+
+// Title header for blockquotes.
+h6:has(+blockquote)  {
+	margin-inline-start: $site-padding * 3.25;
+	margin-block-end: $base-padding * -1;
+}
+
+// Attribution footer for blockquotes.
+blockquote+h6 {
+	font-size: $base-font-size * 0.75;
+	margin-block-start: $base-padding * 0.25;
+	margin-inline-start: $site-padding * 3.25;
+}

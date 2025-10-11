@@ -16,28 +16,14 @@ see_also = [
 +++
 
 # Causes
-
-## Low Free Testosterone & High Sex Hormone Binding Globulin
-
-### Treatment
-
-
-## Impaired Copper/Zinc Ratio
-
-### Treatment
-
-
-## Vitamin A Deficiency
-
-### Treatment
-
-## Malabsorption of the Gut
-
-## Autoimmune Disease
-
-## Binocular Vision Dysfunction
-
-Treated with visual therapy exercises.
+- Low Free Testosterone & High Sex Hormone Binding Globulin
+- Impaired Copper/Zinc Ratio
+- Vitamin A Deficiency
+  - Malabsorption of the Gut
+- Autoimmune Disease
+  - Celiac
+- Binocular Vision Dysfunction
+  - Treated with visual therapy exercises.
 
 # Treatment
 
