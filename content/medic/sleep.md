@@ -34,9 +34,12 @@ references = [
 
 ##### Spending 5 minutes writing tomorrow’s to-do list before bed can help you fall asleep ~15 minutes faster.<sup>[1]</sup>
 
-> Researchers randomly assigned healthy young adults to one of two bedtime writing tasks: jot down everything they needed to do in the coming days, or list what they had already accomplished. Using sleep lab monitoring, they found that those who wrote to-do lists fell asleep 9 minutes faster on average. And the more detailed their lists, the quicker they drifted off, by up to 15 minutes. <br><br>
-> The scientists believe this works through a process called cognitive offloading — getting unfinished tasks out of your head and onto paper tells your brain it no longer needs to continually rehearse or worry about them. In contrast, writing about completed activities may stimulate reflection and mental arousal, making it harder to unwind. <br><br> 
-> If your mind races at bedtime, try this: about 10 minutes before sleep, grab a pen and paper (no phones), set a 5-minute timer, and write a specific list of what you’ll do tomorrow. Instead of vague goals like “finish work stuff,” write “send email to boss, finish slide deck, order groceries.” Then close the notebook and rest easy knowing your plans are captured. <br><br>
+> Researchers randomly assigned healthy young adults to one of two bedtime writing tasks: jot down everything they needed to do in the coming days, or list what they had already accomplished. Using sleep lab monitoring, they found that those who wrote to-do lists fell asleep 9 minutes faster on average. And the more detailed their lists, the quicker they drifted off, by up to 15 minutes.
+> <br><br>
+> The scientists believe this works through a process called cognitive offloading — getting unfinished tasks out of your head and onto paper tells your brain it no longer needs to continually rehearse or worry about them. In contrast, writing about completed activities may stimulate reflection and mental arousal, making it harder to unwind.
+> <br><br>
+> If your mind races at bedtime, try this: about 10 minutes before sleep, grab a pen and paper (no phones), set a 5-minute timer, and write a specific list of what you’ll do tomorrow. Instead of vague goals like “finish work stuff,” write “send email to boss, finish slide deck, order groceries.” Then close the notebook and rest easy knowing your plans are captured.
+> <br><br>
 > Make sure you don't write about past accomplishments or ruminate on problems. Instead, focus only on concrete future actions. And then keep the list visible to reduce anxiety about forgetting tasks in the morning. 
 ###### [Arnold’s Pump Club](https://arnoldspumpclub.com/blogs/newsletter/how-to-fall-asleep-15-minutes-faster)
 
