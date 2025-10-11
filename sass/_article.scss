@@ -16,7 +16,9 @@ article {
 
 	dl {
 		display: grid;
+		grid-auto-flow: row;
 		padding-block-start: 1px;
+		grid-auto-rows: max-content;
 		grid-column-gap: $base-padding;
 		grid-template-columns: max-content;
 
@@ -27,7 +29,8 @@ article {
 		}
 
 		dt {
-			grid-row: span 3;
+			grid-column: 1;
+			grid-row: span 99;
 			margin-block-start: -1px;
 			padding-inline-end: $base-padding * 0.5;
 			padding-block-start: $base-padding * 0.25;
@@ -48,20 +51,12 @@ article {
 			strong, em {
 				display: block;
 			}
-
-			&+dd+dd:has(+dt), &+dd+dd:last-child {
-				grid-row: span 2;
-			}
-
-			&+dd:has(+dt), &+dd:last-child {
-				grid-row: span 3;
-			}
 		}
 
 		dd {
 			grid-column: 2;
 			overflow-x: auto;
-
+			
 			&:not(:last-child) {
 				padding-block-end: $base-padding * 0.5;
 			}

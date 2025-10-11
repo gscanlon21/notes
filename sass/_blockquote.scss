@@ -5,7 +5,13 @@ blockquote> :only-child {
 
 /******** Checkbox Rating System. ********/
 dd:has(blockquote input[type="checkbox"]) {
+	margin-block-start: 0;
+	align-items: start;
 	display: flex;
+}
+
+dd + dd:has(blockquote input[type="checkbox"]) {
+	margin-block-start: $base-padding * -0.5;
 }
 
 blockquote:has(input[type="checkbox"]) {
