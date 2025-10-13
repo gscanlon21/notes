@@ -44,7 +44,13 @@ references = [
 ###### [Arnold’s Pump Club](https://arnoldspumpclub.com/blogs/newsletter/how-to-fall-asleep-15-minutes-faster)
 
 
-## Supplements
+# Circadian Rhythm
+
+##### How to reset the Circadian Rhythm
+TODO! What wavelengths of light are right in the morning to properly reset your clock?
+
+
+# Supplements
 - Sustained-Release Melatonin
 - Magnesium Glycinate
     - Magnesium helps ?

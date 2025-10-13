@@ -4,7 +4,8 @@ sort_by = "title"
 
 [extra]
 see_also = [
-    { title = "A Feast a Day", href = "https://afeastaday.com" }
+    { title = "A Feast a Day", href = "https://afeastaday.com" },
+	{ title = "Goya Bulk Green Lentils", href = "https://shop.goya.com/products/goya-lentils" },
 ]
 +++
 
@@ -66,5 +67,6 @@ _10–12 inch_
 _10 inch_
 : Used to re-align the edge of the blade so that the sharpened bit is all facing in the right direction.
 : **Diamond Steels**
+  Sharpening Steels
   : Honing steels that have fine diamond powder embedded in them.
   : This allows them to sharpen the edge as well as straighten it.

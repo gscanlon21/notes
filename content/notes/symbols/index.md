@@ -27,6 +27,9 @@ updated = 2025-03-03
 
 # Accent Marks
 
+```Other e
+è
+```
 ```Spanish e
 é
 ```

@@ -57,12 +57,13 @@ pre {
 	scrollbar-width: 1em;
 
 	&:has(+pre) {
-		padding-block-end: $base-padding / 2;
+		// More bottom padding for the scrollbar.
+		padding-block-end: $base-padding * 0.75;
 	}
 
 	+pre {
 		margin-block-start: 0;
-		padding-block-start: $base-padding / 2;
+		padding-block-start: $base-padding * 0.25;
 	}
 
 	& > code {
