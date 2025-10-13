@@ -40,10 +40,6 @@ article {
 				margin-block-end: $base-padding * 0.5;
 			}
 
-			&:not(.wrap) {
-				max-width: 70vw;
-			}
-
 			&+dd:not(:has(dl)) {
 				padding-block-start: $base-padding * 0.25;
 			}
@@ -93,6 +89,11 @@ article {
 		}
 
 		@media (min-width: $small-width) {
+			dt {
+				&:not(.wrap) {
+					max-width: min(35vw, calc(var(--body-width) * 0.35));
+				}
+			}
 			dd {
 				&:has(pre) {
 					padding-block-start: 0 !important;
