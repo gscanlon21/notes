@@ -8,11 +8,11 @@ see_also = [
     { title = "Dense Random Letters", file = "random_letters_dense.docx" },
 	{ title = "MSK Neurology", href = "https://mskneurology.com/" },
 	{ title = "MRI Self-Pay", href = "https://www.signaturemedicalgroup.com/patient-resources/pay-my-bill/imaging-selfpay/" },
+	{ title = "Alpine Butterfly Loop Knot", href = "https://www.animatedknots.com/alpine-butterfly-loop-knot" },
 ]
 +++
 
 # Equipment
-<br>
 
 ## Prism Lens
 
@@ -27,7 +27,7 @@ Converging
 ## Brock String
 TODO
 
-?Single-strand knots
+> Use an Alpine Butterfly Loop Knot to create a back-stop for each bead threaded onto the string.
 
 
 # Suboccipitals
