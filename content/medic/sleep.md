@@ -56,3 +56,14 @@ TODO! What wavelengths of light are right in the morning to properly reset your 
     - Magnesium helps ?
     - Glycine is an inhibitory neurotransmitter and helps calm things down.
 
+
+# Equipment
+
+**[Contoured Sleep Mask](https://www.livehealthsmart.com/DMI-Contoured-Sleep-Mask)**
+DMI ([HealthSmart](https://www.livehealthsmart.com/))
+: How is this?
+: > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
