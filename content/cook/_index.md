@@ -4,8 +4,11 @@ sort_by = "title"
 
 [extra]
 see_also = [
-    { title = "A Feast a Day", href = "https://afeastaday.com" },
+	{ title = "A Feast a Day", href = "https://afeastaday.com" },
 	{ title = "Goya Bulk Green Lentils", href = "https://shop.goya.com/products/goya-lentils" },
+]
+references = [
+	{ title = "Rice Ratios", href = "https://www.youtube.com/watch?v=JOOSikanIlI", mark = "1" },
 ]
 +++
 
@@ -36,8 +39,15 @@ Baking soda helps “loosen” the pesticides if you will. Plain water will get 
 
 # Equipment
 
+**Strainer**
+: _Fine-Mesh_
+	: Can hold small grains such as lentils.
+	: So water flows right through instead of splashing around.
+
 **Parchment Paper**
-: Silicone Free, Unbleached, Uncoated
+: To keep from having to scrub clean pans.
+: _Silicone Free, Unbleached, Uncoated_
+	: Otherwise they bleed harmful chemicals.
 
 
 ## Knives
@@ -69,4 +79,18 @@ _10 inch_
 : **Diamond Steels**
   Sharpening Steels
   : Honing steels that have fine diamond powder embedded in them.
-  : This allows them to sharpen the edge as well as straighten it.
+  : - This allows them to sharpen the edge as well as straighten it.
+: _Cleaning_
+	: Rinse with warm tap water and dry completely with a cloth.
+
+
+# Ingredients
+
+## Rice
+Always rinse your rice before cooking to remove foreign contaminants and excess starch.
+
+##### Rice to Water Ratios<sup>1</sup>
+Use a 1:1 rice to water ratio with an extra half-cup of water for evaporation.
+
+##### Water is Bubbling Over
+For starchy rice, try wiping oil around the walls of the pot to break up the starch bubbles.

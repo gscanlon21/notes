@@ -10,7 +10,7 @@ dd:has(blockquote input[type="checkbox"]) {
 	display: flex;
 }
 
-dd + dd:has(blockquote input[type="checkbox"]) {
+dd + dd:has(> blockquote input[type="checkbox"]) {
 	margin-block-start: $base-padding * -0.5;
 }
 
@@ -30,19 +30,21 @@ blockquote:has(input[type="checkbox"]) {
 	}
 
 	li {
-		width: 1em;
 		overflow: hidden;
 		align-items: center;
-		display: inline-flex;
 		list-style-type: none;
+		width: $base-font-size;
+		height: $base-font-size;
 		font-size: $base-padding * 1.25;
 
 		&:has(input[type="checkbox"]:checked):before {
+			vertical-align: top;
 			content: "\2605";
 			line-height: 1;
 		}
 
 		&:has(input[type="checkbox"]:not(:checked)):before {
+			vertical-align: top;
 			content: "\2606";
 			line-height: 1;
 		}

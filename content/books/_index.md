@@ -133,18 +133,26 @@ Ted Chiang
 
 **Stories of Your Life and Others**
 Ted Chiang
-: A wonderful collection of science fiction short stories that explore the topic of free will.
+: Science fiction stories that explore individuals' lives.
 : > - [x] 
   > - [x] 
   > - [x] 
   > - [x] 
-  > - [x] 
+  > - [ ] 
 : **Tower of Babylon**
-  : A story about people tunneling through the Vault of heaven, but in their world, it takes the shape of a cylinder and they arrived back underground the Earth.
+  : A story about people tunneling through the vault of heaven. But unbeknownst to them, their world is shaped in a way that they were tunneling through the Earth's crust back up to the surface.
   : > - [x]
     > - [x]
     > - [x]
     > - [x]
+    > - [ ]
+	
+  **Understand**
+  : A person who suffered brain death is given an experimental drug that has a side effect of making neural connections more efficient. So efficient that his mind gets stuck in a death loop.
+  : > - [x]
+    > - [x]
+    > - [ ]
+    > - [ ]
     > - [ ]
 
 **Awake in the Night Land**
