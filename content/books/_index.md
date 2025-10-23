@@ -131,6 +131,22 @@ Ted Chiang
   > - [x] 
   > - [x] 
 
+**Stories of Your Life and Others**
+Ted Chiang
+: A wonderful collection of science fiction short stories that explore the topic of free will.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+: **Tower of Babylon**
+  : A story about people tunneling through the Vault of heaven, but in their world, it takes the shape of a cylinder and they arrived back underground the Earth.
+  : > - [x]
+    > - [x]
+    > - [x]
+    > - [x]
+    > - [ ]
+
 **Awake in the Night Land**
 John C. Wright
 : ~~What was this book about?~~
