@@ -6,4 +6,3 @@ sort_by = "title"
 see_also = []
 +++
 
-# Laser
