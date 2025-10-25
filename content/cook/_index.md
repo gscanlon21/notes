@@ -87,7 +87,7 @@ _10 inch_
 # Ingredients
 
 ## Rice
-Always rinse your rice before cooking to remove foreign contaminants and excess starch.
+Always rinse your rice before cooking to remove foreign contaminants and surface starch.
 
 ##### Rice to Water Ratios<sup>1</sup>
 Use a 1:1 rice to water ratio with an extra half-cup of water for evaporation.
