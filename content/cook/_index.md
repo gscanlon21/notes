@@ -86,6 +86,17 @@ _10 inch_
 
 # Ingredients
 
+## Chicken
+
+##### How to Season a Chicken Breast
+1. Pull the chicken out of the fridge 15–30 min before cooking so it can warm up to room temperature.
+1. Get out Balsamic Vinegar, Cajun Seasoning, Paprika, Red Chili Pepper Flakes, Tarragon, Salt, and Pepper.
+	- A knife is good to have out as well so you can use it to cut out any chicken abnormalities.
+1. Mix together the spices in a small bowl. At least 1 teaspoon of spices for each chicken breast.
+1. Unseal the chicken, douse with balsamic vinegar. Inspect the chicken for any abnormalities.
+1. Sprinkle over the spices, covering both sides. Wash both hands and the spice bowl.
+
+
 ## Rice
 Always rinse your rice before cooking to remove foreign contaminants and surface starch.
 

@@ -3,15 +3,16 @@ title = "Dry Eyes"
 
 [extra]
 see_also = [
-    { title = "tryptyr", href = "https://tryptyr.myalcon.com/" },
-    { title = "xdemvy", href = "https://xdemvy.com" },
-    { title = "xiidra", href = "https://xiidra.com" },
-    { title = "apohealth", href = "https://apohealth.de" },
-    { title = "Red Light Rising", href = "https://redlightrising.co.uk" },
-    { title = "Metagenics SPM Active", href = "https://www.metagenics.com/en-us/product/spm-active" },
-    { title = "Metagenics SpectraZyme® Gluten Digest Enzymes", href = "https://www.metagenics.com/en-us/product/spectrazyme-gluten-digest-enzymes" },
-    { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
-    { title = "8-OHdG Information Sheet", file = "8OHdG-Information-Sheet.pdf" },
+	{ title = "tryptyr", href = "https://tryptyr.myalcon.com/" },
+	{ title = "xdemvy", href = "https://xdemvy.com" },
+	{ title = "xiidra", href = "https://xiidra.com" },
+	{ title = "apohealth", href = "https://apohealth.de" },
+	{ title = "Red Light Rising", href = "https://redlightrising.co.uk" },
+	{ title = "Dry Eye Shop (P-1001)", href = "https://dryeyeshop.com/" },
+	{ title = "Metagenics SPM Active", href = "https://www.metagenics.com/en-us/product/spm-active" },
+	{ title = "Metagenics SpectraZyme® Gluten Digest Enzymes", href = "https://www.metagenics.com/en-us/product/spectrazyme-gluten-digest-enzymes" },
+	{ title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
+	{ title = "8-OHdG Information Sheet", file = "8OHdG-Information-Sheet.pdf" },
 ]
 +++
 

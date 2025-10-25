@@ -4,8 +4,9 @@ updated = 2025-03-03
 
 [extra]
 see_also = [
+	{ title = "Ken Larson", href = "https://www.modhran.com/" },
 	{ title = "Hedwitschak Drums", href = "https://www.bodhranmaker.de/" },
-    { title = "Ruairi Glasheen", href = "https://www.ruairiglasheen.net/" },
+	{ title = "Ruairi Glasheen", href = "https://www.ruairiglasheen.net/" },
 	{ title = "McNeela Lessons", href = "https://mcneela.teachable.com/courses/enrolled/462983" },
 	{ title = "McNeela Bonus Lessons", href = "https://mcneela.teachable.com/courses/enrolled/518120" },
 	{ title = "Nicolle Fig: Bodhrán Basics - Jig Groove", href = "https://www.youtube.com/watch?v=9ehZKxCueo4" },
