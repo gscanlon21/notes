@@ -10,18 +10,25 @@ see_also = []
 ###### Settings
 ```json
 
-// The number of spaces a tab is equal to. This setting is overridden
-// based on the file contents when `editor.detectIndentation` is true.
-"editor.tabSize": 4,
-
-// Insert spaces when pressing Tab. This setting is overridden
-// based on the file contents when `editor.detectIndentation` is true.
-"editor.insertSpaces": false,
-
 // When opening a file, `editor.tabSize` and `editor.insertSpaces`
 // will be detected based on the file contents. Set to false to keep
 // the values you've explicitly set, above.
 "editor.detectIndentation": false,
+
+// The number of spaces used for indentation or "tabSize" to use the value from Editor: Tab Size. 
+// This setting is overridden based on the file contents when Editor: Detect Indentation is on.
+"editor.indentSize": "tabSize",
+
+// The number of spaces a tab is equal to. This setting is overridden
+// based on the file contents when `editor.detectIndentation` is true.
+"editor.tabSize": 4,
+"[markdown]": {
+		"editor.tabSize": 2
+},
+
+// Insert spaces when pressing Tab. This setting is overridden
+// based on the file contents when `editor.detectIndentation` is true.
+"editor.insertSpaces": false,
 
 // Controls the size of editor tabs. 
 "workbench.editor.wrapTabs": true,
