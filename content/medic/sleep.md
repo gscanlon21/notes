@@ -61,6 +61,17 @@ TODO! What wavelengths of light are right in the morning to properly reset your 
 
 **[Contoured Sleep Mask](https://www.livehealthsmart.com/DMI-Contoured-Sleep-Mask)**
 DMI ([HealthSmart](https://www.livehealthsmart.com/))
+: Strong VOC smell upon opening.
+: Eye contours don't have enough height to them.
+: - They don't stay centered on the eyes.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+
+**[Sleep Mask](https://albatrosshealth.com/products/black-eye-mask-for-sleeping)**
+[Albatross](https://albatrosshealth.com/)
 : How is this?
 : > - [ ] 
   > - [ ] 
