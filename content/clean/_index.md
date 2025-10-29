@@ -6,12 +6,6 @@ sort_by = "title"
 see_also = []
 +++
 
-# Stains
-
-**Tomato Sauce**
-: Can be blotted out with an acidic solution such as distilled white vinegar.
-
-
 # Equipment
 
 ## Dawn Powerwash
