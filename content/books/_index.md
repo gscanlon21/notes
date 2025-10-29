@@ -155,6 +155,14 @@ Ted Chiang
     > - [ ]
     > - [ ]
 
+  **Division by Zero**
+  : A mathematician proves that algebra is flawed and becomes suicidal. Her husband shares empathy from his own suicidal past, but it's empathy of separation over unification.
+  : > - [x]
+    > - [x]
+    > - [x]
+    > - [ ]
+    > - [ ]
+
 **Awake in the Night Land**
 John C. Wright
 : ~~What was this book about?~~

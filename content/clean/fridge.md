@@ -6,11 +6,12 @@ updated = 2025-11-11
 see_also = []
 +++
 
-# Shelves
-The shelves are removable and should be taken out of the fridge and cleaned in the sink.
 
-# Drawers
-The drawers are removable and should be taken out of the fridge and cleaned in the sink.
+**Shelves**
+: The shelves are removable and should be taken out of the fridge and cleaned in the sink.
+
+**Drawers**
+: The drawers are removable and should be taken out of the fridge and cleaned in the sink.
 
 
 # Food Stains
