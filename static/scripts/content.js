@@ -44,3 +44,16 @@ for (const element of document.getElementsByTagName('code')) {
         });
     })
 }
+
+let i, j = 0; // Allow checking the list items.
+for (const element of document.getElementsByClassName("checklist-wrapper")) {
+	for (const inputElement of element.getElementsByTagName("input")) {
+		inputElement.id = `a${++i}-${++j}`;
+		inputElement.style.pointerEvents = 'auto';
+		inputElement.parentElement.style.userSelect = 'none';
+		const siblings = Array.from(inputElement.parentElement.children)
+			.filter(c => c.id !== inputElement.id).map(c => c.outerHTML);
+		const labelHTML = `<label for='a${i}-${j}'>${inputElement.nextSibling.textContent}</label>`;
+		inputElement.parentElement.innerHTML = `${inputElement.outerHTML}${labelHTML}${siblings}`;	
+	}
+}

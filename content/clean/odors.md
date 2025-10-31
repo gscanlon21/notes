@@ -1,5 +1,5 @@
 +++
-title = "Dust"
+title = "Odors"
 updated = 2025-11-11
 
 [extra]
@@ -7,9 +7,11 @@ see_also = []
 +++
 
 
-Dust collects odors the way fabric can
+# Dust
+Dust collects odors the way fabric can.
 
-# Common Locations of Dust
+##### Common Locations of Dust
+{% checklist() %}
 - [ ] On top of door frames.
 - [ ] On ceiling fan blades.
 - [ ] Walls can accumulate dust.
@@ -18,4 +20,6 @@ Dust collects odors the way fabric can
 - [ ] On window sills.
 - [ ] On the windows.
 - [ ] On baseboards.
+- [ ] On top of the refrigerator.
 - [ ] On tops of kitchen cabinets.
+{% end %}

@@ -1,5 +1,6 @@
 +++
 title = "Ergonomics"
+updated = 2025-11-11
 
 [extra]
 see_also = [
@@ -35,7 +36,7 @@ Diffuser lamp shade covers exist and can be used to diffuse the light sufficient
 ## Switches
 **Linear**
 : Smooth and consistent keystroke with a quiet noise.
-: > Kailh box red
+: > Kailh Box Red
 
 **Clicky**
 : A small bump on each keystroke with a loud click noise.
@@ -48,3 +49,5 @@ Preferred
 
 
 # Mouse
+- [x] Vertical Mouse
+    - Keeps your wrists in a more natural/neutral position.

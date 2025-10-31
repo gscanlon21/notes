@@ -98,10 +98,23 @@ _10 inch_
 
 
 ## Rice
-Always rinse your rice before cooking to remove foreign contaminants and surface starch.
+Rinse your rice before cooking to remove foreign contaminants and surface starch.
+
+**Jasmine**
+_Long-Grain_
+: High **fluffy**:sticky starch ratio.
+
+**Basmati**
+_Long-Grain_
+: High **fluffy**:sticky starch ratio.
+
+**Arborio**
+_Short-Grain_
+: High **sticky**:fluffy starch ratio.
+: Good for making risottos.
 
 ##### Rice to Water Ratios<sup>1</sup>
 Use a 1:1 rice to water ratio with an extra half-cup of water for evaporation.
 
-##### Water is Bubbling Over
+##### Water is Bubbling Over?
 For starchy rice, try wiping oil around the walls of the pot to break up the starch bubbles.
