@@ -22,9 +22,6 @@ see_also = []
 // The number of spaces a tab is equal to. This setting is overridden
 // based on the file contents when `editor.detectIndentation` is true.
 "editor.tabSize": 4,
-"[markdown]": {
-		"editor.tabSize": 2
-},
 
 // Insert spaces when pressing Tab. This setting is overridden
 // based on the file contents when `editor.detectIndentation` is true.
@@ -51,5 +48,11 @@ see_also = []
 // Select first or last to open editors independently from the currently active one.
 // Select left or right to open editors to the left or right of the currently active one. 
 "workbench.editor.openPositioning": "last",
+
+// Markdown Specific Settings
+"[markdown]": {
+  "editor.tabSize": 2,
+	"editor.insertSpaces": true,
+},
 ```
 ###### `Ctrl` `,`
