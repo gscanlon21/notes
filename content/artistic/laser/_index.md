@@ -3,6 +3,8 @@ title = "Laser"
 sort_by = "title"
 
 [extra]
-see_also = []
+see_also = [
+  { title = "Laser Safety Glasses", href = "https://www.noirinsight.com/" },
+]
 +++
 

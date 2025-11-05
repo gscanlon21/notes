@@ -6,7 +6,8 @@ aliases = ["eye"]
 [extra]
 see_also = [
     { title = "Hoya Sync III", href = "https://www.hoyavision.com/vision-products/single-vision-lenses/sync-iii/" },
-    { title = "Essilor Eyezen", href = "https://www.essilor.com/us-en/products/eyezen/" }
+    { title = "Essilor Eyezen", href = "https://www.essilor.com/us-en/products/eyezen/" },
+    { title = "Laser Safety Glasses", href = "https://www.noirinsight.com/" },
 ]
 +++
 
