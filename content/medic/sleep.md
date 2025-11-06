@@ -44,6 +44,35 @@ references = [
 ###### [Arnold’s Pump Club](https://arnoldspumpclub.com/blogs/newsletter/how-to-fall-asleep-15-minutes-faster)
 
 
+##### You’re a bedtime procrastinator
+> **What it is:**
+> <br>
+> Bedtime procrastination means staying up later than you planned—for no real reason.¹ You’re not working late, taking care of someone, or doing anything you have to do. You’re just delaying sleep because you don’t want the day to be over.
+> <br><br>
+> Maybe it’s because you finally have time to yourself. Maybe it’s because you’re enjoying a show, scrolling, or just sitting in the quiet. 
+> <br><br>
+> Whatever the reason, it feels good in the moment—but it comes at a cost. People who procrastinate on bedtime spend about four times more time on their phones before bed than those who don’t, and they sleep worse and feel more tired the next day.²
+> <br><br>
+> **Why it happens:**
+> <br>
+Bedtime procrastination is usually about control. All day long, your time belongs to other people—work, family, errands, obligations. 
+> <br><br>
+> Late at night, it finally feels like your time is yours. So you hang onto it, even if it means stealing from tomorrow.
+> <br><br>
+> **What helps:**
+> <br>
+> One simple way to start changing this is to notice and name what’s really happening in the moment.
+> <br><br>
+> When you catch yourself saying, “Just one more episode” or “I’ll scroll for a minute,” try quietly naming it: This is me putting off sleep because I don’t want the day to end.
+> <br><br>
+> That small step matters because it interrupts autopilot. You’re no longer just reacting—you’re recognizing what you’re doing and why. And once you see it clearly, you can decide whether it’s worth it. 
+> <br><br>
+> You’re not trying to “fix” yourself or force yourself to bed; you’re just getting honest about the trade-off.
+> <br><br>
+> Some nights, you might still stay up. But over time, the act of noticing changes the pattern. The moment you name what’s happening, you stop being pulled along by it. You start choosing.
+###### [Dr. Mark Hyman](https://drhyman.com/blogs/content/why-you-stay-up-so-late-and-how-to-stop)
+
+
 # Circadian Rhythm
 
 ##### How to reset the Circadian Rhythm
