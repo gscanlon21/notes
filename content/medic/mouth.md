@@ -5,6 +5,7 @@ updated = 2025-10-10
 [extra]
 see_also = [
     { title = "Parodontax Gum Toothpaste", href = "https://www.parodontax.com/" },
+    { title = "TheraBreath Mouthwash", href = "https://www.therabreath.com/collections/mouthwash" },
 ]
 +++
 
@@ -66,3 +67,26 @@ _Pure Fresh Mint_
   > - [ ] 
   > - [ ]
 
+
+# Teeth
+
+## Sensitivities
+TODO
+
+
+# Breath
+
+##### Things to Try
+- Swish around and gargle TheraBreath mouthwash. Don't swallow.
+- Swish around and gargle 3% Hydrogen Peroxide. Don't swallow.
+  - This will likely kill good bacteria in your mouth as well.
+- Swish around and gargle salt water. Don't swallow.
+- Use a dry mouth mouthwash or mint.
+- Cut out all sugar from your diet.
+- Get checked for tonsil stones.
+- Brush the roof of your mouth.
+- Get checked for oral thrush.
+- Use an oral irrigator.
+- Use dental probiotics.
+- Brush your tongue.
+- Drink more water!
