@@ -49,6 +49,8 @@ Baking soda helps “loosen” the pesticides if you will. Plain water will get 
 : _Silicone Free, Unbleached, Uncoated_
 	: Otherwise they bleed harmful chemicals.
 
+**Salad Spinner**
+: To dry salad leaves.
 
 ## Knives
 
