@@ -9,13 +9,10 @@ see_also = []
 +++
 
 
+Before installing lightshot, turn off the Print Screen Shortcut under Ease of Access Keyboard Settings. 
+Doing this should allow it to register "prtscr" as the default keyboard shortcut.
 
-Before setting up or installing lightshot, turn off Print Screen Shortcut under Ease of Access Keyboard Settings, then install lightshot, it should register "prtscr" as default. Its working 101% fine at my end.
-
-To turn off Print Screen Shortcut;
-
-Step 1: Search for Ease of Access Keyboard Settings
-
-Step 2: Find Print Screen Shortcut
-
-Step 3: Turn off the toggle
+##### To turn off Print Screen Shortcut;
+1. Search for Ease of Access Keyboard Settings.
+1. Find Print Screen Shortcut.
+1. Turn off the toggle.
