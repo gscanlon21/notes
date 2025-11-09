@@ -1,6 +1,6 @@
 +++
 title = "Mouth"
-updated = 2025-10-10
+updated = 2025-12-01
 
 [extra]
 see_also = [
@@ -81,6 +81,7 @@ TODO
 - Swish around and gargle 3% Hydrogen Peroxide. Don't swallow.
   - This will likely kill good bacteria in your mouth as well.
 - Swish around and gargle salt water. Don't swallow.
+  - Optionally add in baking soda. Don't swallow.
 - Use a dry mouth mouthwash or mint.
 - Cut out all sugar from your diet.
 - Get checked for tonsil stones.
