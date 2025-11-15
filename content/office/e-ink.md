@@ -55,33 +55,49 @@ Please tum off eye protection software or night mode.
 
 ### Physical Button Function
 
-`C` : Remove Ghosting with One Press. Memory function: Press power button for more than 5 seconds to remember your favorite display mode, contrast & speed 
+`C` 
+: Remove Ghosting with One Press. 
 
-`M` : Switch Display Mode: Video Mode-Graphic Mode-Text Mode 
+`M` 
+: Switch Display Mode: 
+: - Video Mode ➤ Graphic Mode ➤ Text Mode 
 
-`+` / `-` : Contrast Adjustment Button 
+`+` / `-` 
+: Contrast Adjustment Button 
 
-`☀` : Warm-Cold Frontlight Button: Mixed Warm & Cold - Cold - Warm - No Frontlight. Notice: Mixed Frontlight color temperature adjustment should be performed via client software. The supplied USB-B data is needed to be connected to Paperlike U so as to use the client software. Software Download: www.dasung.com 
+`☀`
+: Warm-Cold Frontlight Button
+: - Mixed ➤ Cold ➤ Warm ➤ No Frontlight. 
+: > Mixed frontlight color temperature adjustment should be performed via client software. The supplied USB-B data is needed to be connected to Paperlike U so as to use the client software. [Software Download](www.dasung.com) 
 
-`M` + `+` / `-` Switch Ink Drop Blackness and Speed (The blackness of the ink drop is darker, the speed is lower) . 
-`☀` + `+` / `-` Switch Frontlight Brightness 
+`M` + `+` / `-` 
+: Switch Ink Drop Blackness and Speed (The blackness of the ink drop is darker, the speed is lower) . 
 
-`C` + `M` Restart
+`☀` + `+` / `-` 
+: Switch Frontlight Brightness 
+
+`C` + `M`
+: Restart
  
+`⏻`
+: Power
+: **Memory function**
+  : Press power button for more than 5 seconds to remember your favorite display mode, contrast & speed .
+
 ### Display Mode Instruction
 
 According to the usage scenario to cross adjust the three dimensions of "Display Mode", "Speed" & "Contrast" to achieve optimized image & speed best display effect which can meet your eye-protection needs in working, studying and for entertainment purposes. 
 
 Relieve your digital eye strain. Expand your view in an eye-friendly way. 
 
-**Graphic Mode**
-: Suitable for pictures-web browsing, viewing photos etc. 
-
 **Text Mode**
 : Suitable for typing, text input. 
 
 **Video Mode**
 : Suitable for dynamic playbacks such as watching videos, online courses. 
+
+**Graphic Mode**
+: Suitable for pictures-web browsing, viewing photos etc. 
 
 If you have any problem, please send email to contact@dasung.com 
 

@@ -207,3 +207,6 @@ updated = 2025-03-03
 ```U+1F4A1 Lightbulb
 💡 
 ```
+```U+23FB Power
+⏻
+```
