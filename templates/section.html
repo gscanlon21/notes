@@ -35,13 +35,5 @@
 <article id="content" class="section v{{ page.extra.site_version | default(value=1) }}">{{ section.content | safe }}</article>
 
 {% set css = load_data(path=section.path ~ "_index.css", required=false) %}
-{% if css %}<style>
-	article#content.section {
-			{
-				{
-				css | safe
-			}
-		}
-	}
-</style>{% endif %}
+{% if css %}<style>article#content.section { {{ css | safe }} }</style>{% endif %}
 {% endblock content %}

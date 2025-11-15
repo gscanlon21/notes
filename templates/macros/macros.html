@@ -42,8 +42,8 @@
 	Warning: Don't use page as the loop variable b/c it already exists in context.
 #}
 {% macro render_list_links(pages, current_path='', sort=false) %}
-{% set show_localhost = config.base_url == "http://127.0.0.1:1111" %}
 {% for item in pages %}
+	{% set show_localhost = config.base_url == "http://127.0.0.1:1111" and item.extra.hide_localhost | default(value=false) == false %}
     {% if item.extra.in_sitemap | default(value=true) or show_localhost %}
         {% if item.relative_path == current_path %}
             <li class="current">{{ item.title }}</li>
@@ -106,7 +106,7 @@
 <menu class="sitemap-list">
     {% for ancestor in ancestors %}
         {% set ancestor_info = get_section(path=ancestor) %}
-        {% if not ancestor_info.transparent %}
+        {% if not ancestor_info.transparent and ancestor_info.relative_path != "_index.no.md" %}
             <li><a href="{{ get_url(path="@/" ~ ancestor_info.relative_path) }}">{{ ancestor_info.title }}</a></li>
         {% endif %}
     {% endfor %}
@@ -118,6 +118,7 @@
     Renders a page's siblings.
 #}
 {% macro render_siblings(for) %}
+{% if for.ancestors | length > 0 %}
 {% set ancestor_section = get_section(path=for.ancestors | last) %}
 {% if ancestor_section.pages and ancestor_section.pages | length > ancestor_section.pages | filter(attribute="extra.in_sitemap", value=false) | length + 1 %}
 <h3 class="sitemap-title">Siblings</h3>
@@ -137,5 +138,6 @@
 	{# If we want to include sibling sections and their child items: #}
 	{#{{ macros::render_sitemap(path=ancestor_section.relative_path, open=false, current_path=for.relative_path) }}#}
 </nav>
+{% endif %}
 {% endif %}
 {% endmacro header %}

@@ -10,11 +10,41 @@ base_url = "https://ascallion.com"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
+# A list of glob patterns specifying asset files to ignore when the content
+# directory is processed. Defaults to none, which means that all asset files are
+# copied over to the `public` directory.
+# Example:
+# ignored_content = ["code_articles/**/{Cargo.lock,target}, *.rs"]
+# ignored_content = ["*.{graphml,xlsx}", "temp.*", "**/build_folder"]
+
+# Similar to ignored_content, a list of glob patterns specifying asset files to
+# ignore when the static directory is processed. Defaults to none, which means
+# that all asset files are copied over to the `public` directory
+# ignored_static = []
+
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
 # The default language.
 default_language = "en"
+
+[languages]
+[languages.no]
+build_search_index = false
+
+
+[link_checker]
+# Skip link checking for external URLs that start with these prefixes
+skip_prefixes = []
+
+# Skip anchor checking for external URLs that start with these prefixes
+skip_anchor_prefixes = []
+
+# Treat internal link problems as either "error" or "warn", default is "error"
+internal_level = "error"
+
+# Treat external link problems as either "error" or "warn", default is "error"
+external_level = "error"
 
 
 [markdown]
@@ -29,11 +59,25 @@ highlight_theme = "visual-studio-dark"
 #  { theme = "gruvbox-light", filename = "light.css" },
 #]
 
+# If this is true, a `rel="noopener"` will always automatically be added for security reasons
+external_links_target_blank = false
+
+# Whether to set rel="nofollow" for all external links
+external_links_no_follow = false
+
 # Whether to set rel="noreferrer" for all external links
 external_links_no_referrer = true
 
 # Whether parsing of definition lists is enabled
 definition_list = true
+
+# Whether to set decoding="async" and loading="lazy" for all images
+# When turned on, the alt text must be plain text.
+# For example, `![xx](...)` is ok but `![*x*x](...)` isn’t ok
+# lazy_async_image = false
+
+# Whether footnotes are rendered in the GitHub-style (at the bottom, with back references) or plain (in the place, where they are defined)
+# bottom_footnotes = false
 
 
 [extra]
