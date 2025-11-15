@@ -22,7 +22,7 @@ jobs:
           ssh-key: '${{ secrets.NOTES_SSH_KEY }}'
 
       - name: Deploy to gh-pages branch
-        uses: shalzz/zola-deploy-action@master
+        uses: shalzz/zola-deploy-action@v0.21.0
         env:
           # Target branch
           PAGES_BRANCH: gh-pages
