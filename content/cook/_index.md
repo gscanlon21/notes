@@ -7,9 +7,6 @@ see_also = [
 	{ title = "A Feast a Day", href = "https://afeastaday.com" },
 	{ title = "Goya Bulk Green Lentils", href = "https://shop.goya.com/products/goya-lentils" },
 ]
-references = [
-	{ title = "Rice Ratios", href = "https://www.youtube.com/watch?v=JOOSikanIlI", mark = "1" },
-]
 +++
 
 # Temperature & Safety
@@ -88,6 +85,10 @@ _10 inch_
 
 # Ingredients
 
+## Honey
+##### How to Liquify Crystallized Honey
+Put the bottle in slightly hot water and it will liquify again.
+
 ## Chicken
 
 ##### How to Season a Chicken Breast
@@ -115,8 +116,11 @@ _Short-Grain_
 : High **sticky**:fluffy starch ratio.
 : Good for making risottos.
 
-##### Rice to Water Ratios<sup>1</sup>
+##### Rice to Water Ratios[^1]
 Use a 1:1 rice to water ratio with an extra half-cup of water for evaporation.
 
 ##### Water is Bubbling Over?
 For starchy rice, try wiping oil around the walls of the pot to break up the starch bubbles.
+
+
+[^1]: [Rice Ratios](https://www.youtube.com/watch?v=JOOSikanIlI)

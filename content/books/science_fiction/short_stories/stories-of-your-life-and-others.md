@@ -35,7 +35,8 @@ see_also = []
   > - [ ]
 
 **Story of Your Life**
-: A linguist helps communicate with heptapod aliens, while simultaneously experiencing the birth, life, and death of her daughter, before living through those events. 
+_Arrival (2016)_
+: A linguist helps communicate with heptapod aliens. Through learning their language, she develops the ability to simultaneously experience the birth, life, and death of her daughter, before living through those events. 
 : "Consider the phenomenon of light hitting water at one angle, and traveling through it at a different angle. Explain it by saying that a difference in the index of refraction caused the light to change direction, and one saw the world as humans saw it. Explain it by saying that light minimized the time needed to travel to its destination, and one saw the world as the heptapods saw it." 
 : "Humans had developed a sequential mode of awareness, while heptapods had developed a simultaneous mode of awareness. We experienced events in an order, and perceived their relationship as cause and effect. They experienced all events at once, and perceived a purpose underlying them all. A minimizing, maximizing purpose."
 : > - [x]

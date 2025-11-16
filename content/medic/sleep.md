@@ -7,12 +7,6 @@ see_also = [
     { title = "Magnesium Glycinate" },
     { title = "Sustained-Release Melatonin" }
 ]
-footnotes = [
-    { title = "As an alternative to Magnesium Glycinate, use another form of Magnesium and Collagen." }
-]
-references = [
-    { mark = "1", title = "The Effects of Bedtime Writing on Difficulty Falling Asleep", href = "https://pmc.ncbi.nlm.nih.gov/articles/PMC5758411/" }
-]
 +++
 
 # Sleep Hygiene
@@ -32,7 +26,7 @@ references = [
     - Get early morning sunlight and limit artificial blue light at night to promote a healthy sleep/wake cycle.
 
 
-##### Spending 5 minutes writing tomorrow’s to-do list before bed can help you fall asleep ~15 minutes faster.<sup>[1]</sup>
+##### Spending 5 minutes writing tomorrow’s to-do list before bed can help you fall asleep ~15 minutes faster.[^1]
 
 > Researchers randomly assigned healthy young adults to one of two bedtime writing tasks: jot down everything they needed to do in the coming days, or list what they had already accomplished. Using sleep lab monitoring, they found that those who wrote to-do lists fell asleep 9 minutes faster on average. And the more detailed their lists, the quicker they drifted off, by up to 15 minutes.
 > <br><br>
@@ -81,7 +75,7 @@ TODO! What wavelengths of light are right in the morning to properly reset your 
 
 # Supplements
 - Sustained-Release Melatonin
-- Magnesium Glycinate
+- Magnesium Glycinate[^2]
     - Magnesium helps ?
     - Glycine is an inhibitory neurotransmitter and helps calm things down.
 
@@ -107,3 +101,7 @@ DMI ([HealthSmart](https://www.livehealthsmart.com/))
   > - [ ] 
   > - [ ] 
   > - [ ] 
+
+
+[^1]: [The Effects of Bedtime Writing on Difficulty Falling Asleep](https://pmc.ncbi.nlm.nih.gov/articles/PMC5758411/)
+[^2]: As an alternative to Magnesium Glycinate, use another form of Magnesium and Collagen.

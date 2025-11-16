@@ -5,9 +5,6 @@ sort_by = "title"
 [extra]
 site = "https://git-scm.com/"
 version = "2.30.1"
-references = [
-    { mark = "1", title = "CC-BY-SA Borealid", href = "https://stackoverflow.com/questions/13630849/git-difference-between-assume-unchanged-and-skip-worktree" }
-]
 +++
 
 # Git
@@ -37,7 +34,7 @@ git repack -a -d --depth=250 --window=250 #-f
 
 
 
-##  git update-index<sup>[1]</sup>
+##  git update-index
 
 ### --skip-worktree
 Useful when you instruct git not to touch a specific file ever because developers should change it. For example, if the main repository upstream hosts some production-ready configuration files and you don’t want to accidentally commit changes to those files, --skip-worktree is exactly what you want.

@@ -4,9 +4,6 @@ sort_by = "title"
 
 [extra]
 version = 2019
-references = [
-    { mark = "1", title = "Creating Indexes", href = "https://docs.microsoft.com/en-us/sql/t-sql/statements/create-index-transact-sql?view=sql-server-ver15" }
-]
 see_also = [
     { title = "Powershell Commands", href = "https://dbatools.io/" }
 ]
@@ -28,7 +25,7 @@ GO
 
 ## Syntax
 
-### Creating Indexes<sup>[1]</sup>
+### Creating Indexes
 
 #### Create a unique index
 ```sql
