@@ -66,18 +66,6 @@
             {% endfor %}
             {% endif %}
 
-            {% if page.extra.references | default(value=section.extra.references) %} 
-            <dt>References</dt>
-            {% for ref in page.extra.references | default(value=section.extra.references) %}
-                <dd class="summary-item">
-                    {% if ref.mark %}
-                        {{ ref.mark }}&#32;-&#32;
-                    {% endif %}
-                    <a href="{{ ref.href }}">{{ ref.title | default(value=ref.href) | safe }}</a>
-                </dd>
-            {% endfor %}
-            {% endif %}
-
             {% if page.updated | default(value=section.updated) %} 
             <dt>Last Updated</dt>
             <dd>{{ page.updated | default(value=section.updated) }}</dd>
@@ -85,18 +73,6 @@
             
             <dt>Reading Time</dt>
             <dd>{{ page.reading_time | default(value=section.reading_time) }} minute(s)</dd>
-
-            {% if page.extra.footnotes | default(value=section.extra.footnotes) %} 
-            <dt>Footnotes</dt>
-            {% for ref in page.extra.footnotes | default(value=section.extra.footnotes) %}
-                <dd>
-                    {% if ref.mark %}
-                        {{ ref.mark }}&#32;-&#32;
-                    {% endif %}
-                    <span>{{ ref.title }}</span>
-                </dd>
-            {% endfor %}
-            {% endif %}
         </dl>
     </header>
 </div>
