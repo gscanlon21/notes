@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: /no/submodule/geneticlifehacks_f2032f28-088a-4e46-9f87-5cca6ba5a285/content/sitemap.xml

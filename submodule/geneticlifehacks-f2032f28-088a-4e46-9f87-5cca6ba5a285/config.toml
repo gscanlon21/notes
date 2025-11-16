@@ -1,0 +1,20 @@
+# The URL the site will be built for
+base_url = "/no/submodule/geneticlifehacks_f2032f28-088a-4e46-9f87-5cca6ba5a285/content/"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+default_language = "en"
+
+[languages]
+[languages.no]
+build_search_index = true
+
+[markdown]
+highlight_code = false
+
+[extra]
+# Put all your custom variables here

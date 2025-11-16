@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: /no/submodule/rebelhealth_c0580eef-3f44-4a40-bb81-5f5fd74bdc90/content/sitemap.xml

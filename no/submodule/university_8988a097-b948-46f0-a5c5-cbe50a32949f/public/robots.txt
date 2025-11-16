@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: /no/submodule/university_8988a097-b948-46f0-a5c5-cbe50a32949f/content/sitemap.xml
