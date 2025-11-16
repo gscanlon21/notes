@@ -193,12 +193,61 @@ updated = 2025-03-03
 ```U+279C
 ➜
 ```
+```U+1F852
+🡒
+```
 ```U+FF1E
 ＞
 ```
 ```U+003E
 >
 ```
+
+## Down Arrows
+
+```U+1F853 Downwards Sans-Serif Arrow
+🡓
+```
+
+## Diagonal Arrows
+
+```U+1F856
+🡖
+```
+```	U+1F857
+🡗
+```
+
+# Blocks
+
+```U+2588
+█
+```
+```U+2591
+░
+```
+```U+2592
+▒
+```
+```U+2593
+▓
+```
+```U+25AF
+▯
+```
+```U+25AE
+▮
+```
+
+# Spaces
+
+```U+00A0 No-Break Space
+ 
+```
+```U+202F Narrow No-Break Space
+ 
+```
+
 
 # Icons
 ```U+2600 Sun
