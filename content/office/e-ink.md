@@ -71,7 +71,7 @@ Please tum off eye protection software or night mode.
 : > Mixed frontlight color temperature adjustment should be performed via client software. The supplied USB-B data is needed to be connected to Paperlike U so as to use the client software. [Software Download](www.dasung.com) 
 
 `M` + `+` / `-` 
-: Switch Ink Drop Blackness and Speed (The blackness of the ink drop is darker, the speed is lower) . 
+: Switch Ink Drop Blackness and Speed (The blackness of the ink drop is darker, the speed is lower). 
 
 `☀` + `+` / `-` 
 : Switch Frontlight Brightness 
@@ -82,7 +82,7 @@ Please tum off eye protection software or night mode.
 `⏻`
 : Power
 : **Memory function**
-  : Press power button for more than 5 seconds to remember your favorite display mode, contrast & speed .
+  : Press power button for more than 5 seconds to remember your favorite display mode, contrast & speed.
 
 ### Display Mode Instruction
 

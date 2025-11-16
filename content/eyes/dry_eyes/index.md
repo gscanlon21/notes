@@ -80,6 +80,7 @@ see_also = [
 ## Nutrition
 - Xcellent A 3000mcg
     - 1 capsule per week.
+    - Short-term only.
 - SBI Protect
     - Orthomolecular Products
     - Designs for Health

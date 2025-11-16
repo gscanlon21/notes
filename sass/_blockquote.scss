@@ -14,6 +14,10 @@ dd + dd:has(> blockquote input[type="checkbox"]) {
 	margin-block-start: $base-padding * -0.5;
 }
 
+dd + dd + dd:has(> blockquote input[type="checkbox"]) {
+	margin-block-start: 0;
+}
+
 blockquote:has(input[type="checkbox"]) {
 	display: contents;
 	margin-inline-start: 0;
