@@ -46,3 +46,12 @@ _Arrival (2016)_
   > - [ ]
 
 
+**Seventy-Two Letters**
+: A nomenclator does research into seventy-two letter names that can animate sculpted automata. His research helps refine the nomenclature used to add dexterity to the automata, where his research is picked up by a lord who was investigating humanities sterility come after a set amount of generations (about five). Order is born from nomenclature, and life is born from order. More complex beings see a lesser cross-generational expectancy, as well as more complex nomenclature that guides them. As speculated, by imprinting the nomenclature for humanity on the ovum of a women, new life is able to made without a father. However, that solution allows lords to rule over the peasants by controlling their reproductive freedoms, since each new generation would have to be artificially induced. The nomenclator discovers the solution to impress the ovum with an antonym that induces a foetus that bores its own name, allowing the artificially induced generation to bore their own children by providing them with the nomenclature for humanity.
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+
+
