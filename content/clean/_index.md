@@ -21,3 +21,8 @@ see_also = []
 1. Mix in 2 cups (16 fl oz) of blue Dawn Original Dish Soap.
 1. Add in 1 cup (8 fl oz) of isopropyl alcohol. Gently swish around.
 1. Let sit overnight, then fill a foam spray bottle with the liquid.
+
+## Towels
+
+##### How to Refresh Crispy Towels
+TODO

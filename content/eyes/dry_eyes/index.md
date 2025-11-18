@@ -21,7 +21,7 @@ see_also = [
 - Impaired Copper/Zinc Ratio
 - Vitamin A Deficiency
   - Malabsorption of the Gut
-  - Too high ocular binding globulin circulates too much vitamin A in your blood, preventing your body from using it.
+  - Too high ocular binding globulin (impaired liver) circulates too much vitamin A in your blood, preventing your body from using it.
 - Autoimmune Disease
   - Celiac
 - Binocular Vision Dysfunction
