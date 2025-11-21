@@ -5,7 +5,7 @@ authors = ["Ted Chiang"]
 updated = 2025-12-12
 
 [extra]
-rating = 4
+rating = 3
 see_also = []
 +++
 
@@ -18,6 +18,7 @@ see_also = []
   > - [x]
   > - [ ]
 
+
 **Understand**
 : A person who suffered brain death is given an experimental drug that has a side effect of making neural connections more efficient. So efficient that his mind gets stuck in a death loop.
 : > - [x]
@@ -26,6 +27,7 @@ see_also = []
   > - [ ]
   > - [ ]
 
+
 **Division by Zero**
 : A mathematician proves that algebra is flawed and becomes suicidal. Her husband shares empathy from his own suicidal past, but it's empathy of separation over unification.
 : > - [x]
@@ -33,6 +35,7 @@ see_also = []
   > - [x]
   > - [ ]
   > - [ ]
+
 
 **Story of Your Life**
 _Arrival (2016)_
@@ -63,4 +66,21 @@ _Arrival (2016)_
   > - [ ]
   > - [ ]
 
+
+**Hell is the Absence of God**
+: Too religious for me.
+: > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+
+
+**Liking What You See: A Documentary**
+: This story consists of various peoples' points of views about a student-led initiative to require college attendees to get a procedure that makes it impossible to feel feelings associated with beautiful or ugly faces.
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [ ]
 

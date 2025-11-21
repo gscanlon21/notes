@@ -35,3 +35,11 @@ Suboccipitals are intimately linked to your eye muscles. They help balance and s
 
 ## Diagnostic Testing
 MRIs are good for imaging soft-tissue injuries (injured muscles, ligaments, and tendons).
+
+### MRI Procedures
+- Wear Clothes Sans Metal
+- Wear Cotton Clothing
+  - Some graphic shirts or shorts have metallic ink in them that will reduce the image quality.
+
+### MRI Results
+Original medical images are stored as DICOM files. The RadiAnt DICOM Viewer can view medical images.
