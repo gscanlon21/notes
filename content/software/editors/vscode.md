@@ -49,6 +49,10 @@ see_also = []
 // Select left or right to open editors to the left or right of the currently active one. 
 "workbench.editor.openPositioning": "last",
 
+// Increase the font size of the file explorer.
+"window.zoomLevel": 1,
+"editor.fontSize": 15,
+
 // Markdown Specific Settings
 "[markdown]": {
   "editor.tabSize": 2,
