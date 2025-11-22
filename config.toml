@@ -22,7 +22,7 @@ compile_sass = true
 # that all asset files are copied over to the `public` directory
 # ignored_static = []
 
-# Whether to build a search index to be used later on by a JavaScript library
+# Whether to build a search index to be used later on by a JavaScript library.
 build_search_index = true
 
 # The default language.
@@ -33,22 +33,39 @@ default_language = "en"
 build_search_index = false
 
 
+[search]
+# Whether to include the title of the page/section in the index.
+include_title = true
+
+# Whether to include the description of the page/section in the index.
+include_description = true
+
+# Whether to include the RFC3339 datetime of the page in the search index.
+include_date = false
+
+# Whether to include the path of the page/section in the index (the permalink is always included).
+include_path = false
+
+# Whether to include the rendered content of the page/section in the index.
+include_content = true
+
+
 [link_checker]
-# Skip link checking for external URLs that start with these prefixes
+# Skip link checking for external URLs that start with these prefixes.
 skip_prefixes = []
 
-# Skip anchor checking for external URLs that start with these prefixes
+# Skip anchor checking for external URLs that start with these prefixes.
 skip_anchor_prefixes = []
 
-# Treat internal link problems as either "error" or "warn", default is "error"
+# Treat internal link problems as either "error" or "warn", default is "error".
 internal_level = "error"
 
-# Treat external link problems as either "error" or "warn", default is "error"
+# Treat external link problems as either "error" or "warn", default is "error".
 external_level = "error"
 
 
 [markdown]
-# Whether to do syntax highlighting
+# Whether to do syntax highlighting.
 highlight_code = true
 
 # The theme to use for code highlighting.
@@ -59,24 +76,22 @@ highlight_theme = "visual-studio-dark"
 #  { theme = "gruvbox-light", filename = "light.css" },
 #]
 
-# If this is true, a `rel="noopener"` will always automatically be added for security reasons
+# If this is true, a `rel="noopener"` will always automatically be added for security reasons.
 external_links_target_blank = false
 
-# Whether to set rel="nofollow" for all external links
+# Whether to set rel="nofollow" for all external links.
 external_links_no_follow = false
 
-# Whether to set rel="noreferrer" for all external links
+# Whether to set rel="noreferrer" for all external links.
 external_links_no_referrer = true
 
-# Whether parsing of definition lists is enabled
+# Whether parsing of definition lists is enabled.
 definition_list = true
 
-# Whether to set decoding="async" and loading="lazy" for all images
-# When turned on, the alt text must be plain text.
-# For example, `![xx](...)` is ok but `![*x*x](...)` isn’t ok
+# Whether to set decoding="async" and loading="lazy" for all images.
 # lazy_async_image = false
 
-# Whether footnotes are rendered in the GitHub-style (at the bottom, with back references) or plain (in the place, where they are defined)
+# Whether footnotes are rendered at the bottom (with back references) or plain (in the place, where they are defined).
 bottom_footnotes = true
 
 
