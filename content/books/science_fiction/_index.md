@@ -116,3 +116,11 @@ Greg Egan
   > - [ ] 
 
 
+**The Practice, The Horizon, and the Chain**
+Sofia Samatar
+: On a fleet of mining vessels that travels to distant asteroid belts to mine minerals, a professor starts a community outreach program to lessen the divide between the castes. Of the the slaves, a chained boy, is brought up and taught at the university above the hold where he was raised. Through their relationship, the boy learns to link with others wearing bracelets of the lower castes. Using this link, he finds one of the chained's lost daughters on a sister ship. With the professors help, they track down and reunite the two, inspiring others to link up and break their chains.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
