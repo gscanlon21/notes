@@ -1,14 +1,16 @@
 +++
 title = "Vision Therapy"
+description = "Physical therapy for your eyes"
+updated = 2025-09-09
 
 [extra]
 see_also = [
-    { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
-    { title = "Sparse Random Letters", file = "random_letters_sparse.docx" },
-    { title = "Dense Random Letters", file = "random_letters_dense.docx" },
-	{ title = "MSK Neurology", href = "https://mskneurology.com/" },
-	{ title = "MRI Self-Pay", href = "https://www.signaturemedicalgroup.com/patient-resources/pay-my-bill/imaging-selfpay/" },
-	{ title = "Alpine Butterfly Loop Knot", href = "https://www.animatedknots.com/alpine-butterfly-loop-knot" },
+  { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
+  { title = "Sparse Random Letters", file = "random_letters_sparse.docx" },
+  { title = "Dense Random Letters", file = "random_letters_dense.docx" },
+  { title = "MSK Neurology", href = "https://mskneurology.com/" },
+  { title = "MRI Self-Pay", href = "https://www.signaturemedicalgroup.com/patient-resources/pay-my-bill/imaging-selfpay/" },
+  { title = "Alpine Butterfly Loop Knot", href = "https://www.animatedknots.com/alpine-butterfly-loop-knot" },
 ]
 +++
 
