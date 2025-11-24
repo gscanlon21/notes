@@ -57,8 +57,10 @@ blockquote:has(input[type="checkbox"]) {
 
 // Title header for blockquotes.
 h6:has(+blockquote)  {
-	margin-inline-start: $site-padding * 3.25;
+	font-size: $base-font-size * 0.8;
 	margin-block-end: $base-padding * -1;
+	margin-block-start: $base-padding * 1.25;
+	margin-inline-start: $site-padding * 3.25;
 }
 
 dd > h6:has(+blockquote)  {

@@ -71,7 +71,9 @@ _Pure Fresh Mint_
 # Teeth
 
 ## Sensitivities
-TODO
+- Wear a mouth guard at night so the teeth don't grind.
+- Use a stannous fluoride or sodium fluoride toothpaste.
+- Use interdental floss picks and go in through the back of the teeth.
 
 
 # Breath
