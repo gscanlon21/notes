@@ -49,6 +49,9 @@ include_path = false
 # Whether to include the rendered content of the page/section in the index.
 include_content = true
 
+# At which code point to truncate the content to. Useful if you have a lot of pages and the index would become too big to load on the site.
+truncate_content_length = 1000
+
 
 [link_checker]
 # Skip link checking for external URLs that start with these prefixes.
