@@ -50,7 +50,7 @@ include_path = false
 include_content = true
 
 # At which code point to truncate the content to. Useful if you have a lot of pages and the index would become too big to load on the site.
-truncate_content_length = 1000
+truncate_content_length = 10000
 
 
 [link_checker]
