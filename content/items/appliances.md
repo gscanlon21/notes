@@ -7,3 +7,5 @@ see_also = [
     { title = "Slyman Bros Appliances", href = "https://slymanbros.com/" },
 ]
 +++
+
+{{ hidden() }}

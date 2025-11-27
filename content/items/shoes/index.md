@@ -10,6 +10,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 ![Posture-Deforming Footwear Features](Posture_Deforming.webp "Posture-Deforming Footwear Features")
 
 

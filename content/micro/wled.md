@@ -1,5 +1,6 @@
 +++
 title = "W-LED"
+updated = 2025-12-12
 
 [extra]
 site = "https://github.com/wled/WLED"

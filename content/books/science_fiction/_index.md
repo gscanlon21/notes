@@ -16,15 +16,6 @@ Andy Weir
   > - [x] 
   > - [x]
 
-**Speaker for the Dead**
-Orson Scott Card
-: ~~What was this book about?~~
-: > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [x] 
-
 **The Left Hand of Darkness**
 Ursula K. Le Guin
 : ~~What was this book about?~~

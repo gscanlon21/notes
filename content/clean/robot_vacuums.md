@@ -9,6 +9,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # Features
 - [x] Slanted or dual roller brushes are better for hair de-tangling.
 - [x] Dual roller brushes are better for picking up hair off of carpets.

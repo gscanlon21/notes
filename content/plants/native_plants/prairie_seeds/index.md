@@ -1,5 +1,6 @@
 +++
-title = "Prarie Seeds"
+title = "Prairie Seeds"
+updated = 2025-12-12
 
 [extra]
 see_also = [

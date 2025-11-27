@@ -14,6 +14,14 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
+##### Eye Conditions That Can Be Improved with Vision Therapy[^1]
+- Focusing Problems
+- Depth Perception Problems
+- Hand-Eye Coordination Problems
+- Strabismus and Amblyopia
+
 # Equipment
 
 ## Prism Lens
@@ -44,4 +52,7 @@ MRIs are good for imaging soft-tissue injuries (injured muscles, ligaments, and 
   - Some graphic shirts or shorts have metallic ink in them that will reduce the image quality.
 
 ### MRI Results
-Original medical images are stored as DICOM files. The RadiAnt DICOM Viewer can view medical images.
+Original medical images are stored as DICOM files. The [RadiAnt DICOM Viewer](https://www.radiantviewer.com/) can view medical images.
+
+
+[^1]: [What Does Vision Therapy Fix?](https://www.rebuildyourvision.com/blog/vision-training/eye-conditions-that-can-be-addressed-with-vision-therapy/)

@@ -8,6 +8,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # Pens
 
 **Pentel EnerGel 0.7**

@@ -10,8 +10,14 @@ article {
 		max-width: 100%;
 	}
 
-	li > dl {
-		margin-block-start: $base-padding * 0.5;
+	li {
+		& + li {
+			margin-block-start: $base-padding * 0.1;
+		}
+
+		& > dl {
+			margin-block-start: $base-padding * 0.5;
+		}
 	}
 
 	dl {
