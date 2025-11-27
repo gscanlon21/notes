@@ -9,7 +9,8 @@ h6:has(+pre) {
 	font-size: $base-font-size * 0.9;
 	padding-block: $base-padding / 2;
 	padding-inline: $base-padding;
-	max-width: max-content;
+	max-width: calc(100% - 13ch);
+	width: max-content;
 
 	&:empty {
 		display: none;
@@ -45,6 +46,15 @@ pre+h6 {
             color: color(--color-code-link-visited);
         }
     }
+}
+
+pre:has(+h6) {
+	border-start-end-radius: $border-radius;
+}
+
+
+h6+pre {
+	border-end-start-radius: $border-radius;
 }
 
 pre {

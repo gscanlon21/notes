@@ -4,242 +4,325 @@ updated = 2025-03-03
 +++
 
 # Math Symbols
-```Plus-Minus
+###### Plus-Minus Sign
+```
 ±
 ```
-```Approximately
+###### U+00B1
+###### Almost Equal To
+```
 ≈
 ```
-```Multiplication
+###### U+2248
+###### Multiplication Sign
+```
 ×
 ```
-```Dot
-· 
+###### U+00D7
+###### Middle Dot
 ```
+·
+```
+###### U+00B7
 
 
 # Cooking Symbols
-```Degree
+###### Degree Sign
+```
 °
 ```
+###### U+00B0
 
 
 # Greek Symbols
-```Alpha
+###### Greek Small Letter Alpha
+```
 α
 ```
-```Beta
+###### U+03B1
+###### Greek Small Letter Beta
+```
 β
 ```
+###### U+03B2
 
 
 
 # Accent Marks
 
-```Other e
+###### Latin Small Letter E With Grave
+```
 è
 ```
-```Spanish e
+###### U+00E8
+###### Latin Small Letter E With Acute
+```
 é
 ```
-```Spanish o
+###### U+00E9
+###### Latin Small Letter O With Acute
+```
 ó
 ```
-```Bearded c
+###### U+00F3
+###### Latin Small Letter C With Cedilla
+```
 ç
 ```
+###### U+00E7
 
 # Fractions
 
-
-```One-Eighth
+###### Vulgar Fraction One Eighth
+```
 ⅛
 ```
-```One-Fourth
+###### U+215B
+###### Vulgar Fraction One Quarter
+```
 ¼
 ```
-```One-Third
+###### U+00BC
+###### Vulgar Fraction One Third
+```
 ⅓
 ```
-```One-Half
+###### U+2153
+###### Vulgar Fraction One Half
+```
 ½
 ```
-```Three-Fourths
+###### U+00BD
+###### Vulgar Fraction Three Quarters
+```
 ¾
 ```
+###### U+00BE
 
 # Units
 
-```Micro
+###### Greek Small Letter Mu
+```
 μ
 ```
-```Feet
+###### U+03BC
+###### Prime
+```
 ′
 ```
-```Inches
+###### U+2032
+###### Double Prime
+```
 ″
 ```
+###### U+2033
 
 
 
 # Dashes
 
-```em Dash
+###### Em Dash
+```
 —
 ```
-```en Dash
+###### U+2014
+###### En Dash
+```
 –
 ```
+###### U+2013
 
 # Superscripts
 
 ## Numbers
-
-```Zero
+###### Superscript Zero
+```
 ⁰
 ```
-```One
+###### U+2070	
+###### Superscript One
+```
 ¹
 ```
-```Two
+###### U+00B9
+###### Superscript Two
+```
 ²
 ```
-```Three
+###### U+00B2	
+###### Superscript Three
+```
 ³
 ```
-```Four
+###### U+00B3	
+###### Superscript Four
+```
 ⁴
 ```
-```Five
+###### U+2074	
+###### Superscript Five
+```
 ⁵
 ```
-```Six
+###### U+2075
+###### Superscript Six
+```
 ⁶
 ```
-```Seven
+###### U+2076
+###### Superscript Seven
+```
 ⁷
 ```
-```Eight
+###### U+2077
+###### Superscript Eight
+```
 ⁸
 ```
-```Nine
+###### U+2078
+###### Superscript Nine
+```
 ⁹
 ```
+###### U+2079
+
+
 
 ### Number Suffixes
-```th
+###### Modifier Letter Small T + Modifier Letter Small H
+```
 ᵗʰ
 ```
+###### U+1D57 + U+02B0
+
 
 ## Math Symbols
-
-```Plus
-⁺
+###### Plus Sign
 ```
-```Minus
-⁻
++
 ```
+###### U+002B
+###### Minus Sign
+```
+−
+```
+###### U+2212
 
 
 # Subscripts
-
 ## Numbers
-
-```Zero
+###### Subscript Zero
+```
 ₀
 ```
-```One
+###### U+2080
+###### Subscript One
+```
 ₁
 ```
-```Two
+###### U+2081
+###### Subscript Two
+```
 ₂
 ```
-```Three
+###### U+2082	
+###### Subscript Three
+```
 ₃
 ```
-```Four
+###### U+2083
+###### Subscript Four
+```
 ₄
 ```
-```Five
+###### U+2084
+###### Subscript Five
+```
 ₅
 ```
-```Six
+###### U+2085	
+###### Subscript Six
+```
 ₆
 ```
-```Seven
+###### U+2086
+###### Subscript Seven
+```
 ₇
 ```
-```Eight
+###### U+2087
+###### Subscript Eight
+```
 ₈
 ```
-```Nine
+###### U+2088	
+###### Subscript Nine
+```
 ₉
 ```
+###### U+2089
 
 
 
 # Arrows
-
 ## Right Arrows
-```U+2B9E
+###### Black Rightwards Equilateral Arrowhead
+```
 ⮞
 ```
-```U+27A4
+###### U+2B9E
+###### Black Rightwards Arrowhead
+```
 ➤
 ```
-```U+2794
+###### U+27A4
+###### Heavy Wide-Headed Rightwards Arrow
+```
 ➔
 ```
-```U+279C
+###### U+2794
+###### Heavy Round-Tipped Rightwards Arrow
+```
 ➜
 ```
-```U+1F852
+###### U+279C
+###### Rightwards Sans-Serif Arrow
+```
 🡒
 ```
-```U+FF1E
+###### U+1F852
+###### Fullwidth Greater-Than Sign
+```
 ＞
 ```
-```U+003E
+###### U+FF1E
+###### Greater-Than Sign
+```
 >
 ```
+###### U+003E
+
 
 ## Down Arrows
-
 ###### Downwards Sans-Serif Arrow
 ```
 🡓
 ```
 ###### U+1F853
 
-## Diagonal Arrows
 
-```U+1F856
+## Diagonal Arrows
+###### South East Sans-Serif Arrow
+```
 🡖
 ```
-```	U+1F857
+###### U+1F856
+###### South West Sans-Serif Arrow
+```	
 🡗
 ```
+###### U+1F857
 
-# Blocks
-
-```U+2588
-█
-```
-```U+2591
-░
-```
-```U+2592
-▒
-```
-```U+2593
-▓
-```
-```U+25AF
-▯
-```
-```U+25AE
-▮
-```
 
 # Spaces
 ###### No-Break Space
@@ -256,17 +339,17 @@ updated = 2025-03-03
  
 
 # Icons
-###### Sun
+###### Black Sun With Rays
 ```
 ☀
 ```
 ###### U+2600
-###### Lightbulb
+###### Electric Light Bulb
 ```
 💡
 ```
 ###### U+1F4A1
-###### Power
+###### Power Symbol
 ```
 ⏻
 ```
