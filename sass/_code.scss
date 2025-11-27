@@ -26,6 +26,7 @@ pre+h6 {
 	padding-block: $base-padding / 2;
 	padding-inline: $base-padding;
 	margin-block-start: 0;
+	margin-block-end: 0;
 	float: right;
 	
 	&:empty {

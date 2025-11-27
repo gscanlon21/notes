@@ -205,9 +205,11 @@ updated = 2025-03-03
 
 ## Down Arrows
 
-```U+1F853 Downwards Sans-Serif Arrow
+###### Downwards Sans-Serif Arrow
+```
 🡓
 ```
+###### U+1F853
 
 ## Diagonal Arrows
 
@@ -240,22 +242,32 @@ updated = 2025-03-03
 ```
 
 # Spaces
-
-```U+00A0 No-Break Space
+###### No-Break Space
+```
  
 ```
-```U+202F Narrow No-Break Space
+###### U+00A0
+
+###### Narrow No-Break Space
+``` 
  
 ```
-
+###### U+202F
+ 
 
 # Icons
-```U+2600 Sun
+###### Sun
+```
 ☀
 ```
-```U+1F4A1 Lightbulb
-💡 
+###### U+2600
+###### Lightbulb
 ```
-```U+23FB Power
+💡
+```
+###### U+1F4A1
+###### Power
+```
 ⏻
 ```
+###### U+23FB
