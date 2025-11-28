@@ -4,6 +4,8 @@ description = "Physical therapy for your eyes"
 updated = 2025-09-09
 
 [extra]
+site_version = 1
+toc_level = 2
 see_also = [
   { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
   { title = "Sparse Random Letters", file = "random_letters_sparse.docx" },

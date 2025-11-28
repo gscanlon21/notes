@@ -3,6 +3,8 @@ title = "Odors"
 updated = 2025-11-11
 
 [extra]
+site_version = 1
+toc_level = 2
 see_also = []
 +++
 

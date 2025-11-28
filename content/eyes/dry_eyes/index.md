@@ -3,6 +3,8 @@ title = "Dry Eyes"
 updated = 2025-09-09
 
 [extra]
+site_version = 1
+toc_level = 2
 see_also = [
 	{ title = "tryptyr", href = "https://tryptyr.myalcon.com/" },
 	{ title = "xdemvy", href = "https://xdemvy.com" },

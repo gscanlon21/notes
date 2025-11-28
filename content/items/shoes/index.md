@@ -3,6 +3,8 @@ title = "Shoes"
 updated = 2025-09-09
 
 [extra]
+site_version = 1
+toc_level = 2
 see_also = [
     { title = "Thorlo Socks", href = "https://thorlo.com/" },
     { title = "K-Swiss Shoes", href = "https://kswiss.com/" },

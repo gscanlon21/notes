@@ -3,6 +3,8 @@ title = "Cook"
 sort_by = "title"
 
 [extra]
+site_version = 1
+toc_level = 2
 see_also = [
 	{ title = "A Feast a Day", href = "https://afeastaday.com" },
 	{ title = "Goya Bulk Green Lentils", href = "https://shop.goya.com/products/goya-lentils" },
@@ -85,6 +87,16 @@ _10 inch_
 
 # Ingredients
 
+## Vinegar
+There are unfiltered vinegars on the market that come with a lot of solids, and it's perfectly normal for those to have all kinds of chunky weirdness if they've sat for a little while.
+
+Wine vinegar has a wide range of normal behavior: it can get cloudy[^2] or develop sediment, and that's normal. Even filtered vinegar can develop cloudiness and still be perfectly safe.
+
+If your distilled vinegar gets cloudy, I'd worry. That shouldn't happen. Still, foreign bacteria do NOT grow well in vinegar. If your distilled vinegar is growing something, you probably know why.
+
+Commercially produced vinegar very seldom goes bad, unless you're storing it outside on your deck, or something. If you brew your own, your mileage may vary.
+
+
 ## Honey
 ##### How to Liquify Crystallized Honey
 Put the bottle in slightly hot water and it will liquify again.
@@ -124,3 +136,4 @@ For starchy rice, try wiping oil around the walls of the pot to break up the sta
 
 
 [^1]: [Rice Ratios](https://www.youtube.com/watch?v=JOOSikanIlI)
+[^2]: This is often a result of leaving live bacteria ("The Mother") in the vinegar. Some people think this makes it better, like live yoghurt cultures. There isn't much data either way, but it's certainly not harmful.

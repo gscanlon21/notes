@@ -4,6 +4,8 @@ sort_by = "title"
 aliases = ["eye"]
 
 [extra]
+site_version = 1
+toc_level = 2
 see_also = [
     { title = "Hoya Sync III", href = "https://www.hoyavision.com/vision-products/single-vision-lenses/sync-iii/" },
     { title = "Essilor Eyezen", href = "https://www.essilor.com/us-en/products/eyezen/" },

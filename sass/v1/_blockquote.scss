@@ -1,0 +1,86 @@
+article.v1 {
+	blockquote> :only-child {
+		border-left: .2em solid color(--color-text, .5);
+		padding-left: .5em;
+	}
+
+	/******** Checkbox Rating System. ********/
+	dd:has(blockquote input[type="checkbox"]) {
+		margin-block-start: 0;
+		align-items: start;
+		display: flex;
+	}
+
+	dd + dd:has(> blockquote input[type="checkbox"]) {
+		margin-block-start: $base-padding * -0.5;
+	}
+
+	dd + dd + dd:has(> blockquote input[type="checkbox"]) {
+		margin-block-start: 0;
+	}
+
+	blockquote:has(input[type="checkbox"]) {
+		display: contents;
+		margin-inline-start: 0;
+		margin-block-start: $base-padding * 0.1;
+
+		input[type="checkbox"] {
+			display: none;
+		}
+
+		ul {
+			display: contents;
+			padding: 0;
+			border: 0;
+		}
+
+		li {
+			overflow: hidden;
+			align-items: center;
+			list-style-type: none;
+			width: $base-font-size;
+			height: $base-font-size;
+			font-size: $base-padding * 1.25;
+
+			&:has(input[type="checkbox"]:checked):before {
+				vertical-align: top;
+				content: "\2605";
+				line-height: 1;
+			}
+
+			&:has(input[type="checkbox"]:not(:checked)):before {
+				vertical-align: top;
+				content: "\2606";
+				line-height: 1;
+			}
+		}
+	}
+
+	// Title header for blockquotes.
+	h6:has(+blockquote)  {
+		font-size: $base-font-size * 0.8;
+		margin-block-end: $base-padding * -1;
+		margin-block-start: $base-padding * 1.25;
+		margin-inline-start: $site-padding * 3.25;
+	}
+
+	dd > h6:has(+blockquote)  {
+		margin-block-start: $base-padding * 0.5;
+		margin-block-end: $base-padding * -0.25;
+		margin-inline-start: $site-padding * 0.75;
+	}
+
+	// Attribution footer for blockquotes.
+	blockquote+h6 {
+		font-size: $base-font-size * 0.75;
+		margin-block-start: $base-padding * 0.25;
+		margin-inline-start: $site-padding * 3.25;
+	}
+
+	dd > blockquote+h6  {
+		font-size: $base-font-size * 0.75;
+		margin-block-start: $base-padding * 0.25;
+		margin-inline-start: $site-padding * 0.75;
+	}
+}
+
