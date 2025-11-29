@@ -14,3 +14,22 @@ see_also = [
 ]
 +++
 
+
+# Switch 2
+
+## Need for Speed: Hot Pursuit Remastered
+
+##### Switch 2 Pro Controller Controls
+
+**ZR**
+: Gas
+
+**R**
+: Camera
+
+**A**
+: Nitro
+
+**B**
+: Brake
+
