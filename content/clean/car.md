@@ -16,3 +16,5 @@ see_also = [
 
 ##### Cleaning the Inside of the Windshields
 Use an alcohol based cleaner so no streaks are left on the windshield. After cleaning, buff the windshield with a dry microfiber towel to get rid of any excess residue.
+
+They make triangle microfiber clothes on a stick that make it easy to reach into the corners
