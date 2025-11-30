@@ -354,3 +354,14 @@ updated = 2025-03-03
 ⏻
 ```
 ###### U+23FB
+
+
+# Shapes
+
+## Circles
+
+###### Large Circle
+```
+◯
+```
+###### U+25EF
