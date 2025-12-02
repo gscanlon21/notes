@@ -70,6 +70,12 @@ updated = 2025-03-03
 ç
 ```
 ###### U+00E7
+###### Latin Small Letter N with Tilde
+```
+ñ
+```
+###### U+00F1
+
 
 # Fractions
 
