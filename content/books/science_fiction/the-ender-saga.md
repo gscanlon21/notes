@@ -1,8 +1,9 @@
 +++
 title = "The Ender Saga"
-description = ""
+description = "The author is vocally anti-gay."
 authors = ["Orson Scott Card"]
 updated = 2025-12-12
+render = false
 
 [extra]
 rating = 4
