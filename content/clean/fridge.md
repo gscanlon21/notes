@@ -20,3 +20,4 @@ see_also = []
 
 **Fish Oil**
 : Clean with a scouring pad.
+: Try hot water and dish soap.

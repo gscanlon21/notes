@@ -6,10 +6,6 @@ article.v1 {
 		margin-block-start: $site-padding * 3 !important;
 	}
 
-	> :only-child {
-		margin-block-start: 0 !important;
-	}
-
 	img {
 		max-width: 100%;
 	}
@@ -194,5 +190,9 @@ article.v1 {
 		align-items: center;
 		display: flex;
 		height: 100%;
+
+		> :only-child {
+			margin-block-start: 0 !important;
+		}
 	}
 }

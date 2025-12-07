@@ -35,6 +35,7 @@ blockquote:has(input[type="checkbox"]) {
 		width: $base-font-size;
 		height: $base-font-size;
 		font-size: $base-padding * 1.25;
+		margin-block-start: 0 !important;
 
 		&:has(input[type="checkbox"]:checked):before {
 			vertical-align: top;
