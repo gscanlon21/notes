@@ -98,5 +98,8 @@ definition_list = true
 bottom_footnotes = true
 
 
+[slugify]
+paths = "safe"
+
 [extra]
 # Put all your custom variables here
