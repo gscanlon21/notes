@@ -1,9 +1,9 @@
-.defer {
-  visibility: hidden;
+.async {
+  display: none !important;
 }
 
-.async {
-  display: none;
+.defer {
+  visibility: hidden !important;
 }
 
 @media screen and (max-width: ($large-width - 1px)) {
