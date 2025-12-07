@@ -6,18 +6,13 @@ for (const element of document.getElementsByTagName('input')) {
     }
 }
 
-// Remove defer classes from elements after the page has loaded.
-for (const element of document.getElementsByClassName('defer')) {
-    element.classList.remove('defer');
-}
-
-// Remove async classes from elements after the page has loaded.
-for (const element of document.getElementsByClassName('async')) {
-    element.classList.remove('async');
-}
-
 // Remove whitespace from nav elements so they are :empty.
 for (const element of document.getElementsByTagName('nav')) {
+    element.innerHTML = element.innerHTML.trim();
+}
+
+// Remove whitespace from menu elements so they are :empty.
+for (const element of document.getElementsByTagName('menu')) {
     element.innerHTML = element.innerHTML.trim();
 }
 
@@ -64,4 +59,14 @@ for (const element of document.getElementsByClassName("checklist-wrapper")) {
 		const labelHTML = `<label for='a${i}-${j}'>${inputElement.nextSibling.textContent}</label>`;
 		inputElement.parentElement.innerHTML = `${inputElement.outerHTML}${labelHTML}${siblings}`;	
 	}
+}
+
+// Remove defer classes from elements after the page has loaded.
+for (const element of document.getElementsByClassName('defer')) {
+    element.classList.remove('defer');
+}
+
+// Remove async classes from elements after the page has loaded.
+for (const element of document.getElementsByClassName('async')) {
+    element.classList.remove('async');
 }

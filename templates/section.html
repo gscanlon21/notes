@@ -9,14 +9,14 @@
 	</div>
 
 	<div class="sidebar-right header">
-		<div class="header-item">
+		<div class="header-item defer">
 			<h3 class="sitemap-title header-title">Ancestors</h3>
 			<nav class="sitemap condensed">
 				{{ macros::render_ancestors(ancestors=section.ancestors) }}
 			</nav>
 		</div>
 
-		<div class="header-item">
+		<div class="header-item defer">
 			<h3 class="sitemap-title">Subsections</h3>
 			<nav class="sitemap condensed">
 				{{ macros::render_sitemap(path=section.relative_path, open=false) }}
