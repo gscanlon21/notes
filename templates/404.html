@@ -1,0 +1,20 @@
+{% import "macros/macros.html" as macros %}
+{% extends "partials/base.html" %}
+
+{% block content %}
+    <div class="header-wrap">
+        <div class="sidebar-right header">
+            <div class="header-item screen-large">
+                <h3 class="sitemap-title">Sitemap</h3>
+                <nav class="sitemap">
+                    {{ macros::render_sitemap(path="_index.md", open=false) }}
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <article id="content" class="four-zero-four v{{ page.extra.site_version | default(value=1) }}">
+		<h1>404</h1>
+	</article>
+
+{% endblock content %}

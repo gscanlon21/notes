@@ -6,6 +6,10 @@ article.v1 {
 		margin-block-start: $site-padding * 3 !important;
 	}
 
+	> :only-child {
+		margin-block-start: 0 !important;
+	}
+
 	img {
 		max-width: 100%;
 	}
@@ -182,5 +186,13 @@ article.v1 {
 		@media (max-width: ($large-width - 1px)) {
 			margin-block-start: $base-padding * 2;
 		}
+	}
+
+	&.four-zero-four {
+		letter-spacing: 1px;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		height: 100%;
 	}
 }
