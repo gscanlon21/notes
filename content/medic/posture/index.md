@@ -24,3 +24,6 @@ Stretch and strengthen the hip flexors, strengthen the core muscles, and strengt
 # Knock Knees
 ![Knock Knees](knock-knees.webp "Knock Knees")
 
+
+# Feet
+Don't curl your toes to hold your balance, that will strain for planter fascia.

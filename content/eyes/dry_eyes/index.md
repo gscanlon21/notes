@@ -28,7 +28,7 @@ see_also = [
 - Autoimmune Disease
   - Celiac
 - Binocular Vision Dysfunction
-  - Treated with visual therapy exercises.
+  - Treated with vision therapy.
 
 # Treatment
 
