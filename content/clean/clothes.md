@@ -6,6 +6,7 @@ updated = 2025-11-11
 site_version = 1
 toc_level = 2
 see_also = [
+  { title = "ChomChom Pet Hair Roller", href = "https://chomchomstore.com/" },
   { title = "Nellie's Laundry Soda", href = "https://nelliesclean.com/products/laundry-soda" },
 ]
 +++
