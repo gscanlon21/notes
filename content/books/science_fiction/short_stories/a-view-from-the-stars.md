@@ -1,5 +1,5 @@
 +++
-title = "A View From the Stars"
+title = "A View from the Stars"
 description = "Stories and essays from the New York Times bestselling author of The Three-Body Problem"
 authors = ["Cixin Liu"]
 updated = 2025-12-12
@@ -27,36 +27,37 @@ see_also = []
   > - [ ]
 
 **A Journey in Search of Home**
-: TODO
-: > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
+: The author writes about her story "The Wandering Earth" where she likens it to her journey writing science fiction. A long journey, accompanied by loneliness and terror, in search of a home.
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
 
 **The Messenger**
-: TODO
-: > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
+: A time traveler loans a magnificent violin to an old Albert Einstein to ease his worries about the future.
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
   > - [ ]
 
 **Thirty Years of Making Magic Out of Ordinariness**
-: TODO
-: > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
+: The author writes about her journey writing science fiction and where science fiction fits in the world of fiction.
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
 
 **Butterfly**
-: TODO
-: > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
+_Based on the Butterfly Effect_
+: A scientist in a warring state uses a super-computer to track down sensitivity points for a weather model he created that allows large changes in weather patterns from small changes in the weather in other places. Using this information, he travels the globe to cover his home country in clouds to stop bombs from dropping. Unfortunately, he's not able to maintain a continuous cloud cover and both his wife and daughter are killed due to the bombings. 
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
 
 **One and One Hundred Thousand Earths**
 : TODO
