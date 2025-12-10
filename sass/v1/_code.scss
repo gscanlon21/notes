@@ -53,8 +53,7 @@ article.v1 {
 		border-start-end-radius: $border-radius;
 	}
 
-
-	h6+pre {
+	h6+pre:not(+pre) {
 		border-end-start-radius: $border-radius;
 	}
 
@@ -67,6 +66,17 @@ article.v1 {
 		margin-block-start: $base-padding / 2;
 		scrollbar-color: color(--color-scrollbar, .5) color(--color-scrollbar-bg);
 		scrollbar-width: 1em;
+
+		&[data-lang]::before {
+			// Display the code lang as the shell context
+			content: attr(data-lang) "$";
+			color: color(--color-code, 0.75);
+			padding-right: $base-padding;
+		}
+
+		&[data-lang^="."]::before {
+			display: none;
+		}
 
 		&:has(+pre) {
 			// More bottom padding for the scrollbar.
@@ -81,17 +91,6 @@ article.v1 {
 		& > code {
 			margin: 0;
 			padding: 0;
-
-			&[data-lang]::before {
-				// Display the code lang as the shell context
-				content: attr(data-lang) "$";
-				color: color(--color-code, 0.75);
-				padding-right: $base-padding;
-			}
-
-			&[data-lang^="."]::before {
-				display: none;
-			}
 		}
 	}
 
@@ -117,7 +116,7 @@ article.v1 {
 	}
 
 	// Copy animation for code blocks.
-	pre.copied > code > span {
+	pre.copied > code:has(span) {
 		animation-delay: 250ms;
 		animation-duration: 250ms;
 		animation-fill-mode: backwards;
