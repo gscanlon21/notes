@@ -2,7 +2,7 @@
 
 {% set max_level = page.extra.toc_level | default(value=section.extra.toc_level | default(value=2)) %}
 {% set toc = page.toc | default(value=section.toc) %}
-{% if toc %}
+{% if toc and max_level != 0 %}
 <div class="header-item">
 	<h3 class="sitemap-title header-title">Table of Contents</h3>
 	<nav class="sitemap condensed">

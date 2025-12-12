@@ -11,6 +11,8 @@ see_also = [
   { title = "Sparse Random Letters", file = "random_letters_sparse.docx" },
   { title = "Dense Random Letters", file = "random_letters_dense.docx" },
   { title = "Alpine Butterfly Loop Knot", href = "https://www.animatedknots.com/alpine-butterfly-loop-knot" },
+  { title = "Evidence-Based Natural Treatments for Optimizing Vision and Eye Health", href = "https://www.rupahealth.com/post/evidence-based-natural-treatments-for-optimizing-vision-and-eye-health" },
+  { title = "A Functional Medicine Eye Health Protocol: Testing, Supplements, and Best Nutrition", href = "https://www.rupahealth.com/post/a-functional-medicine-eye-health-protocol" },
 ]
 +++
 

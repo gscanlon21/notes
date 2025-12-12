@@ -5,7 +5,9 @@ updated = 2025-03-05
 weight = 1
 
 [extra]
-see_also = []
+see_also = [
+  { title = "9 Ways to Increase Butyrate in the Gut", href = "https://layerorigin.com/blogs/blog-layer-origin-nutrition/9-ways-to-increase-butyrate-in-the-gut" },
+]
 +++
 
 # Healing the Gut

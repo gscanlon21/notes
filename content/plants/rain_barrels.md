@@ -3,7 +3,9 @@ title = "Rain Barrels"
 updated = 2025-03-10
 
 [extra]
-see_also = []
+see_also = [
+  { title = "Blue Barrel Systems", href = "https://www.bluebarrelsystems.com/" },
+]
 +++
 
 # 275 Gallon IBC Tote

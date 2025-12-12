@@ -10,6 +10,7 @@ see_also = [
     { title = "Moonlander Configuration", href = "https://configure.zsa.io/moonlander/layouts/default/latest/0" },
     { title = "Kinesis Keyboards", href = "https://kinesis-ergo.com/" },
     { title = "MoErgo Keyboards", href = "https://www.moergo.com/" },
+    { title = "Vertical Mouse XRay", href = "https://x-bows.com/blogs/technical-deep-dives/vertical-mouse-bone-myth-xray" },
 ]
 +++
 
