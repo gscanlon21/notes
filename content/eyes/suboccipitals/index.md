@@ -18,6 +18,8 @@ Suboccipitals are intimately linked to your eye muscles. They help balance and s
 ## Diagnostic Testing
 MRIs are good for imaging soft-tissue injuries (injured muscles, ligaments, and tendons).
 
+> Note that MRI contrast is toxic to the body.
+
 ### MRI Procedures
 - Wear Clothes Sans Metal
 - Wear Cotton Clothing
