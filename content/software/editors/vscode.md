@@ -58,5 +58,13 @@ see_also = []
   "editor.tabSize": 2,
 	"editor.insertSpaces": true,
 },
+
+// Ignore search files
+"search.exclude": {
+  "**/.git": true,
+  "**/dist": true,
+  "**/public": true,
+  "**/node_modules": true,
+},
 ```
 ###### `Ctrl` `,`
