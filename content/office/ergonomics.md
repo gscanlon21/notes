@@ -14,6 +14,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # Desk
 
 # Chair
