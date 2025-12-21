@@ -6,6 +6,8 @@ updated = 2025-03-05
 see_also = []
 +++
 
+{{ hidden() }}
+
 # Summary
 - Avoid foods high in carbs and sugars.
     - NO Bananas, Apples, Potatoes...

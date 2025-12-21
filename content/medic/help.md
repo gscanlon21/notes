@@ -8,6 +8,8 @@ toc_level = 2
 see_also = []
 +++
 
+{{ hidden() }}
+
 # Car Accidents
 
 ##### Involved in a Serious Car Accident

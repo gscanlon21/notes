@@ -10,6 +10,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # Healing the Gut
 Start slow. Healing the gut is not quick.
 

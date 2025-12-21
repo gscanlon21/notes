@@ -10,6 +10,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 Your gut microbiome is the master regulator of your immune system.
 
 Dysbiosis (imbalanced microbes) & Leaky Gut drive chronic inflammation and immune confusion, contributing to allergies, autoimmunity, and sensitivities.

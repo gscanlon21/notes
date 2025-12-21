@@ -8,6 +8,7 @@ weight = 2
 see_also = []
 +++
 
+{{ hidden() }}
 
 ### Nervous System Regulation
 - Meditation

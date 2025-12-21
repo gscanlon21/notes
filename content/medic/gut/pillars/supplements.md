@@ -11,6 +11,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 Can provide targeted help to accelerate progress in our modern environment.
 
 - Bergamot/Polyphenols

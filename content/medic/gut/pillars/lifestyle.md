@@ -8,6 +8,7 @@ weight = 3
 see_also = []
 +++
 
+{{ hidden() }}
 
 ### Lifestyle
 - Space your meals at least 5-6 hours apart so the migrating motor complex has time to function.

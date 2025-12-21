@@ -5,3 +5,4 @@ title = "Copper"
 see_also = []
 +++
 
+{{ hidden() }}

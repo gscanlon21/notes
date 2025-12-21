@@ -15,6 +15,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # Sleep Hygiene
 - Stick to a schedule
 - Keep the bed at a cool temp.

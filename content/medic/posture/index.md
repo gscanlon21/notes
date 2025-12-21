@@ -8,6 +8,7 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
 
 # Anterior Pelvic Tilt
 # _[Lumbar Lordosis](https://mskneurology.com/really-assess-lumbar-lordosis-dispelling-fallacy-anterior-pelvic-tilt/)

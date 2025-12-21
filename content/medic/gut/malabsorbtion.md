@@ -6,6 +6,7 @@ updated = 2025-05-05
 see_also = []
 +++
 
+{{ hidden() }}
 
 # Malabsorption
 May be caused by low stomach acidity. 
