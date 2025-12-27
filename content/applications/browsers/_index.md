@@ -17,6 +17,7 @@ see_also = []
 reddit.com/r/all
 reddit.com/r/popular
 reddit.com/r/politics
+reddit.com/r/teachers
 reddit.com/r/askreddit
 reddit.com/r/askwomen
 reddit.com/r/askmen

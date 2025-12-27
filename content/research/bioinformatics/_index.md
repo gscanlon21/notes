@@ -9,5 +9,6 @@ see_also = [
   { title = "Benchling", href = "https://benchling.com/nkuldell/f/lib_ou4tLiKa-golden-bread_bbn_2015/seq_9MRvstx7-crtyb/edit" },
   { title = "Yeast Genome", href = "https://www.yeastgenome.org/locus/S000001855" },
   { title = "Translate Tool", href = "https://web.expasy.org/translate/" },
+  { title = "Intro to Bioinformatics", href = "https://www.youtube.com/watch?v=3XFpxQF0J74&list=PLWVKUEZ25V95IKyBrxHtRTK_6Ig8Xi9-f" },
 ]
 +++

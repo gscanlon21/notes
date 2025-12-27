@@ -11,3 +11,5 @@ see_also = [
 +++
 
 {{ hidden() }}
+
+Adequate fat is necessary for cushioning in the body.
