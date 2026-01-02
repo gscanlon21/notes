@@ -5,8 +5,13 @@ sort_by = "title"
 [extra]
 site_version = 1
 toc_level = 2
-see_also = []
+see_also = [
+  { title = "Hand Soap Refill Tablets", href = "https://www.blueland.com/products/hand-soap-refill-packs" },
+  { title = "Foaming Hand Soap Refill Tablets", href = "https://meliorameansbetter.com/products/foaming-hand-soap-refill-tablets" },
+]
 +++
+
+{{ hidden() }}
 
 # Equipment
 

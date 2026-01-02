@@ -8,6 +8,7 @@ toc_level = 2
 see_also = []
 +++
 
+{{ hidden() }}
 
 # Dust
 Dust collects odors the way fabric can.

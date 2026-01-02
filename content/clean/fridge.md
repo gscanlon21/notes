@@ -8,6 +8,7 @@ toc_level = 2
 see_also = []
 +++
 
+{{ hidden() }}
 
 **Shelves**
 : The shelves are removable and should be taken out of the fridge and cleaned in the sink.
