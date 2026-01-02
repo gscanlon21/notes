@@ -11,6 +11,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # Temperature & Safety
 
 {% table(header="Cooking Temperature & Safety", footer="The Food Lab by J. Kenji López-Alt `362`") %}

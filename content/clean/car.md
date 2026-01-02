@@ -11,6 +11,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # Windshield
 
 > Clean the inside top to bottom (vertical movement) and exterior horizontal. That way if you see streaks you'll know which side of the glass it's on.

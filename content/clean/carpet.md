@@ -10,6 +10,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # Carpet Cleaning
 
 ## Carpet Cleaners

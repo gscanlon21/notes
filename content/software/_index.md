@@ -4,7 +4,10 @@ sort_by = "title"
 
 [extra]
 see_also = [
-	{ title = "HiringCafe", href = "https://hiring.cafe/" },
-	{ title = "Connection Strings Reference", href = "https://www.connectionstrings.com" },
+  { title = "HiringCafe", href = "https://hiring.cafe/" },
+  { title = "Connection Strings Reference", href = "https://www.connectionstrings.com" },
+  { title = "PWA Icon Generator", href = "https://www.pwa-icon-generator.com/" },
 ]
 +++
+
+{{ hidden() }}

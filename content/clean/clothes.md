@@ -11,6 +11,7 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
 
 # Clothes Stains
 

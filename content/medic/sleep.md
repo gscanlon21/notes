@@ -255,6 +255,18 @@ Bedtime procrastination is usually about control. All day long, your time belong
 
 # Equipment
 
+## Sleep Masks
+## _Eye Masks
+
+**[Sleep Mask](https://albatrosshealth.com/products/blue-eye-mask-for-sleep)**
+[Albatross](https://albatrosshealth.com/)
+: This is great!
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+
 **[Contoured Sleep Mask](https://www.livehealthsmart.com/DMI-Contoured-Sleep-Mask)**
 DMI ([HealthSmart](https://www.livehealthsmart.com/))
 : Strong VOC smell upon opening.
@@ -263,15 +275,6 @@ DMI ([HealthSmart](https://www.livehealthsmart.com/))
 : > - [x] 
   > - [x] 
   > - [x] 
-  > - [ ] 
-  > - [ ] 
-
-**[Sleep Mask](https://albatrosshealth.com/products/black-eye-mask-for-sleeping)**
-[Albatross](https://albatrosshealth.com/)
-: How is this?
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
   > - [ ] 
   > - [ ] 
 

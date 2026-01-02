@@ -8,6 +8,8 @@ toc_level = 2
 see_also = []
 +++
 
+{{ hidden() }}
+
 ##### How to Drink More Water
 Use a straw.
 
