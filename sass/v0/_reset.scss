@@ -1,5 +1,31 @@
 article.v0 {
-	* {
+	*:not(svg):not(rect):not(circle):not(path):not(hr):not(ul):not(li):not(i) {
 		all: unset;
+	}
+}
+
+@media print {
+	body {
+		margin: 0;
+	}
+
+	#header {
+		display: none;
+	}
+
+	#main {
+		padding: 0;
+	}
+
+	.header-wrap {
+		display: none;
+	}
+
+	#footer {
+		display: none;
+	}
+
+	#templating-context {
+		display: none;
 	}
 }
