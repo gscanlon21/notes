@@ -36,4 +36,7 @@
 
 {% set css = load_data(path=section.path ~ "_index.css", required=false) %}
 {% if css %}<style>article#content.section { {{ css | safe }} }</style>{% endif %}
+
+{% set noCss = load_data(path=section.path ~ "_index.no.css", required=false) %}
+{% if noCss %}<style>article#content.section { {{ noCss | safe }} }</style>{% endif %}
 {% endblock content %}
