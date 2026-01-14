@@ -34,7 +34,8 @@
     {% set css = load_data(path=page.path ~ "index.css", required=false) %}
     {% if css %}<style>article#content.page { {{ css | safe }} }</style>{% endif %}
 
-	{% set noCss = load_data(path=page.path ~ "index.no.css", required=false) %}
+	{% set submodule_path = page.path | split(pat="no/") | last %}
+	{% set noCss = load_data(path=submodule_path ~ "index.no.css", required=false) %}
     {% if noCss %}<style>article#content.page { {{ noCss | safe }} }</style>{% endif %}
 {% endblock content %}
   
