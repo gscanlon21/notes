@@ -2,42 +2,44 @@
 {% extends "partials/base.html" %}
 
 {% block content %}
-<div class="header-wrap">
-	<div class="sidebar-left header header-wrap">
-		{% include "partials/summary.html" %}
-		{% include "partials/toc.html" %}
+	<div class="header-wrap">
+		<div class="sidebar-left header header-wrap">
+			{% include "partials/summary.html" %}
+			{% include "partials/toc.html" %}
+		</div>
+
+		<div class="sidebar-right header">
+			<div class="header-item defer">
+				<h3 class="sitemap-title header-title">Ancestors</h3>
+				<nav class="sitemap condensed">
+					{{ macros::render_ancestors(ancestors=section.ancestors) }}
+				</nav>
+			</div>
+
+			<div class="header-item defer">
+				<h3 class="sitemap-title">Subsections</h3>
+				<nav class="sitemap condensed">
+					{{ macros::render_sitemap(path=section.relative_path, open=false) }}
+				</nav>
+			</div>
+			
+			<div class="header-item screen-large">
+				<h3 class="sitemap-title">Sitemap</h3>
+				<nav class="sitemap">
+					{{ macros::render_sitemap(path="_index.md", open=false) }}
+				</nav>
+			</div>
+		</div>
 	</div>
 
-	<div class="sidebar-right header">
-		<div class="header-item defer">
-			<h3 class="sitemap-title header-title">Ancestors</h3>
-			<nav class="sitemap condensed">
-				{{ macros::render_ancestors(ancestors=section.ancestors) }}
-			</nav>
-		</div>
+	<article id="content" class="section v{{ page.extra.site_version | default(value=1) }}">{{ section.content | safe }}</article>
 
-		<div class="header-item defer">
-			<h3 class="sitemap-title">Subsections</h3>
-			<nav class="sitemap condensed">
-				{{ macros::render_sitemap(path=section.relative_path, open=false) }}
-			</nav>
-		</div>
-		
-		<div class="header-item screen-large">
-			<h3 class="sitemap-title">Sitemap</h3>
-			<nav class="sitemap">
-				{{ macros::render_sitemap(path="_index.md", open=false) }}
-			</nav>
-		</div>
-	</div>
-</div>
+	{% set css = load_data(path=section.path ~ "_index.css", required=false) %}
+	{% if css %}<style>article#content.section { {{ css | safe }} }</style>{% endif %}
 
-<article id="content" class="section v{{ page.extra.site_version | default(value=1) }}">{{ section.content | safe }}</article>
-
-{% set css = load_data(path=section.path ~ "_index.css", required=false) %}
-{% if css %}<style>article#content.section { {{ css | safe }} }</style>{% endif %}
-
-{% set submodule_path = section.path | split(pat="no/") | last %}
-{% set noCss = load_data(path=submodule_path ~ "_index.no.css", required=false) %}
-{% if noCss %}<style>article#content.section { {{ noCss | safe }} }</style>{% endif %}
+	{% if lang != config.default_language %}
+		{% set submodule_path = section.path | split(pat=lang) | last %}
+		{% set noCss = load_data(path=submodule_path ~ "_index.no.css", required=false) %}
+		{% if noCss %}<style>article#content.section { {{ noCss | safe }} }</style>{% endif %}
+	{% endif %}
 {% endblock content %}
