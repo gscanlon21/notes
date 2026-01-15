@@ -10,6 +10,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 ###### Build
 ```powershell
 cd "C:\code\notes\content\submodule"; Get-ChildItem -Directory | ForEach-Object { Set-Location $_.FullName; zola build; };
