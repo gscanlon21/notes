@@ -99,6 +99,11 @@ updated = 2025-03-03
 ½
 ```
 ###### U+00BD
+###### Vulgar Fraction Two Thirds
+```
+⅔
+```
+###### U+2154
 ###### Vulgar Fraction Three Quarters
 ```
 ¾
