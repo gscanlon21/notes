@@ -13,6 +13,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # Nonviolent Communication
 Your feelings come from your own needs, expectations, and perceptions. Other people’s words and actions might trigger feelings in you, but they cannot cause those feelings.
 

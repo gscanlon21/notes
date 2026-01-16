@@ -6,6 +6,8 @@ updated = 2021-05-24
 site = "https://docs.microsoft.com/en-us/windows-server/networking/technologies/netsh/netsh"
 +++
 
+{{ hidden() }}
+
 # netsh
 Network shell (netsh) is a command-line utility that allows you to configure and display the status of various network communications server roles and components
 

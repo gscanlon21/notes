@@ -8,8 +8,9 @@ see_also = [
 ]
 +++
 
-# Coolant
+{{ hidden() }}
 
+# Coolant
 - Unseal the tank and extract the old fluid with a baster or fluid extractor.
 - Refill the tank with distilled water or laser-safe coolant. 
     - Use a funnel with a flexible tube.

@@ -3,6 +3,8 @@ title = "Performance Monitor"
 updated = 2021-05-24
 +++
 
+{{ hidden() }}
+
 # Performance Monitor
 Performance Monitor is an integrated Windows tool that provides a high-level overview of system resources. Such as processor, hard drive, memory, and network usage
 

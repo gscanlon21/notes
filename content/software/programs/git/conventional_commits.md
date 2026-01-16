@@ -7,6 +7,8 @@ site = "https://www.conventionalcommits.org"
 version = "1.0.0"
 +++
 
+{{ hidden() }}
+
 # Conventional Commits
 A specification for adding human and machine readable meaning to commit messages
 

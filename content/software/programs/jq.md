@@ -7,6 +7,8 @@ site = "https://stedolan.github.io/jq/"
 version = "1.6"
 +++
 
+{{ hidden() }}
+
 # jq {#jq}
 A command line json processor
 

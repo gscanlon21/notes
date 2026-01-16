@@ -13,6 +13,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # Sync Lens
 
 3/24 wearing Hoya Sync III 9

@@ -3,6 +3,8 @@ title = "Visual Studio Settings"
 updated = 2025-03-21
 +++
 
+{{ hidden() }}
+
 # Tools / Options
 
 ## Text Editor

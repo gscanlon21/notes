@@ -6,6 +6,8 @@ updated = 2024-12-11
 site = "https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism"
 +++
 
+{{ hidden() }}
+
 # dism
 Deployment Image Servicing and Management (DISM.exe) is a command-line tool that can be used to service and prepare Windows images.
 

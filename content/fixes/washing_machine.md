@@ -5,5 +5,7 @@ title = "Washing Machine"
 see_also = []
 +++
 
+{{ hidden() }}
+
 # Vibrations
 Anti-vibration mats and pads exist.

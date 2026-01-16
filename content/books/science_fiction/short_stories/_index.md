@@ -5,6 +5,7 @@ title = "Short Stories"
 see_also = []
 +++
 
+{{ hidden() }}
 
 **Exhalation: Stories**
 Ted Chiang

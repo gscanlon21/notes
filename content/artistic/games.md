@@ -14,6 +14,7 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
 
 # Switch 2
 

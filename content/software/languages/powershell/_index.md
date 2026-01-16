@@ -7,6 +7,8 @@ site = "https://docs.microsoft.com/en-us/powershell/"
 version = "7.1.3"
 +++
 
+{{ hidden() }}
+
 # Powershell
 > PowerShell is a cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework.
 

@@ -9,5 +9,4 @@ see_also = [
 ]
 +++
 
-# Architecting
-A collection of architecture related docs and blogs. See the 'See Also' section.
+{{ hidden() }}

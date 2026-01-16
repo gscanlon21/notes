@@ -12,6 +12,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # Suboccipitals
 Suboccipitals are intimately linked to your eye muscles. They help balance and stabilize tiny head movements that your eyes make when they move around.
 

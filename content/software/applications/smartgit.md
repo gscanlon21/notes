@@ -7,6 +7,8 @@ site = "https://www.syntevo.com/smartgit/"
 see_also = []
 +++
 
+{{ hidden() }}
+
 # Repository
 
 ## Settings

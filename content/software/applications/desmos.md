@@ -7,6 +7,8 @@ site = "https://desmos.com/"
 see_also = []
 +++
 
+{{ hidden() }}
+
 # Graphing
 
 ## Table Functions

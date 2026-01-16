@@ -8,3 +8,5 @@ see_also = [
 	{ title = "O&O ShutUp10++", href = "https://www.oo-software.com/en/shutup10" },
 ]
 +++
+
+{{ hidden() }}

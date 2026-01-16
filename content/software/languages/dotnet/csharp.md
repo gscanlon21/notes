@@ -3,6 +3,8 @@ title = "CSharp"
 updated = 2021-05-23
 +++
 
+{{ hidden() }}
+
 # CSharp
 
 ## Async/Await

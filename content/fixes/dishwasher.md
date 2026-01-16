@@ -5,6 +5,8 @@ title = "Dishwasher"
 see_also = []
 +++
 
+{{ hidden() }}
+
 ##### How to Get a Good Wash[^1]
 1. Run the hot water tap to purge the cold water from the line before running the dishwasher.
     - Hot water activates the enzymes that are used to break down food which makes them more effective.

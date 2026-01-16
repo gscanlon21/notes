@@ -10,6 +10,7 @@ rating = 4
 see_also = []
 +++
 
+{{ hidden() }}
 
 **Ender's Game**
 _The Ender Saga: Book 1_

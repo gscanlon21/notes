@@ -8,5 +8,4 @@ see_also = [
 ]
 +++
 
-# Regex
-A collection of Regex related docs and blogs. See the 'See Also' section.
+{{ hidden() }}

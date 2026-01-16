@@ -9,6 +9,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # Directory Structure
 
 - **/boot** - Boot files

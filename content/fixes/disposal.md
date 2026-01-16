@@ -5,6 +5,8 @@ title = "Sink Disposal"
 see_also = []
 +++
 
+{{ hidden() }}
+
 # Blades Not Turning
 Stick a thick allen wrench in the bottom of the disposal and turn it to free the stuck blades.
 

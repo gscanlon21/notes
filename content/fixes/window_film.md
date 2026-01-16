@@ -5,6 +5,8 @@ title = "Window Film"
 see_also = []
 +++
 
+{{ hidden() }}
+
 # Installation
 
 ## Equipment

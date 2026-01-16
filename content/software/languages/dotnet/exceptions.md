@@ -8,5 +8,4 @@ see_also = [
 ]
 +++
 
-# Exceptions
-A collection of exception related docs and blogs. See the 'See Also' section.
+{{ hidden() }}

@@ -8,5 +8,4 @@ see_also = [
 ]
 +++
 
-# Encryption
-A collection of encryption related docs and blogs. See the 'See Also' section.
+{{ hidden() }}

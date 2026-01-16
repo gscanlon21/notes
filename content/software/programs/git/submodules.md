@@ -2,6 +2,8 @@
 title = "Git Submodules"
 +++
 
+{{ hidden() }}
+
 # Errors
 
 ## Submodule is Detached from Head

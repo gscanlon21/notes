@@ -9,6 +9,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # Settings
 - General
 	- Search

@@ -2,6 +2,8 @@
 title = "Git Performance"
 +++
 
+{{ hidden() }}
+
 # Config
 
 Enable Git optimizations for repositories with many files.
