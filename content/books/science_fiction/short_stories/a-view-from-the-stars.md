@@ -60,10 +60,26 @@ _Based on the Butterfly Effect_
   > - [x]
 
 **One and One Hundred Thousand Earths**
-: TODO
-: > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
+: The author likens space travel and its decline to the investment required for earth's environmental sustainability.
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+
+**On Finishing Death's End, the Last Book in the Remembrance of Earth's Past Trilogy**
+: The author talks about sci-fi is the product of leisurely and carefree minds, that social unrest is lethal to the genre, and that only with stability and quiet can we allow the universe's catastrophes to fascinate and awe us. 
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+
+**The Battle Between Sci-Fi and Fantasy**
+: With the advance of science, myths were sort-of lost to knowledge, because the real-world and magic have a clear well-defined boundary. The perceived realism that captivated people with old fantasy was greatly diminished. Science fiction helps bridge that border by providing that sense of realism to an otherwise far-fetched world, allowing reality and mythology to once again become fused, in worlds where fantasy and science fiction both exist.
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
 
