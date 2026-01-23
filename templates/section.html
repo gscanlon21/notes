@@ -34,6 +34,9 @@
 
 	<article id="content" class="section v{{ page.extra.site_version | default(value=1) }}">{{ section.content | safe }}</article>
 
+	{% set js = load_data(path=section.path ~ "index.js", required=false) %}
+    {% if js %}<script>{{ js | safe }}</script>{% endif %}
+
 	{% set css = load_data(path=section.path ~ "_index.css", required=false) %}
 	{% if css %}<style>article#content.section { {{ css | safe }} }</style>{% endif %}
 

@@ -1,9 +1,9 @@
 +++
 title = "Vision Therapy"
 description = "Physical therapy for your eyes"
-updated = 2025-09-09
 
 [extra]
+updated = 2025-09-09
 site_version = 1
 toc_level = 2
 see_also = [
