@@ -1,6 +1,7 @@
 +++
 title = "Hart Chart"
 description = "A Hart Chart is a grid of letters used to train the visual system."
+aliases = ["hart-chart", "hart_chart"]
 updated = 2025-09-09
 
 [extra]

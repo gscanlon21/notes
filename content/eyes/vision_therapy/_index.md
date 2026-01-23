@@ -1,6 +1,7 @@
 +++
 title = "Vision Therapy"
-description = "Physical therapy for your eyes"
+description = "Physical therapy for your eyes."
+aliases = ["vision-therapy", "vision_therapy"]
 
 [extra]
 updated = 2025-09-09

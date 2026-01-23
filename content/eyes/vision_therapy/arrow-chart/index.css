@@ -1,0 +1,14 @@
+#arrow-chart {
+	display: grid;
+	line-height: 1;
+	aspect-ratio: 1;
+	font-weight: 600;
+	text-align: center;
+	width: min-content;
+	justify-self: center;
+	grid-template-columns: repeat(10, 1fr);
+}
+
+#arrow-chart * {
+	aspect-ratio: 1;
+}
