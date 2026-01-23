@@ -10,13 +10,14 @@ const letterGapRange = document.getElementById("letter-gap-select");
 const randomArrow = () => arrows[Math.floor(Math.random() * arrows.length)];
 
 const generateArrowChart = () => {
-  chart.innerHTML = "";
+	chart.innerHTML = "";
+	chart.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
 
-  for (let i = 0; i < rows * cols; i++) {
-    const cell = document.createElement("div");
-    cell.textContent = randomArrow();
-    chart.appendChild(cell);
-  }
+	for (let i = 0; i < rows * cols; i++) {
+		const cell = document.createElement("div");
+		cell.textContent = randomArrow();
+		chart.appendChild(cell);
+	}
 };
 
 generateArrowChart();

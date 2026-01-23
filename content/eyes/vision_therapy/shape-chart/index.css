@@ -1,4 +1,4 @@
-#arrow-chart {
+#shape-chart {
 	display: grid;
 	line-height: 1;
 	aspect-ratio: 1;
@@ -8,6 +8,6 @@
 	justify-self: center;
 }
 
-#arrow-chart * {
+#shape-chart * {
 	aspect-ratio: 1;
 }
