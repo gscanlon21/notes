@@ -32,7 +32,7 @@
     <article id="content" class="page v{{ page.extra.site_version | default(value=1) }}">{{ page.content | safe }}</article>
 
 	{% set js = load_data(path=page.path ~ "index.js", required=false) %}
-    {% if js %}<script>{{ js | safe }}</script>{% endif %}
+    {% if js %}<script type="module">{{ js | safe }}</script>{% endif %}
 
     {% set css = load_data(path=page.path ~ "index.css", required=false) %}
     {% if css %}<style>article#content.page { {{ css | safe }} }</style>{% endif %}

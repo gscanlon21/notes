@@ -70,6 +70,17 @@
 			.link {
 				margin-inline-start: 0.1ch;
 			}
+
+			&[data-type="range"] {
+				align-items: center;
+				column-gap: 1ex;
+				display: flex;
+
+				input[type="range"] {
+					margin-block-start: .5ex;
+					flex: 1;
+				}
+			}
 		}
 	}
 }

@@ -66,6 +66,18 @@
             {% endfor %}
             {% endif %}
 
+			{% if page.extra.options | default(value=section.extra.options) %} 
+            <dt>Options</dt>
+            {% for option in page.extra.options | default(value=section.extra.options) %}
+                <dd class="summary-item" data-type="{{ option.type }}">
+                    {% if option.type == "range" %} 
+						<label for="{{ option.id }}">{{ option.name }}</label>
+                        <input id="{{ option.id }}" type="range" min="{{ option.min }}" max="{{ option.max }}" step="{{ option.step | default(value=1) }}" />
+                    {% endif %}
+                </dd>
+            {% endfor %}
+            {% endif %}
+
             {% if page.updated | default(value=section.updated) %} 
             <dt>Last Updated</dt>
             <dd>{{ page.updated | default(value=section.updated) }}</dd>
