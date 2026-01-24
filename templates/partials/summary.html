@@ -73,6 +73,9 @@
                     {% if option.type == "range" %} 
 						<label for="{{ option.id }}">{{ option.name }}</label>
                         <input id="{{ option.id }}" type="range" min="{{ option.min }}" max="{{ option.max }}" step="{{ option.step | default(value=1) }}" />
+					{% elif option.type == "checkbox" %} 
+						<label for="{{ option.id }}">{{ option.name }}</label>
+                        <input id="{{ option.id }}" type="checkbox" />
                     {% endif %}
                 </dd>
             {% endfor %}

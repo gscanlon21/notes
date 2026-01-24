@@ -10,7 +10,7 @@ const letterGapRange = document.getElementById("letter-gap-select");
 const randomShape = () => shapes[Math.floor(Math.random() * shapes.length)];
 
 const generateShapeChart = () => {
-	chart.innerHTML = "";
+	chart.innerHTML = null;
 	chart.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
 
 	for (let i = 0; i < rows * cols; i++) {
