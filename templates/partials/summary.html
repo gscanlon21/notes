@@ -76,6 +76,8 @@
 					{% elif option.type == "checkbox" %} 
 						<label for="{{ option.id }}">{{ option.name }}</label>
                         <input id="{{ option.id }}" type="checkbox" />
+					{% elif option.type == "button" %} 
+                        <button id="{{ option.id }}" type="button">{{ option.name }}</button>
                     {% endif %}
                 </dd>
             {% endfor %}

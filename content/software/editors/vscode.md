@@ -61,6 +61,11 @@ see_also = []
 	"editor.insertSpaces": true,
 },
 
+// JavaScript Specific Settings
+"[javascript]": {
+  "editor.codeLens": false,
+},
+
 // Ignore search files
 "search.exclude": {
   "**/.git": true,

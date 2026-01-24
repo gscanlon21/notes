@@ -1,17 +1,36 @@
 class Consts {
-  static ROWS = 3;
-  static COLS = 3;
-  static DEFAULT_FONT_SIZE = 40;
-  static DEFAULT_LETTER_GAP = 10;
+	static ROWS = 3;
+	static COLS = 3;
+	static MAX_IMAGE_SCALE = 35; 
+	static DEFAULT_IMAGE_GAP = 10; 
+ 	static DEFAULT_IMAGE_SIZE = 100;
 }
 
+const root = document.documentElement;
+const regenerate = document.getElementById("regenerate");
+const wrapper = document.getElementById("spot-the-match-wrapper");
 const chartLeft = document.getElementById("spot-the-match-left");
 const chartRight = document.getElementById("spot-the-match-right");
-const fontSizeRange = document.getElementById("font-size-select");
+const imageSizeRange = document.getElementById("image-size-select");
 const letterGapRange = document.getElementById("letter-gap-select");
 
+const newImageSize = (fontSize) => fontSize - (fontSize * ((Math.random() * Consts.MAX_IMAGE_SCALE) / 100));
 const getImageArray = () => Array.from({ length: 100 }, (_, i) => String(i + 1).padStart(3, "0"));
 const getImage = (number) => `./pdshape_${number}.png`;
+
+const tryAddCorrectClassAfterMouseExit = (elem) => {
+	if (elem.matches(':hover') && elem.dataset.correct) {
+		elem.addEventListener('mouseleave', () => elem.classList.add('correct'), { once: true });
+	}
+	else if (elem.dataset.correct) {
+		elem.classList.add('correct');
+	}
+}
+
+const applyRandomRotationAndSize = (elem) => {
+	elem.style.transform = `rotate(${Math.random() * 360}deg)`;
+	elem.style.setProperty('--image-size', `${newImageSize(imageSizeRange.value)}px`);
+}
 
 const generateChart = () => {
 	chartLeft.innerHTML = null;
@@ -19,21 +38,23 @@ const generateChart = () => {
 
 	const imagesLeft = [];
 	const imagesRight = [];
-	const blankLeft = document.createElement("div");
-	const blankRight = document.createElement("div");
 	const imageArray = getImageArray().toSorted(() => Math.random() - 0.5);
 	for (let i = 1; i < Consts.ROWS * Consts.COLS; i++) {
 		const cellLeft = document.createElement("div");
 		const cellRight = document.createElement("div");
+		applyRandomRotationAndSize(cellRight);
+		applyRandomRotationAndSize(cellLeft);
 
 		if (i === 1) {
 			const image = getImage(imageArray.pop());
-			cellLeft.style.backgroundImage = `url(${image})`;
-			cellRight.style.backgroundImage = `url(${image})`;
+			cellLeft.style.maskImage = `url(${image})`;
+			cellRight.style.maskImage = `url(${image})`;
+			cellRight.dataset.correct = `true`;
+			cellLeft.dataset.correct = `true`;
 		}
 		else {
-			cellLeft.style.backgroundImage = `url(${getImage(imageArray.pop())})`;
-			cellRight.style.backgroundImage = `url(${getImage(imageArray.pop())})`;
+			cellLeft.style.maskImage = `url(${getImage(imageArray.pop())})`;
+			cellRight.style.maskImage = `url(${getImage(imageArray.pop())})`;
 		}
 		
 		imagesLeft.push(cellLeft);
@@ -43,20 +64,34 @@ const generateChart = () => {
 	imagesLeft.sort(() => Math.random() - 0.5);
 	imagesRight.sort(() => Math.random() - 0.5);
 
-	imagesLeft.splice(4, 0, blankLeft);
-	imagesRight.splice(4, 0, blankRight);
+	imagesLeft.splice(4, 0, document.createElement("span"));
+	imagesRight.splice(4, 0, document.createElement("span"));
 	for (let i = 0; i < Consts.ROWS * Consts.COLS; i++) {
 		chartLeft.appendChild(imagesLeft[i]);
 		chartRight.appendChild(imagesRight[i]);
+
+		setTimeout(() => {
+			tryAddCorrectClassAfterMouseExit(imagesLeft[i]);
+			tryAddCorrectClassAfterMouseExit(imagesRight[i]);
+		}, 0);
 	}
 }
 
+const regenerateImageSizes = () => {
+	for (const child of [...Array.from(chartLeft.childNodes), ...Array.from(chartRight.childNodes)]) {
+		child.style.setProperty('--image-size', `${newImageSize(imageSizeRange.value)}px`);
+	}
+}
+
+const setImageSize = (_, v) => root.style.setProperty('--image-size', `${imageSizeRange.value = v ?? imageSizeRange.value}px`);
+imageSizeRange.addEventListener('change', regenerateImageSizes);
+imageSizeRange.addEventListener('input', setImageSize);
+setImageSize(undefined, Consts.DEFAULT_IMAGE_SIZE);
+
+const setImageGap = (_, v) => root.style.setProperty('--image-gap', `${letterGapRange.value = v ?? letterGapRange.value}px`);
+letterGapRange.addEventListener('input', setImageGap);
+setImageGap(undefined, Consts.DEFAULT_IMAGE_GAP);
+
 generateChart();
-
-const setFontSizeRange = (_, value) => chartLeft.style.fontSize = `${fontSizeRange.value = value ?? fontSizeRange.value}px`;
-fontSizeRange.addEventListener('input', setFontSizeRange);
-setFontSizeRange(undefined, Consts.DEFAULT_FONT_SIZE);
-
-const setLetterGapRange = (_, value) => chartLeft.style.gap = `${letterGapRange.value = value ?? letterGapRange.value}px`;
-letterGapRange.addEventListener('input', setLetterGapRange);
-setLetterGapRange(undefined, Consts.DEFAULT_LETTER_GAP);
+regenerate.addEventListener('click', generateChart);
+wrapper.addEventListener('click', (e) => e.target.classList.contains('correct') ? generateChart() : void(0));

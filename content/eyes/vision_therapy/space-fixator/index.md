@@ -7,7 +7,9 @@ updated = 2025-09-09
 [extra]
 site_version = 1
 toc_level = 2
-see_also = []
+see_also = [
+  { title = "Space Fixator", href = "https://aworkoutaday.com/exercises?Name=Space+Fixator" },
+]
 options = [
   { name = "Font Size", id = "font-size-select", type = "range", min = 50, max = "150" },
   { name = "Circles", id = "circles-select", type = "range", min = 6, max = "24" },

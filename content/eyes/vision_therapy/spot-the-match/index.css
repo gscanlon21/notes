@@ -11,13 +11,26 @@
 	font-weight: 600;
 	text-align: center;
 	width: min-content;
+	align-items: center;
 	justify-self: center;
+	gap: var(--image-gap);
 	grid-template-columns: repeat(3, 1fr);
 }
 
 .spot-the-match > div {
-	background-repeat: no-repeat;
-	background-size: contain;
+	background-color: currentColor;
+	height: var(--image-size);
+	mask-repeat: no-repeat;
+	mask-position: center;
+	justify-self: center;
+	mask-size: contain;
 	aspect-ratio: 1;
-	height: 100px;
+}
+
+.correct {
+	cursor: pointer;
+}
+
+.correct:hover {
+	background-color: green;
 }
