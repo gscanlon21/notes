@@ -8,7 +8,7 @@ updated = 2025-09-09
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "Directionality Arrows", href = "https://aworkoutaday.com/exercises?Name=Directionality+Arrows" },
+  { title = "Closed/Open/Flat", href = "https://aworkoutaday.com/exercises?Name=Closed%2FOpen%2FFlat" },
 ]
 options = [
   { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = "60" },

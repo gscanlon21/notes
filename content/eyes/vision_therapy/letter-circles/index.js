@@ -1,6 +1,9 @@
-const defaultCircles = 8;
-const defaultRadius = 250;
-const defaultFontSize = 100;
+class Consts {
+  static DEFAULT_CIRCLES = 8;
+  static DEFAULT_RADIUS = 250;
+  static DEFAULT_FONT_SIZE = 100;
+}
+
 const root = document.documentElement;
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const chart = document.getElementById("letter-circles");
@@ -45,10 +48,10 @@ const generateInnerCircle = () => {
 
 radiusRange.addEventListener("input", generateCircleCharts);
 circlesRange.addEventListener("input", generateCircleCharts);
-generateCircleCharts(undefined, defaultCircles, defaultRadius);
+generateCircleCharts(undefined, Consts.DEFAULT_CIRCLES, Consts.DEFAULT_RADIUS);
 
 const setCircleSize = (_, v) => root.style.setProperty('--circle-size', `${fontSizeRange.value = v ?? fontSizeRange.value}px`);
 fontSizeRange.addEventListener("input", setCircleSize);
-setCircleSize(undefined, defaultFontSize);
+setCircleSize(undefined, Consts.DEFAULT_FONT_SIZE);
 
 centerCircleCheckbox.addEventListener('change', generateInnerCircle);
