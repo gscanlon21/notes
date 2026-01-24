@@ -14,4 +14,6 @@ options = [
 ]
 +++
 
+{% table() %}
 <div id="shape-chart"></div>
+{% end %}

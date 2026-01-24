@@ -2,6 +2,7 @@
 title = "Vision Therapy"
 description = "Physical therapy for your eyes."
 aliases = ["vision-therapy", "vision_therapy"]
+sort_by = "title"
 
 [extra]
 updated = 2025-09-09

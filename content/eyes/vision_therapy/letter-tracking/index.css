@@ -1,0 +1,13 @@
+#letter-tracking {
+	display: grid;
+	line-height: 1;
+	aspect-ratio: 1;
+	font-weight: 600;
+	text-align: center;
+	width: min-content;
+	justify-self: center;
+}
+
+#letter-tracking * {
+	aspect-ratio: 1;
+}

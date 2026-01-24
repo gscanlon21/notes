@@ -1,0 +1,14 @@
+#letter-chart {
+	line-height: 1;
+	aspect-ratio: 1;
+	font-weight: 600;
+	text-align: center;
+	position: relative;
+	height: 600px;
+	width: 100%;
+}
+
+#letter-chart > div {
+	position: absolute;
+	aspect-ratio: 1;
+}

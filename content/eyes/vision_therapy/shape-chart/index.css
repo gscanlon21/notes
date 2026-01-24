@@ -9,5 +9,6 @@
 }
 
 #shape-chart * {
+	overflow-y: clip;
 	aspect-ratio: 1;
 }

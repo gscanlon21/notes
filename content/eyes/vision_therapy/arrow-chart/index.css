@@ -9,5 +9,6 @@
 }
 
 #arrow-chart * {
+	overflow-y: clip;
 	aspect-ratio: 1;
 }

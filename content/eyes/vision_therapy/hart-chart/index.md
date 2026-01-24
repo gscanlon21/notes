@@ -14,4 +14,7 @@ options = [
 ]
 +++
 
+{% table() %}
 <div id="hart-chart"></div>
+{% end %}
+
