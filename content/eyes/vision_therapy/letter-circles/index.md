@@ -16,4 +16,8 @@ options = [
 ]
 +++
 
-<div id="letter-circles"></div>
+<div id="wrapper">
+  <div id="letter-circles" class="letter-circle"></div>
+  <div id="letter-circles2" class="letter-circle"></div>
+  <div id="letter-circles3" class="letter-circle"></div>
+</div>

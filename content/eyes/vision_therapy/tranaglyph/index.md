@@ -13,4 +13,7 @@ options = [
 ]
 +++
 
-<div id="tranaglyph" class="tranaglyph"></div>
+<div id="tranaglyph" class="tranaglyph">
+  <div id="tranaglyph-left" class="tranaglyph-target"></div>
+  <div id="tranaglyph-right" class="tranaglyph-target"></div>
+</div>

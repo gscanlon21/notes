@@ -7,9 +7,8 @@ const chartRight = document.getElementById("spot-the-match-right");
 const fontSizeRange = document.getElementById("font-size-select");
 const letterGapRange = document.getElementById("letter-gap-select");
 
+const getImageArray = () => Array.from({ length: 100 }, (_, i) => String(i + 1).padStart(3, "0"));
 const getImage = (number) => `./pdshape_${number}.png`;
-const padNumber = (number) => String(number).padStart(3, "0");
-const getImageArray = () => Array.from({ length: 100 }, (_, i) => padNumber(i + 1)).toSorted(() => Math.random() - 0.5);
 
 const generateChart = () => {
 	chartLeft.innerHTML = null;
@@ -17,9 +16,9 @@ const generateChart = () => {
 
 	const imagesLeft = [];
 	const imagesRight = [];
-	const imageArray = getImageArray();
 	const blankLeft = document.createElement("div");
 	const blankRight = document.createElement("div");
+	const imageArray = getImageArray().toSorted(() => Math.random() - 0.5);
 	for (let i = 1; i < rows * cols; i++) {
 		const cellLeft = document.createElement("div");
 		const cellRight = document.createElement("div");
@@ -40,7 +39,7 @@ const generateChart = () => {
 
 	imagesLeft.sort(() => Math.random() - 0.5);
 	imagesRight.sort(() => Math.random() - 0.5);
-	
+
 	imagesLeft.splice(4, 0, blankLeft);
 	imagesRight.splice(4, 0, blankRight);
 	for (let i = 0; i < rows * cols; i++) {

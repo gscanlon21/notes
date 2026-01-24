@@ -10,10 +10,10 @@
 
 .tranaglyph-target {
 	position: absolute;
-	transform: translate(-50%, -50%);
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
 }
 
 .eye {
@@ -24,18 +24,40 @@
 	justify-content: center;
 	font-weight: 700;
 	user-select: none;
+	font-size: 100%;
+	margin: auto;
 }
 
-.left-eye {
+.left {
 	color: cyan;
 	//mix-blend-mode: screen;
 }
 
-.right-eye {
+.right {
 	color: gold;
 	//mix-blend-mode: screen;
 }
 
-.tranaglyph-target span {
-	font-size: 100%;
+.inner-circle {
+	font-size: 150px;
+}
+
+.outer-circle {
+	font-size: 200px;
+}
+
+.center-cross {
+	font-size: 50px;
+}
+
+.suppression-circle {
+	font-size: 50px;
+}
+
+.suppression-square {
+	font-size: 50px;
+}
+
+.satellite-circle {
+	font-size: 50px;
 }
