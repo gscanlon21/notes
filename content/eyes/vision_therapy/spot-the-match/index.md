@@ -1,13 +1,15 @@
 +++
 title = "Spot the Match"
-description = "Spot the Match is a grid of letters used to train the visual system."
+description = "Find the matching image among the two sets."
 aliases = ["a-workout-a-day/spot-the-match"]
-updated = 2025-09-09
+updated = 2026-02-01
 
 [extra]
 site_version = 1
 toc_level = 2
-see_also = []
+see_also = [
+  { title = "This Page", href = "/a-workout-a-day/spot-the-match" },
+]
 options = [
   { name = "Image Size", id = "image-size-select", type = "range", min = 75, max = "150" },
   { name = "Letter Gap", id = "letter-gap-select", type = "range", min = 1, max = "10" },

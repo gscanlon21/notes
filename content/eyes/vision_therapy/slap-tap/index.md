@@ -1,13 +1,14 @@
 +++
 title = "Slap Tap"
 description = "Slap Tap is a grid of symbols used to train the visual system."
-aliases = ["slap-tap", "slap_tap"]
-updated = 2025-09-09
+aliases = ["a-workout-a-day/slap-tap"]
+updated = 2026-02-01
 
 [extra]
 site_version = 1
 toc_level = 2
 see_also = [
+  { title = "This Page", href = "/a-workout-a-day/slap-tap" },
   { title = "Slap Tap", href = "https://aworkoutaday.com/exercises?Name=Slap+Tap" },
 ]
 options = [

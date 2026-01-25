@@ -1,13 +1,14 @@
 +++
 title = "Space Fixator"
 description = "A Space Fixator is a circle of circles used to train the visual system."
-aliases = ["space-fixator", "space_fixator"]
-updated = 2025-09-09
+aliases = ["a-workout-a-day/space-fixator"]
+updated = 2026-02-01
 
 [extra]
 site_version = 1
 toc_level = 2
 see_also = [
+  { title = "This Page", href = "/a-workout-a-day/space-fixator" },
   { title = "Space Fixator", href = "https://aworkoutaday.com/exercises?Name=Space+Fixator" },
 ]
 options = [

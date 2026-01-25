@@ -1,7 +1,9 @@
 #spot-the-match-wrapper {
-	display: flex;
-	align-items: center;
 	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	display: flex;
+	gap: 5rem;
 }
 
 .spot-the-match {

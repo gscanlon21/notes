@@ -5,7 +5,7 @@ aliases = ["vision-therapy", "vision_therapy"]
 sort_by = "title"
 
 [extra]
-updated = 2025-09-09
+updated = 2026-02-01
 site_version = 1
 toc_level = 2
 see_also = [

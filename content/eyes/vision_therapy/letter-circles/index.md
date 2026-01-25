@@ -1,13 +1,15 @@
 +++
 title = "Letter Circles"
 description = "Letter Circles is a circle of letters used to train the visual system."
-aliases = ["letter-circles", "letter_circles"]
-updated = 2025-09-09
+aliases = ["a-workout-a-day/letter-circles"]
+updated = 2026-02-01
 
 [extra]
 site_version = 1
 toc_level = 2
-see_also = []
+see_also = [
+  { title = "This Page", href = "/a-workout-a-day/letter-circles" },
+]
 options = [
   { name = "Font Size", id = "font-size-select", type = "range", min = 50, max = "150" },
   { name = "Circles", id = "circles-select", type = "range", min = 6, max = "24" },

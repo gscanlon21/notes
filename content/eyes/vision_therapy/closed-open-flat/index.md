@@ -1,13 +1,14 @@
 +++
 title = "Closed/Open/Flat"
 description = "An Arrow Chart is a grid of arrows used to train the visual system."
-aliases = ["closed-open-flat", "closed_open_flat"]
-updated = 2025-09-09
+aliases = ["a-workout-a-day/closed-open-flat"]
+updated = 2026-02-01
 
 [extra]
 site_version = 1
 toc_level = 2
 see_also = [
+  { title = "This Page", href = "/a-workout-a-day/closed-open-flat" },
   { title = "Closed/Open/Flat", href = "https://aworkoutaday.com/exercises?Name=Closed%2FOpen%2FFlat" },
 ]
 options = [
