@@ -1,14 +1,16 @@
 class Consts {
-  static ROWS = 6;
-  static COLS = 6;
-  static DEFAULT_FONT_SIZE = 40;
-  static DEFAULT_LETTER_GAP = 10;
+	static ROWS = 6;
+	static COLS = 6;
+	static DEFAULT_ROW_GAP = 10;
+	static DEFAULT_COL_GAP = 25;
+	static DEFAULT_FONT_SIZE = 40;
 }
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const chart = document.getElementById("letter-tracking");
 const fontSizeRange = document.getElementById("font-size-select");
-const letterGapRange = document.getElementById("letter-gap-select");
+const colGapRange = document.getElementById("col-gap-select");
+const rowGapRange = document.getElementById("row-gap-select");
 
 const randomLetter = () => letters[Math.floor(Math.random() * letters.length)];
 
@@ -34,6 +36,10 @@ const setFontSizeRange = (_, value) => chart.style.fontSize = `${fontSizeRange.v
 fontSizeRange.addEventListener("input", setFontSizeRange);
 setFontSizeRange(undefined, Consts.DEFAULT_FONT_SIZE);
 
-const setLetterGapRange = (_, value) => chart.style.gap = `${letterGapRange.value = value ?? letterGapRange.value}px`;
-letterGapRange.addEventListener("input", setLetterGapRange);
-setLetterGapRange(undefined, Consts.DEFAULT_LETTER_GAP);
+const setColGapRange = (_, value) => chart.style.columnGap = `${colGapRange.value = value ?? colGapRange.value}px`;
+colGapRange.addEventListener("input", setColGapRange);
+setColGapRange(undefined, Consts.DEFAULT_COL_GAP);
+
+const setRowGapRange = (_, value) => chart.style.rowGap = `${rowGapRange.value = value ?? rowGapRange.value}px`;
+rowGapRange.addEventListener("input", setRowGapRange);
+setRowGapRange(undefined, Consts.DEFAULT_ROW_GAP);

@@ -1,18 +1,20 @@
 +++
 title = "Spot the Match"
 description = "Find the matching image among the two sets."
-aliases = ["a-workout-a-day/spot-the-match"]
+aliases = ["vision-therapy/spot-the-match"]
 updated = 2026-02-01
 
 [extra]
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "This Page", href = "/a-workout-a-day/spot-the-match" },
+  { title = "Permalink", href = "/vision-therapy/spot-the-match" },
+  { title = "Spot the Match", href = "https://aworkoutaday.com/exercises?Name=Spot+the+Match" },
 ]
 options = [
-  { name = "Image Size", id = "image-size-select", type = "range", min = 75, max = "150" },
-  { name = "Letter Gap", id = "letter-gap-select", type = "range", min = 1, max = "10" },
+  { name = "Gap", id = "gap-range", type = "range", min = 50, max = "100" },
+  { name = "Image Size", id = "image-size-range", type = "range", min = 75, max = "150" },
+  { name = "Image Gap", id = "image-gap-range", type = "range", min = 10, max = "25" },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++

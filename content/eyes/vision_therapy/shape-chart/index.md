@@ -1,14 +1,14 @@
 +++
 title = "Shape Chart"
 description = "A Shape Chart is a grid of shapes used to train the visual system."
-aliases = ["a-workout-a-day/shape-chart"]
+aliases = ["vision-therapy/shape-chart"]
 updated = 2026-02-01
 
 [extra]
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "This Page", href = "/a-workout-a-day/shape-chart" },
+  { title = "Permalink", href = "/vision-therapy/shape-chart" },
 ]
 options = [
   { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = "60" },

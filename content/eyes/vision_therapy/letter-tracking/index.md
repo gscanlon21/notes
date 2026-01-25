@@ -1,19 +1,20 @@
 +++
 title = "Letter Tracking"
 description = "Letter Tracking is a grid of arrows used to train the visual system."
-aliases = ["a-workout-a-day/letter-tracking"]
+aliases = ["vision-therapy/letter-tracking"]
 updated = 2026-02-01
 
 [extra]
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "This Page", href = "/a-workout-a-day/letter-tracking" },
+  { title = "Permalink", href = "/vision-therapy/letter-tracking" },
   { title = "Alphabet Saccades", href = "https://aworkoutaday.com/exercises?Name=Alphabet+Saccades" },
 ]
 options = [
   { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = "60" },
-  { name = "Letter Gap", id = "letter-gap-select", type = "range", min = 1, max = "10" },
+  { name = "Column Gap", id = "col-gap-select", type = "range", min = 0, max = "60" },
+  { name = "Row Gap", id = "row-gap-select", type = "range", min = 0, max = "30" },
 ]
 +++
 

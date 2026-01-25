@@ -1,14 +1,14 @@
 +++
 title = "Line Counting"
 description = "Line Counting is a grid of lines used to train the visual system."
-aliases = ["a-workout-a-day/line-counting"]
+aliases = ["vision-therapy/line-counting"]
 updated = 2026-02-01
 
 [extra]
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "This Page", href = "/a-workout-a-day/line-counting" },
+  { title = "Permalink", href = "/vision-therapy/line-counting" },
   { title = "Line Counting", href = "https://aworkoutaday.com/exercises?Name=Line+Counting" },
 ]
 options = [

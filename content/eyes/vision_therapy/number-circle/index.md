@@ -1,14 +1,14 @@
 +++
 title = "Number Circle"
 description = "A Number Circle is a circle of numbers used to train the visual system."
-aliases = ["a-workout-a-day/number-circle"]
+aliases = ["vision-therapy/number-circle"]
 updated = 2026-02-01
 
 [extra]
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "This Page", href = "/a-workout-a-day/number-circle" },
+  { title = "Permalink", href = "/vision-therapy/number-circle" },
 ]
 options = [
   { name = "Font Size", id = "font-size-select", type = "range", min = 50, max = "150" },

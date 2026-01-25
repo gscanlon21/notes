@@ -1,14 +1,14 @@
 +++
 title = "Letter Search"
 description = "An Arrow Chart is a grid of arrows used to train the visual system."
-aliases = ["a-workout-a-day/letter-search"]
+aliases = ["vision-therapy/letter-search"]
 updated = 2026-02-01
 
 [extra]
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "This Page", href = "/a-workout-a-day/letter-search" },
+  { title = "Permalink", href = "/vision-therapy/letter-search" },
   { title = "Directionality Arrows", href = "https://aworkoutaday.com/exercises?Name=Directionality+Arrows" },
 ]
 options = [

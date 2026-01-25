@@ -1,9 +1,13 @@
 #spot-the-match-wrapper {
 	justify-content: space-around;
-	align-items: center;
+	padding-block: 0.5rem;
+	margin-block: 0.5rem;
+	align-items: start;
+	overflow-x: auto;
+	gap: var(--gap);
 	flex-wrap: wrap;
 	display: flex;
-	gap: 5rem;
+	height: 100%;
 }
 
 .spot-the-match {

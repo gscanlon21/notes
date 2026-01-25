@@ -1,14 +1,14 @@
 +++
 title = "Tranaglyph"
 description = "A Tranaglyph is a grid of arrows used to train the visual system."
-aliases = ["a-workout-a-day/tranaglyph"]
+aliases = ["vision-therapy/tranaglyph"]
 updated = 2026-02-01
 
 [extra]
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "This Page", href = "/a-workout-a-day/tranaglyph" },
+  { title = "Permalink", href = "/vision-therapy/tranaglyph" },
   { title = "Tranaglyph", href = "https://aworkoutaday.com/exercises?Name=Tranaglyph" },
 ]
 options = [
