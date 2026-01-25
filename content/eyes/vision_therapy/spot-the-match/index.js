@@ -56,19 +56,19 @@ const generateChart = () => {
 			right.style.maskImage = `url(${getImage(imageArr.pop())})`;
 		}
 
-		images.push([left, right]);
+		images.push({ left, right });
 	}
 
 	// Swap the position of each matching image in each set.
 	const leftIndex = Math.floor(Math.random() * images.length);
 	const rightIndex = Math.floor(Math.random() * images.length);
-	[images[0][0], images[leftIndex][0]] = [images[leftIndex][0], images[0][0]];
-	[images[0][1], images[rightIndex][1]] = [images[rightIndex][1], images[0][1]];
+	[images[0].left, images[leftIndex].left] = [images[leftIndex].left, images[0].left];
+	[images[0].right, images[rightIndex].right] = [images[rightIndex].right, images[0].right];
 	
 	// Add a space in the middle of each set of images so it forms more of a ring shape.
-	images.splice(4, 0, [document.createElement("br"), document.createElement("br")]);
+	images.splice(4, 0, { left: document.createElement("br"), right: document.createElement("br") });
 	
-	for (const [left, right] of images) {
+	for (const { left, right } of images) {
 		chartLeft.appendChild(left);
 		chartRight.appendChild(right);
 
@@ -101,4 +101,4 @@ setGap(undefined, Consts.DEFAULT_GAP);
 
 generateChart();
 regenerate.addEventListener('click', generateChart);
-wrapper.addEventListener('click', (e) => e.target.classList.contains('correct') ? generateChart() : void(0));
+wrapper.addEventListener('click', (e) => e.target.dataset.correct ? generateChart() : void(0));
