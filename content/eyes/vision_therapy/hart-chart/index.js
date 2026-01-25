@@ -11,6 +11,7 @@ const fontSizeRange = document.getElementById("font-size-select");
 const letterGapRange = document.getElementById("letter-gap-select");
 
 const randomLetter = () => letters[Math.floor(Math.random() * letters.length)];
+const redOrGreen = () => (Math.random() - 0.5) >= 0 ? "red" : "green";
 
 const generateHartChart = () => {
 	chart.innerHTML = null;

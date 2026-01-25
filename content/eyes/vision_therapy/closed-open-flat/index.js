@@ -7,6 +7,7 @@ class Consts {
 
 const arrows = ["┃", "━", "⬤"];
 const chart = document.getElementById("arrow-chart");
+const regenerate = document.getElementById("regenerate");
 const fontSizeRange = document.getElementById("font-size-select");
 const letterGapRange = document.getElementById("letter-gap-select");
 
@@ -24,6 +25,7 @@ const generateArrowChart = () => {
 };
 
 generateArrowChart();
+regenerate.addEventListener('click', generateArrowChart);
 
 const setFontSizeRange = (_, value) => chart.style.fontSize = `${fontSizeRange.value = value ?? fontSizeRange.value}px`;
 fontSizeRange.addEventListener("input", setFontSizeRange);

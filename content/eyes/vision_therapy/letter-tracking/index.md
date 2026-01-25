@@ -1,6 +1,6 @@
 +++
 title = "Letter Tracking"
-description = "Letter Tracking is a grid of arrows used to train the visual system."
+description = "Find each letter of the alphabet in order."
 aliases = ["vision-therapy/letter-tracking"]
 updated = 2026-02-01
 
@@ -12,9 +12,10 @@ see_also = [
   { title = "Alphabet Saccades", href = "https://aworkoutaday.com/exercises?Name=Alphabet+Saccades" },
 ]
 options = [
-  { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = "60" },
-  { name = "Column Gap", id = "col-gap-select", type = "range", min = 0, max = "60" },
-  { name = "Row Gap", id = "row-gap-select", type = "range", min = 0, max = "30" },
+  { name = "Red/Green Stripes", id = "red-green-checkbox", type = "checkbox" },
+  { name = "Line Height", id = "line-height-range", type = "range", min = 1, max = 2, step = 0.1 },
+  { name = "Font Size", id = "font-size-range", type = "range", min = 10, max = 60 },
+  { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++
 

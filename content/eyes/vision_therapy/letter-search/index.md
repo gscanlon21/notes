@@ -12,8 +12,14 @@ see_also = [
   { title = "Directionality Arrows", href = "https://aworkoutaday.com/exercises?Name=Directionality+Arrows" },
 ]
 options = [
-  { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = "60" },
-  { name = "Density", id = "letters-select", type = "range", min = 10, max = "100" },
+  { name = "Letters", id = "letters-checkbox", type = "text" },
+  { name = "Lowercase Letters", id = "lowercase-checkbox", type = "checkbox" },
+  { name = "Uppercase Letters", id = "uppercase-checkbox", type = "checkbox" },
+  { name = "Red/Green Letters", id = "red-green-checkbox", type = "checkbox" },
+  { name = "Density", id = "letters-range", type = "range", min = 10, max = 100 },
+  { name = "Font Size", id = "font-size-range", type = "range", min = 10, max = 75 },
+  { name = "Letter Gap", id = "gap-range", type = "range", min = 10, max = 50 },
+  { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++
 

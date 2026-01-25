@@ -35,12 +35,12 @@
     {% if js %}<script type="module">{{ js | safe }}</script>{% endif %}
 
     {% set css = load_data(path=page.path ~ "index.css", required=false) %}
-    {% if css %}<style>article#content.page { {{ css | safe }} }</style>{% endif %}
+    {% if css %}<style>{{ css | safe }}</style>{% endif %}
 
 	{% if lang != config.default_language %}
 		{% set submodule_path = page.path | split(pat=lang) | last %}
 		{% set noCss = load_data(path=submodule_path ~ "index.no.css", required=false) %}
-		{% if noCss %}<style>article#content.page { {{ noCss | safe }} }</style>{% endif %}
+		{% if noCss %}<style>{{ noCss | safe }}</style>{% endif %}
 	{% endif %}
 {% endblock content %}
   

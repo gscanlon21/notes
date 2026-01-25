@@ -1,3 +1,7 @@
+.table-wrapper {
+	height: 100%;
+}
+
 #shape-chart {
 	display: grid;
 	line-height: 1;

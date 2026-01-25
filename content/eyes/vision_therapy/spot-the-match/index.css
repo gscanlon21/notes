@@ -1,8 +1,13 @@
+@media screen and (orientation: landscape) {
+    :root {
+		--body-width: calc(100vw - 40rem);
+	}
+}
+
 #spot-the-match-wrapper {
-	justify-content: space-around;
-	padding-block: 0.5rem;
-	margin-block: 0.5rem;
-	align-items: start;
+	justify-content: center;
+	align-content: start;
+	align-items: center;
 	overflow-x: auto;
 	gap: var(--gap);
 	flex-wrap: wrap;
@@ -12,6 +17,8 @@
 
 .spot-the-match {
 	display: grid;
+	padding: 1rem;
+	overflow: clip;
 	line-height: 1;
 	aspect-ratio: 1;
 	font-weight: 600;
@@ -24,8 +31,8 @@
 }
 
 .spot-the-match > div {
+	height: calc(var(--image-size) * var(--image-scale));
 	background-color: currentColor;
-	height: var(--image-size);
 	mask-repeat: no-repeat;
 	mask-position: center;
 	justify-self: center;

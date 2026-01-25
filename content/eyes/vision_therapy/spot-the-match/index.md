@@ -12,9 +12,11 @@ see_also = [
   { title = "Spot the Match", href = "https://aworkoutaday.com/exercises?Name=Spot+the+Match" },
 ]
 options = [
-  { name = "Gap", id = "gap-range", type = "range", min = 50, max = "100" },
-  { name = "Image Size", id = "image-size-range", type = "range", min = 75, max = "150" },
-  { name = "Image Gap", id = "image-gap-range", type = "range", min = 10, max = "25" },
+  { name = "Gap", id = "gap-range", type = "range", min = 25, max = 250, step = 5 },
+  { name = "Image Gap", id = "image-gap-range", type = "range", min = 10, max = 25 },
+  { name = "Image Size", id = "image-size-range", type = "range", min = 75, max = 125 },
+  { name = "Randomness", id = "randomness-range", type = "range", min = 0, max = 50 },
+  { name = "Red/Green Images", id = "red-green-checkbox", type = "checkbox" },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++

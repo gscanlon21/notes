@@ -1,45 +1,67 @@
 class Consts {
-	static ROWS = 6;
-	static COLS = 6;
-	static DEFAULT_ROW_GAP = 10;
-	static DEFAULT_COL_GAP = 25;
-	static DEFAULT_FONT_SIZE = 40;
+	static MIN_GAP = 1;
+	static MAX_GAP = 9;
+	static MIN_WORD = 3;
+	static MAX_WORD = 5;
+	static DEFAULT_FONT_SIZE = 35;
+	static DEFAULT_LINE_HEIGHT = 1.5;
 }
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letters = "abcdefghijklmnopqrstuvwxyz";
+const capitalLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 const chart = document.getElementById("letter-tracking");
-const fontSizeRange = document.getElementById("font-size-select");
-const colGapRange = document.getElementById("col-gap-select");
-const rowGapRange = document.getElementById("row-gap-select");
+const fontSizeRange = document.getElementById("font-size-range");
+const lineHeightRange = document.getElementById("line-height-range");
 
 const randomLetter = () => letters[Math.floor(Math.random() * letters.length)];
+const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-const generateArrowChart = () => {
-	chart.innerHTML = null;
-	chart.style.gridTemplateColumns = `repeat(${Consts.COLS}, 1fr)`;
+const generateAlphabetSearch = () => {
+	let output = "";
+	let index = 0;
+	let wordCount = 0;
 
-	for (let i = 0; i < Consts.ROWS * Consts.COLS; i++) {
-		const cell = document.createElement("div");
-		if (i % 2 === 0) {
-			cell.textContent = `${randomLetter()}${randomLetter()}${randomLetter()}`;
+	const addChar = (char) => {
+		output += char;
+		index++;
+		wordCount++;
+
+		if (wordCount >= Consts.MAX_WORD) {
+			output += " ";
+			wordCount = 0;
+			return;
 		}
-		else {
-			cell.textContent = `${randomLetter()}${randomLetter()}${randomLetter()}${randomLetter()}`;
+
+		if (wordCount >= Consts.MIN_WORD && Math.random() < 0.5) {
+			output += " ";
+			wordCount = 0;
 		}
-		chart.appendChild(cell);
+	};
+
+	for (const target of letters) {
+		for (let i = 0; i < rand(Consts.MIN_GAP, Consts.MAX_GAP - 1); i++) {
+			addChar(randomLetter());
+		}
+
+		addChar(target);
 	}
+
+	for (let i = 0; i < rand(Consts.MIN_GAP, Consts.MAX_GAP - 1); i++) {
+		addChar(randomLetter());
+	}
+
+	chart.textContent = output.trim();
 };
 
-generateArrowChart();
 
 const setFontSizeRange = (_, value) => chart.style.fontSize = `${fontSizeRange.value = value ?? fontSizeRange.value}px`;
 fontSizeRange.addEventListener("input", setFontSizeRange);
 setFontSizeRange(undefined, Consts.DEFAULT_FONT_SIZE);
 
-const setColGapRange = (_, value) => chart.style.columnGap = `${colGapRange.value = value ?? colGapRange.value}px`;
-colGapRange.addEventListener("input", setColGapRange);
-setColGapRange(undefined, Consts.DEFAULT_COL_GAP);
+const setLineHeight = (_, value) => chart.style.lineHeight = `${lineHeightRange.value = value ?? lineHeightRange.value}`;
+lineHeightRange.addEventListener("input", setLineHeight);
+setLineHeight(undefined, Consts.DEFAULT_LINE_HEIGHT);
 
-const setRowGapRange = (_, value) => chart.style.rowGap = `${rowGapRange.value = value ?? rowGapRange.value}px`;
-rowGapRange.addEventListener("input", setRowGapRange);
-setRowGapRange(undefined, Consts.DEFAULT_ROW_GAP);
+regenerate.addEventListener('click', generateAlphabetSearch);
+generateAlphabetSearch();

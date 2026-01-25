@@ -7,6 +7,7 @@ class Consts {
 
 const symbols = ["p", "b", "d", "q", "Φ", "○"];
 const chart = document.getElementById("slap-tap");
+const regenerate = document.getElementById("regenerate");
 const fontSizeRange = document.getElementById("font-size-select");
 const letterGapRange = document.getElementById("letter-gap-select");
 
@@ -27,6 +28,7 @@ const generateSlapTapGrid = () => {
 };
 
 generateSlapTapGrid();
+regenerate.addEventListener('click', generateSlapTapGrid);
 
 const setFontSizeRange = (_, value) => chart.style.fontSize = `${fontSizeRange.value = value ?? fontSizeRange.value}px`;
 fontSizeRange.addEventListener('input', setFontSizeRange);

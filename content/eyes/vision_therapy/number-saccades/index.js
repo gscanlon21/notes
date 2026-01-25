@@ -1,15 +1,15 @@
 const defaultCircles = 8;
 const defaultRadius = 250;
 const defaultFontSize = 100;
-const numbers = "1234567890";
 const root = document.documentElement;
 const chart = document.getElementById("number-circle");
+const regenerate = document.getElementById("regenerate");
 const radiusRange = document.getElementById("radius-select");
 const circlesRange = document.getElementById("circles-select");
 const fontSizeRange = document.getElementById("font-size-select");
 const centerCircleCheckbox = document.getElementById("center-select");
 
-const randomNumber = () => numbers[Math.floor(Math.random() * numbers.length)];
+const randomNumbers = (l) => Array.from({ length: l }, (_, i) => i).toSorted(() => Math.random() - 0.5);
 
 const generateCircleChart = (_, circles, radius) => {
 	circles = circlesRange.value = circles ?? circlesRange.value;
@@ -17,13 +17,14 @@ const generateCircleChart = (_, circles, radius) => {
 
 	chart.innerHTML = null;
 	chart.style.height = `${radius * 2}px`
+	const numbers = randomNumbers(circles);
 	for (let i = 0; i < circles; i++) {
 		const rotation = 360 / circles * i;
 		const cell = document.createElement("div");
 		const text = document.createElement("div");
 		cell.style.transform = `rotate(${rotation}deg)`;
 		cell.style.height = `${radius * 2}px`;
-		text.textContent = randomNumber();
+		text.textContent = numbers[i].toString();
 		text.style.transform = `rotate(-${rotation}deg)`;
 		chart.appendChild(cell);
 		cell.appendChild(text);
@@ -35,6 +36,7 @@ const generateInnerCircle = () => {
 	return centerCircleCheckbox.checked ? chart.classList.add('circle') : chart.classList.remove('circle');
 };
 
+regenerate.addEventListener('click', generateCircleChart);
 radiusRange.addEventListener("input", generateCircleChart);
 circlesRange.addEventListener("input", generateCircleChart);
 generateCircleChart(undefined, defaultCircles, defaultRadius);

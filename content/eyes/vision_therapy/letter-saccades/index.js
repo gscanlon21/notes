@@ -6,28 +6,30 @@ class Consts {
 
 const root = document.documentElement;
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const chart = document.getElementById("letter-circles");
-const chart2 = document.getElementById("letter-circles2");
-const chart3 = document.getElementById("letter-circles3");
-const radiusRange = document.getElementById("radius-select");
-const circlesRange = document.getElementById("circles-select");
-const fontSizeRange = document.getElementById("font-size-select");
-const centerCircleCheckbox = document.getElementById("center-select");
+const wrapper = document.getElementById("wrapper");
+const chartInner = document.getElementById("letter-circles-inner");
+const chartMiddle = document.getElementById("letter-circles-middle");
+const chartOuter = document.getElementById("letter-circles-outer");
+const radiusRange = document.getElementById("radius-range");
+const circlesRange = document.getElementById("circles-range");
+const fontSizeRange = document.getElementById("font-size-range");
+const centerCircleCheckbox = document.getElementById("center-checkbox");
 
 const randomLetter = () => letters[Math.floor(Math.random() * letters.length)];
 
 const generateCircleCharts = (_, circles, radius) => {
-	generateCircleChart(chart, circles, radius)
-	generateCircleChart(chart2, circles, radius + 50)
-	generateCircleChart(chart3, circles, radius + 100)
+	radius = parseInt(radiusRange.value = radius ?? radiusRange.value);
+	circles = parseInt(circlesRange.value = circles ?? circlesRange.value);
+	
+	generateCircleChart(chartInner, circles, radius)
+	generateCircleChart(chartMiddle, circles, radius + 125)
+	generateCircleChart(chartOuter, circles, radius + 250)
 };
 
 const generateCircleChart = (elem, circles, radius) => {
-	circles = circlesRange.value = circles ?? circlesRange.value;
-	radius = radiusRange.value = radius ?? radiusRange.value;
-
 	elem.innerHTML = null;
-	elem.style.height = `${radius * 2}px`
+	elem.style.height = `${radius * 2}px`;
+	wrapper.style.height = `${radius * 2}px`;
 	for (let i = 0; i < circles; i++) {
 		const rotation = 360 / circles * i;
 		const cell = document.createElement("div");
@@ -43,7 +45,7 @@ const generateCircleChart = (elem, circles, radius) => {
 
 const generateInnerCircle = () => {
 	//document.documentElement.style.setProperty('--circle-font-size', fontSize);
-	return centerCircleCheckbox.checked ? chart.classList.add('circle') : chart.classList.remove('circle');
+	return centerCircleCheckbox.checked ? wrapper.classList.add('circle') : wrapper.classList.remove('circle');
 };
 
 radiusRange.addEventListener("input", generateCircleCharts);

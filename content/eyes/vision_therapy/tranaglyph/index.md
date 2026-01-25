@@ -1,6 +1,6 @@
 +++
 title = "Tranaglyph"
-description = "A Tranaglyph is a grid of arrows used to train the visual system."
+description = "Colored circles help train fusion, stereopsis, and binocularity."
 aliases = ["vision-therapy/tranaglyph"]
 updated = 2026-02-01
 
@@ -12,12 +12,29 @@ see_also = [
   { title = "Tranaglyph", href = "https://aworkoutaday.com/exercises?Name=Tranaglyph" },
 ]
 options = [
-  { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = "60" },
-  { name = "Letter Gap", id = "letter-gap-select", type = "range", min = 1, max = "10" },
+  { name = "Scale", id = "scale-input", type = "range", min = 0.5, max = 3, step = 0.05, value = 1.65 },
+  { name = "Disparity", id = "vergence-input", type = "range", min = -24, max = 24, step = 0.05 },
+  { name = "Fusion Mode", id = "fusion-input", type = "checkbox" },
+  { name = "Vergence", id = "vergence-output", type = "output" },
+  { name = "", id = "scale-output", type = "div", value = 1.65 },
 ]
 +++
 
-<div id="tranaglyph" class="tranaglyph">
-  <div id="tranaglyph-left" class="tranaglyph-target"></div>
-  <div id="tranaglyph-right" class="tranaglyph-target"></div>
+<div id="tranaglyph">
+  <div id="left-eye" class="circle left red">
+    <div class="inner circle"></div>
+    <div class="center"></div>
+    <div class="satellite circle left"></div>
+    <div class="satellite circle right"></div>
+    <div class="suppression-check"></div>
+    <div class="points"></div>
+  </div>
+  <div id="right-eye" class="circle right green">
+    <div class="inner circle"></div>
+    <div class="center"></div>
+    <div class="satellite circle left"></div>
+    <div class="satellite circle right"></div>
+    <div class="suppression-check"></div>
+    <div class="points"></div>
+  </div>
 </div>

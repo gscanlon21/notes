@@ -34,7 +34,7 @@ see_also = [
 - Mix together **3 cups of cold water** with a **1½ teaspoon baking soda**. 
 - Add the fruit. Let the fruit sit for 10 to 15 minutes, then rinse it off, let it dry, and enjoy.
 
-Baking soda helps “loosen” the pesticides if you will. Plain water will get some off but because of how well they adhere to the fruit you need something stronger to break those adhesive bonds
+Baking soda helps “loosen” the pesticides if you will. Plain water will get some off but because of how well they adhere to the fruit you need something stronger to break those adhesive bonds.
 
 
 

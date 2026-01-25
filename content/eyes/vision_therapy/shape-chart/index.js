@@ -7,6 +7,7 @@ class Consts {
 
 const shapes = ["●", "■", "▲", "◆", "★"];
 const chart = document.getElementById("shape-chart");
+const regenerate = document.getElementById("regenerate");
 const fontSizeRange = document.getElementById("font-size-select");
 const letterGapRange = document.getElementById("letter-gap-select");
 
@@ -24,6 +25,7 @@ const generateShapeChart = () => {
 };
 
 generateShapeChart();
+regenerate.addEventListener('click', generateShapeChart);
 
 const setFontSizeRange = (_, value) => chart.style.fontSize = `${fontSizeRange.value = value ?? fontSizeRange.value}px`;
 fontSizeRange.addEventListener("input", setFontSizeRange);

@@ -1,18 +1,15 @@
 class Consts {
 	static DEFAULT_GAP = 25;
 	static MAX_ATTEMPTS = 10;
-	static DEFAULT_LETTERS = 50;
+	static DEFAULT_NUMBERS = 50;
 	static DEFAULT_FONT_SIZE = 37;
 }
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const chart = document.getElementById("letter-chart");
+const chart = document.getElementById("number-chart");
 const regenerate = document.getElementById("regenerate");
 const fontSizeRange = document.getElementById("font-size-range");
-const lettersRange = document.getElementById("letters-range");
+const numbersRange = document.getElementById("numbers-range");
 const gapRange = document.getElementById("gap-range");
-
-const randomLetter = () => letters[Math.floor(Math.random() * letters.length)];
 
 const intersectsWithGap = (a, b, gap = Consts.DEFAULT_GAP) => !(
 	a.top - gap > b.bottom + gap ||
@@ -28,39 +25,40 @@ const intersectsChartEdgeWithGap = (rect, containerRect, gap = Consts.DEFAULT_GA
 	rect.bottom > containerRect.bottom - gap
 );
 
-const randomPosition = (letter, width, height) => {
-	const rect = letter.getBoundingClientRect();
-	letter.style.left = `${Math.random() * (width - rect.width)}px`;
-	letter.style.top = `${Math.random() * (height - rect.height)}px`;
+const randomPosition = (number, width, height) => {
+	const rect = number.getBoundingClientRect();
+	number.style.left = `${Math.random() * (width - rect.width)}px`;
+	number.style.top = `${Math.random() * (height - rect.height)}px`;
 };
 
-const generateLetterSearch = (_, count, gap) => {
-	count = lettersRange.value = count ?? lettersRange.value;
+const generateNumberSearch = (_, count, gap) => {
+	count = numbersRange.value = count ?? numbersRange.value;
 	gap = gapRange.value = gap ?? gapRange.value;
 	chart.innerHTML = "";
-
-	const placedLetters = [];
+	
+	const placedNumbers = [];
 	const chartRect = chart.getBoundingClientRect();
-	for (let i = 0; i < count; i++) {
-		const letter = document.createElement("div");
-		letter.textContent = randomLetter();
-		chart.appendChild(letter);
+	for (let i = 0, nextNum = 0; i < count; i++) {
+		const number = document.createElement("div");
+		number.textContent = (nextNum++).toString();
+		chart.appendChild(number);
 
 		let placedSuccessfully = false;
 		for (let attempts = 0; attempts < Consts.MAX_ATTEMPTS; attempts++) {
-			randomPosition(letter, chartRect.width, chartRect.height);
-			const rect = letter.getBoundingClientRect();
+			randomPosition(number, chartRect.width, chartRect.height);
+			const rect = number.getBoundingClientRect();
 
 			if (!intersectsChartEdgeWithGap(rect, chartRect, gap) &&
-				!placedLetters.some(p => intersectsWithGap(rect, p.getBoundingClientRect(), gap))) {
-				placedLetters.push(letter);
+				!placedNumbers.some(p => intersectsWithGap(rect, p.getBoundingClientRect(), gap))) {
+				placedNumbers.push(number);
 				placedSuccessfully = true;
 				break;
 			}
 		}
 
 		if (!placedSuccessfully) {
-			letter.remove();      
+			number.remove();
+			nextNum--;
 		}
 	}
 };
@@ -70,7 +68,7 @@ fontSizeRange.addEventListener("input", setFontSizeRange);
 // Set the font size range before generating the search.
 setFontSizeRange(undefined, Consts.DEFAULT_FONT_SIZE);
 
-gapRange.addEventListener("input", generateLetterSearch);
-regenerate.addEventListener('click', generateLetterSearch);
-lettersRange.addEventListener("input", generateLetterSearch);
-generateLetterSearch(undefined, Consts.DEFAULT_LETTERS, Consts.DEFAULT_GAP);
+gapRange.addEventListener("input", generateNumberSearch);
+regenerate.addEventListener('click', generateNumberSearch);
+numbersRange.addEventListener("input", generateNumberSearch);
+generateNumberSearch(undefined, Consts.DEFAULT_NUMBERS, Consts.DEFAULT_GAP);

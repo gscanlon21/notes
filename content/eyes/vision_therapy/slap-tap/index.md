@@ -12,8 +12,10 @@ see_also = [
   { title = "Slap Tap", href = "https://aworkoutaday.com/exercises?Name=Slap+Tap" },
 ]
 options = [
+  { name = "Red/Green Symbols", id = "red-green-checkbox", type = "checkbox" },
   { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = "60" },
   { name = "Letter Gap", id = "letter-gap-select", type = "range", min = 1, max = "10" },
+  { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++
 
