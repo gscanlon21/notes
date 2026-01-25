@@ -39,46 +39,46 @@ const generateChart = () => {
 	chartLeft.innerHTML = null;
 	chartRight.innerHTML = null;
 
-	const imagesLeft = [];
-	const imagesRight = [];
-	const imageArray = getImageArray().toSorted(() => Math.random() - 0.5);
+	const images = [];
+	const imageArr = getImageArray().toSorted(() => Math.random() - 0.5);
 	for (let i = 1; i < Consts.ROWS * Consts.COLS; i++) {
-		const cellLeft = document.createElement("div");
-		const cellRight = document.createElement("div");
-		applyRandomRotationAndSize(cellRight);
-		applyRandomRotationAndSize(cellLeft);
+		const left = document.createElement("div");
+		const right = document.createElement("div");
+
+		applyRandomRotationAndSize(left);
+		applyRandomRotationAndSize(right);
 
 		if (i === 1) {
-			const image = getImage(imageArray.pop());
-			cellLeft.style.maskImage = `url(${image})`;
-			cellRight.style.maskImage = `url(${image})`;
-			cellRight.dataset.correct = `true`;
-			cellLeft.dataset.correct = `true`;
+			left.dataset.correct = right.dataset.correct = "true";
+			left.style.maskImage = right.style.maskImage = `url(${getImage(imageArr.pop())})`;
+		} else {
+			left.style.maskImage = `url(${getImage(imageArr.pop())})`;
+			right.style.maskImage = `url(${getImage(imageArr.pop())})`;
 		}
-		else {
-			cellLeft.style.maskImage = `url(${getImage(imageArray.pop())})`;
-			cellRight.style.maskImage = `url(${getImage(imageArray.pop())})`;
-		}
-		
-		imagesLeft.push(cellLeft);
-		imagesRight.push(cellRight);
+
+		images.push([left, right]);
 	}
 
-	imagesLeft.sort(() => Math.random() - 0.5);
-	imagesRight.sort(() => Math.random() - 0.5);
-
-	imagesLeft.splice(4, 0, document.createElement("span"));
-	imagesRight.splice(4, 0, document.createElement("span"));
-	for (let i = 0; i < Consts.ROWS * Consts.COLS; i++) {
-		chartLeft.appendChild(imagesLeft[i]);
-		chartRight.appendChild(imagesRight[i]);
+	// Swap the position of each matching image in each set.
+	const leftIndex = Math.floor(Math.random() * images.length);
+	const rightIndex = Math.floor(Math.random() * images.length);
+	[images[0][0], images[leftIndex][0]] = [images[leftIndex][0], images[0][0]];
+	[images[0][1], images[rightIndex][1]] = [images[rightIndex][1], images[0][1]];
+	
+	// Add a space in the middle of each set of images so it forms more of a ring shape.
+	images.splice(4, 0, [document.createElement("br"), document.createElement("br")]);
+	
+	for (const [left, right] of images) {
+		chartLeft.appendChild(left);
+		chartRight.appendChild(right);
 
 		setTimeout(() => {
-			tryAddCorrectClassAfterMouseExit(imagesLeft[i]);
-			tryAddCorrectClassAfterMouseExit(imagesRight[i]);
+			// Wait for layout to update first.
+			tryAddCorrectClassAfterMouseExit(left);
+			tryAddCorrectClassAfterMouseExit(right);
 		}, 0);
 	}
-}
+};
 
 const regenerateImageSizes = () => {
 	for (const child of [...Array.from(chartLeft.childNodes), ...Array.from(chartRight.childNodes)]) {
