@@ -1,11 +1,11 @@
 @media (prefers-color-scheme: dark) {
-    #right-eye {
+    #tranaglyph:not(.fusion) > #right-eye {
 		mix-blend-mode: difference;
 	}
 }
 
 @media (prefers-color-scheme: light) {
-    #right-eye {
+    #tranaglyph:not(.fusion) > #right-eye {
 		mix-blend-mode: darken;
 	}
 }
@@ -17,7 +17,7 @@
 }
 
 :root {
-	--scale: 1.65;
+	--scale: 1;
 	--glyphScale: 1;
 	--tranaglyphRed: red;
 	--tranaglyphGreen: green;
@@ -36,20 +36,16 @@
 #tranaglyph.fusion {
 	top: 0;
 
-	* {
-		mix-blend-mode: normal !important;
-	}
-
 	--tranaglyphRed: currentColor;
 	--tranaglyphGreen: currentColor;
+}
 
-	.suppression-check {
-		border-width: calc(var(--bsize)/1.5);
-	}
+#tranaglyph.fusion .satellite {
+	display: none;
+}
 
-	.satellite {
-		display: none;
-	}
+#tranaglyph.fusion .suppression-check {
+	border-width: calc(var(--bsize)/1.5);
 }
 
 .circle, .center, .suppression-check {
@@ -178,14 +174,12 @@
 }
 
 #scale-output {
-	position: relative;
+	text-align: center;
 	width: var(--baseSize);
 	border-left: 2px solid currentColor;
 	border-right: 2px solid currentColor;
-	text-align: center;
 }
 
 #scale-output::after {
-	content: attr(data-value) "x 🡒 4in (10.16cm)";
-	text-align: center;
+	content: attr(data-value) "x";
 }

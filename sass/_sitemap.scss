@@ -65,5 +65,9 @@ main > .sitemap-title {
 		& > details {
 			margin-inline-start: -2ch;
 		}
+
+		&:empty {
+			display: none;
+		}
 	}
 }

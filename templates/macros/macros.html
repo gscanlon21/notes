@@ -114,6 +114,10 @@
             <li><a href="{{ get_url(path="@/" ~ ancestor_info.relative_path) }}">{{ ancestor_info.title }}</a></li>
         {% endif %}
     {% endfor %}
+	{% if section.transparent | default(value=page.transparent | default(value=false)) != true
+		and section.relative_path | default(value=page.relative_path) != "_index.no.md" %}
+		<li class="current">{{ section.title | default(value=page.title) }}</li>
+	{% endif %}
 </menu>
 {% endmacro header %}
 

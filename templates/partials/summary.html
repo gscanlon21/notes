@@ -72,7 +72,7 @@
                 <dd class="summary-item" data-type="{{ option.type }}">
                     {% if option.type == "range" %} 
 						<label for="{{ option.id }}">{{ option.name }}</label>
-                        <input id="{{ option.id }}" type="range" min="{{ option.min }}" max="{{ option.max }}" step="{{ option.step | default(value=1) }}" />
+                        <input id="{{ option.id }}" type="range" min="{{ option.min }}" max="{{ option.max }}" step="{{ option.step | default(value=1) }}" value='{{ option.value | default(value="") }}' />
 					{% elif option.type == "checkbox" %} 
 						<label for="{{ option.id }}">{{ option.name }}</label>
                         <input id="{{ option.id }}" type="checkbox" />
@@ -83,10 +83,10 @@
 						<label for="{{ option.id }}">{{ option.name }}</label>
                         <input id="{{ option.id }}" type="text" />
 					{% elif option.type == "div" %} 
-						<div id="{{ option.id }}">{{ option.name }}</div>
+						<div id="{{ option.id }}" data-value='{{ option.value | default(value="") }}'>{{ option.name }}</div>
 					{% elif option.type == "output" %} 
 						<label for="{{ option.id }}">{{ option.name }}</label>
-                        <output id="{{ option.id }}"></output>
+                        <output id="{{ option.id }}">{{ option.value | default(value="") }}</output>
 					{% elif option.type == "button" %} 
                         <button id="{{ option.id }}" type="button">{{ option.name }}</button>
                     {% endif %}
