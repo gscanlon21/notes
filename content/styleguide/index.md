@@ -78,6 +78,16 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 <hr>
 
 
+# `Alerts`
+---
+> [!NOTE]
+> alert note
+
+
+<br>
+<hr>
+
+
 # `Blockquotes`
 - - -
 # h1
@@ -102,6 +112,7 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 ###### Sample Header
 > The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 ###### Sample Footer
+
 
 <br>
 <hr>
