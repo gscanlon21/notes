@@ -1,4 +1,5 @@
 /* Make symbols larger */
-code {
-    font-size: xx-large;
+article#content code {
+    line-height: 1.25;
+	font-size: 2rem;
 }
