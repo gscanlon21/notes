@@ -12,7 +12,15 @@
 	justify-self: center;
 }
 
-#shape-chart * {
+.shape {
 	overflow-y: clip;
 	aspect-ratio: 1;
+}
+
+.shape.red {
+	color: red;
+}
+
+.shape.green {
+	color: green;
 }

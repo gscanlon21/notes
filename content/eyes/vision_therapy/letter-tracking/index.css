@@ -7,4 +7,31 @@
 	font-family: monospace;
 	word-break: break-word;
     word-wrap: break-word;
+	position: relative;
+}
+
+#letter-tracking.red-green::before {
+	inset: 0;
+	content: '';
+	position: absolute;
+	mix-blend-mode: normal;
+  	background: repeating-linear-gradient(
+		to right,
+		rgba(0, 255, 0, 0.5) 0ch 3.1ch,
+		rgba(255, 0, 0, 0.0) 3ch 6ch
+  	);
+}
+
+#letter-tracking.red-green::after {
+	inset: 0;
+	content: '';
+	position: absolute;
+	mix-blend-mode: normal;
+	transform: translateX(3ch);
+	max-width: calc(100% - 3ch);
+  	background: repeating-linear-gradient(
+		to right,
+		rgba(255, 0, 0, 0.5) 0ch 3.1ch,
+		rgba(0, 255, 0, 0.0) 3ch 6ch
+  	);
 }

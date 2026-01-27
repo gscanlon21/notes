@@ -13,6 +13,14 @@
 	justify-self: center;
 }
 
-#arrow-chart * {
+.shape {
 	aspect-ratio: 1;
+}
+
+.shape.red {
+	color: red;
+}
+
+.shape.green {
+	color: green;
 }

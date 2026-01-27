@@ -12,6 +12,7 @@ const content = document.getElementById("content");
 const regenerate = document.getElementById("regenerate");
 const chartLeft = document.getElementById("spot-the-match-left");
 const chartRight = document.getElementById("spot-the-match-right");
+const redGreenCheck = document.getElementById("red-green-checkbox");
 const randomnessRange = document.getElementById("randomness-range");
 const imgSizeRange = document.getElementById("image-size-range");
 const imgGapRange = document.getElementById("image-gap-range");
@@ -20,6 +21,7 @@ const gapRange = document.getElementById("gap-range");
 const newImageScale = () => 1 - ((Math.random() * Consts.MAX_IMAGE_SCALE) / 100);
 const getImageArray = () => Array.from({ length: 100 }, (_, i) => String(i + 1).padStart(3, "0"));
 const getImage = (number) => `./pdshape_${number}.png`;
+const redOrGreen = () => ["red", "green"].aRandom();
 
 const tryAddCorrectClassAfterMouseExit = (elem) => {
 	// On mobile, add the correct class immediately. Otherwise, wait for mouseleave.
@@ -43,8 +45,11 @@ const generateChart = () => {
 	const images = [];
 	const imageArr = getImageArray().aShuffle();
 	for (let i = 1; i < Consts.ROWS * Consts.COLS; i++) {
-		const left = document.createElement("div");
-		const right = document.createElement("div");
+		const left = document.createElement("div").aWithClass('image');
+		const right = document.createElement("div").aWithClass('image');
+
+		redGreenCheck.checked ? left.classList.add(redOrGreen()) : void(0);
+		redGreenCheck.checked ? right.classList.add(redOrGreen()) : void(0);
 
 		applyRandomRotationAndSize(left);
 		applyRandomRotationAndSize(right);
@@ -107,4 +112,5 @@ setGap(undefined, Consts.DEFAULT_GAP);
 
 generateChart();
 regenerate.addEventListener('click', generateChart);
+redGreenCheck.addEventListener('change', generateChart);
 content.addEventListener('click', (e) => e.target.dataset.correct ? generateChart() : void(0));

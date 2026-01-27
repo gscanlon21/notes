@@ -8,11 +8,13 @@ class Consts {
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const chart = document.getElementById("letter-chart");
 const regenerate = document.getElementById("regenerate");
+const redGreenCheck = document.getElementById("red-green-checkbox");
 const fontSizeRange = document.getElementById("font-size-range");
 const lettersRange = document.getElementById("letters-range");
 const gapRange = document.getElementById("gap-range");
 
-const randomLetter = () => letters[Math.floor(Math.random() * letters.length)];
+const randomLetter = () => Array.from(letters).aRandom();
+const redOrGreen = () => ["red", "green"].aRandom();
 
 const intersectsWithGap = (a, b, gap = Consts.DEFAULT_GAP) => !(
 	a.top - gap > b.bottom + gap ||
@@ -42,7 +44,10 @@ const generateLetterSearch = (_, count, gap) => {
 	const placedLetters = [];
 	const chartRect = chart.getBoundingClientRect();
 	for (let i = 0; i < count; i++) {
-		const letter = document.createElement("div");
+		const letter = document.createElement("div").aWithClass('letter');
+
+		redGreenCheck.checked ? letter.classList.add(redOrGreen()) : void(0);
+
 		letter.textContent = randomLetter();
 		chart.appendChild(letter);
 
@@ -73,4 +78,5 @@ setFontSizeRange(undefined, Consts.DEFAULT_FONT_SIZE);
 gapRange.addEventListener("input", generateLetterSearch);
 regenerate.addEventListener('click', generateLetterSearch);
 lettersRange.addEventListener("input", generateLetterSearch);
+redGreenCheck.addEventListener('change', generateLetterSearch);
 generateLetterSearch(undefined, Consts.DEFAULT_LETTERS, Consts.DEFAULT_GAP);

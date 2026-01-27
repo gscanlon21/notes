@@ -10,7 +10,15 @@
 	overflow: clip;
 }
 
-#line-counting > div {
+.line {
 	background-color: currentColor;
 	aspect-ratio: 1;
+}
+
+.line.red {
+	background-color: red;
+}
+
+.line.green {
+	background-color: green;
 }

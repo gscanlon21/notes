@@ -8,9 +8,17 @@
 	width: 100%;
 }
 
-#letter-chart > div {
+.letter {
 	/* Position using center point */
 	transform: translate(-50%, -50%);
 	position: absolute;
 	aspect-ratio: 1;
+}
+
+.letter.red {
+	color: red;
+}
+
+.letter.green {
+	color: green;
 }

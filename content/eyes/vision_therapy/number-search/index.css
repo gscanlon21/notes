@@ -8,9 +8,17 @@
 	width: 100%;
 }
 
-#number-chart > div {
+.number {
 	/* Position using center point */
 	transform: translate(-50%, -50%);
 	position: absolute;
 	aspect-ratio: 1;
+}
+
+.number.red {
+	color: red;
+}
+
+.number.green {
+	color: green;
 }

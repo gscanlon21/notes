@@ -7,9 +7,12 @@ class Consts {
 
 const chart = document.getElementById("number-chart");
 const regenerate = document.getElementById("regenerate");
+const redGreenCheck = document.getElementById("red-green-checkbox");
 const fontSizeRange = document.getElementById("font-size-range");
 const numbersRange = document.getElementById("numbers-range");
 const gapRange = document.getElementById("gap-range");
+
+const redOrGreen = () => ["red", "green"].aRandom();
 
 const intersectsWithGap = (a, b, gap = Consts.DEFAULT_GAP) => !(
 	a.top - gap > b.bottom + gap ||
@@ -39,7 +42,10 @@ const generateNumberSearch = (_, count, gap) => {
 	const placedNumbers = [];
 	const chartRect = chart.getBoundingClientRect();
 	for (let i = 0, nextNum = 0; i < count; i++) {
-		const number = document.createElement("div");
+		const number = document.createElement("div").aWithClass('number');
+
+		redGreenCheck.checked ? number.classList.add(redOrGreen()) : void(0);
+
 		number.textContent = (nextNum++).toString();
 		chart.appendChild(number);
 
@@ -71,4 +77,5 @@ setFontSizeRange(undefined, Consts.DEFAULT_FONT_SIZE);
 gapRange.addEventListener("input", generateNumberSearch);
 regenerate.addEventListener('click', generateNumberSearch);
 numbersRange.addEventListener("input", generateNumberSearch);
+redGreenCheck.addEventListener("change", generateNumberSearch);
 generateNumberSearch(undefined, Consts.DEFAULT_NUMBERS, Consts.DEFAULT_GAP);

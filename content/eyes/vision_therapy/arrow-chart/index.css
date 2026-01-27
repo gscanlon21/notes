@@ -12,7 +12,15 @@
 	justify-self: center;
 }
 
-#arrow-chart * {
+.arrow {
 	overflow-y: clip;
 	aspect-ratio: 1;
+}
+
+.arrow.red {
+	color: red;
+}
+
+.arrow.green {
+	color: green;
 }

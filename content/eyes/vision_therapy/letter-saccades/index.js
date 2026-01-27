@@ -15,7 +15,7 @@ const circlesRange = document.getElementById("circles-range");
 const fontSizeRange = document.getElementById("font-size-range");
 const centerCircleCheckbox = document.getElementById("center-checkbox");
 
-const randomLetter = () => letters[Math.floor(Math.random() * letters.length)];
+const randomLetter = () => Array.from(letters).aRandom();
 
 const generateCircleCharts = (_, circles, radius) => {
 	radius = parseInt(radiusRange.value = radius ?? radiusRange.value);

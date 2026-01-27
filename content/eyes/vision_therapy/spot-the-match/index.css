@@ -30,7 +30,7 @@
 	grid-template-columns: repeat(3, 1fr);
 }
 
-.spot-the-match > div {
+.image {
 	height: calc(var(--image-size) * var(--image-scale));
 	background-color: currentColor;
 	mask-repeat: no-repeat;
@@ -40,10 +40,18 @@
 	aspect-ratio: 1;
 }
 
-.correct {
+.image.red {
+	color: red;
+}
+
+.image.green {
+	color: green;
+}
+
+.image.correct {
 	cursor: pointer;
 }
 
-.correct:hover {
-	background-color: green;
+.image.correct:hover {
+	filter: opacity(0.5);
 }

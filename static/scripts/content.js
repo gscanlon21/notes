@@ -83,9 +83,25 @@ Object.defineProperty(Array.prototype, 'aShuffle', {
 	}
 });
 
-// Shuffle and select a random element or null.
+// Select a random element from the array or null.
 Object.defineProperty(Array.prototype, 'aRandom', {
     value: function() { 
-		return this.length > 0 ? this.aShuffle()[0] : null;
+		return this.length > 0 ? this[Math.floor(Math.random() * this.length)] : null;
+	}
+});
+
+// Add a class to an element and return the element.
+Object.defineProperty(HTMLDivElement.prototype, 'aWithClass', {
+    value: function(value) { 
+		this.classList.add(value);
+		return this;
+	}
+});
+
+// Toggle a class to an element and return the element.
+Object.defineProperty(HTMLDivElement.prototype, 'aToggleClass', {
+    value: function(value) { 
+		this.classList.contains(value) ? this.classList.remove(value) : this.classList.add(value);
+		return this;
 	}
 });

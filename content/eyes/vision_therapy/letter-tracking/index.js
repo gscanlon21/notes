@@ -13,9 +13,11 @@ const capitalLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const chart = document.getElementById("letter-tracking");
 const fontSizeRange = document.getElementById("font-size-range");
 const lineHeightRange = document.getElementById("line-height-range");
+const redGreenCheck = document.getElementById("red-green-checkbox");
 
-const randomLetter = () => letters[Math.floor(Math.random() * letters.length)];
+const randomLetter = () => Array.from(letters).aRandom();
 const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const redOrGreen = () => ["red", "green"].aRandom();
 
 const generateAlphabetSearch = () => {
 	let output = "";
@@ -63,5 +65,6 @@ const setLineHeight = (_, value) => chart.style.lineHeight = `${lineHeightRange.
 lineHeightRange.addEventListener("input", setLineHeight);
 setLineHeight(undefined, Consts.DEFAULT_LINE_HEIGHT);
 
+redGreenCheck.addEventListener('change', () => chart.aToggleClass('red-green'));
 regenerate.addEventListener('click', generateAlphabetSearch);
 generateAlphabetSearch();

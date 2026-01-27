@@ -12,6 +12,14 @@
 	justify-self: center;
 }
 
-#slap-tap * {
+.symbol {
 	aspect-ratio: 1;
+}
+
+.symbol.red {
+	color: red;
+}
+
+.symbol.green {
+	color: green;
 }
