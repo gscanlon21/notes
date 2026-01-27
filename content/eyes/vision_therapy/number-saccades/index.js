@@ -9,7 +9,7 @@ const circlesRange = document.getElementById("circles-select");
 const fontSizeRange = document.getElementById("font-size-select");
 const centerCircleCheckbox = document.getElementById("center-select");
 
-const randomNumbers = (l) => Array.from({ length: l }, (_, i) => i).toSorted(() => Math.random() - 0.5);
+const randomNumbers = (l) => Array.from({ length: l }, (_, i) => i).aShuffle();
 
 const generateCircleChart = (_, circles, radius) => {
 	circles = circlesRange.value = circles ?? circlesRange.value;

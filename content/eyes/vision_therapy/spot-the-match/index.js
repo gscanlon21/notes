@@ -41,7 +41,7 @@ const generateChart = () => {
 	chartRight.innerHTML = null;
 
 	const images = [];
-	const imageArr = getImageArray().toSorted(() => Math.random() - 0.5);
+	const imageArr = getImageArray().aShuffle();
 	for (let i = 1; i < Consts.ROWS * Consts.COLS; i++) {
 		const left = document.createElement("div");
 		const right = document.createElement("div");

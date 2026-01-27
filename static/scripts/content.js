@@ -70,3 +70,22 @@ for (const element of Array.from(document.getElementsByClassName('defer'))) {
 for (const element of Array.from(document.getElementsByClassName('async'))) {
     element.classList.remove('async');
 }
+
+// Implementation of the Durstenfeld shuffle.
+Object.defineProperty(Array.prototype, 'aShuffle', {
+    value: function() { 
+		for (let i = this.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[this[i], this[j]] = [this[j], this[i]];
+		}
+
+		return this;
+	}
+});
+
+// Shuffle and select a random element or null.
+Object.defineProperty(Array.prototype, 'aRandom', {
+    value: function() { 
+		return this.length > 0 ? this.aShuffle()[0] : null;
+	}
+});
