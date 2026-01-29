@@ -13,8 +13,8 @@ see_also = [
 ]
 options = [
   { name = "Red/Green Lines", id = "red-green-checkbox", type = "checkbox" },
-  { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = "60" },
-  { name = "Letter Gap", id = "letter-gap-select", type = "range", min = 1, max = "10" },
+  { name = "Line Height", id = "height-range", type = "range", min = 25, max = 250 },
+  { name = "Line Gap", id = "gap-range", type = "range", min = 1, max = "10" },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++

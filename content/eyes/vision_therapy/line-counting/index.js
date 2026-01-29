@@ -1,14 +1,15 @@
 class Consts {
-  static LINES = 100;
-  static DEFAULT_FONT_SIZE = 40;
-  static DEFAULT_LETTER_GAP = 10;
+	static LINES = 100;
+	static DEFAULT_GAP = 10; 
+	static DEFAULT_HEIGHT = 100;
 }
 
+const root = document.documentElement;
 const chart = document.getElementById("line-counting");
 const regenerate = document.getElementById("regenerate");
-const fontSizeRange = document.getElementById("font-size-select");
-const letterGapRange = document.getElementById("letter-gap-select");
+const heightRange = document.getElementById("height-range");
 const redGreenCheck = document.getElementById("red-green-checkbox");
+const gapRange = document.getElementById("gap-range");
 
 const randomWidth = () => Math.floor(Math.random() * 10);
 const redOrGreen = () => ["red", "green"].aRandom();
@@ -26,13 +27,13 @@ const generateLineChart = () => {
 	}
 }
 
-const setFontSizeRange = (_, value) => chart.style.fontSize = `${fontSizeRange.value = value ?? fontSizeRange.value}px`;
-fontSizeRange.addEventListener('input', setFontSizeRange);
-setFontSizeRange(undefined, Consts.DEFAULT_FONT_SIZE);
+const setHeight = (_, v) => root.style.setProperty('--height', `${heightRange.value = v ?? heightRange.value}px`);
+heightRange.addEventListener('input', setHeight);
+setHeight(undefined, Consts.DEFAULT_HEIGHT);
 
-const setLetterGapRange = (_, value) => chart.style.gap = `${letterGapRange.value = value ?? letterGapRange.value}px`;
-letterGapRange.addEventListener('input', setLetterGapRange);
-setLetterGapRange(undefined, Consts.DEFAULT_LETTER_GAP);
+const setGapRange = (_, value) => chart.style.gap = `${gapRange.value = value ?? gapRange.value}px`;
+gapRange.addEventListener('input', setGapRange);
+setGapRange(undefined, Consts.DEFAULT_GAP);
 
 redGreenCheck.addEventListener('change', generateLineChart);
 regenerate.addEventListener('click', generateLineChart);
