@@ -37,8 +37,8 @@ const randomPosition = (letter, width, height) => {
 };
 
 const generateLetterSearch = (_, count, gap) => {
-	count = lettersRange.value = count ?? lettersRange.value;
-	gap = gapRange.value = gap ?? gapRange.value;
+	count = lettersRange.value = count ?? parseInt(lettersRange.value);
+	gap = gapRange.value = gap ?? parseInt(gapRange.value);
 	chart.innerHTML = "";
 
 	const placedLetters = [];
