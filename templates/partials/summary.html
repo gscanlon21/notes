@@ -1,10 +1,17 @@
 <div class="header-item">
     <header id="summary">
         <h2 class="header-title">
-            {% if page.extra.site | default(value=section.extra.site) %} 
-                <a class="site" href="{{ page.extra.site | default(value=section.extra.site) | safe }}" target="_blank" rel="noreferrer">
-                    {{ page.title | default(value=section.title) }}
-                </a>
+            {% if page.extra.site | default(value=section.extra.site) %}
+				{% set path = page.extra.site | default(value=section.extra.site) %}
+				{% if path is starting_with("/") %}
+					<a class="site" href="{{ path | safe }}" rel="noreferrer">
+						{{ page.title | default(value=section.title) }}
+					</a>
+				{% else %}
+					<a class="site" href="{{ path | safe }}" target="_blank" rel="noreferrer">
+						{{ page.title | default(value=section.title) }}
+					</a>
+				{% endif %}
             {% else %}
                 <span>{{ page.title | default(value=section.title) }}</span>
             {% endif %}

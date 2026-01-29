@@ -1,6 +1,6 @@
 +++
 title = "Letter Search"
-description = "An Arrow Chart is a grid of arrows used to train the visual system."
+description = "A random grid of letters."
 aliases = ["vision-therapy/letter-search"]
 updated = 2026-02-01
 

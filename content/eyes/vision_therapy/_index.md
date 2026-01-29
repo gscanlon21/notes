@@ -9,9 +9,10 @@ updated = 2026-02-01
 site_version = 1
 toc_level = 2
 see_also = [
+  { title = "TODO: What font?" },
+  { title = "TODO: Custom red/green." },
+  { title = "Permalink", href = "/vision-therapy" },
   { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
-  { title = "Sparse Random Letters", file = "random_letters_sparse.docx" },
-  { title = "Dense Random Letters", file = "random_letters_dense.docx" },
   { title = "Alpine Butterfly Loop Knot", href = "https://www.animatedknots.com/alpine-butterfly-loop-knot" },
   { title = "Evidence-Based Natural Treatments for Optimizing Vision and Eye Health", href = "https://www.rupahealth.com/post/evidence-based-natural-treatments-for-optimizing-vision-and-eye-health" },
   { title = "A Functional Medicine Eye Health Protocol: Testing, Supplements, and Best Nutrition", href = "https://www.rupahealth.com/post/a-functional-medicine-eye-health-protocol" },
@@ -19,6 +20,11 @@ see_also = [
 +++
 
 {{ hidden() }}
+
+
+> [!NOTE]
+> For visual therapy tools, see the subsections in the sidebar.
+
 
 ##### Eye Conditions That Can Be Improved with Vision Therapy[^1]
 - Focusing Problems
@@ -31,12 +37,16 @@ see_also = [
 ## Prism Lens
 
 **Base-in**
-Diverging
+Requires divergence.
 : The thick end of the lens (the base) should face towards your nose.
+: The image is shifted outwards—towards the small end of the lens (the apex).
+: - This requires your eyes to diverge and shift outwards as well to match and fuse the images.
 
 **Base-out**
-Converging
+Requires convergence.
 : The thick end of the lens (the base) should face away from your nose.
+: The image is shifted inwards—towards the small end of the lens (the apex).
+: - This requires your eyes to converge and shift inwards as well to match and fuse the images.
 
 ## Brock String
 TODO

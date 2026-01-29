@@ -1,6 +1,6 @@
 +++
 title = "Letter Tracking"
-description = "Find each letter of the alphabet in order."
+description = "Find each letter of the alphabet in order from A-Z."
 aliases = ["vision-therapy/letter-tracking"]
 updated = 2026-02-01
 
@@ -8,6 +8,7 @@ updated = 2026-02-01
 site_version = 1
 toc_level = 2
 see_also = [
+  { title = "TODO: Multiple paragraphs (option!), separate paragraph spacing and line spacing. "},
   { title = "Permalink", href = "/vision-therapy/letter-tracking" },
   { title = "Alphabet Saccades", href = "https://aworkoutaday.com/exercises?Name=Alphabet+Saccades" },
 ]

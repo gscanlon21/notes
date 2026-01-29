@@ -1,6 +1,6 @@
 +++
 title = "Tranaglyph"
-description = "Colored circles help train fusion, stereopsis, and binocularity."
+description = "Stereo circles help train fusion, stereopsis, and binocularity."
 aliases = ["vision-therapy/tranaglyph"]
 updated = 2026-02-01
 

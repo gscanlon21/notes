@@ -1,11 +1,11 @@
 article.v1 {
 	.footnotes {
-		border-top: 2px dotted color(--color-text);
+		margin-top: $base-padding * 3;
 		padding-block-start: $base-padding * 0.5;
-		margin-top: $base-padding * 2.5;
+		border-top: 2px dotted color(--color-text);
 
 		.footnotes-list {
-			margin-block-end: $base-padding * -1.5;
+			margin-block-end: $base-padding * -2;
 		}
 	}
 }

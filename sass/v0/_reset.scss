@@ -1,6 +1,30 @@
 article.v0 {
-	*:not(svg):not(rect):not(circle):not(path):not(hr):not(ul):not(li):not(i) {
+	*:not(svg):not(rect):not(circle):not(path):not(hr):not(ul):not(li):not(i):not(blockquote) {
 		all: unset;
+	}
+
+	> :first-child {
+		margin-block-start: $site-padding * 3;
+	}
+
+	&#content a {
+		cursor: pointer;
+
+		&:hover {
+			opacity: .75;
+		}
+	}
+
+	&#content i {
+		font-style: italic;
+	}
+
+	&#content b {
+		font-weight: bold;
+	}
+
+	&#content div {
+		display: block;
 	}
 }
 
@@ -27,5 +51,11 @@ article.v0 {
 
 	#templating-context {
 		display: none;
+	}
+
+	article.v0 {
+		> :first-child {
+			margin-block-start: -8px !important;
+		}
 	}
 }

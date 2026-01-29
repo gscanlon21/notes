@@ -59,12 +59,8 @@ article.v1 {
 			grid-column: 2;
 			overflow-x: auto;
 			
-			&:not(:last-child) {
+			&:has(+dd) {
 				padding-block-end: $base-padding * 0.5;
-			}
-
-			&:has(ul) {
-				margin-block-start: $base-padding * -0.5;
 			}
 
 			&:has(+dt) {
@@ -79,6 +75,10 @@ article.v1 {
 				display: contents;
 				margin-inline-start: 0;
 				margin-block-start: $base-padding * 0.1;
+			}
+
+			&:has(ul) {
+				margin-block-start: $base-padding * -0.5;
 			}
 
 			&:has(dl) {

@@ -1,7 +1,7 @@
 article.v1 {
-	blockquote {
+	blockquote:not([class^="markdown-alert-"]) {
+		padding-inline-start: $base-padding * .5;
 		border-left: .2em solid color(--color-text, .5);
-		padding-left: .5em;
 	}
 
 	// Title header for blockquotes.
