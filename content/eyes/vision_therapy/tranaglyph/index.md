@@ -10,7 +10,7 @@ toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/tranaglyph" },
   { title = "Tranaglyph", href = "https://aworkoutaday.com/exercises?Name=Tranaglyph" },
-  { title = "🄯 visiontherapy GNU AGPL v3", href = "https://github.com/visiontherapy/visiontherapy.github.io"},
+  { title = "🄯 visiontherapy GNU AGPL v3<br>Slight changes in options.", href = "https://github.com/visiontherapy/visiontherapy.github.io"},
 ]
 options = [
   { name = "Fusion Mode", id = "fusion-input", type = "checkbox" },

@@ -10,7 +10,7 @@ toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/spot-the-match" },
   { title = "Spot the Match", href = "https://aworkoutaday.com/exercises?Name=Spot+the+Match" },
-  { title = "🄯 visiontherapy GNU AGPL v3", href = "https://github.com/visiontherapy/visiontherapy.github.io"},
+  { title = "🄯 visiontherapy GNU AGPL v3<br>Same layout and images.<br>More options added.", href = "https://github.com/visiontherapy/visiontherapy.github.io"},
 ]
 options = [
   { name = "Gap", id = "gap-range", type = "range", min = 25, max = 250, step = 5 },
