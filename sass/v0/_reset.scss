@@ -1,18 +1,19 @@
 article.v0 {
-	*:not(svg):not(rect):not(circle):not(path):not(hr):not(ul):not(li):not(i):not(blockquote) {
-		all: unset;
-	}
-
 	> :first-child {
 		margin-block-start: $site-padding * 3;
 	}
 
 	&#content a {
+		color: currentColor;
 		cursor: pointer;
 
 		&:hover {
 			opacity: .75;
 		}
+	}
+
+	&#content p {
+		margin-block: unset;
 	}
 
 	&#content i {
