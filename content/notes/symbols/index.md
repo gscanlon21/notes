@@ -1,6 +1,11 @@
 +++
 title = "Symbols"
 updated = 2025-03-03
+
+[extra]
+see_also = [
+  { title = "Phosphor Icons (Copy Raw)", href = "https://phosphoricons.com/" },
+]
 +++
 
 # Math Symbols
