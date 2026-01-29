@@ -5,16 +5,18 @@ class Consts {
 	static DEFAULT_FONT_SIZE = 37;
 }
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const lLetters = "abcdefghijklmnopqrstuvwxyz";
+const uLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const chart = document.getElementById("letter-chart");
 const regenerate = document.getElementById("regenerate");
+const lettersInput = document.getElementById("letters-text");
 const redGreenCheck = document.getElementById("red-green-checkbox");
 const fontSizeRange = document.getElementById("font-size-range");
 const lettersRange = document.getElementById("letters-range");
 const gapRange = document.getElementById("gap-range");
 
-const randomLetter = () => Array.from(letters).aRandom();
 const redOrGreen = () => ["red", "green"].aRandom();
+const randomLetter = () => Array.from(lettersInput.value ?? uLetters).aRandom();
 
 const intersectsWithGap = (a, b, gap = Consts.DEFAULT_GAP) => !(
 	a.top - gap > b.bottom + gap ||
@@ -70,13 +72,14 @@ const generateLetterSearch = (_, count, gap) => {
 	}
 };
 
-const setFontSizeRange = (_, v) => chart.style.fontSize = `${fontSizeRange.value = v ?? fontSizeRange.value}px`;
-fontSizeRange.addEventListener("input", setFontSizeRange);
-// Set the font size range before generating the search.
-setFontSizeRange(undefined, Consts.DEFAULT_FONT_SIZE);
+const setFontSize = (_, v) => chart.style.fontSize = `${fontSizeRange.value = v ?? fontSizeRange.value}px`;
+fontSizeRange.addEventListener("input", setFontSize);
+// Set the font size before generating the search.
+setFontSize(undefined, Consts.DEFAULT_FONT_SIZE);
 
 gapRange.addEventListener("input", generateLetterSearch);
 regenerate.addEventListener('click', generateLetterSearch);
 lettersRange.addEventListener("input", generateLetterSearch);
+lettersInput.addEventListener('change', generateLetterSearch);
 redGreenCheck.addEventListener('change', generateLetterSearch);
 generateLetterSearch(undefined, Consts.DEFAULT_LETTERS, Consts.DEFAULT_GAP);

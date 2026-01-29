@@ -13,7 +13,9 @@ see_also = [
   { title = "Alphabet Saccades", href = "https://aworkoutaday.com/exercises?Name=Alphabet+Saccades" },
 ]
 options = [
+  { name = "Letters", id = "letters-text", type = "text", value = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" },
   { name = "Red/Green Stripes", id = "red-green-checkbox", type = "checkbox" },
+  { name = "Letter Spacing", id = "letter-spacing-range", type = "range", min = 0, max = 5, step = 0.1 },
   { name = "Line Height", id = "line-height-range", type = "range", min = 1, max = 2, step = 0.1 },
   { name = "Font Size", id = "font-size-range", type = "range", min = 10, max = 60 },
   { name = "Regenerate", id = "regenerate", type = "button" },

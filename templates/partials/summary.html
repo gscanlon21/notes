@@ -88,7 +88,7 @@
                         <textarea id="{{ option.id }}"></textarea>
 					{% elif option.type == "text" %} 
 						<label for="{{ option.id }}">{{ option.name }}</label>
-                        <input id="{{ option.id }}" type="text" />
+                        <input id="{{ option.id }}" type="text" value="{{ option.value | default(value="") }}" />
 					{% elif option.type == "div" %} 
 						<div id="{{ option.id }}" data-value='{{ option.value | default(value="") }}'>{{ option.name }}</div>
 					{% elif option.type == "output" %} 

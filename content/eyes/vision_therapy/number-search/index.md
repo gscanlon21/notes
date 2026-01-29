@@ -9,7 +9,6 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/letter-search" },
-  { title = "Directionality Arrows", href = "https://aworkoutaday.com/exercises?Name=Directionality+Arrows" },
 ]
 options = [
   { name = "Red/Green Numbers", id = "red-green-checkbox", type = "checkbox" },

@@ -10,8 +10,9 @@ const chart = document.getElementById("hart-chart");
 const fontSizeRange = document.getElementById("font-size-select");
 const letterGapRange = document.getElementById("letter-gap-select");
 const redGreenCheck = document.getElementById("red-green-checkbox");
+const lettersInput = document.getElementById("letters-text");
 
-const randomLetter = () => Array.from(letters).aRandom();
+const randomLetter = () => Array.from(lettersInput.value ?? letters).aRandom();
 const redOrGreen = () => ["red", "green"].aRandom();
 
 const generateHartChart = () => {
@@ -28,13 +29,14 @@ const generateHartChart = () => {
 	}
 }
 
-const setFontSizeRange = (_, value) => chart.style.fontSize = `${fontSizeRange.value = value ?? fontSizeRange.value}px`;
+const setFontSizeRange = (_, v) => chart.style.fontSize = `${fontSizeRange.value = v ?? fontSizeRange.value}px`;
 fontSizeRange.addEventListener('input', setFontSizeRange);
 setFontSizeRange(undefined, Consts.DEFAULT_FONT_SIZE);
 
-const setLetterGapRange = (_, value) => chart.style.gap = `${letterGapRange.value = value ?? letterGapRange.value}px`;
+const setLetterGapRange = (_, v) => chart.style.gap = `${letterGapRange.value = v ?? letterGapRange.value}px`;
 letterGapRange.addEventListener('input', setLetterGapRange);
 setLetterGapRange(undefined, Consts.DEFAULT_LETTER_GAP);
 
 redGreenCheck.addEventListener('change', generateHartChart);
+lettersInput.addEventListener("change", generateHartChart);
 generateHartChart();

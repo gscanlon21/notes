@@ -11,7 +11,7 @@ see_also = [
   { title = "Permalink", href = "/vision-therapy/letter-saccades" },
 ]
 options = [
-  { name = "Letters", id = "letters-checkbox", type = "text" },
+  { name = "Letters", id = "letters-text", type = "text", value = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" },
   { name = "Red/Green Letters", id = "red-green-checkbox", type = "checkbox" },
   { name = "Font Size", id = "font-size-range", type = "range", min = 50, max = "150" },
   { name = "Circles", id = "circles-range", type = "range", min = 6, max = "24" },

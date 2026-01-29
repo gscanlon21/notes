@@ -14,8 +14,9 @@ const radiusRange = document.getElementById("radius-range");
 const circlesRange = document.getElementById("circles-range");
 const fontSizeRange = document.getElementById("font-size-range");
 const centerCircleCheckbox = document.getElementById("center-checkbox");
+const lettersInput = document.getElementById("letters-text");
 
-const randomLetter = () => Array.from(letters).aRandom();
+const randomLetter = () => Array.from(lettersInput.value ?? letters).aRandom();
 
 const generateCircleCharts = (_, circles, radius) => {
 	radius = parseInt(radiusRange.value = radius ?? radiusRange.value);
@@ -50,6 +51,7 @@ const generateInnerCircle = () => {
 
 radiusRange.addEventListener("input", generateCircleCharts);
 circlesRange.addEventListener("input", generateCircleCharts);
+lettersInput.addEventListener("change", generateCircleCharts);
 generateCircleCharts(undefined, Consts.DEFAULT_CIRCLES, Consts.DEFAULT_RADIUS);
 
 const setCircleSize = (_, v) => root.style.setProperty('--circle-size', `${fontSizeRange.value = v ?? fontSizeRange.value}px`);

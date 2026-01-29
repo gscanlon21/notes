@@ -24,6 +24,16 @@ updated = 2025-03-03
 ·
 ```
 ###### U+00B7
+###### Union
+```
+∪
+```
+###### U+222A
+###### Intersection
+```
+∩
+```
+###### U+2229
 
 
 # Cooking Symbols

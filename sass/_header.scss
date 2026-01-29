@@ -74,11 +74,17 @@
 			&[data-type="range"] {
 				align-items: center;
 				column-gap: 1ex;
+				flex-wrap: wrap;
 				display: flex;
 
 				input[type="range"] {
 					margin-block-start: .5ex;
-					flex: 1;
+					flex: 99999 1 auto;
+				}
+
+				label {
+					user-select: none;
+					flex: 1 1 auto;			
 				}
 			}
 		}
