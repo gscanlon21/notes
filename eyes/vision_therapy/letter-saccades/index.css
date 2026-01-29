@@ -1,0 +1,56 @@
+#wrapper {
+	overflow-x: hidden;
+	position: relative;
+	text-align: center;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+}
+
+#wrapper.circle::after {
+	border: 1px solid currentColor;
+	font-size: var(--circle-size, 20px);
+	font-family: Arial, sans-serif;
+	border-radius: 50%;
+	position: absolute;
+	aspect-ratio: 1;
+	margin: auto;
+	content: "";
+	width: 2ch;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+}
+
+.letter-circle {
+	overflow: clip;
+	aspect-ratio: 1;
+	position: absolute;
+}
+
+.letter-circle div {
+	transform-origin: center;
+	position: absolute;
+	aspect-ratio: 1;
+	margin: auto;
+	right: 0;
+	left: 0;
+}
+
+.letter-circle div div {
+	border: 1px solid currentColor;
+	font-size: var(--circle-size, 20px);
+	font-family: Arial, sans-serif;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	aspect-ratio: 1;
+	display: flex;
+	margin: auto;
+	width: 2ch;
+}
