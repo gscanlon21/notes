@@ -116,7 +116,7 @@
     {% endfor %}
 	{% if section.transparent | default(value=page.transparent | default(value=false)) != true
 		and section.relative_path | default(value=page.relative_path) != "_index.no.md" %}
-		<li class="current">{{ section.title | default(value=page.title) }}</li>
+		<li class="current">{{ section.title | default(value=page.title) | safe }}</li>
 	{% endif %}
 </menu>
 {% endmacro header %}
