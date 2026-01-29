@@ -28,6 +28,9 @@ see_also = [
 {% end %}
 
 
+> [!WARNING]
+> Rancid or expired meat will smell off, feel slimy, and look gray,  
+
 
 # Pesticides
 ##### How to Remove Pesticides from Fruit
