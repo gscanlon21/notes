@@ -13,7 +13,7 @@ const generateCircleChart = (_, circles, radius) => {
 	radius = radiusRange.value = radius ?? radiusRange.value;
 
 	chart.innerHTML = null;
-	chart.style.height = `${radius * 2}px`
+	chart.style.height = `${radius * 2}px`;
 	for (let i = 0; i < circles; i++) {
 		const rotation = 360 / circles * i;
 		const cell = document.createElement("div");

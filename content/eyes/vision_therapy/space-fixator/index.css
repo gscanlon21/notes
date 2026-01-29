@@ -1,6 +1,8 @@
 #space-fixator {
+	display: flex;
 	overflow: clip;
 	position: relative;
+	justify-content: center;
 	text-align: center;
 	font-weight: 600;
 	aspect-ratio: 1;
@@ -12,9 +14,6 @@
 #space-fixator * {
 	position: absolute;
 	aspect-ratio: 1;
-	margin: auto;
-	right: 0;
-	left: 0;
 }
 
 #space-fixator.circle::after {

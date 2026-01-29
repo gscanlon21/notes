@@ -1,6 +1,8 @@
 #number-circle {
+	display: flex;
 	overflow: clip;
 	position: relative;
+	justify-content: center;
 	text-align: center;
 	font-weight: 600;
 	aspect-ratio: 1;
@@ -12,9 +14,6 @@
 #number-circle div {
 	position: absolute;
 	aspect-ratio: 1;
-	margin: auto;
-	right: 0;
-	left: 0;
 }
 
 #number-circle div div {
@@ -32,6 +31,8 @@
 	margin: auto;
 	padding: 8px;
 	width: 2ch;
+	right: 0;
+	left: 0;
 }
 
 #number-circle.circle::after {
