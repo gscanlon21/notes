@@ -9,9 +9,9 @@ updated = 2026-02-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "TODO: What font?" },
   { title = "TODO: Custom red/green." },
   { title = "Permalink", href = "/vision-therapy" },
+  { title = "Font Family: Optician Sans", href = "https://github.com/anewtypeofinterference/Optician-Sans" },
   { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
   { title = "Alpine Butterfly Loop Knot", href = "https://www.animatedknots.com/alpine-butterfly-loop-knot" },
   { title = "Evidence-Based Natural Treatments for Optimizing Vision and Eye Health", href = "https://www.rupahealth.com/post/evidence-based-natural-treatments-for-optimizing-vision-and-eye-health" },

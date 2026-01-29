@@ -20,4 +20,4 @@ options = [
 ]
 +++
 
-<div id="letter-tracking"></div>
+<div id="letter-tracking" class="chart"></div>

@@ -21,5 +21,5 @@ options = [
 +++
 
 {% table() %}
-<div id="number-circle"></div>
+<div id="number-circle" class="chart"></div>
 {% end %}

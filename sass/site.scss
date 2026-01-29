@@ -17,3 +17,13 @@
 @import 'v1/blockquote';
 @import 'v1/footnotes';
 @import 'v0/reset';
+
+@font-face {
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	font-family: "Optician Sans";
+	src: url("/fonts/optician-sans/Optician-Sans.woff2") format("woff2"),
+		 url("/fonts/optician-sans/Optician-Sans.woff") format("woff"),
+		 url("/fonts/optician-sans/Optician-Sans.ttf") format("truetype");
+}

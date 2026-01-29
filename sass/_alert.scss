@@ -51,6 +51,22 @@ blockquote[class^="markdown-alert-"] > p {
 	font-size: $base-font-size * 1.1;
 }
 
+blockquote.markdown-alert-tip::before {
+	content: '⚠ Tip!';
+}
+
 blockquote.markdown-alert-note::before {
 	content: '⚠ Note!';
+}
+
+blockquote.markdown-alert-caution::before {
+	content: '⚠ Caution!';
+}
+
+blockquote.markdown-alert-warning::before {
+	content: '⚠ Warning!';
+}
+
+blockquote.markdown-alert-important::before {
+	content: '⚠ Important!';
 }

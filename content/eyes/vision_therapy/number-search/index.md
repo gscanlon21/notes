@@ -20,4 +20,4 @@ options = [
 ]
 +++
 
-<div id="number-chart"></div>
+<div id="number-chart" class="chart"></div>

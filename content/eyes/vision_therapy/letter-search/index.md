@@ -23,4 +23,4 @@ options = [
 ]
 +++
 
-<div id="letter-chart"></div>
+<div id="letter-chart" class="chart"></div>

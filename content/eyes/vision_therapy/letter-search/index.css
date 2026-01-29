@@ -1,9 +1,8 @@
 #letter-chart {
-	line-height: 1;
-	aspect-ratio: 1;
-	font-weight: 600;
 	text-align: center;
 	position: relative;
+	aspect-ratio: 1;
+	line-height: 1;
 	height: 600px;
 	width: 100%;
 }

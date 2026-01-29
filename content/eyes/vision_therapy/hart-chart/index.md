@@ -18,6 +18,6 @@ options = [
 +++
 
 {% table() %}
-<div id="hart-chart"></div>
+<div id="hart-chart" class="chart"></div>
 {% end %}
 

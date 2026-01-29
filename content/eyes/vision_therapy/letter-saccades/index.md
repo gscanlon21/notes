@@ -20,7 +20,7 @@ options = [
 ]
 +++
 
-<div id="wrapper">
+<div id="wrapper" class="chart">
   <div id="letter-circles-inner" class="letter-circle"></div>
   <div id="letter-circles-middle" class="letter-circle"></div>
   <div id="letter-circles-outer" class="letter-circle"></div>

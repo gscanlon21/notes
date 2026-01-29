@@ -66,6 +66,11 @@ see_also = []
   "editor.codeLens": false,
 },
 
+// HTML Specific Settings
+"[html]": {
+  "editor.codeLens": false,
+},
+
 // Ignore search files
 "search.exclude": {
   "**/.git": true,

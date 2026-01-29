@@ -31,11 +31,21 @@
 
     <article id="content" class="page v{{ page.extra.site_version | default(value=1) }}">{{ page.content | safe }}</article>
 
+
 	{% set js = load_data(path=page.path ~ "index.js", required=false) %}
     {% if js %}<script type="module">{{ js | safe }}</script>{% endif %}
 
     {% set css = load_data(path=page.path ~ "index.css", required=false) %}
     {% if css %}<style>{{ css | safe }}</style>{% endif %}
+
+
+	{% set parent_section = get_section(path=page.ancestors | last) %}
+	{% set parent_js = load_data(path=parent_section.path ~ "_index.js", required=false) %}
+    {% if parent_js %}<script type="module">{{ parent_js | safe }}</script>{% endif %}
+
+    {% set parent_css = load_data(path=parent_section.path ~ "_index.css", required=false) %}
+    {% if parent_css %}<style>{{ parent_css | safe }}</style>{% endif %}
+
 
 	{% if lang != config.default_language %}
 		{% set submodule_path = page.path | split(pat=lang) | last %}
