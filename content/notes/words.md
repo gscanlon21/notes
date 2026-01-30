@@ -26,6 +26,7 @@ see_also = []
 : > He was always harping on the importance of taking vitamin supplements.
 
 # Phrases
+- Life's fluid and so am I (about 65% of me).
 
 **Anticipatory Anxiety**
 : The anxiety you feel when worrying about something that hasn't actually happened yet, and limited information is available to you.

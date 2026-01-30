@@ -1,7 +1,7 @@
 class Consts {
   static DEFAULT_CIRCLES = 8;
   static DEFAULT_RADIUS = 250;
-  static DEFAULT_FONT_SIZE = 100;
+  static DEFAULT_FONT_SIZE = 75;
 }
 
 const root = document.getElementById("content");

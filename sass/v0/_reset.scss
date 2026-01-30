@@ -3,7 +3,7 @@ article.v0 {
 		margin-block-start: $site-padding * 3;
 	}
 
-	&#content a {
+	a {
 		color: currentColor;
 		cursor: pointer;
 
@@ -12,19 +12,19 @@ article.v0 {
 		}
 	}
 
-	&#content p {
+	p {
 		margin-block: unset;
 	}
 
-	&#content i {
+	i {
 		font-style: italic;
 	}
 
-	&#content b {
+	b {
 		font-weight: bold;
 	}
 
-	&#content div {
+	div {
 		display: block;
 	}
 }
