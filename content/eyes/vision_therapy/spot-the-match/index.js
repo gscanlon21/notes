@@ -7,8 +7,7 @@ class Consts {
  	static get DEFAULT_IMAGE_SIZE() { return navigator?.userAgentData?.mobile === false ? 100 : 75 };
 }
 
-const root = document.documentElement;
-const content = document.getElementById("content");
+const root = document.getElementById("content");
 const regenerate = document.getElementById("regenerate");
 const chartLeft = document.getElementById("spot-the-match-left");
 const chartRight = document.getElementById("spot-the-match-right");
@@ -113,4 +112,4 @@ setGap(undefined, Consts.DEFAULT_GAP);
 generateChart();
 regenerate.addEventListener('click', generateChart);
 redGreenCheck.addEventListener('change', generateChart);
-content.addEventListener('click', (e) => e.target.dataset.correct ? generateChart() : void(0));
+root.addEventListener('click', (e) => e.target.dataset.correct ? generateChart() : void(0));

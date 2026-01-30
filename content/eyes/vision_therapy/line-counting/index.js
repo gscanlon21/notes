@@ -4,7 +4,7 @@ class Consts {
 	static DEFAULT_HEIGHT = 100;
 }
 
-const root = document.documentElement;
+const root = document.getElementById("content");
 const chart = document.getElementById("line-counting");
 const regenerate = document.getElementById("regenerate");
 const heightRange = document.getElementById("height-range");

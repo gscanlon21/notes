@@ -208,7 +208,7 @@ p {
 	font-size: medium;
 	margin-block-start: $base-padding * 0.25;
 
-	+p {
+	+p:not(:empty) {
 		margin-block-start: $base-padding * 1;
 	}
 }

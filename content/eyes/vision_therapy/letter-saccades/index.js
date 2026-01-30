@@ -4,7 +4,7 @@ class Consts {
   static DEFAULT_FONT_SIZE = 100;
 }
 
-const root = document.documentElement;
+const root = document.getElementById("content");
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const wrapper = document.getElementById("wrapper");
 const chartInner = document.getElementById("letter-circles-inner");
@@ -44,11 +44,6 @@ const generateCircleChart = (elem, circles, radius) => {
 	}
 };
 
-const generateInnerCircle = () => {
-	//document.documentElement.style.setProperty('--circle-font-size', fontSize);
-	return centerCircleCheckbox.checked ? wrapper.classList.add('circle') : wrapper.classList.remove('circle');
-};
-
 radiusRange.addEventListener("input", generateCircleCharts);
 circlesRange.addEventListener("input", generateCircleCharts);
 lettersInput.addEventListener("change", generateCircleCharts);
@@ -58,4 +53,5 @@ const setCircleSize = (_, v) => root.style.setProperty('--circle-size', `${fontS
 fontSizeRange.addEventListener("input", setCircleSize);
 setCircleSize(undefined, Consts.DEFAULT_FONT_SIZE);
 
+const generateInnerCircle = () => centerCircleCheckbox.checked ? wrapper.classList.add('circle') : wrapper.classList.remove('circle');
 centerCircleCheckbox.addEventListener('change', generateInnerCircle);

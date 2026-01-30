@@ -1,7 +1,10 @@
-const defaultCircles = 8;
-const defaultRadius = 250;
-const defaultFontSize = 100;
-const root = document.documentElement;
+class Consts {
+	static DEFAULT_RADIUS = 250; 
+	static DEFAULT_CIRCLES = 8;
+	static DEFAULT_FONT_SIZE = 100;
+}
+
+const root = document.getElementById("content");
 const chart = document.getElementById("number-circle");
 const regenerate = document.getElementById("regenerate");
 const radiusRange = document.getElementById("radius-select");
@@ -31,18 +34,14 @@ const generateCircleChart = (_, circles, radius) => {
 	}
 };
 
-const generateInnerCircle = () => {
-	//document.documentElement.style.setProperty('--circle-font-size', fontSize);
-	return centerCircleCheckbox.checked ? chart.classList.add('circle') : chart.classList.remove('circle');
-};
-
 regenerate.addEventListener('click', generateCircleChart);
 radiusRange.addEventListener("input", generateCircleChart);
 circlesRange.addEventListener("input", generateCircleChart);
-generateCircleChart(undefined, defaultCircles, defaultRadius);
+generateCircleChart(undefined, Consts.DEFAULT_CIRCLES, Consts.DEFAULT_RADIUS);
 
 const setCircleSize = (_, v) => root.style.setProperty('--circle-size', `${fontSizeRange.value = v ?? fontSizeRange.value}px`);
 fontSizeRange.addEventListener("input", setCircleSize);
-setCircleSize(undefined, defaultFontSize);
+setCircleSize(undefined, Consts.DEFAULT_FONT_SIZE);
 
+const generateInnerCircle = () => centerCircleCheckbox.checked ? chart.classList.add('circle') : chart.classList.remove('circle');
 centerCircleCheckbox.addEventListener('change', generateInnerCircle);
