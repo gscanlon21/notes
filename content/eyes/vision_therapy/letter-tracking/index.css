@@ -2,14 +2,14 @@
 	display: flex;
 	flex-wrap: wrap;
 	overflow-x: clip;
-	font-weight: 600;
 	text-align: start;
 	position: relative;
-	padding-block: 1ex;
-	padding-inline: 1ch;
+	padding-inline: 2ex;
 	justify-self: center;
 	word-wrap: break-word;
 	word-break: break-word;
+	padding-block-start: 1ex;
+	padding-block-end: 1.5ex;
 	font-size: var(--font-size);
 	line-height: var(--line-height);
 	letter-spacing: var(--letter-spacing);
@@ -17,6 +17,10 @@
 
 #letter-tracking p {
 	font-size: var(--font-size);
+}
+
+#letter-tracking p:empty {
+	display: none;
 }
 
 #letter-tracking.red-green::after {
