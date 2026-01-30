@@ -1,36 +1,37 @@
 #letter-tracking {
+	padding: 10px;
 	display: flex;
 	flex-wrap: wrap;
+	overflow-x: clip;
 	font-weight: 600;
 	text-align: center;
-	justify-self: center;
-	word-break: break-word;
-    word-wrap: break-word;
 	position: relative;
-}
-
-#letter-tracking.red-green::before {
-	inset: 0;
-	content: '';
-	position: absolute;
-	mix-blend-mode: normal;
-  	background: repeating-linear-gradient(
-		to right,
-		rgba(0, 255, 0, 0.5) 0ch 3.1ch,
-		rgba(255, 0, 0, 0.0) 3ch 6ch
-  	);
+	justify-self: center;
+	word-wrap: break-word;
+	word-break: break-word;
 }
 
 #letter-tracking.red-green::after {
 	inset: 0;
 	content: '';
 	position: absolute;
-	mix-blend-mode: normal;
-	transform: translateX(3ch);
-	max-width: calc(100% - 3ch);
-  	background: repeating-linear-gradient(
+	margin-left: -0.1ch;
+	/* Red + green == yellow */
+	mix-blend-mode: hard-light;
+	background-blend-mode: screen;
+	/* Gradient should overlay slightly */
+	background: repeating-linear-gradient(
 		to right,
-		rgba(255, 0, 0, 0.5) 0ch 3.1ch,
-		rgba(0, 255, 0, 0.0) 3ch 6ch
+		rgba(255, 0, 0, 0.5) 0ch 3ch,
+		rgba(0, 255, 0, 0.5) 3ch 6ch
+  	), repeating-linear-gradient(
+		to right,
+		transparent 0ch 3ch,
+		rgba(255, 0, 0, 0.5) 3ch 3.1ch,
+		transparent 3ch 6ch
+  	), repeating-linear-gradient(
+		to right,
+		rgba(0, 255, 0, 0.5) 0ch 0.1ch,
+		transparent 0.1ch 6ch
   	);
 }
