@@ -8,7 +8,6 @@ updated = 2026-02-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "TODO: Multiple paragraphs (option!), separate paragraph spacing and line spacing. "},
   { title = "Permalink", href = "/vision-therapy/letter-tracking" },
   { title = "Alphabet Saccades", href = "https://aworkoutaday.com/exercises?Name=Alphabet+Saccades" },
 ]
@@ -18,8 +17,16 @@ options = [
   { name = "Letter Spacing", id = "letter-spacing-range", type = "range", min = 0, max = 5, step = 0.1 },
   { name = "Line Height", id = "line-height-range", type = "range", min = 1, max = 2, step = 0.1 },
   { name = "Font Size", id = "font-size-range", type = "range", min = 10, max = 60 },
+  { name = "Paragraphs", id = "paragraphs-range", type = "range", min = 1, max = 5 },
+  { name = "Paragraph Length", id = "length-range", type = "range", min = 5, max = 20 },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++
 
-<div id="letter-tracking" class="chart"></div>
+<div id="letter-tracking" class="chart">
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>

@@ -93,7 +93,7 @@ Object.defineProperty(Array.prototype, 'aRandom', {
 // Add a class to an element and return the element.
 Object.defineProperty(HTMLDivElement.prototype, 'aWithClass', {
     value: function(value) { 
-		this.classList.add(value);
+		!this.classList.contains(value) ? this.classList.add(value) : void(0);
 		return this;
 	}
 });

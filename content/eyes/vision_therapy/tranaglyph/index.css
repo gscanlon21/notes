@@ -10,7 +10,7 @@
 	}
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 100rem) {
     :root {
 		--body-width: calc(100vw - 40rem);
 	}
