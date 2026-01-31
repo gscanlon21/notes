@@ -70,7 +70,7 @@ external_level = "error"
 
 [markdown]
 # If this is true, a `rel="noopener"` will always automatically be added for security reasons.
-external_links_target_blank = false
+external_links_target_blank = true
 
 # Whether to set rel="nofollow" for all external links.
 external_links_no_follow = false

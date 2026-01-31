@@ -1,4 +1,8 @@
 article.v1 {
+	.footnote-reference a::before {
+		content: 'see_';
+	}
+
 	.footnotes {
 		margin-top: $base-padding * 3;
 		padding-block-start: $base-padding * 0.5;
@@ -6,6 +10,39 @@ article.v1 {
 
 		.footnotes-list {
 			margin-block-end: $base-padding * -2;
+
+			p {
+				display: flex;
+				align-items: end;
+				column-gap: $base-padding;
+				justify-content: space-between;
+
+				a:first-of-type {
+					order: 1;
+				}
+
+				a:last-of-type {
+					align-items: center;
+					display: flex;
+					order: 3;
+		
+					&::before {
+						content: 'back_';
+					}
+				}
+
+				&::after {
+					border-top: 2px dotted rgba(var(--color-text), 0.25);
+					padding-inline: $base-padding * 0.5;
+					margin-inline: $base-padding * -1;
+					display: inline-block;
+					margin-top: 1em;
+					flex-grow: 1;
+					height: 3px;
+					content: '';
+					order: 2;
+				}
+			}
 		}
 	}
 }
