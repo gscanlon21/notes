@@ -25,7 +25,7 @@ see_also = [
 # Equipment
 
 > [!NOTE]
-> For visual therapy charts, see the subsections in the sidebar.
+> For vision therapy charts, see the subsections in the sidebar.
 
 
 ## Prism Lens
@@ -43,7 +43,10 @@ Requires convergence.
 : - This requires your eyes to converge and shift inwards as well to match and fuse the images.
 
 ## Brock String
-TODO
+<details><summary>Image</summary>
+
+![Brock String](brock_string.jif)
+</details>
 
 > [!TIP]
 > Use an Alpine Butterfly Loop Knot[^1] to create a back-stop for each bead threaded onto the string.

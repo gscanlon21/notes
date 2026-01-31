@@ -24,7 +24,7 @@ Stretch and strengthen the hip flexors, strengthen the core muscles, and strengt
 
 
 # Knock Knees
-![Knock Knees](knock-knees.webp "Knock Knees")
+![Knock Knees](knock-knees.webp)
 
 
 # Feet

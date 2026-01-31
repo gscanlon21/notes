@@ -1,6 +1,6 @@
 article.v1 {
 	.footnote-reference a::before {
-		content: 'see_';
+		content: 'see ';
 	}
 
 	.footnotes {
@@ -9,6 +9,7 @@ article.v1 {
 		border-top: 2px dotted color(--color-text);
 
 		.footnotes-list {
+			padding-inline-start: $base-padding * 1.2;
 			margin-block-end: $base-padding * -2;
 
 			p {
@@ -24,10 +25,12 @@ article.v1 {
 				a:last-of-type {
 					align-items: center;
 					display: flex;
+					font-size: 0;
 					order: 3;
 		
 					&::before {
-						content: 'back_';
+						font-size: $site-font-size;
+						content: 'back';
 					}
 				}
 
