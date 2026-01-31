@@ -18,9 +18,9 @@
 }
 
 .arrow.red {
-	color: red;
+	color: rgb(var(--color-red));
 }
 
 .arrow.green {
-	color: green;
+	color: rgb(var(--color-green));
 }

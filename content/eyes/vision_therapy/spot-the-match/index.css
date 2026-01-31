@@ -41,11 +41,11 @@
 }
 
 .image.red {
-	color: red;
+	color: rgb(var(--color-red));
 }
 
 .image.green {
-	color: green;
+	color: rgb(var(--color-green));
 }
 
 .image.correct {

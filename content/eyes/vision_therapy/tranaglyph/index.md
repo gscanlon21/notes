@@ -10,6 +10,7 @@ toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/tranaglyph" },
   { title = "Tranaglyph", href = "https://aworkoutaday.com/exercises?Name=Tranaglyph" },
+  { title = "Print Settings<br>☑ Background Graphics" },
   { title = "🄯 visiontherapy GNU AGPL v3<br>Slight changes in options.", href = "https://github.com/visiontherapy/visiontherapy.github.io"},
 ]
 options = [

@@ -16,9 +16,9 @@
 }
 
 .line.red {
-	background-color: red;
+	background-color: rgb(var(--color-red));
 }
 
 .line.green {
-	background-color: green;
+	background-color: rgb(var(--color-green));
 }

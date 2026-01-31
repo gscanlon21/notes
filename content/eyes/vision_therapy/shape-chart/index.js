@@ -5,7 +5,7 @@ class Consts {
   static DEFAULT_LETTER_GAP = 18;
 }
 
-const shapes = ["●", "■", "▲", "◆", "★"];
+const shapes = ["⏺", "■", "▲", "◆", "★"];
 const chart = document.getElementById("shape-chart");
 const regenerate = document.getElementById("regenerate");
 const fontSizeRange = document.getElementById("font-size-select");

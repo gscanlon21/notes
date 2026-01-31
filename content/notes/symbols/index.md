@@ -382,6 +382,7 @@ see_also = [
 ###### U+23FB
 
 
+
 # Shapes
 
 ## Circles
@@ -391,3 +392,41 @@ see_also = [
 ◯
 ```
 ###### U+25EF
+
+## Checkmarks
+###### Check Mark
+```
+✓
+```
+###### U+2713
+###### HEAVY CHECK MARK
+```
+✔
+```
+###### U+2714
+###### LIGHT CHECK MARK
+```
+🗸
+```
+###### U+1F5F8
+
+###### Ballot Box With Check
+```
+☑
+```
+###### U+2611
+###### Ballot Box With Bold Check
+```
+🗹
+```
+###### U+1F5F9
+###### WHITE HEAVY CHECK MARK
+```
+✅
+```
+###### U+2705
+###### BALLOT BOX
+```
+☐
+```
+###### U+2610

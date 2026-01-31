@@ -11,6 +11,8 @@ see_also = [
   { title = "Permalink", href = "/vision-therapy/number-saccades" },
 ]
 options = [
+  { name = "Red Color", id = "red-color", type = "color" },
+  { name = "Green Color", id = "green-color", type = "color" },
   { name = "Red/Green Numbers", id = "red-green-checkbox", type = "checkbox" },
   { name = "Font Size", id = "font-size-select", type = "range", min = 50, max = "150" },
   { name = "Circles", id = "circles-select", type = "range", min = 6, max = "24" },

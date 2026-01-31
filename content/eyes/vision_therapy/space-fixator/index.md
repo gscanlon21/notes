@@ -10,6 +10,7 @@ toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/space-fixator" },
   { title = "Space Fixator", href = "https://aworkoutaday.com/exercises?Name=Space+Fixator" },
+  { title = "Print Settings<br>☑ Background Graphics" },
 ]
 options = [
   { name = "Font Size", id = "font-size-select", type = "range", min = 50, max = "150" },

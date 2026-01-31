@@ -67,7 +67,7 @@
                         {% set url = get_url(path=current_path ~ also.file) %}
                         <a href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
                     {% else %}
-                        <span>{{ also.title }}</span>
+                        <span>{{ also.title | safe }}</span>
                     {% endif %}
                 </dd>
             {% endfor %}
@@ -83,6 +83,9 @@
 					{% elif option.type == "checkbox" %} 
 						<label for="{{ option.id }}">{{ option.name }}</label>
                         <input id="{{ option.id }}" type="checkbox" autocomplete="off" />
+					{% elif option.type == "color" %} 
+						<label for="{{ option.id }}">{{ option.name }}</label>
+                        <input id="{{ option.id }}" type="color" />
 					{% elif option.type == "textarea" %} 
 						<label for="{{ option.id }}">{{ option.name }}</label>
                         <textarea id="{{ option.id }}"></textarea>

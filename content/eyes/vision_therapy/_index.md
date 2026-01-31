@@ -9,7 +9,8 @@ updated = 2026-02-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "TODO: Custom red/green." },
+  { title = "TODO: Save/load form values in localstorage." },
+  { title = "TODO: Save/load form values in querystring." },
   { title = "Permalink", href = "/vision-therapy" },
   { title = "Font Family: Optician Sans", href = "https://github.com/anewtypeofinterference/Optician-Sans" },
   { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },

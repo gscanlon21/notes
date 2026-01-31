@@ -18,9 +18,9 @@
 }
 
 .shape.red {
-	color: red;
+	color: rgb(var(--color-red));
 }
 
 .shape.green {
-	color: green;
+	color: rgb(var(--color-green));
 }

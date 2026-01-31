@@ -34,16 +34,16 @@
 	/* Gradient should overlay slightly */
 	background: repeating-linear-gradient(
 		to right,
-		rgba(255, 0, 0, 0.5) 0ch 4ch,
-		rgba(0, 255, 0, 0.5) 4ch 8ch
+		rgba(var(--color-red), 0.5) 0ch 4ch,
+		rgba(var(--color-green), 0.5) 4ch 8ch
   	), repeating-linear-gradient(
 		to right,
 		transparent 0ch 4ch,
-		rgba(255, 0, 0, 0.5) 4ch 4.1ch,
+		rgba(var(--color-red), 0.5) 4ch 4.1ch,
 		transparent 4ch 8ch
   	), repeating-linear-gradient(
 		to right,
-		rgba(0, 255, 0, 0.5) 0ch 0.1ch,
+		rgba(var(--color-green), 0.5) 0ch 0.1ch,
 		transparent 0.1ch 8ch
   	);
 }

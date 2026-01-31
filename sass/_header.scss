@@ -87,6 +87,25 @@
 					flex: 99999 1 auto;
 				}
 			}
+
+			&[data-type="text"] {
+				align-items: center;
+				column-gap: 1ex;
+				flex-wrap: wrap;
+				display: flex;
+
+				input[type="text"] {
+					margin-block-start: .5ex;
+					flex: 99999 1 auto;
+				}
+			}
+
+			&[data-type="checkbox"] {
+				input[type="checkbox"] {
+					vertical-align: text-bottom;
+					scale: 1.25;
+				}
+			}
 		}
 	}
 }

@@ -17,9 +17,9 @@
 }
 
 .symbol.red {
-	color: red;
+	color: rgb(var(--color-red));
 }
 
 .symbol.green {
-	color: green;
+	color: rgb(var(--color-green));
 }
