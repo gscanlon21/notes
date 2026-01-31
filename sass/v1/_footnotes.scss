@@ -4,13 +4,17 @@ article.v1 {
 	}
 
 	.footnotes {
-		margin-top: $base-padding * 3;
+		margin-block-start: $base-padding * 3;
 		padding-block-start: $base-padding * 0.5;
 		border-top: 2px dotted color(--color-text);
 
 		.footnotes-list {
-			padding-inline-start: $base-padding * 1.2;
 			margin-block-end: $base-padding * -2;
+			padding-inline-start: $base-padding * 1.2;
+			
+			li + li {
+				margin-block-start: $base-padding * 0.25;
+			}
 
 			p {
 				display: flex;

@@ -18,7 +18,7 @@ see_also = [
 > [!WARNING]
 > Rancid or expired meat will smell off, feel slimy, and look gray,  
 
-{{ extend(margins=true, style="margin-bottom:1rem;") }}
+{{ extend(margins=true) }}
 
 {% table(header="Cooking Temperature & Safety", footer="The Food Lab by J. Kenji López-Alt `362`") %}
 | Degrees Fahrenheit | Time for Chicken | Time for Turkey | Time for Beef |

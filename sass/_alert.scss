@@ -19,7 +19,10 @@
 
 blockquote[class^="markdown-alert-"] {
 	border: .2em solid color(--color-text, .5);
+	margin-block-start: $base-padding * .75;
+	margin-block-end: $base-padding * .75;
 	padding-block: $base-padding * .5;
+	box-sizing: border-box;
 	align-content: start;
 	margin-inline: 0;
 	flex-wrap: wrap;

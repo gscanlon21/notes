@@ -29,5 +29,5 @@ see_also = []
 ## Precautions
 The surface to which the film will be applied should be very clean, free of dirt, dust particles and silicone. Make sure there are no dry spots on the film prior to placing it on the glass. _Wet the film as the liner is removed!_
 
-## Tip to remove liner
+## Tip to Remove Liner
 To separate the liner from the film, take two pieces of adhesive tape and stick them opposite each other at one corner. Then, pull the two pieces of tape apart and the liner will separate from the film. The adhesive surface of the film will now be exposed. Wet this surface.
