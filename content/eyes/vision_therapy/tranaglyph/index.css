@@ -16,28 +16,23 @@
 	}
 }
 
-:root {
+#tranaglyph {
+	--delta: 0;
 	--scale: 1;
+	--units: 1cm;
 	--glyphScale: 1;
-	--tranaglyphRed: red;
-	--tranaglyphGreen: green;
 	--baseSize: calc(4in * var(--scale));
 	--glyphSize: calc(var(--baseSize) * var(--glyphScale));
-}
-
-#tranaglyph {
 	min-height: calc(calc(var(--baseSize) * var(--glyphScale)) + 2in);
 	position: relative;
 	top: 3em;
-	--delta: 0;
-	--units: 1cm;
 }
 
 #tranaglyph.fusion {
 	top: 0;
 
-	--tranaglyphRed: currentColor;
-	--tranaglyphGreen: currentColor;
+	--color-red: var(--color-text);
+	--color-green: var(--color-text);
 }
 
 #tranaglyph.fusion .satellite {
@@ -69,13 +64,13 @@
 
 #right-eye, #right-eye * {
 	--units: -1cm;
-	--tranaglyphColor: var(--tranaglyphGreen);
-	border-color: var(--tranaglyphColor);
+	--tranaglyphColor: var(--color-green);
+	border-color: rgb(var(--tranaglyphColor));
 }
 
 #left-eye, #left-eye * {
-	--tranaglyphColor: var(--tranaglyphRed);
-	border-color: var(--tranaglyphColor);
+	--tranaglyphColor: var(--color-red);
+	border-color: rgb(var(--tranaglyphColor));
 }
 
 .inner {
@@ -127,8 +122,8 @@
 }
 
 .center::after, .center::before {
+	background-color: rgb(var(--tranaglyphColor));
 	height: calc(var(--glyphSize) * .035);
-	background: var(--tranaglyphColor);
 	transform: translate(-50%, -50%);
 	position: absolute;
 	content: " ";
@@ -156,13 +151,13 @@
 	top: calc(var(--point) * (-1) - var(--bsize));
 	border-left: solid calc(var(--point) / 3) transparent;
 	border-right: solid calc(var(--point) / 3) transparent;
-	border-bottom: solid var(--point) var(--tranaglyphColor);
+	border-bottom: solid var(--point) rgb(var(--tranaglyphColor));
 	border-top: none;
 }
 
 .points::after {
 	bottom: calc(var(--point) * (-1) - var(--bsize));
-	border-top: solid var(--point) var(--tranaglyphColor);
+	border-top: solid var(--point) rgb(var(--tranaglyphColor));
 	border-bottom: none;
 	content: " ";
 	top: auto;

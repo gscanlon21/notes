@@ -16,11 +16,11 @@ see_also = [
 options = [
   { name = "Red Color", id = "red-color", type = "color" },
   { name = "Green Color", id = "green-color", type = "color" },
+  { name = "Red/Green Images", id = "red-green-checkbox", type = "checkbox" },
   { name = "Gap", id = "gap-range", type = "range", min = 25, max = 250, step = 5 },
   { name = "Image Gap", id = "image-gap-range", type = "range", min = 10, max = 25 },
   { name = "Image Size", id = "image-size-range", type = "range", min = 75, max = 125 },
   { name = "Randomness", id = "randomness-range", type = "range", min = 0, max = 50 },
-  { name = "Red/Green Images", id = "red-green-checkbox", type = "checkbox" },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++

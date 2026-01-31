@@ -20,16 +20,16 @@ vergenceInput.addEventListener('input', () => {
 
 fusion.addEventListener('change', () => {
 	if (fusion.checked) {
-		document.documentElement.style.setProperty("--glyphScale", "0.33");
+		tranaglyph.style.setProperty("--glyphScale", "0.33");
 		tranaglyph.classList.add("fusion");
 	} else {
-		document.documentElement.style.setProperty("--glyphScale", "1");
+		tranaglyph.style.setProperty("--glyphScale", "1");
 		tranaglyph.classList.remove("fusion");
 	}
 });
 
 scaleInput.addEventListener('input', () => {
-	document.documentElement.style.setProperty("--scale", scaleInput.value);
+	tranaglyph.style.setProperty("--scale", scaleInput.value);
 	scaleOutput.dataset.value = parseFloat(scaleInput.value).toFixed(2);
 });
 
