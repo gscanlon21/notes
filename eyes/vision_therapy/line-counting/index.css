@@ -1,0 +1,24 @@
+#line-counting {
+	width: 300px;
+	display: flex;
+	line-height: 1;
+	aspect-ratio: 1;
+	font-weight: 600;
+	text-align: center;
+	justify-self: center;
+	height: var(--height);
+	overflow: clip;
+}
+
+.line {
+	background-color: currentColor;
+	aspect-ratio: 1;
+}
+
+.line.red {
+	background-color: rgb(var(--color-red));
+}
+
+.line.green {
+	background-color: rgb(var(--color-green));
+}

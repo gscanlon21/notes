@@ -1,0 +1,25 @@
+.table-wrapper {
+	height: 100%;
+}
+
+#hart-chart {
+	display: grid;
+	line-height: 1;
+	aspect-ratio: 1;
+	text-align: center;
+	width: min-content;
+	justify-self: center;
+}
+
+.letter {
+	overflow-y: clip;
+	aspect-ratio: 1;
+}
+
+.letter.red {
+	color: rgb(var(--color-red));
+}
+
+.letter.green {
+	color: rgb(var(--color-green));
+}

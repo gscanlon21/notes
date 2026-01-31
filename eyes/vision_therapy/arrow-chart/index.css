@@ -1,0 +1,26 @@
+.table-wrapper {
+	height: 100%;
+}
+
+#arrow-chart {
+	display: grid;
+	line-height: 1;
+	aspect-ratio: 1;
+	font-weight: 600;
+	text-align: center;
+	width: min-content;
+	justify-self: center;
+}
+
+.arrow {
+	overflow-y: clip;
+	aspect-ratio: 1;
+}
+
+.arrow.red {
+	color: rgb(var(--color-red));
+}
+
+.arrow.green {
+	color: rgb(var(--color-green));
+}
