@@ -16,7 +16,7 @@ see_also = [
 # Temperature & Safety
 
 > [!WARNING]
-> Rancid or expired meat will smell off, feel slimy, and look gray,  
+> Rancid or expired meat will smell off, feel slimy, and look gray.
 
 {{ extend(margins=true) }}
 
