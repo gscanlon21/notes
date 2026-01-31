@@ -1,19 +1,43 @@
 // Site footer
 #footer {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap-reverse;
-  column-gap: $base-padding;
-  margin-inline: $base-padding;
-  padding-block-start: $base-padding;
-  margin-block-start: $base-padding * 2;
-  border-top: 2px solid color(--color-text);
+	display: flex;
+	position: relative;
+	flex-wrap: wrap-reverse;
+	column-gap: $base-padding;
+	margin-inline: $base-padding;
+	padding-block-start: $base-padding;
+	margin-block-start: $base-padding * 2;
+	border-top: 2px solid color(--color-text);
 
-  > .footer-item {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
+	> .footer-item {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+
+		&.fixed {
+			left: 0;
+			right: 0;
+			z-index: -1;
+			margin: auto;
+			position: fixed;
+			width: max-content;
+			bottom: $base-padding;
+
+			&.left {
+				padding-inline-end: $base-padding / 2;
+				transform: translateX(calc(calc(var(--body-width) / -2) - 50%))
+			}
+
+			&.right {
+				padding-inline-start: $base-padding / 2;
+				transform: translateX(calc(calc(var(--body-width) / 2) + 50%))
+			}
+
+			@media (max-width: ($large-width - 1px)) {
+				display: none;
+			}
+		}
+	}
 }
 
 // Tera Context

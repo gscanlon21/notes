@@ -36,6 +36,11 @@
 
 // Section headers
 .header {
+	pointer-events: none;
+	padding-block-end: $base-padding * 4;
+	background-image: linear-gradient(to top, 
+		transparent $base-padding * 2, rgb(var(--color-bg)) $base-padding * 4, rgb(var(--color-bg)));
+
 	.header-title {
 		margin-top: $site-padding * 2;
 
@@ -55,6 +60,7 @@
 	.header-item {
 		flex: 1;
 		display: flex;
+		pointer-events: all;
 		flex-direction: column;
 		min-width: $min-content-width;
 	}
