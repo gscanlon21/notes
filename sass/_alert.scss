@@ -22,7 +22,10 @@ blockquote[class^="markdown-alert-"] {
 	margin-block-start: $base-padding * .75;
 	margin-block-end: $base-padding * .75;
 	padding-block: $base-padding * .5;
+	padding-inline: $base-padding;
+	column-gap: $base-padding;
 	box-sizing: border-box;
+	align-items: baseline;
 	align-content: start;
 	margin-inline: 0;
 	flex-wrap: wrap;
@@ -34,10 +37,9 @@ blockquote[class^="markdown-alert-"] {
 	}
 
 	&::before {
-		padding-inline: $base-padding * 1;
 		font-size: $base-font-size * 1.25;
 		font-weight: 500;
-		width: 100%;
+		order: -2;
 	}
 
 	& > :first-child {
@@ -49,8 +51,28 @@ blockquote[class^="markdown-alert-"] {
 	}
 
 	& > p {
-		padding-inline: $base-padding * 1;
 		font-size: $base-font-size * 1.1;
+		width: 100%
+	}
+
+	& > blockquote:last-child {
+		padding-inline-start: 0 !important;
+		border-left: none !important;
+		margin-inline: 0;
+		font-weight: 500;
+		margin-block: 0;
+		order: -1;
+
+		& > p {
+			margin-block-start: 0;
+		}
+	}
+
+	&:has(blockquote) {
+		& > p:first-of-type {
+			border-top: 1px solid rgba(var(--color-note), .25);
+			padding-block-start: $base-padding * 0.25;
+		}
 	}
 }
 

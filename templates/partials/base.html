@@ -7,10 +7,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="{{ config.description }}">
 	{% set page_title = page.title | default(value=section.title | default(value='')) %}
-	{% if page_title and page_title | length > 0 and page_title != config.title %}
+	{% if page_title and config.title and page_title != config.title %}
 		<title>{{ page_title }} - {{ config.title }}</title>
-	{% else %}
+	{% elif config.title %}
 		<title>{{ config.title }}</title>
+	{% else %}
+		<title>{{ page_title }}</title>
 	{% endif %}
 
 	<link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="/favicon/apple-touch-icon.png", cachebust=false) }}">
