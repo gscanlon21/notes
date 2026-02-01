@@ -37,9 +37,13 @@
 // Section headers
 .header {
 	pointer-events: none;
-	padding-block-end: $base-padding * 4;
-	background-image: linear-gradient(to top, 
-		transparent $base-padding * 2, rgb(var(--color-bg)) $base-padding * 4, rgb(var(--color-bg)));
+	
+	// For fixed 'Back to Top' button.
+	@media (min-width: $large-width) {
+		padding-block-end: $base-padding * 4;
+		background-image: linear-gradient(to top, 
+			transparent $base-padding * 2, rgb(var(--color-bg)) $base-padding * 4, rgb(var(--color-bg)));
+	}
 
 	.header-title {
 		margin-top: $site-padding * 2;

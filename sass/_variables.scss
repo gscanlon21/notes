@@ -13,6 +13,7 @@ $large-width: 1600px;
         --body-width: 60rem;
     }
 }
+
 @media (max-width: ($large-width - 1px)) {
     :root {
         --body-width: 80rem;
