@@ -9,6 +9,7 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/number-saccades" },
+  { title = "Central-Peripheral Numbers", href = "https://aworkoutaday.com/exercises?Name=Central-Peripheral+Numbers" },
 ]
 options = [
   { name = "Red Color", id = "red-color", type = "color" },

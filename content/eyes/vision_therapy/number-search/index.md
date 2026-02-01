@@ -9,6 +9,7 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/letter-search" },
+  { title = "Central-Peripheral Scattered Numbers", href = "https://aworkoutaday.com/exercises?Name=Central-Peripheral+Scattered+Numbers" },
 ]
 options = [
   { name = "Red Color", id = "red-color", type = "color" },

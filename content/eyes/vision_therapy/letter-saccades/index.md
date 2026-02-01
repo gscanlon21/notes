@@ -9,6 +9,7 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/letter-saccades" },
+  { title = "Central-Peripheral ABCs", href = "https://aworkoutaday.com/exercises?Name=Central-Peripheral+ABCs" },
 ]
 options = [
   { name = "Red Color", id = "red-color", type = "color" },
