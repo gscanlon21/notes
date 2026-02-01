@@ -148,4 +148,4 @@ For starchy rice, try wiping oil around the walls of the pot to break up the sta
 
 
 [^1]: [Rice Ratios](https://www.youtube.com/watch?v=JOOSikanIlI)
-[^2]: This is often a result of leaving live bacteria ("The Mother") in the vinegar, like live yoghurt cultures.
+[^2]: This is often a result of leaving live bacteria ("The Mother") in the vinegar, like live yogurt cultures.
