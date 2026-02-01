@@ -9,6 +9,16 @@ see_also = [
 +++
 
 # Math Symbols
+###### Plus Sign
+```
++
+```
+###### U+002B
+###### Minus Sign
+```
+−
+```
+###### U+2212
 ###### Plus-Minus Sign
 ```
 ±
@@ -39,6 +49,11 @@ see_also = [
 ∩
 ```
 ###### U+2229
+###### Infinity
+```
+∞
+```
+###### U+221E
 
 
 # Cooking Symbols
@@ -223,16 +238,16 @@ see_also = [
 
 
 ## Math Symbols
-###### Plus Sign
+###### Superscript Plus Sign
 ```
-+
+⁺
 ```
-###### U+002B
-###### Minus Sign
+###### U+207A
+###### Superscript Minus
 ```
-−
+⁻
 ```
-###### U+2212
+###### U+207B
 
 
 # Subscripts
@@ -399,12 +414,12 @@ see_also = [
 ✓
 ```
 ###### U+2713
-###### HEAVY CHECK MARK
+###### Heavy Check Mark
 ```
 ✔
 ```
 ###### U+2714
-###### LIGHT CHECK MARK
+###### Light Check Mark
 ```
 🗸
 ```
@@ -420,12 +435,12 @@ see_also = [
 🗹
 ```
 ###### U+1F5F9
-###### WHITE HEAVY CHECK MARK
+###### White Heavy Check Mark
 ```
 ✅
 ```
 ###### U+2705
-###### BALLOT BOX
+###### Ballot Box
 ```
 ☐
 ```
