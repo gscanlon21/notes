@@ -10,11 +10,13 @@ toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/hart-chart" },
   { title = "Hart Chart", href = "https://aworkoutaday.com/exercises?Name=Hart+Chart" },
+  { title = "Military Saccades", href = "https://aworkoutaday.com/exercises?Name=Military+Saccades" },
 ]
 options = [
   { name = "Red Color", id = "red-color", type = "color" },
   { name = "Green Color", id = "green-color", type = "color" },
   { name = "Red/Green Letters", id = "red-green-checkbox", type = "checkbox" },
+  { name = "Grid Reference (TODO)", id = "grid-reference-checkbox", type = "checkbox" },
   { name = "Letters", id = "letters-text", type = "text", value = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" },
   { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = "60" },
   { name = "Letter Gap", id = "letter-gap-select", type = "range", min = 1, max = "10" },
