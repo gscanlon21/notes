@@ -8,7 +8,9 @@
 	aspect-ratio: 1;
 	text-align: center;
 	width: min-content;
+	position: relative;
 	justify-self: center;
+	counter-reset: row -1 col -1;
 }
 
 .letter {
@@ -22,4 +24,26 @@
 
 .letter.green {
 	color: rgb(var(--color-green));
+}
+
+
+.chart.grid-reference {
+	padding-inline-start: 2em;
+	padding-block-start: 2em;
+}
+
+.chart.grid-reference > .letter.ref::after {
+	counter-increment: row;
+	content: counter(row);
+	position: absolute;
+	font-size: 1em;
+	left: 0;
+}
+
+.chart.grid-reference > .letter.ref::before {
+	counter-increment: col;
+	content: counter(col);
+	position: absolute;
+	font-size: 1em;
+	top: 0;
 }
