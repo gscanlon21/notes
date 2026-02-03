@@ -3,51 +3,50 @@ class Consts {
  	static get DEFAULT_IMAGE_SIZE() { return navigator?.userAgentData?.mobile === false ? 100 : 75 };
 }
 
-const root = document.getElementById("content");
+const chart = document.getElementById("single-target-wrapper");
 const regenerate = document.getElementById("regenerate");
-const chartLeft = document.getElementById("aperture-image-left");
-const chartRight = document.getElementById("aperture-image-right");
+const imageCheck = document.getElementById("image-checkbox");
+const characterText = document.getElementById("alphanumeric-text");
 const redGreenCheck = document.getElementById("red-green-checkbox");
-const imgSizeRange = document.getElementById("image-size-range");
-const gapRange = document.getElementById("gap-range");
+const sizeRange = document.getElementById("size-range");
 
 const getImageArray = () => Array.from({ length: 100 }, (_, i) => String(i + 1).padStart(3, "0"));
 const getImage = (number) => `./pdshape_${number}.png`;
 
 const generateChart = () => {
-	chartLeft.innerHTML = null;
-	chartRight.innerHTML = null;
+	chart.innerHTML = null;
 
 	const imageArr = getImageArray().aShuffle();
-	const left = document.createElement("div").aWithClass('image');
-	const right = document.createElement("div").aWithClass('image');
+	const target = document.createElement("div").aWithClass('target');
 
 	const redGreenList = ["red", "green"].aShuffle();
-	redGreenCheck.checked ? left.classList.add(redGreenList[0]) : void(0);
-	redGreenCheck.checked ? right.classList.add(redGreenList[1]) : void(0);
+	redGreenCheck.checked ? target.classList.add(redGreenList[0]) : void(0);
 
-	left.style.maskImage = right.style.maskImage = `url(${getImage(imageArr.pop())})`;
+	if (imageCheck.checked) {
+		target.classList.add('image');
+		target.style.maskImage = `url(${getImage(imageArr.pop())})`;
+	}
+	else {
+		target.classList.add('alphanumeric');
+		target.textContent = characterText.value ?? 'X';
+	}
 
-	chartLeft.appendChild(left);
-	chartRight.appendChild(right);
+	chart.appendChild(target);
 };
 
 const regenerateImageSizes = () => {
-	for (const child of [...Array.from(chartLeft.childNodes), ...Array.from(chartRight.childNodes)]) {
-		child.style.setProperty('--image-scale', newImageScale(imgSizeRange.value));
+	for (const child of Array.from(chart.childNodes)) {
+		child.style.setProperty('--scale', sizeRange.value);
 	}
 }
 
-const setImageSize = (_, v) => root.style.setProperty('--image-size', `${imgSizeRange.value = v ?? imgSizeRange.value}px`);
-imgSizeRange.addEventListener('change', regenerateImageSizes);
-imgSizeRange.addEventListener('input', setImageSize);
-setImageSize(undefined, Consts.DEFAULT_IMAGE_SIZE);
-
-const setGap = (_, v) => root.style.setProperty('--gap', `${gapRange.value = v ?? gapRange.value}px`);
-gapRange.addEventListener('input', setGap);
-setGap(undefined, Consts.DEFAULT_GAP);
+const setSize = (_, v) => chart.style.setProperty('--size', `${sizeRange.value = v ?? sizeRange.value}px`);
+sizeRange.addEventListener('change', regenerateImageSizes);
+sizeRange.addEventListener('input', setSize);
+setSize(undefined, Consts.DEFAULT_IMAGE_SIZE);
 
 generateChart();
 regenerate.addEventListener('click', generateChart);
+imageCheck.addEventListener('change', generateChart);
+characterText.addEventListener('change', generateChart);
 redGreenCheck.addEventListener('change', generateChart);
-root.addEventListener('click', (e) => e.target.dataset.correct ? generateChart() : void(0));
