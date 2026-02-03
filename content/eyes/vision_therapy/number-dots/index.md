@@ -1,6 +1,6 @@
 +++
 title = "Number Dots Card"
-description = "Image generator for a number dots card."
+description = "A line of numbered dots."
 aliases = ["vision-therapy/number-dots"]
 updated = 2026-02-01
 
@@ -10,21 +10,23 @@ toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/number-dots" },
   { title = "Dots Card", href = "https://aworkoutaday.com/exercises?Name=Dots+Card" },
-  { title = "Print Settings<br>☑ Background Graphics" },
 ]
 options = [
-  { name = "Red Color", id = "red-color", type = "color" },
-  { name = "Green Color", id = "green-color", type = "color" },
-  { name = "Red/Green Images", id = "red-green-checkbox", type = "checkbox" },
-  { name = "Gap", id = "gap-range", type = "range", min = 25, max = 250, step = 5 },
-  { name = "Image Size", id = "image-size-range", type = "range", min = 75, max = 125 },
-  { name = "Regenerate", id = "regenerate", type = "button" },
+  { name = "Gap", id = "gap-range", type = "range", min = 10, max = 100, step = 5 },
+  { name = "Font Size", id = "font-size-range", type = "range", min = 10, max = 100, step = 5 },
 ]
 +++
 
-# TODO
-
-<div id="aperture-image-wrapper">
-  <div id="aperture-image-left" class="aperture-image"></div>
-  <div id="aperture-image-right" class="aperture-image"></div>
+<div id="number-dots" class="chart">
+  <div class="number-dot"><div class="number">10</div></div>
+  <div class="number-dot"><div class="number">9</div></div>
+  <div class="number-dot"><div class="number">8</div></div>
+  <div class="number-dot"><div class="number">7</div></div>
+  <div class="number-dot"><div class="number">6</div></div>
+  <div class="number-dot"><div class="number">5</div></div>
+  <div class="number-dot"><div class="number">4</div></div>
+  <div class="number-dot"><div class="number">3</div></div>
+  <div class="number-dot"><div class="number">2</div></div>
+  <div class="number-dot"><div class="number">1</div></div>
+  <div class="number-dot"><div class="number">0</div></div>
 </div>
