@@ -22,6 +22,6 @@ options = [
 ]
 +++
 
-<div id="single-target-wrapper">
+<div id="single-target-wrapper" class="chart">
   <div id="single-target" class="target"></div>
 </div>

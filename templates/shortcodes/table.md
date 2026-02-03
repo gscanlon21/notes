@@ -2,7 +2,7 @@
 ###### Table {{ nth }}: {{ header | safe }}
 {% endif %}
 
-<div class="table-wrapper">
+<div class="table-wrapper {{ class | default(value='') }}">
 
 {{ body | safe }}
 

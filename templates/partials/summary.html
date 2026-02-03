@@ -1,4 +1,4 @@
-<div class="header-item">
+<form id="options" class="header-item">
     <header id="summary">
         <h2 class="header-title">
             {% if page.extra.site | default(value=section.extra.site) %}
@@ -76,22 +76,23 @@
 			{% if page.extra.options | default(value=section.extra.options) %} 
             <dt>Options</dt>
             {% for option in page.extra.options | default(value=section.extra.options) %}
+				{% set name = page.slug ~ "-" ~ option.id | default(value='') %}
                 <dd class="summary-item" data-type="{{ option.type }}">
                     {% if option.type == "range" %} 
 						<label for="{{ option.id }}">{{ option.name }}</label>
-                        <input id="{{ option.id }}" type="range" min="{{ option.min }}" max="{{ option.max }}" step="{{ option.step | default(value=1) }}" value='{{ option.value | default(value="") }}' />
+                        <input id="{{ option.id }}" name="{{ name }}" type="range" min="{{ option.min }}" max="{{ option.max }}" step="{{ option.step | default(value=1) }}" value='{{ option.value | default(value="") }}' />
 					{% elif option.type == "checkbox" %} 
 						<label for="{{ option.id }}">{{ option.name }}</label>
-                        <input id="{{ option.id }}" type="checkbox" autocomplete="off" />
+                        <input id="{{ option.id }}" name="{{ name }}" type="checkbox" autocomplete="off" />
 					{% elif option.type == "color" %} 
 						<label for="{{ option.id }}">{{ option.name }}</label>
-                        <input id="{{ option.id }}" type="color" />
+                        <input id="{{ option.id }}" name="{{ name }}" type="color" />
 					{% elif option.type == "textarea" %} 
 						<label for="{{ option.id }}">{{ option.name }}</label>
-                        <textarea id="{{ option.id }}"></textarea>
+                        <textarea id="{{ option.id }}" name="{{ name }}"></textarea>
 					{% elif option.type == "text" %} 
 						<label for="{{ option.id }}">{{ option.name }}</label>
-                        <input id="{{ option.id }}" type="text" value="{{ option.value | default(value="") }}" />
+                        <input id="{{ option.id }}" name="{{ name }}" type="text" value="{{ option.value | default(value="") }}" />
 					{% elif option.type == "div" %} 
 						<div id="{{ option.id }}" data-value='{{ option.value | default(value="") }}'>{{ option.name }}</div>
 					{% elif option.type == "output" %} 
@@ -113,4 +114,4 @@
             <dd>{{ page.reading_time | default(value=section.reading_time) }} minute(s)</dd>
         </dl>
     </header>
-</div>
+</form>

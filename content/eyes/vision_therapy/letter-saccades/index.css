@@ -5,29 +5,28 @@
 }
 
 #wrapper {
+	justify-content: center;
+	align-items: center;
 	overflow-x: hidden;
 	position: relative;
 	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	line-height: 1;
+	display: flex;
 }
 
 #wrapper.circle::after {
 	border: 1px solid currentColor;
 	font-size: var(--circle-size, 20px);
-	font-family: Arial, sans-serif;
+	justify-content: center;
+	align-items: center;
 	border-radius: 50%;
 	position: absolute;
 	aspect-ratio: 1;
+	display: flex;
 	margin: auto;
-	content: "";
+	content: "0";
 	width: 2ch;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	top: 0;
+	inset: 0;
 }
 
 .letter-circle {
@@ -36,7 +35,7 @@
 	position: absolute;
 }
 
-.letter-circle div {
+.circle, .letter {
 	transform-origin: center;
 	position: absolute;
 	aspect-ratio: 1;
@@ -45,10 +44,9 @@
 	left: 0;
 }
 
-.letter-circle div div {
+.letter {
 	border: 1px solid currentColor;
 	font-size: var(--circle-size, 20px);
-	font-family: Arial, sans-serif;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -58,4 +56,12 @@
 	display: flex;
 	margin: auto;
 	width: 2ch;
+}
+
+.circle.red {
+	color: rgb(var(--color-red));
+}
+
+.circle.green {
+	color: rgb(var(--color-green));
 }

@@ -13,10 +13,12 @@ const chartOuter = document.getElementById("letter-circles-outer");
 const radiusRange = document.getElementById("radius-range");
 const circlesRange = document.getElementById("circles-range");
 const fontSizeRange = document.getElementById("font-size-range");
+const redGreenCheck = document.getElementById("red-green-checkbox");
 const centerCircleCheckbox = document.getElementById("center-checkbox");
 const lettersInput = document.getElementById("letters-text");
 
 const randomLetter = () => Array.from(lettersInput.value ?? letters).aRandom();
+const redOrGreen = () => ["red", "green"].aRandom();
 
 const generateCircleCharts = (_, circles, radius) => {
 	radius = parseInt(radiusRange.value = radius ?? radiusRange.value);
@@ -33,9 +35,12 @@ const generateCircleChart = (elem, circles, radius) => {
 	wrapper.style.height = `${radius * 2}px`;
 	for (let i = 0; i < circles; i++) {
 		const rotation = 360 / circles * i;
-		const cell = document.createElement("div");
-		const text = document.createElement("div");
+		const cell = document.createElement("div").aWithClass('circle');
+		const text = document.createElement("div").aWithClass('letter');
 		cell.style.transform = `rotate(${rotation}deg)`;
+
+		redGreenCheck.checked ? cell.classList.add(redOrGreen()) : void(0);
+
 		cell.style.height = `${radius * 2}px`;
 		text.textContent = randomLetter();
 		text.style.transform = `rotate(-${rotation}deg)`;
@@ -47,6 +52,7 @@ const generateCircleChart = (elem, circles, radius) => {
 radiusRange.addEventListener("input", generateCircleCharts);
 circlesRange.addEventListener("input", generateCircleCharts);
 lettersInput.addEventListener("change", generateCircleCharts);
+redGreenCheck.addEventListener("change", generateCircleChart);
 generateCircleCharts(undefined, Consts.DEFAULT_CIRCLES, Consts.DEFAULT_RADIUS);
 
 const setCircleSize = (_, v) => root.style.setProperty('--circle-size', `${fontSizeRange.value = v ?? fontSizeRange.value}px`);

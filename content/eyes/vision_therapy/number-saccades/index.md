@@ -18,7 +18,8 @@ options = [
   { name = "Font Size", id = "font-size-select", type = "range", min = 50, max = "150" },
   { name = "Circles", id = "circles-select", type = "range", min = 6, max = "24" },
   { name = "Radius", id = "radius-select", type = "range", min = 225, max = "450" },
-  { name = "Center Circle?", id = "center-select", type = "checkbox" },
+  { name = "Center Circle", id = "center-select", type = "checkbox" },
+  { name = "Start at 1", id = "start-checkbox", type = "checkbox" },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++

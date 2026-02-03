@@ -49,7 +49,7 @@ gapRange.addEventListener('input', setGapRange);
 setGapRange(undefined, Consts.DEFAULT_GAP);
 
 const guess = () => window.alert(chart.childNodes.length === parseInt(guessText.value) ? 'Correct' : 'Incorrect');
-guessText.addEventListener('change', guess);
+guessText.addEventListener('keydown', (e) => e.key === 'Enter' ? guess() : void(0));
 
 redGreenCheck.addEventListener('change', generateLineChart);
 widthRange.addEventListener('change', generateLineChart);

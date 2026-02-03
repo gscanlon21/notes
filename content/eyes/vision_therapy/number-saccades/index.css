@@ -16,21 +16,35 @@
 	width: 100%;
 }
 
-#number-circle div {
+#number-circle.circle::after {
+	border: 1px solid currentColor;
+	font-size: var(--circle-size, 20px);
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	position: absolute;
+	aspect-ratio: 1;
+	display: flex;
+	margin: auto;
+	padding: 8px;
+	content: "X";
+	width: 2ch;
+	inset: 0;
+}
+
+.circle:not(#number-circle) {
 	position: absolute;
 	aspect-ratio: 1;
 }
 
-#number-circle div div {
+.number {
 	border: 1px solid currentColor;
 	font-size: var(--circle-size, 20px);
-	font-family: Arial, sans-serif;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
 	text-align: center;
 	border-radius: 50%;
-	aspect-ratio: 1;
 	aspect-ratio: 1;
 	display: flex;
 	margin: auto;
@@ -40,19 +54,10 @@
 	left: 0;
 }
 
-#number-circle.circle::after {
-	border: 1px solid currentColor;
-	font-size: var(--circle-size, 20px);
-	font-family: Arial, sans-serif;
-	border-radius: 50%;
-	position: absolute;
-	aspect-ratio: 1;
-	margin: auto;
-	padding: 8px;
-	content: "";
-	width: 2ch;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	top: 0;
+.circle.red {
+	color: rgb(var(--color-red));
+}
+
+.circle.green {
+	color: rgb(var(--color-green));
 }
