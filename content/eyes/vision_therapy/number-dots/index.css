@@ -33,3 +33,12 @@
 	display: flex;
 	padding: .1em;
 }
+
+.chart.start-at-one > .number-dot:last-child {
+	display: none;
+}
+
+
+.chart:not(.start-at-one) > .number-dot:first-child {
+	display: none;
+}
