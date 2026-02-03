@@ -13,6 +13,7 @@ const redGreenCheck = document.getElementById("red-green-checkbox");
 const gridRefCheck = document.getElementById("grid-reference-checkbox");
 const startCheck = document.getElementById("start-checkbox");
 const lettersInput = document.getElementById("letters-text");
+const regenerate = document.getElementById("regenerate");
 
 const randomLetter = () => Array.from(lettersInput.value ?? letters).aRandom();
 const redOrGreen = () => ["red", "green"].aRandom();
@@ -52,4 +53,5 @@ gridRefCheck.addEventListener('change', () => chart.aToggleClass('grid-reference
 redGreenCheck.addEventListener('change', generateHartChart);
 rowsColsRange.addEventListener('change', generateHartChart);
 lettersInput.addEventListener("change", generateHartChart);
+regenerate.addEventListener('click', generateHartChart);
 generateHartChart();

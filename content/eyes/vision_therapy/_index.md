@@ -9,6 +9,14 @@ updated = 2026-02-01
 site_version = 1
 toc_level = 2
 see_also = [
+  { title = "TODO: Form groups." },
+  { title = "TODO: Tranaglyph." },
+  { title = "TODO: Slap tap symbols." },
+  { title = "TODO: number saccades, center zero." },
+  { title = "TODO: number grid, a-j grid reference." },
+  { title = "TODO: line counting, custom width." },
+  { title = "TODO: fusion card." },
+  { title = "TODO: closed/open/flat, use background, not font." },
   { title = "TODO: Save/load form values in localstorage." },
   { title = "TODO: Save/load form values in querystring." },
   { title = "Permalink", href = "/vision-therapy" },

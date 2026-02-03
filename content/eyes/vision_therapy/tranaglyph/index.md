@@ -1,6 +1,6 @@
 +++
 title = "Tranaglyph"
-description = "Image generator for an aperture rule."
+description = "TODO."
 aliases = ["vision-therapy/tranaglyph"]
 updated = 2026-02-01
 
