@@ -1,13 +1,12 @@
 #line-counting {
-	width: 300px;
-	display: flex;
-	line-height: 1;
-	aspect-ratio: 1;
-	font-weight: 600;
-	text-align: center;
-	justify-self: center;
 	height: var(--height);
+	justify-self: center;
+	text-align: center;
+	font-weight: 600;
+	aspect-ratio: 1;
+	line-height: 1;
 	overflow: clip;
+	display: flex;
 }
 
 .line {

@@ -14,7 +14,6 @@ see_also = [
   { title = "TODO: Slap tap symbols." },
   { title = "TODO: number saccades, center zero." },
   { title = "TODO: number grid, a-j grid reference." },
-  { title = "TODO: line counting, custom width." },
   { title = "TODO: fusion card." },
   { title = "TODO: closed/open/flat, use background, not font." },
   { title = "TODO: Save/load form values in localstorage." },
