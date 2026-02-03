@@ -10,21 +10,20 @@ toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/barrel-card" },
   { title = "Barrel Card", href = "https://aworkoutaday.com/exercises?Name=Barrel+Card" },
-  { title = "Print Settings<br>☑ Background Graphics" },
+  { title = "Print Settings<br>☑ Background Graphics<br>Print both red & green sides." },
 ]
 options = [
   { name = "Red Color", id = "red-color", type = "color" },
   { name = "Green Color", id = "green-color", type = "color" },
-  { name = "Red/Green Images", id = "red-green-checkbox", type = "checkbox" },
+  { name = "Red or Green", id = "red-green-checkbox", type = "checkbox" },
   { name = "Gap", id = "gap-range", type = "range", min = 25, max = 250, step = 5 },
-  { name = "Image Size", id = "image-size-range", type = "range", min = 75, max = 125 },
+  { name = "Size", id = "size-range", type = "range", min = 25, max = 100 },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++
 
-# TODO
-
-<div id="aperture-image-wrapper">
-  <div id="aperture-image-left" class="aperture-image"></div>
-  <div id="aperture-image-right" class="aperture-image"></div>
+<div id="barrel-card" class="chart">
+  <div class="barrel small"></div>
+  <div class="barrel medium"></div>
+  <div class="barrel large"></div>
 </div>

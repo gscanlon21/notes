@@ -1,51 +1,32 @@
-#aperture-image-wrapper {
+#barrel-card {
 	justify-content: center;
-	align-content: start;
+	flex-direction: column;
+	align-content: center;
 	align-items: center;
-	overflow-x: auto;
 	gap: var(--gap);
-	flex-wrap: wrap;
 	display: flex;
-	height: 100%;
+	--scale: 1;
 }
 
-.aperture-image {
-	display: grid;
-	padding: 1rem;
-	overflow: clip;
-	line-height: 1;
-	aspect-ratio: 1;
-	font-weight: 600;
-	text-align: center;
-	width: min-content;
-	align-items: center;
-	justify-self: center;
-	gap: var(--image-gap);
-	grid-template-columns: repeat(3, 1fr);
+.barrel {
+	height: calc(1.75 * var(--size) * var(--scale));
+	width: calc(var(--size) * var(--scale));
+	background-color: rgb(var(--color));
 }
 
-.image {
-	height: var(--image-size);
-	background-color: currentColor;
-	mask-repeat: no-repeat;
-	mask-position: center;
-	justify-self: center;
-	mask-size: contain;
-	aspect-ratio: 1;
+.barrel.large {
+	border-radius: 30%;
+	--scale: 1;
 }
 
-.image.red {
-	color: rgb(var(--color-red));
+
+.barrel.medium {
+	border-radius: 20%;
+	--scale: 0.75;
 }
 
-.image.green {
-	color: rgb(var(--color-green));
-}
 
-.image.correct {
-	cursor: pointer;
-}
-
-.image.correct:hover {
-	filter: opacity(0.5);
+.barrel.small {
+	border-radius: 10%;
+	--scale: 0.5;
 }
