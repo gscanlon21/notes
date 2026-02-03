@@ -5,12 +5,12 @@ class Consts {
   static DEFAULT_LETTER_GAP = 10;
 }
 
+const arrows = ["┃", "━", "⬤"];
 const chart = document.getElementById("arrow-chart");
 const regenerate = document.getElementById("regenerate");
 const fontSizeRange = document.getElementById("font-size-select");
 const letterGapRange = document.getElementById("letter-gap-select");
 const redGreenCheck = document.getElementById("red-green-checkbox");
-const arrows = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 const randomArrow = () => arrows.aRandom();
 const redOrGreen = () => ["red", "green"].aRandom();
@@ -20,10 +20,10 @@ const generateArrowChart = () => {
 	chart.style.gridTemplateColumns = `repeat(${Consts.COLS}, 1fr)`;
 
 	for (let i = 0; i < Consts.ROWS * Consts.COLS; i++) {
-		const cell = document.createElement("div").aWithClass('arrow');
+		const cell = document.createElement("div").aWithClass('shape');
 
 		redGreenCheck.checked ? cell.classList.add(redOrGreen()) : void(0);
-		
+
 		cell.textContent = randomArrow();
 		chart.appendChild(cell);
 	}

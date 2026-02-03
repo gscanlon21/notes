@@ -1,17 +1,15 @@
 +++
-title = "Tranaglyph"
+title = "Single Target"
 description = "Image generator for an aperture rule."
-aliases = ["vision-therapy/tranaglyph"]
+aliases = ["vision-therapy/single-target"]
 updated = 2026-02-01
 
 [extra]
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "Permalink", href = "/vision-therapy/tranaglyph" },
-  { title = "Tranaglyph", href = "https://aworkoutaday.com/exercises?Name=Tranaglyph" },
+  { title = "Permalink", href = "/vision-therapy/single-target" },
   { title = "Print Settings<br>☑ Background Graphics" },
-  { title = "🄯 visiontherapy GNU AGPL v3<br>Images were copied over.", href = "https://github.com/visiontherapy/visiontherapy.github.io"},
 ]
 options = [
   { name = "Red Color", id = "red-color", type = "color" },
@@ -22,6 +20,8 @@ options = [
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++
+
+# TODO
 
 <div id="aperture-image-wrapper">
   <div id="aperture-image-left" class="aperture-image"></div>

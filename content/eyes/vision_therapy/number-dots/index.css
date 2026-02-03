@@ -1,9 +1,3 @@
-@media screen and (min-width: 100rem) {
-    :root {
-		--body-width: calc(100vw - 40rem);
-	}
-}
-
 #aperture-image-wrapper {
 	justify-content: center;
 	align-content: start;
