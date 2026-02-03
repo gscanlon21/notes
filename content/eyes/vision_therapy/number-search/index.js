@@ -35,8 +35,8 @@ const randomPosition = (number, width, height) => {
 };
 
 const generateNumberSearch = (_, count, gap) => {
-	count = numbersRange.value = count ?? numbersRange.value;
-	gap = gapRange.value = gap ?? gapRange.value;
+	count = numbersRange.value = count ?? parseInt(numbersRange.value);
+	gap = gapRange.value = gap ?? parseInt(gapRange.value);
 	chart.innerHTML = "";
 	
 	const placedNumbers = [];
@@ -69,10 +69,10 @@ const generateNumberSearch = (_, count, gap) => {
 	}
 };
 
-const setFontSizeRange = (_, v) => chart.style.fontSize = `${fontSizeRange.value = v ?? fontSizeRange.value}px`;
-fontSizeRange.addEventListener("input", setFontSizeRange);
-// Set the font size range before generating the search.
-setFontSizeRange(undefined, Consts.DEFAULT_FONT_SIZE);
+const setFontSize = (_, v) => chart.style.fontSize = `${fontSizeRange.value = v ?? fontSizeRange.value}px`;
+fontSizeRange.addEventListener("input", setFontSize);
+// Set the font size before generating the search.
+setFontSize(undefined, Consts.DEFAULT_FONT_SIZE);
 
 gapRange.addEventListener("input", generateNumberSearch);
 regenerate.addEventListener('click', generateNumberSearch);

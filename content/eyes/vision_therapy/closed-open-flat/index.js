@@ -1,42 +1,47 @@
 class Consts {
-  static ROWS = 10;
-  static COLS = 10;
-  static DEFAULT_FONT_SIZE = 40;
-  static DEFAULT_LETTER_GAP = 10;
+	static ROWS_COLS = 10;
+	static DEFAULT_GAP = 10; 
+	static DEFAULT_SIZE = 50;
 }
 
-const arrows = ["┃", "━", "⬤"];
-const chart = document.getElementById("arrow-chart");
+const shapes = ["horizontal", "vertical", "circle"];
+const chart = document.getElementById("chart");
 const regenerate = document.getElementById("regenerate");
-const fontSizeRange = document.getElementById("font-size-select");
-const letterGapRange = document.getElementById("letter-gap-select");
+const rowsColsRange = document.getElementById("row-col-range");
 const redGreenCheck = document.getElementById("red-green-checkbox");
+const sizeRange = document.getElementById("size-range");
+const gapRange = document.getElementById("gap-range");
 
-const randomArrow = () => arrows.aRandom();
+
+const randomShape = () => shapes.aRandom();
 const redOrGreen = () => ["red", "green"].aRandom();
 
-const generateArrowChart = () => {
+const generateChart = () => {
 	chart.innerHTML = null;
-	chart.style.gridTemplateColumns = `repeat(${Consts.COLS}, 1fr)`;
+	chart.style.gridTemplateColumns = `repeat(${Consts.ROWS_COLS}, 1fr)`;
 
-	for (let i = 0; i < Consts.ROWS * Consts.COLS; i++) {
-		const cell = document.createElement("div").aWithClass('shape');
+	for (let i = 0; i < Consts.ROWS_COLS * Consts.ROWS_COLS; i++) {
+		const cell = document.createElement("div").aWithClass('shape').aWithClass(randomShape());
 
 		redGreenCheck.checked ? cell.classList.add(redOrGreen()) : void(0);
 
-		cell.textContent = randomArrow();
 		chart.appendChild(cell);
 	}
 };
 
-const setFontSizeRange = (_, value) => chart.style.fontSize = `${fontSizeRange.value = value ?? fontSizeRange.value}px`;
-fontSizeRange.addEventListener("input", setFontSizeRange);
-setFontSizeRange(undefined, Consts.DEFAULT_FONT_SIZE);
+const setRowsCols = (_, v) => Consts.ROWS_COLS = rowsColsRange.value = parseInt(v ?? rowsColsRange.value);
+rowsColsRange.addEventListener('input', setRowsCols);
+setRowsCols(undefined, Consts.ROWS_COLS);
 
-const setLetterGapRange = (_, value) => chart.style.gap = `${letterGapRange.value = value ?? letterGapRange.value}px`;
-letterGapRange.addEventListener("input", setLetterGapRange);
-setLetterGapRange(undefined, Consts.DEFAULT_LETTER_GAP);
+const setSize = (_, v) => chart.style.setProperty('--size', `${sizeRange.value = v ?? sizeRange.value}px`);
+sizeRange.addEventListener("input", setSize);
+setSize(undefined, Consts.DEFAULT_SIZE);
 
-redGreenCheck.addEventListener('change', generateArrowChart);
-regenerate.addEventListener('click', generateArrowChart);
-generateArrowChart();
+const setGap = (_, v) => chart.style.gap = `${gapRange.value = v ?? gapRange.value}px`;
+gapRange.addEventListener("input", setGap);
+setGap(undefined, Consts.DEFAULT_GAP);
+
+redGreenCheck.addEventListener('change', generateChart);
+rowsColsRange.addEventListener('change', generateChart);
+regenerate.addEventListener('click', generateChart);
+generateChart();

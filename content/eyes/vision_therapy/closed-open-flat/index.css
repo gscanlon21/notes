@@ -2,19 +2,39 @@
 	height: 100%;
 }
 
-#arrow-chart {
+#chart {
 	display: grid;
 	line-height: 1;
 	aspect-ratio: 1;
-	font-weight: 600;
 	text-align: center;
-	width: min-content;
-	height: min-content;
 	justify-self: center;
 }
 
 .shape {
+	height: var(--size);
+	width: var(--size);
+	position: relative;
 	aspect-ratio: 1;
+}
+
+.shape::after {
+	background-color: currentColor;
+	position: absolute;
+	margin: auto;
+	content: '';
+	inset: 0;
+}
+
+.shape.horizontal::after {
+	height: calc(var(--size) * .15);
+}
+
+.shape.vertical::after {
+	width: calc(var(--size) * .15);
+}
+
+.shape.circle::after {
+	border-radius: 9in;	
 }
 
 .shape.red {

@@ -14,7 +14,7 @@ see_also = [
 options = [
   { name = "Red Color", id = "red-color", type = "color" },
   { name = "Green Color", id = "green-color", type = "color" },
-  { name = "Red/Green Arrows", id = "red-green-checkbox", type = "checkbox" },
+  { name = "Red/Green Numbers", id = "red-green-checkbox", type = "checkbox" },
   { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = "60" },
   { name = "Letter Gap", id = "letter-gap-select", type = "range", min = 1, max = "10" },
   { name = "Regenerate", id = "regenerate", type = "button" },
