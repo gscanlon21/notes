@@ -19,5 +19,5 @@ cd "C:\code\notes\content\submodule"; Get-ChildItem -Directory | ForEach-Object 
 ######
 ###### Build and Serve
 ```powershell
-cd "C:\code\notes\content\submodule"; Get-ChildItem -Directory | ForEach-Object { Set-Location $_.FullName; zola build; }; cd "C:\code\notes"; zola serve --debounce 2500;
+cd "C:\code\notes\content\submodule"; Get-ChildItem -Directory | ForEach-Object { Set-Location $_.FullName; zola build; }; cd "C:\code\notes"; zola serve --debounce 3000;
 ```

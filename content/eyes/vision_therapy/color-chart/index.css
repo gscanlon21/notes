@@ -2,25 +2,31 @@
 	height: 100%;
 }
 
+#decoding-chart {
+	justify-self: center;
+	text-align: center;
+	line-height: 1;
+	display: grid;
+	gap: 1em;
+}
+
 #arrow-chart {
 	display: grid;
 	line-height: 1;
 	aspect-ratio: 1;
-	font-weight: 600;
 	text-align: center;
-	width: min-content;
-	height: min-content;
 	justify-self: center;
 }
 
-.shape {
+.arrow {
+	overflow-y: clip;
 	aspect-ratio: 1;
 }
 
-.shape.red {
+.arrow.red {
 	color: rgb(var(--color-red));
 }
 
-.shape.green {
+.arrow.green {
 	color: rgb(var(--color-green));
 }
