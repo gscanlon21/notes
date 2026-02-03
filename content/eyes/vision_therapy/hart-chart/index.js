@@ -11,6 +11,7 @@ const fontSizeRange = document.getElementById("font-size-select");
 const letterGapRange = document.getElementById("letter-gap-select");
 const redGreenCheck = document.getElementById("red-green-checkbox");
 const gridRefCheck = document.getElementById("grid-reference-checkbox");
+const startCheck = document.getElementById("start-checkbox");
 const lettersInput = document.getElementById("letters-text");
 
 const randomLetter = () => Array.from(lettersInput.value ?? letters).aRandom();
@@ -44,6 +45,8 @@ setFontSize(undefined, Consts.DEFAULT_FONT_SIZE);
 const setLetterGap = (_, v) => chart.style.gap = `${letterGapRange.value = v ?? letterGapRange.value}px`;
 letterGapRange.addEventListener('input', setLetterGap);
 setLetterGap(undefined, Consts.DEFAULT_LETTER_GAP);
+
+startCheck.addEventListener('change', () => chart.aToggleClass('start-at-one'));
 
 gridRefCheck.addEventListener('change', () => chart.aToggleClass('grid-reference'));
 redGreenCheck.addEventListener('change', generateHartChart);

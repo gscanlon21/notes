@@ -32,6 +32,10 @@
 	padding-block-start: 2em;
 }
 
+.chart.grid-reference.start-at-one {
+	counter-increment: row col;
+}
+
 .chart.grid-reference > .letter.ref::after {
 	counter-increment: row;
 	content: counter(row);
