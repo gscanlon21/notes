@@ -12,14 +12,93 @@
 	justify-self: center;
 }
 
-.symbol {
-	aspect-ratio: 1;
-}
-
 .symbol.red {
 	color: rgb(var(--color-red));
 }
 
 .symbol.green {
 	color: rgb(var(--color-green));
+}
+
+.symbol {	
+	aspect-ratio: 1;
+	position: relative;
+	width: calc(var(--size) * 2);
+	height: calc(var(--size) * 3);
+
+	background-size: 2px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to bottom, currentColor);
+}
+
+
+.right-hand:not(.left-hand)::before {
+	border-radius: 0 var(--size) var(--size) 0;
+	border: 2px solid currentColor;
+	height: var(--size);
+	width: var(--size);
+	position: absolute;
+	border-left: none;
+	content: "";
+	left: 50%;
+	top: 0;
+}
+
+.left-hand:not(.right-hand)::before {
+	border-radius: var(--size) 0 0 var(--size);
+	border: 2px solid currentColor;
+	height: var(--size);
+	width: var(--size);
+	position: absolute;
+	border-right: none;
+	content: "";
+	right: 50%;
+	top: 0;
+}
+
+.right-foot:not(.left-foot)::after {
+	border-radius: 0 var(--size) var(--size) 0;
+	border: 2px solid currentColor;
+	height: var(--size);
+	width: var(--size);
+	position: absolute;
+	border-left: none;
+	content: "";
+	bottom: 0;
+	left: 50%;
+}
+
+.left-foot:not(.right-foot)::after {
+	border-radius: var(--size) 0 0 var(--size);
+	border: 2px solid currentColor;
+	height: var(--size);
+	width: var(--size);
+	position: absolute;
+	border-right: none;
+	content: "";
+	bottom: 0;
+	right: 50%;
+}
+
+.left-hand.right-hand::before {
+	border-radius: var(--size);
+	border: 2px solid currentColor;
+	height: var(--size);
+	position: absolute;
+	content: "";
+	right: 0;
+	left: 0;
+	top: 0;
+}
+
+.left-foot.right-foot::after {
+	border-radius: var(--size);
+	border: 2px solid currentColor;
+	height: var(--size);
+	position: absolute;
+	content: "";
+	bottom: 0;
+	right: 0;
+	left: 0;
 }

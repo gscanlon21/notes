@@ -37,6 +37,6 @@ const setLetterGapRange = (_, value) => chart.style.gap = `${letterGapRange.valu
 letterGapRange.addEventListener("input", setLetterGapRange);
 setLetterGapRange(undefined, Consts.DEFAULT_LETTER_GAP);
 
-redGreenCheck.addEventListener('click', generateShapeChart);
+redGreenCheck.addEventListener('change', generateShapeChart);
 regenerate.addEventListener('click', generateShapeChart);
 generateShapeChart();

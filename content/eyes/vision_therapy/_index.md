@@ -11,7 +11,6 @@ toc_level = 2
 see_also = [
   { title = "TODO: Form groups." },
   { title = "TODO: Tranaglyph." },
-  { title = "TODO: Slap tap symbols." },
   { title = "TODO: number grid, a-j grid reference." },
   { title = "TODO: fusion card." },
   { title = "Permalink", href = "/vision-therapy" },
