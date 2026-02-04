@@ -10,7 +10,6 @@
 	width: min-content;
 	position: relative;
 	justify-self: center;
-	counter-reset: row -1 col -1;
 }
 
 .letter {
@@ -27,27 +26,13 @@
 }
 
 
-.chart.grid-reference {
-	padding-inline-start: 2em;
-	padding-block-start: 2em;
+.ref.row {
+	grid-column-start: 1;
+	text-align: start;
+	width: 2em;
 }
 
-.chart.grid-reference.start-at-one {
-	counter-increment: row col;
-}
-
-.chart.grid-reference > .letter.ref::after {
-	counter-increment: row;
-	content: counter(row);
-	position: absolute;
-	font-size: 1em;
-	left: 0;
-}
-
-.chart.grid-reference > .letter.ref::before {
-	counter-increment: col;
-	content: counter(col);
-	position: absolute;
-	font-size: 1em;
-	top: 0;
+.ref.col {
+	grid-row-start: 1;
+	height: 2em;
 }

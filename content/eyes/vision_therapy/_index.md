@@ -9,10 +9,9 @@ updated = 2026-02-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "TODO: Form groups." },
   { title = "TODO: Tranaglyph." },
-  { title = "TODO: number grid, a-j grid reference." },
-  { title = "TODO: fusion card." },
+  { title = "TODO: Fusion Card." },
+  { title = "TODO: Form Groups." },
   { title = "Permalink", href = "/vision-therapy" },
   { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
   { title = "Font Family: Optician Sans", href = "https://github.com/anewtypeofinterference/Optician-Sans" },

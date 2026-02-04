@@ -2,25 +2,37 @@
 	height: 100%;
 }
 
-#arrow-chart {
+#number-chart {
 	display: grid;
 	line-height: 1;
 	aspect-ratio: 1;
-	font-weight: 600;
 	text-align: center;
 	width: min-content;
+	position: relative;
 	justify-self: center;
+	counter-reset: row -1 col -1;
 }
 
-.arrow {
+.number {
 	overflow-y: clip;
 	aspect-ratio: 1;
 }
 
-.arrow.red {
+.number.red {
 	color: rgb(var(--color-red));
 }
 
-.arrow.green {
+.number.green {
 	color: rgb(var(--color-green));
+}
+
+.ref.row {
+	grid-column-start: 1;
+	text-align: start;
+	width: 2em;
+}
+
+.ref.col {
+	grid-row-start: 1;
+	height: 2em;
 }

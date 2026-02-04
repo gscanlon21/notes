@@ -4,6 +4,7 @@ class Consts {
   static DEFAULT_LETTER_GAP = 10;
 }
 
+const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
 const letters = "ABCDEFGHJKLMNOPQRSTUVWXYZ";
 const chart = document.getElementById("hart-chart");
 const rowsColsRange = document.getElementById("row-col-range");
@@ -20,12 +21,29 @@ const redOrGreen = () => ["red", "green"].aRandom();
 
 const generateHartChart = () => {
 	chart.innerHTML = null;
-	chart.style.gridTemplateColumns = `repeat(${Consts.ROWS_COLS}, 1fr)`;
+	chart.style.gridTemplateColumns = `repeat(${Consts.ROWS_COLS + (gridRefCheck.checked ? 1 : 0)}, 1fr)`;
 	
+	const rowRefNumbers = Array.from(numbers).toReversed();
+	const colRefNumbers = Array.from(numbers).toReversed();
 	for (let i = 0; i < Consts.ROWS_COLS * Consts.ROWS_COLS; i++) {
 		const cell = document.createElement("div").aWithClass('letter');
-		if (i % (Consts.ROWS_COLS + 1) === 0) {
-			cell.aWithClass('ref');
+		
+		if (gridRefCheck.checked && i === 0) {
+			const ref = document.createElement("div").aWithClass('ref').aWithClass('row').aWithClass('col');
+			if (startCheck.checked) {
+				rowRefNumbers.pop();
+				colRefNumbers.pop();
+			}
+			chart.appendChild(ref);
+		}
+
+		if (gridRefCheck.checked && i % (Consts.ROWS_COLS) === 0) {
+			const rowRef = document.createElement("div").aWithClass('ref').aWithClass('row');
+			rowRef.textContent = rowRefNumbers.pop();
+			chart.appendChild(rowRef);
+			const colRef = document.createElement("div").aWithClass('ref').aWithClass('col');
+			colRef.textContent = colRefNumbers.pop();
+			chart.appendChild(colRef);
 		}
 
 		redGreenCheck.checked ? cell.classList.add(redOrGreen()) : void(0);
@@ -49,9 +67,10 @@ setLetterGap(undefined, Consts.DEFAULT_LETTER_GAP);
 
 startCheck.addEventListener('change', () => chart.aToggleClass('start-at-one'));
 
-gridRefCheck.addEventListener('change', () => chart.aToggleClass('grid-reference'));
 redGreenCheck.addEventListener('change', generateHartChart);
 rowsColsRange.addEventListener('change', generateHartChart);
+gridRefCheck.addEventListener('change', generateHartChart);
 lettersInput.addEventListener("change", generateHartChart);
+startCheck.addEventListener('change', generateHartChart);
 regenerate.addEventListener('click', generateHartChart);
 generateHartChart();
