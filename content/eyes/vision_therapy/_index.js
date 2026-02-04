@@ -41,36 +41,30 @@ options.addEventListener('change', () => {
 	localStorage.setItem(Consts.STORAGE_KEY, JSON.stringify(formDataOverwrites));
 });
 
-// Load querystring.
-setTimeout(() => {
-	const setField = (field, value) => {
-		if (field.type === 'checkbox') {
-			field.checked = value === 'on' || value === 'true' || value === field.value;
-		} else {
-			field.value = value;
-		}
-
-		field.dispatchEvent(new Event('input'));
-		field.dispatchEvent(new Event('change'));
+// Set the form field value from saved form data.
+const setField = (field, value) => {
+	if (field.type === 'checkbox') {
+		field.checked = value === 'on' || value === 'true' || value === field.value;
+	} else {
+		field.value = value;
 	}
+}
 
-	const source = window.location.search 
-		? new URLSearchParams(window.location.search) 
-		: Object.entries(JSON.parse(localStorage.getItem(Consts.STORAGE_KEY)));
+// Load from querystring, then localstorage.
+const source = window.location.search 
+	? new URLSearchParams(window.location.search) 
+	: Object.entries(JSON.parse(localStorage.getItem(Consts.STORAGE_KEY)));
 
-	for (const [name, value] of source) {
-		const fields = options.elements[name];
-		if (fields) {
-			if (fields.length) {
-				for (const field of fields) {
-					setField(field, value);
-				}
-			} else {
-				setField(fields, value);
+// Set the form field values from source. 
+for (const [name, value] of source) {
+	const fields = options.elements[name];
+	if (fields) {
+		if (fields.length) {
+			for (const field of fields) {
+				setField(field, value);
 			}
+		} else {
+			setField(fields, value);
 		}
 	}
-}, 0);
-
-
-
+}
