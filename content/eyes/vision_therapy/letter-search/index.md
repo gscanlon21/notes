@@ -11,8 +11,8 @@ see_also = [
   { title = "Permalink", href = "/vision-therapy/letter-search" },
 ]
 options = [
-  { name = "Red Color", id = "red-color", type = "color" },
-  { name = "Green Color", id = "green-color", type = "color" },
+  { name = "Red Color", id = "red-color", type = "color", value = "#ff0000" },
+  { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Red/Green Letters", id = "red-green-checkbox", type = "checkbox" },
   { name = "Letters", id = "letters-text", type = "text", value = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" },
   { name = "Density", id = "letters-range", type = "range", min = 10, max = 100, value = 50 },

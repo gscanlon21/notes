@@ -13,8 +13,8 @@ see_also = [
   { title = "Print Settings<br>☑ Background Graphics" },
 ]
 options = [
-  { name = "Red Color", id = "red-color", type = "color" },
-  { name = "Green Color", id = "green-color", type = "color" },
+  { name = "Red Color", id = "red-color", type = "color", value = "#ff0000" },
+  { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Red/Green Lines", id = "red-green-checkbox", type = "checkbox" },
   { name = "Line Height", id = "height-range", type = "range", min = 25, max = 250, step = 5, value = 50 },
   { name = "Line Gap", id = "gap-range", type = "range", min = 1, max = 10, value = 10 },

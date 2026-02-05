@@ -14,8 +14,8 @@ see_also = [
   { title = "🄯 visiontherapy GNU AGPL v3<br>Images were copied over.", href = "https://github.com/visiontherapy/visiontherapy.github.io"},
 ]
 options = [
-  { name = "Red Color", id = "red-color", type = "color" },
-  { name = "Green Color", id = "green-color", type = "color" },
+  { name = "Red Color", id = "red-color", type = "color", value = "#ff0000" },
+  { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Red/Green Images", id = "red-green-checkbox", type = "checkbox" },
   { name = "Gap", id = "gap-range", type = "range", min = 25, max = 250, step = 5, value = 25 },
   { name = "Image Size", id = "image-size-range", type = "range", min = 75, max = 125, value = 75 },

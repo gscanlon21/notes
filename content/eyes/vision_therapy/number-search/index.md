@@ -12,8 +12,8 @@ see_also = [
   { title = "Central-Peripheral Scattered Numbers", href = "https://aworkoutaday.com/exercises?Name=Central-Peripheral+Scattered+Numbers" },
 ]
 options = [
-  { name = "Red Color", id = "red-color", type = "color" },
-  { name = "Green Color", id = "green-color", type = "color" },
+  { name = "Red Color", id = "red-color", type = "color", value = "#ff0000" },
+  { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Red/Green Numbers", id = "red-green-checkbox", type = "checkbox" },
   { name = "Density", id = "numbers-range", type = "range", min = 10, max = 100, value = 50 },
   { name = "Font Size", id = "font-size-range", type = "range", min = 10, max = 75, value = 37 },

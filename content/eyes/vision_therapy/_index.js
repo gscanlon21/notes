@@ -1,6 +1,4 @@
 class Consts {
-	static DEFAULT_RED_COLOR = '#ff0000';
-	static DEFAULT_GREEN_COLOR = '#008000';
 	static get STORAGE_KEY() { return 'VT_OPTIONS' };
 }
 
@@ -15,15 +13,6 @@ const toRGB = (hex) => {
 	const b = parseInt(hex.substr(5,2), 16)
 	return `${r},${g},${b}`;
 }
-  
-
-const setRedColor = (_, v) => root.style.setProperty('--color-red', toRGB(redColor.value = v ?? redColor.value));
-redColor ? setRedColor(undefined, Consts.DEFAULT_RED_COLOR) : void(0);
-redColor?.addEventListener("input", setRedColor);
-
-const setGreenColor = (_, v) => root.style.setProperty('--color-green', toRGB(greenColor.value = v ?? greenColor.value));
-greenColor ? setGreenColor(undefined, Consts.DEFAULT_GREEN_COLOR) : void(0);
-greenColor?.addEventListener("input", setGreenColor);
 
 // Update the permalink with the form values.
 options.addEventListener('change', () => {
@@ -68,3 +57,13 @@ for (const [name, value] of source) {
 		}
 	}
 }
+
+// Load shared form field values after loading from storage.
+const setGreenColor = () => root.style.setProperty('--color-green', toRGB(greenColor.value));
+greenColor?.addEventListener("input", setGreenColor);
+greenColor ? setGreenColor() : void(0);
+
+// Load shared form field values after loading from storage.
+const setRedColor = () => root.style.setProperty('--color-red', toRGB(redColor.value));
+redColor?.addEventListener("input", setRedColor);
+redColor ? setRedColor() : void(0);

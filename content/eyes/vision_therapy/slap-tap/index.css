@@ -110,80 +110,72 @@
 
 #slap-tap.alt .right-hand:not(.left-hand)::before {
 	border: var(--border-width) solid currentColor;
-	border-radius: 0 var(--size) var(--size) 0;
+	border-radius: var(--size);
 	width: calc(var(--size) * var(--scale));
-	border-left: none;
+	height: calc(var(--size) * var(--scale));
 	content: "";
 	left: 50%;
-	top: 0;
+	top: 10%;
 }
 
 #slap-tap.alt .left-hand:not(.right-hand)::before {
 	border: var(--border-width) solid currentColor;
-	border-radius: var(--size) 0 0 var(--size);
+	border-radius: var(--size);
 	width: calc(var(--size) * var(--scale));
-	border-right: none;
+	height: calc(var(--size) * var(--scale));
 	content: "";
 	right: 50%;
-	top: 0;
+	top: 10%;
 }
 
 #slap-tap.alt .right-foot:not(.left-foot)::after {
 	width: calc(var(--size) * var(--scale));
-	border-left: none;
+	height: calc(var(--size) * var(--scale));
 	content: "";
-	bottom: 0;
-	left: 50%;
-
-	background: transparent;
-	clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-	outline: var(--stroke) solid currentColor;
-	outline-offset: calc(-1 * var(--stroke));
-	mask: linear-gradient(currentColor 0 0) content-box, linear-gradient(currentColor 0 0);
-  	mask-composite: exclude;
-  	padding: var(--stroke);
+	position: absolute;
+	right: 0;
+	bottom: 10%;
+	background: currentColor;
+	mask: url('triangle.svg');
+	mask-position: bottom;
+	mask-repeat: no-repeat;
 }
 
 #slap-tap.alt .left-foot:not(.right-foot)::after {
 	width: calc(var(--size) * var(--scale));
+	height: calc(var(--size) * var(--scale));
 	content: "";
-	right: 50%;
-	bottom: 0;
 	position: absolute;
-	inset: 0;
-	background: transparent;
-	clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-	outline: var(--stroke) solid currentColor;
-	outline-offset: calc(-1 * var(--stroke));
-	mask: linear-gradient(currentColor 0 0) content-box, linear-gradient(currentColor 0 0);
-  	mask-composite: exclude;
-  	padding: var(--stroke);
+	left: 0;
+	bottom: 10%;
+	background: currentColor;
+	mask: url('triangle.svg');
+	mask-position: bottom;
+	mask-repeat: no-repeat;
 }
 
 #slap-tap.alt .left-hand.right-hand::before {
 	border-radius: var(--size);
 	border: var(--border-width) solid currentColor;
-	width: calc(var(--size) * calc(var(--scale) * 2));
+	width: calc(var(--size) * var(--scale));
+	height: calc(var(--size) * var(--scale));
 	margin: auto;
 	content: "";
 	right: 0;
 	left: 0;
-	top: 0;
+	top: 10%;
 }
 
 #slap-tap.alt .left-foot.right-foot::after {
-	width: calc(var(--size) * calc(var(--scale) * 2));
+	width: calc(var(--size) * calc(var(--scale) * 1));
 	margin: auto;
 	content: "";
-	bottom: 0;
+	bottom: 10%;
 	right: 0;
 	left: 0;
-
-	background: transparent;
-	clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-	outline: var(--stroke) solid currentColor;
-	outline-offset: calc(-1 * var(--stroke));
-	mask: linear-gradient(currentColor 0 0) content-box, linear-gradient(currentColor 0 0);
-  	mask-composite: exclude;
-  	padding: var(--stroke);
+	position: absolute;
+	background: currentColor;
+	mask: url('triangle.svg');
+	mask-position: bottom;
+	mask-repeat: no-repeat;
 }

@@ -13,8 +13,8 @@ see_also = [
   { title = "Military Saccades", href = "https://aworkoutaday.com/exercises?Name=Military+Saccades" },
 ]
 options = [
-  { name = "Red Color", id = "red-color", type = "color" },
-  { name = "Green Color", id = "green-color", type = "color" },
+  { name = "Red Color", id = "red-color", type = "color", value = "#ff0000" },
+  { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Red/Green Letters", id = "red-green-checkbox", type = "checkbox" },
   { name = "Start Grid Reference at 1", id = "start-checkbox", type = "checkbox" },
   { name = "Grid Reference Numbers", id = "grid-reference-checkbox", type = "checkbox" },
