@@ -10,14 +10,14 @@ const redGreenCheck = document.getElementById("red-green-checkbox");
 const sizeRange = document.getElementById("size-range");
 const gapRange = document.getElementById("gap-range");
 
-const setSize = (_, v) => root.style.setProperty('--size', `${sizeRange.value = v ?? sizeRange.value}px`);
+const setSize = () => root.style.setProperty('--size', `${sizeRange.value}px`);
 sizeRange.addEventListener('input', setSize);
-setSize(undefined, Consts.DEFAULT_SIZE);
+setSize();
 
-const setGap = (_, v) => root.style.setProperty('--gap', `${gapRange.value = v ?? gapRange.value}px`);
+const setGap = () => root.style.setProperty('--gap', `${gapRange.value}px`);
 gapRange.addEventListener('input', setGap);
-setGap(undefined, Consts.DEFAULT_GAP);
+setGap();
 
-const setColor = (_, v) => root.style.setProperty('--color', redGreenCheck.checked ? 'var(--color-green)' : 'var(--color-red)');
+const setColor = () => root.style.setProperty('--color', redGreenCheck.checked ? 'var(--color-green)' : 'var(--color-red)');
 redGreenCheck.addEventListener('change', setColor);
-setColor(undefined, Consts.DEFAULT_COLOR)
+setColor()

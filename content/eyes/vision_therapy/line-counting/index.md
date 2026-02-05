@@ -16,9 +16,9 @@ options = [
   { name = "Red Color", id = "red-color", type = "color" },
   { name = "Green Color", id = "green-color", type = "color" },
   { name = "Red/Green Lines", id = "red-green-checkbox", type = "checkbox" },
-  { name = "Line Height", id = "height-range", type = "range", min = 25, max = 250, step = 5 },
-  { name = "Line Gap", id = "gap-range", type = "range", min = 1, max = "10" },
-  { name = "Width", id = "width-range", type = "range", min = 10, max = 40 },
+  { name = "Line Height", id = "height-range", type = "range", min = 25, max = 250, step = 5, value = 50 },
+  { name = "Line Gap", id = "gap-range", type = "range", min = 1, max = 10, value = 10 },
+  { name = "Width", id = "width-range", type = "range", min = 10, max = 40, value = 25 },
   { name = "Guess?", id = "lines-text", type = "text", value = "" },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]

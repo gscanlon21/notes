@@ -1,8 +1,5 @@
 class Consts {
-	static DEFAULT_GAP = 25;
 	static MAX_ATTEMPTS = 10;
-	static DEFAULT_LETTERS = 50;
-	static DEFAULT_FONT_SIZE = 37;
 }
 
 const lLetters = "abcdefghijklmnopqrstuvwxyz";
@@ -72,14 +69,14 @@ const generateLetterSearch = (_, count, gap) => {
 	}
 };
 
-const setFontSize = (_, v) => chart.style.fontSize = `${fontSizeRange.value = v ?? fontSizeRange.value}px`;
+const setFontSize = () => chart.style.fontSize = `${fontSizeRange.value}px`;
 fontSizeRange.addEventListener("input", setFontSize);
 // Set the font size before generating the search.
-setFontSize(undefined, Consts.DEFAULT_FONT_SIZE);
+setFontSize();
 
 gapRange.addEventListener("input", generateLetterSearch);
 regenerate.addEventListener('click', generateLetterSearch);
 lettersRange.addEventListener("input", generateLetterSearch);
 lettersInput.addEventListener('change', generateLetterSearch);
 redGreenCheck.addEventListener('change', generateLetterSearch);
-generateLetterSearch(undefined, Consts.DEFAULT_LETTERS, Consts.DEFAULT_GAP);
+generateLetterSearch();

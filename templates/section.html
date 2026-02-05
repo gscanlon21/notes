@@ -32,17 +32,6 @@
 		</div>
 	</div>
 
-	<article id="content" class="section v{{ page.extra.site_version | default(value=1) }}">{{ section.content | safe }}</article>
-
-	{% set js = load_data(path=section.path ~ "_index.js", required=false) %}
-    {% if js %}<script type="module">{{ js | safe }}</script>{% endif %}
-
-	{% set css = load_data(path=section.path ~ "_index.css", required=false) %}
-	{% if css %}<style>{{ css | safe }}</style>{% endif %}
-
-	{% if lang != config.default_language %}
-		{% set submodule_path = section.path | split(pat=lang) | last %}
-		{% set noCss = load_data(path=submodule_path ~ "_index.no.css", required=false) %}
-		{% if noCss %}<style>{{ noCss | safe }}</style>{% endif %}
-	{% endif %}
+	{% set site_version = page.extra.site_version | default(value=1) %}
+	<article id="content" class="section v{{ site_version }}">{{ section.content | safe }}</article>
 {% endblock content %}

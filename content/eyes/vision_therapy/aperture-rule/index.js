@@ -1,8 +1,3 @@
-class Consts {
-	static get DEFAULT_GAP() { return navigator?.userAgentData?.mobile === false ? 100 : 25 };
- 	static get DEFAULT_IMAGE_SIZE() { return navigator?.userAgentData?.mobile === false ? 100 : 75 };
-}
-
 const root = document.getElementById("content");
 const regenerate = document.getElementById("regenerate");
 const chartLeft = document.getElementById("aperture-image-left");
@@ -32,13 +27,13 @@ const generateChart = () => {
 	chartRight.appendChild(right);
 };
 
-const setImageSize = (_, v) => root.style.setProperty('--image-size', `${imgSizeRange.value = v ?? imgSizeRange.value}px`);
+const setImageSize = () => root.style.setProperty('--image-size', `${imgSizeRange.value}px`);
 imgSizeRange.addEventListener('input', setImageSize);
-setImageSize(undefined, Consts.DEFAULT_IMAGE_SIZE);
+setImageSize();
 
-const setGap = (_, v) => root.style.setProperty('--gap', `${gapRange.value = v ?? gapRange.value}px`);
+const setGap = () => root.style.setProperty('--gap', `${gapRange.value}px`);
 gapRange.addEventListener('input', setGap);
-setGap(undefined, Consts.DEFAULT_GAP);
+setGap();
 
 generateChart();
 regenerate.addEventListener('click', generateChart);

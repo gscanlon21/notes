@@ -16,8 +16,9 @@ options = [
   { name = "Green Color", id = "green-color", type = "color" },
   { name = "Red/Green Numbers", id = "red-green-checkbox", type = "checkbox" },
   { name = "Grid Reference Letters", id = "grid-reference-checkbox", type = "checkbox" },
-  { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = "60" },
-  { name = "Letter Gap", id = "letter-gap-select", type = "range", min = 1, max = "10" },
+  { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = 60, value = 40 },
+  { name = "Letter Gap", id = "letter-gap-select", type = "range", min = 0, max = 10, value = 10 },
+  { name = "Rows & Columns", id = "row-col-range", type = "range", min = 2, max = 10, value = 10 },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++

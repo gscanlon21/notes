@@ -15,9 +15,9 @@ options = [
   { name = "Red Color", id = "red-color", type = "color" },
   { name = "Green Color", id = "green-color", type = "color" },
   { name = "Red/Green Numbers", id = "red-green-checkbox", type = "checkbox" },
-  { name = "Density", id = "numbers-range", type = "range", min = 10, max = 100 },
-  { name = "Font Size", id = "font-size-range", type = "range", min = 10, max = 75 },
-  { name = "Number Gap", id = "gap-range", type = "range", min = 10, max = 50 },
+  { name = "Density", id = "numbers-range", type = "range", min = 10, max = 100, value = 50 },
+  { name = "Font Size", id = "font-size-range", type = "range", min = 10, max = 75, value = 37 },
+  { name = "Number Gap", id = "gap-range", type = "range", min = 10, max = 50, value = 25 },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++

@@ -40,10 +40,10 @@ const regenerateImageSizes = () => {
 	}
 }
 
-const setSize = (_, v) => chart.style.setProperty('--size', `${sizeRange.value = v ?? sizeRange.value}px`);
+const setSize = () => chart.style.setProperty('--size', `${sizeRange.value}px`);
 sizeRange.addEventListener('change', regenerateImageSizes);
 sizeRange.addEventListener('input', setSize);
-setSize(undefined, Consts.DEFAULT_IMAGE_SIZE);
+setSize();
 
 generateChart();
 regenerate.addEventListener('click', generateChart);

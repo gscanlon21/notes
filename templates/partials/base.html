@@ -22,18 +22,45 @@
 
 	<link rel="stylesheet" type="text/css" href="{{ get_url(path="/site.css", cachebust=true) }}" media="all">
 	{% if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
-	<link rel="stylesheet" type="text/css" href="{{ get_url(path="/dark.css", cachebust=true) }}" media="(prefers-color-scheme: dark)" />
-	<link rel="stylesheet" type="text/css" href="{{ get_url(path="/light.css", cachebust=true) }}" media="(prefers-color-scheme: light)" />
+		<link rel="stylesheet" type="text/css" href="{{ get_url(path="/dark.css", cachebust=true) }}" media="(prefers-color-scheme: dark)" />
+		<link rel="stylesheet" type="text/css" href="{{ get_url(path="/light.css", cachebust=true) }}" media="(prefers-color-scheme: light)" />
+	{% endif %}
+
+	{% set parent_path = section.ancestors | default(value=page.ancestors | default(value=[])) | last %}
+	{% if parent_path %}
+		{% set parent_section = get_section(path=parent_path) %}
+
+		{% set parent_css = load_data(path=parent_section.path ~ "_index.css", required=false) %}
+		{% if parent_css %}<style>{{ parent_css | safe }}</style>{% endif %}
+	{% endif %}
+	
+    {% set css_path = section.path | default(value=page.path | default(value='')) %}
+	{% if css_path %}
+		{% set section_css = load_data(path=css_path ~ "_index.css", required=false) %}
+		{% if section_css %}<style>{{ section_css | safe }}</style>{% endif %}
+
+		{% set page_css = load_data(path=css_path ~ "index.css", required=false) %}
+		{% if page_css %}<style>{{ page_css | safe }}</style>{% endif %}
+	{% endif %}
+
+	{% if lang != config.default_language %}
+		{% set sub_path = section.path | default(value=page.path) | default(value=[]) | split(pat=lang) | last %}
+		
+		{% set sub_section_css = load_data(path=sub_path ~ "_index.no.css", required=false) %}
+		{% if sub_section_css %}<style>{{ sub_section_css | safe }}</style>{% endif %}
+		
+		{% set sub_page_css = load_data(path=sub_path ~ "index.no.css", required=false) %}
+		{% if sub_page_css %}<style>{{ sub_page_css | safe }}</style>{% endif %}
 	{% endif %}
 
 	<script defer src="{{ get_url(path="/elasticlunr.min.js", cachebust=true) }}"></script>
 	<script defer src="{{ get_url(path="/search_index." ~ config.default_language ~ ".js" , cachebust=true) }}"></script>
 
 	{% if lang != config.default_language %}
-	{% set submodule_path = current_path | split(pat="/content/") | first %}
-	<script defer src="{{ get_url(path="/scripts/lunr.stemmer.js", cachebust=true) }}"></script>
-	<script defer src="{{ get_url(path="/scripts/lunr." ~ lang ~ ".js", cachebust=true) }}"></script>
-	<script defer src="{{ submodule_path ~ "/public/search_index." ~ lang ~ ".js?h=" ~ get_hash(literal="" ~ get_random(start=0, end=99) ~ "") }}"></script>
+		{% set submodule_path = current_path | split(pat="/content/") | first %}
+		<script defer src="{{ get_url(path="/scripts/lunr.stemmer.js", cachebust=true) }}"></script>
+		<script defer src="{{ get_url(path="/scripts/lunr." ~ lang ~ ".js", cachebust=true) }}"></script>
+		<script defer src="{{ submodule_path ~ "/public/search_index." ~ lang ~ ".js?h=" ~ get_hash(literal="" ~ get_random(start=0, end=99) ~ "") }}"></script>
 	{% endif %}
 
 	<script defer src="{{ get_url(path="/scripts/search.js", cachebust=true) }}"></script>
@@ -41,7 +68,7 @@
 
 	{% if page.extra.stylesheets | default(value=section.extra.stylesheets) %}
 		{% for stylesheet in page.extra.stylesheets | default(value=section.extra.stylesheets) %}
-			{{ stylesheet | safe }}
+			<link href="{{ stylesheet | safe }}" rel="stylesheet">	
 		{% endfor %}
 	{% endif %}
 </head>
@@ -64,12 +91,29 @@
 	{% include "partials/footer.html" %}
 	{% endblock footer %}
 
+	{% set parent_section_path = section.ancestors | default(value=page.ancestors | default(value=[])) | last %}
+	{% if parent_section_path %}
+		{% set parent_section = get_section(path=parent_section_path) %}
+
+		{% set parent_js = load_data(path=parent_section.path ~ "_index.js", required=false) %}
+    	{% if parent_js %}<script type="module">{{ parent_js | safe }}</script>{% endif %}
+	{% endif %}	
+
+	{% set js_path = section.path | default(value=page.path | default(value='')) %}
+	{% if js_path %}
+		{% set section_js = load_data(path=js_path ~ "_index.js", required=false) %}
+		{% if section_js %}<script type="module">{{ section_js | safe }}</script>{% endif %}
+
+		{% set page_js = load_data(path=js_path ~ "index.js", required=false) %}
+		{% if page_js %}<script type="module">{{ page_js | safe }}</script>{% endif %}
+	{% endif %}	
+
 	{# For debugging purposes #}
 	{% if config.base_url == "http://127.0.0.1:1111" %}
-	<details id="templating-context">
-		<summary>Tera Context</summary>
-		<pre>{{ __tera_context }}</pre>
-	</details>
+		<details id="templating-context">
+			<summary>Tera Context</summary>
+			<pre>{{ __tera_context }}</pre>
+		</details>
 	{% endif %}
 </body>
 

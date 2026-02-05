@@ -1,9 +1,3 @@
-class Consts {
-	static DEFAULT_RADIUS = 250; 
-	static DEFAULT_CIRCLES = 8;
-	static DEFAULT_FONT_SIZE = 75;
-}
-
 const root = document.getElementById("content");
 const chart = document.getElementById("number-circle");
 const regenerate = document.getElementById("regenerate");
@@ -12,8 +6,7 @@ const startCheck = document.getElementById("start-checkbox");
 const redGreenCheck = document.getElementById("red-green-checkbox");
 const circlesRange = document.getElementById("circles-select");
 const fontSizeRange = document.getElementById("font-size-select");
-
-const centerCircleCheckbox = document.getElementById("center-select");
+const centerCheck = document.getElementById("center-select");
 
 const randomNumbers = (l) => Array.from({ length: l }, (_, i) => i + (startCheck.checked ? 1 : 0)).aShuffle();
 const redOrGreen = () => ["red", "green"].aRandom();
@@ -41,16 +34,17 @@ const generateCircleChart = (_, circles, radius) => {
 	}
 };
 
-const setCircleSize = (_, v) => root.style.setProperty('--circle-size', `${fontSizeRange.value = v ?? fontSizeRange.value}px`);
-fontSizeRange.addEventListener("input", setCircleSize);
-setCircleSize(undefined, Consts.DEFAULT_FONT_SIZE);
+const setFontSize = () => root.style.setProperty('--font-size', `${fontSizeRange.value}px`);
+fontSizeRange.addEventListener("input", setFontSize);
+setFontSize();
 
-const generateInnerCircle = () => centerCircleCheckbox.checked ? chart.classList.add('circle') : chart.classList.remove('circle');
-centerCircleCheckbox.addEventListener('change', generateInnerCircle);
+const setCenterCircle = () => chart.aToggleClass('circle', centerCheck.checked);
+centerCheck.addEventListener('change', setCenterCircle);
+setCenterCircle();
 
 regenerate.addEventListener('click', generateCircleChart);
 radiusRange.addEventListener("input", generateCircleChart);
 startCheck.addEventListener('change', generateCircleChart);
 circlesRange.addEventListener("input", generateCircleChart);
 redGreenCheck.addEventListener("change", generateCircleChart);
-generateCircleChart(undefined, Consts.DEFAULT_CIRCLES, Consts.DEFAULT_RADIUS);
+generateCircleChart();

@@ -5,7 +5,9 @@ const vergenceInput = document.querySelector("#vergence-input");
 const vergenceOutput = document.querySelector("#vergence-output");
 const scaleOutput = document.querySelector("#scale-output");
 
-vergenceInput.addEventListener('input', () => {
+onVergence();
+vergenceInput.addEventListener('input', onVergence);
+function onVergence() {
 	const slideValue = parseFloat(vergenceInput.value);
 	tranaglyph.style.setProperty("--delta", slideValue / 24 * 2.6);
 	
@@ -16,9 +18,11 @@ vergenceInput.addEventListener('input', () => {
 	} else {
 		vergenceOutput.innerText = "0";
 	}
-});
+}
 
-fusion.addEventListener('change', () => {
+onFusion();
+fusion.addEventListener('change', onFusion);
+function onFusion() {
 	if (fusion.checked) {
 		tranaglyph.style.setProperty("--glyphScale", "0.33");
 		tranaglyph.classList.add("fusion");
@@ -26,11 +30,13 @@ fusion.addEventListener('change', () => {
 		tranaglyph.style.setProperty("--glyphScale", "1");
 		tranaglyph.classList.remove("fusion");
 	}
-});
+}
 
-scaleInput.addEventListener('input', () => {
+onScale();
+scaleInput.addEventListener('input', onScale);
+function onScale() {
 	tranaglyph.style.setProperty("--scale", scaleInput.value);
 	scaleOutput.dataset.value = parseFloat(scaleInput.value).toFixed(2);
-});
+}
 
 vergenceInput.ontouchstart = scaleInput.ontouchstart = (e) => e.stopPropagation();

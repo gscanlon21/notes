@@ -1,8 +1,8 @@
-<div class="display--none">
+<div class="visibility--hidden">
 
 {% if page.extra.see_also | default(value=section.extra.see_also) %} 
 {% for also in page.extra.see_also | default(value=section.extra.see_also) %}
-  <div>{{ also.title }}</div>
+  <div class="display--none">{{ also.title }}</div>
 {% endfor %}
 {% endif %}
 

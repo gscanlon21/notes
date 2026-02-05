@@ -1,13 +1,11 @@
 class Consts {
-  static ROWS = 10;
-  static COLS = 10;
-  static DEFAULT_FONT_SIZE = 40;
-  static DEFAULT_LETTER_GAP = 10;
+	static ROWS_COLS = 10;
 }
 
 const arrows = ["↑", "↓", "←", "→"];
 const chart = document.getElementById("arrow-chart");
 const regenerate = document.getElementById("regenerate");
+const rowsColsRange = document.getElementById("row-col-range");
 const fontSizeRange = document.getElementById("font-size-select");
 const letterGapRange = document.getElementById("letter-gap-select");
 const redGreenCheck = document.getElementById("red-green-checkbox");
@@ -17,9 +15,9 @@ const redOrGreen = () => ["red", "green"].aRandom();
 
 const generateArrowChart = () => {
 	chart.innerHTML = null;
-	chart.style.gridTemplateColumns = `repeat(${Consts.COLS}, 1fr)`;
+	chart.style.gridTemplateColumns = `repeat(${Consts.ROWS_COLS}, 1fr)`;
 
-	for (let i = 0; i < Consts.ROWS * Consts.COLS; i++) {
+	for (let i = 0; i < Consts.ROWS_COLS * Consts.ROWS_COLS; i++) {
 		const cell = document.createElement("div").aWithClass('arrow');
 
 		redGreenCheck.checked ? cell.classList.add(redOrGreen()) : void(0);
@@ -29,14 +27,19 @@ const generateArrowChart = () => {
 	}
 };
 
-const setFontSizeRange = (_, value) => chart.style.fontSize = `${fontSizeRange.value = value ?? fontSizeRange.value}px`;
+const setFontSizeRange = () => chart.style.fontSize = `${fontSizeRange.value}px`;
 fontSizeRange.addEventListener("input", setFontSizeRange);
-setFontSizeRange(undefined, Consts.DEFAULT_FONT_SIZE);
+setFontSizeRange();
 
-const setLetterGapRange = (_, value) => chart.style.gap = `${letterGapRange.value = value ?? letterGapRange.value}px`;
+const setLetterGapRange = () => chart.style.gap = `${letterGapRange.value}px`;
 letterGapRange.addEventListener("input", setLetterGapRange);
-setLetterGapRange(undefined, Consts.DEFAULT_LETTER_GAP);
+setLetterGapRange();
+
+const setRowsCols = () => Consts.ROWS_COLS = parseInt(rowsColsRange.value);
+rowsColsRange.addEventListener('input', setRowsCols);
+setRowsCols();
 
 redGreenCheck.addEventListener('change', generateArrowChart);
+rowsColsRange.addEventListener('change', generateArrowChart);
 regenerate.addEventListener('click', generateArrowChart);
 generateArrowChart();

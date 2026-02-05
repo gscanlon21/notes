@@ -16,9 +16,9 @@ options = [
   { name = "Red Color", id = "red-color", type = "color" },
   { name = "Green Color", id = "green-color", type = "color" },
   { name = "Red/Green Shapes", id = "red-green-checkbox", type = "checkbox" },
-  { name = "Size", id = "size-range", type = "range", min = 10, max = "75" },
-  { name = "Gap", id = "gap-range", type = "range", min = 0, max = "50", step = 5 },
-  { name = "Rows & Columns", id = "row-col-range", type = "range", min = 2, max = "10" },
+  { name = "Size", id = "size-range", type = "range", min = 10, max = 75, value = 50 },
+  { name = "Gap", id = "gap-range", type = "range", min = 0, max = 50, step = 5, value = 25 },
+  { name = "Rows & Columns", id = "row-col-range", type = "range", min = 2, max = 10, value = 10 },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++

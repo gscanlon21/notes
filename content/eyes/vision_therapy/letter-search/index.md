@@ -15,9 +15,9 @@ options = [
   { name = "Green Color", id = "green-color", type = "color" },
   { name = "Red/Green Letters", id = "red-green-checkbox", type = "checkbox" },
   { name = "Letters", id = "letters-text", type = "text", value = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" },
-  { name = "Density", id = "letters-range", type = "range", min = 10, max = 100 },
-  { name = "Font Size", id = "font-size-range", type = "range", min = 10, max = 75 },
-  { name = "Letter Gap", id = "gap-range", type = "range", min = 10, max = 50 },
+  { name = "Density", id = "letters-range", type = "range", min = 10, max = 100, value = 50 },
+  { name = "Font Size", id = "font-size-range", type = "range", min = 10, max = 75, value = 37 },
+  { name = "Letter Gap", id = "gap-range", type = "range", min = 10, max = 50, value = 25 },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++

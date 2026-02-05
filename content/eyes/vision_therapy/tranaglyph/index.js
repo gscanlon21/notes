@@ -34,18 +34,18 @@ const generateChart = () => {
 
 const regenerateImageSizes = () => {
 	for (const child of [...Array.from(chartLeft.childNodes), ...Array.from(chartRight.childNodes)]) {
-		child.style.setProperty('--image-scale', newImageScale(imgSizeRange.value));
+		child.style.setProperty('--image-scale', imgSizeRange.value);
 	}
 }
 
-const setImageSize = (_, v) => root.style.setProperty('--image-size', `${imgSizeRange.value = v ?? imgSizeRange.value}px`);
+const setImageSize = () => root.style.setProperty('--image-size', `${imgSizeRange.value}px`);
 imgSizeRange.addEventListener('change', regenerateImageSizes);
 imgSizeRange.addEventListener('input', setImageSize);
-setImageSize(undefined, Consts.DEFAULT_IMAGE_SIZE);
+setImageSize();
 
-const setGap = (_, v) => root.style.setProperty('--gap', `${gapRange.value = v ?? gapRange.value}px`);
+const setGap = () => root.style.setProperty('--gap', `${gapRange.value}px`);
 gapRange.addEventListener('input', setGap);
-setGap(undefined, Consts.DEFAULT_GAP);
+setGap();
 
 generateChart();
 regenerate.addEventListener('click', generateChart);

@@ -27,7 +27,7 @@ options = [
 
 # TODO
 
-<div id="tranaglyph">
+<div id="tranaglyph" class="defer">
   <div id="left-eye" class="circle left red">
     <div class="inner circle"></div>
     <div class="center"></div>

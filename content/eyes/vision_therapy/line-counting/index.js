@@ -1,7 +1,5 @@
 class Consts {
-	static DEFAULT_GAP = 10; 
 	static DEFAULT_WIDTH = 25;
-	static DEFAULT_HEIGHT = 100;
 	static VARIABILITY = 0.25;
 }
 
@@ -36,20 +34,20 @@ const generateLineChart = () => {
 	}
 }
 
-const setWidth = (_, v) => Consts.DEFAULT_WIDTH = parseInt(widthRange.value = v ?? widthRange.value);
+const setWidth = () => Consts.DEFAULT_WIDTH = parseInt(widthRange.value);
 widthRange.addEventListener('input', setWidth);
-setWidth(undefined, Consts.DEFAULT_WIDTH);
+setWidth();
 
-const setHeight = (_, v) => root.style.setProperty('--height', `${heightRange.value = v ?? heightRange.value}px`);
+const setHeight = () => root.style.setProperty('--height', `${heightRange.value}px`);
 heightRange.addEventListener('input', setHeight);
-setHeight(undefined, Consts.DEFAULT_HEIGHT);
+setHeight();
 
-const setGapRange = (_, value) => chart.style.gap = `${gapRange.value = value ?? gapRange.value}px`;
+const setGapRange = () => chart.style.gap = `${gapRange.value}px`;
 gapRange.addEventListener('input', setGapRange);
-setGapRange(undefined, Consts.DEFAULT_GAP);
+setGapRange();
 
 const guess = () => window.alert(chart.childNodes.length === parseInt(guessText.value) ? 'Correct' : 'Incorrect');
-guessText.addEventListener('keydown', (e) => e.key === 'Enter' ? guess() : void(0));
+guessText.addEventListener('keydown', (e) => { e.preventDefault(); e.key === 'Enter' ? guess() : void(0); });
 
 redGreenCheck.addEventListener('change', generateLineChart);
 widthRange.addEventListener('change', generateLineChart);

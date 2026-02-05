@@ -4,13 +4,11 @@
 
 #number-chart {
 	display: grid;
+	overflow: clip;
 	line-height: 1;
-	aspect-ratio: 1;
 	text-align: center;
-	width: min-content;
 	position: relative;
 	justify-self: center;
-	counter-reset: row -1 col -1;
 }
 
 .number {
@@ -26,13 +24,34 @@
 	color: rgb(var(--color-green));
 }
 
+.number, .ref {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .ref.row {
-	grid-column-start: 1;
-	text-align: start;
-	width: 2em;
+	border-right: 2px solid currentColor;
+	grid-column: 2 / span 1;
+	padding-block-end: 1em;
+	margin-block-end: -1em;
+	box-sizing: border-box;
+	text-align: center;
 }
 
 .ref.col {
-	grid-row-start: 1;
-	height: 2em;
+	border-bottom: 2px solid currentColor;
+	padding-inline-end: 1em;
+	margin-inline-end: -1em;
+	box-sizing: border-box;
+	grid-row: 1 / span 2;
+}
+
+.ref.row.col {
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 2;
+	aspect-ratio: unset;
+	border: none;
+	padding: 0;
+	margin: 0;
 }

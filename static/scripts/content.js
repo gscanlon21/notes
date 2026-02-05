@@ -100,8 +100,15 @@ Object.defineProperty(HTMLDivElement.prototype, 'aWithClass', {
 
 // Toggle a class to an element and return the element.
 Object.defineProperty(HTMLDivElement.prototype, 'aToggleClass', {
-    value: function(value) { 
-		this.classList.contains(value) ? this.classList.remove(value) : this.classList.add(value);
+    value: function(value, match = undefined) { 
+		if (match === true) {
+			this.classList.add(value);
+		} else if (match === false) {
+			this.classList.remove(value);
+		} else {
+			this.classList.contains(value) ? this.classList.remove(value) : this.classList.add(value);
+		}
+		
 		return this;
 	}
 });

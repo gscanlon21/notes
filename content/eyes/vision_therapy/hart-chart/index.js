@@ -1,11 +1,9 @@
 class Consts {
-  static ROWS_COLS = 10;
-  static DEFAULT_FONT_SIZE = 40;
-  static DEFAULT_LETTER_GAP = 10;
+	static ROWS_COLS = 10;
 }
 
 const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
-const letters = "ABCDEFGHJKLMNOPQRSTUVWXYZ";
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const chart = document.getElementById("hart-chart");
 const rowsColsRange = document.getElementById("row-col-range");
 const fontSizeRange = document.getElementById("font-size-select");
@@ -21,7 +19,7 @@ const redOrGreen = () => ["red", "green"].aRandom();
 
 const generateHartChart = () => {
 	chart.innerHTML = null;
-	chart.style.gridTemplateColumns = `repeat(${Consts.ROWS_COLS + (gridRefCheck.checked ? 1 : 0)}, 1fr)`;
+	chart.style.gridTemplateColumns = `repeat(${Consts.ROWS_COLS + (gridRefCheck.checked ? 2 : 0)}, 1fr)`;
 	
 	const rowRefNumbers = Array.from(numbers).toReversed();
 	const colRefNumbers = Array.from(numbers).toReversed();
@@ -53,19 +51,21 @@ const generateHartChart = () => {
 	}
 }
 
-const setRowsCols = (_, v) => Consts.ROWS_COLS = rowsColsRange.value = parseInt(v ?? rowsColsRange.value);
+const setRowsCols = () => Consts.ROWS_COLS = parseInt(rowsColsRange.value);
 rowsColsRange.addEventListener('input', setRowsCols);
-setRowsCols(undefined, Consts.ROWS_COLS);
+setRowsCols();
 
-const setFontSize = (_, v) => chart.style.fontSize = `${fontSizeRange.value = v ?? fontSizeRange.value}px`;
-fontSizeRange.addEventListener('input', setFontSize);
-setFontSize(undefined, Consts.DEFAULT_FONT_SIZE);
+const setFontSize = () => chart.style.fontSize = `${fontSizeRange.value}px`;
+fontSizeRange.addEventListener("input", setFontSize);
+setFontSize();
 
-const setLetterGap = (_, v) => chart.style.gap = `${letterGapRange.value = v ?? letterGapRange.value}px`;
-letterGapRange.addEventListener('input', setLetterGap);
-setLetterGap(undefined, Consts.DEFAULT_LETTER_GAP);
+const setLetterGap = () => chart.style.gap = `${letterGapRange.value}px`;
+letterGapRange.addEventListener("input", setLetterGap);
+setLetterGap();
 
-startCheck.addEventListener('change', () => chart.aToggleClass('start-at-one'));
+const onStartCheck = () => chart.aToggleClass('start-at-one', startCheck.checked);
+startCheck.addEventListener('change', onStartCheck);
+onStartCheck()
 
 redGreenCheck.addEventListener('change', generateHartChart);
 rowsColsRange.addEventListener('change', generateHartChart);

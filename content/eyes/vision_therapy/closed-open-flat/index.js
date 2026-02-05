@@ -1,7 +1,5 @@
 class Consts {
 	static ROWS_COLS = 10;
-	static DEFAULT_GAP = 10; 
-	static DEFAULT_SIZE = 50;
 }
 
 const shapes = ["horizontal", "vertical", "circle"];
@@ -29,17 +27,17 @@ const generateChart = () => {
 	}
 };
 
-const setRowsCols = (_, v) => Consts.ROWS_COLS = rowsColsRange.value = parseInt(v ?? rowsColsRange.value);
+const setRowsCols = () => Consts.ROWS_COLS = parseInt(rowsColsRange.value);
 rowsColsRange.addEventListener('input', setRowsCols);
-setRowsCols(undefined, Consts.ROWS_COLS);
+setRowsCols();
 
-const setSize = (_, v) => chart.style.setProperty('--size', `${sizeRange.value = v ?? sizeRange.value}px`);
+const setSize = () => chart.style.setProperty('--size', `${sizeRange.value}px`);
 sizeRange.addEventListener("input", setSize);
-setSize(undefined, Consts.DEFAULT_SIZE);
+setSize();
 
-const setGap = (_, v) => chart.style.gap = `${gapRange.value = v ?? gapRange.value}px`;
+const setGap = () => chart.style.gap = `${gapRange.value}px`;
 gapRange.addEventListener("input", setGap);
-setGap(undefined, Consts.DEFAULT_GAP);
+setGap();
 
 redGreenCheck.addEventListener('change', generateChart);
 rowsColsRange.addEventListener('change', generateChart);

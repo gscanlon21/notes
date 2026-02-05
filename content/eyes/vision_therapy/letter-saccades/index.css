@@ -16,7 +16,7 @@
 
 #wrapper.circle::after {
 	border: 1px solid currentColor;
-	font-size: var(--circle-size, 20px);
+	font-size: var(--font-size, 20px);
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
@@ -46,7 +46,7 @@
 
 .letter {
 	border: 1px solid currentColor;
-	font-size: var(--circle-size, 20px);
+	font-size: var(--font-size, 20px);
 	justify-content: center;
 	align-items: center;
 	text-align: center;

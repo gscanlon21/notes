@@ -13,9 +13,9 @@ see_also = [
   { title = "Print Settings<br>☑ Background Graphics" },
 ]
 options = [
-  { name = "Font Size", id = "font-size-select", type = "range", min = 50, max = "150" },
-  { name = "Circles", id = "circles-select", type = "range", min = 6, max = "24" },
-  { name = "Radius", id = "radius-select", type = "range", min = 225, max = "450" },
+  { name = "Font Size", id = "font-size-select", type = "range", min = 50, max = 150, value = 75 },
+  { name = "Circles", id = "circles-select", type = "range", min = 6, max = 24, value = 8 },
+  { name = "Radius", id = "radius-select", type = "range", min = 225, max = 450, value = 250 },
   { name = "Center Circle?", id = "center-select", type = "checkbox" },
 ]
 +++

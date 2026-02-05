@@ -1,8 +1,5 @@
 class Consts {
-	static DEFAULT_GAP = 25;
 	static MAX_ATTEMPTS = 10;
-	static DEFAULT_NUMBERS = 50;
-	static DEFAULT_FONT_SIZE = 37;
 }
 
 const chart = document.getElementById("number-chart");
@@ -69,13 +66,13 @@ const generateNumberSearch = (_, count, gap) => {
 	}
 };
 
-const setFontSize = (_, v) => chart.style.fontSize = `${fontSizeRange.value = v ?? fontSizeRange.value}px`;
+const setFontSize = () => chart.style.fontSize = `${fontSizeRange.value}px`;
 fontSizeRange.addEventListener("input", setFontSize);
 // Set the font size before generating the search.
-setFontSize(undefined, Consts.DEFAULT_FONT_SIZE);
+setFontSize();
 
 gapRange.addEventListener("input", generateNumberSearch);
 regenerate.addEventListener('click', generateNumberSearch);
 numbersRange.addEventListener("input", generateNumberSearch);
 redGreenCheck.addEventListener("change", generateNumberSearch);
-generateNumberSearch(undefined, Consts.DEFAULT_NUMBERS, Consts.DEFAULT_GAP);
+generateNumberSearch();

@@ -91,23 +91,23 @@ const regenerateImageSizes = () => {
 	}
 }
 
-const setImageSize = (_, v) => root.style.setProperty('--image-size', `${imgSizeRange.value = v ?? imgSizeRange.value}px`);
+const setImageSize = () => root.style.setProperty('--image-size', `${imgSizeRange.value}px`);
 imgSizeRange.addEventListener('change', regenerateImageSizes);
 imgSizeRange.addEventListener('input', setImageSize);
-setImageSize(undefined, Consts.DEFAULT_IMAGE_SIZE);
+setImageSize();
 
-const setImageGap = (_, v) => root.style.setProperty('--image-gap', `${imgGapRange.value = v ?? imgGapRange.value}px`);
+const setImageGap = () => root.style.setProperty('--image-gap', `${imgGapRange.value}px`);
 imgGapRange.addEventListener('input', setImageGap);
-setImageGap(undefined, Consts.DEFAULT_IMAGE_GAP);
+setImageGap();
 
-const setRandomness = (_, v) => Consts.MAX_IMAGE_SCALE = parseInt(randomnessRange.value = v ?? randomnessRange.value);
+const setRandomness = () => Consts.MAX_IMAGE_SCALE = parseInt(randomnessRange.value);
 randomnessRange.addEventListener('change', regenerateImageSizes);
 randomnessRange.addEventListener('input', setRandomness);
-setRandomness(undefined, Consts.MAX_IMAGE_SCALE);
+setRandomness();
 
-const setGap = (_, v) => root.style.setProperty('--gap', `${gapRange.value = v ?? gapRange.value}px`);
+const setGap = () => root.style.setProperty('--gap', `${gapRange.value}px`);
 gapRange.addEventListener('input', setGap);
-setGap(undefined, Consts.DEFAULT_GAP);
+setGap();
 
 generateChart();
 regenerate.addEventListener('click', generateChart);

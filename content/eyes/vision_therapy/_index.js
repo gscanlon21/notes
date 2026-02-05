@@ -18,12 +18,12 @@ const toRGB = (hex) => {
   
 
 const setRedColor = (_, v) => root.style.setProperty('--color-red', toRGB(redColor.value = v ?? redColor.value));
+redColor ? setRedColor(undefined, Consts.DEFAULT_RED_COLOR) : void(0);
 redColor?.addEventListener("input", setRedColor);
-setRedColor(undefined, Consts.DEFAULT_RED_COLOR);
 
 const setGreenColor = (_, v) => root.style.setProperty('--color-green', toRGB(greenColor.value = v ?? greenColor.value));
+greenColor ? setGreenColor(undefined, Consts.DEFAULT_GREEN_COLOR) : void(0);
 greenColor?.addEventListener("input", setGreenColor);
-setGreenColor(undefined, Consts.DEFAULT_GREEN_COLOR);
 
 // Update the permalink with the form values.
 options.addEventListener('change', () => {
