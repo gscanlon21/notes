@@ -1,7 +1,7 @@
-const root = document.getElementById("content");
+const chart = document.getElementById("chart");
 const regenerate = document.getElementById("regenerate");
-const chartLeft = document.getElementById("aperture-image-left");
-const chartRight = document.getElementById("aperture-image-right");
+const chartLeft = document.getElementById("left-eye");
+const chartRight = document.getElementById("right-eye");
 const redGreenCheck = document.getElementById("red-green-checkbox");
 const imgSizeRange = document.getElementById("image-size-range");
 const gapRange = document.getElementById("gap-range");
@@ -14,27 +14,21 @@ const generateChart = () => {
 	chartRight.innerHTML = null;
 
 	const imageArr = getImageArray().aShuffle();
-	const left = document.createElement("div").aWithClass('image');
-	const right = document.createElement("div").aWithClass('image');
+	chartLeft.classList.add(redGreenCheck.checked ? 'red' : 'green');
+	chartRight.classList.add(redGreenCheck.checked ? 'green' : 'red');
 
-	left.classList.add(redGreenCheck.checked ? 'red' : 'green');
-	right.classList.add(redGreenCheck.checked ? 'green' : 'red');
-
-	left.style.backgroundImage = right.style.backgroundImage = `url(${getImage(imageArr.pop())})`;
-
-	chartLeft.appendChild(left);
-	chartRight.appendChild(right);
+	chartLeft.style.backgroundImage = chartRight.style.backgroundImage = `url(${getImage(imageArr.pop())})`;
 };
 
-const setImageSize = () => root.style.setProperty('--image-size', `${imgSizeRange.value}px`);
+const setImageSize = () => chart.style.setProperty('--image-size', `${imgSizeRange.value}px`);
 imgSizeRange.addEventListener('input', setImageSize);
 setImageSize();
 
-const setGap = () => root.style.setProperty('--gap', `${gapRange.value}px`);
+const setGap = () => chart.style.setProperty('--gap', `${gapRange.value}px`);
 gapRange.addEventListener('input', setGap);
 setGap();
 
-generateChart();
-regenerate.addEventListener('click', generateChart);
+chart.addEventListener('click', (e) => e.target.dataset.correct ? generateChart() : void(0));
 redGreenCheck.addEventListener('change', generateChart);
-root.addEventListener('click', (e) => e.target.dataset.correct ? generateChart() : void(0));
+regenerate.addEventListener('click', generateChart);
+generateChart();
