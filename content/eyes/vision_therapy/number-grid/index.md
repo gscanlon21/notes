@@ -12,7 +12,7 @@ see_also = [
   { title = "Sherman Numbers", href = "https://aworkoutaday.com/exercises?Name=Sherman+Numbers" },
 ]
 options = [
-  { name = "Red Color", id = "red-color", type = "color", value = "#ff0000" },
+  { name = "Red Color", id = "red-color", type = "color", value = "#FF0000" },
   { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Red/Green Numbers", id = "red-green-checkbox", type = "checkbox" },
   { name = "Grid Reference Letters", id = "grid-reference-checkbox", type = "checkbox" },

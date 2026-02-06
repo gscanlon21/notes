@@ -20,7 +20,7 @@
 	color: rgb(var(--color-green));
 }
 
-.symbol {	
+.chart:not(.alt) .symbol {	
 	--scale: 0.5;
 	--stroke: 3px;
 	--border-width: 3px;
@@ -35,15 +35,15 @@
 	background-image: linear-gradient(to bottom, currentColor);
 }
 
-#slap-tap:not(.alt) .symbol::after,
-#slap-tap:not(.alt) .symbol::before {
+.chart:not(.alt) .symbol::after,
+.chart:not(.alt) .symbol::before {
 	border: var(--border-width) solid currentColor;
 	box-sizing: border-box;
 	position: absolute;
 	height: var(--size);
 }
 
-#slap-tap:not(.alt) .right-hand:not(.left-hand)::before {
+.chart:not(.alt) .right-hand:not(.left-hand)::before {
 	border-radius: 0 var(--size) var(--size) 0;
 	width: calc(var(--size) * var(--scale));
 	border-left: none;
@@ -52,7 +52,7 @@
 	top: 0;
 }
 
-#slap-tap:not(.alt) .left-hand:not(.right-hand)::before {
+.chart:not(.alt) .left-hand:not(.right-hand)::before {
 	border-radius: var(--size) 0 0 var(--size);
 	width: calc(var(--size) * var(--scale));
 	border-right: none;
@@ -61,7 +61,7 @@
 	top: 0;
 }
 
-#slap-tap:not(.alt) .right-foot:not(.left-foot)::after {
+.chart:not(.alt) .right-foot:not(.left-foot)::after {
 	border-radius: 0 var(--size) var(--size) 0;
 	width: calc(var(--size) * var(--scale));
 	border-left: none;
@@ -70,7 +70,7 @@
 	left: 50%;
 }
 
-#slap-tap:not(.alt) .left-foot:not(.right-foot)::after {
+.chart:not(.alt) .left-foot:not(.right-foot)::after {
 	border-radius: var(--size) 0 0 var(--size);
 	width: calc(var(--size) * var(--scale));
 	border-right: none;
@@ -79,7 +79,7 @@
 	bottom: 0;
 }
 
-#slap-tap:not(.alt) .left-hand.right-hand::before {
+.chart:not(.alt) .left-hand.right-hand::before {
 	border-radius: var(--size);
 	width: calc(var(--size) * calc(var(--scale) * 2));
 	margin: auto;
@@ -89,7 +89,7 @@
 	top: 0;
 }
 
-#slap-tap:not(.alt) .left-foot.right-foot::after {
+.chart:not(.alt) .left-foot.right-foot::after {
 	border-radius: var(--size);
 	width: calc(var(--size) * calc(var(--scale) * 2));
 	margin: auto;
@@ -100,65 +100,65 @@
 }
 
 
+.chart.alt .symbol {
+	--scale: 0.75;
+	--border-width: 3px;
 
-#slap-tap.alt .symbol::after,
-#slap-tap.alt .symbol::before {
-	box-sizing: border-box;
-	position: absolute;
-	height: var(--size);
+	position: relative;
+	width: calc(var(--size) * calc(var(--scale) * 2));
+	height: calc(var(--size) * calc(var(--scale) * 4));
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: var(--border-width);
+	background-image: linear-gradient(to bottom, currentColor);
 }
 
-#slap-tap.alt .right-hand:not(.left-hand)::before {
-	border: var(--border-width) solid currentColor;
-	border-radius: var(--size);
-	width: calc(var(--size) * var(--scale));
+.chart.alt .symbol::after,
+.chart.alt .symbol::before {
 	height: calc(var(--size) * var(--scale));
+	width: calc(var(--size) * var(--scale));
+	background: currentColor;
+	mask-repeat: no-repeat;
+	box-sizing: border-box;
+	position: absolute;
+}
+
+.chart.alt .right-hand:not(.left-hand)::before {
+	mask-image: url('circle-bold.svg');
+	mask-position: bottom;
 	content: "";
 	left: 50%;
 	top: 10%;
 }
 
-#slap-tap.alt .left-hand:not(.right-hand)::before {
-	border: var(--border-width) solid currentColor;
-	border-radius: var(--size);
-	width: calc(var(--size) * var(--scale));
-	height: calc(var(--size) * var(--scale));
+.chart.alt .left-hand:not(.right-hand)::before {
+	mask-image: url('circle-bold.svg');
+	mask-position: bottom;
 	content: "";
 	right: 50%;
 	top: 10%;
 }
 
-#slap-tap.alt .right-foot:not(.left-foot)::after {
-	width: calc(var(--size) * var(--scale));
-	height: calc(var(--size) * var(--scale));
+.chart.alt .right-foot:not(.left-foot)::after {
+	mask-image: url('triangle-bold.svg');
+	mask-position: bottom;
 	content: "";
-	position: absolute;
+	bottom: 10%;
 	right: 0;
-	bottom: 10%;
-	background: currentColor;
-	mask: url('triangle.svg');
-	mask-position: bottom;
-	mask-repeat: no-repeat;
 }
 
-#slap-tap.alt .left-foot:not(.right-foot)::after {
-	width: calc(var(--size) * var(--scale));
-	height: calc(var(--size) * var(--scale));
+.chart.alt .left-foot:not(.right-foot)::after {
+	mask-image: url('triangle-bold.svg');
+	mask-position: bottom;
 	content: "";
-	position: absolute;
-	left: 0;
 	bottom: 10%;
-	background: currentColor;
-	mask: url('triangle.svg');
-	mask-position: bottom;
-	mask-repeat: no-repeat;
+	left: 0;
 }
 
-#slap-tap.alt .left-hand.right-hand::before {
-	border-radius: var(--size);
-	border: var(--border-width) solid currentColor;
-	width: calc(var(--size) * var(--scale));
-	height: calc(var(--size) * var(--scale));
+.chart.alt .left-hand.right-hand::before {
+	mask-image: url('circle-bold.svg');
+	mask-position: bottom;
 	margin: auto;
 	content: "";
 	right: 0;
@@ -166,16 +166,12 @@
 	top: 10%;
 }
 
-#slap-tap.alt .left-foot.right-foot::after {
-	width: calc(var(--size) * calc(var(--scale) * 1));
+.chart.alt .left-foot.right-foot::after {
+	mask-image: url('triangle-bold.svg');
+	mask-position: bottom;
 	margin: auto;
 	content: "";
 	bottom: 10%;
 	right: 0;
 	left: 0;
-	position: absolute;
-	background: currentColor;
-	mask: url('triangle.svg');
-	mask-position: bottom;
-	mask-repeat: no-repeat;
 }

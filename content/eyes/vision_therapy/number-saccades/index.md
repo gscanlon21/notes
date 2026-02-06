@@ -12,7 +12,7 @@ see_also = [
   { title = "Central-Peripheral Numbers", href = "https://aworkoutaday.com/exercises?Name=Central-Peripheral+Numbers" },
 ]
 options = [
-  { name = "Red Color", id = "red-color", type = "color", value = "#ff0000" },
+  { name = "Red Color", id = "red-color", type = "color", value = "#FF0000" },
   { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Red/Green Numbers", id = "red-green-checkbox", type = "checkbox" },
   { name = "Font Size", id = "font-size-select", type = "range", min = 50, max = 150, value = 75 },

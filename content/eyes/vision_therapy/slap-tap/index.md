@@ -13,7 +13,7 @@ see_also = [
   { title = "Phosphor Icons (Copy Raw)", href = "https://phosphoricons.com/" },
 ]
 options = [
-  { name = "Red Color", id = "red-color", type = "color", value = "#ff0000" },
+  { name = "Red Color", id = "red-color", type = "color", value = "#FF0000" },
   { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Red/Green Symbols", id = "red-green-checkbox", type = "checkbox" },
   { name = "Alternate Symbols", id = "alternate-checkbox", type = "checkbox" },
@@ -26,5 +26,5 @@ options = [
 +++
 
 {% table() %}
-<div id="slap-tap"></div>
+<div id="slap-tap" class="chart"></div>
 {% end %}

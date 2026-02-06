@@ -11,7 +11,7 @@ see_also = [
   { title = "Permalink", href = "/vision-therapy/shape-chart" },
 ]
 options = [
-  { name = "Red Color", id = "red-color", type = "color", value = "#ff0000" },
+  { name = "Red Color", id = "red-color", type = "color", value = "#FF0000" },
   { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Red/Green Shapes", id = "red-green-checkbox", type = "checkbox" },
   { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = 60, value = 40 },

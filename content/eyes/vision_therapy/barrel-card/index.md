@@ -13,7 +13,7 @@ see_also = [
   { title = "Print Settings<br>☑ Background Graphics<br>Print both red & green sides." },
 ]
 options = [
-  { name = "Red Color", id = "red-color", type = "color", value = "#ff0000" },
+  { name = "Red Color", id = "red-color", type = "color", value = "#FF0000" },
   { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Red or Green", id = "red-green-checkbox", type = "checkbox" },
   { name = "Gap", id = "gap-range", type = "range", min = 25, max = 250, step = 5 },

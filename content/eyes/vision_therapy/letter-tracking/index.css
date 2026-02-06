@@ -28,7 +28,7 @@
 	content: '';
 	position: absolute;
 	margin-left: -0.15ch;
-	/* Red + green == yellow */
+	/* Red + Green == Yellow */
 	mix-blend-mode: hard-light;
 	background-blend-mode: screen;
 	/* Gradient should overlay slightly */

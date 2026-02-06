@@ -1,11 +1,11 @@
 @media (prefers-color-scheme: dark) {
-    #tranaglyph:not(.fusion) > #right-eye {
+    #stereo-circles:not(.fusion) > #right-eye {
 		mix-blend-mode: difference;
 	}
 }
 
 @media (prefers-color-scheme: light) {
-    #tranaglyph:not(.fusion) > #right-eye {
+    #stereo-circles:not(.fusion) > #right-eye {
 		mix-blend-mode: darken;
 	}
 }
@@ -16,7 +16,7 @@
 	}
 }
 
-#tranaglyph {
+#stereo-circles {
 	--delta: 0;
 	--scale: 1;
 	--units: 1cm;
@@ -28,18 +28,18 @@
 	top: 3em;
 }
 
-#tranaglyph.fusion {
+#stereo-circles.fusion {
 	top: 0;
 
 	--color-red: var(--color-text);
 	--color-green: var(--color-text);
 }
 
-#tranaglyph.fusion .satellite {
+#stereo-circles.fusion .satellite {
 	display: none;
 }
 
-#tranaglyph.fusion .suppression-check {
+#stereo-circles.fusion .suppression-check {
 	border-width: calc(var(--bsize)/1.5);
 }
 
@@ -64,13 +64,13 @@
 
 #right-eye, #right-eye * {
 	--units: -1cm;
-	--tranaglyphColor: var(--color-green);
-	border-color: rgb(var(--tranaglyphColor));
+	--stereo-circlesColor: var(--color-green);
+	border-color: rgb(var(--stereo-circlesColor));
 }
 
 #left-eye, #left-eye * {
-	--tranaglyphColor: var(--color-red);
-	border-color: rgb(var(--tranaglyphColor));
+	--stereo-circlesColor: var(--color-red);
+	border-color: rgb(var(--stereo-circlesColor));
 }
 
 .inner {
@@ -122,7 +122,7 @@
 }
 
 .center::after, .center::before {
-	background-color: rgb(var(--tranaglyphColor));
+	background-color: rgb(var(--stereo-circlesColor));
 	height: calc(var(--glyphSize) * .035);
 	transform: translate(-50%, -50%);
 	position: absolute;
@@ -151,13 +151,13 @@
 	top: calc(var(--point) * (-1) - var(--bsize));
 	border-left: solid calc(var(--point) / 3) transparent;
 	border-right: solid calc(var(--point) / 3) transparent;
-	border-bottom: solid var(--point) rgb(var(--tranaglyphColor));
+	border-bottom: solid var(--point) rgb(var(--stereo-circlesColor));
 	border-top: none;
 }
 
 .points::after {
 	bottom: calc(var(--point) * (-1) - var(--bsize));
-	border-top: solid var(--point) rgb(var(--tranaglyphColor));
+	border-top: solid var(--point) rgb(var(--stereo-circlesColor));
 	border-bottom: none;
 	content: " ";
 	top: auto;

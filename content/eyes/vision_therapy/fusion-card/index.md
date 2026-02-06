@@ -14,7 +14,7 @@ see_also = [
   { title = "🄯 visiontherapy GNU AGPL v3<br>Slight changes in options.", href = "https://github.com/visiontherapy/visiontherapy.github.io"},
 ]
 options = [
-  { name = "Red Color", id = "red-color", type = "color", value = "#ff0000" },
+  { name = "Red Color", id = "red-color", type = "color", value = "#FF0000" },
   { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Fusion Mode", id = "fusion-input", type = "checkbox" },
   { name = "Scale", id = "scale-input", type = "range", min = 0.5, max = 3, step = 0.05, value = 1 },
