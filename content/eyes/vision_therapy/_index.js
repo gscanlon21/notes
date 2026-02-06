@@ -42,7 +42,7 @@ const setField = (field, value) => {
 // Load from querystring, then localstorage.
 const source = window.location.search 
 	? new URLSearchParams(window.location.search) 
-	: Object.entries(JSON.parse(localStorage.getItem(Consts.STORAGE_KEY)));
+	: Object.entries(JSON.parse(localStorage.getItem(Consts.STORAGE_KEY)) ?? {});
 
 // Set the form field values from source. 
 for (const [name, value] of source) {
