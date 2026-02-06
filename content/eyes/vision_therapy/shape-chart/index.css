@@ -13,8 +13,10 @@
 }
 
 .shape {
-	overflow-y: clip;
 	aspect-ratio: 1;
+	position: relative;
+	height: var(--size);
+	width: var(--size);
 }
 
 .shape.red {
@@ -23,4 +25,48 @@
 
 .shape.green {
 	color: rgb(var(--color-green));
+}
+
+.shape::after,
+.shape::before {
+	
+	background: currentColor;
+	mask-repeat: no-repeat;
+	box-sizing: border-box;
+	position: absolute;
+}
+
+.shape.circle::before {
+	mask-image: url('circle-fill.svg');
+	mask-position: bottom;
+	content: "";
+	inset: 0;
+}
+
+.shape.triangle::before {
+	mask-image: url('triangle-fill.svg');
+	mask-position: bottom;
+	content: "";
+	inset: 0;
+}
+
+.shape.diamond::before {
+	mask-image: url('diamond-fill.svg');
+	mask-position: bottom;
+	content: "";
+	inset: 0;
+}
+
+.shape.square::before {
+	mask-image: url('square-fill.svg');
+	mask-position: bottom;
+	content: "";
+	inset: 0;
+}
+
+.shape.star::before {
+	mask-image: url('star-fill.svg');
+	mask-position: bottom;
+	content: "";
+	inset: 0;
 }

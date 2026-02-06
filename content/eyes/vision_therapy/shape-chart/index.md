@@ -9,12 +9,14 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/shape-chart" },
+  { title = "Phosphor Icons (Copy Raw)", href = "https://phosphoricons.com/" },
+  { title = "Print Settings<br>☑ Background Graphics" },
 ]
 options = [
   { name = "Red Color", id = "red-color", type = "color", value = "#FF0000" },
   { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Red/Green Shapes", id = "red-green-checkbox", type = "checkbox" },
-  { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = 60, value = 40 },
+  { name = "Font Size", id = "font-size-select", type = "range", min = 10, max = 75, value = 50 },
   { name = "Letter Gap", id = "letter-gap-select", type = "range", min = 0, max = 25, value = 10 },
   { name = "Rows & Columns", id = "row-col-range", type = "range", min = 2, max = 10, value = 10 },
   { name = "Regenerate", id = "regenerate", type = "button" },

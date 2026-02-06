@@ -2,7 +2,7 @@ class Consts {
 	static ROWS_COLS = 8;
 }
 
-const shapes = ["⏺", "■", "▲", "◆", "★"];
+const shapes = ["circle", "square", "triangle", "diamond", "star"];
 const chart = document.getElementById("shape-chart");
 const regenerate = document.getElementById("regenerate");
 const rowsColsRange = document.getElementById("row-col-range");
@@ -22,14 +22,14 @@ const generateShapeChart = () => {
 
 		redGreenCheck.checked ? cell.classList.add(redOrGreen()) : void(0);
 
-		cell.textContent = randomShape();
+		cell.classList.add(randomShape());
 		chart.appendChild(cell);
 	}
 };
 
-const setFontSizeRange = () => chart.style.fontSize = `${fontSizeRange.value}px`;
-fontSizeRange.addEventListener("input", setFontSizeRange);
-setFontSizeRange();
+const setFontSize = () => chart.style.setProperty('--size', `${fontSizeRange.value}px`);
+fontSizeRange.addEventListener("input", setFontSize);
+setFontSize();
 
 const setLetterGapRange = () => chart.style.gap = `${letterGapRange.value}px`;
 letterGapRange.addEventListener("input", setLetterGapRange);
