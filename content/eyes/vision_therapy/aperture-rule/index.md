@@ -17,13 +17,13 @@ options = [
   { name = "Red Color", id = "red-color", type = "color", value = "#FF0000" },
   { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Red/Green Images", id = "red-green-checkbox", type = "checkbox" },
-  { name = "Gap", id = "gap-range", type = "range", min = 25, max = 250, step = 5, value = 25 },
+  { name = "Gap", id = "gap-range", type = "range", min = 25, max = 500, step = 5, value = 100 },
   { name = "Image Size", id = "image-size-range", type = "range", min = 75, max = 125, value = 75 },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++
 
-<div id="aperture-image-wrapper">
-  <div id="aperture-image-left" class="aperture-image"></div>
-  <div id="aperture-image-right" class="aperture-image"></div>
+<div id="chart" class="chart">
+  <div id="left-eye" class="image left"></div>
+  <div id="right-eye" class="image right"></div>
 </div>

@@ -11,6 +11,7 @@ see_also = [
   { title = "Permalink", href = "/vision-therapy/slap-tap" },
   { title = "Slap Tap", href = "https://aworkoutaday.com/exercises?Name=Slap+Tap" },
   { title = "Phosphor Icons (Copy Raw)", href = "https://phosphoricons.com/" },
+  { title = "Print Settings<br>☑ Background Graphics" },
 ]
 options = [
   { name = "Red Color", id = "red-color", type = "color", value = "#FF0000" },

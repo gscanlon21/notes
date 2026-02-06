@@ -79,7 +79,6 @@ const setGap = () => chart.style.setProperty('--gap', `${Math.abs(vergenceInput.
 vergenceInput.addEventListener('input', setGap);
 setGap();
 
-generateChart();
-regenerate.addEventListener('click', generateChart);
 redGreenCheck.addEventListener('change', generateChart);
-chart.addEventListener('click', (e) => e.target.dataset.correct ? generateChart() : void(0));
+regenerate.addEventListener('click', generateChart);
+generateChart();

@@ -4,7 +4,7 @@
 	}
 }
 
-#aperture-image-wrapper {
+.chart {
 	justify-content: center;
 	align-content: start;
 	align-items: center;
@@ -15,29 +15,20 @@
 	height: 100%;
 }
 
-.aperture-image {
-	display: grid;
-	padding: 1rem;
-	overflow: clip;
-	line-height: 1;
-	aspect-ratio: 1;
-	font-weight: 600;
-	text-align: center;
-	width: min-content;
-	align-items: center;
-	justify-self: center;
-	gap: var(--image-gap);
-	grid-template-columns: repeat(3, 1fr);
-}
-
 .image {
-	height: var(--image-size);
 	background-color: currentColor;
+	height: var(--image-size);
 	mask-repeat: no-repeat;
+	gap: var(--image-gap);
 	mask-position: center;
 	justify-self: center;
+	align-items: center;
 	mask-size: contain;
+	width: min-content;
+	text-align: center;
 	aspect-ratio: 1;
+	line-height: 1;
+	padding: 1rem;
 }
 
 .image.red {
@@ -46,12 +37,4 @@
 
 .image.green {
 	color: rgb(var(--color-green));
-}
-
-.image.correct {
-	cursor: pointer;
-}
-
-.image.correct:hover {
-	filter: opacity(0.5);
 }
