@@ -1,42 +1,40 @@
-const fusion = document.querySelector("#fusion-input");
-const tranaglyph = document.querySelector("#tranaglyph");
-const scaleInput = document.querySelector("#scale-input");
-const vergenceInput = document.querySelector("#vergence-input");
-const vergenceOutput = document.querySelector("#vergence-output");
-const scaleOutput = document.querySelector("#scale-output");
+const root = document.getElementById("content");
+const regenerate = document.getElementById("regenerate");
+const chartLeft = document.getElementById("aperture-image-left");
+const chartRight = document.getElementById("aperture-image-right");
+const redGreenCheck = document.getElementById("red-green-checkbox");
+const imgSizeRange = document.getElementById("image-size-range");
+const gapRange = document.getElementById("gap-range");
 
-onVergence();
-vergenceInput.addEventListener('input', onVergence);
-function onVergence() {
-	const slideValue = parseFloat(vergenceInput.value);
-	tranaglyph.style.setProperty("--delta", slideValue / 24 * 2.6);
-	
-	if (slideValue < 0) {
-		vergenceOutput.innerText = "C" + Math.abs(slideValue).toFixed(2);
-	} else if (slideValue > 0) {
-		vergenceOutput.innerText = "D" + Math.abs(slideValue).toFixed(2);
-	} else {
-		vergenceOutput.innerText = "0";
-	}
-}
+const getImageArray = () => Array.from({ length: 100 }, (_, i) => String(i + 1).padStart(3, "0"));
+const getImage = (number) => `./pdshape_${number}.png`;
 
-onFusion();
-fusion.addEventListener('change', onFusion);
-function onFusion() {
-	if (fusion.checked) {
-		tranaglyph.style.setProperty("--glyphScale", "0.33");
-		tranaglyph.classList.add("fusion");
-	} else {
-		tranaglyph.style.setProperty("--glyphScale", "1");
-		tranaglyph.classList.remove("fusion");
-	}
-}
+const generateChart = () => {
+	chartLeft.innerHTML = null;
+	chartRight.innerHTML = null;
 
-onScale();
-scaleInput.addEventListener('input', onScale);
-function onScale() {
-	tranaglyph.style.setProperty("--scale", scaleInput.value);
-	scaleOutput.dataset.value = parseFloat(scaleInput.value).toFixed(2);
-}
+	const imageArr = getImageArray().aShuffle();
+	const left = document.createElement("div").aWithClass('image');
+	const right = document.createElement("div").aWithClass('image');
 
-vergenceInput.ontouchstart = scaleInput.ontouchstart = (e) => e.stopPropagation();
+	left.classList.add(redGreenCheck.checked ? 'red' : 'green');
+	right.classList.add(redGreenCheck.checked ? 'green' : 'red');
+
+	left.style.backgroundImage = right.style.backgroundImage = `url(${getImage(imageArr.pop())})`;
+
+	chartLeft.appendChild(left);
+	chartRight.appendChild(right);
+};
+
+const setImageSize = () => root.style.setProperty('--image-size', `${imgSizeRange.value}px`);
+imgSizeRange.addEventListener('input', setImageSize);
+setImageSize();
+
+const setGap = () => root.style.setProperty('--gap', `${gapRange.value}px`);
+gapRange.addEventListener('input', setGap);
+setGap();
+
+generateChart();
+regenerate.addEventListener('click', generateChart);
+redGreenCheck.addEventListener('change', generateChart);
+root.addEventListener('click', (e) => e.target.dataset.correct ? generateChart() : void(0));

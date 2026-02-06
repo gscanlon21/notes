@@ -1,180 +1,92 @@
-@media (prefers-color-scheme: dark) {
-    #tranaglyph:not(.fusion) > #right-eye {
-		mix-blend-mode: difference;
-	}
-}
-
-@media (prefers-color-scheme: light) {
-    #tranaglyph:not(.fusion) > #right-eye {
-		mix-blend-mode: darken;
-	}
-}
-
 @media screen and (min-width: 100rem) {
     :root {
 		--body-width: calc(100vw - 40rem);
 	}
 }
 
-#tranaglyph {
-	--delta: 0;
-	--scale: 1;
-	--units: 1cm;
-	--glyphScale: 1;
-	--baseSize: calc(4in * var(--scale));
-	--glyphSize: calc(var(--baseSize) * var(--glyphScale));
-	min-height: calc(calc(var(--baseSize) * var(--glyphScale)) + 2in);
-	position: relative;
-	top: 3em;
+#aperture-image-wrapper {
+	justify-content: center;
+	align-content: start;
+	align-items: center;
+	overflow-x: auto;
+	gap: var(--gap);
+	flex-wrap: wrap;
+	display: flex;
+	height: 100%;
 }
 
-#tranaglyph.fusion {
-	top: 0;
-
-	--color-red: var(--color-text);
-	--color-green: var(--color-text);
-}
-
-#tranaglyph.fusion .satellite {
-	display: none;
-}
-
-#tranaglyph.fusion .suppression-check {
-	border-width: calc(var(--bsize)/1.5);
-}
-
-.circle, .center, .suppression-check {
-	--bsize: calc(var(--glyphSize) * 0.06);
-	border-radius: var(--glyphSize);
-	border: solid var(--bsize);
-}
-
-.circle, .center, .suppression-check, .points {
-	transform: translate(-50%);
-	height: var(--glyphSize);
-	width: var(--glyphSize);
-	position: absolute;
-	left: 50%;
-}
-
-#left-eye, #right-eye {
-	left: calc(50% + var(--delta) * var(--scale) * var(--units));
-	transform: translate(calc(-50% + var(--delta) * var(--scale) * var(--units)));
-}
-
-#right-eye, #right-eye * {
-	--units: -1cm;
-	--tranaglyphColor: var(--color-green);
-	border-color: rgb(var(--tranaglyphColor));
-}
-
-#left-eye, #left-eye * {
-	--tranaglyphColor: var(--color-red);
-	border-color: rgb(var(--tranaglyphColor));
-}
-
-.inner {
-	width: calc(var(--glyphSize) * .75);
-	height: calc(var(--glyphSize) * .75);
-	transform: translate(-47%, -50%);
-	top: 50%;
-}
-
-#right-eye .inner {
-	transform: translate(-53%, -50%);
-}
-
-#right-eye .satellite {
-	top: -10%;
-}
-
-#right-eye .suppression-check {
-	border-radius: 0.25cm;
-	top: 22%;
-}
-
-.satellite {
-	width: calc(var(--glyphSize) * .065);
-	height: calc(var(--glyphSize) * .065);
-	bottom: -10%;
-}
-
-.satellite.left {
-	left: -7%;
-}
-
-.satellite.right {
-	left: 107%;
-}
-
-.suppression-check {
-	width: calc(var(--baseSize) * .03);
-	height: calc(var(--baseSize) * .03);
-	bottom: 22%;
-}
-
-.center {
-	transform: translate(-50%, -50%);
-	width: calc(var(--glyphSize) * .22);
-	height: calc(var(--glyphSize) * .22);
-	border-width: 0;
-	top: 50%;
-}
-
-.center::after, .center::before {
-	background-color: rgb(var(--tranaglyphColor));
-	height: calc(var(--glyphSize) * .035);
-	transform: translate(-50%, -50%);
-	position: absolute;
-	content: " ";
-	width: 100%;
-	left: 50%;
-	top: 50%;
-}
-
-.center::after {
-	transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.center::before {
-	transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.points::before, .points::after {
-	width: 0;
-	height: 0;
-	left: 50%;
-	content: " ";
-	position: absolute;
-	transform: translate(-50%);
-	--point: calc(var(--baseSize) * 0.05);
-	top: calc(var(--point) * (-1) - var(--bsize));
-	border-left: solid calc(var(--point) / 3) transparent;
-	border-right: solid calc(var(--point) / 3) transparent;
-	border-bottom: solid var(--point) rgb(var(--tranaglyphColor));
-	border-top: none;
-}
-
-.points::after {
-	bottom: calc(var(--point) * (-1) - var(--bsize));
-	border-top: solid var(--point) rgb(var(--tranaglyphColor));
-	border-bottom: none;
-	content: " ";
-	top: auto;
-}
-
-.summary-item:has(#scale-output) {
-	text-indent: 0 !important;
-	padding: 0 !important;
-}
-
-#scale-output {
+.aperture-image {
+	display: grid;
+	padding: 1rem;
+	overflow: clip;
+	line-height: 1;
+	aspect-ratio: 1;
+	font-weight: 600;
 	text-align: center;
-	width: var(--baseSize);
-	border-left: 2px solid currentColor;
-	border-right: 2px solid currentColor;
+	width: min-content;
+	align-items: center;
+	justify-self: center;
+	gap: var(--image-gap);
+	grid-template-columns: repeat(3, 1fr);
 }
 
-#scale-output::after {
-	content: attr(data-value) "x";
+.image {
+	height: var(--image-size);
+	background-origin: content-box;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	justify-self: center;
+	position: relative;
+	aspect-ratio: 1;
+	padding: 2em;
+}
+
+.image.red::before {
+	border: 2px solid rgb(var(--color-red));
+	position: absolute;
+	content: '';
+	margin: auto;
+	height: 8px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 0;
+}
+
+.image.green::before {
+	border: 2px solid rgb(var(--color-green));
+	position: absolute;
+	content: '';
+	margin: auto;
+	height: 8px;
+	width: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+}
+
+.image.red::after {
+	border: 4px solid rgb(var(--color-red));
+	border-radius: 50%;
+	position: absolute;
+	content: '';
+	inset: 0;
+}
+
+.image.green::after {
+	border: 4px solid rgb(var(--color-green));
+	border-radius: 50%;
+	position: absolute;
+	content: '';
+	inset: 0;
+}
+
+.image.correct {
+	cursor: pointer;
+}
+
+.image.correct:hover {
+	filter: opacity(0.5);
 }

@@ -1,6 +1,6 @@
 +++
 title = "Fusion Card"
-description = "Stereo circles help train fusion, stereopsis, and binocularity."
+description = "Image generator for an aperture rule."
 aliases = ["vision-therapy/fusion-card"]
 updated = 2026-02-01
 
@@ -11,37 +11,19 @@ see_also = [
   { title = "Permalink", href = "/vision-therapy/fusion-card" },
   { title = "Fusion Card", href = "https://aworkoutaday.com/exercises?Name=Fusion+Card" },
   { title = "Print Settings<br>☑ Background Graphics" },
-  { title = "🄯 visiontherapy GNU AGPL v3<br>Slight changes in options.", href = "https://github.com/visiontherapy/visiontherapy.github.io"},
+  { title = "🄯 visiontherapy GNU AGPL v3<br>Images were copied over.", href = "https://github.com/visiontherapy/visiontherapy.github.io"},
 ]
 options = [
   { name = "Red Color", id = "red-color", type = "color", value = "#FF0000" },
   { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
-  { name = "Fusion Mode", id = "fusion-input", type = "checkbox" },
-  { name = "Scale", id = "scale-input", type = "range", min = 0.5, max = 3, step = 0.05, value = 1 },
-  { name = "Disparity", id = "vergence-input", type = "range", min = -24, max = 24, step = 0.05 },
-  { name = "Vergence:", id = "vergence-output", type = "output", value = "0" },
-  { name = "", id = "scale-display", type = "output", value = "Align the scale to 4in (10.16cm):" },
-  { name = "", id = "scale-output", type = "div", value = "1.00" },
+  { name = "Swap Red and Green", id = "red-green-checkbox", type = "checkbox" },
+  { name = "Gap", id = "gap-range", type = "range", min = 25, max = 250, step = 5, value = 25 },
+  { name = "Image Size", id = "image-size-range", type = "range", min = 75, max = 125, value = 75 },
+  { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++
 
-# TODO
-
-<div id="tranaglyph" class="defer">
-  <div id="left-eye" class="circle left red">
-    <div class="inner circle"></div>
-    <div class="center"></div>
-    <div class="satellite circle left"></div>
-    <div class="satellite circle right"></div>
-    <div class="suppression-check"></div>
-    <div class="points"></div>
-  </div>
-  <div id="right-eye" class="circle right green">
-    <div class="inner circle"></div>
-    <div class="center"></div>
-    <div class="satellite circle left"></div>
-    <div class="satellite circle right"></div>
-    <div class="suppression-check"></div>
-    <div class="points"></div>
-  </div>
+<div id="aperture-image-wrapper">
+  <div id="aperture-image-left" class="aperture-image"></div>
+  <div id="aperture-image-right" class="aperture-image"></div>
 </div>
