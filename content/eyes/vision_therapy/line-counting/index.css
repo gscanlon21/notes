@@ -1,4 +1,10 @@
-#line-counting {
+.page {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.chart {
 	height: var(--height);
 	justify-self: center;
 	text-align: center;

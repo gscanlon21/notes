@@ -18,7 +18,6 @@ options = [
   { name = "Red Color", id = "red-color", type = "color", value = "#FF0000" },
   { name = "Green Color", id = "green-color", type = "color", value = "#008000" },
   { name = "Swap Red and Green", id = "red-green-checkbox", type = "checkbox" },
-  { name = "Image Size", id = "image-size-range", type = "range", min = 75, max = 125 },
   { name = "Scale", id = "scale-input", type = "range", min = 0.5, max = 3, step = 0.05, value = 1 },
   { name = "Disparity", id = "vergence-input", type = "range", min = -24, max = 24, step = 0.05 },
   { name = "Vergence:", id = "vergence-output", type = "output", value = "0" },

@@ -18,7 +18,7 @@ options = [
   { name = "Red/Green Target", id = "red-green-checkbox", type = "checkbox" },
   { name = "Use an Image", id = "image-checkbox", type = "checkbox" },
   { name = "Character", id = "alphanumeric-text", type = "text", value = "X" },
-  { name = "Size", id = "size-range", type = "range", min = 75, max = 125 },
+  { name = "Size", id = "size-range", type = "range", min = 50, max = 250, step = 5, value = 100 },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++

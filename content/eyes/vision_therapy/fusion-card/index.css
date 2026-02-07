@@ -16,13 +16,18 @@
 	}
 }
 
+.page {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
 .chart {
 	--border-width: 4px;
 	--notch-height: 8px;
 
 	padding-inline: var(--image-size);
 	justify-content: center;
-	align-content: start;
 	align-items: center;
 	overflow-x: auto;
 	gap: var(--gap);

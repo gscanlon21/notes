@@ -4,9 +4,14 @@
 	}
 }
 
+.page {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
 .chart {
 	justify-content: center;
-	align-content: start;
 	align-items: center;
 	overflow-x: auto;
 	gap: var(--gap);

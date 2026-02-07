@@ -26,5 +26,5 @@ options = [
 +++
 
 {% table() %}
-<div id="line-counting"></div>
+<div id="line-counting" class="chart"></div>
 {% end %}

@@ -1,22 +1,16 @@
-class Consts {
-	static get DEFAULT_GAP() { return navigator?.userAgentData?.mobile === false ? 100 : 25 };
- 	static get DEFAULT_IMAGE_SIZE() { return navigator?.userAgentData?.mobile === false ? 100 : 75 };
-}
-
 const root = document.documentElement;
 const chart = document.getElementById("chart");
 const regenerate = document.getElementById("regenerate");
 const chartLeft = document.getElementById("tranaglyph-left");
 const chartRight = document.getElementById("tranaglyph-right");
 const redGreenCheck = document.getElementById("red-green-checkbox");
-const imgSizeRange = document.getElementById("image-size-range");
+const vergenceOutput = document.querySelector("#vergence-output");
+const vergenceInput = document.querySelector("#vergence-input");
+const stereoCircles = document.querySelector("#stereo-circles");
 const stereoCircleRight = document.getElementById("right-eye");
 const stereoCircleLeft = document.getElementById("left-eye");
-const stereoCircles = document.querySelector("#stereo-circles");
-const scaleInput = document.querySelector("#scale-input");
-const vergenceInput = document.querySelector("#vergence-input");
-const vergenceOutput = document.querySelector("#vergence-output");
 const scaleOutput = document.querySelector("#scale-output");
+const scaleInput = document.querySelector("#scale-input");
 
 const getImageArray = () => Array.from({ length: 100 }, (_, i) => String(i + 1).padStart(3, "0"));
 const getImage = (number) => `./pdshape_${number}.png`;
@@ -42,12 +36,6 @@ const generateChart = () => {
 	chartRight.appendChild(right);
 };
 
-const regenerateImageSizes = () => {
-	for (const child of [...Array.from(chartLeft.childNodes), ...Array.from(chartRight.childNodes)]) {
-		child.style.setProperty('--image-scale', imgSizeRange.value);
-	}
-}
-
 onVergence();
 vergenceInput.addEventListener('input', onVergence);
 function onVergence() {
@@ -69,11 +57,6 @@ function onScale() {
 	root.style.setProperty("--scale", scaleInput.value);
 	scaleOutput.dataset.value = parseFloat(scaleInput.value).toFixed(2);
 }
-
-const setImageSize = () => root.style.setProperty('--image-size', `${imgSizeRange.value}px`);
-imgSizeRange.addEventListener('change', regenerateImageSizes);
-imgSizeRange.addEventListener('input', setImageSize);
-setImageSize();
 
 const setGap = () => root.style.setProperty('--gap', `${Math.abs(vergenceInput.value * 2.6)}px`);
 vergenceInput.addEventListener('input', setGap);

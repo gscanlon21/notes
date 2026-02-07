@@ -1,8 +1,3 @@
-class Consts {
-	static get DEFAULT_GAP() { return navigator?.userAgentData?.mobile === false ? 100 : 25 };
- 	static get DEFAULT_IMAGE_SIZE() { return navigator?.userAgentData?.mobile === false ? 100 : 75 };
-}
-
 const chart = document.getElementById("single-target-wrapper");
 const regenerate = document.getElementById("regenerate");
 const imageCheck = document.getElementById("image-checkbox");

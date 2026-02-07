@@ -60,8 +60,10 @@
 }
 
 .image {
-	height: var(--image-size);
+	
 	background-color: currentColor;
+	height: var(--glyphSize);
+	width: var(--glyphSize);
 	mask-repeat: no-repeat;
 	mask-position: center;
 	justify-self: center;
@@ -92,7 +94,7 @@
 }
 
 #stereo-circles {
-	scale: 0.1;
+	scale: 0.2;
 	position: absolute;
 	right: 0;
 	left: 0;
