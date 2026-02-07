@@ -27,6 +27,4 @@ options = [
 ]
 +++
 
-{% table() %}
 <div id="slap-tap" class="chart"></div>
-{% end %}

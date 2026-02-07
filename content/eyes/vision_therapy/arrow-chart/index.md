@@ -26,6 +26,4 @@ options = [
 ]
 +++
 
-{% table() %}
 <div id="arrow-chart"></div>
-{% end %}

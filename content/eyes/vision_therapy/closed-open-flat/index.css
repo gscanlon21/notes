@@ -1,8 +1,13 @@
-.table-wrapper {
-	height: 100%;
+.page {
+    justify-content: center;
+	padding-bottom: 3rem;
+    margin-bottom: -3rem;
+	align-items: center;
+	overflow-x: auto;
+	display: flex;
 }
 
-#chart {
+.chart {
 	display: grid;
 	line-height: 1;
 	aspect-ratio: 1;

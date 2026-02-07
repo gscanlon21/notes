@@ -1,3 +1,9 @@
+.page {
+    justify-content: center;
+	align-items: end;
+	display: flex;
+}
+
 #number-dots {
 	justify-content: center;
 	flex-direction: column;

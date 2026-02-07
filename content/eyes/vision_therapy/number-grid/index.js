@@ -17,7 +17,7 @@ const redOrGreen = () => ["red", "green"].aRandom();
 
 const generateArrowChart = () => {
 	chart.innerHTML = null;
-	chart.style.gridTemplateColumns = `repeat(${Consts.ROWS_COLS + (gridRefCheck.checked ? 2 : 0)}, 1fr)`;
+	chart.style.gridTemplateColumns = `repeat(${Consts.ROWS_COLS + (gridRefCheck.checked ? 1 : 0)}, 1fr)`;
 
 	const rowRefLetters = Array.from(letters).toReversed();
 	const colRefLetters = Array.from(letters).toReversed();
