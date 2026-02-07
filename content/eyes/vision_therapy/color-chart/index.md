@@ -25,8 +25,5 @@ options = [
 ]
 +++
 
-
-{% table() %}
 <div id="decoding-chart" class="chart"></div>
 <div id="arrow-chart" class="chart"></div>
-{% end %}

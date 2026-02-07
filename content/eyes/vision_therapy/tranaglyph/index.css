@@ -25,42 +25,40 @@
 	}
 }
 
+.chart {
+	min-height: calc(calc(var(--baseSize) * var(--glyphScale)) + 2in);
+	padding-block: 4rem;
+	position: relative;
+	top: 3em;
+}
+
+#stereo-circles {
+	scale: 0.2;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+}
+
 #tranaglyph-wrapper {
-	justify-content: center;
-	align-content: start;
-	align-items: center;
-	overflow-x: auto;
-	gap: var(--gap);
-	flex-wrap: wrap;
-	display: flex;
-	height: 100%;
-}
-
-#tranaglyph-left {
-	transform: translateX(50%);
-}
-
-#tranaglyph-right {
-	transform: translateX(-50%);
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 10rem;
 }
 
 .tranaglyph {
-	display: grid;
 	padding: 1rem;
 	overflow: clip;
 	line-height: 1;
 	aspect-ratio: 1;
-	font-weight: 600;
 	text-align: center;
 	width: min-content;
 	align-items: center;
 	justify-self: center;
-	gap: var(--image-gap);
-	grid-template-columns: repeat(3, 1fr);
 }
 
 .image {
-	
 	background-color: currentColor;
 	height: var(--glyphSize);
 	width: var(--glyphSize);
@@ -79,35 +77,13 @@
 	color: rgb(var(--color-green));
 }
 
-.image.correct {
-	cursor: pointer;
-}
-
-.image.correct:hover {
-	filter: opacity(0.5);
-}
-
-
-.chart {
-	padding-block: 4rem;
-	position: relative;
-}
-
-#stereo-circles {
-	scale: 0.2;
-	position: absolute;
-	right: 0;
-	left: 0;
-	top: 0;
-}
-
 .circle, .center, .suppression-check {
 	--bsize: calc(var(--glyphSize) * 0.06);
 	border-radius: var(--glyphSize);
 	border: solid var(--bsize);
 }
 
-.circle, .center, .suppression-check, .points {
+.circle, .center, .suppression-check, .points, .tranaglyph {
 	transform: translate(-50%);
 	height: var(--glyphSize);
 	width: var(--glyphSize);
@@ -115,9 +91,13 @@
 	left: 50%;
 }
 
-#left-eye, #right-eye {
+#left-eye, #tranaglyph-left, #right-eye, #tranaglyph-right {
 	left: calc(50% + var(--delta) * var(--scale) * var(--units));
 	transform: translate(calc(-50% + var(--delta) * var(--scale) * var(--units)));
+}
+
+#tranaglyph-right, #tranaglyph-right * {
+	--units: -1cm;
 }
 
 #right-eye.red, #right-eye.red * {

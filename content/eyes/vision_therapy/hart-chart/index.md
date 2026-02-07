@@ -27,7 +27,4 @@ options = [
 ]
 +++
 
-{% table() %}
 <div id="hart-chart" class="chart defer"></div>
-{% end %}
-

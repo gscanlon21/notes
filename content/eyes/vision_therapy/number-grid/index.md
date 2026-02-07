@@ -24,6 +24,4 @@ options = [
 ]
 +++
 
-{% table(class="chart") %}
 <div id="number-chart" class="chart"></div>
-{% end %}

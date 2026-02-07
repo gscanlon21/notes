@@ -1,6 +1,6 @@
 +++
 title = "Symbols"
-updated = 2025-03-03
+updated = 2026-03-03
 
 [extra]
 see_also = [
@@ -307,11 +307,11 @@ see_also = [
 
 # Arrows
 ## Right Arrows
-###### Black Rightwards Equilateral Arrowhead
+###### Rightwards Arrow
 ```
-⮞
+→
 ```
-###### U+2B9E
+###### U+2192
 ###### Black Rightwards Arrowhead
 ```
 ➤
@@ -327,11 +327,6 @@ see_also = [
 ➜
 ```
 ###### U+279C
-###### Rightwards Sans-Serif Arrow
-```
-🡒
-```
-###### U+1F852
 ###### Fullwidth Greater-Than Sign
 ```
 ＞
@@ -345,24 +340,28 @@ see_also = [
 
 
 ## Down Arrows
-###### Downwards Sans-Serif Arrow
+###### Downwards Arrow
 ```
-🡓
+↓
 ```
-###### U+1F853
+###### U+2193
 
 
-## Diagonal Arrows
-###### South East Sans-Serif Arrow
+## Left Arrows
+###### Leftwards Arrow
 ```
-🡖
+←
 ```
-###### U+1F856
-###### South West Sans-Serif Arrow
-```	
-🡗
+###### U+2190
+
+
+## Up Arrows
+###### Upwards Arrow
 ```
-###### U+1F857
+↑
+```
+###### U+2191
+
 
 
 # Spaces

@@ -11,7 +11,7 @@ toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/aperture-rule" },
   { title = "Aperture Rule Trainer", href = "https://aworkoutaday.com/exercises?Name=Aperture+Rule+Trainer" },
-  { title = "Print Settings<br>☑ Background Graphics" },
+  { title = "Print Settings<br>Orientation: Landscape<br>☑ Background Graphics" },
   { title = "🄯 visiontherapy GNU AGPL v3<br>Images were copied over.", href = "https://github.com/visiontherapy/visiontherapy.github.io"},
 ]
 options = [

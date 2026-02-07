@@ -12,7 +12,7 @@ see_also = [
   { title = "Permalink", href = "/vision-therapy/tranaglyph" },
   { title = "Tranaglyph", href = "https://aworkoutaday.com/exercises?Name=Tranaglyph" },
   { title = "Print Settings<br>☑ Background Graphics" },
-  { title = "🄯 visiontherapy GNU AGPL v3<br>Images were copied over.", href = "https://github.com/visiontherapy/visiontherapy.github.io"},
+  { title = "🄯 visiontherapy GNU AGPL v3<br>Images and stereo circles were copied over.", href = "https://github.com/visiontherapy/visiontherapy.github.io"},
 ]
 options = [
   { name = "Red Color", id = "red-color", type = "color", value = "#FF0000" },
