@@ -23,6 +23,12 @@
             <h3 class="subtitle">{{ page.extra.subtitle | default(value=section.extra.subtitle) }}</h3>
         {% endif %}
 
+		{% if page.extra.caution | default(value=section.extra.caution) %} 
+			<blockquote class="markdown-alert-caution">
+				<p>{{ page.extra.caution | default(value=section.extra.caution) }}</p>
+			</blockquote>
+        {% endif %}
+
         <dl>
             {% if page.description | default(value=section.description) %} 
             <dt>Description</dt>

@@ -5,11 +5,14 @@ aliases = ["vision-therapy/arrow-chart"]
 updated = 2026-02-01
 
 [extra]
+caution = "Always follow your vision therapist's guidance."
 site_version = 1
 toc_level = 2
 see_also = [
   { title = "Permalink", href = "/vision-therapy/arrow-chart" },
   { title = "Directionality Arrows", href = "https://aworkoutaday.com/exercises?Name=Directionality+Arrows" },
+  { title = "Phosphor Icons (Copy Raw)", href = "https://phosphoricons.com/" },
+  { title = "Print Settings<br>☑ Background Graphics" },
 ]
 options = [
   { name = "Red Color", id = "red-color", type = "color", value = "#FF0000" },

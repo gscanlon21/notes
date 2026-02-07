@@ -27,6 +27,7 @@ blockquote[class^="markdown-alert-"] {
 	box-sizing: border-box;
 	align-items: baseline;
 	align-content: start;
+	position: relative;
 	margin-inline: 0;
 	flex-wrap: wrap;
 	display: flex;
@@ -74,6 +75,16 @@ blockquote[class^="markdown-alert-"] {
 			padding-block-start: $base-padding * 0.25;
 		}
 	}
+
+	/* Dismissible?
+	&::after {
+		padding: $base-padding;
+		position: absolute;
+		cursor: pointer;
+		content: 'x';
+		right: 0;
+		top: 0;
+	}*/
 }
 
 blockquote.markdown-alert-tip {

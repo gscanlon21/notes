@@ -5,6 +5,7 @@ aliases = ["vision-therapy/space-fixator"]
 updated = 2026-02-01
 
 [extra]
+caution = "Always follow your vision therapist's guidance."
 site_version = 1
 toc_level = 2
 see_also = [

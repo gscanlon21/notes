@@ -28,3 +28,15 @@ see_also = [
 ```powershell
 path:"C:\Users\*\OneDrive\Pictures\" *.png|*.jpg|*.jpeg dupe:
 ```
+
+## Find in a Folder
+
+###### Recursive Children
+```
+"C:\Users\*\OneDrive\Pictures\" test.png
+```
+
+###### Only the Parent Folder
+```
+parent:"C:\Users\*\OneDrive\Pictures\" test.png
+```
