@@ -26,7 +26,7 @@ options = [
 ]
 +++
 
-<div id="stereo-circles" class="defer">
+<div id="stereo-circles" class="chart defer">
   <div id="left-eye" class="circle left red">
     <div class="inner circle"></div>
     <div class="center"></div>

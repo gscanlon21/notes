@@ -10,7 +10,7 @@ onVergence();
 vergenceInput.addEventListener('input', onVergence);
 function onVergence() {
 	const slideValue = parseFloat(vergenceInput.value);
-	chart.style.setProperty("--delta", slideValue / 24 * 2.6);
+	root.style.setProperty("--delta", slideValue / 24 * 2.6);
 	
 	if (slideValue < 0) {
 		vergenceOutput.innerText = "C" + Math.abs(slideValue).toFixed(2);
@@ -25,10 +25,10 @@ onFusion();
 fusion.addEventListener('change', onFusion);
 function onFusion() {
 	if (fusion.checked) {
-		chart.style.setProperty("--glyphScale", "0.33");
+		root.style.setProperty("--glyphScale", "0.33");
 		chart.classList.add("fusion");
 	} else {
-		chart.style.setProperty("--glyphScale", "1");
+		root.style.setProperty("--glyphScale", "1");
 		chart.classList.remove("fusion");
 	}
 }
@@ -36,6 +36,6 @@ function onFusion() {
 onScale();
 scaleInput.addEventListener('input', onScale);
 function onScale() {
-	chart.style.setProperty("--scale", scaleInput.value);
+	root.style.setProperty("--scale", scaleInput.value);
 	scaleOutput.dataset.value = parseFloat(scaleInput.value).toFixed(2);
 }

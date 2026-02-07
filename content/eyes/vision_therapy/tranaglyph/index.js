@@ -52,7 +52,7 @@ onVergence();
 vergenceInput.addEventListener('input', onVergence);
 function onVergence() {
 	const slideValue = parseFloat(vergenceInput.value);
-	chart.style.setProperty("--delta", slideValue / 24 * 2.6);
+	root.style.setProperty("--delta", slideValue / 24 * 2.6);
 	
 	if (slideValue < 0) {
 		vergenceOutput.innerText = "C" + Math.abs(slideValue).toFixed(2);
@@ -66,16 +66,16 @@ function onVergence() {
 onScale();
 scaleInput.addEventListener('input', onScale);
 function onScale() {
-	chart.style.setProperty("--scale", scaleInput.value);
+	root.style.setProperty("--scale", scaleInput.value);
 	scaleOutput.dataset.value = parseFloat(scaleInput.value).toFixed(2);
 }
 
-const setImageSize = () => chart.style.setProperty('--image-size', `${imgSizeRange.value}px`);
+const setImageSize = () => root.style.setProperty('--image-size', `${imgSizeRange.value}px`);
 imgSizeRange.addEventListener('change', regenerateImageSizes);
 imgSizeRange.addEventListener('input', setImageSize);
 setImageSize();
 
-const setGap = () => chart.style.setProperty('--gap', `${Math.abs(vergenceInput.value * 2.6)}px`);
+const setGap = () => root.style.setProperty('--gap', `${Math.abs(vergenceInput.value * 2.6)}px`);
 vergenceInput.addEventListener('input', setGap);
 setGap();
 

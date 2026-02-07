@@ -28,8 +28,8 @@ options = [
 ]
 +++
 
-<div id="chart" class="chart">
-  <div id="stereo-circles" class="defer">
+<div id="chart" class="chart defer">
+  <div id="stereo-circles">
     <div id="left-eye" class="circle left red">
       <div class="inner circle"></div>
       <div class="center"></div>
@@ -45,7 +45,7 @@ options = [
   </div>
 
   <div id="tranaglyph-wrapper">
-    <div id="tranaglyph-left" class="tranaglyph"></div>
-    <div id="tranaglyph-right" class="tranaglyph"></div>
+    <div id="tranaglyph-left" class="tranaglyph left"></div>
+    <div id="tranaglyph-right" class="tranaglyph right"></div>
   </div>
 </div>

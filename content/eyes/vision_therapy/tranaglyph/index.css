@@ -1,18 +1,27 @@
-@media (prefers-color-scheme: dark) {
-    #stereo-circles:not(.fusion) > #right-eye {
-		mix-blend-mode: difference;
-	}
-}
-
-@media (prefers-color-scheme: light) {
-    #stereo-circles:not(.fusion) > #right-eye {
-		mix-blend-mode: darken;
-	}
+:root {
+	--delta: 0;
+	--scale: .1;
+	--units: 1cm;
+	--glyphScale: 1;
+	--baseSize: calc(4in * var(--scale));
+	--glyphSize: calc(var(--baseSize) * var(--glyphScale));
 }
 
 @media screen and (min-width: 100rem) {
     :root {
 		--body-width: calc(100vw - 40rem);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+    .left, .right {
+		mix-blend-mode: darken;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+    .left, .right {
+		mix-blend-mode: difference;
 	}
 }
 
@@ -80,12 +89,6 @@
 .chart {
 	padding-block: 4rem;
 	position: relative;
-	--delta: 0;
-	--scale: .1;
-	--units: 1cm;
-	--glyphScale: 1;
-	--baseSize: calc(4in * var(--scale));
-	--glyphSize: calc(var(--baseSize) * var(--glyphScale));
 }
 
 #stereo-circles {

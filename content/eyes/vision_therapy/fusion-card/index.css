@@ -4,15 +4,15 @@
 	}
 }
 
-@media (prefers-color-scheme: dark) {
-    .image {
-		mix-blend-mode: difference;
-	}
-}
-
 @media (prefers-color-scheme: light) {
     .image {
 		mix-blend-mode: darken;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+    .image {
+		mix-blend-mode: difference;
 	}
 }
 

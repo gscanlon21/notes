@@ -1,23 +1,19 @@
-class Consts {
-	static DEFAULT_COLOR = "var(--color-red)";
-	static get DEFAULT_GAP() { return navigator?.userAgentData?.mobile === false ? 100 : 25 };
- 	static get DEFAULT_SIZE() { return navigator?.userAgentData?.mobile === false ? 100 : 75 };
-}
-
-const root = document.getElementById("barrel-card");
-const regenerate = document.getElementById("regenerate");
-const redGreenCheck = document.getElementById("red-green-checkbox");
-const sizeRange = document.getElementById("size-range");
+const chart = document.getElementById("chart");
 const gapRange = document.getElementById("gap-range");
+const sizeRange = document.getElementById("size-range");
+const redGreenCheck = document.getElementById("red-green-checkbox");
 
-const setSize = () => root.style.setProperty('--size', `${sizeRange.value}px`);
+const setSize = () => chart.style.setProperty('--size', `${sizeRange.value}px`);
 sizeRange.addEventListener('input', setSize);
 setSize();
 
-const setGap = () => root.style.setProperty('--gap', `${gapRange.value}px`);
+const setGap = () => chart.style.setProperty('--gap', `${gapRange.value}px`);
 gapRange.addEventListener('input', setGap);
 setGap();
 
-const setColor = () => root.style.setProperty('--color', redGreenCheck.checked ? 'var(--color-green)' : 'var(--color-red)');
-redGreenCheck.addEventListener('change', setColor);
 setColor()
+redGreenCheck.addEventListener('change', setColor);
+function setColor() {
+	chart.style.setProperty('--color-left', redGreenCheck.checked ? 'var(--color-green)' : 'var(--color-red)');
+	chart.style.setProperty('--color-right', redGreenCheck.checked ? 'var(--color-red)' : 'var(--color-green)');
+}

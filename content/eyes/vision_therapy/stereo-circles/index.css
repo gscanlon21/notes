@@ -1,13 +1,10 @@
-@media (prefers-color-scheme: dark) {
-    #stereo-circles:not(.fusion) > #right-eye {
-		mix-blend-mode: difference;
-	}
-}
-
-@media (prefers-color-scheme: light) {
-    #stereo-circles:not(.fusion) > #right-eye {
-		mix-blend-mode: darken;
-	}
+:root {
+	--delta: 0;
+	--scale: 1;
+	--units: 1cm;
+	--glyphScale: 1;
+	--baseSize: calc(4in * var(--scale));
+	--glyphSize: calc(var(--baseSize) * var(--glyphScale));
 }
 
 @media screen and (min-width: 100rem) {
@@ -16,13 +13,19 @@
 	}
 }
 
+@media (prefers-color-scheme: light) {
+    .left, .right {
+		mix-blend-mode: darken;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+    .left, .right {
+		mix-blend-mode: difference;
+	}
+}
+
 #stereo-circles {
-	--delta: 0;
-	--scale: 1;
-	--units: 1cm;
-	--glyphScale: 1;
-	--baseSize: calc(4in * var(--scale));
-	--glyphSize: calc(var(--baseSize) * var(--glyphScale));
 	min-height: calc(calc(var(--baseSize) * var(--glyphScale)) + 2in);
 	position: relative;
 	top: 3em;
