@@ -4,7 +4,23 @@
 	}
 }
 
+@media (prefers-color-scheme: dark) {
+    .image {
+		mix-blend-mode: difference;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+    .image {
+		mix-blend-mode: darken;
+	}
+}
+
 .chart {
+	--border-width: 4px;
+	--notch-height: 8px;
+
+	padding-inline: var(--image-size);
 	justify-content: center;
 	align-content: start;
 	align-items: center;
@@ -13,6 +29,11 @@
 	flex-wrap: wrap;
 	display: flex;
 	height: 100%;
+}
+
+.zero-width {
+	overflow: visible;
+	width: 0;
 }
 
 .image {
@@ -32,50 +53,52 @@
 	padding: 2em;
 }
 
-.image.left {
-	transform: translateX(50%);
-}
-
-.image.right {
-	transform: translateX(-50%);
-}
-
 .image.red::before {
-	border: 2px solid rgb(var(--color-red));
+	border: calc(var(--border-width) / 2) solid rgb(var(--color-red));
+	width: var(--notch-height);
 	position: absolute;
-	content: '';
 	margin: auto;
-	height: 8px;
+	content: '';
+	height: 0;
 	bottom: 0;
-	right: 0;
-	left: 0;
-	width: 0;
-}
-
-.image.green::before {
-	border: 2px solid rgb(var(--color-green));
-	position: absolute;
-	content: '';
-	margin: auto;
-	height: 8px;
-	width: 0;
-	right: 0;
 	left: 0;
 	top: 0;
 }
 
+.image.green::before {
+	border: calc(var(--border-width) / 2) solid rgb(var(--color-green));
+	width: var(--notch-height);
+	position: absolute;
+	margin: auto;
+	content: '';
+	height: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+}
+
 .image.red::after {
-	border: 4px solid rgb(var(--color-red));
+	border: var(--border-width) solid rgb(var(--color-red));
 	border-radius: 50%;
 	position: absolute;
 	content: '';
 	inset: 0;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: var(--border-width);
+	background-image: linear-gradient(to top, rgb(var(--color-red)) 0 var(--notch-height), transparent var(--notch-height));
 }
 
 .image.green::after {
-	border: 4px solid rgb(var(--color-green));
+	border: var(--border-width) solid rgb(var(--color-green));
 	border-radius: 50%;
 	position: absolute;
 	content: '';
 	inset: 0;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: var(--border-width);
+	background-image: linear-gradient(to bottom, rgb(var(--color-green)) 0 var(--notch-height), transparent var(--notch-height));
 }

@@ -10,9 +10,6 @@ const getImageArray = () => Array.from({ length: 100 }, (_, i) => String(i + 1).
 const getImage = (number) => `./pdshape_${number}.png`;
 
 const generateChart = () => {
-	chartLeft.innerHTML = null;
-	chartRight.innerHTML = null;
-
 	chartLeft.aToggleClass('red', redGreenCheck.checked);
 	chartRight.aToggleClass('red', !redGreenCheck.checked);
 

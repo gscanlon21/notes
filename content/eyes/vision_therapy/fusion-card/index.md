@@ -25,6 +25,10 @@ options = [
 +++
 
 <div id="chart" class="chart">
-  <div id="left-eye" class="image left"></div>
-  <div id="right-eye" class="image right"></div>
+  <div class="zero-width">
+    <div id="left-eye" class="image left"></div>
+  </div>
+  <div class="zero-width">
+    <div id="right-eye" class="image right"></div>
+  </div>
 </div>
