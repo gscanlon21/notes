@@ -5,6 +5,7 @@ class Consts {
 const arrows = ["↑", "↓", "←", "→"];
 const chart = document.getElementById("arrow-chart");
 const regenerate = document.getElementById("regenerate");
+const arrowSelect = document.getElementById("arrow-select");
 const rowsColsRange = document.getElementById("row-col-range");
 const fontSizeRange = document.getElementById("font-size-select");
 const letterGapRange = document.getElementById("letter-gap-select");
@@ -38,6 +39,10 @@ setLetterGapRange();
 const setRowsCols = () => Consts.ROWS_COLS = parseInt(rowsColsRange.value);
 rowsColsRange.addEventListener('input', setRowsCols);
 setRowsCols();
+
+const setArrow = () => console.debug(arrowSelect.value);
+arrowSelect.addEventListener('change', setArrow)
+setArrow();
 
 redGreenCheck.addEventListener('change', generateArrowChart);
 rowsColsRange.addEventListener('change', generateArrowChart);
