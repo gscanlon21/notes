@@ -75,6 +75,11 @@ see_also = [
 β
 ```
 ###### U+03B2
+###### Greek Small Letter Sigma
+```
+σ
+```
+###### U+03C3
 
 
 
