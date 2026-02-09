@@ -54,6 +54,11 @@ see_also = [
 ∞
 ```
 ###### U+221E
+###### X-Bar
+```
+x̄
+```
+###### U+0078 U+0304
 
 
 # Cooking Symbols
@@ -147,11 +152,6 @@ see_also = [
 
 # Units
 
-###### Greek Small Letter Mu
-```
-μ
-```
-###### U+03BC
 ###### Prime
 ```
 ′
@@ -162,6 +162,11 @@ see_also = [
 ″
 ```
 ###### U+2033
+###### Greek Small Letter Mu
+```
+μ
+```
+###### U+03BC
 
 
 
