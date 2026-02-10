@@ -13,6 +13,11 @@
 @media (prefers-color-scheme: dark) {
     .image {
 		mix-blend-mode: difference;
+		filter: invert(1);
+	}
+
+	.image::before, .image::after {
+		filter: invert(1);
 	}
 }
 
@@ -48,7 +53,6 @@
 	background-position: center;
 	background-size: contain;
 	height: var(--image-size);
-	gap: var(--image-gap);
 	justify-self: center;
 	align-items: center;
 	position: relative;
