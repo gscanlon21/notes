@@ -83,3 +83,82 @@ _Based on the Butterfly Effect_
   > - [x]
   > - [x]
 
+**The "Church" of Sci-Fi**
+: The author talks about how Chinese science fiction often lacks a religious feeling that would add depth to the impressions of the universe. On a generation ship for example, myths of the ship's origin or destination, having been lost to a millennia of time, can be likened to believing in a religious destination. Without which, the universe is too easy to conceptualize and loses its grandeur. 
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+
+**End of the Microcosmos**
+: Humanity attempts to slip the quark, the smallest known piece of existence. In doing so, the universe is turned inside out, with the color of the sky suddenly its inverse. The scientists reason that the shape of the universe is round, and that by splitting the microcosmos, they have rounded over to the macrocosmos.
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+
+**Poetic Science Fiction**
+: A first person essay about how the author, Ken Liu, bridges the gap beautifully between literary poeticness and science fiction poeticness.
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [ ]
+  > - [ ]
+
+**Civilization's Expansion in Reverse**
+: TODO
+: > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+
+**Destiny**
+: TODO
+: > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+
+**The Dark Forest Theory**
+: TODO
+: > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+
+**The World in Fifty Years**
+: TODO
+: > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+
+**Heard it in the Morning**
+: TODO
+: > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+
+**On Ball Lightning**
+: TODO
+: > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+
+**We're Sci-Fi Fans**
+: TODO
+: > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
