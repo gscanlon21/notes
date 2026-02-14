@@ -1,0 +1,51 @@
+.page {
+    justify-content: center;
+	padding-bottom: 3rem;
+    margin-bottom: -3rem;
+	align-items: center;
+	overflow-x: auto;
+	display: flex;
+}
+
+.chart {
+	display: grid;
+	line-height: 1;
+	aspect-ratio: 1;
+	text-align: center;
+	justify-self: center;
+}
+
+.shape {
+	height: var(--size);
+	width: var(--size);
+	position: relative;
+	aspect-ratio: 1;
+}
+
+.shape::after {
+	background-color: currentColor;
+	position: absolute;
+	margin: auto;
+	content: '';
+	inset: 0;
+}
+
+.shape.horizontal::after {
+	height: calc(var(--size) * .15);
+}
+
+.shape.vertical::after {
+	width: calc(var(--size) * .15);
+}
+
+.shape.circle::after {
+	border-radius: 9in;	
+}
+
+.shape.red {
+	color: rgb(var(--color-red));
+}
+
+.shape.green {
+	color: rgb(var(--color-green));
+}
