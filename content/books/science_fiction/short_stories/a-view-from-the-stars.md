@@ -108,10 +108,10 @@ _Based on the Butterfly Effect_
   > - [ ]
 
 **Civilization's Expansion in Reverse**
-: TODO
-: > - [ ]
-  > - [ ]
-  > - [ ]
+: The author explains how humanity's expansion to distant stars is largely unfeasible, even with great technological development. In order for humanity to expand, the most logical path forward is to shrink ourselves. Imagine, humanity the size of bacteria, where butterflies flapping in the sky would look like fantastical, magnificent winged beasts.
+: > - [x]
+  > - [x]
+  > - [x]
   > - [ ]
   > - [ ]
 
