@@ -6,9 +6,7 @@ weight = 1
 [extra]
 site = "https://www.youtube.com/watch?v=3XFpxQF0J74&list=PLWVKUEZ25V95IKyBrxHtRTK_6Ig8Xi9-f"
 authors = ["Mike Saint-Antoine"]
-see_also = [
-  { title = "Intro to Bioinformatics", href = "https://www.youtube.com/watch?v=3XFpxQF0J74" },
-]
+see_also = []
 +++
 
 # Course Overview

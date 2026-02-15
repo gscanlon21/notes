@@ -4,11 +4,10 @@ sort_by = "title"
 weight = 2
 
 [extra]
-site = "https://www.youtube.com/watch?v=3XFpxQF0J74&list=PLWVKUEZ25V95IKyBrxHtRTK_6Ig8Xi9-f"
+site = "https://www.youtube.com/watch?v=G50Kw78ltCU&list=PLWVKUEZ25V95IKyBrxHtRTK_6Ig8Xi9-f"
 authors = ["Mike Saint-Antoine"]
 see_also = [
   { title = "High School Bio Review", href = "https://www.youtube.com/watch?v=1-zdVnDco00" },
-  { title = "Molecular Bio Review", href = "https://www.youtube.com/watch?v=G50Kw78ltCU" },
 ]
 +++
 
