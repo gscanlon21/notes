@@ -11,3 +11,6 @@ see_also = [
 +++
 
 {{ hidden() }}
+
+> [!TIP]
+> Cut your hair nude so that your clothes don't become scratchy with hair clippings.
