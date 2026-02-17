@@ -1,12 +1,12 @@
 +++
 title = "Origami"
-updated = 2025-03-03
+updated = 2026-03-03
 
 [extra]
 see_also = [
     { title = "Happy Folding", href = "https://www.happyfolding.com/diagrams" },
     { title = "Draftsperson", href = "https://draftsperson.net/origami/" },
-    { title = "Origamee", href = "https://www.origamee.net/diagrams/diagrams.html" },
+    { title = "Origamee", href = "https://www.origamee.net/instructions" },
     { title = "Papir Foldning", href = "https://papirfoldning.dk/diagrammer/diagrammer_en.html" },
     { title = "Origami Dauria", href = "https://www.origamidauria.it/origami/" },
     { title = "Origami Kosmulski", href = "https://origami.kosmulski.org/instructions" },
