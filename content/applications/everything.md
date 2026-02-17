@@ -36,6 +36,8 @@ path:"C:\Users\*\OneDrive\Pictures\" *.png|*.jpg|*.jpeg dupe:
 "C:\Users\*\OneDrive\Pictures\" test.png
 ```
 
+{{ extend() }}
+
 ###### Only the Parent Folder
 ```
 parent:"C:\Users\*\OneDrive\Pictures\" test.png
