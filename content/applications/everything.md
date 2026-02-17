@@ -1,6 +1,6 @@
 +++
 title = "Everything"
-updated = 2025-03-25
+updated = 2026-03-25
 
 [extra]
 site = "https://www.voidtools.com/"
@@ -22,9 +22,14 @@ see_also = [
 
 ## Find Duplicates
 
+###### Only These File Types
 ```powershell
 *.png|*.jpg|*.jpeg dupe:
 ```
+
+{{ extend() }}
+
+###### Only These File Types Inside a Parent Folder
 ```powershell
 path:"C:\Users\*\OneDrive\Pictures\" *.png|*.jpg|*.jpeg dupe:
 ```
