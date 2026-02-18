@@ -119,9 +119,9 @@
             {% endfor %}
             {% endif %}
 
-            {% if page.updated | default(value=section.updated) %} 
+            {% if page.updated | default(value=section.extra.updated) %} 
             <dt>Last Updated</dt>
-            <dd>{{ page.updated | default(value=section.updated) }}</dd>
+            <dd>{{ page.updated | default(value=section.extra.updated) }}</dd>
             {% endif %}
             
             <dt>Reading Time</dt>
