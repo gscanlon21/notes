@@ -13,14 +13,34 @@ see_also = []
 
 **Hive**
 _Tile Game_
-: TODO
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
+: A great 2 player game. Has good replay-ability.
+: Requires use of each piece's unique attributes for good play.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+
+**Bananagrams**
+_Tile Game_
+: Requires a decent sized vocabulary.
+: Good, though not the most social game.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
   > - [ ] 
 
-**Flip 7**
+**Spot-It**
+_Card Game_
+: Repetitive gameplay, yet always feels fun.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+
+**Sea Salt and Paper**
 _Card Game_
 : TODO
 : > - [ ] 
@@ -37,30 +57,13 @@ _Card Game_
   > - [ ] 
   > - [ ] 
   > - [ ] 
-  
-**Scout**
-_Card Game_
-: TODO
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
 
-**Courtisans**
+**Red 7**
 _Card Game_
-: TODO
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-
-**Sea Salt and Paper**
-_Card Game_
-: TODO
-: > - [ ] 
-  > - [ ] 
+: Fun at first. Not great for replay-ability. 
+: Games can feel repetitive after some time.
+: > - [x] 
+  > - [x] 
   > - [ ] 
   > - [ ] 
   > - [ ] 
