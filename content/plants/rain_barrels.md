@@ -8,6 +8,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # 275 Gallon IBC Tote
 
 Products

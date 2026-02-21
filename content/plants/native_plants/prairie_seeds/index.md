@@ -4,9 +4,11 @@ updated = 2025-12-12
 
 [extra]
 see_also = [
-    { title = "Central Region Seedling ID Guide for Native Prarie Plants", file = "central_region_seedling_id_guide_for_native_prarie_plants.pdf" },
+  { title = "Central Region Seedling ID Guide for Native Prarie Plants", file = "central_region_seedling_id_guide_for_native_prarie_plants.pdf" },
 ]
 +++
+
+{{ hidden() }}
 
 # Seeding Dates
 Plant mixes with forbs from Nov 15th to Mar 15th.

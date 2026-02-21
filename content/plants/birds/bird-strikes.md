@@ -1,8 +1,8 @@
 +++
-title = "Birds"
-updated = 2025-12-12
+title = "Bird Strikes"
 
 [extra]
+updated = 2025-12-12
 see_also = [
   { title = "American Bird Conservancy", href = "https://abcbirds.org" },
   { title = "Bird Smart Glass", href = "https://birdsmartglass.org" },
@@ -16,6 +16,8 @@ see_also = [
   { title = "Spray Paint Stencils", href = "https://spraypaintstencils.com" },
 ]
 +++
+
+{{ hidden() }}
 
 # Bird Strikes
 

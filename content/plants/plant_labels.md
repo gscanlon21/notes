@@ -6,6 +6,8 @@ updated = 2025-12-12
 see_also = []
 +++
 
+{{ hidden() }}
+
 # Survey Stakes
 24x2x1 in. 
 

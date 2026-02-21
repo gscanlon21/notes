@@ -15,6 +15,7 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
 
 # Lawnmower
 

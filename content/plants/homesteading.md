@@ -6,6 +6,8 @@ updated = 2025-12-12
 see_also = []
 +++
 
+{{ hidden() }}
+
 # Black Walnuts
 1. Gather Black Walnuts when they're dry.
 1. Wait for the walnuts to soften and brown.
