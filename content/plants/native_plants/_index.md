@@ -3,6 +3,7 @@ title = "MO Native Plants"
 sort_by = "title"
 
 [extra]
+updated = 2026-03-03
 see_also = [
   { title = "Bring Conservation Home", href="https://stlouisaudubon.org/bch/" },
   { title = "Grow Native", href="https://grownative.org/grow_native_members/st-louis-native-plants-llc/" },

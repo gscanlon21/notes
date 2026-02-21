@@ -3,6 +3,7 @@ title = "Plants"
 sort_by = "title"
 
 [extra]
+updated = 2026-03-03
 see_also = [
   { title = "Hori-Hori Gardening Knives" },
   { title = "EltaMD Sunscreen", href = "https://eltamd.com/collections/sun-care/products/eltamd-uv-clear-tinted-broad-spectrum-spf-46" },
