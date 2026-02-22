@@ -67,6 +67,12 @@
 		pointer-events: all;
 		flex-direction: column;
 		min-width: $min-content-width;
+
+		a {
+			// Remove un-clickable space between lines.
+			text-underline-offset: $base-padding * 0.1;
+			padding-block: $base-padding * 0.1;
+		}
 	}
 
 	#summary {
@@ -79,10 +85,6 @@
 
 			.link {
 				margin-inline-start: 0.1ch;
-			}
-
-			a {
-				padding-block: 2px;
 			}
 
 			label {
