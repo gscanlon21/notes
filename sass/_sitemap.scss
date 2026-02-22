@@ -28,9 +28,15 @@ main > .sitemap-title {
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
 
+	// Pad items.
+	li, details {
+		line-height: 1.25;
+		margin-block: $base-padding * 0.25;
+	}
+
 	// Pad between submenus.
 	& > menu, & > details {
-		margin-block-end: 1em;
+		margin-block-end: $base-padding;
 	}
 
 	// Remove extra padding from direct descendants.

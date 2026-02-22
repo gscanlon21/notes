@@ -28,3 +28,5 @@ gunzip [FILE.csv.gz]
 - Each number tells you the count of how many fragments of genetic material (cDNA) were found.
   - Tells you how much RNA was found for each gene in each sample.
   - Higher numbers indicate higher expression of each gene.
+
+We're interested in which genes are expressed differently between the IPF and the Control samples.
