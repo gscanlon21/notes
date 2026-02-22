@@ -46,18 +46,14 @@
 	}
 
 	.header-title {
-		margin-top: $site-padding * 2;
+		margin-block-start: $site-padding * 2;
 
-		.site {
-			display: inline-block;
+		& + .subtitle {
+			margin-block-start: $base-padding * 0.25;
 		}
 
 		.version {
 			font-size: small;
-		}
-
-		+.subtitle {
-			margin-block-start: $base-padding * 0.25;
 		}
 	}
 
@@ -70,21 +66,29 @@
 
 		a {
 			// Remove un-clickable space between lines.
-			text-underline-offset: $base-padding * 0.1;
-			padding-block: $base-padding * 0.1;
+			display: inline-flex;
 		}
 	}
 
 	#summary {
 		width: 100%;
 
-		.summary-item {
-			line-height: 1.49;
+		.reverse-indent {
 			text-indent: $base-padding * -2;
 			padding-inline-start: $base-padding * 2;
+		}
 
-			.link {
-				margin-inline-start: 0.1ch;
+		.summary-item {
+			a {
+				// Remove un-clickable space between lines.
+				display: inline-block;
+
+				svg {
+					width: $base-font-size;
+					height: $base-font-size;
+					color: rgba(var(--color-link), 0.75);
+					padding-inline-start: $base-padding * 0.1;
+				}
 			}
 
 			label {
