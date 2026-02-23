@@ -10,6 +10,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # A Workout a Day
 
 A Workout a Day is a workout routine newsletter aimed at making it easy and simple to work out.

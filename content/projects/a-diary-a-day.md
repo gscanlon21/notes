@@ -10,6 +10,7 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
 
 # A Diary a Day
 
