@@ -7,4 +7,4 @@ site = ""
 see_also = [ ]
 +++
 
-# Neuroimmune Network Hypothesis
+{{ hidden() }}

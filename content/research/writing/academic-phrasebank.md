@@ -8,4 +8,4 @@ site = ""
 see_also = []
 +++
 
-# Academic Phrasebank
+{{ hidden() }}

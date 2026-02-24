@@ -10,6 +10,9 @@ authors = ["Mike Saint-Antoine"]
 see_also = []
 +++
 
+{{ hidden() }}
+
+
 ##### How many flips of a coin would it take to know with absolute certainty that a coin is biased (weighted on one side)?
 It could be a coincidence that the result is Heads every time with a fair coin, so it's impossible to tell. But, you can tell how big of a coincidence different results would be.
 

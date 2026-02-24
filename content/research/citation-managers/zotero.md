@@ -6,9 +6,12 @@ updated = 2025-01-26
 [extra]
 site = "https://www.zotero.org/"
 see_also = [
-    { title = "Title Casing", href = "https://www.zotero.org/support/kb/sentence_casing" }
+  { title = "Title Casing", href = "https://www.zotero.org/support/kb/sentence_casing" }
 ]
 +++
+
+{{ hidden() }}
+
 
 # Title Casing
 

@@ -7,4 +7,4 @@ site = ""
 see_also = [ ]
 +++
 
-# SAM Axis
+{{ hidden() }}

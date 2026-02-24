@@ -8,8 +8,7 @@ see_also = [
 ]
 +++
 
-# Goals
-- Finish adding microbiome and genetic recommendations to AFeastADay and ADiaryADay.
+{{ hidden() }}
 
 # Jobs
 - Advocacy organizations.

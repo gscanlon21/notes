@@ -8,6 +8,8 @@ site = "https://pmc.ncbi.nlm.nih.gov/journals/"
 see_also = []
 +++
 
+{{ hidden() }}
+
 # Scientific Journals
 
 ## Behavior and Psychopathology

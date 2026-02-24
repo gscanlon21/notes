@@ -9,6 +9,7 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
 
 # Databases
 

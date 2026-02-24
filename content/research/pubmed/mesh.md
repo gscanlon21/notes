@@ -9,6 +9,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 # MeSH
 
 ## Using MeSH to Search

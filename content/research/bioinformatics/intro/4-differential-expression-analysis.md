@@ -12,6 +12,8 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
 
 # Idiopathic Pulmonary Fibrosis
 
