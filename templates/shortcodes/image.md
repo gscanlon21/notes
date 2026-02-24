@@ -1,4 +1,4 @@
-<details><summary>{{ title }}</summary>
+<details style="{{ style | default(value="") }}"><summary>{{ title }}</summary>
 
 ![{{ title }}]({{ file }})
 </details>
