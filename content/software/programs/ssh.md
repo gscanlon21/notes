@@ -7,7 +7,12 @@ updated = 2021-09-19
 
 {{ hidden() }}
 
-# SSH
+# Windows Powershell
+
+## Generate Keys
+```powershell
+ssh-keygen
+```
 
 ## Agent
 
