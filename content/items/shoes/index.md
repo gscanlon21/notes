@@ -6,9 +6,9 @@ updated = 2025-09-09
 site_version = 1
 toc_level = 2
 see_also = [
-    { title = "Thorlo Socks", href = "https://thorlo.com/" },
-    { title = "K-Swiss Shoes", href = "https://kswiss.com/" },
-    { title = "Correct Toes", href = "https://correcttoes.com/" },
+  { title = "Thorlo Socks", href = "https://thorlo.com/" },
+  { title = "K-Swiss Shoes", href = "https://kswiss.com/" },
+  { title = "Correct Toes", href = "https://correcttoes.com/" },
 ]
 +++
 
