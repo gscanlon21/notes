@@ -13,11 +13,11 @@ see_also = [
 
 {{ hidden() }}
 
+
 # Clothes Stains
 
 **Tomato Sauce**
 : Can be blotted out with an acidic solution such as distilled white vinegar.
-
 
 
 # Washing
@@ -29,3 +29,4 @@ see_also = [
 : Never use fabric softener on towels—it coats the terry cloth, so they get hard and stop absorbing.
 
 > Make sure to run the **Clean Washer** cycle every 6 months or so to rinse out the tub.
+
