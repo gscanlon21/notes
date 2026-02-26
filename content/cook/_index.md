@@ -3,6 +3,7 @@ title = "Cook"
 sort_by = "title"
 
 [extra]
+updated = 2026-03-01
 site_version = 1
 toc_level = 2
 see_also = [
@@ -92,6 +93,30 @@ _10 inch_
 
 
 # Ingredients
+
+## Fruit
+
+{% table(header="Fruits High in Fiber", footer="[GoodRx](https://www.goodrx.com/well-being/gut-health/high-fiber-fruits)") %}
+| Fruit            | Serving size              | Fiber content |
+|------------------|---------------------------|---------------|
+| 1. Passion fruit | 1 cup                    | 24 g          |
+| 2. Avocado       | 1 fruit                  | 9 g           |
+| 3. Guava         | 1 cup                    | 9 g           |
+| 4. Raspberries   | 1 cup                    | 8 g           |
+| 5. Blackberries  | 1 cup                    | 8 g           |
+| 6. Pomegranate   | 1 cup of seeds           | 7 g           |
+| 7. Persimmon     | 1 fruit                  | 6 g           |
+| 8. Kiwi          | 1 cup                    | 5 g           |
+| 9. Pear          | 1 cup                    | 4 g           |
+| 10. Blueberries  | 1 cup                    | 4 g           |
+| 11. Orange       | 1 medium fruit           | 3 g           |
+| 12. Strawberries | 1 cup (slices)           | 3 g           |
+| 13. Apple        | 1 cup (pieces)           | 3 g           |
+| 14. Banana       | 1 medium (7–8 inches)    | 3 g           |
+| 15. Prunes       | 4 prunes                 | 3 g           |
+| 16. Mango        | 1 cup (pieces)           | 3 g           |
+{% end %}
+
 
 ## Vinegar
 Commercially produced vinegar very seldom goes bad.
