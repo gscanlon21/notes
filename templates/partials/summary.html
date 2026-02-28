@@ -35,9 +35,9 @@
             <dd>{{ page.description | default(value=section.description) }}</dd>
             {% endif %}
 
-            {% if page.authors | default(value=section.extra.authors) %} 
+            {% if page.authors | default(value=page.extra.authors | default(value=section.extra.authors)) %} 
             <dt>Authors</dt>
-            {% for author in page.authors | default(value=section.extra.authors) %}
+            {% for author in page.authors | default(value=page.extra.authors | default(value=section.extra.authors)) %}
                 <dd>{{ author }}</dd>
             {% endfor %}
             {% endif %}
