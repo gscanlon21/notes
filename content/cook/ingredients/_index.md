@@ -1,5 +1,5 @@
 +++
-title = "Cook"
+title = "Ingredients"
 sort_by = "title"
 
 [extra]

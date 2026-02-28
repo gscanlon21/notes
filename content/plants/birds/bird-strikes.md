@@ -1,8 +1,11 @@
 +++
 title = "Bird Strikes"
+description = ""
 
 [extra]
-updated = 2025-12-12
+updated = 2026-03-01
+site_version = 1
+toc_level = 2
 see_also = [
   { title = "American Bird Conservancy", href = "https://abcbirds.org" },
   { title = "Bird Smart Glass", href = "https://birdsmartglass.org" },
