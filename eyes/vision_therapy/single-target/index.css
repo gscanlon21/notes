@@ -1,0 +1,39 @@
+.page {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.chart {
+	justify-content: center;
+	align-items: center;
+	overflow-x: auto;
+	gap: var(--gap);
+	display: flex;
+	height: 100%;
+}
+
+.target {
+	mask-repeat: no-repeat;
+	mask-position: center;
+	justify-self: center;
+	mask-size: contain;
+	aspect-ratio: 1;
+}
+
+.target.image {
+	height: var(--size);
+	background-color: currentColor;
+}
+
+.target.alphanumeric {
+	font-size: var(--size);
+}
+
+.target.red {
+	color: rgb(var(--color-red));
+}
+
+.target.green {
+	color: rgb(var(--color-green));
+}

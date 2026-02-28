@@ -1,0 +1,73 @@
+.page {
+    justify-content: center;
+	padding-bottom: 3rem;
+    margin-bottom: -3rem;
+	align-items: center;
+	overflow-x: auto;
+	display: flex;
+}
+
+.chart {
+	display: grid;
+	overflow: clip;
+	line-height: 1;
+	text-align: center;
+	position: relative;
+	justify-self: center;
+	margin-inline-end: 1em;
+}
+
+.letter {
+	overflow-y: clip;
+	aspect-ratio: 1;
+}
+
+.letter.red {
+	color: rgb(var(--color-red));
+}
+
+.letter.green {
+	color: rgb(var(--color-green));
+}
+
+.letter, .ref {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.chart:not(.start-at-one) .ref.row {
+	min-width: 1em;
+}
+
+.chart.start-at-one .ref.row {
+	min-width: 2em;
+}
+
+.ref.row {
+	border-right: 2px solid currentColor;
+	grid-column: 1 / span 2;
+	padding-block-end: 1em;
+	margin-block-end: -1em;
+	box-sizing: border-box;
+	padding-right: .25em;
+	justify-content: end;
+	text-align: end;
+}
+
+.ref.col {
+	border-bottom: 2px solid currentColor;
+	padding-inline-end: 1em;
+	margin-inline-end: -1em;
+	box-sizing: border-box;
+	grid-row: 1 / span 2;
+}
+
+.ref.row.col {
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 2;
+	aspect-ratio: unset;
+	border: none;
+	padding: 0;
+	margin: 0;
+}

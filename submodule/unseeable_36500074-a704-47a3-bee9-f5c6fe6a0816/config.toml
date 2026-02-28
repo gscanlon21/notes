@@ -1,0 +1,53 @@
+# https://www.getzola.org/documentation/getting-started/configuration/
+
+
+# Tab title
+title = "Unseeable"
+
+# The URL the site will be built for
+base_url = "/no/submodule/unseeable_36500074-a704-47a3-bee9-f5c6fe6a0816/content/"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# When set to "false", Sitemap.xml is not generated
+generate_sitemap = false
+
+# When set to "false", robots.txt is not generated
+generate_robots_txt = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+default_language = "en"
+
+[languages]
+[languages.no]
+build_search_index = false
+
+
+[search]
+# Whether to include the title of the page/section in the index.
+include_title = true
+
+# Whether to include the description of the page/section in the index.
+include_description = true
+
+# Whether to include the RFC3339 datetime of the page in the search index.
+include_date = false
+
+# Whether to include the path of the page/section in the index (the permalink is always included).
+include_path = false
+
+# Whether to include the rendered content of the page/section in the index.
+include_content = true
+
+# At which code point to truncate the content to. Useful if you have a lot of pages and the index would become too big to load on the site.
+truncate_content_length = 10000
+
+
+[slugify]
+paths = "safe"
+
+[extra]
+# Put all your custom variables here

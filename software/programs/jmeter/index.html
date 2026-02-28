@@ -1,0 +1,2980 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	
+	
+		<title>JMeter - ascallion</title>
+	
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://ascallion.com/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://ascallion.com/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://ascallion.com/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://ascallion.com/site.webmanifest?h=d3283d8cdd099d8504a1">
+
+	<link rel="stylesheet" type="text/css" href="https://ascallion.com/site.css?h=c1e3a53a1bef19bf877a" media="all">
+	
+
+	
+	
+		
+
+		
+		
+	
+	
+    
+	
+		
+		
+
+		
+		
+	
+
+	
+
+	<script defer src="https://ascallion.com/elasticlunr.min.js?h=4f648b9e42abdef9c436"></script>
+	<script defer src="https://ascallion.com/search_index.en.js?h=ed5300f6a9cd1e2dab41"></script>
+
+	
+
+	<script defer src="https://ascallion.com/scripts/search.js?h=801ad3506e72be7b6693"></script>
+	<script defer src="https://ascallion.com/scripts/content.js?h=12ed1714ffa0f1b5690d"></script>
+
+	
+</head>
+
+<body>
+	
+	<header id="header">
+		<span class="header-item">
+
+<div id="search">
+  <input id="search-input" type="search" placeholder="Search">
+
+  <div id="search-results" style="display: none;">
+      <ul id="search-results__items"></div>
+  </div>
+</div></span>
+		<span class="header-item"><a class="unstyle" href="https://ascallion.com/">ascallion</a></span>
+		<span class="header-item"><a href="https://ascallion.com/">Sitemap</a></span>
+	</header>
+	
+
+	<main id="main">
+		
+    <div class="header-wrap">
+        <div class="sidebar-left header header-wrap">
+            <form id="options" class="header-item">
+    <header id="summary">
+        <h2 class="header-title">
+            
+				
+				
+					<a class="site" href="https://jmeter.apache.org/" target="_blank" rel="noreferrer">
+						JMeter
+					</a>
+				
+            
+             
+                <sub class="version">5.4.1</sub>
+              
+        </h2> 
+        
+
+		
+
+        <dl>
+            
+
+            
+
+            
+
+            
+
+			
+
+             
+            <dt>Last Updated</dt>
+            <dd>2021-05-24</dd>
+            
+            
+            <dt>Reading Time</dt>
+            <dd>3 minute(s)</dd>
+        </dl>
+    </header>
+</form>
+            
+
+
+<div class="header-item">
+	<h3 class="sitemap-title header-title">Table of Contents</h3>
+	<nav class="sitemap condensed">
+		
+			
+<ul class="sitemap-list">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<li>
+			<a href="https:&#x2F;&#x2F;ascallion.com&#x2F;software&#x2F;programs&#x2F;jmeter&#x2F;#apache-jmetertm">Apache JMeter™</a>
+			
+				
+<ul class="sitemap-list">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<li>
+			<a href="https:&#x2F;&#x2F;ascallion.com&#x2F;software&#x2F;programs&#x2F;jmeter&#x2F;#configuration">Configuration</a>
+			
+		</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<li>
+			<a href="https:&#x2F;&#x2F;ascallion.com&#x2F;software&#x2F;programs&#x2F;jmeter&#x2F;#recording-a-test">Recording a Test</a>
+			
+		</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<li>
+			<a href="https:&#x2F;&#x2F;ascallion.com&#x2F;software&#x2F;programs&#x2F;jmeter&#x2F;#debugging">Debugging</a>
+			
+		</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<li>
+			<a href="https:&#x2F;&#x2F;ascallion.com&#x2F;software&#x2F;programs&#x2F;jmeter&#x2F;#performance-testing">Performance Testing</a>
+			
+		</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</ul>
+
+			
+		</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</ul>
+
+		
+	</nav>
+</div>
+
+
+        </div>
+
+        <div class="sidebar-right header">
+			<div class="header-item defer">
+				<h3 class="sitemap-title header-title">Ancestors</h3>
+				<nav class="sitemap condensed">
+					
+<menu class="sitemap-list">
+    
+        
+        
+            <li><a href="https://ascallion.com/">ascallion</a></li>
+        
+    
+        
+        
+            <li><a href="https://ascallion.com/software/">Software</a></li>
+        
+    
+        
+        
+            <li><a href="https://ascallion.com/software/programs/">Programs</a></li>
+        
+    
+	
+		<li class="current">JMeter</li>
+	
+</menu>
+
+				</nav>
+			</div>
+            
+			<div class="header-item defer">
+            	
+
+
+
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap condensed">
+	<menu class="sitemap-list">
+		
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/programs/curl/">Curl</a></li>
+        
+    
+
+	
+    
+        
+            <li class="current">JMeter</li>
+        
+		
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/programs/jq/">jq</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/programs/regex/">Regex</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/programs/ssh/">SSH</a></li>
+        
+    
+
+
+
+		
+		
+	</menu>
+
+	
+	
+</nav>
+
+
+
+            </div>
+
+            <div class="header-item screen-large">
+                <h3 class="sitemap-title">Sitemap</h3>
+                <nav class="sitemap">
+                    
+
+
+
+    
+    
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/applications/">Applications</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/applications/everything/">Everything</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/applications/lightshot/">Lightshot</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/applications/lively/">Lively</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/applications/browsers/">Browsers</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/applications/browsers/firefox/">Firefox</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/applications/browsers/ladybird/">Ladybird</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/applications/photos/">Photos</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/applications/photos/fastflix/">Fastflix</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/artistic/">Artistic</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/artistic/bodhrán/">Bodhrán</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/artistic/haikus/">Haikus</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/artistic/jokes/">Jokes</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/artistic/origami/">Origami</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/artistic/pixel-sorting/">Pixel Sorting</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/artistic/quips/">Quips</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/artistic/spanish/">Spanish</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/artistic/games/">Games</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/artistic/games/video-games/">Video Games</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/artistic/games/board-games/">Board Games</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/artistic/games/board-games/hive/">Hive</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/artistic/laser/">Laser</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/artistic/laser/lightburn/">Lightburn</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/artistic/laser/polar/">Polar</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/books/">Books</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/books/artofnvc/">The Art of Nonviolent Communication</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/books/fantasy/">Fantasy</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/books/science_fiction/">Science Fiction</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/books/science_fiction/short_stories/">Short Stories</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/books/science_fiction/short_stories/a-view-from-the-stars/">A View from the Stars</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/books/science_fiction/short_stories/stories-of-your-life-and-others/">Stories of Your Life and Others</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/clean/">Clean</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/clean/car/">Car</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/clean/carpet/">Carpet</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/clean/clothes/">Clothes</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/clean/fridge/">Fridge</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/clean/glasses/">Glasses</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/clean/haircuts/">Haircuts</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/clean/odors/">Odors</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/clean/robot_vacuums/">Robot Vacuums</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/cook/">Cook</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/cook/water/">Water</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/cook/ingredients/">Cook</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/eyes/">Eyes</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/conjunctivitis/">Conjunctivitis</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/macular-degeneration/">Macular Degeneration</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/eyes/charts/">Eye Charts</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/charts/amsler-grid/">Amsler Grid</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/charts/astigmatism-chart/">Astigmatism Chart</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/charts/contrast-sensitivity-chart/">Contrast Sensitively Chart</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/eyes/vision_therapy/">Vision Therapy</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/aperture-rule/">Aperture Rule</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/arrow-chart/">Arrow Chart</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/barrel-card/">Barrel Card</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/closed-open-flat/">Closed&#x2F;Open&#x2F;Flat</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/color-chart/">Color Chart</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/fusion-card/">Fusion Card</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/hart-chart/">Hart Chart</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/letter-saccades/">Letter Saccades</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/letter-search/">Letter Search</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/letter-tracking/">Letter Tracking</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/line-counting/">Line Counting</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/number-dots/">Number Dots</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/number-grid/">Number Grid</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/number-saccades/">Number Saccades</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/number-search/">Number Search</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/shape-chart/">Shape Chart</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/single-target/">Single Target</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/slap-tap/">Slap Tap</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/space-fixator/">Space Fixator</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/spot-the-match/">Spot the Match</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/stereo-circles/">Stereo Circles</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/eyes/vision_therapy/tranaglyph/">Tranaglyph</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/fixes/">Fixes</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/fixes/ac/">AC</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/fixes/dishwasher/">Dishwasher</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/fixes/disposal/">Sink Disposal</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/fixes/toilets/">Toilets</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/fixes/washing_machine/">Washing Machine</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/fixes/window_film/">Window Film</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/items/">Items</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/items/appliances/">Appliances</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/items/bikes/">Bikes</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/items/clothes/">Clothes</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/items/glasses/">Glasses</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/items/sealant/">Sealant</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/items/shoes/">Shoes</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/items/stereos/">Stereos</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/medic/">Medic</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/feet/">Feet</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/help/">Help</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/imaging/">Imaging</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/mouth/">Mouth</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/posture/">Posture</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/sleep/">Sleep</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/medic/blood/">Blood</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/medic/blood/nutrients/">Nutrients</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/blood/nutrients/ferritin/">Ferritin</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/blood/nutrients/iron/">Iron</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/medic/gut/">Gut</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/antibiotics/">Antibiotics</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/malabsorbtion/">Malabsorption</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/microplastics/">Microplastics</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/medic/gut/minerals/">Minerals</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/minerals/copper/">Copper</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/minerals/selenium/">Selenium</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/minerals/zinc/">Zinc</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/minerals/molybdenum/">Molybdenum</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/minerals/iron/">Iron</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/minerals/lithium/">Lithium</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/minerals/magnesium/">Magnesium</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/medic/gut/pillars/">Core Pillars of Gut Health</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/pillars/fueling_resilience/">Pillar 1 - Food</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/pillars/reducing_stress/">Pillar 2 - Stress</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/pillars/lifestyle/">Pillar 3 - Lifestyle</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/pillars/exposure/">Pillar 4 - Exposure</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/medic/gut/pillars/supplements/">Pillar 5 - Supplements</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/micro/">Micro</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/micro/fairphone/">Fairphone</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/micro/wled/">W-LED</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/notes/">Notes</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/notes/android/">Android</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/notes/symbols/">Symbols</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/notes/words/">Words</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/office/">Office</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/office/e-ink/">E-Ink</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/office/ergonomics/">Ergonomics</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/office/supplies/">Office Supplies</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/">Plants</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/plants/homesteading/">Homesteading</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/plants/ikebana/">Ikebana</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/plants/plant_impressions/">Plant Impressions</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/plants/plant_labels/">Plant Labels</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/plants/pressed_flowers/">Pressed Flowers</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/plants/rain_barrels/">Rain Barrels</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/plants/trees/">Trees</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/birds/">Birds</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/plants/birds/bird-strikes/">Bird Strikes</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/birds/identification/">Bird Identification</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/birds/watching/">Bird Watching</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/native_plants/">MO Native Plants</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/plants/native_plants/ground_cover/">Ground Cover</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/plants/native_plants/nurseries/">Native Plants Nurseries</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/plants/native_plants/prairie_seeds/">Prairie Seeds</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/plants/plant_identification/">Plant Identification</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/plants/plant_identification/trees/">Trees</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/projects/">Projects</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/projects/a-diary-a-day/">A Diary a Day</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/projects/a-workout-a-day/">A Workout a Day</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/projects/reverse-dictionary/">Reverse Dictionary</a></li>
+        
+    
+
+	
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/projects/a-feast-a-day/">A Feast a Day</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/projects/a-feast-a-day/weighed-food-record/">Weighed Food Record</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/">Data Sources</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/foo-db/">FooDB</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/food-data-central/">FDA FoodData Central</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/ANSES-CIQUAL/">ANSES-CIQUAL</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/food-microbionet/">Food Microbionet</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/">Research</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/journals/">Scientific Journals</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/bioinformatics/">Bioinformatics</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/bioinformatics/intro/">Intro to Bioinformatics</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/bioinformatics/intro/1-course-overview/">Course Overview</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/bioinformatics/intro/2-biology-review/">Molecular Biology Review</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/bioinformatics/intro/3-gene-expression-data-format/">Gene Expression Data Format</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/bioinformatics/intro/4-differential-expression-analysis/">Differential Expression Analysis</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/bioinformatics/intro/5-quick-statistics-lesson/">Quick Statistics Lesson</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/bioinformatics/intro/6-gene-expression-omnibus/">Downloading Data from the Gene Expression Omnibus (GEO)</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/bioinformatics/intro/7-processing-rna-seq-data/">Reading and Processing RNA-seq Data</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/biomedical-engineering/">Biomedical Engineering</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/citation-managers/">Citation Managers</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/citation-managers/endnote/">EndNote</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/citation-managers/zotero/">Zotero</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/clinical-informatics/">Clinical Informatics</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/libraries/">Libraries</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/libraries/webster-library/">Webster Library</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/pubmed/">Pubmed</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/pubmed/mesh/">Pubmed - MeSH</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/pubmed/searching/">Pubmed - Searching</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/references/">References</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/references/apa/">APA</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/studies/">Studies</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/studies/hpa-axis/">HPA Axis</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/studies/neuroimmune-network-hypothesis/">Neuroimmune Network Hypothesis</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/studies/sam-axis/">SAM Axis</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/studies/epigenetics/">Epigenetics</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/research/writing/">Writing</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/writing/academic-phrasebank/">Academic Phrasebank</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/research/writing/persuasion/">Persuasion</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/">Software</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/architecting/">Architecting</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/applications/">Applications</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/applications/beekeeper/">Beekeeper Studio</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/applications/desmos/">Desmos</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/applications/smartgit/">Smartgit</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/databases/">Databases</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/databases/postgresql/">PostgreSQL</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/databases/postgresql/permissions/">Permissions</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/databases/sql_server/">SQL Server</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/desktops/">Desktops</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/desktops/linux/">Linux</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/desktops/windows/">Windows</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/chkdsk/">chkdsk</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/dism/">dism</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/netsh/">netsh</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/performance_monitor/">Performance Monitor</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/sfc/">sfc</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/editors/">Editors</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/editors/vscode/">Visual Studio Code</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/editors/visual_studio/">Visual Studio</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/editors/visual_studio/interactive/">C# Interactive</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/editors/visual_studio/settings/">Visual Studio Settings</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/hosting/">Hosting</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/hosting/digitalocean/">DigitalOcean</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/hosting/zola/">Zola</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/languages/">Languages</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/languages/dotnet/">.NET</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/languages/dotnet/csharp/">CSharp</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/languages/dotnet/exceptions/">Exceptions</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/languages/dotnet/iisexpress/">IIS Express</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/languages/powershell/">Powershell</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/languages/rust/">Rust</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/packages/">Packages</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/packages/redis/">Redis</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/programs/">Programs</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/programs/curl/">Curl</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/programs/jmeter/">JMeter</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/programs/jq/">jq</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/programs/regex/">Regex</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/programs/ssh/">SSH</a></li>
+        
+    
+
+
+        
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/programs/git/">Git</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/programs/git/conventional_commits/">Conventional Commits</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/programs/git/config/">Git Config</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/programs/git/performance/">Git Performance</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/programs/git/submodules/">Git Submodules</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+    
+        <details >
+            <summary><a href="https://ascallion.com/software/security/">Security</a></summary>
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/security/encryption/">Encryption</a></li>
+        
+    
+
+	
+    
+        
+			<li><a href="https://ascallion.com/software/security/openssl/">OpenSSL</a></li>
+        
+    
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+
+    
+
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+	
+    <article id="content" class="page v1"><div class="visibility--hidden">
+</div>
+<h1 id="apache-jmetertm">Apache JMeter™</h1>
+<p>The Apache JMeter™ application is open source software, a 100% pure Java application designed to load test functional behavior and measure performance. It was originally designed for testing Web Applications but has since expanded to other test functions.</p>
+<h2 id="configuration">Configuration</h2>
+<h3 id="connect-to-a-sql-server-database">Connect to a SQL Server database</h3>
+<p>We need the <a rel="noopener noreferrer external" target="_blank" href="https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15">SQL Server JDBC driver</a> so that we can connect to the database</p>
+<p>Unzip the folder to a memorable directory</p>
+<p>Under the root <code>Test Plan</code> node set the classpath to include the .jar file you just downloaded</p>
+<h3 id="simulating-users">Simulating users</h3>
+<p>The <code>Thread Group</code> node allows you specify how many users you want to test at a time. Each thread essentially acts as a single user</p>
+<p>A <code>Ramp-up period</code> of 5 seconds with 5 users will create 1 thread (user) per second, while a <code>Ramp-up period</code> of 0 will create all 5 threads (users) instantly</p>
+<h3 id="variables">Variables</h3>
+<p>Variables are a powerful feature in JMeter that can be utilized to pipe response data from one request into the request body of the next</p>
+<p>The simplest way to capture response data into variables is to setup a <code>JSON Extractor</code> for your request. Right click on the request node and select Add -&gt; Post-processors -&gt; JSON Extractor. You specify the response property you want to save with JsonPath and the variable name to save into just above it</p>
+<p>Variables can be interpolated into request bodies with the <code>${variable_name}</code> syntax</p>
+<h3 id="built-in-functions">Built-In Functions</h3>
+<p>JMeter has many built-in <a rel="noopener noreferrer external" target="_blank" href="https://jmeter.apache.org/usermanual/functions.html">functions</a> that can helpful in scripting a test. All functions are prefixed with two (2) underscores (<code>__</code>)</p>
+<h2 id="recording-a-test">Recording a Test</h2>
+<h3 id="configuring-the-recording-proxy">Configuring the Recording Proxy</h3>
+<p>Navigate to the <code>HTTP(S) Test Script Recorder</code> node. Note the port number for the next step. Click <em>Start</em> and accept/decline any self-signed certificates that pop up</p>
+<p>Open up the Firefox browser and navigate under Options -&gt; Network Settings to the proxy connection settings. Select the <code>Manual Proxy Configuration</code> radio button, set <strong>Http Proxy</strong> to "localhost" and the <strong>Port</strong> to match JMeter's port</p>
+<h3 id="recording-a-test-1">Recording a test</h3>
+<p>Still in Firefox, navigate to the page you would like to test and proceed through a test round. Click <em>Stop</em> to halt the test recording.</p>
+<p>Under the <code>Recording Controller</code> node in JMeter, you should see requests to the pages you navigated to. Strip out any fluff from the captured requests (you can also add filters to the <code>Test Script Recorder</code>).</p>
+<p>You now should have a functioning JMeter test script.</p>
+<h2 id="debugging">Debugging</h2>
+<p>To debug your test you can click the green <em>Start</em> icon in the navbar. Requests will be visible in the <code>View Results Tree</code> node after a couple of seconds.</p>
+<p>If you need to inspect variables, right click on the <code>Thread Group</code> and select Add -&gt; Sampler -&gt; Debug Sampler. Drag the <code>Debug Sampler</code> to where you want the view the variables, run the <code>Test Plan</code>, and view the variables in the <code>View Results Tree</code></p>
+<h2 id="performance-testing">Performance Testing</h2>
+<p>While debugging the test from the GUI is great, it can cause slowdowns when testing for performance. The CLI mode can be used instead:</p>
+<h6 id="running-a-jmx-file-from-the-cli">Running a JMX File from the CLI</h6>
+<pre class="giallo" style="color: #B392F0; background-color: #1F1F1F;"><code data-lang="powershell"><span class="giallo-l"><span>jmeter </span><span style="color: #F97583;">-</span><span>n </span><span style="color: #F97583;">-</span><span>e </span><span style="color: #F97583;">`</span></span>
+<span class="giallo-l"><span style="color: #F97583;">-</span><span>t </span><span style="color: #FFAB70;">&quot;test_plan.jmx&quot;</span><span style="color: #F97583;"> `</span></span>
+<span class="giallo-l"><span style="color: #F97583;">-</span><span>l </span><span style="color: #FFAB70;">&quot;results&quot;</span><span style="color: #F97583;"> `</span></span>
+<span class="giallo-l"><span style="color: #F97583;">-</span><span>o </span><span style="color: #FFAB70;">&quot;report&quot;</span></span></code></pre>
+<p>The report folder contains a statically generated web page that contains a bunch of useful information on how well your feature performed</p>
+</article>
+
+	</main>
+
+	
+	<footer id="footer">
+    <span class="footer-item"><a href="https://ascallion.com/">About</a></span>
+    <span class="footer-item"><a class="unstyle" href="#">Back to Top</a></span>
+    <span class="footer-item"><a href="https://github.com/gscanlon21">Github</a></span>
+	<span class="footer-item fixed right"><a class="unstyle" href="#">Back to Top</a></span>
+</footer>
+	
+
+	
+	
+		
+
+		
+    	
+		
+
+	
+	
+		
+		
+
+		
+		
+		
+
+	
+	
+</body>
+
+</html>

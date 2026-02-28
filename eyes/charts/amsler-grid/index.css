@@ -1,0 +1,50 @@
+#number-circle {
+	display: flex;
+	overflow: clip;
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	aspect-ratio: 1;
+	line-height: 1;
+	height: 100%;
+	width: 100%;
+}
+
+#number-circle div {
+	position: absolute;
+	aspect-ratio: 1;
+}
+
+#number-circle div div {
+	border: 1px solid currentColor;
+	font-size: var(--circle-size, 20px);
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	text-align: center;
+	border-radius: 50%;
+	aspect-ratio: 1;
+	aspect-ratio: 1;
+	display: flex;
+	margin: auto;
+	padding: 8px;
+	width: 2ch;
+	right: 0;
+	left: 0;
+}
+
+#number-circle.circle::after {
+	border: 1px solid currentColor;
+	font-size: var(--circle-size, 20px);
+	border-radius: 50%;
+	position: absolute;
+	aspect-ratio: 1;
+	margin: auto;
+	padding: 8px;
+	content: "";
+	width: 2ch;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+}

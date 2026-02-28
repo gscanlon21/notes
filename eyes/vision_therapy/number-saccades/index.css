@@ -1,0 +1,63 @@
+@media screen and (min-width: 100rem) {
+    :root {
+		--body-width: calc(100vw - 40rem);
+	}
+}
+
+#number-circle {
+	display: flex;
+	overflow: clip;
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	aspect-ratio: 1;
+	line-height: 1;
+	height: 100%;
+	width: 100%;
+}
+
+#number-circle.circle::after {
+	border: 1px solid currentColor;
+	font-size: var(--font-size, 20px);
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	position: absolute;
+	aspect-ratio: 1;
+	display: flex;
+	margin: auto;
+	padding: 8px;
+	content: "X";
+	width: 2ch;
+	inset: 0;
+}
+
+.circle:not(#number-circle) {
+	position: absolute;
+	aspect-ratio: 1;
+}
+
+.number {
+	border: 1px solid currentColor;
+	font-size: var(--font-size, 20px);
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	text-align: center;
+	border-radius: 50%;
+	aspect-ratio: 1;
+	display: flex;
+	margin: auto;
+	padding: 8px;
+	width: 2ch;
+	right: 0;
+	left: 0;
+}
+
+.circle.red {
+	color: rgb(var(--color-red));
+}
+
+.circle.green {
+	color: rgb(var(--color-green));
+}
