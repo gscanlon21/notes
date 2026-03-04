@@ -58,7 +58,8 @@ see_also = []
 // Markdown Specific Settings
 "[markdown]": {
   "editor.tabSize": 2,
-	"editor.insertSpaces": true,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "off",
 },
 
 // JavaScript Specific Settings
