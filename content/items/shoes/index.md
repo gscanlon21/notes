@@ -1,6 +1,7 @@
 +++
 title = "Shoes"
-updated = 2026-09-01
+description = ""
+updated = 2027-01-01
 
 [extra]
 site_version = 1
@@ -23,14 +24,33 @@ see_also = [
 
 # Shoes
 
-Shoe Size
+**Size**
 : US Men's 12
+
+**Style**
 : Wide shoes — Need room for the toes to spread.
+
+
+## Products
+
+**Men Lotto Raptor Hyperpulse 100 Spd Tennis Shoes**
+_Size 11.5_
+: Fits well. 
+: Hurts my metatarsals.
+: > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+
 
 # Socks
 
-Socks
+**Size**
 : US Men's 12
-: White Crew - Easier to spot ticks.
-: Maximum Padding - For heel and metatarsal pain.
 
+**Style**
+: White Crew - Easier to spot ticks.
+
+**Padding**
+: Maximum Padding - For heel and metatarsal pain.
