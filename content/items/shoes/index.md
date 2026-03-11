@@ -30,6 +30,26 @@ see_also = [
 **Style**
 : Wide shoes — Need room for the toes to spread.
 
+## Attributes
+
+**Shoe Drop**
+: Refers to the height of the heel compared to the height of the toes.
+: How much the heel is elevated in shoes.
+
+
+## Brands
+
+**K-Swiss**
+: Because they are court shoes, they have a large shoe drop.
+
+**Altra Shoes**
+: Generally has no shoe drop.
+
+**Topo**
+: Generally has a low, 5mm shoe drop.
+
+
+
 
 ## Products
 
@@ -42,6 +62,15 @@ _Size 11.5_
   > - [ ] 
   > - [ ] 
   > - [ ] 
+
+
+# Shoe Inserts
+
+
+## Brands
+- Aetrek
+- Powerstep
+- Superfeet
 
 
 # Socks
