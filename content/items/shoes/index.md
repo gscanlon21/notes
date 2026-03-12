@@ -19,9 +19,9 @@ see_also = [
 
 {{ hidden() }}
 
-{{ image(title="Posture-Deforming Footwear Features", file="Posture_Deforming.webp") }}
 
 # Shoes
+{{ image(title="Posture-Deforming Footwear Features", file="Posture_Deforming.webp") }}
 
 **Size**
 : US Men's 12
@@ -30,8 +30,7 @@ see_also = [
 : Wide shoes — Need room for the toes to spread.
 
 ## Attributes
-
-{{ image(title="Heel-to-Toe Drop", file="Heel_Elevation_vs._Zero-Drop_Shoe_Sole_Banner_Desktop.webp") }}
+{{ image(title="Heel-to-Toe Drop", file="Heel_Elevation_vs._Zero-Drop_Shoe.webp") }}
 
 **Heel-to-Toe Drop**
 : Refers to the height of the heel compared to the height of the toes.
@@ -50,14 +49,27 @@ see_also = [
 : Generally has a low, 5mm shoe drop.
 
 
-
-
 ## Products
 
-**Men Lotto Raptor Hyperpulse 100 Spd Tennis Shoes**
-_Size 11.5_
+**Men's Altra Paradigm 8**
+_Size 11 Wide_
 : Fits well. 
+: Too expensive.
+: Nice wide toe box.
+: Durability is so-so.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+
+
+**Men's KSwiss Court Express Pickleball**
+_Size 12_
+: Fits well.
+: Nice wide toe box.
 : Hurts my metatarsals.
+: - Has a high heel-to-toe drop.
 : > - [x] 
   > - [x] 
   > - [ ] 
@@ -65,13 +77,27 @@ _Size 11.5_
   > - [ ] 
 
 
-# Shoe Inserts
+**Men's Lotto Raptor Hyperpulse 100 Spd Tennis Shoes**
+_Size 11.5_
+: Fits well.
+: Too narrow.
+: Hurts my metatarsals.
+: - Has a high heel-to-toe drop.
+: > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
 
+
+
+# Shoe Inserts
 
 ## Brands
 - Aetrek
 - Powerstep
 - Superfeet
+
 
 
 # Socks
