@@ -19,8 +19,7 @@ see_also = [
 
 {{ hidden() }}
 
-![Posture-Deforming Footwear Features](Posture_Deforming.webp)
-
+{{ image(title="Posture-Deforming Footwear Features", file="Posture_Deforming.webp") }}
 
 # Shoes
 
@@ -32,7 +31,9 @@ see_also = [
 
 ## Attributes
 
-**Shoe Drop**
+{{ image(title="Heel-to-Toe Drop", file="Heel_Elevation_vs._Zero-Drop_Shoe_Sole_Banner_Desktop.webp") }}
+
+**Heel-to-Toe Drop**
 : Refers to the height of the heel compared to the height of the toes.
 : How much the heel is elevated in shoes.
 
