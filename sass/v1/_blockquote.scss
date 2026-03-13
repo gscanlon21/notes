@@ -25,6 +25,11 @@ article.v1 {
 		margin-inline-start: $site-padding * 3.25;
 	}
 
+	// Markdown alerts.
+	blockquote > ul {
+		margin-block-end: $base-padding * 0.25;
+	}
+
 	dd > blockquote+h6  {
 		font-size: $base-font-size * 0.75;
 		margin-block-start: $base-padding * 0.25;

@@ -14,4 +14,7 @@ see_also = []
 Mix dawn dish soap with warm water. Spray on the lens and rinse off with warm water. Dry with a clean microfiber cloth.
 
 ## Cleaning Microfiber Cloths
-Wash on warm with mild detergent and let air dry. NEVER get fabric softener on them, it will damage your lens coatings.
+Wash on warm with mild detergent and let air dry.
+
+> [!WARNING]
+> Never get fabric softener on them, it will damage your lens coatings.

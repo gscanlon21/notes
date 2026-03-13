@@ -10,6 +10,9 @@ see_also = []
 
 # Washing
 
+> [!IMPORTANT]
+> Rinse your dishes before putting them in the dishwasher, so that food particles don't clog the drain hose.
+
 ##### How to Get a Good Wash[^1]
 1. Run the hot water tap to purge the cold water from the line before running the dishwasher.
     - Hot water activates the enzymes that are used to break down food which makes them more effective.
@@ -26,6 +29,10 @@ see_also = []
 
 ##### How to Fix a Leak
 
+> [!CAUTION]
+> Be prepared for water to leak when you disconnect the hoses! Have a towel handy.
+
+
 1. Turn off the connections under the sink that lead to the dishwasher.
 1. Cleanup any water on the floor and start a fan to get the air moving. 
 1. Shove a towel under the dishwasher to absorb any water left in the leaking hoses.
@@ -33,9 +40,14 @@ see_also = []
 1. Disconnect the drain line, which is usually a white-ish flexible hose.
 1. Unplug the electric line leading to the dishwasher.
 1. Unscrew the dishwasher from the underside of the counter-top. The screws are inside the dishwasher.
-    - There may also be screws in the side of the dishwasher, they have plastic covers over them.
+    - There may also be screws in the side of the dishwasher, those have plastic covers over them.
 1. Gently wiggle out the dishwasher while feeding through the hoses from under the sink.
 
+> [!NOTE]
+> There are two water hoses that extend from under your sink.
+> - A soft metallic one leads from the hot water inlet to the dishwasher.
+> - A hard metallic one leads from the cold water inlet to the fridge/freezer. 
+>> Hoses Under the Sink
 
 
 [^1]: Technology Connections
