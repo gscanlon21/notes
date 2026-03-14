@@ -1,0 +1,67 @@
+@media screen and (min-width: 100rem) {
+    :root {
+		--body-width: calc(100vw - 40rem);
+	}
+}
+
+#wrapper {
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden;
+	position: relative;
+	text-align: center;
+	line-height: 1;
+	display: flex;
+}
+
+#wrapper.circle::after {
+	border: 1px solid currentColor;
+	font-size: var(--font-size, 20px);
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	position: absolute;
+	aspect-ratio: 1;
+	display: flex;
+	margin: auto;
+	content: "0";
+	width: 2ch;
+	inset: 0;
+}
+
+.letter-circle {
+	overflow: clip;
+	aspect-ratio: 1;
+	position: absolute;
+}
+
+.circle, .letter {
+	transform-origin: center;
+	position: absolute;
+	aspect-ratio: 1;
+	margin: auto;
+	right: 0;
+	left: 0;
+}
+
+.letter {
+	border: 1px solid currentColor;
+	font-size: var(--font-size, 20px);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	aspect-ratio: 1;
+	display: flex;
+	margin: auto;
+	width: 2ch;
+}
+
+.circle.red {
+	color: rgb(var(--color-red));
+}
+
+.circle.green {
+	color: rgb(var(--color-green));
+}
