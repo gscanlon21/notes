@@ -1,42 +1,79 @@
-const root = document.getElementById("content");
-const chart = document.getElementById("number-circle");
-const regenerate = document.getElementById("regenerate");
-const radiusRange = document.getElementById("radius-select");
-const circlesRange = document.getElementById("circles-select");
+class Consts {
+	static ROWS_COLS = 10;
+}
+
+const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const chart = document.getElementById("hart-chart");
+const rowsColsRange = document.getElementById("row-col-range");
 const fontSizeRange = document.getElementById("font-size-select");
-const centerCircleCheckbox = document.getElementById("center-select");
+const letterGapRange = document.getElementById("letter-gap-select");
+const redGreenCheck = document.getElementById("red-green-checkbox");
+const gridRefCheck = document.getElementById("grid-reference-checkbox");
+const startCheck = document.getElementById("start-checkbox");
+const lettersInput = document.getElementById("letters-text");
+const regenerate = document.getElementById("regenerate");
 
-const randomNumbers = (l) => Array.from({ length: l }, (_, i) => i).aShuffle();
+const randomLetter = () => Array.from(lettersInput.value ?? letters).aRandom();
+const redOrGreen = () => ["red", "green"].aRandom();
 
-const generateCircleChart = (_, circles, radius) => {
-	circles = circlesRange.value = circles ?? circlesRange.value;
-	radius = radiusRange.value = radius ?? radiusRange.value;
-
+const generateHartChart = () => {
 	chart.innerHTML = null;
-	chart.style.height = `${radius * 2}px`;
-	const numbers = randomNumbers(circles);
-	for (let i = 0; i < circles; i++) {
-		const rotation = 360 / circles * i;
-		const cell = document.createElement("div");
-		const text = document.createElement("div");
-		cell.style.transform = `rotate(${rotation}deg)`;
-		cell.style.height = `${radius * 2}px`;
-		text.textContent = numbers[i].toString();
-		text.style.transform = `rotate(-${rotation}deg)`;
+	chart.style.gridTemplateColumns = `repeat(${Consts.ROWS_COLS + (gridRefCheck.checked ? 2 : 0)}, 1fr)`;
+	
+	const rowRefNumbers = Array.from(numbers).toReversed();
+	const colRefNumbers = Array.from(numbers).toReversed();
+	for (let i = 0; i < Consts.ROWS_COLS * Consts.ROWS_COLS; i++) {
+		const cell = document.createElement("div").aWithClass('letter');
+		
+		if (gridRefCheck.checked && i === 0) {
+			const ref = document.createElement("div").aWithClass('ref').aWithClass('row').aWithClass('col');
+			if (startCheck.checked) {
+				rowRefNumbers.pop();
+				colRefNumbers.pop();
+			}
+			chart.appendChild(ref);
+		}
+
+		if (gridRefCheck.checked && i % (Consts.ROWS_COLS) === 0) {
+			const rowRef = document.createElement("div").aWithClass('ref').aWithClass('row');
+			rowRef.textContent = rowRefNumbers.pop();
+			chart.appendChild(rowRef);
+			const colRef = document.createElement("div").aWithClass('ref').aWithClass('col');
+			colRef.textContent = colRefNumbers.pop();
+			chart.appendChild(colRef);
+		}
+
+		redGreenCheck.checked ? cell.classList.add(redOrGreen()) : void(0);
+
+		// Opacity ranges from 1 to .1 b/c anything less than .1 is invisible.
+		const opacity = 0.9 * (i / (Consts.ROWS_COLS * Consts.ROWS_COLS - 1));
+		cell.style.opacity = Math.min(1, 1 - opacity);
+		cell.textContent = randomLetter();
 		chart.appendChild(cell);
-		cell.appendChild(text);
 	}
-};
+}
 
-const setCircleSize = () => root.style.setProperty('--circle-size', `${fontSizeRange.value}px`);
-fontSizeRange.addEventListener("input", setCircleSize);
-setCircleSize();
+const setRowsCols = () => Consts.ROWS_COLS = parseInt(rowsColsRange.value);
+rowsColsRange.addEventListener('input', setRowsCols);
+setRowsCols();
 
-const generateInnerCircle = () => chart.aToggleClass('circle', centerCircleCheck.checked);
-centerCircleCheckbox.addEventListener('change', generateInnerCircle);
-generateInnerCircle();
+const setFontSize = () => chart.style.fontSize = `${fontSizeRange.value}px`;
+fontSizeRange.addEventListener("input", setFontSize);
+setFontSize();
 
-regenerate.addEventListener('click', generateCircleChart);
-radiusRange.addEventListener("input", generateCircleChart);
-circlesRange.addEventListener("input", generateCircleChart);
-generateCircleChart();
+const setLetterGap = () => chart.style.gap = `${letterGapRange.value}px`;
+letterGapRange.addEventListener("input", setLetterGap);
+setLetterGap();
+
+const onStartCheck = () => chart.aToggleClass('start-at-one', startCheck.checked);
+startCheck.addEventListener('change', onStartCheck);
+onStartCheck()
+
+redGreenCheck.addEventListener('change', generateHartChart);
+rowsColsRange.addEventListener('change', generateHartChart);
+gridRefCheck.addEventListener('change', generateHartChart);
+lettersInput.addEventListener("change", generateHartChart);
+startCheck.addEventListener('change', generateHartChart);
+regenerate.addEventListener('click', generateHartChart);
+generateHartChart();

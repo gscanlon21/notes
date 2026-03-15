@@ -1,43 +1,56 @@
 const root = document.getElementById("content");
-const chart = document.getElementById("number-circle");
+const chart = document.getElementById("chart");
+const lineRange = document.getElementById("line-range");
+const radiusRange = document.getElementById("radius-range");
+const centerRadiusRange = document.getElementById("center-radius-range");
 const regenerate = document.getElementById("regenerate");
-const radiusRange = document.getElementById("radius-select");
-const circlesRange = document.getElementById("circles-select");
-const fontSizeRange = document.getElementById("font-size-select");
-const centerCircleCheckbox = document.getElementById("center-select");
 
-const randomNumbers = (l) => Array.from({ length: l }, (_, i) => i).aShuffle();
-
-const generateCircleChart = (_, circles, radius) => {
-	circles = circlesRange.value = circles ?? circlesRange.value;
-	radius = radiusRange.value = radius ?? radiusRange.value;
+const generateChart = () => {
+	const lines = parseInt(lineRange.value);
+	const radius = parseInt(radiusRange.value);
 
 	chart.innerHTML = null;
-	chart.style.height = `${radius * 2}px`;
-	const numbers = randomNumbers(circles);
-	for (let i = 0; i < circles; i++) {
-		const rotation = 360 / circles * i;
-		const cell = document.createElement("div");
-		const text = document.createElement("div");
-		cell.style.transform = `rotate(${rotation}deg)`;
-		cell.style.height = `${radius * 2}px`;
-		text.textContent = numbers[i].toString();
-		text.style.transform = `rotate(-${rotation}deg)`;
-		chart.appendChild(cell);
-		cell.appendChild(text);
+
+	for (let i = 0; i < lines; i++) {
+		const angle = (360 / lines) * i;
+
+		const line = document.createElement("div");
+		line.style.transform = `translate(-50%, -100%) rotate(${angle}deg)`;
+		line.className = "line";
+
+		chart.appendChild(line);
 	}
-};
 
+	const mask = document.createElement("div");
+	mask.className = "center-mask";
+	chart.appendChild(mask);
 
-const setCircleSize = () => root.style.setProperty('--circle-size', `${fontSizeRange.value}px`);
-fontSizeRange.addEventListener("input", setCircleSize);
-setCircleSize();
+	for (let i = 1; i <= 12; i++) {
+		const angle = (i / 12) * 2 * Math.PI - Math.PI / 2;
 
-const generateInnerCircle = () => chart.aToggleClass('circle', centerCircleCheck.checked);
-centerCircleCheckbox.addEventListener('change', generateInnerCircle);
-generateInnerCircle();
+		const x = parseInt(radiusRange.value) + Math.cos(angle) * radius * 1.1;
+		const y = parseInt(radiusRange.value) + Math.sin(angle) * radius * 1.1;
 
-regenerate.addEventListener('click', generateCircleChart);
-radiusRange.addEventListener("input", generateCircleChart);
-circlesRange.addEventListener("input", generateCircleChart);
-generateCircleChart();
+		const num = document.createElement("div");
+		num.className = "number";
+		num.innerText = i;
+
+		num.style.left = x + "px";
+		num.style.top = y + "px";
+
+		chart.appendChild(num);
+	}
+}
+
+const setCenterRadius = () => root.style.setProperty('--center-radius', `${parseInt(centerRadiusRange.value)}px`);
+centerRadiusRange.addEventListener('input', setCenterRadius);
+setCenterRadius();
+
+const setRadius = () => root.style.setProperty('--radius', `${parseInt(radiusRange.value)}px`);
+radiusRange.addEventListener('input', setRadius);
+setRadius();
+
+radiusRange.addEventListener("input", generateChart);
+regenerate.addEventListener('click', generateChart);
+lineRange.addEventListener("input", generateChart);
+generateChart()

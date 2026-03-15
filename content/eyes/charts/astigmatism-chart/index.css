@@ -1,50 +1,42 @@
-#number-circle {
-	display: flex;
-	overflow: clip;
-	position: relative;
+.page {
 	justify-content: center;
-	text-align: center;
-	aspect-ratio: 1;
-	line-height: 1;
-	height: 100%;
-	width: 100%;
-}
-
-#number-circle div {
-	position: absolute;
-	aspect-ratio: 1;
-}
-
-#number-circle div div {
-	border: 1px solid currentColor;
-	font-size: var(--circle-size, 20px);
-	justify-content: center;
+	padding-bottom: 3rem;
+	margin-bottom: -3rem;
 	align-items: center;
-	position: absolute;
-	text-align: center;
-	border-radius: 50%;
-	aspect-ratio: 1;
-	aspect-ratio: 1;
+	overflow-x: auto;
 	display: flex;
-	margin: auto;
-	padding: 8px;
-	width: 2ch;
-	right: 0;
-	left: 0;
 }
 
-#number-circle.circle::after {
-	border: 1px solid currentColor;
-	font-size: var(--circle-size, 20px);
+.chart {
+	height: calc(var(--radius) * 2);
+	position: relative;
+	aspect-ratio: 1;
+}
+
+.line {
+	transform-origin: bottom center;
+	background: rgb(var(--color-text));
+	height: var(--radius);
+	position: absolute;
+	width: 2px;
+	left: 50%;
+	top: 50%;
+}
+
+.center-mask {
+	transform: translate(-50%, -50%);
+	background: white;
 	border-radius: 50%;
 	position: absolute;
 	aspect-ratio: 1;
-	margin: auto;
-	padding: 8px;
-	content: "";
-	width: 2ch;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	top: 0;
+	width: var(--center-radius);
+	left: 50%;
+	top: 50%;
+}
+
+.number {
+	transform: translate(-50%, -50%);
+	position: absolute;
+	font-weight: bold;
+	font-size: 26px;
 }
