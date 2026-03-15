@@ -1,9 +1,9 @@
 +++
 title = "Newsletters"
 description = ""
-updated = 2026-06-01
 
 [extra]
+updated = 2026-06-01
 see_also = []
 +++
 
@@ -11,7 +11,8 @@ see_also = []
 
 
 **[Arnold's Pump Club](https://arnoldspumpclub.com/)**
-: ~~What's this about?~~
+: Arnold's Pump Club is a daily newsletter by Arnold Schwarzenegger.
+: Simplify nutrition, fitness, and wellness with Arnold’s email each day.
 : > - [x] 
   > - [x] 
   > - [x] 
