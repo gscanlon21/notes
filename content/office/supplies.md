@@ -4,7 +4,7 @@ updated = 2025-12-12
 
 [extra]
 see_also = [
-    { title = "Pentel EnerGel", href = "https://www.pentel.com/collections/energel" },
+  { title = "Pentel EnerGel", href = "https://www.pentel.com/collections/energel" },
 ]
 +++
 
@@ -18,4 +18,13 @@ see_also = [
   > - [ ] 
   > - [ ] 
   > - [ ] 
+  > - [ ] 
+
+
+**Pilot G2 0.7**
+: Certain colors of the gel can be scratchy.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
   > - [ ] 
