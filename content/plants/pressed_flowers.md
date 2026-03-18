@@ -1,8 +1,11 @@
 +++
 title = "Pressed Flowers"
+description = ""
 updated = 2025-10-10
 
 [extra]
+site_version = 1
+toc_level = 2
 see_also = [
 	{ title = "Oshibana Art"},
   { title = "Aqua Liquid Glue (Tombow)", href = "https://www.tombowusa.com/mono-aqua-liquid-glue.html" },

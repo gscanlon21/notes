@@ -1,8 +1,11 @@
 +++
 title = "Rain Barrels"
+description = ""
 updated = 2025-03-10
 
 [extra]
+site_version = 1
+toc_level = 2
 see_also = [
   { title = "Blue Barrel Systems", href = "https://www.bluebarrelsystems.com/" },
 ]
