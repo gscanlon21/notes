@@ -33,7 +33,7 @@ blockquote[class^="markdown-alert-"] {
 	display: flex;
 	width: 100%;
 	
-	&:first-child {
+	&:first-child:not(+blockquote[class^="markdown-alert-"]) {
 		margin-block-end: $base-padding * 3;
 	}
 
@@ -43,12 +43,12 @@ blockquote[class^="markdown-alert-"] {
 		order: -2;
 	}
 
-	& > :first-child {
-		margin-top: 0
+	& > :first-child, & > p {
+		margin-block-start: 0
 	}
 
 	& > :last-child {
-		margin-bottom: 0
+		margin-block-end: 0
 	}
 
 	& > p {
@@ -70,9 +70,17 @@ blockquote[class^="markdown-alert-"] {
 	}
 
 	&:has(blockquote) {
-		& > p:first-of-type {
-			border-top: 1px solid rgba(var(--color-note), .25);
+		& > p {
+			padding-block-start: $base-padding * 0.5;
+		}
+
+		& > p:only-of-type {
 			padding-block-start: $base-padding * 0.25;
+		}
+
+		& > p:first-child, & > ul:first-child {
+			border-top-width: 2px;
+			border-top-style: solid;
 		}
 	}
 
@@ -91,6 +99,10 @@ blockquote.markdown-alert-tip {
 	border-color: color(--color-tip, .5);
 	background-color: color(--color-tip, .25);
 
+	p, ul {
+		border-color: color(--color-tip, .25);
+	}
+
 	&::before {
 		content: '⚠ Tip';	
 	}
@@ -99,6 +111,10 @@ blockquote.markdown-alert-tip {
 blockquote.markdown-alert-note {
 	border-color: color(--color-note, .5);
 	background-color: color(--color-note, .25);
+
+	p, ul {
+		border-color: color(--color-note, .25);
+	}
 
 	&::before {
 		content: '⚠ Note';
@@ -109,6 +125,10 @@ blockquote.markdown-alert-caution {
 	border-color: color(--color-caution, .5);
 	background-color: color(--color-caution, .25);
 
+	p, ul {
+		border-color: color(--color-caution, .25);
+	}
+
 	&::before {
 		content: '⚠ Caution';
 	}
@@ -118,6 +138,10 @@ blockquote.markdown-alert-warning {
 	border-color: color(--color-warning, .5);
 	background-color: color(--color-warning, .25);
 
+	p, ul {
+		border-color: color(--color-warning, .25);
+	}
+
 	&::before {
 		content: '⚠ Warning';
 	}
@@ -126,6 +150,10 @@ blockquote.markdown-alert-warning {
 blockquote.markdown-alert-important {
 	border-color: color(--color-important, .5);
 	background-color: color(--color-important, .25);
+
+	p, ul {
+		border-color: color(--color-important, .25);
+	}
 
 	&::before {
 		content: '⚠ Important';

@@ -26,7 +26,7 @@ article.v1 {
 					order: 1;
 				}
 
-				a:last-of-type {
+				a:not(:first-of-type), a:only-of-type {
 					align-items: center;
 					display: flex;
 					font-size: 0;
