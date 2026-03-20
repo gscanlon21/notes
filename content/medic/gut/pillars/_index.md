@@ -3,6 +3,7 @@ title = "Core Pillars of Gut Health"
 sort_by = "weight"
 
 [extra]
+section_sort_by = "weight"
 see_also = []
 +++
 

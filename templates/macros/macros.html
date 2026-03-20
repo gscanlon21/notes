@@ -71,6 +71,11 @@
 {% macro render_sitemap(path, open=true, first_pass=true, current_path='') %}
 {% set show_localhost = config.base_url == "http://127.0.0.1:1111" %}
 {% set section_info = get_section(path=path) %}
+{% if section_info.extra.section_sort_by | default(value="none") == "weight" %}
+	{% set subsections = section_info.subsections %}
+{% else %}
+	{% set subsections = section_info.subsections | sort %}
+{% endif %}
 {% if first_pass %}
     {% if section_info.pages | length > section_info.pages | filter(attribute="extra.in_sitemap", value=false) | length or show_localhost %}
         <menu class="sitemap-list">
@@ -78,12 +83,12 @@
         </menu>
     {% endif %}
     
-    {% for subsection in section_info.subsections | sort %}
+    {% for subsection in subsections %}
         {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
     {% endfor %}
 {% elif section_info.extra.in_sitemap | default(value=true) or show_localhost %}
     {% if section_info.transparent %}
-        {% for subsection in section_info.subsections | sort %}
+        {% for subsection in subsections %}
             {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
         {% endfor %}
     {% else %}
@@ -93,7 +98,7 @@
             <menu class="sitemap-list">
                 {{ macros::render_list_links(pages=section_info.pages) }}
         
-                {% for subsection in section_info.subsections | sort %}
+                {% for subsection in subsections %}
                     {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
                 {% endfor %}
             </menu>
