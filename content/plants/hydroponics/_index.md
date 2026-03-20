@@ -1,9 +1,9 @@
 +++
 title = "Hydroponics"
 description = "Nutrient film technique hydroponics."
-updated = 2026-06-01
 
 [extra]
+updated = 2026-06-01
 site_version = 1
 toc_level = 2
 see_also = [
@@ -13,22 +13,12 @@ see_also = [
   { title = "Leader Water Pumps" },
   { title = "Jebao DC Water Pumps" },
   { title = "Grow Without Soil", href = "https://growwithoutsoil.com/" },
-  { title = "Advanced Drainage Systems", href = "https://www.adspipe.com/" },
   { title = "Simple Greens Hydroponics", href = "https://www.simplegreenshydroponics.com/" },
 ]
 +++
 
 {{ hidden() }}
 
-> [!CAUTION]
-> Avoid non-food grade plastics such as PVC (#3) and Polystyrene (#6), as these may release harmful chemicals into the soil.
-> 
-> Food-grade plastics like HDPE (#2), LDPE (#4), and PP (#5) are already used in food packaging, so they are safe for container gardening.
->> Food-Grade Materials
-
-> [!IMPORTANT]
-> All the products you buy should be dark black to prevent any light from getting in or bacteria will grow.
->> Bacterial Growth
 
 > [!IMPORTANT]
 > The pH of the hydroponics reservoir should be between 5.5 and 6.5.
@@ -40,35 +30,6 @@ Check on them in 1.5 weeks. If roots are at least 1.5 inches long, move into the
 If they are less than 1.5 inch keep them in the start tray for the rest of the week.
 
 
-# Equipment
-
-**Pipe**
-: Get a larger diameter for the water to flow around roots.
-: - 4 inches should be good.
-: **[ADS Triple Wall HDPE Pipe](https://www.adspipe.com/pipe/triple-wall)**
-  : Uses a Bell and Spigot joining system.
-  : - [ADS Single Wall HDPE Bend](https://www.adspipe.com/pipe/fittings/single-wall/bends)
-
-**Air Pump**
-_Water Aerator_
-: Used to aerate the water.
-
-**Submersible Water Pump**
-: Jebao DC Water Pumps are good.
-: Get one with an adjustable flow rate.
-
-**Net Cups**
-: ?
-
-**Double Threaded Bulkhead Fitting**
-_Stainless Steel_
-_1/2" inner to 3/4" outer_
-: Used to attach the pump's inlet hose to the pipe.
-
-## Grow Lights
-
-**TODO**
-: ?
 
 ## Root Base
 The root base is a medium that protects and secures the roots, making sure the plant doesn’t drown. 
