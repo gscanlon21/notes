@@ -21,25 +21,52 @@ see_also = [
 
 # Pumps
 
+## Submersible Water Pumps
+
+**Jebao Jecod DCP-2500**
+_Sine Wave Water Return Pump_
+: ?
+: > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+
+## Air Pumps
+
 **Air Pump**
 _Water Aerator_
 : Used to aerate the water.
 
-**Submersible Water Pump**
-: Jebao DC Water Pumps are good.
-: Get one with an adjustable flow rate.
 
 # Net Cups
 
 **AC Infinity 2-Inch Net Cups**
-: ?
+: Too small for anything other than leafy greens.
+: Great quality.
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+
+# Hoses
+
+**Silicone 3/4" ID Hose**
+: Does not fit a 3/4" GHT bulkhead fitting.
+
 
 # Bulkhead Fittings
+Used to attach the pump's inlet hose to the pipe.
+
+> [!IMPORTANT]
+> Stainless steel or copper may leech metal as they interact with chemicals in the nutrient solution.
+>> Choose Plastic Fittings
 
 **Double Threaded Bulkhead Fitting**
-_Stainless Steel_
-_1/2" inner to 3/4" outer_
-: Used to attach the pump's inlet hose to the pipe.
+_Male 3/4" GHT Double Female 1/2" NPT_
+: Would likely fit a 1" ID silicone hose.
+: - Does not fit a 3/4" ID silicone hose.
 
 # Grow Lights
 

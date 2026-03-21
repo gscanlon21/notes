@@ -23,10 +23,14 @@ see_also = [
 > Get a larger diameter for the water to flow around roots.
 >> Minimum 4-Inch Pipe
 
+# ADS Triple Wall HDPE Pipe
+
 **[ADS Triple Wall HDPE Pipe](https://www.adspipe.com/pipe/triple-wall)**
 _4-inch_
 : Uses a Bell and Spigot joining system.
 : One one end of the pipe is a hub connector, the other end is plain.
+
+## Fittings
 
 **[ADS Single Wall HDPE Bend](https://www.adspipe.com/pipe/fittings/single-wall/bends)**
 _ADS 4-in x 4-in 90 -Degree Corrugated Elbow Fittings_
