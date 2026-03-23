@@ -7,15 +7,32 @@ updated = 2026-06-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "Water Quality", file = "electrical-conductivity-and-ph-guide-for-hydroponics.pdf" },
+  { title = "4.5–9 pH Test Strips" },
+  { title = "Apera Instruments", href = "https://aperainst.com/" },
+  { title = "Hanna Instruments", href = "https://hannainst.com/" },
+  { title = "Bluelab Instruments", href = "https://bluelab.com/" },
+  { title = "Electrical Conductivity & pH Guide", file = "electrical-conductivity-and-ph-guide-for-hydroponics.pdf" },
 ]
 +++
 
 {{ hidden() }}
 
+> [!IMPORTANT]
+> The pH of the hydroponics reservoir should be between 5.5 and 6.5.
+>> Optimum Water pH
+
+> [!NOTE]
+> TODO
+>> Optimum Water Temperature
+
+> [!TIP]
+> Don't add the pH adjusting solution straight to the reservoir or you may shock the plant roots.
+>
+> Add it to a gallon jug and let dilute for 5 minutes before slowing pouring the solution into your reservoir.
+>> Adjusting pH Levels
 
 
-{% table(header="Optimum range of electrical conductivity (EC) and pH values for hydroponic crops.", footer="") %}
+{% table(header="Optimum range of electrical conductivity (EC) and pH values for hydroponic crops.", footer="Electrical Conductivity & pH Guide") %}
 | Crops          | EC (mS/cm) | pH        |
 |----------------|-----------|-----------|
 | Asparagus      | 1.4 to 1.8 | 6.0 to 6.8 |
@@ -47,7 +64,7 @@ see_also = [
 {% end %}
 
 
-{% table(header="Acceptable values for common nutrients found in water.", footer="") %}
+{% table(header="Acceptable values for common nutrients found in water.", footer="Electrical Conductivity & pH Guide") %}
 | Nutrients              | Acceptable value (ppm) |
 |------------------------|------------------------|
 | Sodium                 | <50                    |
@@ -56,3 +73,9 @@ see_also = [
 | Chloride               | <140                   |
 | Sulfate                | <100                   |
 {% end %}
+
+##### If the pH is High
+TODO
+
+##### If the pH is Low
+TODO

@@ -7,7 +7,6 @@ updated = 2026-06-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "Ask JW for help!" },
   { title = "Hydroponics", file = "hydroponics-hla-6442-a.pdf" },
   { title = "Pruning Hydroponic Crops", file = "pruning-hydroponic-crops-hla-6725.pdf" },
   { title = "Soilless Growing Mediums", file = "soilless-growing-mediums-hla-6728.pdf" },
@@ -20,10 +19,6 @@ see_also = [
 
 {{ hidden() }}
 
-
-> [!IMPORTANT]
-> The pH of the hydroponics reservoir should be between 5.5 and 6.5.
->> Water pH
 
 # Growing
 ##### Seedlings
