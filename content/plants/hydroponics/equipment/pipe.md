@@ -46,4 +46,10 @@ _ADS 4-in x 4-in 90 -Degree Corrugated Elbow Fittings_
 : ?
 
 **Silicone 180 Degree U-Bend**
-: ?
+_4-inch, 102 mm_
+: Fits on the outside of the pipe or on the inside of the hub.
+: - Though it needs to be stretched to fit on the outside of the pipe.
+
+> [!CAUTION]
+> 114mm max pipe clamps are too small! Get a size up. 
+>> Pipe Clamps
