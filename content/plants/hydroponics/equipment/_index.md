@@ -19,19 +19,6 @@ see_also = [
 >> Bacterial Growth
 
 
-# Pumps
-
-## Submersible Water Pumps
-
-**Jebao Jecod DCP-2500**
-_Sine Wave Water Return Pump_
-: ?
-: > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
-
 ## Air Pumps
 
 **Air Pump**
