@@ -8,10 +8,11 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "Ask JW for help!" },
-  { title = "Sicce Water Pumps" },
-  { title = "Eheim Water Pumps" },
-  { title = "Leader Water Pumps" },
-  { title = "Jebao DC Water Pumps" },
+  { title = "Hydroponics", file = "hydroponics-hla-6442-a.pdf" },
+  { title = "Pruning Hydroponic Crops", file = "pruning-hydroponic-crops-hla-6725.pdf" },
+  { title = "Soilless Growing Mediums", file = "soilless-growing-mediums-hla-6728.pdf" },
+  { title = "Water Gardens", file = "water-gardens-srac-435.pdf" },
+  { title = "Water Gardens: Low Management", file = "water-gardens-a-low-management-approach-nrem-100.pdf" },
   { title = "Grow Without Soil", href = "https://growwithoutsoil.com/" },
   { title = "Simple Greens Hydroponics", href = "https://www.simplegreenshydroponics.com/" },
 ]
