@@ -7,11 +7,11 @@ updated = 2026-06-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "Hydroponics", file = "hydroponics-hla-6442-a.pdf" },
-  { title = "Pruning Hydroponic Crops", file = "pruning-hydroponic-crops-hla-6725.pdf" },
-  { title = "Soilless Growing Mediums", file = "soilless-growing-mediums-hla-6728.pdf" },
-  { title = "Water Gardens", file = "water-gardens-srac-435.pdf" },
-  { title = "Water Gardens: Low Management", file = "water-gardens-a-low-management-approach-nrem-100.pdf" },
+  { title = "Hydroponics", file = "hydroponics.pdf" },
+  { title = "Pruning Hydroponic Crops", file = "pruning-hydroponic-crops.pdf" },
+  { title = "Soilless Growing Mediums", file = "soilless-growing-mediums.pdf" },
+  { title = "Water Gardens", file = "water-gardens.pdf" },
+  { title = "Water Gardens: Low Management", file = "water-gardens-a-low-management-approach.pdf" },
   { title = "Grow Without Soil", href = "https://growwithoutsoil.com/" },
   { title = "Simple Greens Hydroponics", href = "https://www.simplegreenshydroponics.com/" },
 ]
@@ -19,20 +19,6 @@ see_also = [
 
 {{ hidden() }}
 
-
-# Growing
-##### Seedlings
-Check on them in 1.5 weeks. If roots are at least 1.5 inches long, move into the hydroponics system. 
-If they are less than 1.5 inch keep them in the start tray for the rest of the week.
-
-
-
-## Root Base
-The root base is a medium that protects and secures the roots, making sure the plant doesn’t drown. 
-It can be peat moss, rock wool, clay pellets, rice hulls, and anything else that will give the roots some added support and protection.
-
-**Rock Wool**
-: ?
 
 ## Reservoirs
 

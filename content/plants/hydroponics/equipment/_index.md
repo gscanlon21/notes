@@ -6,9 +6,7 @@ description = ""
 updated = 2026-06-01
 site_version = 1
 toc_level = 2
-see_also = [
-  { title = "AC Infinity", href = "https://acinfinity.com/" },
-]
+see_also = []
 +++
 
 {{ hidden() }}
@@ -19,43 +17,13 @@ see_also = [
 >> Bacterial Growth
 
 
-## Air Pumps
+# Types of Equipment
 
 **Air Pump**
 _Water Aerator_
 : Used to aerate the water.
 
+**Root Base**
+: The root base is a medium that protects and secures the roots, making sure the plant doesn’t drown. 
+: It can be peat moss, rock wool, clay pellets, rice hulls, and anything else that will give the roots some added support and protection.
 
-# Net Cups
-
-**AC Infinity 2-Inch Net Cups**
-: Too small for anything other than leafy greens.
-: Great quality.
-: > - [x]
-  > - [x]
-  > - [x]
-  > - [x]
-  > - [x]
-
-# Hoses
-
-**Silicone 3/4" ID Hose**
-: Does not fit a 3/4" GHT bulkhead fitting.
-
-
-# Bulkhead Fittings
-Used to attach the pump's inlet hose to the pipe.
-
-> [!IMPORTANT]
-> Stainless steel or copper may leech metal as they interact with chemicals in the nutrient solution.
->> Choose Plastic Fittings
-
-**Double Threaded Bulkhead Fitting**
-_Male 3/4" GHT Double Female 1/2" NPT_
-: Would likely fit a 1" ID silicone hose.
-: - Does not fit a 3/4" ID silicone hose.
-
-# Grow Lights
-
-**TODO**
-: ?
