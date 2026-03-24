@@ -2,7 +2,13 @@
 ###### Table {{ nth }}: {{ header | safe }}
 {% endif %}
 
-<div class="table-wrapper {{ class | default(value='') }}">
+{% if footer and footer | length > 0 %}
+  {% set styles = "width:100%" %}
+{% else %}
+  {% set styles = "" %}
+{% endif %}
+
+<div class="table-wrapper {{ class | default(value='') }}" style="{{ styles }}">
 
 {{ body | safe }}
 

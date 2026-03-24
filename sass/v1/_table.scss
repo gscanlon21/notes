@@ -40,6 +40,10 @@ article.v1 {
 			&:has(> code:last-child) {
 				padding-inline-end: 0;
 			}
+
+			&+h6:has(+ .table-wrapper) {
+				margin-block-start: $base-padding * 2.0;
+			}
 		}
 	}
 

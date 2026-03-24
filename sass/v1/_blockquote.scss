@@ -5,21 +5,21 @@ article.v1 {
 	}
 
 	// Title header for blockquotes.
-	h6:has(+blockquote)  {
+	h6:has(+blockquote:not([class^="markdown-alert-"]))  {
 		font-size: $base-font-size * 0.8;
 		margin-block-end: $base-padding * -1;
 		margin-block-start: $base-padding * 1.25;
 		margin-inline-start: $site-padding * 3.25;
 	}
 
-	dd > h6:has(+blockquote)  {
+	dd > h6:has(+blockquote:not([class^="markdown-alert-"]))  {
 		margin-block-start: $base-padding * 0.5;
 		margin-block-end: $base-padding * -0.25;
 		margin-inline-start: $site-padding * 0.75;
 	}
 
 	// Attribution footer for blockquotes.
-	blockquote+h6 {
+	blockquote:not([class^="markdown-alert-"])+h6 {
 		font-size: $base-font-size * 0.75;
 		margin-block-start: $base-padding * 0.25;
 		margin-inline-start: $site-padding * 3.25;
