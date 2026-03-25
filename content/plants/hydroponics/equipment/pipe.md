@@ -23,6 +23,17 @@ see_also = [
 > Get a larger diameter for the water to flow around roots.
 >> Minimum 4-Inch Pipe
 
+# PVC Pipe
+
+> [!NOTE]
+> Pipe with the label "NSF pw" is NSF certified for potable water use.
+>> NSF Certifications
+
+> [!NOTE]
+> The actual designation you want on PVC in the US is NSF-61 or NSF-51. These are the National Science Foundation standards for potable water.
+>> NSF Certifications
+
+
 # ADS Triple Wall HDPE Pipe
 
 **[ADS Triple Wall HDPE Pipe](https://www.adspipe.com/pipe/triple-wall)**
@@ -50,6 +61,7 @@ _4-inch, 102 mm_
 : Fits on the outside of the pipe or on the inside of the hub.
 : - Though it needs to be stretched to fit on the outside of the pipe.
 : - Only one side of the u-bend needs to be stretched. The other side fits in the hub.
+: May not be food safe if the silicone contains additives or fillers.
 
 > [!CAUTION]
 > 114mm max pipe clamps are too small! Get a size up. 
