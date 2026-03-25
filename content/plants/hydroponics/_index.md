@@ -67,5 +67,10 @@ Flow rates beyond these extremes are often associated with nutritional problems.
 {{ image(title="NFT 4", file="1_xJVbI4F7HuOLoTBO0qms_w.webp") }}
 
 
+# Other Systems
+
+{{ image(title="Ebb and Flow", file="ebb-and-flow-diagram-768x556.jpg.webp") }}
+
+
 
 [^1]: [Nutrient Film Technique Wiki](https://en.wikipedia.org/wiki/Nutrient_film_technique)
