@@ -59,4 +59,13 @@ At planting, rates may be half this, and the upper limit of 2L/min appears about
 Flow rates beyond these extremes are often associated with nutritional problems.
 
 
+# Inspiration
+
+{{ image(title="NFT 1", file="1_50mZxjZ1f78ovYljGnZipg.webp") }}
+{{ image(title="NFT 2", file="1_aSfEEbH6j1-0tYICs4xPQA.webp") }}
+{{ image(title="NFT 3", file="1_DEU8truC6uDqpiKXg64rLw.webp") }}
+{{ image(title="NFT 4", file="1_xJVbI4F7HuOLoTBO0qms_w.webp") }}
+
+
+
 [^1]: [Nutrient Film Technique Wiki](https://en.wikipedia.org/wiki/Nutrient_film_technique)
