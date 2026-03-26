@@ -12,6 +12,7 @@ see_also = [
   { title = "Hanna Instruments", href = "https://hannainst.com/" },
   { title = "Bluelab Instruments", href = "https://bluelab.com/" },
   { title = "Electrical Conductivity & pH Guide", file = "electrical-conductivity-and-ph-guide-for-hydroponics.pdf" },
+  { title = "Lab Testing", href = "https://www.acslab.com/" },
 ]
 +++
 
