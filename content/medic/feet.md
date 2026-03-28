@@ -15,3 +15,11 @@ Need to offload some of the pressure on the metatarsal heads. Find something to 
 
 > [!WARNING] 
 > The metatarsal dome is back from the metatarsal heads. Putting pressure on the metatarsal heads by mistake will increase the pressure on them and make the pain worse.
+
+**Copper Compression Metatarsal Pads**
+: These do absolutely nothing.
+: > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
