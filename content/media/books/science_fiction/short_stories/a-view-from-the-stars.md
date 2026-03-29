@@ -2,7 +2,7 @@
 title = "A View from the Stars"
 description = "Stories and essays from the New York Times bestselling author of The Three-Body Problem"
 authors = ["Cixin Liu"]
-updated = 2025-12-12
+updated = 2026-12-01
 
 [extra]
 rating = 4
@@ -116,12 +116,15 @@ _Based on the Butterfly Effect_
   > - [ ]
 
 **Destiny**
-: TODO
-: > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
+: A spaceship unknowingly enters a wormhole through time where they encounter as asteroid heading towards earth.
+: Unable to reach Earth on comms, they take the initiative and knock the asteroid off course before realizing that they had gone through a wormhole.
+: Retracing their course to reverse the wormhole's time-adjustment, they learn that the asteroid they knocked off course was the one meant for the dinosaurs.
+: Landing back on Earth, they come to realize that the humanity never overtook the dinosaurs and that they were devolved into dinosaur fodder and placed in zoos.
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
 
 **The Dark Forest Theory**
 : TODO

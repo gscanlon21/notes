@@ -15,7 +15,7 @@ see_also = [
 
 
 > [!IMPORTANT]
-> Cover your jars in dark black to prevent any light from getting in or algae will grow.
+> Cover you jars to block any light from getting in or algae will grow.
 >> Algae Growth
 
 
@@ -28,3 +28,8 @@ _Wide Mouth_
   > - [x] 
   > - [x] 
 
+
+> [!TIP]
+> Brown paper lunch bags fit perfectly around a 64oz mason jar. 
+> The screw cap of the jar can be fit over the top of the bag to hold it in place.
+>> Mason Jar Covers 

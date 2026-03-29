@@ -1,6 +1,7 @@
 +++
 title = "Old"
 description = "Too unwieldy"
+in_search_index = false
 render = false
 
 [extra]
