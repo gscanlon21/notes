@@ -13,14 +13,14 @@ see_also = []
 
 
 > [!IMPORTANT]
-> Cover your jars in dark black to prevent any light from getting in or bacteria will grow.
->> Bacterial Growth
+> Cover your jars in dark black to prevent any light from getting in or algae will grow.
+>> Algae Growth
 
 
 # Types of Equipment
 
-**Jars**
-: What size?
+**Mason Jars**
+: Get 64oz jars wo you don't have to re-fill the water halfway through a crop of lettuce. 
 
 **Rapid Rooter**
 : Rapid Rooter Replacement Plugs
@@ -28,3 +28,9 @@ see_also = []
 ## Mediums
 **Clay Pellets**
 : ?
+
+
+# Growing Kits
+{% checklist() %}
+- [ ] TODO
+{% end %}

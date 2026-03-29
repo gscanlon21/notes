@@ -6,7 +6,9 @@ description = ""
 updated = 2026-06-01
 site_version = 1
 toc_level = 2
-see_also = []
+see_also = [
+  { title = "Kratky Mason Jars", href = "https://shershegrows.com/kratky-mason-jar/" },
+]
 +++
 
 {{ hidden() }}
