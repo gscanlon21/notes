@@ -1,6 +1,11 @@
 article.v1 {
-	.footnote-reference a::before {
-		content: 'see ';
+	.footnote-reference {
+		margin-block-start: $base-padding * -1;
+		display: inline-block;
+		
+		& a::before {
+			content: 'see ';
+		}
 	}
 
 	.footnotes {
@@ -53,3 +58,15 @@ article.v1 {
 		}
 	}
 }
+
+@media print {
+	.footnotes-list p {
+		&::after {
+			display: none !important;
+		}
+
+		a:not(:first-of-type), a:only-of-type {
+			display: none !important;
+		}
+	}
+} 

@@ -1,0 +1,23 @@
+html {
+	counter-reset: page;
+}
+
+.title {
+	text-align: center;
+}
+
+@media print {
+	article.v1 > :first-child {
+		margin-block-start: 0px !important;
+	}
+}
+
+@page {
+	margin: 10mm;
+
+	@bottom-center {
+		content: "Page " counter(page) " of " counter(pages);
+		/*content: "Continued on reverse";*/
+		font-size: 12px;
+	}
+}
