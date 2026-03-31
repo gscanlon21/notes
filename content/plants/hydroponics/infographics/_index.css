@@ -8,7 +8,7 @@ html {
 
 @media print {
 	article.v1 > :first-child {
-		margin-block-start: 0px !important;
+		margin-block-start: -8px !important;
 	}
 }
 
