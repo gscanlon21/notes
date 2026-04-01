@@ -82,7 +82,7 @@ No pesticides or insecticides will be used in the cultivation of our plants.
 <h2 class="title">Future Plans</h2>
 <div class="intro">
 
-The Kratky method was selected for it's low-cost, low-tech materials, and low-footprint.
+The Kratky method was selected for its low-cost, low-tech materials, and low-footprint.
 Plans this summer are to see how viable growing hydroponic lettuce is on campus using this method.
 For the future, there is potential to expand and distribute hydroponic growing kits around campus. 
 If you are interested in growing your own leafy greens or herbs. 
