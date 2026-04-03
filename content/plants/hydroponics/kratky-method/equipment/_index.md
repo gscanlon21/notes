@@ -25,6 +25,10 @@ see_also = []
 **Rapid Rooter**
 : Rapid Rooter Replacement Plugs
 
+**Water**
+: Distilled water is the best type of water for hydroponics due to its lack of harmful contaminants.[^1]
+
+
 ## Mediums
 **Clay Pellets**
 : ?
@@ -34,3 +38,7 @@ see_also = []
 {% checklist() %}
 - [ ] TODO
 {% end %}
+
+
+[^1]: [Hydroponic Water](https://whyfarmit.com/hydroponics-water/)
+
