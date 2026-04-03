@@ -30,7 +30,15 @@ _Wide Mouth_
   > - [x] 
 
 
+
+> [!TIP]
+> Fill the mason jar up to the bottom quarter-inch of your net cup.
+> Do this before fitting on the brown paper bag covers.
+>> Water Level
+
+
 > [!TIP]
 > Brown paper lunch bags fit perfectly around a 64oz mason jar. 
 > The screw cap of the jar can be fit over the top of the bag to hold it in place.
 >> Mason Jar Covers 
+

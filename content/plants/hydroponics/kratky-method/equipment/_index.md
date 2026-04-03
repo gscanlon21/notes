@@ -20,13 +20,11 @@ see_also = []
 # Types of Equipment
 
 **Mason Jars**
-: Get 64oz jars wo you don't have to re-fill the water halfway through a crop of lettuce. 
+: Get 64oz jars so you don't have to re-fill the water halfway through a crop of lettuce. 
 
 **Rapid Rooter**
 : Rapid Rooter Replacement Plugs
 
-**Water**
-: Distilled water is the best type of water for hydroponics due to its lack of harmful contaminants.[^1]
 
 
 ## Mediums
@@ -39,6 +37,4 @@ see_also = []
 - [ ] TODO
 {% end %}
 
-
-[^1]: [Hydroponic Water](https://whyfarmit.com/hydroponics-water/)
 

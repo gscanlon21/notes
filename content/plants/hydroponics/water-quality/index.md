@@ -13,6 +13,7 @@ see_also = [
   { title = "Bluelab Instruments", href = "https://bluelab.com/" },
   { title = "Electrical Conductivity & pH Guide", file = "electrical-conductivity-and-ph-guide-for-hydroponics.pdf" },
   { title = "Lab Testing", href = "https://www.acslab.com/" },
+  { title = "Missouri American Water 2025 Report", file = "StLouisRegion_2025.pdf" },
 ]
 +++
 
@@ -75,8 +76,25 @@ see_also = [
 | Sulfate                | <100                   |
 {% end %}
 
+**Water**
+: Distilled water is the best type of water for hydroponics due to its lack of harmful contaminants.[^1]
+
+
 ##### If the pH is High
 TODO
 
 ##### If the pH is Low
 TODO
+
+
+# Disinfectants in Tap Water
+
+**Chloramines** 
+: Chloramines are a Missouri and federally approved alternative to free chlorine for water disinfection. Chloramines can reduce disinfection byproduct formation and may help reduce concerns related to taste. Chloramines are also used by many American Water systems and many other water utilities nationally.
+: Chloramines have the same effect as chlorine for typical water uses with the exception that chloramines must be removed from water used in kidney dialysis and fish tanks or aquariums. 
+: Treatments to remove chloramines are different than treatments for removing chlorine. Please contact your physician or dialysis specialist for questions pertaining to kidney dialysis water treatment. Contact your pet store or veterinarian for questions regarding water used for fish and other aquatic life.
+
+
+
+[^1]: [Hydroponic Water](https://whyfarmit.com/hydroponics-water/)
+

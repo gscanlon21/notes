@@ -26,3 +26,5 @@ see_also = [
 {% checklist() %}
 - [ ] Wide mouth mason jars
 {% end %}
+
+When to add nutrients? Start full strength or add nutrients gradually when true leaves appear?

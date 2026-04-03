@@ -14,6 +14,10 @@ see_also = [
 {{ hidden() }}
 
 
+> [!TIP]
+> Wash clothes inside out so they last longer.
+
+
 # Clothes Stains
 
 **Tomato Sauce**

@@ -127,16 +127,17 @@ _Based on the Butterfly Effect_
   > - [x]
 
 **The Dark Forest Theory**
-: TODO
-: > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
-  > - [ ]
+: Using axioms and speculations, the author concludes a dark model of the universe where when one civilization discovers another, the only reasonable solution is to destroy them.
+: One possible reason the fermi paradox could be true.
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
 
 **The World in Fifty Years**
-: TODO
-: > - [ ]
+: The author speculates what technological breakthroughs we might see in a half-century.
+: > - [x]
   > - [ ]
   > - [ ]
   > - [ ]
