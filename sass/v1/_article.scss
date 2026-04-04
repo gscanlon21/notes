@@ -106,7 +106,7 @@ article.v1 {
 		@media (min-width: $small-width) {
 			dt {
 				&:not(.wrap) {
-					max-width: min(35vw, calc(var(--body-width) * 0.35));
+					max-width: min(25vw, calc(var(--body-width) * 0.25));
 				}
 			}
 			dd {

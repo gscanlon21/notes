@@ -19,6 +19,10 @@ Check on them in 1.5 weeks. If roots are at least 1.5 inches long, move into the
 If they are less than 1.5 inch keep them in the start tray for the rest of the week.
 
 
+**Lactuca sativa**
+: Red light irradiation induces the germination of lettuce seeds.[^1]
+: Are positive photoblastic seeds which means they require light to germinate.
+
 # Greens
 
 **Salanova® Premier Collection Pelleted Lettuce Seed**
@@ -69,3 +73,6 @@ If they are less than 1.5 inch keep them in the start tray for the rest of the w
   > - [ ] 
   > - [ ] 
 
+
+
+[^1]: https://pmc.ncbi.nlm.nih.gov/articles/PMC2529229/
