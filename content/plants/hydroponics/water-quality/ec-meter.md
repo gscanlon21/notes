@@ -12,6 +12,10 @@ see_also = []
 {{ hidden() }}
 
 
+> [!CAUTION]
+> When monitoring the EC concentration, be sure to subtract the base EC of your source water from the level detected by your sensor.
+>> Measuring Electrical Conductivity
+
 
 # Using an EC Meter
 ?

@@ -1,5 +1,5 @@
 +++
-title = "Microbes"
+title = "Algae"
 description = ""
 
 [extra]
@@ -10,6 +10,7 @@ see_also = []
 +++
 
 {{ hidden() }}
+
 
 # Algae
 Moist soil or water needs to be kept in the dark or else algae will grow.

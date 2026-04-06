@@ -8,7 +8,7 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "https://cea.cals.cornell.edu/", href = "https://cea.cals.cornell.edu/" },
-  { title = "Cornell-CEA-Lettuce-Handbook-.pdf", file = "Cornell-CEA-Lettuce-Handbook-.pdf" },
+  { title = "Cornell CEA Lettuce Handbook", file = "Cornell-CEA-Lettuce-Handbook.pdf" },
 ]
 +++
 
@@ -18,6 +18,9 @@ see_also = [
 - Minor nutrients for Lettuce?
 
 # Plant Foods
+
+**NPK Ratios**
+: Cornell CEA uses a 4:1:7 NPK ratio.
 
 **AeroGarden Liquid Plant Food**
 : 

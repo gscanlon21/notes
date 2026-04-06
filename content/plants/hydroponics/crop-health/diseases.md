@@ -1,5 +1,5 @@
 +++
-title = "Plant"
+title = "Diseases"
 description = ""
 
 [extra]
@@ -10,6 +10,3 @@ see_also = []
 +++
 
 {{ hidden() }}
-
-# Frequently Asked Questions
-
