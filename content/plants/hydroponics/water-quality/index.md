@@ -8,12 +8,15 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "4.5–9 pH Test Strips" },
+  { title = "Plant Nutrients", href = "https://www.dpi.nsw.gov.au/agriculture/soils/soil-testing-and-analysis/plant-nutrients" },
+  { title = "Nutrient Deficiencies", href = "https://www.epicgardening.com/plant-nutrients/" },
   { title = "Apera Instruments", href = "https://aperainst.com/" },
   { title = "Hanna Instruments", href = "https://hannainst.com/" },
   { title = "Bluelab Instruments", href = "https://bluelab.com/" },
   { title = "Electrical Conductivity & pH Guide", file = "electrical-conductivity-and-ph-guide-for-hydroponics.pdf" },
   { title = "Lab Testing", href = "https://www.acslab.com/" },
   { title = "Missouri American Water 2025 Report", file = "StLouisRegion_2025.pdf" },
+  { title = "Missouri American Water 2025 Report", href = "StLouisRegion_2025.pdf" },
 ]
 +++
 

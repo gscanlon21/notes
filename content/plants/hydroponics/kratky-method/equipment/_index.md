@@ -39,6 +39,10 @@ see_also = []
 : How much goes in a half gallon for lettuce? basil?
 
 
+## Fertilizers
+
+
+
 # Growing Kits
 {% checklist() %}
 - [ ] TODO
