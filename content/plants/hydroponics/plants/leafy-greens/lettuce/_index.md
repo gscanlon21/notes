@@ -16,3 +16,9 @@ see_also = [
 
 - N.P.K. Ratio for Lettuce?
 - Minor nutrients for Lettuce?
+
+# Plant Foods
+
+**AeroGarden Liquid Plant Food**
+: 
+
