@@ -1,5 +1,5 @@
 +++
-title = "Plants"
+title = "Crops"
 description = ""
 
 [extra]
