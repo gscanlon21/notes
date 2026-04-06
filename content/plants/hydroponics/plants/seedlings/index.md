@@ -1,6 +1,6 @@
 +++
 title = "Seedlings"
-description = ""
+description = "Store seeds in a cool, dry place."
 
 [extra]
 updated = 2026-06-01
