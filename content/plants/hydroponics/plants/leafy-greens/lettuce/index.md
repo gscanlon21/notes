@@ -14,3 +14,5 @@ see_also = [
 
 {{ hidden() }}
 
+- N.P.K. Ratio for Lettuce?
+- Minor nutrients for Lettuce?

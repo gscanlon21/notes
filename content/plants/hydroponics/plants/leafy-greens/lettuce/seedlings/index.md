@@ -22,6 +22,12 @@ Check on them in 1.5 weeks. If roots are at least 1.5 inches long, move into the
 If they are less than 1.5 inch keep them in the start tray for the rest of the week.
 
 
+**Storage**
+: protect them from heat and humidity in a cool, dark, dry place.
+: If you prefer to store your seed in the refrigerator, be sure to place the seed in an air-tight container to protect it from fluctuations in humidity.
+
+
+
 **Lactuca sativa**
 : Red light irradiation induces the germination of lettuce seeds.[^1]
 : Are positive photoblastic seeds which means they require light to germinate.
@@ -65,16 +71,6 @@ If they are less than 1.5 inch keep them in the start tray for the rest of the w
   > - [ ] 
   > - [ ] 
 
-
-# Herbs
-
-**Nufar Organic Pelleted Basil Seed**
-: ?
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
 
 
 Chemical Scarification using hydrogen peroxide to speed up germination.
