@@ -8,9 +8,10 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "Hydroponics Flyer", file = "hydroponic-lettuce.pptx" },
-  { title = "Occurrence and Risk Assessment of Pesticides, Phthalates, and Heavy Metal Residues in Vegetables from Hydroponic and Conventional Cultivation", file = "foods-13-01151.pdf" },
+  { title = "Growing direct-seeded watercress by two non-circulating hydroponic methods. Vegetable crops", file = "VC-7.pdf" },
+  { title = "Three Non-Circulating Hydroponic Methods For Growing Lettuce", file = "three_non-circulating_hydroponic_methods_for_growing_lettuce.pdf" },
   { title = "A simplified non-greenhouse hydroponic system for small-scale soilless urban vegetable farming", file = "A_simplified_non-greenhouse_hydroponic_system_for_.pdf" },
-  { title = "Kratky B.A. Growing direct-seeded watercress by two non-circulating hydroponic methods. Vegetable crops. 2015 VC-7.", file = "VC-7.pdf" },
+  { title = "Occurrence and Risk Assessment of Pesticides, Phthalates, and Heavy Metal Residues in Vegetables from Hydroponic and Conventional Cultivation", file = "foods-13-01151.pdf" },
 ]
 +++
 
@@ -94,7 +95,7 @@ If you are interested in helping out with the webster community garden, please r
 
 
 
-[^1]: Chen, S., Yao, C., Zhou, J., Ma, H., Jin, J., Song, W., & Kai, Z. (2024). Occurrence and Risk Assessment of Pesticides, Phthalates, and Heavy Metal Residues in Vegetables from Hydroponic and Conventional Cultivation. Foods (Basel, Switzerland), 13(8), 1151. https://doi.org/10.3390/foods13081151
-[^2]: Gumisiriza, Margaret & Ndakidemi, Patrick & Mbega, Ernest. (2022). A simplified non-greenhouse hydroponic system for small-scale soilless urban vegetable farming. MethodsX. 9. 101882. 10.1016/j.mex.2022.101882. 
-[^3]: Kratky B.A. Growing direct-seeded watercress by two non-circulating hydroponic methods. Vegetable crops. 2015 VC-7.
+[^1]: Chen, S., Yao, C., Zhou, J., Ma, H., Jin, J., Song, W., & Kai, Z. (2024). Occurrence and Risk Assessment of Pesticides, Phthalates, and Heavy Metal Residues in Vegetables from Hydroponic and Conventional Cultivation. Foods, 13(8), 1151. https://doi.org/10.3390/foods13081151
+[^2]: Gumisiriza, M. S., Ndakidemi, P. A., & Mbega, E. R. (2022). A Simplified Non-Greenhouse Hydroponic System for Small-Scale Soilless Urban Vegetable Farming. MethodsX, 9, 101882. https://doi.org/10.1016/j.mex.2022.101882
+[^3]: Kratky, B. A. (2009). Three Non-Circulating Hydroponic Methods for Growing Lettuce. Acta Horticulturae, (843), 65–72. https://doi.org/10.17660/ActaHortic.2009.843.6
 [^4]: https://acinfinity.com/mesh-net-cups-3-slotted-pots-with-wide-lips-25-pack/
