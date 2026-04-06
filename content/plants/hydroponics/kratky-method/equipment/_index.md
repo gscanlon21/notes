@@ -25,11 +25,18 @@ see_also = []
 **Rapid Rooter**
 : Rapid Rooter Replacement Plugs
 
+**Plant Food**
+: ?
 
 
 ## Mediums
 **Clay Pellets**
 : ?
+
+
+## Plant Food
+**AeroGarden Liquid Plant Food**
+: How much goes in a half gallon for lettuce? basil?
 
 
 # Growing Kits
