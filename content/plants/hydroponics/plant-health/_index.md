@@ -1,5 +1,5 @@
 +++
-title = "Crop Health"
+title = "Plant Health"
 description = ""
 
 [extra]
