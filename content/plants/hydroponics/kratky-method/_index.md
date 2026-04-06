@@ -8,7 +8,6 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "Kratky Mason Jars", href = "https://shershegrows.com/kratky-mason-jar/" },
-  { title = "How to Set Up The Kratky Hydroponics Method", href = "https://www.youtube.com/watch?v=KWUirDxgavc" },
 ]
 +++
 
@@ -28,4 +27,4 @@ see_also = [
 - [ ] Wide mouth mason jars
 {% end %}
 
-When to add nutrients? Start full strength or add nutrients gradually when true leaves appear?
+
