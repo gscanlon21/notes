@@ -7,13 +7,11 @@ updated = 2026-06-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "4.5–9 pH Test Strips" },
   { title = "Apera Instruments", href = "https://aperainst.com/" },
   { title = "Hanna Instruments", href = "https://hannainst.com/" },
   { title = "Bluelab Instruments", href = "https://bluelab.com/" },
-  { title = "mu-hydroponic-nutrient-solutions.pdf", href = "mu-hydroponic-nutrient-solutions.pdf" },
+  { title = "MU Hydroponic Nutrient Solutions", href = "mu-hydroponic-nutrient-solutions.pdf" },
   { title = "Electrical Conductivity & pH Guide", file = "electrical-conductivity-and-ph-guide-for-hydroponics.pdf" },
-  { title = "Lab Testing", href = "https://www.acslab.com/" },
   { title = "Useful Home Hydroponics Excel Sheets", file = "Useful-Home-Hydroponics-Excel-Sheets.xlsx" },
   { title = "Hydroponic Nutrient Solution Calculator", file = "hydroponic-nutrient-solution-calculator.xlsx" },
 ]
@@ -25,10 +23,6 @@ see_also = [
 > The pH of the hydroponics reservoir should be between 5.5 and 6.5.
 >> Optimum Water pH
 
-> [!NOTE]
-> TODO
->> Optimum Water Temperature
-
 > [!TIP]
 > Don't add the pH adjusting solution straight to the reservoir or you may shock the plant roots.
 >
@@ -36,7 +30,7 @@ see_also = [
 >> Adjusting pH Levels
 
 
-{{ image(title="Nutrient Availability[^1]", file="nutrient-availability.webp") }}
+{{ image(title="Nutrient Availability", file="nutrient-availability.webp") }}
 
 
 {% table(header="Nutrient Availability", footer="[^1]") %}
@@ -99,14 +93,6 @@ see_also = [
 | Chloride               | <140                   |
 | Sulfate                | <100                   |
 {% end %}
-
-##### If the pH is High (Lowering pH)
-- White Vinegar?
-- Phosphoric Acid 
-
-##### If the pH is Low (Raising pH)
-- Sodium Bicarbonate (Baking Soda)
-- Calcium Carbonate
 
 
 [^1]: https://scienceinhydroponics.com/2025/10/ph-vs-nutrient-availability-rethinking-the-classic-charts.html

@@ -8,6 +8,7 @@ subtitle = "pH"
 site_version = 1
 toc_level = 2
 see_also = [
+  { title = "4.5–9 pH Test Strips" },
   { title = "Liquid Culture Hydroponic System Operation", file = "mattson2019.pdf" },
   { title = "Precise Management of Hydroponic Nutrient Solution pH: The Effects of Minor pH Changes and MES Buffer Molarity on Lettuce Physiological Properties", file = "horticulturae-09-00837-v2.pdf" },
 ]
@@ -38,6 +39,17 @@ There's a bottle of pH 7 solution.
 
 ## Cleaning a pH Meter
 Rinse with water. No soap is necessary.
+
+
+
+##### If the pH is High (Lowering pH)
+- White Vinegar?
+- Phosphoric Acid 
+
+##### If the pH is Low (Raising pH)
+- Sodium Bicarbonate (Baking Soda)
+- Calcium Carbonate
+
 
 
 

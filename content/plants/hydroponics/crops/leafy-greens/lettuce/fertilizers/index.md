@@ -8,6 +8,7 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "Nutrimax", href = "https://www.agro-k.com/product/biological/nutrimax/" },
+  { title = "General Hydroponics", href = "https://generalhydroponics.com/" },
   { title = "Masterblend Injection Ratios", file = "Masterblend-injection-ratios.pdf" },
   { title = "Masterblend 20-10-20 Soil-Less Mix", href = "https://www.masterblend.com/20-10-20/" },
   { title = "Masterblend 8-15-36 Lettuce Formula", href = "https://www.masterblend.com/8-15-36-lettuce-formula/" },
@@ -22,7 +23,20 @@ see_also = [
 
 {{ hidden() }}
 
+
+**General Hydroponics MaxiGro Formula**
+_1-Part Formula is complete_
+: TODO
+: > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+  > - [ ]
+
+
+
 **Masterblend 8-15-36 Lettuce Formula**
+_3-Part Formula requires Calcium Nitrate and Epsom Salt_
 : TODO
 : > - [ ]
   > - [ ]
