@@ -8,6 +8,7 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "Hydroponics", file = "hydroponics.pdf" },
+  { title = "A Recipe for Hydroponic Success", file = "hydroponic-recipes.pdf" },
 ]
 +++
 
