@@ -13,6 +13,11 @@ see_also = []
 {{ hidden() }}
 
 
+> [!IMPORTANT]
+> Measure pH after adjusting EC levels.
+>> pH and EC
+
+
 > [!CAUTION]
 > When monitoring the EC concentration, be sure to subtract the base EC of your source water from the level detected by your sensor.
 >> Measuring Electrical Conductivity

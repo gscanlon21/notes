@@ -13,6 +13,7 @@ see_also = [
   { title = "Bluelab Instruments", href = "https://bluelab.com/" },
   { title = "Electrical Conductivity & pH Guide", file = "electrical-conductivity-and-ph-guide-for-hydroponics.pdf" },
   { title = "Lab Testing", href = "https://www.acslab.com/" },
+  { title = "Useful Home Hydroponics Excel Sheets", file = "Useful-Home-Hydroponics-Excel-Sheets.xlsx" },
 ]
 +++
 
