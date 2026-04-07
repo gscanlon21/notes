@@ -9,6 +9,7 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "Liquid Culture Hydroponic System Operation", file = "mattson2019.pdf" },
+  { title = "Precise Management of Hydroponic Nutrient Solution pH: The Effects of Minor pH Changes and MES Buffer Molarity on Lettuce Physiological Properties", file = "horticulturae-09-00837-v2.pdf" },
 ]
 +++
 
