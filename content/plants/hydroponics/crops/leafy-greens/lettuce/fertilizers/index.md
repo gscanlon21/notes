@@ -18,6 +18,9 @@ see_also = [
   { title = "Masterblend 8-15-36 SDS", file = "19-57-21-27-10-2017-8-15-36-1.pdf" },
   { title = "Masterblend 20-10-20 SDS", file = "20-10-20-SDS.pdf" },
   { title = "Masterblend 20-10-20 SDS", file = "15-35-18-27-10-2017-20-10-20.pdf" },
+  { title = "Jack's Nutrients", href = "https://www.jacksnutrients.com/copy-of-jack-s-nutrients-listing-and-sds-1" },
+  { title = "Jack's Nutrients 12-4-16 RO SDS", file = "JRP79040_MSDS.pdf" },
+  { title = "Jack's Nutrients 15-5-20 Tap SDS", file = "jacks_nutrients_15-5-20_tap_7905x__sds.pdf" },
 ]
 +++
 

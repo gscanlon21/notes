@@ -10,6 +10,7 @@ see_also = [
   { title = "Apera Instruments", href = "https://aperainst.com/" },
   { title = "Hanna Instruments", href = "https://hannainst.com/" },
   { title = "Bluelab Instruments", href = "https://bluelab.com/" },
+  { title = "Hydro Buddy", href = "https://scienceinhydroponics.com/2016/03/the-first-free-hydroponic-nutrient-calculator-program-o.html" },
   { title = "MU Hydroponic Nutrient Solutions", href = "mu-hydroponic-nutrient-solutions.pdf" },
   { title = "Electrical Conductivity & pH Guide", file = "electrical-conductivity-and-ph-guide-for-hydroponics.pdf" },
   { title = "Useful Home Hydroponics Excel Sheets", file = "Useful-Home-Hydroponics-Excel-Sheets.xlsx" },
