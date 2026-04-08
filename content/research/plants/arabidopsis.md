@@ -5,6 +5,7 @@ sort_by = "title"
 
 [extra]
 see_also = [
+  { title = "The Arabidopsis Information Resource", href = "https://www.arabidopsis.org/" },
   { title = "Enhancing seed quality and viability by suppressing phospholipase D in Arabidopsis", href = "https://pubmed.ncbi.nlm.nih.gov/17565616/" },
   { title = "Arabidopsis Aspartic Protease ASPG1 Affects Seed Dormancy, Seed Longevity and Seed Germination", href = "https://pubmed.ncbi.nlm.nih.gov/29648652/" },
   { title = "Seed longevity is controlled by metacaspases", href = "https://pubmed.ncbi.nlm.nih.gov/39117606/" },
