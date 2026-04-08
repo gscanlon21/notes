@@ -14,14 +14,16 @@ see_also = [
 
 {{ hidden() }}
 
-- N.P.K. Ratio for Lettuce?
-- Minor nutrients for Lettuce?
 
-# Plant Foods
+
+> [!IMPORTANT]
+> A pH of 5.8 is considered optimum for the described lettuce growing system, however a range of 5.6 6.0 is acceptable.[^1]
+>> Lettuce pH
+
 
 **NPK Ratios**
 : Cornell CEA uses a 4:1:7 NPK ratio.
 
-**AeroGarden Liquid Plant Food**
-: 
 
+
+[^1]: Cornell CEA Lettuce Handbook
