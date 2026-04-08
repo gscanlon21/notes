@@ -10,6 +10,8 @@ toc_level = 2
 see_also = [
   { title = "4.5–9 pH Test Strips" },
   { title = "Liquid Culture Hydroponic System Operation", file = "mattson2019.pdf" },
+  { title = "GH pH Up", href = "https://generalhydroponics.com/products/ph-up-liquid/" },
+  { title = "GH pH Down", href = "https://generalhydroponics.com/products/ph-down-liquid/" },
   { title = "Precise Management of Hydroponic Nutrient Solution pH: The Effects of Minor pH Changes and MES Buffer Molarity on Lettuce Physiological Properties", file = "horticulturae-09-00837-v2.pdf" },
 ]
 +++
@@ -26,10 +28,11 @@ see_also = [
 > Generally, fertilizer with Ammoniacal Nitrogen will tend to decrease pH, and fertilizer with Nitrate Nitrogen will tend to increase pH.[^1]
 >> Fertilizer on pH
 
-# Using a pH Meter
+
+# pH Meter
 ?
 
-# Zeroing a pH Meter
+## Zeroing a pH Meter
 There's a bottle of pH 7 solution.
 
 
