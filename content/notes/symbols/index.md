@@ -172,16 +172,23 @@ x̄
 
 # Dashes
 
-###### Em Dash
-```
-—
-```
-###### U+2014
 ###### En Dash
 ```
 –
 ```
 ###### U+2013
+###### Em Dash
+```
+—
+```
+###### U+2014
+###### CJK UNIFIED IDEOGRAPH-4E00
+```
+一
+```
+###### U+4E00
+
+
 
 # Superscripts
 
