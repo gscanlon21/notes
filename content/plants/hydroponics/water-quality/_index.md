@@ -12,7 +12,7 @@ see_also = [
   { title = "Bluelab Instruments", href = "https://bluelab.com/" },
   { title = "Hydro Buddy", href = "https://scienceinhydroponics.com/2016/03/the-first-free-hydroponic-nutrient-calculator-program-o.html" },
   { title = "MU Hydroponic Nutrient Solutions", href = "mu-hydroponic-nutrient-solutions.pdf" },
-  { title = "Electrical Conductivity & pH Guide", file = "electrical-conductivity-and-ph-guide-for-hydroponics.pdf" },
+  { title = "Electrical Conductivity & pH Guide", file = "一electrical-conductivity-and-ph-guide-for-hydroponics.pdf" },
   { title = "Useful Home Hydroponics Excel Sheets", file = "Useful-Home-Hydroponics-Excel-Sheets.xlsx" },
   { title = "Hydroponic Nutrient Solution Calculator", file = "hydroponic-nutrient-solution-calculator.xlsx" },
   { title = "Fertilizer Calculation Basics for Hydroponics", file = "Fertilizer-Calculation-Basics-for-Hydroponics.pdf" },
@@ -35,7 +35,7 @@ see_also = [
 {{ image(title="Nutrient Availability", file="nutrient-availability.webp") }}
 
 
-{% table(header="Nutrient Availability", footer="[^1]") %}
+{% table(header="Nutrient Availability", footer="[Science in Hydroponics](https://scienceinhydroponics.com/2025/10/ph-vs-nutrient-availability-rethinking-the-classic-charts.html)") %}
 | Nutrient | Broad Availability Range | Notes / Reason |
 |----------|--------------------------|----------------|
 | **NO₃⁻-N** | 4.0 to 8.5 | Soluble across all relevant pH; uptake independent of pH in hydroponic solution. Old charts confused microbial nitrification with solubility. |
@@ -54,39 +54,8 @@ see_also = [
 {% end %}
 
 
-{% table(header="Optimum range of electrical conductivity (EC) and pH values for hydroponic crops.", footer="Electrical Conductivity & pH Guide") %}
-| Crops          | EC (mS/cm) | pH        |
-|----------------|-----------|-----------|
-| Asparagus      | 1.4 to 1.8 | 6.0 to 6.8 |
-| African Violet | 1.2 to 1.5 | 6.0 to 7.0 |
-| Basil          | 1.0 to 1.6 | 5.5 to 6.0 |
-| Bean           | 2.0 to 4.0 | 6         |
-| Banana         | 1.8 to 2.2 | 5.5 to 6.5 |
-| Broccoli       | 2.8 to 3.5 | 6.0 to 6.8 |
-| Cabbage        | 2.5 to 3.0 | 6.5 to 7.0 |
-| Celery         | 1.8 to 2.4 | 6.5       |
-| Carnation      | 2.0 to 3.5 | 6         |
-| Courgettes     | 1.8 to 2.4 | 6         |
-| Cucumber       | 1.7 to 2.0 | 5.0 to 5.5 |
-| Eggplant       | 2.5 to 3.5 | 6         |
-| Ficus          | 1.6 to 2.4 | 5.5 to 6.0 |
-| Leek           | 1.4 to 1.8 | 6.5 to 7.0 |
-| Lettuce        | 1.2 to 1.8 | 6.0 to 7.0 |
-| Marrow         | 1.8 to 2.4 | 6         |
-| Okra           | 2.0 to 2.4 | 6.5       |
-| Pak Choi       | 1.5 to 2.0 | 7         |
-| Peppers        | 0.8 to 1.8 | 5.5 to 6.0 |
-| Parsley        | 1.8 to 2.2 | 6.0 to 6.5 |
-| Rhubarb        | 1.6 to 2.0 | 5.5 to 6.0 |
-| Rose           | 1.5 to 2.5 | 5.5 to 6.0 |
-| Spinach        | 1.8 to 2.3 | 6.0 to 7.0 |
-| Strawberry     | 1.8 to 2.2 | 6         |
-| Sage           | 1.0 to 1.6 | 5.5 to 6.5 |
-| Tomato         | 2.0 to 4.0 | 6.0 to 6.5 |
-{% end %}
 
-
-{% table(header="Acceptable values for common nutrients found in water.", footer="Electrical Conductivity & pH Guide") %}
+{% table(header="Acceptable values for common nutrients found in water.", footer="[Electrical Conductivity & pH Guide](一electrical-conductivity-and-ph-guide-for-hydroponics.pdf)") %}
 | Nutrients              | Acceptable value (ppm) |
 |------------------------|------------------------|
 | Sodium                 | <50                    |
@@ -96,5 +65,3 @@ see_also = [
 | Sulfate                | <100                   |
 {% end %}
 
-
-[^1]: https://scienceinhydroponics.com/2025/10/ph-vs-nutrient-availability-rethinking-the-classic-charts.html
