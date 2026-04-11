@@ -49,3 +49,23 @@ see_also = []
 | Sage           | 1.0 to 1.6 | 5.5 to 6.5 |
 | Tomato         | 2.0 to 4.0 | 6.0 to 6.5 |
 {% end %}
+
+
+
+# Hydroponic Recipes
+
+{% table(header="Target nitrogen feed rates (in ppm N) for several hydroponic crops.", footer="[A Recipe for Hydroponic Success](一hydroponic-recipes.pdf)") %}
+| Type                                                                                  | Propagation (ppm N) | Production (ppm N) |
+|---------------------------------------------------------------------------------------|---------------------|--------------------|
+| Buttercrunch/Boston Bibb                                                              | 125                 | 150                |
+| Romaine, Red and Green leaf                                                           | 125                 | 150                |
+| Basil                                                                                 | 125                 | 175                |
+| Culinary Herbs                                                                        | 125                 | 150                |
+| Cole Crops                                                                            | 125                 | 175                |
+| Garlic and Scallions                                                                  | 125                 | 150                |
+| Tomatoes                                                                              | 125                 | 200                |
+| Peppers                                                                               | 125                 | 150                |
+| Cucumber                                                                              | 125                 | 175                |
+| Heavy Feeders (cabbage, kale, spinach, Swiss chard, mustard greens, mizuna, escarole) | 125                 | 175–200            |
+| Light Feeder Lettuce (arugula, watercress, spring mix)                                | 125                 | 125–150            |
+{% end %}

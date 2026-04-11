@@ -20,7 +20,19 @@ see_also = [
 
 
 > [!IMPORTANT]
-> pH should always be checked after getting the EC into the optimum range.[^2]:
+> The pH of the hydroponics reservoir should be between 5.5 and 6.5.
+>> Optimum Water pH
+
+
+> [!TIP]
+> Don't add the pH adjusting solution straight to the reservoir or you may shock the plant roots.
+>
+> Add it to a gallon jug and let dilute for 5 minutes before slowing pouring the solution into your reservoir.
+>> Adjusting pH Levels
+
+
+> [!IMPORTANT]
+> pH should always be checked after getting the EC into the optimum range.[^2]
 >> pH and EC
 
 

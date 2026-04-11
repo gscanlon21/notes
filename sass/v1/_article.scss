@@ -15,6 +15,10 @@ article.v1 {
 		}
 	}
 
+	sup {
+		line-height: 1;
+	}
+
 	img {
 		max-width: 100%;
 
@@ -110,7 +114,7 @@ article.v1 {
 		@media (min-width: $small-width) {
 			dt {
 				&:not(.wrap) {
-					max-width: min(25vw, calc(var(--body-width) * 0.25));
+					max-width: min(33vw, calc(var(--body-width) * 0.33));
 				}
 			}
 			dd {
