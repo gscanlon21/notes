@@ -17,7 +17,7 @@ html {
 
 	@bottom-center {
 		content: "Page " counter(page) " of " counter(pages);
-		/*content: "Continued on reverse";*/
+		padding-block-end: 2mm;
 		font-size: 12px;
 	}
 }

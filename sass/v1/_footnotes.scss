@@ -4,7 +4,15 @@ article.v1 {
 		display: inline-block;
 		
 		& a::before {
-			content: 'see ';
+			content: '[';
+		}
+
+		& a::after {
+			content: ']';
+		}
+
+		& + .footnote-reference::before {
+			content: ',';
 		}
 	}
 

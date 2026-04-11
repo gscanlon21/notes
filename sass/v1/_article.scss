@@ -17,6 +17,10 @@ article.v1 {
 
 	img {
 		max-width: 100%;
+
+		&:has(+ sup) {
+			max-width: calc(100% - 3ch);
+		}
 	}
 
 	li {
