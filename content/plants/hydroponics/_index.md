@@ -7,8 +7,8 @@ updated = 2026-06-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "Hydroponics", file = "hydroponics.pdf" },
-  { title = "A Recipe for Hydroponic Success", file = "hydroponic-recipes.pdf" },
+  { title = "Hydroponics", file = "一hydroponics.pdf" },
+  { title = "A Recipe for Hydroponic Success", file = "一hydroponic-recipes.pdf" },
 ]
 +++
 
@@ -16,7 +16,7 @@ see_also = [
 
 
 
-{% table(header="Abbreviations and Units", footer="Cornell CEA Lettuce Handbook") %}
+{% table(header="Abbreviations and Units", footer="[Cornell CEA Lettuce Handbook](一Cornell-CEA-Lettuce-Handbook.pdf)") %}
 | Abbreviation | Term | Description |
 |-------------|------|-------------|
 | A | Area | Square feet or square meter. |

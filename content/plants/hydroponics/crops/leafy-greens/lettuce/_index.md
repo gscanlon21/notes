@@ -8,7 +8,7 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "https://cea.cals.cornell.edu/", href = "https://cea.cals.cornell.edu/" },
-  { title = "Cornell CEA Lettuce Handbook", file = "Cornell-CEA-Lettuce-Handbook.pdf" },
+  { title = "Cornell CEA Lettuce Handbook", file = "一Cornell-CEA-Lettuce-Handbook.pdf" },
 ]
 +++
 
@@ -17,7 +17,7 @@ see_also = [
 
 
 > [!IMPORTANT]
-> A pH of 5.8 is considered optimum for the described lettuce growing system, however a range of 5.6 6.0 is acceptable.[^1]
+> A pH of 5.8 is considered optimum for the described lettuce growing system, however a range of 5.6–6.0 is acceptable.[^1]
 >> Lettuce pH
 
 
@@ -26,4 +26,4 @@ see_also = [
 
 
 
-[^1]: Cornell CEA Lettuce Handbook
+[^1]: [Cornell CEA Lettuce Handbook](一Cornell-CEA-Lettuce-Handbook.pdf)
