@@ -9,10 +9,10 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "4.5–9 pH Test Strips" },
-  { title = "Liquid Culture Hydroponic System Operation", file = "mattson2019.pdf" },
   { title = "GH pH Up", href = "https://generalhydroponics.com/products/ph-up-liquid/" },
   { title = "GH pH Down", href = "https://generalhydroponics.com/products/ph-down-liquid/" },
-  { title = "Precise Management of Hydroponic Nutrient Solution pH: The Effects of Minor pH Changes and MES Buffer Molarity on Lettuce Physiological Properties", file = "horticulturae-09-00837-v2.pdf" },
+  { title = "Liquid Culture Hydroponic System Operation", file = "一Liquid-Culture-Hydroponic-System-Operation.pdf" },
+  { title = "Precise Management of Hydroponic Nutrient Solution pH: The Effects of Minor pH Changes and MES Buffer Molarity on Lettuce Physiological Properties", file = "一Precise-Management-of-Hydroponic-Nutrient-Solution-pH_The-Effects-of-Minor-pH-Changes-and-MES-Buffer-Molarity-on-Lettuce-Physiological-Properties.pdf" },
 ]
 +++
 
@@ -20,7 +20,7 @@ see_also = [
 
 
 > [!IMPORTANT]
-> Measure pH after adjusting EC levels.
+> pH should always be checked after getting the EC into the optimum range.[^2]:
 >> pH and EC
 
 
@@ -57,3 +57,4 @@ Rinse with water. No soap is necessary.
 
 
 [^1]: Mattson, N., & Lieth, J. H. (2019). Liquid Culture Hydroponic System Operation. In Soilless Culture (pp. 567–585). Elsevier. https://doi.org/10.1016/B978-0-444-63696-6.00012-8
+[^2]: [Electrical Conductivity and pH Guide for Hydroponics](一electrical-conductivity-and-ph-guide-for-hydroponics.pdf)

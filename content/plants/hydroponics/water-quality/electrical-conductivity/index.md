@@ -14,12 +14,12 @@ see_also = []
 
 
 > [!IMPORTANT]
-> Measure pH after adjusting EC levels.
+> pH should always be checked after getting the EC into the optimum range.[^1]:
 >> pH and EC
 
 
 > [!CAUTION]
-> When monitoring the EC concentration, be sure to subtract the base EC of your source water from the level detected by your sensor.
+> When monitoring the EC concentration, be sure to subtract the base EC of your source water from the level detected by your sensor.[^1]
 >> Measuring Electrical Conductivity
 
 
@@ -32,3 +32,5 @@ see_also = []
 
 ## Cleaning n EC Meter
 ?
+
+[^1]: [Electrical Conductivity and pH Guide for Hydroponics](一electrical-conductivity-and-ph-guide-for-hydroponics.pdf)
