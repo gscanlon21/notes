@@ -35,8 +35,8 @@ My goal is to experiment with a low-cost and distributable method of hydroponics
 
 Hydroponics is a soil-less growing technique where crops, usually vegetables, are grown suspended over nutrient-rich water.
 Plants absorb the majority of the nutrients they need from the nutrient-rich water, with the rest being made from the sun via photosynthesis.
-Because the plants are not grown in soil, they are generally protected from soil-bourne pests and diseases and can be grown without environmentally-damaging pesticides.[^1][^2]
-In a 2024 suburban sample from China, only 30% of hydroponic crops carried pesticide residue, compared to 84% of crops grown using conventional methods.[^4]
+Because the plants are not grown in soil, they are generally protected from soil-bourne pests and diseases and can be grown without environmentally-harmful pesticides.[^1][^2]
+In a 2024 suburban sample from China, only 30% of hydroponic crops carried pesticide residue, compared with 84% of crops grown using conventional methods.[^4]
 </div>
 
 
@@ -64,7 +64,7 @@ Food-safety is a valid concern for any home-grown hydroponics setup.
 Here, we suspend plants in a food-safe, BPA-free, polypropylene plastic net cup inside of a glass mason jar.
 Seedlings are started in peat moss, rock wool, or 100% pure cotton balls, and held in place by clay pebbles.
 The brown paper bag is being used to block out light to limit algae growth, and to maintain a cool water temperature.
-To manage bacterial growth, a 1:800 diluted solution of 3% hydrogen peroxide may be used to clean plant roots and the medium. 
+To manage bacterial growth, a diluted solution of 3% hydrogen peroxide may be used to clean plant roots and the medium. 
 No pesticides will be used in the cultivation of our plants.
 </div>
 
