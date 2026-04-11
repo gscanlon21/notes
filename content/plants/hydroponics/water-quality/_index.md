@@ -15,6 +15,7 @@ see_also = [
   { title = "Electrical Conductivity & pH Guide", file = "electrical-conductivity-and-ph-guide-for-hydroponics.pdf" },
   { title = "Useful Home Hydroponics Excel Sheets", file = "Useful-Home-Hydroponics-Excel-Sheets.xlsx" },
   { title = "Hydroponic Nutrient Solution Calculator", file = "hydroponic-nutrient-solution-calculator.xlsx" },
+  { title = "Fertilizer Calculation Basics for Hydroponics", file = "Fertilizer-Calculation-Basics-for-Hydroponics.pdf" },
 ]
 +++
 
