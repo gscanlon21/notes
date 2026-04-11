@@ -1,0 +1,182 @@
+.page {
+    justify-content: center;
+	padding-bottom: 3rem;
+    margin-bottom: -3rem;
+	align-items: center;
+	overflow-x: auto;
+	display: flex;
+}
+
+#slap-tap {
+	display: grid;
+	line-height: 1;
+	aspect-ratio: 1;
+	font-weight: 600;
+	text-align: center;
+	width: min-content;
+	justify-self: center;
+}
+
+.symbol.red {
+	color: rgb(var(--color-red));
+}
+
+.symbol.green {
+	color: rgb(var(--color-green));
+}
+
+.chart:not(.alt) .symbol {	
+	--scale: 0.5;
+	--stroke: 3px;
+	--border-width: 3px;
+
+	position: relative;
+	width: calc(var(--size) * calc(var(--scale) * 2));
+	height: calc(var(--size) * calc(var(--scale) * 5));
+
+	background-size: var(--border-width);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to bottom, currentColor);
+}
+
+.chart:not(.alt) .symbol::after,
+.chart:not(.alt) .symbol::before {
+	border: var(--border-width) solid currentColor;
+	box-sizing: border-box;
+	position: absolute;
+	height: var(--size);
+}
+
+.chart:not(.alt) .right-hand:not(.left-hand)::before {
+	border-radius: 0 var(--size) var(--size) 0;
+	width: calc(var(--size) * var(--scale));
+	border-left: none;
+	content: "";
+	left: 50%;
+	top: 0;
+}
+
+.chart:not(.alt) .left-hand:not(.right-hand)::before {
+	border-radius: var(--size) 0 0 var(--size);
+	width: calc(var(--size) * var(--scale));
+	border-right: none;
+	content: "";
+	right: 50%;
+	top: 0;
+}
+
+.chart:not(.alt) .right-foot:not(.left-foot)::after {
+	border-radius: 0 var(--size) var(--size) 0;
+	width: calc(var(--size) * var(--scale));
+	border-left: none;
+	content: "";
+	bottom: 0;
+	left: 50%;
+}
+
+.chart:not(.alt) .left-foot:not(.right-foot)::after {
+	border-radius: var(--size) 0 0 var(--size);
+	width: calc(var(--size) * var(--scale));
+	border-right: none;
+	content: "";
+	right: 50%;
+	bottom: 0;
+}
+
+.chart:not(.alt) .left-hand.right-hand::before {
+	border-radius: var(--size);
+	width: calc(var(--size) * calc(var(--scale) * 2));
+	margin: auto;
+	content: "";
+	right: 0;
+	left: 0;
+	top: 0;
+}
+
+.chart:not(.alt) .left-foot.right-foot::after {
+	border-radius: var(--size);
+	width: calc(var(--size) * calc(var(--scale) * 2));
+	margin: auto;
+	content: "";
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+
+.chart.alt .symbol {
+	--scale: 0.75;
+	--border-width: 3px;
+
+	position: relative;
+	width: calc(var(--size) * calc(var(--scale) * 2));
+	height: calc(var(--size) * calc(var(--scale) * 4));
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: var(--border-width);
+	background-image: linear-gradient(to bottom, currentColor);
+}
+
+.chart.alt .symbol::after,
+.chart.alt .symbol::before {
+	height: calc(var(--size) * var(--scale));
+	width: calc(var(--size) * var(--scale));
+	background: currentColor;
+	mask-repeat: no-repeat;
+	box-sizing: border-box;
+	position: absolute;
+}
+
+.chart.alt .right-hand:not(.left-hand)::before {
+	mask-image: url('circle-bold.svg');
+	mask-position: bottom;
+	content: "";
+	left: 50%;
+	top: 10%;
+}
+
+.chart.alt .left-hand:not(.right-hand)::before {
+	mask-image: url('circle-bold.svg');
+	mask-position: bottom;
+	content: "";
+	right: 50%;
+	top: 10%;
+}
+
+.chart.alt .right-foot:not(.left-foot)::after {
+	mask-image: url('triangle-bold.svg');
+	mask-position: bottom;
+	content: "";
+	bottom: 10%;
+	right: 0;
+}
+
+.chart.alt .left-foot:not(.right-foot)::after {
+	mask-image: url('triangle-bold.svg');
+	mask-position: bottom;
+	content: "";
+	bottom: 10%;
+	left: 0;
+}
+
+.chart.alt .left-hand.right-hand::before {
+	mask-image: url('circle-bold.svg');
+	mask-position: bottom;
+	margin: auto;
+	content: "";
+	right: 0;
+	left: 0;
+	top: 10%;
+}
+
+.chart.alt .left-foot.right-foot::after {
+	mask-image: url('triangle-bold.svg');
+	mask-position: bottom;
+	margin: auto;
+	content: "";
+	bottom: 10%;
+	right: 0;
+	left: 0;
+}

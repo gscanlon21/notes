@@ -1,0 +1,45 @@
+@media screen and (min-width: 100rem) {
+    :root {
+		--body-width: calc(100vw - 40rem);
+	}
+}
+
+.page {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.chart {
+	justify-content: center;
+	align-items: center;
+	overflow-x: auto;
+	gap: var(--gap);
+	flex-wrap: wrap;
+	display: flex;
+	height: 100%;
+}
+
+.image {
+	background-color: currentColor;
+	height: var(--image-size);
+	mask-repeat: no-repeat;
+	gap: var(--image-gap);
+	mask-position: center;
+	justify-self: center;
+	align-items: center;
+	mask-size: contain;
+	width: min-content;
+	text-align: center;
+	aspect-ratio: 1;
+	line-height: 1;
+	padding: 1rem;
+}
+
+.image.red {
+	color: rgb(var(--color-red));
+}
+
+.image.green {
+	color: rgb(var(--color-green));
+}
