@@ -27,8 +27,7 @@ see_also = []
 ?
 
 # Zeroing an EC Meter
-- Dr. Kreugar. Dr. Applegate.
-
+?
 
 ## Cleaning n EC Meter
 ?
