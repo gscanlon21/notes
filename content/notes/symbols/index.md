@@ -8,6 +8,29 @@ see_also = [
 ]
 +++
 
+{{ hidden() }}
+
+
+# Dashes
+
+###### En Dash
+```
+–
+```
+###### U+2013
+###### Em Dash
+```
+—
+```
+###### U+2014
+###### CJK UNIFIED IDEOGRAPH-4E00
+```
+一
+```
+###### U+4E00
+
+
+
 # Math Symbols
 ###### Plus Sign
 ```
@@ -167,26 +190,6 @@ x̄
 μ
 ```
 ###### U+03BC
-
-
-
-# Dashes
-
-###### En Dash
-```
-–
-```
-###### U+2013
-###### Em Dash
-```
-—
-```
-###### U+2014
-###### CJK UNIFIED IDEOGRAPH-4E00
-```
-一
-```
-###### U+4E00
 
 
 
