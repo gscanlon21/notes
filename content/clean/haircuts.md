@@ -1,6 +1,6 @@
 +++
 title = "Haircuts"
-updated = 2026-10-10
+updated = 2027-01-01
 
 [extra]
 site_version = 1
@@ -16,3 +16,10 @@ see_also = [
 
 > [!TIP]
 > Cut your hair nude so that your clothes don't become scratchy with hair clippings.
+
+
+# Trimming Eyebrows
+1. Put a #2, 6mm–7mm guard on your clippers.
+1. Comb the eyebrow from inside to outside.
+1. Trim from outside to inside and top to bottom.
+
