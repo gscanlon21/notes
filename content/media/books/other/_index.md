@@ -14,9 +14,19 @@ see_also = []
 **Permission to Feel**
 William Carol
 : Doesn't go into enough depth.
-: - I feel a little disillusioned by the shallow content of the book.
+: - I feel disillusioned by the shallow content of the book.
 : Take a moment to decompress.
 : Write down your feelings.
+: > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+
+
+**Introduction to Internal Family Systems**
+Harper Susan Evergreen
+: Doesn't go into enough depth.
 : > - [x] 
   > - [x] 
   > - [ ] 
