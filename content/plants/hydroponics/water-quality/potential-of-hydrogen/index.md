@@ -42,7 +42,14 @@ see_also = [
 
 
 # pH Meter
-?
+
+## Using a pH Meter
+1. Set the desired EC value of the solution.
+2. Calibrate the pH meter probe using the buffer solution. Make sure the nutrient solution is stirred up and allow the reading to stabilize, which may take a couple of minutes.
+3. If the pH reading is high, add phosphoric acid, citric acid, vinegar or pH down products slowly. Wait several minutes before adding more. Repeat until the pH reaches the optimum range.
+4. If the pH is low, add potassium hydroxide, potassium carbonate or a pH up product slowly. Repeat until the pH reaches the optimum range.
+5. Clean the probe and store in cleaning fluid.
+
 
 ## Zeroing a pH Meter
 There's a bottle of pH 7 solution.
