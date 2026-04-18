@@ -1,10 +1,10 @@
 +++
 title = "Electrical Conductivity"
 description = "An indirect measurement of the strength of a nutrient solution."
-updated = 2026-06-01
 
 [extra]
 subtitle = "EC"
+updated = 2026-06-01
 site_version = 1
 toc_level = 2
 see_also = []
