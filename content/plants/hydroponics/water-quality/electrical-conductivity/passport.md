@@ -24,25 +24,25 @@ The PS-2116A Conductivity Sensor measures the conductivity of ionic and non-ioni
 
 ## Sensor Specifications
 
-**Sensor Ranges:**
-- 0–1,000 µS/cm  
-- 0–10,000 µS/cm  
-- 0–100,000 µS/cm  
+**Sensor Ranges**
+: 0–1,000 µS/cm  
+: 0–10,000 µS/cm  
+: 0–100,000 µS/cm  
 
-**Accuracy:**  
-±10% of full scale for all ranges  
+**Accuracy**  
+: ±10% of full scale for all ranges  
 
-**Resolution:**  
-0.1% or better  
+**Resolution**  
+: 0.1% or better  
 
-**Maximum Sample Rate:**  
-20 samples per second  
+**Maximum Sample Rate**  
+: 20 samples per second  
 
-**Default Sample Rate:**  
-2 samples per second  
+**Default Sample Rate**  
+: 2 samples per second  
 
-**Operating Temperature:**  
-0–50°C  
+**Operating Temperature**  
+: 0–50°C  
 
 ---
 
@@ -96,15 +96,15 @@ The PS-2116A Conductivity Sensor measures the conductivity of ionic and non-ioni
 
 The Conductivity Sensor is extremely sensitive. A reading 25 µS/cm for a sample of pure water is well within tolerances. Pure water is difficult to find in a typical classroom setting. To make meaningful judgments based on conductivity readings, it is essential to understand the scale and range of this measurement.
 
----
 
-## Conductivity Values for Common Aqueous Solutions at 25°C
-
-| Solution          | Value           |
+{% table(header="Conductivity Values for Common Aqueous Solutions at 25°C", footer="") %}
+| Solution         | Value           |
 |------------------|-----------------|
 | Ultra-Pure Water | 0.05–0.75 µS/cm |
 | Drinking Water   | 50–1500 µS/cm   |
 | Ocean Water      | 53,000 µS/cm    |
+{% end %}
+
 
 ---
 

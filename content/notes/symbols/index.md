@@ -32,6 +32,25 @@ see_also = [
 
 
 
+# Molecules
+###### Oxygen
+```
+O₂
+```
+###### Water
+```
+H₂O
+```
+###### Carbon Dioxide
+```
+CO₂
+```
+###### Hydrogen Ion
+```
+H⁺
+```
+
+
 # Math Symbols
 ###### Plus Sign
 ```
@@ -434,17 +453,21 @@ x̄
 ✓
 ```
 ###### U+2713
-###### Heavy Check Mark
-```
-✔
-```
-###### U+2714
 ###### Light Check Mark
 ```
 🗸
 ```
 ###### U+1F5F8
-
+###### Heavy Check Mark
+```
+✔
+```
+###### U+2714
+###### Ballot Box
+```
+☐
+```
+###### U+2610
 ###### Ballot Box With Check
 ```
 ☑
@@ -455,13 +478,3 @@ x̄
 🗹
 ```
 ###### U+1F5F9
-###### White Heavy Check Mark
-```
-✅
-```
-###### U+2705
-###### Ballot Box
-```
-☐
-```
-###### U+2610

@@ -19,7 +19,7 @@ article.v1 {
 	}
 
 	// Attribution footer for code blocks.
-	pre+h6 {
+	pre+h6:not(:has(+pre)) {
 		color: color(--color-code);
 		background-color: color(--color-code-bg);
 		border-bottom-right-radius: $border-radius;
