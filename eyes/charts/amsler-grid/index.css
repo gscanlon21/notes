@@ -1,0 +1,42 @@
+.page {
+    justify-content: center;
+	padding-bottom: 3rem;
+    margin-bottom: -3rem;
+	align-items: center;
+	overflow-x: auto;
+	display: flex;
+}
+
+.chart {
+	width: calc(var(--lines) * var(--line-gap) + 2px);
+	display: grid;
+	overflow: clip;
+	line-height: 1;
+	aspect-ratio: 1;
+	text-align: center;
+	position: relative;
+	justify-self: center;
+	margin-inline-end: 1em;
+	background:
+		repeating-linear-gradient(
+			to right,
+			rgb(var(--color-text)) 0 2px,
+			transparent 1px var(--line-gap)
+		),
+		repeating-linear-gradient(
+			to bottom,
+			rgb(var(--color-text)) 0 2px,
+			transparent 1px var(--line-gap)
+		);
+}
+
+.chart::after {
+	background-color: rgb(var(--color-text));
+	height: var(--dot-size);
+	border-radius: 50%;
+	position: absolute;
+	aspect-ratio: 1;
+	margin: auto;
+	content: "";
+	inset: 0;
+}

@@ -1,0 +1,45 @@
+html {
+	counter-reset: page;
+}
+
+.title {
+	text-align: center;
+}
+
+.title small {
+	width: 0;
+	font-size: small;
+	font-weight: normal;
+	vertical-align: top;
+	display: inline-block;
+}
+
+@media print {
+	article.v1 > :first-child {
+		margin-block-start: 0 !important;
+	}
+
+	section.footnotes {
+		margin-block-start: 3rem !important;
+
+		p {
+			font-size: 15px;
+		}
+	}
+}
+
+@page {
+	margin: 10mm;
+
+	@bottom-left {
+		content: "Public Safety: 314-246-6911 or Ext. 6911 from any campus phone";
+		padding-block-end: 3mm;
+		font-size: 12px;
+	}
+
+	@bottom-right {
+		content: "Page " counter(page) " of " counter(pages);
+		padding-block-end: 3mm;
+		font-size: 12px;
+	}
+}
