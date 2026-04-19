@@ -11,9 +11,10 @@ article.v1 {
 			content: ']';
 		}
 
-		& + .footnote-reference::before {
-			content: ',';
-		}
+		// Footnotes bleed together in a paragraph.
+		//& + .footnote-reference::before {
+		//	content: ',';
+		//}
 	}
 
 	.footnotes {
