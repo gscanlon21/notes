@@ -35,6 +35,10 @@ article.v1 {
 				column-gap: $base-padding;
 				justify-content: space-between;
 
+				em {
+					display: contents;
+				}
+
 				a:first-of-type {
 					order: 1;
 				}
