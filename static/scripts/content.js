@@ -61,6 +61,11 @@ for (const element of Array.from(document.getElementsByClassName("checklist-wrap
 	}
 }
 
+// Add target="_blank" to links in footnotes.
+for (const element of Array.from(document.querySelectorAll('.footnotes-list a'))) {
+	element.setAttribute('target', '_blank');
+}
+
 // Remove defer classes from elements after the page has loaded.
 for (const element of Array.from(document.getElementsByClassName('defer'))) {
     element.classList.remove('defer');
