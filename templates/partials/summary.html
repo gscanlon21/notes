@@ -81,6 +81,38 @@
             {% endfor %}
             {% endif %}
 
+			{% if page.extra.references | default(value=section.extra.references) %} 
+            <dt>References</dt>
+            {% for also in page.extra.references | default(value=section.extra.references) %}
+                <dd class="summary-item">
+					<a class="reverse-indent" href="#fn-{{ also.mark }}">
+						{{ also.mark | safe }}: {{ also.title | safe }}<br>
+						<span class="reverse-indent">{{ also.summary | safe }}</span>
+					</a>
+                </dd>
+            {% endfor %}
+            {% endif %}
+
+			{% if page.assets | default(value=section.assets) %} 
+            <dt>Assets</dt>
+            {% for asset in page.assets | default(value=section.assets) %}
+			{% if asset is ending_with("pdf") %}
+                <dd class="summary-item">
+					{% set title = asset | split(pat="/") | last | split(pat=".") | first | replace(from="-", to=" ") | replace(from="_", to=" ") | replace(from="一", to="") | title %}
+                    {% if asset is starting_with("/") %}
+                        {% set url = get_url(path=asset) %}
+                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ title | safe }}</a>
+                    {% elif asset is not starting_with("/") %}
+                        {% set url = get_url(path=current_path ~ asset) %}
+                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ title | safe }}</a>
+                    {% else %}
+                        <div class="reverse-indent">{{ title | safe }}</div>
+                    {% endif %}
+                </dd>
+			{% endif %}
+            {% endfor %}
+            {% endif %}
+
 			{% if page.extra.options | default(value=section.extra.options) %} 
             <dt>Options</dt>
             {% for option in page.extra.options | default(value=section.extra.options) %}
