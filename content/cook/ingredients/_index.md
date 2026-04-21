@@ -100,7 +100,7 @@ For starchy rice, try wiping oil around the walls of the pot to break up the sta
 
 > [!NOTE]
 > 12 highly effective bitter herbs, each chosen like a puzzle piece for its scientifically verified benefits to complement every other ingredient, activate every phase of your digestive process, and keep your system flowing smoothly and efficiently.
->> What is Digestive Bitters?
+>> What are Digestive Bitters?
 
 **Bitter Melon Fruit Extract**
 : Encourages balanced blood sugar and helps curb sugar cravings naturally.
