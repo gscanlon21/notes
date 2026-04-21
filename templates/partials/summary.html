@@ -98,8 +98,9 @@
             {% for asset in page.assets | default(value=section.assets) %}
 			{% if asset is ending_with("pdf") %}
                 <dd class="summary-item">
-					{% set title = asset | split(pat="/") | last | split(pat=".") | first | replace(from="-", to=" ") | replace(from="_", to=" ") | replace(from="一", to="") | title %}
-                    {% if asset is starting_with("/") %}
+					{% set filename = asset | split(pat="/") | last | split(pat="\") | last | split(pat=".") | first %}
+                    {% set title = filename | replace(from="-", to=" ") | replace(from="_", to=" ") | replace(from="一", to="") | title %}
+					{% if asset is starting_with("/") %}
                         {% set url = get_url(path=asset) %}
                         <a class="reverse-indent" href="{{ url }}" target="_blank">{{ title | safe }}</a>
                     {% elif asset is not starting_with("/") %}
