@@ -17,6 +17,7 @@ see_also = []
 **Adverb**
 : A verb modifier.
 
+
 # Words
 
 **Harp**
@@ -25,22 +26,15 @@ see_also = []
 : To dwell on or recur to a subject tiresomely or monotonously.
 : > He was always harping on the importance of taking vitamin supplements.
 
+**Imbibition**
+: A special type of diffusion that takes place when liquid is absorbed by solids-colloids causing an increase in volume.
+: > Imbibition can also control circadian rhythms in Arabidopsis thaliana and (probably) other plants.
+: > Dry seeds germinate in part by imbibition. 
+
+**Solids-Colloids**
+: A mixture in which one substance, consisting of microscopically dispersed insoluble particles, is suspended throughout another substance.
+
+
 # Phrases
 - Life's fluid and so am I (about 65% of me).
 
-**Anticipatory Anxiety**
-: The anxiety you feel when worrying about something that hasn't actually happened yet, and limited information is available to you.
-: **Feelings**
-  : Sense of dread or doom.
-  : Difficulty concentrating.
-  : Persistent or obsessive worrying and circular thoughts about your future anxiety.
-  : Loss of interest in or enjoyment from hobbies.
-  : Physical symptoms like racing heart, sweating, trembling, nausea.
-  : Restlessness.
-  : Hopelessness.
-  : Sleep difficulties or insomnia from racing thoughts about worrying.
-  : Emotional numbness.
-  : Frequent frustration or increased irritability.
-  : Repeatedly going over worst-case scenarios in your mind.
-  : Avoiding or canceling plans.
-  : Feeling on edge, restless, and irritable.
