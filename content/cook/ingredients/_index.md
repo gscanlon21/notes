@@ -1,8 +1,10 @@
 +++
 title = "Ingredients"
+description = ""
 sort_by = "title"
 
 [extra]
+caution = "These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any diseases."
 updated = 2026-03-01
 site_version = 1
 toc_level = 2
@@ -91,6 +93,50 @@ Use a 1:1 rice to water ratio with an extra half-cup of water for evaporation.
 
 ##### Water is Bubbling Over?
 For starchy rice, try wiping oil around the walls of the pot to break up the starch bubbles.
+
+
+
+# Digestive Bitters
+
+> [!NOTE]
+> 12 highly effective bitter herbs, each chosen like a puzzle piece for its scientifically verified benefits to complement every other ingredient, activate every phase of your digestive process, and keep your system flowing smoothly and efficiently.
+>> What is Digestive Bitters?
+
+**Bitter Melon Fruit Extract**
+: Encourages balanced blood sugar and helps curb sugar cravings naturally.
+
+**Wild Yam Fruit Extract**
+: Supports smooth digestion by helping regulate gut motility.
+
+**Barberry Root Extract**
+: Promotes a balanced gut microbiome and encourages healthy bile flow.
+
+**Coptis Root Extract**
+: Supports optimal nutrient absorption and a balanced gut environment.
+
+**Artichoke Aerial Parts Extract**
+: Stimulates bile production, helping your body break down fats more efficiently.
+
+**Hops Flower Extract**
+: Calms the stomach and supports a comfortable digestive experience.
+
+**Gentian Root Extract**
+: Encourages the production of stomach acid and digestive enzymes for better nutrient breakdown.
+
+**Sweet Wormwood Herb**
+: Helps keep digestion running smoothly and supports gut comfort.
+
+**Dandelion Root**
+: Supports liver function and contributes to a healthy gut environment.
+
+**Dong Quai Root**
+: Helps maintain digestive motility and supports overall digestive balance.
+
+**Ginger Rhizome and Root Extract**
+: Encourages smooth digestion and helps ease occasional stomach upset.
+
+**Peppermint Leaf**
+: Supports digestive comfort and helps reduce occasional bloating.
 
 
 [^1]: [Rice Ratios](https://www.youtube.com/watch?v=JOOSikanIlI)
