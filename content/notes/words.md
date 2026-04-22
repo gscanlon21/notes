@@ -34,6 +34,14 @@ see_also = []
 **Solids-Colloids**
 : A mixture in which one substance, consisting of microscopically dispersed insoluble particles, is suspended throughout another substance.
 
+**Osmoticum**
+: Balances water potential.
+: A substance that acts to supplement osmotic pressure in a cell.
+
+**Transgenic**
+: Transgenic refers to an organism or cell whose genome has been altered by the introduction of one or more foreign DNA sequences from another species by artificial means. 
+: Transgenic organisms are generated in the laboratory for research purposes.
+
 
 # Phrases
 - Life's fluid and so am I (about 65% of me).
