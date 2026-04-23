@@ -8,7 +8,6 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "https://cea.cals.cornell.edu/", href = "https://cea.cals.cornell.edu/" },
-  { title = "Cornell CEA Lettuce Handbook", file = "一Cornell-CEA-Lettuce-Handbook.pdf" },
 ]
 +++
 

@@ -96,7 +96,7 @@
 			{% if page.assets | default(value=section.assets) %} 
             <dt>Assets</dt>
             {% for asset in page.assets | default(value=section.assets) %}
-			{% if asset is ending_with("pdf") %}
+			{% if asset is ending_with("pdf") or asset is ending_with("xlsx") %}
                 <dd class="summary-item">
 					{% set filename = asset | split(pat="/") | last | split(pat="\") | last | split(pat=".") | first %}
                     {% set title = filename | replace(from="--", to=": ") | replace(from="_", to=" ") | replace(from="一", to="") %}

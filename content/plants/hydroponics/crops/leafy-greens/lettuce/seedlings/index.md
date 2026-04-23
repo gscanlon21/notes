@@ -9,8 +9,6 @@ toc_level = 2
 see_also = [
   { title = "Johnny Seeds", href = "https://www.johnnyseeds.com/" },
   { title = "Johnny Seeds: Salanova Lettuce", href = "https://www.johnnyseeds.com/vegetables/lettuce/salanova-lettuce/salanova-premier-collection-pelleted-lettuce-seed-3073JP.html" },
-  { title = "Action Spectra for Light-induced Germination in Dormant Lettuce Seeds", file = "small1979.pdf" },
-  { title = "Light Effects on Endogenous Levels of Gibberellins in Photoblastic Lettuce Seeds", file = "toyomasu1993.pdf" },
 ]
 +++
 
