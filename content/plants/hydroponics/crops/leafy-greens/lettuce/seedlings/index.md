@@ -9,6 +9,7 @@ toc_level = 2
 see_also = [
   { title = "Johnny Seeds", href = "https://www.johnnyseeds.com/" },
   { title = "Johnny Seeds: Salanova Lettuce", href = "https://www.johnnyseeds.com/vegetables/lettuce/salanova-lettuce/salanova-premier-collection-pelleted-lettuce-seed-3073JP.html" },
+  { title = "Hydrogen Peroxide Scarification", href = "https://biologyinsights.com/how-to-germinate-seeds-with-hydrogen-peroxide/" },
 ]
 +++
 
@@ -70,7 +71,9 @@ If they are less than 1.5 inch keep them in the start tray for the rest of the w
 
 
 
-Chemical Scarification using hydrogen peroxide to speed up germination.
+> [!TIP]
+> Chemical scarification using hydrogen peroxide helps to speed up germination.
+>> Chemical Scarification
 
 
 
