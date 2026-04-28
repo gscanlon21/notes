@@ -117,3 +117,12 @@ Object.defineProperty(HTMLDivElement.prototype, 'aToggleClass', {
 		return this;
 	}
 });
+
+// Update the word count with the selected word count.
+document.addEventListener("selectionchange", () => {
+	const selection = window.getSelection().toString().trim();
+	const wordCount = selection.split(/\s+/).length;
+	if (wordCount > 1) {
+		document.getElementById("word-count").textContent = wordCount + '*';
+	}
+});
