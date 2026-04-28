@@ -163,7 +163,7 @@
             <dd>{{ page.reading_time | default(value=section.reading_time) }} minute(s)</dd>
 
 			<dt>Word Count</dt>
-            <dd><span id="word-count">{{ page.content | default(value=section.content) | wordcount }}</span> words</dd>
+            <dd><span id="word-count">{{ page.word_count | default(value=section.word_count) }}</span> words</dd>
         </dl>
     </header>
 </form>
