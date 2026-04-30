@@ -232,6 +232,7 @@ a {
 
 summary {
 	cursor: pointer;
+	user-select: none;
 	max-width: $small-width;
 
 	&:focus {
