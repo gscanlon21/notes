@@ -144,25 +144,29 @@ _Based on the Butterfly Effect_
   > - [ ]
 
 **Heard it in the Morning**
-: TODO
-: > - [ ]
-  > - [ ]
+: Scientists develop the largest particle accelerator to find out the grand unified theory of the universe.
+: A dehazardization officer of the universe varnishes the accelerator due to the danger of uncontrolled vacuum decay.
+: As a consolation, the officer offers up the grand unified theory of the universe (or the answer to any question) in exchange to any scientist for 10 minutes of life and then death.
+: The last scientist who takes up the offer asks "what is the purpose of the universe?" to which the dehazardizaton officer replies "I don't know".
+: > - [x]
+  > - [x]
   > - [ ]
   > - [ ]
   > - [ ]
 
 **On Ball Lightning**
-: TODO
-: > - [ ]
+: An interview with the author on his story, "On Ball Lightning". I found it hard to follow having never read the story.
+: > - [x]
   > - [ ]
   > - [ ]
   > - [ ]
   > - [ ]
 
 **We're Sci-Fi Fans**
-: TODO
-: > - [ ]
-  > - [ ]
-  > - [ ]
+: The author speculates who sci-fi fans are and concludes that they are an advance party, a team of explorers, who travel ahead of others to all manner of future worlds.
+: They begin with what's real, and from there, their experience radiates outward to every possibility.
+: > - [x]
+  > - [x]
+  > - [x]
   > - [ ]
   > - [ ]
