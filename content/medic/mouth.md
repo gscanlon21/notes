@@ -1,8 +1,9 @@
 +++
 title = "Mouth"
-updated = 2025-12-01
+description = ""
 
 [extra]
+updated = 2026-12-01
 site_version = 1
 toc_level = 2
 see_also = [
@@ -13,11 +14,23 @@ see_also = [
 
 {{ hidden() }}
 
+
+# Floss
+
+**Top Care Floss**
+: ??? 
+: > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ]
+
 # Toothpaste
 
 **Parodontax**
 Active Gum Repair
 _Fresh Mint_
+: ??? 
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -27,6 +40,7 @@ _Fresh Mint_
 **Parodontax**
 Active Gum Repair
 _Breath Freshener_
+: ??? 
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -36,6 +50,7 @@ _Breath Freshener_
 **Parodontax**
 Complete Protection
 _Pure Fresh Mint_
+: ??? 
 : > - [x] 
   > - [x] 
   > - [x] 
