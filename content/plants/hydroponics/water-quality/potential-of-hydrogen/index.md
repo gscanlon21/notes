@@ -19,6 +19,13 @@ see_also = [
 {{ hidden() }}
 
 
+**Epigenetic Mechanisms of Genomic Imprinting: Common Themes in the Regulation of Imprinted Regions in Mammals, Plants, and Insects**
+Kudirka et al. 2023
+_[Review Article](一Epigenetic_Mechanisms_of_Genomic_Imprinting--Common_Themes_in_the_Regulation_of_Imprinted_Regions_in_Mammals,_Plants,_and_Insects.pdf)_ 
+: ?
+
+
+
 > [!IMPORTANT]
 > The pH of the hydroponics reservoir should be between 5.5 and 6.5.
 >> Optimum Water pH
