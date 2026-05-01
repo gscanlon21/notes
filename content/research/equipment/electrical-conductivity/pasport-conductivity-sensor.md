@@ -1,8 +1,9 @@
 +++
-title = "PS-2116A"
+title = "PASPORT Conductivity Sensor"
 description = ""
 
 [extra]
+subtitle = "PS-2116A"
 updated = 2026-06-01
 site_version = 1
 toc_level = 2
