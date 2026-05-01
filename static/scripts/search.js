@@ -65,7 +65,7 @@ function makeTeaser(body, terms) {
 	let sentences = body.toLowerCase().split(". ");
 
 	for (let i in sentences) {
-		let words = sentences[i].split(" ");
+		let words = sentences[i].split(/\s+/);
 		let value = FIRST_WORD_WEIGHT;
 
 		for (let j in words) {
@@ -74,12 +74,12 @@ function makeTeaser(body, terms) {
 			if (word.length > 0) {
 				for (let k in stemmedTerms) {
 					if (elasticlunr.stemmer(word).startsWith(stemmedTerms[k])) {
-						value = TERM_WEIGHT;
+						value += TERM_WEIGHT;
 						termFound = true;
 					}
 				}
 				weighted.push([word, value, index]);
-				value = NORMAL_WORD_WEIGHT;
+				value /= NORMAL_WORD_WEIGHT;
 			}
 
 			index += word.length;
@@ -102,7 +102,7 @@ function makeTeaser(body, terms) {
 	}
 	windowWeights.push(curSum);
 
-	for (let i = 0;i < weighted.length - windowSize;i++) {
+	for (let i = 0; i < weighted.length - windowSize; i++) {
 		curSum -= weighted[i][1];
 		curSum += weighted[i + windowSize][1];
 		windowWeights.push(curSum);
@@ -113,7 +113,7 @@ function makeTeaser(body, terms) {
 	if (termFound) {
 		let maxFound = 0;
 		// backwards
-		for (let i = windowWeights.length - 1;i >= 0;i--) {
+		for (let i = windowWeights.length - 1; i >= 0; i--) {
 			if (windowWeights[i] > maxFound) {
 				maxFound = windowWeights[i];
 				maxSumIndex = i;
@@ -123,7 +123,7 @@ function makeTeaser(body, terms) {
 
 	let teaser = [];
 	let startIndex = weighted[maxSumIndex][2];
-	for (let i = maxSumIndex;i < maxSumIndex + windowSize;i++) {
+	for (let i = maxSumIndex; i < maxSumIndex + windowSize; i++) {
 		let word = weighted[i];
 		if (startIndex < word[2]) {
 			// missing text from index to start of `word`
@@ -132,14 +132,14 @@ function makeTeaser(body, terms) {
 		}
 
 		// add <em/> around search terms
-		if (word[1] === TERM_WEIGHT) {
+		if (word[1] >= TERM_WEIGHT) {
 			teaser.push("<b>");
 		}
 
 		startIndex = word[2] + word[0].length;
 		teaser.push(body.substring(word[2], startIndex));
 
-		if (word[1] === TERM_WEIGHT) {
+		if (word[1] >= TERM_WEIGHT) {
 			teaser.push("</b>");
 		}
 	}
