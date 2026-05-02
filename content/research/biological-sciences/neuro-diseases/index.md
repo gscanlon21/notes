@@ -1,5 +1,5 @@
 +++
-title = "Neuro"
+title = "Neuro Diseases"
 sort_by = "title"
 
 [extra]
