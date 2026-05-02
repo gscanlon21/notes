@@ -17,6 +17,10 @@ article.v1 {
 
 	.table-wrapper {
 		overflow-x: auto;
+
+		& + .table-wrapper {
+			margin-block-start: $base-padding;
+		}
 		
 		// Attribution footer for tables.
 		&+h6:not(:has(+.table-wrapper)) {
