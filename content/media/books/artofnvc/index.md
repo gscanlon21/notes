@@ -1,10 +1,11 @@
 +++
 title = "The Art of Nonviolent Communication"
-authors = ["Micah Salaberrios"]
-updated = 2025-10-10
+description = ""
 
 [extra]
 rating = 5
+updated = 2025-10-10
+authors = ["Micah Salaberrios"]
 site = "https://www.artofnvc.com/"
 see_also = [
   { title = "Feelings", file = "NVC-Feelings.pdf" },

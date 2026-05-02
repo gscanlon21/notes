@@ -61,6 +61,14 @@ for (const element of Array.from(document.getElementsByClassName("checklist-wrap
 	}
 }
 
+// Let academic tables have horizontal spacers dividing rows.
+for (const element of Array.from(document.getElementsByTagName('td'))) {
+    if (element.textContent.includes('---')) {
+		element.classList.add('spacer');
+		element.textContent = null;
+	};
+}
+
 // Add target="_blank" to links in footnotes.
 for (const element of Array.from(document.querySelectorAll('.footnotes-list a'))) {
 	element.setAttribute('target', '_blank');
@@ -126,3 +134,4 @@ document.addEventListener("selectionchange", () => {
 		document.getElementById("word-count").textContent = wordCount + '*';
 	}
 });
+

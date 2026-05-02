@@ -2,7 +2,7 @@
 ###### Table {{ nth }}: {{ header | safe }}
 {% endif %}
 
-{% if footer and footer | length > 0 %}
+{% if not styles and footer and footer | length > 0 %}
   {% set styles = "width:100%" %}
 {% else %}
   {% set styles = "" %}
