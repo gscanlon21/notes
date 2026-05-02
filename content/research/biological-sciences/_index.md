@@ -2,6 +2,7 @@
 title = "Biological Sciences"
 description = ""
 sort_by = "title"
+weight = 10
 
 [extra]
 updated = 2026-06-01

@@ -1,10 +1,13 @@
 +++
 title = "Writing"
 sort_by = "title"
+weight = 400
 
 [extra]
 updated = 2026-06-01
-see_also = []
+see_also = [
+  { title = "Academic Phrasebank" },
+]
 +++
 
 {{ hidden() }}
@@ -13,7 +16,8 @@ see_also = []
 # Active vs. Passive Voice[^active-passive]
 
 **Active Voice**
-: Active voice focuses on who is doing the action. The subject (noun) performs the action (verb).
+: Active voice focuses on who is doing the action. 
+: The subject (noun) performs the action (verb).
 : > My neighbor's dog ate my flowers.
 : > The tall man walks through the woods.
 : > Last week, I made a cake for a birthday party.
@@ -21,7 +25,8 @@ see_also = []
 
 
 **Passive Voice**
-: Passive voice is the opposite, where it focuses on what receives the action. The subject (noun) receives the action (verb).
+: Passive voice is the opposite, where it focuses on what receives the action. 
+: The subject (noun) receives the action (verb).
 : > The letter was mailed to her.
 : > The windows were being cleaned.
 : > New movies are shown at the theater.
@@ -38,7 +43,6 @@ see_also = []
 
 > The active example includes who painted the walls, which shifts the attention to who is doing the action. In the passive example, the walls that were painted are the main focus, which highlights what is receiving the action. 
 
-- - - 
 
 **Active**
 : The students took their final exam.
@@ -48,7 +52,6 @@ see_also = []
 
 > The active example focuses on the students who took the exam, while the passive example focuses on the exam that was taken.
 
-- - - 
 
 **Active**
 : The study shows that collaboration is a strong motivator in the workplace. 
@@ -76,14 +79,16 @@ Check to see if the person or thing doing the action is at the beginning of the 
 
 ...usually contain a form of the verb "to be" (i.e., am, is, was, were, are, been) in front of the acting verb in the sentence. 
 
-Example: Apple pies were placed in front of the judges.
+> Apple pies were placed in front of the judges.
+
+
 ....may be wordy. Read over what you’ve written and see if some of your phrases could be more concise.
 
-Example: The argument that was formed by Smith is very weak. 
-More concise: Smith formed a very weak argument. 
-...often include the word “by.” 
+> The argument that was formed by Smith is very weak. 
+> <br>**More concise**: Smith formed a very weak argument. 
 
-Example: A time for the interview was chosen by the company.
+...often include the word “by.” 
+>  A time for the interview was chosen by the company.
 
 
 [^active-passive]: [Grammar and Punctuation Rules: Active vs. Passive Voice](https://library.csp.edu/grammar-punctuation/active-passive-voice)

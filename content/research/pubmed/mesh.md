@@ -1,8 +1,9 @@
 +++
 title = "Pubmed - MeSH"
-updated = 2025-01-17
+description = ""
 
 [extra]
+updated = 2026-07-01
 site = "https://www.ncbi.nlm.nih.gov/mesh"
 see_also = [
   { title = "Using MeSH to Search", href="https://hslib.jabsom.hawaii.edu/pubmed/mesh-advanced-search" }
@@ -58,20 +59,29 @@ Found on the Advanced Search screen, History holds your search strategies and re
 ## Medical Subject Headings (MeSH) Indexing Tips
 By using terms from the MeSH thesaurus, all articles on a given topic can be found regardless of the terminology used by the authors.
 
-**Specificity—**Each article is indexed to the most specific MeSH terms available. For example, an article on acne is indexed under acne but not under skin diseases.
+**Specificity**
+: Each article is indexed to the most specific MeSH terms available. For example, an article on acne is indexed under acne but not under skin diseases.
 
-**Near Match—**Articles with no exact match are indexed to the closest related MeSH term, e.g., seminal vesiculitis to seminal vesicles, pseudoappendicitis to appendicitis, and nursing caps to clothing.
+**Near Match**
+: Articles with no exact match are indexed to the closest related MeSH term, e.g., seminal vesiculitis to seminal vesicles, pseudoappendicitis to appendicitis, and nursing caps to clothing.
 
-**Two Terms—**The most precise way to cover a topic may be to use two MeSH terms in combination, e.g., jejunitis to jejunal diseases and enteritis.
+**Two Terms**
+: The most precise way to cover a topic may be to use two MeSH terms in combination, e.g., jejunitis to jejunal diseases and enteritis.
 
-**Textwords—**It is assumed you will sometimes use text words to define a subject, e.g., tobacco smoke pollution (MeSH term) and passive (text word), to retrieve passive smoking.
+**Text Words**
+: It is assumed you will sometimes use text words to define a subject, e.g., tobacco smoke pollution (MeSH term) and passive (text word), to retrieve passive smoking.
 
-**Check Tags—**Large-volume concepts are routinely "checked" for in each article by indexers. Check tags pinpoint specific age groups, males or females, humans or animals, publication types, etc.
+**Check Tags**
+: Large-volume concepts are routinely "checked" for in each article by indexers. Check tags pinpoint specific age groups, males or females, humans or animals, publication types, etc.
 
-**Drugs—**Drugs are indexed under the generic name, e.g., valium is indexed to diazepam.
+**Drugs**
+: Drugs are indexed under the generic name, e.g., valium is indexed to diazepam.
 
-**Medical Specialty—**There are separate terms for the medical specialty and the disease or organ (e.g., endocrinology is the specialty versus endocrine diseases or endocrine glands).
+**Medical Specialty**
+: There are separate terms for the medical specialty and the disease or organ (e.g., endocrinology is the specialty versus endocrine diseases or endocrine glands).
 
-**Neoplasms—**Neoplasms are indexed to site and histologic type, e.g., adenocarcinoma of the colon is indexed to both colonic neoplasms and adenocarcinoma.
+**Neoplasms**
+: Neoplasms are indexed to site and histologic type, e.g., adenocarcinoma of the colon is indexed to both colonic neoplasms and adenocarcinoma.
 
-**Relational Concepts—**Some relational concepts cannot be indexed precisely, e.g., degrees of quality or quantity, specific time relationships, and primary versus secondary, except for neoplasms and general body positions. Try to experiment with text words for these concepts. Even then, you may not retrieve the relationship you wish.
+**Relational Concepts**
+: Some relational concepts cannot be indexed precisely, e.g., degrees of quality or quantity, specific time relationships, and primary versus secondary, except for neoplasms and general body positions. Try to experiment with text words for these concepts. Even then, you may not retrieve the relationship you wish.

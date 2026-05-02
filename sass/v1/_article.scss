@@ -175,6 +175,10 @@ article.v1 {
 		}
 	}
 
+	blockquote + dl {
+		margin-block-start: $base-padding * 2.5;
+	}
+
 	&.section:empty::after {
 		content: 'See Subsections';
 		justify-content: center;
