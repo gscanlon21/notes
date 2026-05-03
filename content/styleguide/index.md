@@ -15,6 +15,29 @@ see_also = [
 
 {{ hidden() }}
 
+
+# `Alerts`
+---
+
+> [!TIP]
+> alert tip
+
+> [!NOTE]
+> alert note
+
+> [!CAUTION]
+> alert caution
+
+> [!WARNING]
+> alert warning
+
+> [!IMPORTANT]
+> alert important
+
+<br>
+<hr>
+
+
 # `Headers`
 - - -
 # h1
@@ -80,15 +103,6 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 <br>
 <hr>
 
-
-# `Alerts`
----
-> [!NOTE]
-> alert note
-
-
-<br>
-<hr>
 
 
 # `Blockquotes`

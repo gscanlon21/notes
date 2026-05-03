@@ -37,7 +37,7 @@ main {
 }
 
 strong {
-	display: inline-flex;
+	display: inline-block;
 }
 
 blockquote:not(:has(+p)) {
