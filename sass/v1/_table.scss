@@ -45,6 +45,10 @@ article.v1 {
 			}
 		}
 
+		&.narrow {
+			max-width: min-content !important;
+		}
+
 		&.academic {
 			max-width: min-content !important;
 
