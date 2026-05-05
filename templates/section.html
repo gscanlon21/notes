@@ -9,24 +9,14 @@
 		</div>
 
 		<div class="sidebar-right header">
-			<div class="header-item defer">
-				<h3 class="sitemap-title header-title">Ancestors</h3>
-				<nav class="sitemap condensed">
-					{{ macros::render_ancestors(ancestors=section.ancestors) }}
-				</nav>
+			<div class="header-item">
+				{{ macros::render_ancestors(ancestors=section.ancestors) }}
 			</div>
 
-			<div class="header-item defer">
+			<div class="header-item">
             	{{ macros::render_siblings(for=section) }}
             </div>
 
-			<div class="header-item defer">
-				<h3 class="sitemap-title">Subsections</h3>
-				<nav class="sitemap condensed">
-					{{ macros::render_sitemap(path=section.relative_path, open=false) }}
-				</nav>
-			</div>
-			
 			<div class="header-item screen-large">
 				<h3 class="sitemap-title">Sitemap</h3>
 				<nav class="sitemap">

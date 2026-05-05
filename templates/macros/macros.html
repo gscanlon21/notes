@@ -77,7 +77,7 @@
 	{% set subsections = section_info.subsections | sort %}
 {% endif %}
 {% if first_pass %}
-    {% if section_info.pages | length > section_info.pages | filter(attribute="extra.in_sitemap", value=false) | length or show_localhost %}
+    {% if section_info.pages | length > section_info.pages | filter(attribute="extra.in_sitemap", value=false) | length or show_localhost and section_info.pages | length > 0 %}
         <menu class="sitemap-list">
             {{ macros::render_list_links(pages=section_info.pages, current_path=current_path) }}
         </menu>
@@ -116,22 +116,25 @@
     Iterates though the site's ancestors and renders lists for each.
 #}
 {% macro render_ancestors(ancestors) %}
-<menu class="sitemap-list">
-    {% for ancestor in ancestors %}
-        {% set ancestor_info = get_section(path=ancestor) %}
-        {% if not ancestor_info.transparent and ancestor_info.relative_path != "_index.no.md" %}
-            <li><a href="{{ get_url(path="@/" ~ ancestor_info.relative_path) }}">{{ ancestor_info.title }}</a></li>
-        {% endif %}
-    {% endfor %}
-	{% if section.transparent | default(value=page.transparent | default(value=false)) != true
-		and section.relative_path | default(value=page.relative_path) != "_index.no.md" %}
-		{#{% if section.title %}
-			{{ macros::render_sitemap(path=section.relative_path, open=true, first_pass=false, current_path=section.relative_path) }}
-		{% else %}#}
-			<li class="current">{{ section.title | default(value=page.title) | safe }}</li>
-		{#{% endif %}#}
-	{% endif %}
-</menu>
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap condensed">
+	<menu class="sitemap-list">
+		{% for ancestor in ancestors %}
+			{% set ancestor_info = get_section(path=ancestor) %}
+			{% if not ancestor_info.transparent and ancestor_info.relative_path != "_index.no.md" %}
+				<li><a href="{{ get_url(path="@/" ~ ancestor_info.relative_path) }}">{{ ancestor_info.title }}</a></li>
+			{% endif %}
+		{% endfor %}
+		{% if section.transparent | default(value=page.transparent | default(value=false)) != true
+			and section.relative_path | default(value=page.relative_path) != "_index.no.md" %}
+			{#{% if section.title %}
+				{{ macros::render_sitemap(path=section.relative_path, open=true, first_pass=false, current_path=section.relative_path) }}
+			{% else %}#}
+				<li class="current">{{ section.title | default(value=page.title) | safe }}</li>
+			{#{% endif %}#}
+		{% endif %}
+	</menu>
+</nav>
 {% endmacro header %}
 
 
@@ -152,11 +155,11 @@
 			{% set subsection_info = get_section(path=subsection) %}
 			{% if subsection_info.extra.in_sitemap | default(value=true) %}
 			{% if subsection == for.relative_path %}
-            	<li class="square current">{{ subsection_info.title }}</li>
+				{{ macros::render_sitemap(path=subsection, open=true, first_pass=false, current_path=for.relative_path) }}
+				{#<li class="square current">{{ subsection_info.title }}</li>#}
 			{% else %}
-				<li class="square">
-					<a href="{{ get_url(path="@/" ~ subsection_info.relative_path) }}">{{ subsection_info.title }}</a>
-				</li>
+				{{ macros::render_sitemap(path=subsection, open=false, first_pass=false, current_path=for.relative_path) }}
+				{#<li class="square"><a href="{{ get_url(path="@/" ~ subsection_info.relative_path) }}">{{ subsection_info.title }}</a></li>#}
 			{% endif %}
 			{% endif %}
 		{% endfor %}
@@ -166,5 +169,23 @@
 	{#{{ macros::render_sitemap(path=ancestor_section.relative_path, open=false, current_path=for.relative_path) }}#}
 </nav>
 {% endif %}
+{% endif %}
+{% endmacro header %}
+
+
+{#
+    Renders a page's subsections.
+#}
+{% macro render_subsections(for) %}
+{% if for.extra.section_sort_by | default(value="none") == "weight" %}
+	{% set subsections = for.subsections %}
+{% else %}
+	{% set subsections = for.subsections | sort %}
+{% endif %}
+{% if subsections | length > 0 or for.pages | length > for.pages | filter(attribute="extra.in_sitemap", value=false) | length or show_localhost %}
+	<h3 class="sitemap-title">Subsections</h3>
+	<nav class="sitemap condensed">
+		{{ macros::render_sitemap(path=section.relative_path, open=false) }}
+	</nav>
 {% endif %}
 {% endmacro header %}
