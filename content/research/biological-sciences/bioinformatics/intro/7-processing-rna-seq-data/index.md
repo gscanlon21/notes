@@ -8,9 +8,9 @@ weight = 7
 site = "https://www.youtube.com/watch?v=bzgVg3n2P7s&list=PLWVKUEZ25V95IKyBrxHtRTK_6Ig8Xi9-f"
 authors = ["Mike Saint-Antoine"]
 see_also = [
-  { title = "GEO", href = "https://www.ncbi.nlm.nih.gov/geo/" },
-  { title = "Paper", href = "https://pmc.ncbi.nlm.nih.gov/articles/PMC7667907/" },
-  { title = "Dataset", href = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE150910" },
+  { title = "Python", href = "https://www.python.org/" },
+  { title = "Jupyter Notebook", href = "https://jupyter.org/" },
+  { title = "Repository", href = "https://github.com/mikesaint-antoine/Comp_Bio_Tutorials/tree/main/intro_to_bioinformatics" },
 ]
 +++
 
