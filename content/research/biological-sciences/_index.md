@@ -27,5 +27,5 @@ _Within the glass_
 
 **In Situ**
 _In its original place_
-: Something that’s performed in situ means that it’s observed in its natural context, but outside of a living organism.
+: Something that’s performed in its natural context, but outside of a living organism.
 

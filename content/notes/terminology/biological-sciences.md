@@ -30,7 +30,7 @@ see_also = []
 # Other
 
 **Imbibition**
-: A special type of diffusion that takes place when liquid is absorbed by solids-colloids causing an increase in volume.
+: A special type of diffusion where a liquid is absorbed by solids-colloids causing an increase in volume.
 : > Imbibition can also control circadian rhythms in Arabidopsis thaliana and (probably) other plants.
 : > Dry seeds germinate in part by imbibition. 
 
