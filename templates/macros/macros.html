@@ -150,12 +150,14 @@
 		{# If we want to include sibling sections only: #}
 		{% for subsection in ancestor_section.subsections | sort %}
 			{% set subsection_info = get_section(path=subsection) %}
+			{% if subsection_info.extra.in_sitemap | default(value=true) %}
 			{% if subsection == for.relative_path %}
             	<li class="square current">{{ subsection_info.title }}</li>
 			{% else %}
 				<li class="square">
 					<a href="{{ get_url(path="@/" ~ subsection_info.relative_path) }}">{{ subsection_info.title }}</a>
 				</li>
+			{% endif %}
 			{% endif %}
 		{% endfor %}
 	</menu>
