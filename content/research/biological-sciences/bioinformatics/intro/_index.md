@@ -9,7 +9,7 @@ site = "https://www.youtube.com/watch?v=3XFpxQF0J74&list=PLWVKUEZ25V95IKyBrxHtRT
 authors = ["Mike Saint-Antoine"]
 updated = 2026-02-21
 see_also = [
-  
+  { title = "Learn Bioinformatics", href = "https://learnbioinformatics.org/" },
 ]
 +++
 
