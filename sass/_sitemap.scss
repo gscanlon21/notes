@@ -9,7 +9,7 @@ main > .sitemap-title {
 
 // Sitemap titles
 .sitemap-title:has(+ .sitemap:empty),
-.sitemap-title:has(+ .sitemap > .sitemap-list:empty) {
+.sitemap-title:has(+ .sitemap > .sitemap-list:only-child:empty) {
 	display: none;
 }
 
