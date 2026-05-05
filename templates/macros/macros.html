@@ -84,22 +84,26 @@
     {% endif %}
     
     {% for subsection in subsections %}
-        {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
+        {{ macros::render_sitemap(path=subsection, open=false, first_pass=false) }}
     {% endfor %}
 {% elif section_info.extra.in_sitemap | default(value=true) or show_localhost %}
     {% if section_info.transparent %}
         {% for subsection in subsections %}
-            {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
+            {{ macros::render_sitemap(path=subsection, open=false, first_pass=false) }}
         {% endfor %}
     {% else %}
         <details {% if open %}open{% endif %}>
-            <summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></summary>
+			{% if current_path == section_info.relative_path %}
+            	<summary><span class="current">{{ section_info.title }}</span></summary>
+			{% else %}
+				<summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></summary>
+			{% endif %}
             
             <menu class="sitemap-list">
                 {{ macros::render_list_links(pages=section_info.pages) }}
         
                 {% for subsection in subsections %}
-                    {{ macros::render_sitemap(path=subsection, open=open, first_pass=false) }}
+                    {{ macros::render_sitemap(path=subsection, open=false, first_pass=false) }}
                 {% endfor %}
             </menu>
         </details>
@@ -121,7 +125,11 @@
     {% endfor %}
 	{% if section.transparent | default(value=page.transparent | default(value=false)) != true
 		and section.relative_path | default(value=page.relative_path) != "_index.no.md" %}
-		<li class="current">{{ section.title | default(value=page.title) | safe }}</li>
+		{#{% if section.title %}
+			{{ macros::render_sitemap(path=section.relative_path, open=true, first_pass=false, current_path=section.relative_path) }}
+		{% else %}#}
+			<li class="current">{{ section.title | default(value=page.title) | safe }}</li>
+		{#{% endif %}#}
 	{% endif %}
 </menu>
 {% endmacro header %}
@@ -140,12 +148,16 @@
 		{{ macros::render_list_links(pages=ancestor_section.pages, current_path=for.relative_path) }}
 
 		{# If we want to include sibling sections only: #}
-		{#{% for subsection in ancestor_section.subsections | sort %}
+		{% for subsection in ancestor_section.subsections | sort %}
 			{% set subsection_info = get_section(path=subsection) %}
-			<li class="circle">
-				<a href="{{ get_url(path="@/" ~ subsection_info.relative_path) }}">{{ subsection_info.title }}</a>
-			</li>
-		{% endfor %}#}
+			{% if subsection == for.relative_path %}
+            	<li class="square current">{{ subsection_info.title }}</li>
+			{% else %}
+				<li class="square">
+					<a href="{{ get_url(path="@/" ~ subsection_info.relative_path) }}">{{ subsection_info.title }}</a>
+				</li>
+			{% endif %}
+		{% endfor %}
 	</menu>
 
 	{# If we want to include sibling sections and their child items: #}

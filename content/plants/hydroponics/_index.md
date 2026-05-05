@@ -6,9 +6,7 @@ description = "Hydroponics involves growing plants, usually crops or herbs, with
 updated = 2026-06-01
 site_version = 1
 toc_level = 2
-see_also = [
-  { title = "Hydroponics", file = "一hydroponics.pdf" },
-]
+see_also = []
 +++
 
 {{ hidden() }}
