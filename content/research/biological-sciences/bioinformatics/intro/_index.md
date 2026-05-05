@@ -1,5 +1,6 @@
 +++
 title = "Intro to Bioinformatics"
+aliases = ["intro-to-bioinformatics"]
 sort_by = "weight"
 
 [extra]
@@ -8,7 +9,7 @@ site = "https://www.youtube.com/watch?v=3XFpxQF0J74&list=PLWVKUEZ25V95IKyBrxHtRT
 authors = ["Mike Saint-Antoine"]
 updated = 2026-02-21
 see_also = [
-  { title = "Raw Data", file = "GSE150910_gene-level_count_file.csv.gz" },
+  
 ]
 +++
 
