@@ -14,14 +14,15 @@ see_also = [
 
 # Natives, Cultivars, and Nativars
 
-## Natives
-Occur within a region without human intervention. Insects and other animals have co-evolved with native plants for thousands of years. The nutritional value of foliage, pollen, nectar, fruits, and seeds of straight native species is known.
+**Natives**
+_Preferred_
+: Occur within a region without human intervention. Insects and other animals have co-evolved with native plants for thousands of years. The nutritional value of foliage, pollen, nectar, fruits, and seeds of straight native species is known.
 
-## Cultivars
-Plants selected for a certain trait (for example, color, share, size, bloom times, or stronger stems) through intentional breeding, including hybridization. Derived from non-native or native plants. May not produce nectar or seeds, and may not support native butterflies, birds, and other wildlife.
+**Cultivars**
+: Plants selected for a certain trait (for example, color, share, size, bloom times, or stronger stems) through intentional breeding, including hybridization. Derived from non-native or native plants. May not produce nectar or seeds, and may not support native butterflies, birds, and other wildlife.
 
-## Nativars
-Popular name for cultivars of native plants, resulting from human selection for a specific plant trait(s) desired in a garden or food production setting. Some nativars have no nectar or pollen, and sterile seeds.
+**Nativars**
+: Popular name for cultivars of native plants, resulting from human selection for a specific plant trait(s) desired in a garden or food production setting. Some nativars have no nectar or pollen, and sterile seeds.
 
 # Why Choose Native Plants?
 To ensure you are supporting wildlife in your landscape, choose straight native species. The Grow Native! program promotes the use of natives for their known ecological value. Nativars bred for dark foliage or double petals, for example, may be less nutritious for insect foragers you are hoping to attract with a pollinator garden. While some nativars may have high ecological value, too, human-based selection of plant traits may have unknown consequences.
