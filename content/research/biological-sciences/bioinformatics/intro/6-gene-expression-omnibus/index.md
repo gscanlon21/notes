@@ -24,7 +24,7 @@ see_also = [
 > [!NOTE] 
 > Download the file titled: GSE150910_gene-level_count_file.csv.gz
 
-##### Unzip .csv.gz on Windows
+###### Unzip .csv.gz on Windows
 ```powershell
 wsl
 ```
