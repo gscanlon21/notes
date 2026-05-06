@@ -1,12 +1,19 @@
 +++
 title = "Words"
-updated = 2026-12-21
+description = ""
 
 [extra]
+updated = 2027-01-01
 site_version = 1
 toc_level = 2
 see_also = []
 +++
+
+
+> [!TIP]
+> "What?" and "how?" questions are more open to discussion and less accusatory than "why?" questions.
+>> Questions
+
 
 **Noun**
 : People, places, or things.
