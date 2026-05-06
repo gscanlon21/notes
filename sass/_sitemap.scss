@@ -34,8 +34,13 @@ main > .sitemap-title {
 		margin-block: $base-padding * 0.25;
 	}
 
+	li.current, summary.current {
+		pointer-events: none;
+		font-weight: bold;
+	}
+
 	// Pad between submenus.
-	& > menu + menu, & > menu:not(:empty) + details, & > details + details {
+	& > menu + menu, & > menu:not(:empty) + details, & > details + details, & > li + details {
 		margin-block-start: $base-padding;
 	}
 
@@ -45,10 +50,6 @@ main > .sitemap-title {
 	}
 
 	.sitemap-list {
-		li.current, span.current {
-			font-weight: bold;
-		}
-
 		li {
 			&.circle {
 				list-style-type: circle;
