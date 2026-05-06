@@ -11,7 +11,7 @@ see_also = []
 
 
 > [!TIP]
-> "What?" and "how?" questions are more open to discussion and less accusatory than "why?" questions.
+> "What?" and "how?" questions are more open to discussion and feel less accusatory than "why?" questions.
 >> Questions
 
 
