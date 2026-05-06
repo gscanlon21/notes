@@ -142,12 +142,10 @@
     Renders a page's siblings.
 #}
 {% macro render_siblings(for) %}
-{% if for.ancestors | length > 0 %}
-{% set ancestor_section = get_section(path=for.ancestors | last) %}
-{% if ancestor_section.pages and ancestor_section.pages | length > ancestor_section.pages | filter(attribute="extra.in_sitemap", value=false) | length + 1 %}
 <h3 class="sitemap-title">Siblings</h3>
 <nav class="sitemap condensed">
 	<menu class="sitemap-list">
+		{% set ancestor_section = get_section(path=for.ancestors | last) %}
 		{{ macros::render_list_links(pages=ancestor_section.pages, current_path=for.relative_path) }}
 
 		{# If we want to include sibling sections only: #}
@@ -168,8 +166,6 @@
 	{# If we want to include sibling sections and their child items: #}
 	{#{{ macros::render_sitemap(path=ancestor_section.relative_path, open=false, current_path=for.relative_path) }}#}
 </nav>
-{% endif %}
-{% endif %}
 {% endmacro header %}
 
 
