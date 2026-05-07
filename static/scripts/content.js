@@ -71,7 +71,9 @@ for (const element of Array.from(document.getElementsByTagName('td'))) {
 
 // Add target="_blank" to links in footnotes.
 for (const element of Array.from(document.querySelectorAll('.footnotes-list a'))) {
-	element.setAttribute('target', '_blank');
+	if (!element.href.startsWith("#") && !element.href.includes("/#")) {
+		element.setAttribute('target', '_blank');
+	}
 }
 
 // Remove defer classes from elements after the page has loaded.
