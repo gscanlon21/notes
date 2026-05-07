@@ -49,6 +49,10 @@ CO₂
 ```
 H⁺
 ```
+###### Hydroxide Ion
+```
+OH⁻
+```
 
 
 # Math Symbols
