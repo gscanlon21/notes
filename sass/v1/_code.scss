@@ -53,7 +53,7 @@ article.v1 {
 		border-start-end-radius: $border-radius;
 	}
 
-	h6+pre:not(+pre) {
+	h6+pre:not(:has(+pre)) {
 		border-end-start-radius: $border-radius;
 	}
 

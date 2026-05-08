@@ -18,9 +18,9 @@ see_also = [
 ## Dawn Powerwash
 
 ##### DIY Dawn Powerwash Refill
-1. Fill a Dawn Powerwash spray bottle with 12 fl oz of water.
+1. Fill a Dawn Powerwash spray bottle with 13 fl oz of water.
 1. Mix in 2 fl oz of blue Dawn Original Dish Soap.
-1. Add in 2 fl oz of isopropyl alcohol.
+1. Add in 1 fl oz of isopropyl alcohol.
 1. Gently swish around. Let sit overnight.
 
 ##### DIY Dawn Powerwash Bulk Refill
