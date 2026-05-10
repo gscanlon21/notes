@@ -27,7 +27,7 @@ see_also = []
 : Outside
 
 
-# Other
+# Osmosis & Diffusion
 
 **Imbibition**
 : A special type of diffusion where a liquid is absorbed by solids-colloids causing an increase in volume.
@@ -41,7 +41,28 @@ see_also = []
 : Balances water potential.
 : A substance that acts to supplement osmotic pressure in a cell.
 
+
+# Genetics
+
+**Homology**
+: Similarity in anatomical structures or genes between organisms of different taxa due to shared ancestry, regardless of current functional differences.
+: Homology among proteins or DNA is inferred from their sequence similarity. 
+: - Significant similarity is strong evidence that two sequences are related by divergent evolution from a common ancestor. 
+: - Alignments of multiple sequences are used to discover the homologous regions.
+
+**Introgression**
+Introgressive Hybridization
+: The transfer of genetic material from one species into the gene pool of another by the repeated backcrossing of an interspecific hybrid with one of its parent species.
+: Introgression also differs from simple hybridization. Simple hybridization results in a relatively even mixture; gene and allele frequencies in the first generation will be a uniform mix of two parental species, such as that observed in mules. Introgression, on the other hand, results in a complex, highly variable mixture of genes, and may only involve a minimal percentage of the donor genome.
+
 **Transgenic**
 : Transgenic refers to an organism or cell whose genome has been altered by the introduction of one or more foreign DNA sequences from another species by artificial means. 
 : Transgenic organisms are generated in the laboratory for research purposes.
+
+
+# Uncategorized
+
+**Homodimerization**
+: A biological process where two identical protein molecules, known as monomers, bind to form a single, functional unit called a homodimer.
+: This dimerization event pushes the intracellular portions of the receptors together, activating their enzymatic function.
 

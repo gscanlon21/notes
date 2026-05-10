@@ -16,6 +16,10 @@ see_also = [
   { title = "Yeast Genome", href = "https://www.yeastgenome.org/locus/S000001855" },
   { title = "Translate Tool", href = "https://web.expasy.org/translate/" },
   { title = "UBIC Workshops", href = "https://github.com/WillardFord/UBIC-Workshops" },
+  { title = "Gene Structure Display Server", href = "https://gsds.gao-lab.org/" },
+  { title = "Arabidopsis Transcriptional Regulatory Map", href = "https://atrm.gao-lab.org/" },
+  { title = "Plant Transcription Factor Database", href = "https://planttfdb.gao-lab.org/" },
+  { title = "Plant Transcriptional Regulatory Map", href = "https://plantregmap.gao-lab.org/" },
 ]
 +++
 
