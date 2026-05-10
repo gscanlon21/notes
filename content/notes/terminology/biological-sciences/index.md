@@ -60,6 +60,18 @@ Introgressive Hybridization
 : Transgenic organisms are generated in the laboratory for research purposes.
 
 
+## Metabolomics
+
+{{ image(title="Metabolomics Schema", file="Metabolomics_schema.png") }}
+
+**Proteome**
+: The entire set of proteins that is, or can be, expressed by a genome, cell, tissue, or organism at a certain time. 
+: It is the set of expressed proteins in a given type of cell or organism, at a given time, under defined conditions.
+
+**Proteomics**
+: The study of the proteome.
+
+
 # Uncategorized
 
 **Homodimerization**
