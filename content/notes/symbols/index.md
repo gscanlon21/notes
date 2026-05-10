@@ -71,6 +71,16 @@ OH⁻
 ±
 ```
 ###### U+00B1
+###### Fullwidth Equals Sign
+```
+＝
+```
+###### U+FF1D
+###### Two Consecutive Equals Signs
+```
+⩵
+```
+###### U+2A75
 ###### Almost Equal To
 ```
 ≈
