@@ -9,7 +9,7 @@ article.v1 {
 			margin-block-start: $site-padding * 3 !important;
 		}
 
-		&:has(+h1+h1) {
+		&:not(blockquote):has(+h1+h1) {
 			/* If header with =subheading. */
 			margin-block-start: 0 !important;
 		}
