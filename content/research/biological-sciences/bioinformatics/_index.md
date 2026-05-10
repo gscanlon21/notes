@@ -20,6 +20,7 @@ see_also = [
   { title = "Arabidopsis Transcriptional Regulatory Map", href = "https://atrm.gao-lab.org/" },
   { title = "Plant Transcription Factor Database", href = "https://planttfdb.gao-lab.org/" },
   { title = "Plant Transcriptional Regulatory Map", href = "https://plantregmap.gao-lab.org/" },
+  { title = "ImageJ Fiji", href = "https://imagej.net/software/fiji/downloads" },
 ]
 +++
 
