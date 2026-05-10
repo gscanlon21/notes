@@ -94,6 +94,7 @@ see_also = []
   "**/.github": true,
   "**/templates": true,
   "**/git_hooks": true,
+  "**/config.toml": true,
   "**/node_modules": true,
   "**/.gitmodules": true,
   "**/.gitignore": true,
