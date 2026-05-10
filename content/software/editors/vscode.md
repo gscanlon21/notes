@@ -78,6 +78,27 @@ see_also = []
   "**/dist": true,
   "**/public": true,
   "**/node_modules": true,
+  "**/*.csv*": true,
+  "**/*.svg*": true,
+  "**/*.pdf*": true,
+},
+
+// Ignore solution files
+"files.exclude": {
+  "scripts": true,
+  "**/.git": true,
+  "**/dist": true,
+  "**/public": true,
+  "**/static": true,
+  "**/.vscode": true,
+  "**/.github": true,
+  "**/templates": true,
+  "**/git_hooks": true,
+  "**/node_modules": true,
+  "**/.gitmodules": true,
+  "**/.gitignore": true,
+  "**/LICENSE": true,
+  "**/CNAME": true,
 },
 ```
 ###### `Ctrl` `,`
