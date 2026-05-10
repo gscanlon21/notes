@@ -63,11 +63,6 @@
 		pointer-events: all;
 		flex-direction: column;
 		min-width: $min-content-width;
-
-		a {
-			// Remove un-clickable space between lines.
-			display: inline-flex;
-		}
 	}
 
 	#summary {
