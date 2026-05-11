@@ -11,12 +11,6 @@ see_also = [
   { title = "Hanna Instruments", href = "https://hannainst.com/" },
   { title = "Bluelab Instruments", href = "https://bluelab.com/" },
   { title = "Hydro Buddy", href = "https://scienceinhydroponics.com/2016/03/the-first-free-hydroponic-nutrient-calculator-program-o.html" },
-  { title = "A Recipe for Hydroponic Success", file = "一hydroponic-recipes.pdf" },
-  { title = "MU Hydroponic Nutrient Solutions", href = "mu-hydroponic-nutrient-solutions.pdf" },
-  { title = "Electrical Conductivity & pH Guide", file = "一electrical-conductivity-and-ph-guide-for-hydroponics.pdf" },
-  { title = "Useful Home Hydroponics Excel Sheets", file = "Useful-Home-Hydroponics-Excel-Sheets.xlsx" },
-  { title = "Hydroponic Nutrient Solution Calculator", file = "hydroponic-nutrient-solution-calculator.xlsx" },
-  { title = "Fertilizer Calculation Basics for Hydroponics", file = "Fertilizer-Calculation-Basics-for-Hydroponics.pdf" },
 ]
 +++
 
@@ -25,7 +19,7 @@ see_also = [
 
 # Electrical Conductivity & pH
 
-{% table(header="Optimum range of electrical conductivity (EC) and pH values for hydroponic crops.", footer="[Electrical Conductivity & pH Guide](一electrical-conductivity-and-ph-guide-for-hydroponics.pdf)") %}
+{% table(header="Optimum range of electrical conductivity (EC) and pH values for hydroponic crops.", footer="[Electrical Conductivity & pH Guide](一Electrical_Conductivity_and_pH_Guide_for_Hydroponics.pdf)") %}
 | Crops          | EC (mS/cm) | pH         |
 |----------------|------------|------------|
 | Asparagus      | 1.4 to 1.8 | 6.0 to 6.8 |
@@ -59,7 +53,7 @@ see_also = [
 
 # Hydroponic Recipes
 
-{% table(header="Target nitrogen feed rates (in ppm N) for several hydroponic crops.", footer="[A Recipe for Hydroponic Success](一hydroponic-recipes.pdf)") %}
+{% table(header="Target nitrogen feed rates (in ppm N) for several hydroponic crops.", footer="[A Recipe for Hydroponic Success](一Hydroponic_Recipes.pdf)") %}
 | Type                                                                                  | Propagation (ppm N) | Production (ppm N) |
 |---------------------------------------------------------------------------------------|---------------------|--------------------|
 | Buttercrunch/Boston Bibb                                                              | 125                 | 150                |
