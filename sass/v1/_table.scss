@@ -30,7 +30,8 @@ article.v1 {
 			padding-block: $base-padding / 2;
 			padding-inline: $base-padding;
 			margin-block-start: 0;
-			float: right;
+			position: absolute;
+			right: 0;
 			
 			&:empty {
 				display: none;
