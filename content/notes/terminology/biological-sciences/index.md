@@ -30,18 +30,21 @@ see_also = []
 
 # Research Settings
 
-**In Vivo**
+_**In Vivo**_
 _Within the living_
 : It refers to work that’s performed in a whole, living organism.
 
-**In Vitro**
+_**In Vitro**_
 _Within the glass_
 : When something is performed in vitro, it happens outside of a living organism.
 
-**In Situ**
+_**In Situ**_
 _In its original place_
 : Something that’s performed in its natural context, but outside of a living organism.
 
+_**In Silico**_
+_Within the glass_
+: An experiment performed on a computer or via computer simulation software.
 
 
 
