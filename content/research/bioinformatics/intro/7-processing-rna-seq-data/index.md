@@ -10,7 +10,6 @@ authors = ["Mike Saint-Antoine"]
 see_also = [
   { title = "Python", href = "https://www.python.org/" },
   { title = "Jupyter Notebook", href = "https://jupyter.org/" },
-  { title = "Repository", href = "https://github.com/mikesaint-antoine/Comp_Bio_Tutorials/tree/main/intro_to_bioinformatics" },
 ]
 +++
 

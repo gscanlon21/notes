@@ -63,7 +63,7 @@ _[Research Article](/doi/10.1093/plphys/kiac159.pdf)_
 **Heritable virus-induced germline editing in tomato**
 Oh et al. 2025
 _[Research Article](/doi/10.1111/tpj.70115.pdf)_ 
-: "These findings underscore the use of appropriate promoters to express Cas nucleases and optimized environmental conditions to enhance heritable genome editing efficiency in tomato using VIGE."
+: "These findings underscore the use of appropriate promoters to express Cas nucleases and optimized environmental conditions to enhance heritable genome editing efficiency in tomato using [virus-induced germline editing]."
 
 **Virus-mediated, heritable gene editing in groundcherry (Physalis grisea)**
 Tibebu et al. 2026

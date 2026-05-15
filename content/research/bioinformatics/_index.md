@@ -6,6 +6,7 @@ weight = 1500
 [extra]
 updated = 2026-06-01
 see_also = [
+  { title = "Learn Bioinformatics", href = "https://learnbioinformatics.org/" },
   { title = "GraphPad Prism", href = "https://www.graphpad.com/features" },
   { title = "Rosalind", href = "https://rosalind.info/problems/locations/" },
   { title = "GEO Browser", href = "https://www.ncbi.nlm.nih.gov/geo/browse/?view=series&type=3" },

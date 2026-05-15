@@ -11,8 +11,6 @@ see_also = [
   { title = "GEO", href = "https://www.ncbi.nlm.nih.gov/geo/" },
   { title = "Paper", href = "https://pmc.ncbi.nlm.nih.gov/articles/PMC7667907/" },
   { title = "Dataset", href = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE150910" },
-  { title = "Raw Data (gz)", file = "GSE150910_gene-level_count_file.csv.gz" },
-  { title = "Raw Data (csv)", file = "GSE150910_gene-level_count_file.csv" },
 ]
 +++
 
