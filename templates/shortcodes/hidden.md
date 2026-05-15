@@ -17,7 +17,7 @@
 {% if page.assets | default(value=section.assets) %} 
 {% for asset in page.assets | default(value=section.assets) %}
   {% set filename = asset | split(pat="/") | last | split(pat="\") | last | split(pat=".") | first %}
-  {% set title = filename | replace(from="--", to=": ") | replace(from="_", to=" ") | replace(from="一", to="") %}
+  {% set title = filename | replace(from="---", to=" - ") | replace(from="--", to=": ") | replace(from="_", to=" ") | replace(from="一", to="") %}
   <div class="display--none">{{ title }}</div>
 {% endfor %}
 {% endif %}

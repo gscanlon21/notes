@@ -99,7 +99,7 @@
 			{% if asset is ending_with("pdf") or asset is ending_with("xlsx") or asset is ending_with("txt") or asset is ending_with("docx") %}
                 <dd class="summary-item">
 					{% set filename = asset | split(pat="/") | last | split(pat="\") | last | split(pat=".") | first %}
-                    {% set title = filename | replace(from="--", to=": ") | replace(from="_", to=" ") | replace(from="一", to="") %}
+                    {% set title = filename | replace(from="---", to=" - ") | replace(from="--", to=": ") | replace(from="_", to=" ") | replace(from="一", to="") %}
 					{% if asset is starting_with("/") %}
                         {% set url = get_url(path=asset) %}
                         <a class="reverse-indent" href="{{ url }}" target="_blank">{{ title | safe }}</a>
