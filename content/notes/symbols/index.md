@@ -492,3 +492,31 @@ x̄
 🗹
 ```
 ###### U+1F5F9
+
+
+
+# Roman Numerals
+
+## Capital Roman Numerals
+###### Roman Numeral One
+```
+Ⅰ
+```
+###### U+2160
+###### Roman Numeral Two
+```
+Ⅱ
+```
+###### U+2161
+
+## Lowercase Roman Numerals
+###### Small Roman Numeral One
+```
+ⅰ
+```
+###### U+2170
+###### Small Roman Numeral Two
+```
+ⅱ
+```
+###### U+2171

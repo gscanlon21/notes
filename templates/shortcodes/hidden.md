@@ -1,3 +1,5 @@
+{% if show | default(value=true) %}
+
 <div class="visibility--hidden">
 
 {% if page.extra.see_also | default(value=section.extra.see_also) %} 
@@ -21,3 +23,5 @@
 {% endif %}
 
 </div>
+
+{% endif %}
