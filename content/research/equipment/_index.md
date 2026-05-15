@@ -2,7 +2,7 @@
 title = "Equipment"
 description = ""
 sort_by = "title"
-weight = 800
+weight = 2000
 
 [extra]
 updated = 2026-06-01

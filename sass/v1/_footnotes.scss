@@ -1,6 +1,7 @@
 article.v1 {
 	.footnote-reference {
 		margin-block-start: $base-padding * -1;
+		font-size: $site-font-size * 0.8;
 		display: inline-block;
 		
 		& a::before {

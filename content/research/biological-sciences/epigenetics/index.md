@@ -19,7 +19,8 @@ see_also = [
 **Epigenetic Mechanisms of Genomic Imprinting: Common Themes in the Regulation of Imprinted Regions in Mammals, Plants, and Insects**
 Macdonald 2012
 _[Review Article](/doi/10.1155/2012/585024.pdf)_ 
-: ?
+: "Genomic imprinting is a form of epigenetic inheritance whereby the regulation of a gene or chromosomal region is dependent on the sex of the transmitting parent. During gametogenesis, imprinted regions of DNA are differentially marked in accordance to the sex of the parent, resulting in parent-specific expression."
+: "This review examines some examples of the epigenetic mechanisms responsible for genomic imprinting in mammals, plants, and insects."
 
 
 

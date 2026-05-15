@@ -2,7 +2,7 @@
 title = "Chemicals"
 description = ""
 sort_by = "title"
-weight = 700
+weight = 3000
 
 [extra]
 updated = 2026-06-01
