@@ -44,11 +44,6 @@ main > .sitemap-title {
 		margin-block-start: $base-padding;
 	}
 
-	// Remove extra padding from direct descendants.
-	& > .sitemap-list, li > .sitemap-list {
-		padding-inline-start: $base-padding * 1.2;
-	}
-
 	.sitemap-list {
 		li {
 			&.circle {

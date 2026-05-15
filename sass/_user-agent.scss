@@ -36,60 +36,6 @@ main {
 	padding: $base-padding;
 }
 
-strong {
-	display: inline-block;
-}
-
-blockquote:not(:has(+p)) {
-	// Reduce the margin of a block quote.
-	margin-block-end: 0;
-}
-
-ul, ol, menu {
-	padding-inline-start: $base-padding * 2;
-	margin-block-start: $base-padding * 0.25;
-	// No end margin for nested elements.
-	margin-block-end: $base-padding * 0;
-	
-	ul, ol, menu {
-		margin-block-start: 0;
-		margin-block-end: $base-padding * 0.1;
-
-		&:has(> li > input[type="checkbox"]) {
-			padding-inline-start: 1ch;
-		}
-	}
-
-	&:has(> li > input[type="checkbox"]) {
-		padding-inline-start: 0;
-
-		& > li {
-			list-style-type: none;
-		}
-
-		ul, ol, menu {
-			padding-inline-start: $base-padding * 3;
-		}
-	}
-
-	// Since the headers use display: inline-block, there's no margin collapse.
-	&:has(+h1), &:has(+h2), &:has(+h3), &:has(+h4), &:has(+h5) {
-		margin-block-end: 0;
-	}
-
-	& > li {
-		& > blockquote {
-			margin-block-start: 0;
-			margin-inline-start: 0;
-			margin-block-end: $base-padding * 0.5;
-		}
-
-		&:has(ol) + li:has(ol) {
-			margin-block-start: $base-padding * 0.75;
-		}
-	}
-}
-
 h1, h2, h3, h4, h5, p {
 	margin-block-end: 0;
 }
@@ -210,6 +156,10 @@ h5 {
 	}
 }
 
+strong {
+	display: inline-block;
+}
+
 p {
 	font-size: medium;
 	margin-block-start: $site-padding * 0.25;
@@ -236,12 +186,65 @@ a {
 	}
 }
 
-summary {
-	cursor: pointer;
-	user-select: none;
-	max-width: $small-width;
-
-	&:focus {
-		outline: none;
+ul, ol, menu {
+	// Remove extra padding from direct descendants.
+	padding-inline-start: $base-padding * 1.2;
+	margin-block-start: $base-padding * 0.25;
+	// No end margin for nested elements.
+	margin-block-end: $base-padding * 0;
+	
+	ul, ol, menu {
+		margin-block-start: 0;
+		margin-block-end: $base-padding * 0.1;
 	}
+
+	&:has(> li > input[type="checkbox"]) {
+		padding-inline-start: 0;
+
+		& > li {
+			list-style-type: none;
+		}
+
+		ul, ol, menu {
+			padding-inline-start: $base-padding * 3;
+		}
+	}
+
+	// Since the headers use display: inline-block, there's no margin collapse.
+	&:has(+h1), &:has(+h2), &:has(+h3), &:has(+h4), &:has(+h5) {
+		margin-block-end: 0;
+	}
+
+	& > li {
+		& > blockquote {
+			margin-block-start: 0;
+			margin-inline-start: 0;
+			margin-block-end: $base-padding * 0.5;
+		}
+
+		&:has(ol) + li:has(ol) {
+			margin-block-start: $base-padding * 0.75;
+		}
+	}
+}
+
+details {
+	& > summary {
+		cursor: pointer;
+		user-select: none;
+		max-width: $small-width;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	& > menu {
+		padding-inline-start: $base-padding * 2 !important;
+	}
+}
+
+blockquote:not(:has(+p)) {
+	// Reduce the margin of a block quote.
+	margin-block-end: 0;
 }
