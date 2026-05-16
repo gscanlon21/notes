@@ -23,6 +23,31 @@ _[Review Article](/doi/10.1155/2012/585024.pdf)_
 : "This review examines some examples of the epigenetic mechanisms responsible for genomic imprinting in mammals, plants, and insects."
 
 
+**Global profiling of protein lactylation in Caenorhabditis elegans**
+Ding et al. 2023
+_[Article](/doi/10.1002/pmic.202300185.pdf)_ 
+: "Thus, we studied the lactylation of global proteins in Caenorhabditis elegans to obtain aninvivolactylome."
+: "This study establishes the first lactylome database in C. elegans and provides a basis for studying the role of lactylation."
+
+
+**Epigenetic dynamics during germline development: insights from Drosophila and C. elegans**
+Gleason et al. 2024
+_[Author Manuscript](/doi/10.1016/j.gde.2022.102017.pdf)_ 
+: ?
+
+
+**Intergenerational Transmission of Gene Regulatory Information in Caenorhabditis elegans**
+Minkina et al. 2019
+_[Author Manuscript](/doi/10.1016/j.tig.2017.09.012.pdf)_ 
+: ?
+
+**Heritable epigenetic changes at single genes: challenges and opportunities in Caenorhabditis elegans**
+Chey et al. 2023
+_[Article](/doi/10.1016/j.tig.2021.08.011.pdf)_ 
+: ?
+
+
+
 
 # Epigenome Metaphor
 
