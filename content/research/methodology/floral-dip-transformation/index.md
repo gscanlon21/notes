@@ -1,6 +1,6 @@
 +++
 title = "Floral Dip Transformation"
-description = "Simplified from the _Arabidopsis thaliana_ Floral Dip Transformation Method by Andrew Bent."
+description = "Simplified from the Arabidopsis thaliana Floral Dip Transformation Method by Andrew Bent."
 sort_by = "title"
 weight = 970
 

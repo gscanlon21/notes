@@ -1,6 +1,6 @@
 +++
 title = "Direct Protein Delivery"
-description = "Simplified from the Direct protein delivery into intact _Arabidopsis_ cells for genome engineering by Yuichi Furuhata, Mitsuhiro Kimura, Ayako Sakai, Tomi Murakami, Emiko Egi, Tetsushi Sakuma, Takashi Yamamoto, Takeshi Yoshizumi & Yoshio Kato."
+description = "Simplified from the Direct protein delivery into intact Arabidopsis cells for genome engineering by Yuichi Furuhata, Mitsuhiro Kimura, Ayako Sakai, Tomi Murakami, Emiko Egi, Tetsushi Sakuma, Takashi Yamamoto, Takeshi Yoshizumi & Yoshio Kato."
 sort_by = "title"
 weight = 970
 
