@@ -53,7 +53,7 @@ _[Highlight](/doi/10.3390/ijms22010169.pdf)_
 _[Highlight](/doi/10.1016/j.pbiomolbio.2020.10.007.pdf)_ 
 : ?
 
-**Distinct mechanisms for genomic attachment of the 5' and 3' ends of Agrobacterium T-DNA in plants**
+**Distinct mechanisms for genomic attachment of the 5' and 3' ends of _Agrobacterium_ T-DNA in plants**
 ??? et al. ???
 _[Highlight](/doi/10.1038/s41477-022-01147-5.pdf)_ 
 : ?

@@ -1,13 +1,13 @@
 +++
 title = "Floral Dip Transformation"
-description = "Simplified from the Arabidopsis thaliana Floral Dip Transformation Method by Andrew Bent."
+description = "Simplified from the _Arabidopsis thaliana_ Floral Dip Transformation Method by Andrew Bent."
 sort_by = "title"
 weight = 970
 
 [extra]
 key_words = ["In planta transformation", "germline transformation", "Arabidopsis thaliana"]
 authors = ["Andrew Bent"]
-updated = 2026-06-01
+updated = 2027-01-01
 toc_level = 3
 see_also = [
   { title = "Review Article", href = "/doi/10.1385/1-59745-130-4-87.pdf" },
@@ -24,61 +24,57 @@ see_also = [
 # Methodology
 
 ## Summary
-Arabidopsis floral dip transformation is notable for a number of reasons. First, it is
-strikingly simple to perform. Agrobacterium is applied to flowering Arabidopsis plants
+_Arabidopsis_ floral dip transformation is notable for a number of reasons. First, it is
+strikingly simple to perform. _Agrobacterium_ is applied to flowering _Arabidopsis_ plants
 that subsequently set seed, and transgenic plants are then selected among the progeny
 seedlings. Because no plant tissue culture is required, somaclonal variation is avoided,
 and the procedure can be performed easily by nonspecialists. Success rates are high: it is
 common that 1% of the progeny seedlings are transgenic. The biology behind the method
-is interesting: Arabidopsis and some related Brassicaceae are apparently unique in
-allowing exogenously applied Agrobacterium to colonize the interior of developing ovaries, 
+is interesting: _Arabidopsis_ and some related Brassicaceae are apparently unique in
+allowing exogenously applied _Agrobacterium_ to colonize the interior of developing ovaries, 
 where female gametophyte cell lineages are transformed. The availability of the
 method has had a transformative effect on the overall practice of plant molecular biology, 
 as the generation and analysis of large numbers of transgenic plants is now routine
 in hundreds of laboratories. The method has been exploited in a genomics context to
-make stable gene knockout plant lines for most Arabidopsis genes.
+make stable gene knockout plant lines for most _Arabidopsis_ genes.
 
 
 ## Introduction
-The Arabidopsis “floral dip” method stands out from other plant transformation methods because it requires minimal labor and no plant tissue culture and can be performed successfully by nonspecialists. 
-Flowering plants are simply dipped in or sprayed with an appropriate strain of Agrobacterium
-tumefaciens, and then the seed collected from these “T0” plants is germinated
+The _Arabidopsis_ “floral dip” method stands out from other plant transformation methods because it requires minimal labor and no plant tissue culture and can be performed successfully by nonspecialists. 
+Flowering plants are simply dipped in or sprayed with an appropriate strain of _Agrobacterium tumefaciens_, and then the seed collected from these “T0” plants is germinated
 under selection to identify transgenic “T1” individuals. 
 The method has been
 used in hundreds of laboratories throughout the world, where it is common for
 approximately 1% of T1 seedlings to be transgenic. (Rates of 0.1–3% are typical.) 
-The floral dip method (1) is a variant of the in planta Arabidopsis transformation method 
+The floral dip method (1) is a variant of the in planta _Arabidopsis_ transformation method 
 pioneered by Bechtold et al. (2), which offered major
 improvements to the equally pioneering work of Feldmann and Marks (3).
 For further background reading, see ref. 4.
+
 Plant transformation has been possible for many years, but the floral dip
 method provides an instructive example of the qualitative shift in research
-progress that a simple, accessible transformation method can foster. Because
-transgenic plant lines can easily be generated for dozens of gene constructs,
-map-based gene cloning, structure/function studies of genes and proteins, sig
-nal transduction research, and studies of plant development, stress responses,
+progress that a simple, accessible transformation method can foster. 
+Because transgenic plant lines can easily be generated for dozens of gene constructs,
+map-based gene cloning, structure/function studies of genes and proteins, 
+signal transduction research, and studies of plant development, stress responses,
 and numerous other areas have all been significantly expedited. Investigators
 must wait 2–3 mo to obtain stably transformed plants while the seed matures
-on Agrobacterium-inoculated plants and selected T1
- seedlings are then grown,
+on Agrobacterium-inoculated plants and selected T1 seedlings are then grown,
 but this waiting time can be devoted to other research tasks. The most notable
 shift associated with the method may have been the arrival of gene knockout
 plant lines. High-throughput transformation capacity allows T-DNA to be used
 as an insertional mutagen (5). This was pushed a significant step further by
 sequencing the T-DNA insertion site for more than 340,000 transgenic
-Arabidopsis lines. Investigators can now obtain from stock centers a [gene knockout line for most Arabidopsis genes](http://signal.salk.edu/cgi-bin/tdnaexpress).
-In Arabidopsis floral dip transformation, essentially all T1
- transformants are
+_Arabidopsis_ lines. Investigators can now obtain from stock centers a [gene knockout line for most _Arabidopsis_ genes](http://signal.salk.edu/cgi-bin/tdnaexpress).
+
+In _Arabidopsis_ floral dip transformation, essentially all T1 transformants are
 the product of germline transformation events, meaning that the plants are
-uniformly transgenic in all cells. T1
- transformants are hemizygous at any given
+uniformly transgenic in all cells. T1 transformants are hemizygous at any given
 T-DNA insert locus because the T-DNA insertion events occur within the T0
 plant after divergence of the male and female gametophyte cell lineages
 (reviewed in ref. 4). The vast majority of transgenic plants arise from transfor
-mation of a female gametophyte (7–10). Therefore, every T1
- transgenic plant
-harvested off of the same T0
- individual carries a different T-DNA insertion.
+mation of a female gametophyte (7–10). Therefore, every T1 transgenic plant
+harvested off of the same T0 individual carries a different T-DNA insertion.
 Because the targeted plant cells remain in their normal context within the plant
 and are not subjected to plant tissue culture before or after transformation,
 somaclonal variation is rare and has not been an issue for most users (11,12).
@@ -95,36 +91,40 @@ insertion site (15). It is also intriguing that bacteria other than Agrobacteriu
 have recently been used for floral dip transformation (16).
 
 The floral dip transformation method has to date been successful only with
-Arabidopsis thaliana and some other Brassicaceae (17–21). Many concerted
+_Arabidopsis thaliana_ and some other Brassicaceae (17–21). Many concerted
 attempts have been made to use the method in other plant species, but these have failed. 
 A report of success with Medicago truncatula (22) has unfortunately not been reproducible. 
-Apparently, one reason that Arabidopsis is amenable to floral dip transformation is that the flower gynoecium is open and
-accessible to exogenously applied Agrobacterium during early stages of floral development (8). 
-A sufficient population of Agrobacterium can become established in the interior of the gynoecium as ovules (the target of transformation)
-are beginning to develop. Subsequent closure of the gynoecium prevents trans
-formation in flowers that are at later stages of development. 
+Apparently, one reason that _Arabidopsis_ is amenable to floral dip transformation is that the flower gynoecium is open and
+accessible to exogenously applied _Agrobacterium_ during early stages of floral development (8). 
+A sufficient population of _Agrobacterium_ can become established in the interior of the gynoecium as ovules (the target of transformation)
+are beginning to develop. Subsequent closure of the gynoecium prevents transformation in flowers that are at later stages of development. 
 Successful transformation also requires that the host not manifest a strong necrotic reaction to
 the presence of Agrobacterium, which can cause abortion in flowers that have
-been colonized by Agrobacterium. Apparently, Arabidopsis and some other
+been colonized by Agrobacterium. Apparently, _Arabidopsis_ and some other
 Brassicaceae satisfy the above constraints.
 
 ## Materials
 ### Plant Materials
-Any Arabidopsis thaliana may be used. 
-Arabidopsis thaliana Col (“Columbia”) is the accession most commonly used by Arabidopsis researchers and is the accession for which the first Arabidopsis genome DNA sequence was determined (see [Note 1](#notes)). 
+Any _Arabidopsis thaliana_ may be used. 
+_Arabidopsis thaliana_ Col (“Columbia”) is the accession most commonly used by _Arabidopsis_ researchers and is the accession for which the first _Arabidopsis_ genome DNA sequence was determined (see [Note 1](#notes)). 
 Ler (Landsberg erecta) and Ws (Wassilewskija) are also in widespread use. 
-Most Arabidopsis thaliana accessions or ecotypes can be transformed by the floral dip method, often at rates similar to (within 10-fold of) those stated for Col-0 (see [Note 2](#notes)).
+Most _Arabidopsis thaliana_ accessions or ecotypes can be transformed by the floral dip method, often at rates similar to (within 10-fold of) those stated for Col-0 (see [Note 2](#notes)).
 
-### Agrobacterium Strain and Constructs
-1. Many different Agrobacterium tumefaciens strain backgrounds have been used
+### _Agrobacterium_ Strain and Constructs
+**Strains**
+1. 
+: Many different _Agrobacterium tumefaciens_ strain backgrounds have been used
 successfully in the floral dip method. GV3101 (23), more properly called GV3101
 (pMP90), is the most commonly used strain, as it is particularly well suited for
-Arabidopsis transformation. Other strains of the C58 background carrying a dis
+_Arabidopsis_ transformation. Other strains of the C58 background carrying a dis
 armed C58 Ti plasmid can often be substituted with similar results. LBA4404 is
 also commonly used. LBA4404 generally works less well than GV3101, and
 this aspect of LBA4404 can be exploited to reduce the proportion of trans
 formants that carry more than one T-DNA insertion.
-2. A vast array of binary vectors has been used in floral dip transformation.
+
+**Binary Vectors**
+2. 
+: A vast array of binary vectors has been used in floral dip transformation.
 The [pCambia vectors](https://cambia.org/welcome-to-cambialabs/cambialabs-projects/cambialabs-projects-legacy-pcambia-vectors-pcambia-legacy-vectors-1/cambialabs-projects-legacy-pcambia-vectors-list-of-legacy-pcambia-vectors-3/) 
 are a particularly convenient and useful set of vectors for Agrobacterium-mediated plant transformation. 
 [Vectors that can be used with Gateway cloning](https://vectorvault.vib.be/) methods to make various transgene fusions are also available from a number of sources.
@@ -132,7 +132,7 @@ are a particularly convenient and useful set of vectors for Agrobacterium-mediat
 ### Stock Solutions
 **Kanamycin (50 mg/mL)**
 : Dissolve powder in dH2O, filter-sterilize, and store frozen in 1-mL aliquots. 
-: Other antibiotics or herbicides may also be used as appropriate, for selection of Agrobacterium strains and plasmids, in Agrobacterium or in plants (see [Notes 3–6](#notes)).
+: Other antibiotics or herbicides may also be used as appropriate, for selection of _Agrobacterium_ strains and plasmids, in _Agrobacterium_ or in plants (see [Notes 3–6](#notes)).
 
 ### Media
 **LB broth or LB agar (for growth of Agrobacterium)**
@@ -140,71 +140,100 @@ are a particularly convenient and useful set of vectors for Agrobacterium-mediat
 Add 15 g agar if making solid media. 
 Autoclave prior to use. Add antibiotics only after media has cooled to temperatures below 65°C.
 
-**MS-agar (for selection of Arabidopsis transformants)**
+**MS-agar (for selection of _Arabidopsis_ transformants)**
 : 0.5X Murashige and Skoog macro- and micronutrients (example: Sigma, cat. no. M5524; use 2.15 g/L), 0.8% plant tissue culture agar (8 g/L). 
 Autoclave, cool to 65°C, and then add 50 μg/mL kanamycin (or other appropriate selection agent; 
 see [Notes 4–6](#notes) regarding other plant selection media).
 
 ### Other Solutions, Reagents and Supplies
-1. 5% Sucrose: dissolve 50 g sucrose in 1 L of water. If made fresh in clean water, it is not necessary to autoclave or work under sterile conditions.
-2. Silwet L-77 surfactant (GE Silicones/OSi Specialties, Wilton, CT). L-77 can be purchased in convenient quantities from [Lehle Seeds](http://www.arabidopsis.com/).
-3. Peat mixture (for growing Arabidopsis): Sunshine Mix #1 (Sun-Gro Horticulture, Bellevue, WA) or Scott’s MetroMix 360 (Hummert International, Earth City, MO).
-4. Pots and plant flats (e.g., #F1020, no holes) can be purchased from Hummert International.
+**Sucrose**
+1. 
+: 5% Sucrose: dissolve 50 g sucrose in 1 L of water. 
+: - If made fresh in clean water, it is not necessary to autoclave or work under sterile conditions.
+
+**Surfactant**
+2. 
+: Silwet L-77 surfactant (GE Silicones/OSi Specialties, Wilton, CT). 
+: - L-77 can be purchased in convenient quantities from [Lehle Seeds](http://www.arabidopsis.com/).
+
+**Peat**
+3. 
+: Peat mixture (for growing Arabidopsis):
+: - Sunshine Mix #1 (Sun-Gro Horticulture, Bellevue, WA) or Scott’s MetroMix 360 (Hummert International, Earth City, MO).
+
+**Pots**
+4. 
+: Pots and plant flats (e.g., #F1020, no holes) can be purchased from Hummert International.
 
 ## Methods
 All plans for the generation of transgenic plants should be approved by proper institutional authorities. 
 Regulated transgenic materials should be collected and rendered biologically inactive (e.g., autoclaved) prior to disposal.
 
-### Growing Arabidopsis for Transformation
-To avoid unintended delays, it is necessary to plant Arabidopsis 4 to 8 wk in
-advance of the date on which you expect your Agrobacterium strains to be
+### Growing _Arabidopsis_ for Transformation
+To avoid unintended delays, it is necessary to plant _Arabidopsis_ 4 to 8 wk in
+advance of the date on which you expect your _Agrobacterium_ strains to be
 constructed and ready for plant inoculation.
-There are many acceptable ways of growing Arabidopsis for floral dip trans
-formation. The key is simply to grow healthy, vigorous plants that will pro
+There are many acceptable ways of growing _Arabidopsis_ for floral dip transformation. 
+The key is simply to grow healthy, vigorous plants that will produce plentiful seed. 
+This is an important component of successful, reproducible floral dip transformation. 
+If you have an _Arabidopsis_ growth protocol that works well, use it. 
+The following is one of many methods for _Arabidopsis_ growth:
 
-duce plentiful seed. This is an important component of successful, reproduc
-ible floral dip transformation. If you have an Arabidopsis growth protocol that
-works well, use it. The following is one of many methods for Arabidopsis
-growth:
-1. Grow Arabidopsis in a peat mixture such as Sunshine Mix #1 or Scott’s MetroMix
-360 (see [Note 7](#notes)). Moisten soil mix before adding it to pots. It should be moist
-enough to release water when squeezed, but with capacity to still take up more
-water.
-2. Plant one or two seeds per 5-cm pot, or 9 to 20 seeds per 9-cm pot. After plants
-are established you will be bottom-watering, so place the pots in a flat that has no
-holes (such as a 1020 flat with a ridged bottom). Pack each pot with premoist
-ened soil mix so that the mix is not loose enough to collapse with top watering
-but also not overly compressed. If you are planning to dip entire rosettes, grow
-plants through screen or mesh (see [Note 8](#notes)).
-3. Plant Arabidopsis seeds by placing them on top of the moist soil mix. Do not
-bury the seed in the soil. For planting single seeds, pick them up by touching
-them with the fine tip of a moistened artist’s 00 paintbrush. For planting a batch
-of a single genotype, suspend seeds (there are roughly 50 seeds per mg) in room
-temperature 0.1% agarose and dispense onto soil one at a time using a long
-tipped Pasteur pipet. To plant larger flats with less precision, add a fixed amount
-of seed to a fine dry carrier such as dry crushed peat, and then disperse the mix
-evenly over the moist soil mix.
-4. Cover the flats with a close-fitting clear plastic dome to maintain humidity. Many
-Arabidopsis accessions germinate more uniformly if held on wet soil at 4°C
+**Soil**
+1.
+: Grow _Arabidopsis_ in a peat mixture such as Sunshine Mix #1 or Scott’s MetroMix 360 (see [Note 7](#notes)). 
+: Moisten soil mix before adding it to pots. It should be moist enough to release water when squeezed, but with capacity to still take up more water.
+
+**Planting**
+2.
+: Plant one or two seeds per 5-cm pot, or 9 to 20 seeds per 9-cm pot.
+: After plants are established you will be bottom-watering, so place the pots in a flat that has no holes (such as a 1020 flat with a ridged bottom).
+: Pack each pot with premoistened soil mix so that the mix is not loose enough to collapse with top watering but also not overly compressed. 
+: If you are planning to dip entire rosettes, grow plants through screen or mesh (see [Note 8](#notes)).
+
+**Planting Cont.**
+3. 
+: Plant _Arabidopsis_ seeds by placing them on top of the moist soil mix. Do not bury the seed in the soil. 
+: For planting single seeds, pick them up by touching them with the fine tip of a moistened artist’s 00 paintbrush. 
+: For planting a batch of a single genotype, suspend seeds (there are roughly 50 seeds per mg) in room temperature 0.1% agarose and dispense onto soil one at a time using a long tipped Pasteur pipet. 
+: To plant larger flats with less precision, add a fixed amount of seed to a fine dry carrier such as dry crushed peat, and then disperse the mix evenly over the moist soil mix.
+
+**Germination**
+4.
+: Cover the flats with a close-fitting clear plastic dome to maintain humidity. Many
+_Arabidopsis_ accessions germinate more uniformly if held on wet soil at 4°C
 (dark is OK) for 2 to 5 d prior to being placed in the growth room. After flats are
 moved from 4°C to the growth room, leave the dome on at least until seedlings
 have emerged, cotyledons are green, and the first rosette leaf is clearly evident.
-5. Then, over a few days, slightly displace (mis-seat) the domes to let in room air
-and reduce relative humidity gradually. After a few days of acclimation, remove
-domes entirely.
-6. Grow plants at 22°C under long days (18+ h light/d) to encourage early bolting
-and flowering. Arabidopsis grows best at lower light levels than many plants
+
+**Post-Germination**
+5. 
+: Then, over a few days, slightly displace (mis-seat) the domes to let in room air and reduce relative humidity gradually. 
+: After a few days of acclimation, remove domes entirely.
+
+**Growing**
+6. 
+: Grow plants at 22°C under long days (18+ h light/d) to encourage early bolting
+and flowering. _Arabidopsis_ grows best at lower light levels than many plants
 (50–200
 E/m2/s; 100–150 is optimal). Relative humidity of 50–70% is best, but
 lower humidity can be tolerated. Plants are likely to bolt (send up flowering
 stalks) 4 to 5 wk after germination, but this varies depending on your growth
 conditions. To grow larger plants that will generate more seed, see [Note 9](#notes).
-7. Pots should be watered from their base (add water to the flat; see [Note 10](#notes)).
-8. Provide mild fertilization (e.g., quarter-strength MiracleGro) once every week or
-two. Many soil mixes contain a starter fertilizer that only lasts for the first week
-or two.
-9. Keep insects away. 
-Thrips especially, and aphids also, are serious pests on Arabidopsis that must be avoided whenever possible. 
+
+**Watering**
+7. 
+: Pots should be watered from their base (add water to the flat; see [Note 10](#notes)).
+
+**Fertilization**
+8. 
+: Provide mild fertilization (e.g., quarter-strength MiracleGro) once every week or two. 
+: Many soil mixes contain a starter fertilizer that only lasts for the first week or two.
+
+**Pests**
+9. 
+: Keep insects away. 
+: Thrips especially, and aphids also, are serious pests on _Arabidopsis_ that must be avoided whenever possible. 
 Marathon is one insecticide that is useful if needed—add granules to soil and top-water it in. 
 However, the best approach with thrips or aphids is to purge the room of all plants, clean up
 the room, dry heat it for a few days, and then start over with new plants. Fungus
@@ -214,64 +243,86 @@ the growth area and by taking care to let the soil mix dry a bit between waterin
 Spider mites tend to be more of a problem on older, neglected plants. To reduce
 insect problems, it is good to move older plants to a separate growth room for
 seed maturation and drying down.
-No one likes to repeat experiments that fail for preventable reasons. Healthy
-plants and a green thumb are essential components to successful work!
 
-### Preparation of Agrobacterium Culture
+> [!TIP]
+> No one likes to repeat experiments that fail for preventable reasons. 
+> Healthy plants and a green thumb are essential components to successful work!
+
+### Preparation of _Agrobacterium_ Culture
 Standard microbiological techniques can be used; see, for example, ref. 25.
-A great deal of flexibility exists in the methods used to prepare Agrobacterium
-cultures for floral dip transformation of Arabidopsis. Cultures can be grown in
-LB, YEP, or other growth media. They can be grown to various stages of satu
-ration and be resuspended at a variety of densities prior to plant inoculation
-(see [Note 11](#notes)). The following is one common and successful approach.
-1. Prepare an Agrobacterium tumefaciens strain that carries the gene or genes of
-interest on a binary vector (see [Note 12](#notes)).
-2. Use a single colony to inoculate and grow a small (1–5 mL) overnight culture in
+A great deal of flexibility exists in the methods used to prepare _Agrobacterium_ cultures for floral dip transformation of Arabidopsis. 
+Cultures can be grown in LB, YEP, or other growth media. 
+They can be grown to various stages of saturation and be resuspended at a variety of densities prior to plant inoculation (see [Note 11](#notes)). 
+The following is one common and successful approach.
+
+**Preparation**
+1. 
+: Prepare an _Agrobacterium tumefaciens_ strain that carries the gene or genes of interest on a binary vector (see [Note 12](#notes)).
+
+**Inoculation**
+2. 
+: Use a single colony to inoculate and grow a small (1–5 mL) overnight culture in
 LB broth with antibiotic to select for the binary plasmid. If the strain has already
 been single-colony purified and you are in a hurry, a larger clump of cells can be
 used as starter inoculum (see [Note 13](#notes)).
-3. The next day, dilute this starter culture approximately 1:100 into a larger volume
+
+**Dilution**
+3. 
+: The next day, dilute this starter culture approximately 1:100 into a larger volume
 of LB broth, with antibiotics added to select for the binary plasmid. For example,
 add 2.5 mL of starter to 250 mL in a 1-L flask and grow overnight at 28°C and
 200 rpm.
-4. The following day the culture should have grown at least to midlogarithmic phase
+
+**Growth**
+4. 
+: The following day the culture should have grown at least to midlogarithmic phase
 and more likely will be approaching or at stationary phase (either is OK—grow
 longer if more cells are needed).
-5. Transfer the liquid culture to a centrifuge bottle, and pellet cells by spinning for
-10–20 min at room temperature at approximately 5500g.
-6. Pour off supernatant into a flask or other waste container to which bleach can be
-added to kill stray Agrobacterium organisms.
-7. Resuspend the pelleted cells in an equal volume of freshly made 5% sucrose
-solution.
-8. Adjust by further dilution if necessary, to achieve OD600
- = 0.8. (This is approximate: densities between 0.2 and 2.0 can work.) You will need 100–200 mL of
-Agrobacterium in sucrose for every two or three small pots to be dipped, or
-400–500 mL for every two or three 3.5-inch (9-cm) pots. See [Note 11](#notes) regarding
-another possible shortcut.
 
-7. Before dipping or spraying plants, add Silwet L-77 to a concentration of 0.05%
-(500
-L L-77 per L of Agrobacterium) and mix well. If there are problems with
-L-77 toxicity, use 0.02% or as low as 0.005% L-77.
+**Transfer**
+5. 
+: Transfer the liquid culture to a centrifuge bottle, and pellet cells by spinning for
+10–20 min at room temperature at approximately 5500g.
+
+**Supernatant**
+6. 
+_The liquid_
+: Pour off supernatant into a flask or other waste container to which bleach can be
+added to kill stray _Agrobacterium_ organisms.
+
+**Resuspension**
+7. 
+: Resuspend the pelleted cells in an equal volume of freshly made 5% sucrose solution.
+
+**Dilution**
+8. 
+: Adjust by further dilution if necessary, to achieve OD600 = 0.8. (This is approximate: densities between 0.2 and 2.0 can work.) 
+: You will need 100–200 mL of _Agrobacterium_ in sucrose for every two or three small pots to be dipped, or 400–500 mL for every two or three 3.5-inch (9-cm) pots. 
+: See [Note 11](#notes) regarding another possible shortcut.
+
+**Preparation**
+9. 
+: Before dipping or spraying plants, add Silwet L-77 to a concentration of 0.05% (500 μL L-77 per L of Agrobacterium) and mix well. 
+: If there are problems with L-77 toxicity, use 0.02% or as low as 0.005% L-77.
 
 ### Plant Transformation
-Transformation occurs within very young flowers. Agrobacterium is applied to
+Transformation occurs within very young flowers. _Agrobacterium_ is applied to
 floral buds by dipping the plant tissue in Agrobacterium, or by spraying the
 Agrobacterium onto the plant. Inoculated plants are kept at high humidity for the
 many ensuing hours and then grown to seed normally. Use of a surfactant enhances
-reproducibility by ensuring penetration of Agrobacterium into the flower interior.
+reproducibility by ensuring penetration of _Agrobacterium_ into the flower interior.
 1. Use plants that are bolting. Plants should carry many young unopened flower
 buds and only a few open or fertilized flowers. See [Note 14](#notes) regarding plant
 growth stages and Note 15 for a discussion of plant numbers.
-2. Dip plants into Agrobacterium solution prepared according to the [Preparation of Agrobacterium Culture](#preparation-of-agrobacterium-culture). 
-The Agrobacterium can be placed in a large beaker, disposable plastic soup bowl, or any other convenient container.
+2. Dip plants into _Agrobacterium_ solution prepared according to the [Preparation of _Agrobacterium_ Culture](#preparation-of-agrobacterium-culture). 
+The _Agrobacterium_ can be placed in a large beaker, disposable plastic soup bowl, or any other convenient container.
 3. Swirl the plant tissues gently in the liquid for 1 or 2 s to remove bubbles and
 achieve full coverage, and then remove plant. 
 It is only necessary to dip the inflorescence and not the rosette leaves, 
 but you may wish to dip all above-ground
 plant tissues if some plants carry only very short inflorescences, or if the plants
 have been trimmed and shorter axillary inflorescences are being targeted. It is
-OK to reuse the Agrobacterium solution, but only for two or three different pots.
+OK to reuse the _Agrobacterium_ solution, but only for two or three different pots.
 See [Note 16](#notes) regarding spray-inoculation.
 4. After dipping or spraying, it is preferable to maintain the plants at high relative
 humidity for a number of hours. This can be accomplished by placing plants
@@ -285,7 +336,7 @@ their previous growing conditions.
 
 
 ### Plant Care, Seed Harvest, and Storage
-1. After plants have been inoculated with Agrobacterium and held at high humidity
+1. After plants have been inoculated with _Agrobacterium_ and held at high humidity
 for 1 d, simply return the plants to their normal growing conditions and continue
 watering until the siliques start to lose their green color and become yellow.
 When most of the siliques on the plant are yellowing, it is OK to stop watering.
@@ -323,13 +374,16 @@ Note 6 for hygromycin selection methods.
  150-mm Petri dishes containing approximately 65 mL of 50 mg/L
 kanamycin and 0.5X MS macro- and micronutrients (no sugar) in 0.8% plant
 tissue culture-tested agar.
-2. Surface-sterilize 2000–6000 Arabidopsis seeds (40–120 mg):
-a. Place seed in a 15-mL plastic centrifuge tube.
-b. Add isopropanol, mix briefly, and then decant within 15 to 60 s.
-c. Immediately add 50% bleach/50% water/0.05% Tween-20. Mix occasionally,
-and then, after 5 min, decant (see [Note 18](#notes)).
-d. Rinse seed three to four times with sterile water, and decant.
-See [Note 19](#notes) for an alternative, vapor-phase surface sterilization method.
+
+**Surface-Sterilization**
+2. 
+: Surface-sterilize 2000–6000 _Arabidopsis_ seeds (40–120 mg):
+: - a. Place seed in a 15-mL plastic centrifuge tube.
+: - b. Add isopropanol, mix briefly, and then decant within 15 to 60 s.
+: - c. Immediately add 50% bleach/50% water/0.05% Tween-20. Mix occasionally, and then, after 5 min, decant (see [Note 18](#notes)).
+: - d. Rinse seed three to four times with sterile water, and decant.
+: See [Note 19](#notes) for an alternative, vapor-phase surface sterilization method.
+
 3. To aid in seed dispersal across the selection plate, add sterile room temperature
 0.1% agarose, using approximately 1.0 mL agarose for every 500 to 800 seeds.
 4. Pour 3.5 to 4 mL resuspended seed onto each 150 
@@ -431,11 +485,11 @@ dent transgenic lines.
 
 ## Notes
 1. Col accessions with different numbers (e.g., “Col-4”) are progeny from the original Col-0 line, and are for the most part identical to each other. 
-Arabidopsis seed stocks and other resources can be obtained from the [Arabidopsis Biological Resource Center](https://abrc.osu.edu/) 
-or from the [European Arabidopsis Stock Center](https://arabidopsis.info/). 
-Numerous other Arabidopsis resources can be accessed online through [The Arabidopsis Information Resource](http://www.arabidopsis.org/index.jsp), which is a highly recommended site.
+_Arabidopsis_ seed stocks and other resources can be obtained from the [Arabidopsis Biological Resource Center](https://abrc.osu.edu/) 
+or from the [European _Arabidopsis_ Stock Center](https://arabidopsis.info/). 
+Numerous other _Arabidopsis_ resources can be accessed online through [The Arabidopsis Information Resource](http://www.arabidopsis.org/index.jsp), which is a highly recommended site.
 
-2. Most Arabidopsis ecotypes (wild-type accessions) have been transformable by this method. 
+2. Most _Arabidopsis_ ecotypes (wild-type accessions) have been transformable by this method. 
 Some accessions are more difficult to transform than others, 
 but as long as the transformation rate is above roughly 1 in 10,000 T1 seedlings, 
 the stated protocols can be carried out with minimal added burden. 
@@ -447,7 +501,7 @@ If a recessive mutation is responsible for poor transformation, transform a hete
 
 **Antibiotics**
 3. 
-: For selection of Agrobacterium tumefaciens carrying an appropriate antibiotic resistance gene, 
+: For selection of _Agrobacterium tumefaciens_ carrying an appropriate antibiotic resistance gene, 
 the following antibiotics can be used with only normal care:
 : - Kanamycin: 25–100 μg/mL.
   - Rifampicin: 50–100 μg/mL (Rifampicin stocks can be made at 20 mg/mL in methanol. They are light sensitive and should be stored in the dark.)
@@ -466,7 +520,7 @@ the following antibiotics can be used with only normal care:
     the smaller tetracycline-resistant colonies are often the ones to pick—they are
     more likely to contain the strain + plasmid that you probably seek, whereas
     the larger colonies are spontaneous mutants. 
-      - If your binary plasmid encodes tetracycline resistance but also contains a 35S-nptII construct (for kanamycin resistance in plants), the latter is often expressed effectively in Agrobacterium (but not in E. coli). 
+      - If your binary plasmid encodes tetracycline resistance but also contains a 35S-nptII construct (for kanamycin resistance in plants), the latter is often expressed effectively in _Agrobacterium_ (but not in E. coli). 
     So, with this type of plasmid, you may be able to select for tetracycline resistance in E. coli (10 μg/mL) and then kanamycin resistance (50 μg/mL) in Agrobacterium.
   - Chloramphenicol: it is generally a good idea to avoid use of chloramphenicol entirely with Agrobacterium.
   - Streptomycin: use with some care, at 100–200 μg/mL. Some strains give rise to spontaneous streptomycin-resistant mutants at relatively high frequency.
@@ -477,29 +531,29 @@ negative controls), or by Southern blots, or by successful rescue of the plasmid
 back into E. coli (see Chapter 5).
 
 4. For kanamycin selection and other plate-based selections, plant tissue culture
-vitamins are not needed for the brief period that Arabidopsis will grow on these
+vitamins are not needed for the brief period that _Arabidopsis_ will grow on these
 plates. However, if present, the vitamins can be autoclaved (e.g., Sigma, cat.
 no. M6899).
 
 **Basta Selection**
 5. 
-: With Arabidopsis floral dip, a common alternative to kanamycin
+: With _Arabidopsis_ floral dip, a common alternative to kanamycin
 selection is Basta selection. Basta is a commonly used trade name for phos
 phinothricin, which is also called glufosinate. One advantage of Basta selections
 is that they can be carried out in a greenhouse using plants grown in soil.
-To identify Arabidopsis plants expressing a Basta resistance gene, Liberty her
+To identify _Arabidopsis_ plants expressing a Basta resistance gene, Liberty her
 bicide (AgrEvo USA Company, active ingredient glufosinate, 200 mg/L) can be
-diluted 1:1000 (1 mL/L) and then sprayed on germinated Arabidopsis seedlings
+diluted 1:1000 (1 mL/L) and then sprayed on germinated _Arabidopsis_ seedlings
 once every 3 d for approximately 2 wk after seedlings germinate and emerge.
 Basta selections can also be done on 0.5X MS/0.8% agar plates.
 
 **Hygromycin Selection**
 6. 
 : Although kanamycin or Basta is preferable for Arabidopsis, hygromycin selection is another option. 
-: However, past hygromycin selection protocols for Arabidopsis have been variable and problematic for many researchers. 
+: However, past hygromycin selection protocols for _Arabidopsis_ have been variable and problematic for many researchers. 
 : The following greatly improved protocol was supplied by Dr. Zhiyong Wang (Carnegie Institute of Washington, Stanford, CA):
 : 1. Pour 0.5X MS/0.8% agar plates containing 25 mg/L hygromycin.
-  1. Sow surface-sterilized Arabidopsis seeds (up to 4000 seeds per 150-mm plate).
+  1. Sow surface-sterilized _Arabidopsis_ seeds (up to 4000 seeds per 150-mm plate).
   1. Stratify in cold for 2 to 3 d.
   1. Put plates at room temperature in light for 4–12 h to promote germination.
   1. Move plates into the dark at room temperature (wrap in foil, and put in a cupboard). Grow in the dark for 5 d after the brief light treatment.
@@ -537,26 +591,24 @@ with a 15-min light interval once every 4 h so that the plants initiate bolting.
 : Soil should become thoroughly wetted, but excess water should be gone from the tray within a day, 
 and soil should start to dry slightly prior to the next watering. Excessive watering will encourage fungus gnats.
 
-11. U.S. patent no. 6,353,155 B1 (Klöti, A. S. and Mulpuri, R., 2002. “Method for
-transforming plants”) describes floral dip transformation using liquid LB cul
-tures of Agrobacterium that are diluted approximately three- or fourfold in
-5% sucrose/0.05% L-77, with no centrifugation to remove the LB. This is par
-ticularly useful if many Agrobacterium strains will be used.
+**No Centrifugion**
+11. 
+: U.S. patent no. 6,353,155 B1 (Klöti, A. S. and Mulpuri, R., 2002. “Method for transforming plants”) describes floral dip transformation 
+using liquid LB cultures of _Agrobacterium_ that are diluted approximately three- or fourfold in 5% sucrose/0.05% L-77, with no centrifugation to remove the LB. 
+: This is particularly useful if many _Agrobacterium_ strains will be used.
 
-12. Agrobacterium is typically grown at 28 to 30°C (growth at temperature closer to
-37°C can cause Ti plasmid loss or lethality). Be sure to work with a single colony
-purified isolate. Strains may be stored temporarily at 4°C for 1 to 3 wk as a Petri
-dish culture (wrapped to maintain humidity). If you will be saving and reusing a
-strain, make a frozen permanent stock that is stored in 14% glycerol or 7% dim
-ethyl sulfoxide at –70°C. (Example: add 0.33 mL sterile 40% glycerol to 0.67 mL
-of a recently saturated overnight culture grown in liquid LB, mix well, and place
-in freezer.) Do not serially propagate a strain from plate to plate over many pas
-sages. Work with Petri dish cultures that are started fresh every few weeks from
-your frozen permanent stock.
+**Agrobacterium**
+12. 
+: _Agrobacterium_ is typically grown at 28 to 30°C (growth at temperature closer to 37°C can cause Ti plasmid loss or lethality). 
+: Be sure to work with a single colony purified isolate. Strains may be stored temporarily at 4°C for 1 to 3 wk as a Petri dish culture (wrapped to maintain humidity). 
+: If you will be saving and reusing a strain, make a frozen permanent stock that is stored in 14% glycerol or 7% dimethyl sulfoxide at –70°C. 
+: - (Example: add 0.33 mL sterile 40% glycerol to 0.67 mL of a recently saturated overnight culture grown in liquid LB, mix well, and place in freezer.) 
+: Do not serially propagate a strain from plate to plate over many passages. 
+: - Work with Petri dish cultures that are started fresh every few weeks from your frozen permanent stock.
 
-13. Agrobacterium grows more slowly than E. coli, usually taking more than over
+13. _Agrobacterium_ grows more slowly than E. coli, usually taking more than over
 night to form single colonies of significant size on a plate. Use of multiple
-antibiotics may slow the growth of Agrobacterium further, even though the Agro
+antibiotics may slow the growth of _Agrobacterium_ further, even though the Agro
 bacterium is resistant to those antibiotics. If you want liquid cultures to be ready
 the next day, use a bit more starter inoculum than you might with E. coli and
 make sure that the cultures are well aerated. It is also possible to skip the over
@@ -567,7 +619,7 @@ from a Petri dish can be resuspended in liquid to provide sufficient inoculum.
 
 14. Keep in mind that the targets for inoculation are immature flower buds that will
 open (reach anthesis) 4 to 10 d after the date of inoculation. These buds should
-directly contact the Agrobacterium solution. Although there is an “optimal” date
+directly contact the _Agrobacterium_ solution. Although there is an “optimal” date
 for inoculation, you will probably have a period of 10+ d across which inocula
 tion can successfully produce transformants. Inoculate the plants only once, or if
 percent efficiency is important, no more than twice, with a 7-d interval between
@@ -580,36 +632,34 @@ fertilized and healthy.
 15. How many plants do you inoculate to get 10 transformants? If you assume a
 transformation rate of only 0.1%, then you will need 10,000 seeds to get
 10 transformants. You can expect to harvest a few thousand seeds off of every
-Arabidopsis plant if the plants are well spaced and healthy. Plants grown at high
+_Arabidopsis_ plant if the plants are well spaced and healthy. Plants grown at high
 density and plants that flower rapidly (for example, owing to growth under 24 h/d
 lighting) may produce only 500–1000 seeds. In our laboratory, a single pot of
-nine Arabidopsis plants is often dipped for each binary plasmid construct, with
+nine _Arabidopsis_ plants is often dipped for each binary plasmid construct, with
 all the seed from that pot harvested together into a single tube. Beginners may
 want to dip three pots for each construct.
 
 16. For high-throughput transformation projects in which many plants will be inocu
-lated with only one or a few Agrobacterium strains, spraying may be preferable
+lated with only one or a few _Agrobacterium_ strains, spraying may be preferable
 to dipping. Prepare bacteria + surfactant as described for dip inoculation, but
 place in a small pressure sprayer or atomizer and spray this directly onto inflores
 cences, targeting clusters of young unopened flower buds. An advantage of spray
 ing is that fewer bacteria need to be grown; however, the sprayer can be less
 convenient than simple dipping. Note that cross-contamination is possible if you
-are spraying adjacent plants with more than one Agrobacterium strain. Note also
+are spraying adjacent plants with more than one _Agrobacterium_ strain. Note also
 that Silwet L-77 can injure corneal tissues—this is especially an issue if you wear
 contact lenses.
 
-17. Cross-fertilization (unintended outcrossing) of adjacent Arabidopsis plants is
+17. Cross-fertilization (unintended outcrossing) of adjacent _Arabidopsis_ plants is
 very rare (1:10,000 or less). However, cross-contamination of seed lots is likely
-if plants that were inoculated with different Agrobacterium strains become
+if plants that were inoculated with different _Agrobacterium_ strains become
 tangled during subsequent growth, or if seed harvest is not carried out in a tidy
 fashion with care and constant attention to avoid stray seeds. Contamination is
 quite easy to accomplish; discovering and correcting a contamination event can
 be very costly.
 
-18. During seed surface-sterilization, it is convenient to remove liquids using a dis
-posable yellow pipet tip attached to a continuous suction device (such as a Pas
-teur pipet-rubber tubing-liquid trap-house vacuum device). Use a new tip for each
-tube, and use additional care to avoid accidental transfer of seed between tubes.
+18. During seed surface-sterilization, it is convenient to remove liquids using a disposable yellow pipet tip attached to a continuous suction device (such as a Pasteur pipet-rubber tubing-liquid trap-house vacuum device). 
+Use a new tip for each tube, and use additional care to avoid accidental transfer of seed between tubes.
 A brief centrifugation in a clinical centrifuge may help to minimize seed loss
 during decanting if necessary. Sterilize only the seed that you will plate. It is
 advisable to include, as a positive control for selection, sterilized seed from a
@@ -617,7 +667,7 @@ known transformed variety. (Place a few positive control seeds onto a marked
 location on a few of the selection plates.) Sterile seed should not be kept in the
 0.1% agarose solution for more than 24 h.
 
-19. Vapor-phase surface sterilization of Arabidopsis seed: the following protocol
+19. Vapor-phase surface sterilization of _Arabidopsis_ seed: the following protocol
 contains a convenient method for surface sterilization of plant seeds. In particular, 
 the method does not require all the soaking and rinsing of liquid-phase bleach
 sterilization methods. Although this protocol substantially reduces hands-on

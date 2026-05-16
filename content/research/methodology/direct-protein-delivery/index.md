@@ -1,6 +1,6 @@
 +++
 title = "Direct Protein Delivery"
-description = "Simplified from the Direct protein delivery into intact Arabidopsis cells for genome engineering by Yuichi Furuhata, Mitsuhiro Kimura, Ayako Sakai, Tomi Murakami, Emiko Egi, Tetsushi Sakuma, Takashi Yamamoto, Takeshi Yoshizumi & Yoshio Kato."
+description = "Simplified from the Direct protein delivery into intact _Arabidopsis_ cells for genome engineering by Yuichi Furuhata, Mitsuhiro Kimura, Ayako Sakai, Tomi Murakami, Emiko Egi, Tetsushi Sakuma, Takashi Yamamoto, Takeshi Yoshizumi & Yoshio Kato."
 sort_by = "title"
 weight = 970
 
@@ -21,17 +21,17 @@ see_also = [
 
 
 
-# Direct protein delivery into intact Arabidopsis cells for genome engineering
+# Direct protein delivery into intact _Arabidopsis_ cells for genome engineering
 # - Yuichi Furuhata, Mitsuhiro Kimura, Ayako Sakai1, Tomi Murakami, Emiko Egi1, Tetsushi Sakuma, Takashi Yamamoto, Takeshi Yoshizumi & Yoshio Kato
 Intracellular delivery of biomolecules is a prerequisite for genetic techniques such as recombinant 
 engineering and genome editing. Realizing the full potential of this technology requires the 
 development of safe and effective methods for delivering protein tools into cells. In this study, we 
 demonstrated the spontaneous internalization of exogenous proteins into intact cells and root tissue 
-of whole plants of Arabidopsis thaliana. We termed this internalization phenomenon as protein 
+of whole plants of _Arabidopsis_ thaliana. We termed this internalization phenomenon as protein 
 Delivery Independent of Vehicles or Equipment (DIVE), which efficiently delivered genome engineering 
 proteins including Cre recombinase and zinc-finger nucleases (ZFN) into plant cells. Using protein DIVE, 
-we achieved less toxic protein delivery than electroporation with up to 94% efficiency in Arabidopsis 
-cell culture and 19% genome modification in Arabidopsis plants that was maintained in regenerated 
+we achieved less toxic protein delivery than electroporation with up to 94% efficiency in _Arabidopsis_ 
+cell culture and 19% genome modification in _Arabidopsis_ plants that was maintained in regenerated 
 tissue. This work illustrates the potential of protein DIVE for a wide range of applications, including 
 genome engineering in plants.
 Intracellular delivery of biomolecules is an indispensable process for the application of genetic tools such as 
@@ -40,7 +40,7 @@ biomolecules in plants include Agrobacterium-mediated gene transfer (AMGT), part
 protoplast fusion, and electroporation. Each of these methods have advantages over the others but they also have 
 some limitations.
 AMGT has been widely used to introduce foreign DNA into plant cells1 and is popular for genetic 
-transformation of Arabidopsis thaliana as transgenic seeds can be readily obtained using the floral dip technique2. 
+transformation of _Arabidopsis thaliana_ as transgenic seeds can be readily obtained using the floral dip technique2. 
 However, transgenes derived from the AMGT vector are randomly integrated into the host genome3,4; this 
 might result in the disruption of host gene expression. Such limitations of AMGT call for alternative physical 
 or chemical methods to expand the scope of plant engineering. On the other hand, methods such as protoplast 
@@ -64,7 +64,7 @@ involved the introduction of Cre protein into A. thaliana cells using electropor
 removal of a specific gene fragment in the plant genome14,15. Using a suitable buffer, we succeeded in delivering 
 
 
-Cre proteins into Arabidopsis cells with low cytotoxicity and a high efficiency of over 80% of cells electroporated 
+Cre proteins into _Arabidopsis_ cells with low cytotoxicity and a high efficiency of over 80% of cells electroporated 
 in the presence of Cre protein14,15.
 Surprisingly, after our previous study, we found that Cre proteins are spontaneously internalized into the 
 cells and modified the plant genome without electroporation, albeit with low efficiency (Supplementary Fig. 1). 
@@ -72,7 +72,7 @@ This is an indication that DNA-modifying proteins are capable of penetrating cel
 nuclear membranes to gain access to genomic DNA. Based on the above observations, we hypothesized that 
 by optimizing experimental conditions, it could be an efficient method for protein delivery into intact cells in 
 culture as well as whole plants. Here, we demonstrated a simple and efficient protein delivery method using Cre 
-recombinase and ZFN using Arabidopsis as the host. By optimizing the various conditions including buffer types 
+recombinase and ZFN using _Arabidopsis_ as the host. By optimizing the various conditions including buffer types 
 and incubation time, we achieved a delivery efficiency greater than electroporation.
 
 # Results
@@ -161,7 +161,7 @@ protein transduction33,34. However, Tat and R9 peptide tags did not enhance the 
 (Supplementary Fig. 11). The fusion of virulence proteins such as VirE2 or VirF, which improved the delivery 
 efficiency of Cre protein during AMGT35, did not show a notable increase in the delivery efficiency of the Cre 
 protein (Supplementary Fig. 12). This is consistent with the report that the protein translocation effect of VirE2 
-and VirF is dependent on VirB/D4 T4SS generated during Agrobacterium infection35. These results indicate 
+and VirF is dependent on VirB/D4 T4SS generated during _Agrobacterium_ infection35. These results indicate 
 that the peptide tagging including membrane-permeable peptides except NLS has minimum impact on protein 
 DIVE.
 
@@ -189,8 +189,8 @@ sequence. ZFN proteins were successfully delivered into the reporter cells (Supp
 indicate that ZFN can also be internalized into plant cells and exhibit enzymatic functions in the nucleus and 
 that protein DIVE can be applied to proteins other than Cre.
 
-## Protein DIVE into Arabidopsis plants
-To validate the effectiveness of protein DIVE in plant tissue, we generated transgenic Arabidopsis plants, namely, 
+## Protein DIVE into _Arabidopsis_ plants
+To validate the effectiveness of protein DIVE in plant tissue, we generated transgenic _Arabidopsis_ plants, namely, 
 A. thaliana Col-0 xGxGUS, carrying the same reporter gene cassette as T87-xGxGUS cell line. We observed 
 strong GUS staining, especially in the root tissue of A. thaliana seedlings when treated with 5 µM Cre protein 
 (Fig. 5).
@@ -368,7 +368,7 @@ followed by ZFN was used. The same protocol was followed for the preparation of 
 proteins, except the 2.5 h incubation at 37 °C after addition of IPTG; instead, the cells were incubated overnight 
 at 18 °C.
 
-## A. thaliana cell line and Agrobacterium tumefaciens (Rhizobium radiobacter) culture
+## A. thaliana cell line and _Agrobacterium tumefaciens_ (Rhizobium radiobacter) culture
 The cell line used for AMGT as well as electroporation and DIVE experiments was A. thaliana T87. The cell line 
 was obtained from RIKEN Bio Resource Center (Ibaraki, Japan). T87-xGxGUS cells, the T87 cell line carrying 
 Cre-responsive reporter cassette, was generated as described previously14. T87 and T87-xGxGUS cells were 
@@ -408,9 +408,9 @@ pCambiaNbar-GeLgBiT and pCambiaNbar-NLS-GeLgBiT, respectively, were used. Instea
 those for T87-SSA500-ZFN(C5R) cells. The cell lines generated were maintained under the same conditions as 
 described for T87 cells, using liquid NT1 medium containing 10 µg/mL hygromycin or bialaphos.
 
-## Agrobacterium-mediated transformation of Arabidopsis plants
+## Agrobacterium-mediated transformation of _Arabidopsis_ plants
 A. thaliana (Col-0 strain; Inplanta Innovations, Kanagawa, Japan) plants were cultivated at 23 °C under constant white light. 
-A flower bud was dipped in a culture of Agrobacterium cells harboring the binary reporter plasmid cell suspension containing 5% w/v sucrose, and 0.025% Silwet L-77 (Biomedical Science, Tokyo, Japan) for 3 min. 
+A flower bud was dipped in a culture of _Agrobacterium_ cells harboring the binary reporter plasmid cell suspension containing 5% w/v sucrose, and 0.025% Silwet L-77 (Biomedical Science, Tokyo, Japan) for 3 min. 
 After inoculation, the plant was covered using an anti-static film of oriented polypropylene and incubated overnight under light conditions and high humidity. 
 Subsequently, the plant was cultivated at 23 °C under constant white light until seed formation. 
 Seeds were collected and sown on a GeM agar plate 

@@ -52,7 +52,7 @@ _Within the glass_
 
 **Imbibition**
 : A special type of diffusion where a liquid is absorbed by solids-colloids causing an increase in volume.
-: > Imbibition can also control circadian rhythms in Arabidopsis thaliana and (probably) other plants.
+: > Imbibition can also control circadian rhythms in _Arabidopsis thaliana_ and (probably) other plants.
 : > Dry seeds germinate in part by imbibition. 
 
 **Solids-Colloids**

@@ -15,7 +15,7 @@ see_also = []
 
 # Editorials
 
-**Cas12a-mediated gene targeting by sequential transformation strategy in Arabidopsis thaliana**
+**Cas12a-mediated gene targeting by sequential transformation strategy in _Arabidopsis_ thaliana**
 Li et al. 2024
 _[Editorial](/doi/10.1186/s12870-024-05375-z.pdf)_
 : ?
@@ -23,7 +23,7 @@ _[Editorial](/doi/10.1186/s12870-024-05375-z.pdf)_
 
 # Research Articles
 
-**Enhanced production of hydroxy fatty acids in Arabidopsis seed through modification of multiple gene expression**
+**Enhanced production of hydroxy fatty acids in _Arabidopsis_ seed through modification of multiple gene expression**
 Park et al. 2022
 _[Research Article](/doi/10.1186/s13068-022-02167-1.pdf)_
 : ?
@@ -36,11 +36,11 @@ _[Research Article](/doi/10.1007/s11032-023-01430-z.pdf)_
 
 # Resource Articles
 
-**Reshaping of the Arabidopsis thaliana Proteome Landscape and Co-regulation of Proteins in Development and Immunity**
+**Reshaping of the _Arabidopsis thaliana_ Proteome Landscape and Co-regulation of Proteins in Development and Immunity**
 Bassal et al. 2020
 _[Resource Article](/doi/10.1016/j.molp.2020.09.024.pdf)_
 : Among others, the data suggest a potential function of RD26 and other NAC transcription factors in seed development related to desiccation tolerance as well as a possible function of cysteine-rich receptor-like kinases (CRKs) as ROS sensors in senescence.
-: Taken together, the datasets generated in this study present extensive coverage of the Arabidopsis proteome in various biological scenarios
+: Taken together, the datasets generated in this study present extensive coverage of the _Arabidopsis_ proteome in various biological scenarios
 
 
 # Review Articles

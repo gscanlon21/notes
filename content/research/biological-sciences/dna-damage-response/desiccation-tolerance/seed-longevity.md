@@ -46,14 +46,14 @@ Waterworth et al. 2025
 _[Research Article](/doi/10.1111/pce.70142.pdf)_
 : "Several crop species, including high value vegetable seeds, are routinely improved by priming, a pre‐germinative seed treatment in which controlled hydration increases the speed of germination and enhances field emergence (Heydecker et al. 1973)."
 : "Seeds of [Wild Type] and DNA repair mutant lines were primed for 48h with −0.75MPa PEG6000 before drying."
-: "The transcriptional DNA damage response is activated early in Arabidopsis seed germination, around the re-initiation of cellular metabolism upon rehydration and peaks at 6h (Waterworth et al. 2010)."
+: "The transcriptional DNA damage response is activated early in _Arabidopsis_ seed germination, around the re-initiation of cellular metabolism upon rehydration and peaks at 6h (Waterworth et al. 2010)."
 : "Priming was able to partially reverse this ageing‐related profile, such that the subsequent imbibition of primed seeds resulted in gene expression profiles similar to those of high quality, unaged seed lots."
 : "Priming significantly activated the transcriptional response to chromosomal breaks and, in lig6lig4 mutant seed, greatly exacerbated programmed cell death."
 : "These results revealed that DSB repair is an important factor in promoting longevity of primed seed, further supported by the improved longevity of primed seeds with enhanced expression of LIG6."
 : "Collectively our findings establish the genetic requirement for LIG6 in longevity of primed seed and indicate that the reduced longevity of primed seeds is mitigated by DSB repair activities."
 
 
-**Seed DNA damage responses promote germination and growth in Arabidopsis thaliana**
+**Seed DNA damage responses promote germination and growth in _Arabidopsis_ thaliana**
 Waterworth et al. 2022
 _[Research Article](/doi/10.1073/pnas.2202172119.pdf)_
 : "Collectively, these results indicate that high levels of DNA damage incurred in seeds are countered by low cell cycle activity, cell cycle checkpoints, and DNA repair, promoting successful seedling establishment."
@@ -87,7 +87,7 @@ _[Research Article](/doi/10.1073/pnas.1608829113.pdf)_
 : "In response to genotoxic stresses, these checkpoint kinases activate DNA repair factors, delay or halt cell cycle progression, and promote endocycles or programmed cell death (1–4)."
 
 
-**The nuclear protein Poly(ADP-ribose) polymerase 3 (AtPARP3) is required for seed storability in Arabidopsis thaliana**
+**The nuclear protein Poly(ADP-ribose) polymerase 3 (AtPARP3) is required for seed storability in _Arabidopsis_ thaliana**
 Rissel et al. 2014
 _[Research Article](/doi/10.1111/plb.12167.pdf)_ 
 : ?
@@ -102,7 +102,7 @@ _[Research Article](/doi/10.1111/tpj.13020.pdf)_
 **Overexpression of AtOGG1, a DNA glycosylase/AP lyase, enhances seed longevity and abiotic stress tolerance in Arabidopsis**
 Chen et al. 2012
 _[Research Article](/doi/10.1093/jxb/ers093.pdf)_ 
-: "Overexpression of AtOGG1 in Arabidopsis enhanced seed resistance to controlled deterioration treatment."
+: "Overexpression of AtOGG1 in _Arabidopsis_ enhanced seed resistance to controlled deterioration treatment."
 : "In addition, the content of 8-hydroxy-2# deoxyguanosine (8-oxo-dG) in transgenic seeds was reduced compared to wild-type seeds, indicating a DNA damage repair function of AtOGG1 in vivo."
 : > - [x] 
   > - [x] 
@@ -119,7 +119,7 @@ _[Research Article](/doi/10.1111/j.1365-313X.2010.04285.x.pdf)_
 : "This DSB-induced DNA damage response resulted in the significant upregulation of transcripts within 3 h of imbibition (Figure 8a)", with peaks around 6 hours.
 
 
-**Morphological and Physiological Framework Underlying Plant Longevity in Arabidopsis thaliana**
+**Morphological and Physiological Framework Underlying Plant Longevity in _Arabidopsis_ thaliana**
 Wang et al. 2020
 _[Research Article](/doi/10.3389/fpls.2020.600726.pdf)_ 
 : ?
@@ -168,7 +168,7 @@ _[Review Article](/doi/10.3390/plants14050805.pdf)_
 # Research
 
 **Questions**
-: Has Arabidopsis plant seeds
+: Has _Arabidopsis_ plant seeds
 : - How old is the mustard seed?
 : - Ways to extend the shelf life w/ nutrients w/o inducing germination?
 : - Scarring/light on germination rates?

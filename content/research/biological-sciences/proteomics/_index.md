@@ -15,7 +15,7 @@ see_also = []
 
 # Research Articles
 
-**Mass-spectrometry-based draft of the Arabidopsis proteome**
+**Mass-spectrometry-based draft of the _Arabidopsis_ proteome**
 Mergner et al. 2020
 _[Research Article](/doi/10.1038/s41586-020-2094-2.pdf)_ 
 _[Source Data](https://www.nature.com/articles/s41586-020-2094-2#Sec44)_

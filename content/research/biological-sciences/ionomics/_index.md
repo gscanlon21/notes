@@ -20,7 +20,7 @@ see_also = []
 
 # Resource Articles
 
-**1,135 ionomes reveal the global pattern of leaf and seed mineral nutrient and trace element diversity in Arabidopsis thaliana**
+**1,135 ionomes reveal the global pattern of leaf and seed mineral nutrient and trace element diversity in _Arabidopsis_ thaliana**
 Campos et al. 2021
 _[Resource Article](/doi/10.1111/tpj.15177.pdf)_ 
 : "We present an experimental design pipeline for high-throughput ionomic screenings and analyses with improved normalisation procedures to account for errors and variability in conditions often encountered in large-scale, high-throughput data collection."

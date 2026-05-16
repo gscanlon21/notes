@@ -44,7 +44,7 @@ Complementary DNA
 Open Reading Frame
 : Spans of DNA sequence between the start and stop codons.
 : The "reading", however, refers to the RNA produced by transcription of the DNA and its subsequent interaction with the ribosome in translation
-: Since DNA is interpreted in groups of three nucleotides (codons), a DNA strand has three distinct reading frames.[15] The double helix of a DNA molecule has two anti-parallel strands; with the two strands having three reading frames each, there are six possible frame translations.
+: Since DNA is interpreted in groups of three nucleotides (codons), a DNA strand has three distinct reading frames. The double helix of a DNA molecule has two anti-parallel strands; with the two strands having three reading frames each, there are six possible frame translations.
 
 {% table(header="Open Reading Frames", footer="Open reading frame is bold in reading frame 2") %}
 | DNA               | GTACATGAAGAGGTTTACTGAAGGCCGCGTAGAAGCTTAGGTAC                       |

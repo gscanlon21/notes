@@ -28,15 +28,15 @@ see_also = []
 **Genome-wide identification of EMBRYO-DEFECTIVE (EMB) genes required for growth and development in Arabidopsis**
 Meinke et al. 2019
 _[Review Article](/doi/10.1111/nph.16071.pdf)_ 
-: "Here, I highlight my 40-year effort to isolate and characterize the most common class of mutants encountered in Arabidopsis (Arabidopsis thaliana): those defective in embryo development."
+: "Here, I highlight my 40-year effort to isolate and characterize the most common class of mutants encountered in _Arabidopsis_ (Arabidopsis thaliana): those defective in embryo development."
 
 
 # Methodology
 
-**Computational and experimental analysis identifies Arabidopsis genes specifically expressed during early seed development**
+**Computational and experimental analysis identifies _Arabidopsis_ genes specifically expressed during early seed development**
 Becerra et al. 2006
 _[Methodology](/doi/10.1186/1471-2164-7-38.pdf)_ 
-: "The goal of this study was to explore the feasibility of incorporating the available online bioinformatics databases to discover Arabidopsis genes specifically expressed in certain organs, in our case immature seeds."
+: "The goal of this study was to explore the feasibility of incorporating the available online bioinformatics databases to discover _Arabidopsis_ genes specifically expressed in certain organs, in our case immature seeds."
 
 **Gene expression atlas of embryo development in Arabidopsis**
 Gao et al. 2019
@@ -47,7 +47,7 @@ _[Methodology](/doi/10.1007/s00497-019-00364-x.pdf)_
 
 # Data Articles
 
-**Datasets of seed mucilage traits for Arabidopsis thaliana natural accessions with atypical outer mucilage**
+**Datasets of seed mucilage traits for _Arabidopsis thaliana_ natural accessions with atypical outer mucilage**
 Cambert et al. 2021
 _[Data Article](/doi/10.1038/s41597-021-00857-3.pdf)_ 
 : "This data will be a rich resource for genetic, biochemical, structural and functional analyses investigating mucilage constituent polysaccharides or their role as adaptive traits."
