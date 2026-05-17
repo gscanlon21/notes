@@ -123,7 +123,7 @@ _[Highlight](/doi/10.1007/s40572-025-00472-z.pdf)_
 _[Highlight](/doi/10.1101/2025.09.25.678523.pdf)_ 
 : ?
 
-**Metabolic enzymes aldo-2 and pdhb-1 as potential epigenetic regulators during C. elegans embryogenesis**
+**Metabolic enzymes aldo-2 and pdhb-1 as potential epigenetic regulators during _C. elegans_ embryogenesis**
 ??? et al. ???
 _[Highlight](/doi/10.17912/micropub.biology.001222.pdf)_ 
 : ?

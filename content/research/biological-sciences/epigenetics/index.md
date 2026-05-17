@@ -16,6 +16,15 @@ see_also = [
 {{ image(title="Epigenetic Reprogramming", file="一Reprogramming.jpg") }}
 
 
+# Terminology
+
+**Transgenerational Epigenetic Inheritance**
+(TEI)
+: The transmission of epigenetic gene regulatory information across generations. 
+
+# Articles
+
+
 **Epigenetic Mechanisms of Genomic Imprinting: Common Themes in the Regulation of Imprinted Regions in Mammals, Plants, and Insects**
 Macdonald 2012
 _[Review Article](/doi/10.1155/2012/585024.pdf)_ 
@@ -27,25 +36,31 @@ _[Review Article](/doi/10.1155/2012/585024.pdf)_
 Ding et al. 2023
 _[Article](/doi/10.1002/pmic.202300185.pdf)_ 
 : "Thus, we studied the lactylation of global proteins in Caenorhabditis elegans to obtain aninvivolactylome."
-: "This study establishes the first lactylome database in C. elegans and provides a basis for studying the role of lactylation."
+: "This study establishes the first lactylome database in _C. elegans_ and provides a basis for studying the role of lactylation."
 
 
 **Epigenetic dynamics during germline development: insights from Drosophila and C. elegans**
 Gleason et al. 2024
 _[Author Manuscript](/doi/10.1016/j.gde.2022.102017.pdf)_ 
-: ?
+: "Seminal work in both Drosophila and _C. elegans_ has elucidated the role of various regulators of epigenetic inheritance including (1) histones (2) histone modifying enzymes, and (3) small RNA (sRNA)-dependent epigenetic regulation in the maintenance of germline identity."
+: "This review highlights recent discoveries of epigenetic regulation during the step-wise changes of transcription and chromatin structure that takes place during germline stem cell self-renewal, maintenance of germline identity, and intergenerational epigenetic inheritance."
 
 
 **Intergenerational Transmission of Gene Regulatory Information in Caenorhabditis elegans**
 Minkina et al. 2019
 _[Author Manuscript](/doi/10.1016/j.tig.2017.09.012.pdf)_ 
-: ?
+: "The nematode Caenorhabditis elegans has been particularly instrumental in the effort to understand TEI, as multiple environmental and genetic triggers can initiate an epigenetic signal that can alter the expression of both transgenes and endogenous loci."
 
 **Heritable epigenetic changes at single genes: challenges and opportunities in Caenorhabditis elegans**
 Chey et al. 2023
-_[Article](/doi/10.1016/j.tig.2021.08.011.pdf)_ 
+_[Author Manuscript](/doi/10.1016/j.tig.2021.08.011.pdf)_
+_[Overview](/doi/10.1016/j.tig.2021.08.011/)_
 : ?
-
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
 
 
 
