@@ -61,7 +61,7 @@ article.v1 {
 				}
 			}
 
-			blockquote {
+			blockquote:not([class^="markdown-alert-"]) {
 				/*display: contents;*/
 				margin-block-start: $base-padding * 0.1;
 				margin-inline-start: $base-padding * 1.5;

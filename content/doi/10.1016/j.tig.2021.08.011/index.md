@@ -6,8 +6,9 @@ description = ""
 sort_by = "title"
 
 [extra]
-key_words = ["10.1016/j.tig.2021.08.011", "RNA interference (RNAi)", "transgenerational epigenetic inheritance (TEI)", "regulatory networks"]
+key_words = ["RNA interference (RNAi)", "transgenerational epigenetic inheritance (TEI)", "regulatory networks"]
 see_also = [
+  { title = "10.1016/j.tig.2021.08.011" },
   { title = "Article", href = "/doi/10.1016/j.tig.2021.08.011.pdf" },
 ]
 +++
