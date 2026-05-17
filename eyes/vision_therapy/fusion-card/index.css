@@ -1,0 +1,113 @@
+@media screen and (min-width: 100rem) {
+    :root {
+		--body-width: calc(100vw - 40rem);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+    .image {
+		mix-blend-mode: darken;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+    .image {
+		mix-blend-mode: difference;
+		filter: invert(1);
+	}
+
+	.image::before, .image::after {
+		filter: invert(1);
+	}
+}
+
+.page {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.chart {
+	--border-width: 4px;
+	--notch-height: 8px;
+
+	padding-inline: var(--image-size);
+	justify-content: center;
+	align-items: center;
+	overflow-x: auto;
+	gap: var(--gap);
+	flex-wrap: wrap;
+	display: flex;
+	height: 100%;
+}
+
+.zero-width {
+	overflow: visible;
+	width: 0;
+}
+
+.image {
+	background-origin: content-box;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	height: var(--image-size);
+	justify-self: center;
+	align-items: center;
+	position: relative;
+	text-align: center;
+	width: min-content;
+	aspect-ratio: 1;
+	padding: 2em;
+}
+
+.image.red::before {
+	border: calc(var(--border-width) / 2) solid rgb(var(--color-red));
+	width: var(--notch-height);
+	position: absolute;
+	margin: auto;
+	content: '';
+	height: 0;
+	bottom: 0;
+	left: 0;
+	top: 0;
+}
+
+.image.green::before {
+	border: calc(var(--border-width) / 2) solid rgb(var(--color-green));
+	width: var(--notch-height);
+	position: absolute;
+	margin: auto;
+	content: '';
+	height: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+}
+
+.image.red::after {
+	border: var(--border-width) solid rgb(var(--color-red));
+	border-radius: 50%;
+	position: absolute;
+	content: '';
+	inset: 0;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: var(--border-width);
+	background-image: linear-gradient(to top, rgb(var(--color-red)) 0 var(--notch-height), transparent var(--notch-height));
+}
+
+.image.green::after {
+	border: var(--border-width) solid rgb(var(--color-green));
+	border-radius: 50%;
+	position: absolute;
+	content: '';
+	inset: 0;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: var(--border-width);
+	background-image: linear-gradient(to bottom, rgb(var(--color-green)) 0 var(--notch-height), transparent var(--notch-height));
+}
