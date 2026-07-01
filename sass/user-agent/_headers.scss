@@ -1,0 +1,120 @@
+
+h1, h2, h3, h4, h5, p {
+	margin-block-end: 0;
+}
+
+h1 {
+	line-height: normal;
+	font-size: $site-font-size * 2;
+	margin-block-start: $site-padding * 3;
+
+	+ul, +ol, +menu, +.checklist-wrapper > ul {
+		margin-block-start: $site-padding * 0.5;
+	}
+
+	&:has(+h1) {
+		display: inline-block;
+	}
+
+	&+h1 {
+		font-size: $site-font-size * 1.3;
+		margin-inline-start: $site-padding * 0.25;
+		margin-block-start: 0;
+		display: inline-block;
+		font-style: italic;
+		font-weight: 500;
+	}
+}
+
+h2 {
+	line-height: normal;
+	font-size: $site-font-size * 1.65;
+	margin-block-start: $site-padding * 2.25;
+
+	+ul, +ol, +menu, +.checklist-wrapper > ul {
+		margin-block-start: $site-padding * 0.5;
+	}
+
+	&:has(+h2) {
+		display: inline-block;
+	}
+
+	&+h2 {
+		font-size: $site-font-size * 1.2;
+		margin-inline-start: $site-padding * 0.25;
+		margin-block-start: 0;
+		display: inline-block;
+		font-style: italic;
+		font-weight: 500;
+	}
+}
+
+h3 {
+	line-height: normal;
+	font-size: $site-font-size * 1.5;
+	margin-block-start: $site-padding * 2;
+
+	+ul, +ol, +menu, +.checklist-wrapper > ul {
+		margin-block-start: $site-padding * 0.5;
+	}
+
+	&:has(+h3) {
+		display: inline-block;
+	}
+
+	&+h3 {
+		font-size: $site-font-size * 1.1;
+		margin-inline-start: $site-padding * 0.25;
+		margin-block-start: 0;
+		display: inline-block;
+		font-style: italic;
+		font-weight: 500;
+	}
+}
+
+h4 {
+	line-height: normal;
+	font-size: $site-font-size * 1.3;
+	margin-block-start: $site-padding * 1.75;
+
+	+ul, +ol, +menu, +.checklist-wrapper > ul {
+		margin-block-start: $site-padding * 0.5;
+	}
+
+	&:has(+h4) {
+		display: inline-block;
+	}
+
+	&+h4 {
+		font-size: $site-font-size * 1.0;
+		margin-inline-start: $site-padding * 0.25;
+		margin-block-start: 0;
+		display: inline-block;
+		font-style: italic;
+		font-weight: 500;
+	}
+}
+
+h5 {
+	font-style: italic;
+	line-height: normal;
+	font-size: $site-font-size * 1.1;
+	margin-block-start: $site-padding * 1.5;
+
+	+ul, +ol, +menu, +.checklist-wrapper > ul {
+		margin-block-start: $site-padding * 0.5;
+	}
+
+	&:has(+h5) {
+		display: inline-block;
+	}
+
+	&+h5 {
+		font-size: $site-font-size * 1.0;
+		margin-inline-start: $site-padding * 0.25;
+		margin-block-start: 0;
+		display: inline-block;
+		font-style: italic;
+		font-weight: 500;
+	}
+}

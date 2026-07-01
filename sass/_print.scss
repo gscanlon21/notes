@@ -1,0 +1,45 @@
+@media screen {
+	.page[data-orientation="portrait"] {
+		margin: 10mm;
+
+		& > :first-child {
+			margin-block-start: 0 !important;
+		}
+
+		&::after {
+			--page-size: calc(11in - 20mm);
+			background: repeating-linear-gradient(to bottom, transparent 0in var(--page-size), rgba(var(--color-text), 0.25) var(--page-size) calc(var(--page-size) + 2px));
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			content: '';
+			top: 0;
+		}
+	}
+
+	.page[data-orientation="landscape"] {
+		margin: 10mm;
+		
+		&::after {
+			--page-size: calc(8.5in - 20mm);
+			background: repeating-linear-gradient(to bottom, transparent 0in var(--page-size), rgba(var(--color-text), 0.25) var(--page-size) calc(var(--page-size) + 2px));
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			content: '';
+			top: 0;
+		}
+	}
+}
+
+@media print {
+	.page {
+		padding-bottom: 0 !important;
+		margin-bottom: 0 !important;
+		margin: 0 !important;
+	}
+}
+
+@page {
+	margin: 10mm;
+}

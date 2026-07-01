@@ -1,0 +1,216 @@
+{# Uses the Tera templating engine. https://keats.github.io/tera/ #}
+
+{#
+    Renders the table of contents.
+#}
+{% macro render_toc(toc, max_level, exclude='') %}
+<ul class="sitemap-list">
+	{% for item in toc %}
+	{% if item.level < 5 %}
+	{% if not exclude or item.id is not containing(exclude) %}
+	{% if item.title is not starting_with('"') or item.title is not ending_with('"') %}
+	{% if item.title is not starting_with('(') or item.title is not ending_with(')') %}
+	{% if item.title is not starting_with('[') or item.title is not ending_with(']') %}
+	{% if item.title is not starting_with('_') and item.title is not ending_with(':') %}
+	{% if item.title is not starting_with(':') and item.title is not starting_with('-') %}
+	{% if item.title is not starting_with('&') and item.title is not starting_with('@') %}
+	{% if item.title is not starting_with('#') and item.title is not starting_with('*') %}
+		<li>
+			<a href="{{ item.permalink }}">{{ item.title }}</a>
+			{% if item.children and item.level < max_level %}
+				{{ macros::render_toc(toc=item.children, max_level=max_level) }}
+			{% endif %}
+		</li>
+	{% elif item.children and item.level < max_level %}
+		{{ macros::render_toc(toc=item.children, max_level=max_level) }}
+	{% endif %}
+	{% elif item.children and item.level < max_level %}
+		{{ macros::render_toc(toc=item.children, max_level=max_level) }}
+	{% endif %}
+	{% elif item.children and item.level < max_level %}
+		{{ macros::render_toc(toc=item.children, max_level=max_level) }}
+	{% endif %}
+	{% elif item.children and item.level < max_level %}
+		{{ macros::render_toc(toc=item.children, max_level=max_level) }}
+	{% endif %}
+	{% endif %}
+	{% endif %}
+	{% endif %}
+	{% endif %}
+	{% endif %}
+	{% endfor %}
+</ul>
+{% endmacro header %}
+
+
+{#
+    Renders a list of pages.
+	Warning: Don't use page as the loop variable b/c it already exists in context.
+#}
+{% macro render_list_links(pages, current_path='', sort=false) %}
+{% for item in pages %}
+	{% set show_localhost = config.base_url == "http://127.0.0.1:1111" and current_path == '' %}
+    {% if current_path != '' or item.relative_path is not containing("doi") or item.relative_path is not containing("/index.md") %}
+	{% if item.extra.in_sitemap | default(value=true) or show_localhost %}
+        {% if item.relative_path == current_path %}
+            <li class="current">{{ item.title }}</li>
+        {#{% elif item.description %}
+            <li>
+				<a href="{{ get_url(path="@/" ~ item.relative_path) }}">{{ item.title }}
+					<ul><li>{{ item.description }}</li></ul>
+				</a>
+			</li>#}
+		{% else %}
+			<li><a href="{{ get_url(path="@/" ~ item.relative_path) }}">{{ item.title }}</a></li>
+        {% endif %}
+    {% endif %}
+	{% endif %}
+{% endfor %}
+{% endmacro header %}
+
+
+{#
+    Iterates though the site's pages and subsection and renders nested lists for each.
+#}
+{% macro render_sitemap(path, first_pass=true, current_path='') %}
+{% set show_localhost = config.base_url == "http://127.0.0.1:1111" and current_path == '' %}
+{% set section_info = get_section(path=path) %}
+{% if section_info.extra.section_sort_by | default(value="none") == "weight" %}
+	{% set subsections = section_info.subsections %}
+{% else %}
+	{% set subsections = section_info.subsections | sort %}
+{% endif %}
+{% if first_pass %}
+    {% if section_info.pages | length > section_info.pages | filter(attribute="extra.in_sitemap", value=false) | length or show_localhost and section_info.pages | length > 0 %}
+        <menu class="sitemap-list">
+            {{ macros::render_list_links(pages=section_info.pages, current_path=current_path) }}
+        </menu>
+    {% endif %}
+    
+    {% for subsection in subsections %}
+        {{ macros::render_sitemap(path=subsection, first_pass=false, current_path=current_path) }}
+    {% endfor %}
+{% elif section_info.extra.in_sitemap | default(value=true) or show_localhost %}
+    {% if section_info.transparent %}
+        {% for subsection in subsections %}
+            {{ macros::render_sitemap(path=subsection, first_pass=false, current_path=current_path) }}
+        {% endfor %}
+    {% elif section_info.in_search_index | default(value=true) == true %}
+        <details {% if current_path == section_info.relative_path %}open{% endif %}>
+			{% if current_path == section_info.relative_path %}
+            	<summary class="current">{{ section_info.title }}</summary>
+			{% else %}
+				<summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></summary>
+			{% endif %}
+            
+            <menu class="sitemap-list">
+                {{ macros::render_list_links(pages=section_info.pages) }}
+        
+                {% for subsection in subsections %}
+                    {{ macros::render_sitemap(path=subsection, first_pass=false, current_path=current_path) }}
+                {% endfor %}
+            </menu>
+        </details>
+    {% endif %}
+{% endif %}
+{% endmacro header %}
+
+
+{#
+    Iterates though the site's ancestors and renders lists for each.
+#}
+{% macro render_ancestors(ancestors) %}
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap condensed">
+	<menu class="sitemap-list">
+		{% for ancestor in ancestors %}
+			{% set ancestor_info = get_section(path=ancestor) %}
+			{% if not ancestor_info.transparent and ancestor_info.relative_path != "_index.no.md" %}
+				<li><a href="{{ get_url(path="@/" ~ ancestor_info.relative_path) }}">{{ ancestor_info.title }}</a></li>
+			{% endif %}
+		{% endfor %}
+		{% if section.transparent | default(value=page.transparent | default(value=false)) != true
+			and section.relative_path | default(value=page.relative_path) != "_index.no.md" %}
+			<li class="current">{{ section.title | default(value=page.title) | safe }}</li>
+		{% endif %}
+	</menu>
+</nav>
+{% endmacro header %}
+
+
+{#
+    Renders a page's siblings.
+#}
+{% macro render_siblings(for) %}
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap condensed">
+	{% set ancestor_section = get_section(path=for.ancestors | last) %}
+	{# If this is a section and the parent section is transparent #}
+	{% if section and ancestor_section.transparent %}
+		{{ macros::render_sitemap(path=for.relative_path, first_pass=true, current_path=for.relative_path) }}
+	{% else %}
+		{{ macros::render_sitemap(path=ancestor_section.relative_path, first_pass=true, current_path=for.relative_path) }}
+	{% endif %}
+</nav>
+{% endmacro header %}
+
+{#
+    Renders a page's assets.
+#}
+{% macro render_assets(name, types) %}
+{% for asset in page.assets | default(value=section.assets) %}
+	{% for type in types %}
+		{% if asset is ending_with(type) %}
+			{% set_global has_asset = true %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+
+{% if has_asset | default(value=false) %} 
+<dt>{{ name }}</dt>
+{% for asset in page.assets | default(value=section.assets) %}
+	{% for type in types %}
+		{% if asset is ending_with(type) %}
+			<dd class="summary-item">
+				{% set filename = asset | split(pat="/") | last | split(pat="\") | last | split(pat=".") | first %}
+				{% set title = filename | replace(from="---", to=" - ") | replace(from="--", to=": ") | replace(from="_", to=" ") | replace(from="一", to="") %}
+				{% if asset is starting_with("/") %}
+					{% set url = get_url(path=asset) %}
+					<a class="reverse-indent" href="{{ url }}" target="_blank">{{ title | safe }}</a>
+				{% elif asset is not starting_with("/") %}
+					{% set url = get_url(path=current_path ~ asset) %}
+					<a class="reverse-indent" href="{{ url }}" target="_blank">{{ title | safe }}</a>
+				{% else %}
+					<div class="reverse-indent">{{ title | safe }}</div>
+				{% endif %}
+			</dd>
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+{% endif %}
+{% endmacro header %}
+
+
+{#
+    Renders a page's assets.
+#}
+{% macro render_html(types) %}
+{% for asset in page.assets | default(value=section.assets) %}
+	{% for type in types %}
+		{% if asset is ending_with(type) %}
+			{% set_global has_asset = true %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+
+{% if has_asset | default(value=false) %} 
+{% for asset in page.assets | default(value=section.assets) %}
+	{% for type in types %}
+		{% if asset is ending_with(type) %}
+			{% set filename = asset | split(pat="/") | last | split(pat="\") | last | split(pat=".") | first %}
+			<div class="display--none" data-code="{{ filename }}">{{ load_data(path=asset) | safe }}</div>
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+{% endif %}
+{% endmacro header %}

@@ -1,0 +1,120 @@
+# https://www.getzola.org/documentation/getting-started/configuration/
+
+
+# Tab title
+title = "ascallion"
+
+# The URL the site will be built for
+base_url = "https://ascallion.com"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# A list of glob patterns specifying asset files to ignore when the content
+# directory is processed. Defaults to none, which means that all asset files are
+# copied over to the `public` directory.
+# Example:
+# ignored_content = ["code_articles/**/{Cargo.lock,target}, *.rs"]
+# ignored_content = ["*.{graphml,xlsx}", "temp.*", "**/build_folder"]
+
+# Similar to ignored_content, a list of glob patterns specifying asset files to
+# ignore when the static directory is processed. Defaults to none, which means
+# that all asset files are copied over to the `public` directory
+# ignored_static = []
+
+# Whether to build a search index to be used later on by a JavaScript library.
+build_search_index = true
+
+# When set to "true", files in the `static` directory are hard-linked. 
+# Set this to false and toggle 'skip-worktree' for development. 
+# It's set to true for build times in production.
+hard_link_static = true
+
+# The default language.
+default_language = "en"
+
+[languages]
+[languages.no]
+build_search_index = false
+
+
+[search]
+# Whether to include the title of the page/section in the index.
+include_title = true
+
+# Whether to include the description of the page/section in the index.
+include_description = false
+
+# Whether to include the RFC3339 datetime of the page in the search index.
+include_date = false
+
+# Whether to include the path of the page/section in the index (the permalink is always included).
+include_path = false
+
+# Whether to include the rendered content of the page/section in the index.
+include_content = true
+
+# At which code point to truncate the content to. Useful if you have a lot of pages and the index would become too big to load on the site.
+truncate_content_length = 10000
+
+
+[link_checker]
+# Skip link checking for external URLs that start with these prefixes.
+skip_prefixes = []
+
+# Skip anchor checking for external URLs that start with these prefixes.
+skip_anchor_prefixes = []
+
+# Treat internal link problems as either "error" or "warn", default is "error".
+internal_level = "error"
+
+# Treat external link problems as either "error" or "warn", default is "error".
+external_level = "error"
+
+
+
+[markdown]
+# If this is true, a `rel="noopener"` will always automatically be added for security reasons.
+external_links_target_blank = true
+
+# Whether to set rel="nofollow" for all external links.
+external_links_no_follow = false
+
+# Whether to set rel="noreferrer" for all external links.
+external_links_no_referrer = true
+
+# Whether parsing of definition lists is enabled.
+definition_list = true
+
+# Whether alerts/callouts are enabled in the Markdown parser.
+github_alerts = true
+
+# Whether to set decoding="async" and loading="lazy" for all images.
+# lazy_async_image = false
+
+# Whether footnotes are rendered at the bottom (with back references) or plain (in the place, where they are defined).
+bottom_footnotes = true
+
+
+# https://github.com/getzola/giallo?tab=readme-ov-file#built-in
+[markdown.highlighting]
+error_on_missing_language = false
+
+# Whether to use inline hex colors (`inline`) or CSS classes (`class`) 
+style = "inline"
+
+# Selecting a theme is always required: you have a choice between single (1) or dual themes (2).
+# Only outputting CSS classes like before 0.22 is not possible anymore.
+# 1. If you use a single theme, put its name here. See the syntax highlighting page for the possible choices.
+theme = "min-dark"
+
+# 2. If you want light/dark themes, use the 2 fields below instead. See the syntax highlighting page for the possible choices.
+#light_theme = "gruvbox-light"
+#dark_theme = "github-dark"
+
+
+[slugify]
+paths = "safe"
+
+[extra]
+# Put all your custom variables here

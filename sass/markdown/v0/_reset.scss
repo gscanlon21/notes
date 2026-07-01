@@ -1,0 +1,62 @@
+article.v0 {
+	> :first-child {
+		margin-block-start: $site-padding * 3;
+	}
+
+	a {
+		color: currentColor;
+		cursor: pointer;
+
+		&:hover {
+			opacity: .75;
+		}
+	}
+
+	p {
+		margin-block: unset;
+	}
+
+	i {
+		font-style: italic;
+	}
+
+	b {
+		font-weight: bold;
+	}
+
+	div {
+		display: block;
+	}
+}
+
+@media print {
+	body {
+		margin: 0;
+	}
+
+	#header {
+		display: none;
+	}
+
+	#main {
+		padding: 0;
+	}
+
+	.header-wrap {
+		display: none;
+	}
+
+	#footer {
+		display: none;
+	}
+
+	#templating-context {
+		display: none;
+	}
+
+	article.v0 {
+		> :first-child {
+			margin-block-start: -8px !important;
+		}
+	}
+}

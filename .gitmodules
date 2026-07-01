@@ -1,0 +1,6 @@
+[submodule "_notes"]
+	path = content/submodule
+	url = git@github.com:gscanlon21/_notes.git
+	update = rebase
+	branch = main
+	recurse = true

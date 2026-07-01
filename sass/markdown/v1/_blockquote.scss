@@ -1,0 +1,53 @@
+article.v1 {
+	blockquote:not([class^="markdown-alert-"]) {
+		padding-inline-start: $base-padding * .5;
+		border-left: .2em solid color(--color-text, .5);
+	}
+
+	// Title header for blockquotes.
+	h6:has(+blockquote:not([class^="markdown-alert-"]))  {
+		font-size: $base-font-size * 0.8;
+		margin-block-end: $base-padding * -1;
+		margin-block-start: $base-padding * 1.25;
+		margin-inline-start: $site-padding * 3.25;
+	}
+
+	dd > h6:has(+blockquote:not([class^="markdown-alert-"]))  {
+		margin-block-start: $base-padding * 0.5;
+		margin-block-end: $base-padding * -0.25;
+		margin-inline-start: $site-padding * 0.75;
+	}
+
+	// Attribution footer for blockquotes.
+	blockquote:not([class^="markdown-alert-"])+h6 {
+		font-size: $base-font-size * 0.75;
+		margin-block-start: $base-padding * 0.25;
+		margin-inline-start: $site-padding * 3.25;
+	}
+
+	// Markdown alerts.
+	blockquote > ul {
+		margin-block-end: $base-padding * 0.25;
+	}
+
+	dd > blockquote+h6  {
+		font-size: $base-font-size * 0.75;
+		margin-block-start: $base-padding * 0.25;
+		margin-inline-start: $site-padding * 0.75;
+	}
+
+	ol + blockquote {
+		margin-block-start: $base-padding * 1.25;
+	}
+
+	// Nested blockquotes
+	blockquote:not(+blockquote[class^="markdown-alert-"]):has(> blockquote) {
+		margin-inline-start: $base-padding * -0.75;
+		width: 100%;
+
+		& > blockquote {
+			display: contents;
+		}
+	}
+}
+

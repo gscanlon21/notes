@@ -1,0 +1,137 @@
+// Site header
+#header {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	margin-inline: $base-padding;
+	row-gap: $base-padding * 0.5;
+	column-gap: $base-padding * 2;
+
+	.header-item {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+// Section headers
+.header-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	column-gap: $site-padding * 1.5;
+
+	> :first-of-type {
+		flex: 1;
+		flex-grow: 2;
+		min-width: $min-content-width;
+	}
+
+	> :last-of-type {
+		flex: 1;
+		min-width: $min-content-width;
+	}
+}
+
+// Section headers
+.header {
+	pointer-events: none;
+	
+	// For fixed 'Back to Top' button.
+	@media (min-width: $large-width) {
+		padding-block-end: $base-padding * 5;
+		background-image: linear-gradient(to top, 
+			transparent $base-padding * 2, rgb(var(--color-bg)) $base-padding * 4, rgb(var(--color-bg)));
+	}
+
+	.header-title {
+		margin-block-start: $site-padding * 2;
+
+		& + .subtitle {
+			margin-block-start: $base-padding * 0.25;
+		}
+
+		.version {
+			font-size: small;
+		}
+	}
+
+	.header-item {
+		flex: 1;
+		display: flex;
+		pointer-events: all;
+		flex-direction: column;
+		min-width: $min-content-width;
+	}
+
+	#summary {
+		width: 100%;
+
+		.reverse-indent {
+			text-indent: $base-padding * -2;
+			padding-inline-start: $base-padding * 2;
+
+			&:has(code) {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				color: color(--color-code);
+				padding-inline-end: $base-padding * 0.1;
+			}
+		}
+
+		.summary-item {
+			a {
+				// Remove un-clickable space between lines.
+				display: inline-block;
+
+				svg {
+					width: $base-font-size;
+					height: $base-font-size;
+					color: rgba(var(--color-link), 0.75);
+					padding-inline-start: $base-padding * 0.1;
+				}
+
+				&:visited svg {
+					color: rgba(var(--color-link-visited), 0.75);
+				}
+			}
+
+			label {
+				user-select: none;
+				flex: 1 1 auto;			
+			}
+
+			&[data-type="range"] {
+				align-items: center;
+				column-gap: 1ex;
+				flex-wrap: wrap;
+				display: flex;
+
+				input[type="range"] {
+					margin-block-start: .5ex;
+					flex: 99999 1 auto;
+				}
+			}
+
+			&[data-type="text"] {
+				align-items: center;
+				column-gap: 1ex;
+				flex-wrap: wrap;
+				display: flex;
+
+				input[type="text"] {
+					margin-block-start: .5ex;
+					flex: 99999 1 auto;
+				}
+			}
+
+			&[data-type="checkbox"] {
+				input[type="checkbox"] {
+					vertical-align: text-bottom;
+					scale: 1.25;
+				}
+			}
+		}
+	}
+}

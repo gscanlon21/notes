@@ -1,0 +1,50 @@
++++
+title = "Editor Config"
+description = ""
+
+[extra]
+updated = 2026-06-01
+see_also = []
+map = [
+  { key = "Filename", title = ".editorconfig" },
+]
++++
+
+{{ hidden() }}
+
+
+###### .editorconfig
+```
+root = true
+
+[*]
+# Custom spelling dictionary.
+spelling_languages = en-us
+spelling_error_severity = information
+spelling_exclusion_path = .\exclusion.dic
+
+# IDE0290: Use primary constructor - fields are not readonly.
+dotnet_diagnostic.IDE0290.severity = none
+
+# CS1998: Async method lacks 'await' operators and will run synchronously - not an issue.
+dotnet_diagnostic.CS1998.severity = none
+
+# CA1860: Avoid using 'Enumerable.Any()' extension method - causes poor EF Core query performance.
+dotnet_diagnostic.CA1860.severity = none
+
+# CS0162: Unreachable code detected
+dotnet_diagnostic.CS0162.severity = silent
+
+# IDE0305: Simplify collection initialization
+dotnet_diagnostic.IDE0305.severity = silent
+
+# CA1069: Enums should not have duplicate values
+dotnet_diagnostic.CA1069.severity = warning
+
+# Dead Code Rules
+dotnet_diagnostic.CA1801.severity = warning
+dotnet_diagnostic.CA1804.severity = warning
+dotnet_diagnostic.CA1811.severity = warning
+dotnet_diagnostic.CA1812.severity = warning
+dotnet_diagnostic.CA1823.severity = warning
+```

@@ -1,0 +1,98 @@
+article.v1 {
+	// Filename header for code blocks.
+	h6:has(+pre) {
+		color: color(--color-code);
+		background-color: color(--color-code-bg);
+		border-top-right-radius: $border-radius;
+		border-top-left-radius: $border-radius;
+		margin-block-start: $base-padding / 2;
+		margin-block-end: $base-padding / -2;
+		font-size: $base-font-size * 0.9;
+		padding-block: $base-padding / 2;
+		padding-inline: $base-padding;
+		max-width: calc(100% - 13ch);
+		width: max-content;
+
+		&:empty {
+			display: none;
+		}
+	}
+
+	// Attribution footer for code blocks.
+	pre+h6:not(:has(+pre)) {
+		color: color(--color-code);
+		background-color: color(--color-code-bg);
+		border-bottom-right-radius: $border-radius;
+		border-bottom-left-radius: $border-radius;
+		font-size: $base-font-size * 0.75;
+		padding-block: $base-padding / 2;
+		padding-inline: $base-padding;
+		margin-block-start: 0;
+		margin-block-end: 0;
+		float: right;
+		
+		&:empty {
+			display: none;
+		}
+
+		& > a {
+			color: color(--color-code-link);
+
+			&:focus,
+			&:hover {
+				color: color(--color-code-link, 0.5);
+			}
+
+			&:visited {
+				color: color(--color-code-link-visited);
+			}
+		}
+	}
+
+	pre:has(+h6):not(:has(+h6+pre)) {
+		border-top-right-radius: $border-radius;
+	}
+
+	h6+pre:not(:has(+pre)) {
+		border-bottom-left-radius: $border-radius;
+	}
+
+	pre {
+		cursor: pointer;
+		overflow-x: auto;
+		margin-block-end: 0;
+		padding-block: $base-padding;
+		padding-inline: $base-padding * 1.25;
+		margin-block-start: $base-padding / 2;
+		scrollbar-color: color(--color-scrollbar, .5) color(--color-scrollbar-bg);
+		scrollbar-width: 1em;
+
+		&:has(+pre) {
+			// More bottom padding for the scrollbar.
+			padding-block-end: $base-padding * 0.75;
+		}
+
+		+pre {
+			border-radius: 0 !important;
+			margin-block-start: $base-padding * 0;
+		}
+
+		& > code {
+			margin: 0;
+			padding: 0;
+			/* Messes with block code:
+			display: inline-flex;*/
+
+			&[data-lang]:not([data-lang="plain"])::before {
+				// Display the code lang.
+				content: attr(data-lang) "$";
+				color: color(--color-code, 0.75);
+				padding-inline-end: $base-padding;
+			}
+
+			&[data-lang^="."]::before {
+				display: none;
+			}
+		}
+	}
+}

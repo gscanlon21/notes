@@ -1,0 +1,86 @@
+article.v1 {
+	.footnote-reference {
+		margin-block-start: $base-padding * -1;
+		font-size: $site-font-size * 0.8;
+		display: inline-block;
+		
+		& a::before {
+			content: '[';
+		}
+
+		& a::after {
+			content: ']';
+		}
+
+		// Footnotes bleed together in a paragraph.
+		//& + .footnote-reference::before {
+		//	content: ',';
+		//}
+	}
+
+	.footnotes {
+		margin-block-start: $base-padding * 3;
+		padding-block-start: $base-padding * 0.5;
+		border-top: 2px dotted color(--color-text);
+
+		.footnotes-list {
+			margin-block-end: $base-padding * -2;
+			padding-inline-start: $base-padding * 1.2;
+			
+			li + li {
+				margin-block-start: $base-padding * 0.25;
+			}
+
+			p {
+				display: flex;
+				align-items: end;
+				column-gap: $base-padding;
+				justify-content: space-between;
+
+				em {
+					display: contents;
+				}
+
+				a:first-of-type {
+					order: 1;
+				}
+
+				a:not(:first-of-type), a:only-of-type {
+					align-items: center;
+					display: flex;
+					font-size: 0;
+					order: 3;
+		
+					&::before {
+						font-size: $site-font-size;
+						content: 'back';
+					}
+				}
+
+				&::after {
+					border-top: 2px dotted rgba(var(--color-text), 0.25);
+					padding-inline: $base-padding * 0.5;
+					margin-inline: $base-padding * -1;
+					display: inline-block;
+					margin-top: 1em;
+					flex-grow: 1;
+					height: 3px;
+					content: '';
+					order: 2;
+				}
+			}
+		}
+	}
+}
+
+@media print {
+	.footnotes-list p {
+		&::after {
+			display: none !important;
+		}
+
+		a:not(:first-of-type), a:only-of-type {
+			display: none !important;
+		}
+	}
+} 

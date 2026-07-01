@@ -1,0 +1,12 @@
+$min-content-width: 16rem;
+$sidebar-width: 17.5rem;
+$small-width: 600px;
+$large-width: calc(8.5in + 40rem);
+$body-width-large: calc(8.5in + 2rem);
+$body-width-small: calc(8.5in + 20rem);
+
+@import 'site';
+
+@page {
+	size: letter portrait;
+}

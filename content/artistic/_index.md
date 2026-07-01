@@ -1,0 +1,16 @@
++++
+title = "Artistic"
+sort_by = "title"
+
+[extra]
+updated = 2026-03-01
+see_also = [
+  { title = "I Am An AI Hater", href = "https://anthonymoser.github.io/writing/ai/haterdom/2025/08/26/i-am-an-ai-hater.html" },
+  { title = "How AI Destroys Institutions", href = "https://cyberlaw.stanford.edu/publications/how-ai-destroys-institutions/" },
+  { title = "It's Rude to Show AI Output to People", href = "https://distantprovince.by/posts/its-rude-to-show-ai-output-to-people/" },
+]
++++
+
+{{ hidden() }}
+
+**Be Bold**

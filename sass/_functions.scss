@@ -1,0 +1,9 @@
+// Converts hex to an rgb comma-separated string
+@function to-rgb($hex) {
+    @return red($hex), green($hex), blue($hex);
+}
+
+// Grabs the rgba value from a rgb comma-separated string
+@function color($variable, $alpha: 1) {
+    @return rgba(var($variable), $alpha);
+}

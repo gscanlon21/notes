@@ -1,0 +1,31 @@
+{% import "macros/macros.html" as macros %}
+{% extends "partials/base.html" %}
+
+{% block content %}
+	<div class="header-wrap">
+		<div class="sidebar-left header header-wrap">
+			{% include "partials/summary.html" %}
+			{% include "partials/toc.html" %}
+		</div>
+
+		<div class="sidebar-right header">
+			<div class="header-item">
+				{{ macros::render_ancestors(ancestors=section.ancestors) }}
+			</div>
+
+			<div class="header-item">
+				{{ macros::render_siblings(for=section) }}
+			</div>
+
+			<div class="header-item screen-large">
+				<h3 class="sitemap-title">Sitemap</h3>
+				<nav class="sitemap">
+					{{ macros::render_sitemap(path="_index.md") }}
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	{% set site_version = page.extra.site_version | default(value=1) %}
+	<article id="content" class="section v{{ site_version }}">{{ section.content | safe }}</article>
+{% endblock content %}

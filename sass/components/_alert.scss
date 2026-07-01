@@ -1,0 +1,161 @@
+:root {
+  	--color-tip: #{to-rgb(#1a7f37)};
+	--color-note: #{to-rgb(#0969da)};
+	--color-caution: #{to-rgb(#9a6700)};
+	--color-warning: #{to-rgb(#d1242f)};
+	--color-important: #{to-rgb(#8250df)};
+}
+
+@media (prefers-color-scheme: dark) {
+  	:root {
+		--color-tip: #{to-rgb(#3fb950)};
+		--color-note: #{to-rgb(#2f81f7)};
+		--color-caution: #{to-rgb(#d29922)};
+		--color-warning: #{to-rgb(#f85149)};
+		--color-important: #{to-rgb(#a371f7)};
+  	}
+}
+
+
+blockquote[class^="markdown-alert-"] {
+	border: .2em solid color(--color-text, .5);
+	margin-block-start: $base-padding * .75;
+	margin-block-end: $base-padding * .75;
+	padding-block: $base-padding * .5;
+	padding-inline: $base-padding;
+	column-gap: $base-padding;
+	box-sizing: border-box;
+	align-items: baseline;
+	align-content: start;
+	position: relative;
+	margin-inline: 0;
+	flex-wrap: wrap;
+	display: flex;
+	width: 100%;
+	
+	&:first-child:not(+blockquote[class^="markdown-alert-"]) {
+		margin-block-end: $base-padding * 3;
+	}
+
+	&::before {
+		font-size: $base-font-size * 1.25;
+		font-weight: 500;
+		order: -2;
+	}
+
+	& > :first-child, & > p {
+		margin-block-start: 0
+	}
+
+	& > :last-child {
+		margin-block-end: 0
+	}
+
+	& > p {
+		font-size: $base-font-size * 1.1;
+		width: 100%
+	}
+
+	& > blockquote:last-child {
+		padding-inline-start: 0 !important;
+		border-left: none !important;
+		margin-inline: 0;
+		font-weight: 500;
+		margin-block: 0;
+		order: -1;
+
+		& > p {
+			margin-block-start: 0;
+		}
+	}
+
+	&:has(blockquote) {
+		& > p {
+			padding-block-start: $base-padding * 0.5;
+		}
+
+		& > p:only-of-type {
+			padding-block-start: $base-padding * 0.25;
+		}
+
+		& > p:first-child, & > ul:first-child {
+			border-top-width: 2px;
+			border-top-style: solid;
+		}
+	}
+
+	/* Dismissible?
+	&::after {
+		padding: $base-padding;
+		position: absolute;
+		cursor: pointer;
+		content: 'x';
+		right: 0;
+		top: 0;
+	}*/
+}
+
+blockquote.markdown-alert-tip {
+	border-color: color(--color-tip, .5);
+	background-color: color(--color-tip, .25);
+
+	p, ul {
+		border-color: color(--color-tip, .25);
+	}
+
+	&::before {
+		content: '⚠ Tip';	
+	}
+}
+
+blockquote.markdown-alert-note {
+	border-color: color(--color-note, .5);
+	background-color: color(--color-note, .25);
+
+	p, ul {
+		border-color: color(--color-note, .25);
+	}
+
+	&::before {
+		content: '⚠ Note';
+	}
+}
+
+blockquote.markdown-alert-caution {
+	border-color: color(--color-caution, .5);
+	background-color: color(--color-caution, .25);
+
+	p, ul {
+		border-color: color(--color-caution, .25);
+	}
+
+	&::before {
+		content: '⚠ Caution';
+	}
+}
+
+blockquote.markdown-alert-warning {
+	border-color: color(--color-warning, .5);
+	background-color: color(--color-warning, .25);
+
+	p, ul {
+		border-color: color(--color-warning, .25);
+	}
+
+	&::before {
+		content: '⚠ Warning';
+	}
+}
+
+blockquote.markdown-alert-important {
+	border-color: color(--color-important, .5);
+	background-color: color(--color-important, .25);
+
+	p, ul {
+		border-color: color(--color-important, .25);
+	}
+
+	&::before {
+		content: '⚠ Important';
+	}
+}

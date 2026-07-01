@@ -1,0 +1,221 @@
+/* Element only styles */
+
+html {
+	display: flex;
+	min-height: 100%;
+	overflow-y: scroll;
+	justify-content: center;
+}
+
+body {
+	line-height: 1.5;
+	color: color(--color-text);
+	background-color: color(--color-bg);
+	font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+		"Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+		"Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+		"Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+
+	max-width: var(--body-width);
+	margin-block: $base-padding;
+	margin-inline: 0;
+	width: 100%;
+	padding: 0;
+
+	// Sticky footer
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100% - 2rem);
+}
+
+main {
+	height: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	padding: $base-padding;
+}
+
+strong {
+	display: inline-block;
+}
+
+p {
+	font-size: medium;
+	margin-block-start: $site-padding * 0.25;
+
+	& + p:not(:empty) {
+		margin-block-start: $site-padding * 1;
+	}
+
+	&:has(img) {
+		margin-block-start: $base-padding * 0.75;
+	}
+}
+
+a {
+	color: color(--color-link);
+
+	&:focus,
+	&:hover {
+		color: color(--color-link, 0.5);
+	}
+
+	&:visited {
+		color: color(--color-link-visited);
+	}
+
+	&.unstyle {
+		color: unset
+	}
+}
+
+ul, ol, menu {
+	// Remove extra padding from direct descendants.
+	padding-inline-start: $base-padding * 1.2;
+	margin-block-start: $base-padding * 0.25;
+	// No end margin for nested elements.
+	margin-block-end: $base-padding * 0;
+	
+	ul, ol, menu {
+		margin-block-start: 0;
+		margin-block-end: $base-padding * 0.1;
+	}
+
+	&:has(> li > blockquote) {
+		padding-inline-start: 0;
+		list-style-type: none;
+
+		ul, ol, menu {
+			padding-inline-start: $base-padding * 3;
+		}
+	}
+
+	&:has(> li > input[type="checkbox"]) {
+		padding-inline-start: 0;
+		list-style-type: none;
+
+		ul, ol, menu {
+			padding-inline-start: $base-padding * 3;
+		}
+	}
+
+	// Since the headers use display: inline-block, there's no margin collapse.
+	&:has(+h1), &:has(+h2), &:has(+h3), &:has(+h4), &:has(+h5) {
+		margin-block-end: 0;
+	}
+
+	& > li {
+		& > blockquote {
+			margin-inline-start: $base-padding * 1.5;
+			margin-block-start: $base-padding * 0.1;
+			margin-block-end: $base-padding * 0.5;
+		}
+
+		&:has(ol) + li:has(ol) {
+			margin-block-start: $base-padding * 0.75;
+		}
+	}
+
+	& + p {
+		margin-block-start: $base-padding * 1.25;
+	}
+}
+
+details {
+	& > summary {
+		cursor: pointer;
+		user-select: none;
+		// Messes with img captions.
+		//max-width: $small-width;
+
+		&:focus {
+			outline: none;
+		}
+
+		p {
+			display: inline-block;
+		}
+	}
+
+	& > menu {
+		padding-inline-start: $base-padding * 2 !important;
+	}
+}
+
+blockquote:not(:has(+p)) {
+	// Reduce the margin of a block quote.
+	margin-block-end: 0;
+}
+
+code {
+	background-color: color(--color-code-bg);
+	color: color(--color-code);
+	border-radius: .25em;
+	padding-inline: .2em;
+	padding-bottom: .1em;
+	margin-inline: .1em;
+	font-size: 1.25em;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+// Copy animation for inline code spans.
+code.copied:not(:has(span)) {
+	animation-duration: 500ms;
+	// We're using linear for a smoother
+	// ... animation, otherwise ease-in.
+	animation-timing-function: linear;
+	animation-name: copy-inline;
+}
+
+// Copy animation for code blocks.
+pre.copied > code:has(span) {
+	animation-delay: 250ms;
+	animation-duration: 250ms;
+	animation-fill-mode: backwards;
+	// We're using linear for a smoother
+	// ... animation, otherwise ease-in.
+	animation-timing-function: linear;
+	animation-name: copy-block;
+}
+
+@keyframes copy-inline {
+	0% {
+		text-underline-offset: 1px;
+		text-underline-position: under;
+		text-decoration-skip-ink: none;
+		text-decoration-thickness: 4px;
+		text-decoration-line: underline;
+		text-decoration-color: color(--color-code);
+	}
+
+	100% {
+		text-underline-offset: -1.65em;
+		text-underline-position: under;
+		text-decoration-skip-ink: none;
+		text-decoration-thickness: 4px;
+		text-decoration-line: underline;
+		text-decoration-color: transparent;
+	}
+}
+
+@keyframes copy-block {
+	0% {
+		text-underline-offset: 0;
+		text-underline-position: under;
+		text-decoration-skip-ink: none;
+		text-decoration-thickness: 3px;
+		text-decoration-line: underline;
+		text-decoration-color: color(--color-code);
+	}
+
+	100% {
+		text-underline-offset: -1.65em;
+		text-underline-position: under;
+		text-decoration-skip-ink: none;
+		text-decoration-thickness: 3px;
+		text-decoration-line: underline;
+		text-decoration-color: transparent;
+	}
+}
