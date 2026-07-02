@@ -25,3 +25,23 @@ see_also = [
 
 **Progressive Lenses**
 : Progressive lenses don’t have any visible lines, but allow wearers to gradually shift from distance to intermediate to close-up vision help. People who want a more traditional look to their lenses tend to choose progressives, but they can be pricey and harder to adapt to.
+
+
+# Frames
+
+> [!IMPORTANT]
+> Get frames that have the appropriate depth so that the ends actually curve around your ears.
+>> Frame Size
+
+> [!IMPORTANT]
+> Metal frames hold up much better long-term and are easier to adjust.
+>> Frame Materials
+
+
+**Metal Frames**
+_w/o Nose Support_
+: ?
+
+**Plastic Lenses**
+_w/o Nose Support_
+: ?
