@@ -1,0 +1,49 @@
+#letter-tracking {
+	display: flex;
+	flex-wrap: wrap;
+	overflow-x: clip;
+	text-align: start;
+	position: relative;
+	padding-inline: 2ex;
+	justify-self: center;
+	word-wrap: break-word;
+	word-break: break-word;
+	padding-block-start: 1ex;
+	padding-block-end: 1.5ex;
+	font-size: var(--font-size);
+	line-height: var(--line-height);
+	letter-spacing: var(--letter-spacing);
+}
+
+#letter-tracking p {
+	font-size: var(--font-size);
+}
+
+#letter-tracking p:empty {
+	display: none;
+}
+
+#letter-tracking.red-green::after {
+	inset: 0;
+	content: '';
+	position: absolute;
+	margin-left: -0.15ch;
+	/* Red + Green == Yellow */
+	mix-blend-mode: hard-light;
+	background-blend-mode: screen;
+	/* Gradient should overlay slightly */
+	background: repeating-linear-gradient(
+		to right,
+		rgba(var(--color-red), 0.5) 0ch 4ch,
+		rgba(var(--color-green), 0.5) 4ch 8ch
+  	), repeating-linear-gradient(
+		to right,
+		transparent 0ch 4ch,
+		rgba(var(--color-red), 0.5) 4ch 4.1ch,
+		transparent 4ch 8ch
+  	), repeating-linear-gradient(
+		to right,
+		rgba(var(--color-green), 0.5) 0ch 0.1ch,
+		transparent 0.1ch 8ch
+  	);
+}

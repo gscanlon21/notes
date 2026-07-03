@@ -1,0 +1,106 @@
+:root {
+	--icon-size: 16px;
+	--color-accent: #dc2626;
+}
+
+article#content * {
+	font-size: 14px;
+	line-height: 1.4;
+	font-family: 'IBM Plex Serif', serif;
+}
+
+article#content hr {
+	margin-block-end: 12px !important;
+	margin-block-start: 16px !important;
+	border-top: 1px solid var(--color-accent) !important;
+}
+
+article#content ul {
+	margin-block-end: 10px !important;
+	padding-inline-start: 20px !important;
+}
+
+article#content li {
+	margin-block-end: 4px !important;
+}
+
+#name {
+	font-size: 24px !important;
+}
+
+.section-header {
+	font-size: 15px !important;
+	font-weight: 500 !important;
+	margin-block-start: 14px !important;
+	color: var(--color-accent) !important;
+}
+
+.title {
+	font-size: 14px !important;
+	font-weight: bold !important;
+}
+
+.item {
+	margin-block-end: 14px !important;
+}
+
+.dates {
+	font-weight: 500 !important;
+}
+
+.skills {
+	display: block !important;
+	font-size: 13px !important;
+	margin-block-start: 7px !important;
+}
+
+.space-between > .grade {
+	align-items: center;
+	display: flex;
+	flex: 1;
+}
+
+.space-between > .grade::before {
+	border-top: 2px dotted rgba(var(--color-text), 0.25);
+	display: inline-block;
+	margin-top: 1em;
+	flex-grow: 1;
+	height: 3px;
+	content: '';
+}
+
+.inline-svg {
+	align-items: center !important;
+	display: inline-flex !important;
+}
+
+.inline-svg svg {
+	margin-inline-end: 3px !important;
+	width: var(--icon-size) !important;
+	color: var(--color-accent) !important;
+}
+
+.inline-svg .link {
+	margin-block-start: 1px !important;
+	margin-inline-start: 9px !important;
+}
+
+.inline-svg + .inline-svg {
+	margin-inline-start: 9px !important;
+}
+
+.space-between {
+	display: flex !important;
+	justify-content: space-between !important;
+}
+
+.underline {
+	text-decoration: underline !important;
+	text-underline-offset: 4px !important;
+}
+
+@media print {
+	.hide, .hidden {
+		display: none !important;
+	}
+}
