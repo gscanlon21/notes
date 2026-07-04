@@ -41,7 +41,7 @@ article.v1 {
 	}
 
 	// Nested blockquotes
-	blockquote:not(+blockquote[class^="markdown-alert-"]):has(> blockquote) {
+	blockquote:not([class*="markdown-alert-"]):has(> blockquote) {
 		margin-inline-start: $base-padding * -0.75;
 		width: 100%;
 
