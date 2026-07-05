@@ -84,6 +84,12 @@ blockquote[class^="markdown-alert-"] {
 		}
 	}
 
+	// Nested titles
+	& > blockquote {
+		margin-inline-start: 0 !important;
+		width: auto !important;
+	}
+
 	/* Dismissible?
 	&::after {
 		padding: $base-padding;

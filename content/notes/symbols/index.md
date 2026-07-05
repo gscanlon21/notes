@@ -527,3 +527,26 @@ x̄
 ⅱ
 ```
 ###### U+2171
+
+
+# Quotation Marks
+###### Left Double Quotation Mark
+```
+“
+```
+###### U+201C
+###### Right Double Quotation Mark
+```
+”
+```
+###### U+201D
+###### Double Low-9 Quotation Mark
+```
+„
+```
+###### U+201E
+###### Double Low-Reversed-9 Quotation Mark
+```
+⹂
+```
+###### U+2E42
