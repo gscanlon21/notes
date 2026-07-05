@@ -121,7 +121,7 @@
 #}
 {% macro render_ancestors(ancestors) %}
 <h3 class="sitemap-title header-title">Ancestors</h3>
-<nav class="sitemap condensed">
+<nav class="sitemap">
 	<menu class="sitemap-list">
 		{% for ancestor in ancestors %}
 			{% set ancestor_info = get_section(path=ancestor) %}
@@ -143,7 +143,7 @@
 #}
 {% macro render_siblings(for) %}
 <h3 class="sitemap-title">Siblings</h3>
-<nav class="sitemap condensed">
+<nav class="sitemap">
 	{% set ancestor_section = get_section(path=for.ancestors | last) %}
 	{# If this is a section and the parent section is transparent #}
 	{% if section and ancestor_section.transparent %}

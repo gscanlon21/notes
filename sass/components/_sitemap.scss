@@ -16,11 +16,7 @@ main > .sitemap-title {
 // Sitemap
 .sitemap {
 	user-select: none;
-	margin-block-start: $base-padding * 0.75;
-
-	&.condensed {
-		margin-block-start: $base-padding * 0.5;
-	}
+	margin-block-start: $base-padding * 0.37;
 
 	// If we want the sitemap to span multiple columns.
 	&.full {
