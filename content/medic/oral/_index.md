@@ -1,5 +1,5 @@
 +++
-title = "Mouth"
+title = "Oral"
 description = ""
 
 [extra]
@@ -26,48 +26,12 @@ see_also = [
   > - [ ]
 
 # Toothpaste
-
-**Parodontax**
-Active Gum Repair
-_Fresh Mint_
-: ??? 
-: > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [x]
-
-**Parodontax**
-Active Gum Repair
-_Breath Freshener_
-: ??? 
-: > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [x]
-
-**Parodontax**
-Complete Protection
-_Pure Fresh Mint_
-: ??? 
-: > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [x]
-
-**Sensodyne**
-Complete Protection
-_Pure Fresh Mint_
-: Too expensive.
-: > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [ ] 
-  > - [ ]
+?
 
 ## Active Ingredients
+
+> [!TIP]
+> Get a toothpaste with both fluoride and hydroxyapatite for twice the benefit.
 
 **Stannous Fluoride**
 : For sensitive teeth.
@@ -85,66 +49,14 @@ _Pure Fresh Mint_
   > - [ ] 
   > - [ ]
 
-
-# Gum 
-
-**Orbit Gum**
-: Contains xylitol.
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ]
-
-**Epic Gum**
-: Contains xylitol.
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ]
-
-**Spry Gum**
-: Contains xylitol.
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ]
-
-**Xyloburst Gum**
-: Contains xylitol.
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ]
-
-**Xylichew Gum**
-: Contains xylitol.
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ]
-
-**Zellie's Gum**
-_With Xylitol_
-: The pieces are too small.
-: The flavor doesn't last very long.
+**Nano-Hydroxyapatite**
+: For sensitive teeth.
 : > - [x] 
   > - [x] 
-  > - [ ] 
-  > - [ ] 
+  > - [x] 
+  > - [x] 
   > - [ ]
 
-**PUR Gum**
-: Contains xylitol.
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ]
 
 # Teeth
 
