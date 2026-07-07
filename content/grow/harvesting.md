@@ -12,6 +12,8 @@ see_also = []
 {{ hidden() }}
 
 
+# Harvesting
+
 **Basil**
 : Start pruning leaves once your plant reaches 6 to 8 inches tall.
 : Harvest before the plant flowers for the best flavor.
@@ -20,3 +22,13 @@ see_also = []
 : > [!IMPORTANT]
   > Be sure to harvest before the plants bolt, as bolting negatively affects flavor and texture.
 : Young baby lettuce leaves can be harvested about 25 days after planting, while full maturity is usually reached in 50 to 60 days. 
+
+
+# Storage
+
+**Lettuce**
+: Store in an airtight container w/ paper towels?
+: Store in a loose container in the fridge?
+: Store in water w/ vinegar in the fridge?
+: Store in aluminum foil in the fridge?
+: Store in plastic wrap in the fridge?
