@@ -116,6 +116,7 @@
 			{{ macros::render_assets(name="Documents", types=["txt", "docx"]) }}
 			{{ macros::render_assets(name="Spreadsheets", types=["xlsx"]) }}
 			{{ macros::render_assets(name="Audio", types=["mp3"]) }}
+			{{ macros::render_assets(name="ZIPs", types=["zip"]) }}
 
 			{% if page.extra.options | default(value=section.extra.options) %} 
             <dt>Options</dt>
