@@ -1,9 +1,11 @@
 +++
 title = "Bacteriological Analytical Manual"
-description = ""
+description = "The FDA's preferred laboratory procedures for microbiological analyses of foods and cosmetics."
+sort_by = "weight"
 
 [extra]
 subtitle = "BAM"
+section_sort_by = "weight"
 updated = 2026-06-01
 site_version = 1
 toc_level = 2
@@ -13,3 +15,4 @@ see_also = [
 +++
 
 {{ hidden() }}
+
