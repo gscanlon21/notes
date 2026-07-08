@@ -1,7 +1,7 @@
 +++
 title = "Concentration, Extraction and Detection of Enteric Viruses from Food and Appendices "
 description = ""
-subtitle = 33
+weight = 33
 
 [extra]
 updated = 2026-06-01

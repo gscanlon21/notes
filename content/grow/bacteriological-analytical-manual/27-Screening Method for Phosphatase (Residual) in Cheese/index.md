@@ -1,7 +1,7 @@
 +++
 title = "Screening Method for Phosphatase (Residual) in Cheese"
 description = ""
-subtitle = 34
+weight = 34
 
 [extra]
 updated = 2026-06-01

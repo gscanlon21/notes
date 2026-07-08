@@ -1,7 +1,7 @@
 +++
 title = "Investigation of Food Implicated in Illness"
 description = ""
-subtitle = 32
+weight = 32
 
 [extra]
 updated = 2026-06-01

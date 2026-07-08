@@ -1,7 +1,7 @@
 +++
 title = "Microbiological Methods for Cosmetics"
 description = ""
-subtitle = 30
+weight = 30
 
 [extra]
 updated = 2026-06-01

@@ -1,7 +1,7 @@
 +++
 title = "Cronobacter"
 description = ""
-subtitle = 36
+weight = 36
 
 [extra]
 updated = 2026-06-01

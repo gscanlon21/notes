@@ -1,7 +1,7 @@
 +++
 title = "Most Probable Number Determination from Serial Dilutions"
 description = ""
-subtitle = 37
+weight = 37
 
 [extra]
 updated = 2026-06-01

@@ -1,7 +1,7 @@
 +++
 title = "Detection of Enterotoxigenic Vibrio cholerae in Foods by the Polymerase Chain Reaction"
 description = ""
-subtitle = 35
+weight = 35
 
 [extra]
 updated = 2026-06-01

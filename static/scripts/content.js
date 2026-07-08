@@ -153,8 +153,9 @@ function generateFlashcards() {
 	for (const wrapper of document.querySelectorAll('.flashcard-wrapper')) {
 		const flashcards = [];
 		let currentFlashcard = null;
-		const dl = wrapper.querySelector('dl');
-		for (const element of dl?.children ?? []) {
+		const dlsTemp = wrapper.querySelectorAll('dl');
+		const dls = dlsTemp ? Array.from(dlsTemp) : null;
+		for (const element of dls?.flatMap(dl => Array.from(dl.children)) ?? []) {
 			if (element.tagName === "DT") {
 				if (currentFlashcard) {
 					flashcards.push(currentFlashcard);
