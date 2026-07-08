@@ -9,14 +9,12 @@ article.v1 {
 		// Nested blockquotes
 		&:has(> blockquote) {
 			margin-inline-start: $base-padding * 3;
-			min-height: $base-padding * 2;
-			align-items: center;
-			display: flex;
+			overflow-y: clip;
 			
 			&::before {
 				content: '“';
 				font-size: $base-font-size * 5;
-				top: $base-font-size * -0.1;
+				top: $base-font-size * -0.25;
 				left: $site-padding * -2.5;
 				position: absolute;
 				line-height: 1;
@@ -39,6 +37,10 @@ article.v1 {
 
 		& + blockquote {
 			margin-block-start: $base-padding * 1.25;
+		}
+
+		& > p {
+			margin-block-start: 0;
 		}
 	}
 

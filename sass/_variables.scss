@@ -3,6 +3,8 @@ $base-padding: 1em;
 $site-padding: 1rem;
 $base-font-size: 1em;
 $site-font-size: 1rem;
+$line-height-loose: 1.5;
+$line-height-tight: 1.25;
 $small-width: 600px !default;
 $large-width: 1600px !default;
 $sidebar-width: 17.5rem !default;
@@ -26,6 +28,7 @@ $body-width-small: 80rem !default;
     :root {
         --color-bg: #{to-rgb(#333)};
         --color-text: #{to-rgb(#fff)};
+		--color-italic: #{to-rgb(#FFB6C1)};
 
         // Link coloring
         --color-link: 109,182,255;
@@ -51,6 +54,7 @@ $body-width-small: 80rem !default;
     :root {
         --color-bg: #{to-rgb(#fff)};
         --color-text: #{to-rgb(#000)};
+		--color-italic: #{to-rgb(#8B008B)};
 
         // Color of code
         --color-code: #{to-rgb(#dcdcdc)};

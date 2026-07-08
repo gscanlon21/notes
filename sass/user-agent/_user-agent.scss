@@ -70,6 +70,10 @@ a {
 	}
 }
 
+em {
+	color: color(--color-italic);
+}
+
 ul, ol, menu {
 	// Remove extra padding from direct descendants.
 	padding-inline-start: $base-padding * 1.2;

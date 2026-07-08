@@ -97,6 +97,10 @@ article.v1 {
 			&:not(:has(dl)) {
 				padding-block-start: $base-padding * 0.25;
 			}
+
+			& > blockquote:not([class^="markdown-alert-"]) {
+				margin-block-start: $base-padding * 0;
+			}
 		}
 
 		dd + dd {
@@ -179,7 +183,7 @@ article.v1 {
 		}
 	}
 
-	blockquote + dl {
+	blockquote + dl:not(+blockquote) {
 		margin-block-start: $base-padding * 2.5;
 	}
 }

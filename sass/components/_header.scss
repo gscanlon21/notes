@@ -46,6 +46,7 @@
 	}
 
 	.header-title {
+		line-height: $line-height-tight;
 		margin-block-start: $site-padding * 2;
 
 		& + .subtitle {
@@ -81,6 +82,8 @@
 		}
 
 		.summary-item {
+			line-height: $line-height-tight;
+
 			a {
 				// Remove un-clickable space between lines.
 				display: inline-block;

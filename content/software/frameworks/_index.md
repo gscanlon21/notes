@@ -1,6 +1,6 @@
 +++
-title = "Languages"
-sort_by = "title"
+title = "Frameworks"
+description = ""
 
 [extra]
 updated = 2026-01-01
