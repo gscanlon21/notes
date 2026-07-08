@@ -4,6 +4,7 @@ description = ""
 weight = 1
 
 [extra]
+subtitle = "Chapter 1"
 updated = 2026-06-01
 site_version = 1
 toc_level = 2
@@ -64,7 +65,22 @@ TODO!
 TODO!
 
 # Receipt of samples
-TODO!
+**Condition of sampling container**
+: >> Check sampling containers for gross physical defects. 
+  >> Carefully inspect plastic bags and bottles for tears, pinholes, and puncture marks. 
+  >> If sample units were collected in plastic bottles, check bottles for fractures and loose lids. 
+  >> If plastic bags were used for sampling, be certain that twist wires did not puncture surrounding bags. 
+  >> Any cross-contamination resulting from one or more of above defects would invalidate the sample, and the collecting district should be notified (see C-5, below)
+
+**Adherence to sampling plan**
+: > Most foods are collected under a specifically designed sampling plan in one of several ongoing compliance programs. 
+  > Foods to be examined for Salmonella, however, are sampled according to a statistically based sampling plan designed exclusively for use with this pathogen. Depending on the food and the type of analysis to be performed, determine whether the food has been sampled according to the most appropriate sampling plan.
+
+**Storage**
+: >> If possible, examine samples immediately upon receipt. 
+  >> If analysis must be postponed, however, store frozen samples at -20°C until examination. 
+  >> Refrigerate unfrozen perishable samples at 0-4°C not longer than 36 h. 
+  >> Store nonperishable, canned, or low-moisture foods at room temperature until analysis.
 
 # Thawing
 TODO!
