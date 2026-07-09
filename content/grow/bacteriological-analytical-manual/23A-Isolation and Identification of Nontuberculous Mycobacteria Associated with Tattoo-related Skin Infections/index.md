@@ -1,6 +1,7 @@
 +++
 title = "Isolation and Identification of Nontuberculous Mycobacteria Associated with Tattoo-related Skin Infections"
 description = ""
+render = false
 weight = 31
 
 [extra]
@@ -8,7 +9,7 @@ updated = 2026-06-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "Bacteriological Analytical Manual", href = "https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam" },
+  { title = "Chapter 23A", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-23a-isolation-and-identification-nontuberculous-mycobacteria-associated-tattoo-related" },
 ]
 +++
 

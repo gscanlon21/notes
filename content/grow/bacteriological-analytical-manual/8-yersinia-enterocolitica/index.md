@@ -8,7 +8,7 @@ updated = 2026-06-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "Bacteriological Analytical Manual", href = "https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam" },
+  { title = "Chapter 8", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-8-yersinia-enterocolitica" },
 ]
 +++
 

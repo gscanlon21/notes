@@ -1,6 +1,7 @@
 +++
 title = "Examination of Containers for Integrity: Glossary and References"
 description = ""
+render = false
 weight = 29
 
 [extra]
@@ -8,7 +9,7 @@ updated = 2026-06-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "Bacteriological Analytical Manual", href = "https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam" },
+  { title = "Chapter 22D", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-22d-examination-containers-integrity" },
 ]
 +++
 

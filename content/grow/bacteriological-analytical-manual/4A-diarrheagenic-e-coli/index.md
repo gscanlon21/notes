@@ -4,6 +4,7 @@ description = ""
 weight = 5
 
 [extra]
+subtitle = "Chapter 4a"
 updated = 2026-06-01
 site_version = 1
 toc_level = 2
@@ -13,3 +14,14 @@ see_also = [
 +++
 
 {{ hidden() }}
+
+# Hydroponic Lettuce
+?
+
+# Terminology
+?
+
+# Overview
+?
+
+# Chapter 4a

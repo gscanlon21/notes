@@ -1,6 +1,7 @@
 +++
 title = "Examination of Glass Containers for Integrity"
 description = ""
+render = false
 weight = 27
 
 [extra]
@@ -8,7 +9,7 @@ updated = 2026-06-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "Bacteriological Analytical Manual", href = "https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam" },
+  { title = "Chapter 22B", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-22b-examination-glass-containers-integrity" },
 ]
 +++
 

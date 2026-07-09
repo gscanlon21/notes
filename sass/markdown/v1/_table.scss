@@ -46,13 +46,11 @@ article.v1 {
 			}
 		}
 
-		&.narrow {
-			max-width: min-content !important;
+		&.narrow > table, &.academic > table {
+			width: auto;
 		}
 
 		&.academic {
-			max-width: min-content !important;
-
 			td {
 				border-top: 0;
 				border-bottom: 0;
