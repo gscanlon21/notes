@@ -5,6 +5,7 @@ render = false
 weight = 34
 
 [extra]
+subtitle = "Chapter 27"
 updated = 2026-06-01
 site_version = 1
 toc_level = 2

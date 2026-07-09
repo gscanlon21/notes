@@ -82,6 +82,8 @@
 		}
 
 		.summary-item {
+			margin-block-start: $base-padding * 0.1;
+			margin-block-end: $base-padding * 0.25;
 			line-height: $line-height-tight;
 
 			a {

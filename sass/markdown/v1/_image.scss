@@ -1,0 +1,14 @@
+article.v1 {
+	details.image {
+		border: 2px dashed color(--color-text);
+		margin-block: $base-padding * 1;
+
+		summary {
+			margin-inline-start: $base-padding * 0.5;
+
+			p {
+				margin-block: $base-padding * 0;
+			}
+		}
+	}
+}

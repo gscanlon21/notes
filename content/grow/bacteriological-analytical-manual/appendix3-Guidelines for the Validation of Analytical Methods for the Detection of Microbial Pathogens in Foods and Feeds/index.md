@@ -1,6 +1,7 @@
 +++
 title = "Guidelines for the Validation of Analytical Methods for the Detection of Microbial Pathogens in Foods and Feeds"
 description = ""
+render = false
 weight = 38
 
 [extra]
