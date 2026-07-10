@@ -1,6 +1,8 @@
 +++
 title = "Isolation and Identification of Nontuberculous Mycobacteria Associated with Tattoo-related Skin Infections"
 description = ""
+in_search_index = false
+transparent = true
 render = false
 weight = 31
 

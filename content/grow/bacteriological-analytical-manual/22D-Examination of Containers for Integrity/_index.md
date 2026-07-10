@@ -1,6 +1,8 @@
 +++
 title = "Examination of Containers for Integrity: Glossary and References"
 description = ""
+in_search_index = false
+transparent = true
 render = false
 weight = 29
 

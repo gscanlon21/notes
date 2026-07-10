@@ -1,6 +1,8 @@
 +++
 title = "Inhibitory Substances in Milk"
 description = ""
+in_search_index = false
+transparent = true
 render = false
 weight = 22
 

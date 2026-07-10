@@ -1,6 +1,8 @@
 +++
 title = "Modification of Headspace Gas Analysis Methodology, Using the SP4270 Integrator"
 description = ""
+in_search_index = false
+transparent = true
 render = false
 weight = 25
 

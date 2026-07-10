@@ -1,6 +1,8 @@
 +++
 title = "Screening Method for Phosphatase (Residual) in Cheese"
 description = ""
+in_search_index = false
+transparent = true
 render = false
 weight = 34
 

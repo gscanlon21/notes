@@ -68,6 +68,7 @@
 
 	<script defer src="{{ get_url(path="/scripts/search.js", cachebust=true) }}"></script>
 	<script defer src="{{ get_url(path="/scripts/content.js", cachebust=true) }}"></script>
+	<script defer src="{{ get_url(path="/scripts/flashcards.js", cachebust=true) }}"></script>
 
 	{% if page.extra.stylesheets | default(value=section.extra.stylesheets) %}
 		{% for stylesheet in page.extra.stylesheets | default(value=section.extra.stylesheets) %}
@@ -84,6 +85,15 @@
 		<span class="header-item"><a href="{{ get_url(path="@/_index.md") }}">Sitemap</a></span>
 	</header>
 	{% endblock header %}
+
+	<nav class="print context">
+		<div class="left">
+			{{ page.title | default(value=section.title | default(value="")) }}
+		</div>
+		<div class="right">
+			{{ page.extra.context | default(value=section.extra.context | default(value="")) }}
+		</div>
+	</nav>
 
 	<main id="main">
 		{% block content %}

@@ -70,5 +70,5 @@ analytical course of action, the microbiologist must use reason, imagination, an
 
 
 > [!NOTE]
-> [See attached](/一Chapter_25.pdf) for tables.
+> [See attached](一Chapter_25.pdf) for tables.
 >> Supplementary Data

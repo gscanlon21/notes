@@ -1,6 +1,8 @@
 +++
 title = "Vibrio"
 description = "This is a mostly sea-fairing bacterium."
+in_search_index = false
+transparent = true
 render = false
 weight = 10
 

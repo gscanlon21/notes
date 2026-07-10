@@ -8,6 +8,7 @@ updated = 2026-06-01
 site_version = 1
 toc_level = 3
 see_also = [
+  { title = "Köhler Illumination", href = "https://www.youtube.com/watch?v=Aofd9pO9tzw" },
   { title = "Microscopic Examination of Foods, and Care and Use of the Microscope", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-2-microscopic-examination-foods" },
 ]
 +++
@@ -83,7 +84,6 @@ _See [Attached](一Chapter_2.pdf)_
 
 
 ## Care and Use of the Microscope
-TODO!
 
 ### Caveats
 - Never dust a lens by blowing on it. Saliva will inevitably be deposited on lenses and is harmful, even in minute amounts. 
@@ -147,8 +147,10 @@ distance needed when eyeglasses are worn. These eyepieces are identified in some
 by the manufacturer. 
 
 >> To take advantage of the optimal resolution and illumination of the microscope, a technique 
-known as Koehlor illumination is used. NOTE: Some settings may have been preset by the 
-manufacturer and will not be adjustable. 
+known as Koehlor illumination is used. 
+
+> [!NOTE]
+> Some settings may have been preset by the manufacturer and will not be adjustable. 
 
 >> With a slide specimen on the stage, use a low power (2-10X) objective, and focus with the 
 coarse and fine adjustments. Low magnification provides a larger field of view for easier 

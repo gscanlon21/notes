@@ -4,9 +4,10 @@ description = ""
 weight = 3
 
 [extra]
+authors = ["Guodong Zhang", "Martine Ferguson", "Robert J. Blodgett"]
 updated = 2026-06-01
 site_version = 1
-toc_level = 2
+toc_level = 3
 see_also = [
   { title = "Aerobic Plate Count", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-3-aerobic-plate-count" },
 ]
@@ -16,7 +17,9 @@ see_also = [
 
 
 # Hydroponic Lettuce
-?
+
+**Sampling**
+: See [food sampling](/bam-chapter-1)
 
 # Terminology
 ?

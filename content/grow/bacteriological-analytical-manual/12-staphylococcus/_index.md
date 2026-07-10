@@ -4,7 +4,7 @@ description = ""
 weight = 12
 
 [extra]
-authors = ["Sandra Tallent, Jennifer Hait, Reginald W. Bennett (ret.), and Gayle A. Lancette (ret.)"]
+authors = ["Sandra Tallent", "Jennifer Hait", "Reginald W. Bennett", "Gayle A. Lancette"]
 subtitle = "Chapter 12"
 updated = 2026-06-01
 site_version = 1

@@ -1,6 +1,8 @@
 +++
 title = "Rapid HPLC Determination of Sulfamethazine in Milk"
 description = ""
+in_search_index = false
+transparent = true
 render = false
 weight = 23
 

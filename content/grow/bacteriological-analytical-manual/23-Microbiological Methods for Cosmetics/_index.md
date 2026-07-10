@@ -1,6 +1,8 @@
 +++
 title = "Microbiological Methods for Cosmetics"
 description = ""
+in_search_index = false
+transparent = true
 render = false
 weight = 30
 

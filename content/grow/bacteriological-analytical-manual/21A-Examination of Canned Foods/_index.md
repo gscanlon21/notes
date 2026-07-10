@@ -1,6 +1,8 @@
 +++
 title = "Examination of Canned Foods"
 description = ""
+in_search_index = false
+transparent = true
 render = false
 weight = 24
 

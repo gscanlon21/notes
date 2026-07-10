@@ -1,6 +1,8 @@
 +++
 title = "Examination of Flexible and Semirigid Food Containers for Integrity"
 description = ""
+in_search_index = false
+transparent = true
 render = false
 weight = 28
 

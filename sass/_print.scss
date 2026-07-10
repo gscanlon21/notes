@@ -1,3 +1,7 @@
+.print {
+    display: none;
+}
+
 @media screen {
 	.page[data-orientation="portrait"] {
 		margin: 10mm;
@@ -36,10 +40,32 @@
 	.page {
 		padding-bottom: 0 !important;
 		margin-bottom: 0 !important;
-		margin: 0 !important;
+		margin-top: 10mm !important;
 	}
+
+	.context {
+        border-bottom: 1px solid color(--color-text, 0.75);
+		justify-content: space-between;
+		padding-bottom: 1mm;
+		position: absolute;
+		font-size: 12px;
+		display: flex;
+		width: 100%;
+		top: 0;
+
+		.left {
+			left: 0;
+		}
+
+		.right {
+			right: 0;
+		}
+    }
 }
 
 @page {
-	margin: 10mm;
+	margin-top: 7mm;
+	margin-left: 10mm;
+	margin-right: 10mm;
+	margin-bottom: 10mm;
 }

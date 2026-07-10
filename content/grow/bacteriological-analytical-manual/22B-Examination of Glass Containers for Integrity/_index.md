@@ -1,6 +1,8 @@
 +++
 title = "Examination of Glass Containers for Integrity"
 description = ""
+in_search_index = false
+transparent = true
 render = false
 weight = 27
 

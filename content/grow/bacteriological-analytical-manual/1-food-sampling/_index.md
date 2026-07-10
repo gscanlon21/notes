@@ -1,69 +1,21 @@
 +++
 title = "Food Sampling and Preparation of Sample Homogenate"
+aliases = ["bam-chapter-1"]
 description = ""
 weight = 1
 
 [extra]
+authors = ["Wallace H. Andrews", "Thomas S. Hammack"]
 subtitle = "Chapter 1"
 updated = 2026-06-01
 site_version = 1
 toc_level = 3
 see_also = [
-  { title = "Food Sampling and Preparation of Sample Homogenate", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-1-food-samplingpreparation-sample-homogenate" },
+  { title = "Chapter 1", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-1-food-samplingpreparation-sample-homogenate" },
 ]
 +++
 
 {{ hidden() }}
-
-
-# Hydroponic Produce
-
-**Food Classification**
-: Food Category II
-: 30 individual 25 g analytical units or 2 composite units of 375 g if applicable.
-
-## Sampling and Analysis
-
-> [!NOTE]
-> This is different for Salmonella vs. aerobic bacteria.
-
-### Salmonella
-**Collect Sample Units**
-: Skipping because there is no transfer to a lab.
-
-**Collect Analytical Units**
-: In most cases, two composite units of 375 g each is acceptable.
-: Individual leaves should be selected from a random selection of plants.
-: If there's not enough produce, a complete and partial composite unit should be selected.
-: If there's still not enough produce, sample a partial composite unit, though this is risky.
-: All composites, partial or complete, should be preenriched at a 1:9 sample-to-broth ratio.
-: Refrigerate perishable samples and samples supporting microbial growth.
-
-### Aerobic Bacteria
-**Collect Sample Units**
-: Skipping because there is no transfer to a lab.
-
-**Collect Analytical Units**
-: Collect ten 8-oz subsamples at random.
-
-
-## Storage
-?
-
-## Thawing
-?
-
-## Mixing
-?
-
-## Weighing
-?
-
-## Blending
-?
-
-## Diluting
-?
 
 
 # Terminology
@@ -284,7 +236,7 @@ _See [Attached](一Chapter_1.pdf)_
 >> Analyze samples as indicated in current compliance programs.
 
 
-## Equipment and materials
+## Equipment and Materials
 **Mechanical Blender**
 : Several types are available. Use blender that has several operating speeds or rheostat. 
 : The term "high-speed blender" designates mixer with 4 canted, sharp-edge, stainless steel blades rotating at bottom of 4 lobe jar at 10,000-12,000 rpm or with equivalent shearing action. 
