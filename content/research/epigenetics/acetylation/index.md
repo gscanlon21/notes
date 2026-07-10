@@ -13,6 +13,6 @@ see_also = []
 # Review Articles
 
 **Bacterial protein acetylation: mechanisms, functions, and methods for study**
-? et al. ?
+Rizo et al. 2024
 _[Review Article](/doi/10.3389/fcimb.2024.1408947.pdf)_ 
 : ?

@@ -1,5 +1,5 @@
 +++
-title = "Cell Signaling"
+title = "Notch Signaling"
 description = ""
 sort_by = "title"
 weight = 999
@@ -11,6 +11,11 @@ see_also = []
 
 {{ hidden() }}
 
+
+# Terminology
+
+**Notch Signaling**
+: ?
 
 
 # Review Articles

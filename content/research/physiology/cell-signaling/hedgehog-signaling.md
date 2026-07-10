@@ -1,5 +1,5 @@
 +++
-title = "Cell Signaling"
+title = "Hedgehog Signaling"
 description = ""
 sort_by = "title"
 weight = 999
@@ -11,6 +11,11 @@ see_also = []
 
 {{ hidden() }}
 
+
+# Terminology
+
+**Hedgehog Signaling**
+: ?
 
 
 # Review Articles

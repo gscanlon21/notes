@@ -61,8 +61,8 @@ _[Article](/doi/10.1038/s41433-024-03517-z.pdf)_
 : ?
 
 **Computer prediction and genetic analysis identifies retinoic acid modulation as a driver of conserved longevity pathways in genetically diverse Caenorhabditis nematodes**
- et al. 
-_[Article](/doi/10.7554/eLife.104375.pdf)_ 
+Banse et al. 2024
+_[Research Article](/doi/10.7554/eLife.104375.pdf)_ 
 : ?
 
 ****
