@@ -161,10 +161,12 @@ function generateFlashcards() {
 					flashcards.push(currentFlashcard);
 				}
 
-				currentFlashcard = {
-					front: element.querySelector("strong")?.textContent.trim() ?? element.textContent.trim(),
-					subheader: element.querySelector("em")?.textContent.trim() ?? "",
-					back: []
+				const front = element.querySelector("strong")?.textContent.trim();
+				currentFlashcard = { 
+					group: front ? 1 : 2,
+					front: front ?? element.textContent.trim(), 
+					subheader: element.querySelector("em")?.textContent.trim() ?? "", 
+					back: [], 
 				};
 			}
 			else if (element.tagName === "DD" && currentFlashcard) {
@@ -179,7 +181,10 @@ function generateFlashcards() {
 		if (flashcards.length > 0) {
 			flashcardSections.push({
 				header: wrapper.dataset.header,
-				flashcards: flashcards.aShuffle(),
+				flashcards: [
+					...flashcards.filter(f => f.group === 1).aShuffle(),
+					...flashcards.filter(f => f.group === 2).aShuffle(),
+				],
 			});
 		}
 	}
