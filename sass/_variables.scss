@@ -30,6 +30,12 @@ $body-width-small: 80rem !default;
         --color-text: #{to-rgb(#fff)};
 		--color-italic: #{to-rgb(#FFB6C1)};
 
+		// Header colors
+		--color-h1: #{to-rgb(#fff)};
+		--color-h2: #{to-rgb(#DC143C)};
+		--color-h3: #{to-rgb(#3CB371)};
+		--color-h4: #{to-rgb(#4169E1)};
+
         // Link coloring
         --color-link: 109,182,255;
         --color-link-visited: 182,109,255;
@@ -55,6 +61,12 @@ $body-width-small: 80rem !default;
         --color-bg: #{to-rgb(#fff)};
         --color-text: #{to-rgb(#000)};
 		--color-italic: #{to-rgb(#8B008B)};
+
+		// Header colors
+		--color-h1: #{to-rgb(#000)};
+		--color-h2: #{to-rgb(#DC143C)};
+		--color-h3: #{to-rgb(#3CB371)};
+		--color-h4: #{to-rgb(#4169E1)};
 
         // Color of code
         --color-code: #{to-rgb(#dcdcdc)};

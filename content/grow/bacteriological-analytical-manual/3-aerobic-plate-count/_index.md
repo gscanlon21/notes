@@ -16,11 +16,6 @@ see_also = [
 {{ hidden() }}
 
 
-# Hydroponic Lettuce
-
-**Sampling**
-: See [food sampling](/bam-chapter-1)
-
 # Terminology
 ?
 

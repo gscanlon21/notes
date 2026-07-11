@@ -83,6 +83,10 @@ see_also = []
   "**/*.pdf*": true,
 },
 
+// Autosave after 10s
+"files.autoSave": "afterDelay",
+"files.autoSaveDelay": 10000,
+
 // Ignore solution files
 "files.exclude": {
   "scripts": true,

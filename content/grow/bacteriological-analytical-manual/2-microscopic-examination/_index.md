@@ -1,6 +1,6 @@
 +++
 title = "Microscopic Examination of Foods, and Care and Use of the Microscope"
-description = ""
+description = "Chapter 2 of the Bacteriological Analytical Manual."
 weight = 2
 
 [extra]
@@ -9,14 +9,12 @@ site_version = 1
 toc_level = 3
 see_also = [
   { title = "Köhler Illumination", href = "https://www.youtube.com/watch?v=Aofd9pO9tzw" },
-  { title = "Microscopic Examination of Foods, and Care and Use of the Microscope", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-2-microscopic-examination-foods" },
+  { title = "Chapter 2", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-2-microscopic-examination-foods" },
 ]
 +++
 
 {{ hidden() }}
 
-# Hydroponic Lettuce
-?
 
 # Terminology
 ?
@@ -47,39 +45,20 @@ of the following genera: Salmonella, Shigella, Escherichia, Yersinia, Vibrio, or
 ## Direct Microscopic Examination of Foods 
 ## (Except Eggs)
 
-### Equipment and materials 
-1. Glass slides, 25 × 75 mm, with etched portion for labeling; 1 slide for each blended food sample (10-1 dilution) 
-2. Wire loop, 3-4 mm, platinum-iridium or nichrome, B&S gauge No. 24 or 26 
-3. Gram stain reagents (R32) 
-4. Microscope, with oil immersion objective lens (95-100×) and 10× ocular 
-5. Immersion oil 
-6. Methanol 
-7. Xylene 
-
 ### Procedure
->> Prepare film of blended food sample (10-1 dilution). Air-dry films and fix with moderate heat 
-by passing films rapidly over Bunsen or Fisher burner flame 3 or 4 times. Alternatively, air
-dry films and fix with methanol 1-2 min, drain excess methanol, and flame or air-dry (this is 
-particularly helpful for foods with a high sugar content). Cool to room temperature before 
-staining. De-fat films of food with high fat content by immersing films in xylene 1-2 min; then 
-drain, wash in methanol, drain, and dry. Stain film by Gram-staining procedure (R32). Use 
-microscope equipped with oil immersion objective (95-100×) and 10× ocular; adjust lighting 
-systems to Koehlor illumination. Examine at least 10 fields of each film, noting predominant 
-types of organisms, especially clostridial forms, Gram-positive cocci, and Gram-negative 
-bacilli.
+>> Prepare film of blended food sample (10-1 dilution). 
+Air-dry films and fix with moderate heat by passing films rapidly over Bunsen or Fisher burner flame 3 or 4 times. 
+Alternatively, airdry films and fix with methanol 1-2 min, drain excess methanol, and flame or air-dry (this is particularly helpful for foods with a high sugar content). 
+
+>> Cool to room temperature before staining. 
+De-fat films of food with high fat content by immersing films in xylene 1-2 min; then drain, wash in methanol, drain, and dry. 
+Stain film by Gram-staining procedure (R32). 
+Use microscope equipped with oil immersion objective (95-100×) and 10× ocular; adjust lighting systems to Koehlor illumination. 
+Examine at least 10 fields of each film, noting predominant types of organisms, especially clostridial forms, Gram-positive cocci, and Gram-negative bacilli.
 
 
 ## Direct Microscopic Examination of Eggs 
 ## (2)
-_See [Attached](一Chapter_2.pdf)_
-
-### Equipment and materials
-_See [Attached](一Chapter_2.pdf)_
-
-### Procedure for liquid and frozen eggs
-_See [Attached](一Chapter_2.pdf)_
-
-### Procedure for dried egg products 
 _See [Attached](一Chapter_2.pdf)_
 
 

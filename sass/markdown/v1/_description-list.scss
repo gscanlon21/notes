@@ -90,7 +90,7 @@ article.v1 {
 		}
 
 		dt + dd {
-			& > ul {
+			& > ul, & > ol, & > menu {
 				margin-block-start:	0;
 			}
 

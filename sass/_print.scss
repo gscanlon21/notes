@@ -1,7 +1,3 @@
-.print {
-    display: none;
-}
-
 @media screen {
 	.page[data-orientation="portrait"] {
 		margin: 10mm;
@@ -37,35 +33,32 @@
 }
 
 @media print {
-	.page {
-		padding-bottom: 0 !important;
-		margin-bottom: 0 !important;
-		margin-top: 10mm !important;
+	.page, .section {
+		margin-inline-start: 3mm !important;
+		margin-inline-end: 0 !important;
+		padding-block-end: 0 !important;
+		margin-block: 0 !important;
 	}
 
 	.context {
         border-bottom: 1px solid color(--color-text, 0.75);
+		margin-inline-start: 3mm !important;
+		margin-block-end: 3mm !important;
 		justify-content: space-between;
+		display: flex !important;
 		padding-bottom: 1mm;
-		position: absolute;
 		font-size: 12px;
-		display: flex;
 		width: 100%;
-		top: 0;
-
-		.left {
-			left: 0;
-		}
-
-		.right {
-			right: 0;
-		}
     }
 }
 
 @page {
 	margin-top: 7mm;
-	margin-left: 10mm;
+	margin-left: 7mm;
 	margin-right: 10mm;
 	margin-bottom: 10mm;
+}
+
+.print {
+    display: none;
 }

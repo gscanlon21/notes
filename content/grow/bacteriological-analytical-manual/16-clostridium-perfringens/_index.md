@@ -1,6 +1,9 @@
 +++
 title = "Clostridium perfringens"
-description = ""
+description = "A common bacteria; mostly pathogenic when food is inadequately cooled after cooking."
+in_search_index = false
+transparent = true
+render = false
 weight = 15
 
 [extra]
@@ -17,6 +20,12 @@ see_also = [
 {{ hidden() }}
 
 
+# Terminology
+?
+
+
+# Overview
+?
 
 
 # Chapter 16
@@ -81,21 +90,23 @@ Store sample at -70 to -90°F on receipt and keep at this temperature until exam
 within a few days.
 
 
+## Cultural Methods for Enumeration and Identification of Clostridium perfringens in Foods 
+?
 
+### Equipment and materials
+? 
 
+### Media and reagents
+?
 
+### Cultural and isolation procedures
+? 
 
+### Presumptive confirmation test
+?
 
+### Completed confirmation test
+? 
 
-
-
-
-- - -
-
-CULTURAL METHODS FOR ENUMERATION AND IDENTIFICATION OF CLOSTRIDIUM PERFRINGENS IN FOODS .......................................................................... 4 
-A. Equipment and materials .......................................................................................................... 4 
-B. Media and reagents .................................................................................................................. 5 
-C. Cultural and isolation procedures ............................................................................................. 5 
-D. Presumptive confirmation test .................................................................................................. 6 
-E. Completed confirmation test ..................................................................................................... 7 
-F. Culturing procedures for sporulation and enterotoxin production ............................................. 8
+### Culturing procedures for sporulation and enterotoxin production
+? 

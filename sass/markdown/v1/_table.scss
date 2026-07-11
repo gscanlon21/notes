@@ -27,11 +27,12 @@ article.v1 {
 			font-size: $base-font-size * 0.75;
 			border-bottom-right-radius: $border-radius;
 			border-bottom-left-radius: $border-radius;
+			margin-block-start: $base-padding * 0;
+			margin-block-end: $base-padding * 1;
 			padding-block: $base-padding / 2;
 			padding-inline: $base-padding;
-			margin-block-start: 0;
-			position: absolute;
-			right: 0;
+			justify-content: end;
+			display: flex;
 			
 			&:empty {
 				display: none;
@@ -48,6 +49,14 @@ article.v1 {
 
 		&.narrow > table, &.academic > table {
 			width: auto;
+		}
+
+		&.small {
+			table {
+				th, td {
+					padding: $base-padding * 0.25;
+				}
+			}
 		}
 
 		&.academic {

@@ -11,6 +11,7 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "Bacteriological Analytical Manual", href = "https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam" },
+  { title = "Compendium of Methods for the Microbiological Examination of Foods", href = "https://ajph.aphapublications.org/doi/book/10.2105/MBEF.0222" },
 ]
 +++
 

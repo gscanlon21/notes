@@ -4,7 +4,9 @@ description = ""
 
 [extra]
 updated = 2026-01-01
-see_also = []
+see_also = [
+  { title = "MDN Named Colors", href = "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/named-color" },
+]
 +++
 
 {{ hidden() }}

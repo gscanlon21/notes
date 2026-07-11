@@ -1,6 +1,8 @@
 +++
 title = "Detection of Enterotoxigenic Vibrio cholerae in Foods by the Polymerase Chain Reaction"
 description = "This is a mostly sea-fairing bacterium."
+in_search_index = false
+transparent = true
 render = false
 weight = 35
 

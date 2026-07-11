@@ -4,6 +4,7 @@ description = ""
 weight = 32
 
 [extra]
+authors = ["George J. Jackson", "Joseph M. Madden", "Walter E. Hill", "Karl C. Klontz"]
 subtitle = "Chapter 25"
 updated = 2026-06-01
 site_version = 1
