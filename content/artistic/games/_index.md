@@ -3,6 +3,7 @@ title = "Games"
 sort_by = "title"
 
 [extra]
+updated = 2026-01-01
 see_also = [
   { title = "Catan", href = "https://colonist.io/" },
   { title = "Codenames", href = "https://codenames.game/" },
@@ -13,3 +14,10 @@ see_also = [
 +++
 
 {{ hidden() }}
+
+
+# Word Games
+
+**[Smush](https://www.hankgreen.com/smush)**
+: Each letter gets 5 uses. Except the gold one, which is always required.
+

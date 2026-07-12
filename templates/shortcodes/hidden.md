@@ -1,6 +1,6 @@
 {% if show | default(value=true) %}
 
-<div class="visibility--hidden">
+<aside class="display--none">
 
 {% if page.extra.see_also | default(value=section.extra.see_also) %} 
 {% for also in page.extra.see_also | default(value=section.extra.see_also) %}
@@ -28,6 +28,6 @@
 {% endfor %}
 {% endif %}
 
-</div>
+</aside>
 
 {% endif %}

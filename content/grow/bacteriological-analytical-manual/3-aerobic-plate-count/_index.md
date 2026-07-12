@@ -9,7 +9,7 @@ updated = 2026-06-01
 site_version = 1
 toc_level = 3
 see_also = [
-  { title = "Aerobic Plate Count", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-3-aerobic-plate-count" },
+  { title = "Chapter 3", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-3-aerobic-plate-count" },
 ]
 +++
 
@@ -118,19 +118,52 @@ plates received. For example, for a two-plate experiment, if plate 1 has a homog
 #### Examples of APC Calculations
 
 ##### 2.1 Examples from Common Scenarios
-?
 
-###### Example 2.1a: Four plates and two dilutions
-?
+{% table(header="Example 2.1a: Four plates and two dilutions") %}
+| Plate   | Colony Count (N, CFU) | Dilution Ratio | Inoculum Size | Original Homogenate (V, ml) | Ratio (R, CFU/ml) |
+|---------|-----------------------|----------------|---------------|-----------------------------|-------------------|
+| Plate 1 | 144 CFU               | 1:100          | 1 ml          | 0.01 ml                     | 14,400            |
+| Plate 2 | 118 CFU               | 1:100          | 1 ml          | 0.01 ml                     | 11,800            |
+| Plate 3 | 26 CFU                | 1:1000         | 1 ml          | 0.001 ml                    | 26,000            |
+| Plate 4 | 20 CFU                | 1:1000         | 1 ml          | 0.001 ml                    | 20,000            |
+{% end %}
 
-###### Example 2.1b: Two plates with the same dilution
-?
+<h6>
+The total amount of the original homogenate received by all plates is 2*0.01ml+2*0.001ml = 0.022 ml. 
+The APC estimate, using MLE, equates to the weighted average of plate R’s. 
+The weight for plates 1 and 2 is 0.01/0.022=10/22. 
+The weight for plates 3 and 4 is 0.001/0.022=1/22. 
+APC = ΣwiRi. = 1 0/22 (14,400 CFU/ml) + 10/22 (11,800 CFU/ml) + 1/22 (26,000 CFU/ml) + 1/22 (20,000 CFU/ml) = 308,000/22 CFU/ml = 14,000 CFU/ml.
+</h6>
 
-###### Example 2.1c: Two plates with different dilutions
-?
+{% table(header="Example 2.1b: Two plates with the same dilution") %}
+| Plate   | Colony Count (N, CFU) | Dilution Ratio | Inoculum Size | Original Homogenate (V, ml) | Ratio (R, CFU/ml) |
+|---------|-----------------------|----------------|---------------|-----------------------------|-------------------|
+| Plate 1 | 27 CFU                | 1:100          | 1 ml          | 0.01 ml                     | 2,700             |
+| Plate 2 | 51 CFU                | 1:100          | 1 ml          | 0.01 ml                     | 5,100             |
+{% end %}
+
+<h6>
+The amount of the original homogenate received by all plates is 0.02 ml. 
+The weight for each plate is 0.01/0.02 = 1/2. 
+Concentration = 1/2 (2700 CFU/ml) + 1/2 (5100 CFU/ml) = 7800/2 CFU/ml = 3900 CFU/ml. 
+</h6>
+
+{% table(header="Example 2.1c: Two plates with different dilutions") %}
+| Plate   | Colony Count (N, CFU) | Dilution Ratio | Inoculum Size | Original Homogenate (V, ml) | Ratio (R, CFU/ml) |
+|---------|-----------------------|----------------|---------------|-----------------------------|-------------------|
+| Plate 1 | 120 CFU               | 1:100          | 1 ml          | 0.01 ml                     | 12,000            |
+| Plate 2 | 23 CFU                | 1:1000         | 1 ml          | 0.001 ml                    | 23,000            |
+{% end %}
+
+<h6>
+The amount of the original homogenate received by all plates is 0.011 ml. 
+The weight for plate 1 is 0.01/0.011=10/11. 
+The weight for plate 2 is 0.001/0.011=1/11. 
+Concentration = 10/11 (12,000 CFU/ml) + 1/11 (23,000 CFU/ml) = 143,000/11 CFU/ml = 13,000 CFU/ml. 
+</h6>
 
 ##### 2.2 Examples from Other Scenarios
-?
 
 ###### Example 2.2a: One plate
 ?

@@ -8,34 +8,38 @@
 	{% for item in toc %}
 	{% if item.level < 5 %}
 	{% if not exclude or item.id is not containing(exclude) %}
-	{% if item.title is not starting_with('"') or item.title is not ending_with('"') %}
-	{% if item.title is not starting_with('(') or item.title is not ending_with(')') %}
-	{% if item.title is not starting_with('[') or item.title is not ending_with(']') %}
-	{% if item.title is not starting_with('_') and item.title is not ending_with(':') %}
-	{% if item.title is not starting_with(':') and item.title is not starting_with('-') %}
-	{% if item.title is not starting_with('&') and item.title is not starting_with('@') %}
-	{% if item.title is not starting_with('#') and item.title is not starting_with('*') %}
-		<li>
-			<a href="{{ item.permalink }}">{{ item.title }}</a>
-			{% if item.children and item.level < max_level %}
-				{{ macros::render_toc(toc=item.children, max_level=max_level) }}
-			{% endif %}
-		</li>
-	{% elif item.children and item.level < max_level %}
-		{{ macros::render_toc(toc=item.children, max_level=max_level) }}
-	{% endif %}
-	{% elif item.children and item.level < max_level %}
-		{{ macros::render_toc(toc=item.children, max_level=max_level) }}
-	{% endif %}
-	{% elif item.children and item.level < max_level %}
-		{{ macros::render_toc(toc=item.children, max_level=max_level) }}
-	{% endif %}
-	{% elif item.children and item.level < max_level %}
-		{{ macros::render_toc(toc=item.children, max_level=max_level) }}
-	{% endif %}
-	{% endif %}
-	{% endif %}
-	{% endif %}
+		{% if item.title is not starting_with('"') or item.title is not ending_with('"') %}
+		{% if item.title is not starting_with('(') or item.title is not ending_with(')') %}
+		{% if item.title is not starting_with('[') or item.title is not ending_with(']') %}
+		{% if item.title is not starting_with(':') and item.title is not starting_with('$') %}
+		{% if item.title is not starting_with('_') and item.title is not starting_with('-') %}
+		{% if item.title is not starting_with('&') and item.title is not starting_with('@') %}
+		{% if item.title is not starting_with('#') and item.title is not starting_with('*') %}
+		{% if item.title is not starting_with('0') and item.title is not starting_with('1') %}
+		{% if item.title is not starting_with('2') and item.title is not starting_with('3') %}
+		{% if item.title is not starting_with('4') and item.title is not starting_with('5') %}
+		{% if item.title is not starting_with('6') and item.title is not starting_with('7') %}
+		{% if item.title is not starting_with('8') and item.title is not starting_with('9') %}
+		{% if item.title is not ending_with('.') and item.title is not ending_with(':') and item.title is not ending_with('%') %}
+			<li>
+				<a href="{{ item.permalink }}">{{ item.title }}</a>
+			</li>
+		{% endif %}
+		{% endif %}
+		{% endif %}
+		{% endif %}
+		{% endif %}
+		{% endif %}
+		{% endif %}
+		{% endif %}
+		{% endif %}
+		{% endif %}
+		{% endif %}
+		{% endif %}
+		{% endif %}
+		{% if item.children and item.level < max_level %}
+			{{ macros::render_toc(toc=item.children, max_level=max_level) }}
+		{% endif %}
 	{% endif %}
 	{% endif %}
 	{% endfor %}
@@ -165,31 +169,58 @@
 		{% endif %}
 	{% endfor %}
 {% endfor %}
+{% if page %}
+	{% set ancestor_section = get_section(path=page.ancestors | last) %}
+	{% for asset in ancestor_section.assets | default(value=[]) %}
+		{% for type in types %}
+			{% if asset is ending_with(type) %}
+				{% set_global has_asset = true %}
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+{% endif %}
 
 {% if has_asset | default(value=false) %} 
-<dt>{{ name }}</dt>
-{% for asset in page.assets | default(value=section.assets) %}
-	{% for type in types %}
-		{% if asset is ending_with(type) %}
-			<dd class="summary-item">
-				{% set filename = asset | split(pat="/") | last | split(pat="\") | last | split(pat=".") | first %}
-				{% set title = filename | replace(from="---", to=" - ") | replace(from="--", to=": ") | replace(from="_", to=" ") | replace(from="一", to="") %}
-				{% if asset is starting_with("/") %}
-					{% set url = get_url(path=asset) %}
-					<a class="reverse-indent" href="{{ url }}" target="_blank">{{ title | safe }}</a>
-				{% elif asset is not starting_with("/") %}
-					{% set url = get_url(path=current_path ~ asset) %}
-					<a class="reverse-indent" href="{{ url }}" target="_blank">{{ title | safe }}</a>
-				{% else %}
-					<div class="reverse-indent">{{ title | safe }}</div>
-				{% endif %}
-			</dd>
-		{% endif %}
+	<dt>{{ name }}</dt>
+	{% for asset in page.assets | default(value=section.assets) %}
+		{% for type in types %}
+			{% if asset is ending_with(type) %}
+				{{ macros::render_asset(asset=asset) }}
+			{% endif %}
+		{% endfor %}
 	{% endfor %}
-{% endfor %}
+	{% if page %}
+		{% set ancestor_section = get_section(path=page.ancestors | last) %}
+		{% for asset in ancestor_section.assets | default(value=[]) %}
+			{% for type in types %}
+				{% if asset is ending_with(type) %}
+					{{ macros::render_asset(asset=asset) }}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+	{% endif %}
 {% endif %}
 {% endmacro header %}
 
+
+{#
+    Renders a page's assets.
+#}
+{% macro render_asset(asset) %}
+<dd class="summary-item">
+	{% set filename = asset | split(pat="/") | last | split(pat="\") | last | split(pat=".") | first %}
+	{% set title = filename | replace(from="---", to=" - ") | replace(from="--", to=": ") | replace(from="_", to=" ") | replace(from="一", to="") %}
+	{% if asset is starting_with("/") %}
+		{% set url = get_url(path=asset) %}
+		<a class="reverse-indent" href="{{ url }}" target="_blank">{{ title | safe }}</a>
+	{% elif asset is not starting_with("/") %}
+		{% set url = get_url(path=current_path ~ asset) %}
+		<a class="reverse-indent" href="{{ url }}" target="_blank">{{ title | safe }}</a>
+	{% else %}
+		<div class="reverse-indent">{{ title | safe }}</div>
+	{% endif %}
+</dd>
+{% endmacro header %}
 
 {#
     Renders a page's assets.

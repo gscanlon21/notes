@@ -8,7 +8,7 @@ authors = ["Jeffrey W. Bier", "George J. Jackson", "Ann M. Adams", "Richard A. R
 subtitle = "Chapter 19"
 updated = 2026-06-01
 site_version = 1
-toc_level = 2
+toc_level = 3
 see_also = [
   { title = "Chapter 19", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-19-parasitic-animals-foods" },
 ]
@@ -34,43 +34,14 @@ methods. Several alternative ways to examine fish and shellfish are presented. H
 candling is the only method currently used for regulatory purposes with finfish.
 
 
-## I. Digestion to Select Mammalian Parasites in Edible Flesh 
+## Digestion to Select Mammalian Parasites in Edible Flesh 
+## I.
 By mimicking the chemical and temperature conditions of the mammalian stomach, this method 
 frees parasites from the surrounding flesh and reduces the background of nonparasitic 
 organisms. 
 
-### A. Equipment and materials 
-1. Balance, at least 250 g capacity 
-2. Stirrer or rotating incubator shaker 
-3. Water bath, 37 ± 0.5°C 
-4. Beakers, 100 and 1500 ml 
-5. Sedimentation cone and support, 1 L, plastic with removable plug, e.g., Imhoff 
-cone 
-6. Tubing, amber gum, 2.4 and 9.5 mm diameter 
-7. Tubing clamp 
-8. Microscopes, dissecting and inverted 
-9. Culture dishes, plastic, various sizes 
-10. Sieve No. 18 (U.S. standard sieve series), 1 mm mesh, 204 mm diameter, 51 
-mm high; other sizes optional 
-11. Tray, rectangular, polypropylene, about 325 × 260 × 75 mm 
-12. Cylinder, graduated, 1 L 
-13. pH meter 
-14. Pasteur pipets, or polypropylene eyedroppers 
-15. Rubber bulb, about 2 ml capacity 
-16. Spoon 
-17. Spatula 
-18. Optional materials: blender, meat grinder, food processor, negative pressure 
-hood, foil, plastic wrap, tweezers, and dissecting needles 
-
-### B. Reagents 
-1. Physiological saline (R63) 
-2. Pepsin, laboratory grade 
-3. pH reference solutions 
-4. HCl, concentrated 
-5. Optional reagents: papain, ethanol, glacial acetic acid, glycerine, lactophenol, 
-phenol, formalin, Lugol's iodine (R40), ether 
-
-### C. Sampling and sample preparation 
+### Sampling and sample preparation 
+### C.
 From a sample weighing 1 kg, take a subsample (100 g) of beef, pork, or poultry, or 250 
 g of fish. Subsamples of most mammalian meat, poultry, or fish require no further 
 preparation. They may be torn or separated into 5 or more pieces to increase the 
@@ -81,15 +52,17 @@ instantaneous bursts in a blender will destroy some macroscopic organisms but us
 will not affect microscopic organisms. A meat grinder is less destructive, although not 
 suitable for some foods such as snails. Least destructive is initial digestion with papain 
 followed by pepsin digestion. 
-Page | 4 
-CAUTION: Pathogens that are easily disseminated may be contained in samples and 
+
+> [!CAUTION]
+> Pathogens that are easily disseminated may be contained in samples and 
 will be liberated by digestion. Of special concern are macroscopic tapeworm cysts and 
 microscopic cysts of protozoa. When the presence of such pathogens is suspected, 
 carry out the digestion and subsequent sample handling in a negative pressure hood 
 until the suspect digest is placed in a safely closed dish. Handle all utensils as if 
 contaminated, and autoclave or incinerate after use. 
 
-### D. Digestion, sedimentation, and examination 
+### Digestion, sedimentation, and examination 
+### D.
 Adjust incubator-shaker or water bath to 37 ± 0.5°C. Prepare digestion fluid in 1500 ml 
 beaker by dissolving 15 g pepsin in 750 ml saline, add sample, and adjust to pH 2 with 
 concentrated HCl (about 3 ml). Place in incubator or water bath and stir (about 100 rpm) 
@@ -126,7 +99,8 @@ medical aspects of parasitology (10); food parasitology: methods, references, ex
 consultants (4,7); immunology and serology of parasitic diseases (8); protozoa (9); 
 nematodes (3,16); trematodes (1,14); cestodes (15); arthropods (5). 
 
-### E. Fixation and staining 
+### Fixation and staining 
+### E. 
 Protozoan cysts and helminth eggs. Fix and stain fresh material with Lugol's iodine 
 solution (R40) or use fluorescent antibody stain (if available) on formalin-fixed material. 
 
@@ -157,7 +131,8 @@ nematodes, cleared in phenol or glycerol.
 : Fix fleas, lice, mites, copepods, fly larvae, and other parasitic or food
 inhabiting arthropods in hot water. Store in 70% ethanol. 
 
-### F. Viability determination 
+### Viability determination 
+### F.
 The major criterion for the viability of helminths is spontaneous movement. Observe 
 organisms for 10 min to see if spontaneous movement occurs. If autonomous movement 
 is not observed, touch with a dissecting needle and observe to see if movement has 
@@ -168,19 +143,23 @@ determine viability. If culture is not feasible, dye exclusion is the method of 
 viability determination.
 
 
-## II. Candling to Detect Parasites in Finfish
+## Candling to Detect Parasites in Finfish
+## II.
 [See Attached](一Chapter_19.pdf)
 
 
-## III.  Compression Candling: Detection of Parasites in Molluscs and other Translucent Foods 
+## Compression Candling: Detection of Parasites in Molluscs and other Translucent Foods 
+## III.
 [See Attached](一Chapter_19.pdf)
 
 
-## IV.  Mechanical Disruption and Sedimentation for Detection of Larval Parasites in Fish Flesh 
+## Mechanical Disruption and Sedimentation for Detection of Larval Parasites in Fish Flesh 
+## IV.
 [See Attached](一Chapter_19.pdf)
 
 
-## V.  Concentration of Helminths and Protozoa from Vegetables
+## Concentration of Helminths and Protozoa from Vegetables
+## V.
 
 >> Vegetables may become contaminated with parasitic organisms through contact with animal or 
 human fecal material or through application of sewage-derived fertilizer to croplands (13). The 
@@ -188,7 +167,8 @@ method outlined below can be used to examine fresh vegetables for parasites. A s
 recovered Cryptosporidium sp. from 1% of water samples examined. Recovery from vegetables 
 would be estimated at 1% or less. (A sample consists of five 1-kg subsamples.) 
 
-### A. Equipment and materials 
+### Equipment and materials 
+### A.
 1. Balance 
 2. Polypropylene beakers, 1 L 
 3. Sonic bath, about 2 L capacity 
@@ -198,7 +178,8 @@ would be estimated at 1% or less. (A sample consists of five 1-kg subsamples.)
 7. Culture dish with 2 mm grid 
 8. Microscope slides 
 
-### B. Reagents 
+### Reagents 
+### B.
 1. Lugol's iodine (R40) 
 2. Sheather's fluid (500 g sucrose, 320 ml deionized water, 6.5 g phenol) 
 3. Detergent solutions Nos. 1, 2, and 3 
@@ -207,7 +188,8 @@ would be estimated at 1% or less. (A sample consists of five 1-kg subsamples.)
   No. 3 - 1% Tween 80 
 4. Fluorescent antibody kit 
 
-### C. Procedure 
+### Procedure 
+### C.
 
 >> Store vegetables in refrigerator before analysis. Separate vegetables into units: tight 
 head type (cabbage), remove outer 3 layers of leaves; loose head type (leaf lettuce), 

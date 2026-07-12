@@ -99,7 +99,6 @@ samples or if filter bags are unavailable)
 11. Cryotubes, 1 ml, sterile 
 12. Phase-contrast microscope, with 100× oil immersion objective or dark-field 
 microscope with 63× objective or light microscope with 1000× objective 
-Page | 5 
 13. Microscope slides, 1 cm sq cover slips and immersion oil 
 14. Gas tank assembly (5% O2, 10% CO2, 85% N2) and vacuum source (Fig. 1) 
 15. Microaerobic container system 
@@ -126,7 +125,6 @@ b. Campy gas-generating envelopes or pouches: for 3.4 liter jars, Oxoid
 BR56 or CN035A; for 2.5 liter and 9.5 liter jars, Oxoid CN025A, Difco 
 1956-24-4, BBL 71040 or 71034 or EM Diagnostics 53013678; for 
 rectangular jars, Mitsubishi 10-04; for 2-plate, Mitsubishi 20-04 and 1
-Page | 6 
 plate, EM Diagnostics, 53-13699. The Oxoid CNO25A and the Mitsubishi 
 and EM envelopes are used without water. 
 § CAUTION: ONLY GAS PACS USED WITHOUT WATER ARE 
@@ -149,7 +147,6 @@ a. Bags, see Fig. 2. Metalized poly pouches, Associated Bag Company,
 Milwaukee, Wi., 800-926-6100. Use 6" × 8" for 100 ml enrichments and 8" 
 × 10" bags for 250 ml enrichments. Larger bags also are available. Bags 
 are not sterile but can be radiation sterilized. If using non-sterile bags, 
-Page | 7 
 include a bag control using Bolton broth or Listeria Enrichment broth 
 without antibiotics. 
 b. Vacuum flasks, 250 or 500 ml, with rubber stopper and foam-plugged 
@@ -175,7 +172,6 @@ stainless steel baskets
 sterilized. Two-inch sq Parafilm pieces and weighted rings or a 
 platform with clamps. For instructions for assembly and use, see 
 fig. 2 and BAM, 7th ed., 1992, chapt. 7. 
-Page | 8 
 d. Plastic 1 ml sterile pipets. 
 21. Water analysis apparatus 
 a. Zetapor filters, 45 µm (Cuno, Meriden, CT, 800-243-6894; no 
@@ -223,7 +219,6 @@ j.
 Culture shipping media 
 k. Cary-Blair medium (M31) or A-H slants with 5% filtered fetal bovine serum or 
 lysed horse blood, w/o antibiotics (G-2) 
-Page | 9 
 l. 
 Culture storage media 
 1. Semi-solid medium, modified, for short-term culture storage (G-4)[M30c] 
@@ -269,7 +264,6 @@ utilize the low-oxygen atmosphere more efficiently. If heavy background contamin
 is suspected, add 1:10 dilution enrichment. The following instructions include mandatory 
 dilution enrichments for shellfish and eggs. 
 2. Preparation of Samples 
-Page | 10 
 Add 2 rehydrated vials of Bolton antibiotic additives and 50 ml lysed horse blood to 
 1000 ml Bolton broth base. Alternatively, antibiotic additives can be prepared from 
 individual components (G-1). 
@@ -307,7 +301,6 @@ e. Shellfish, shucked
 In general, a minimum of 12 shellfish shall be taken in order to obtain a 
 representative sample (APHA 1970, Recommended Procedures for the 
 Examination of Sea Water and Shellfish). Depending on the size of the species, 
-Page | 11 
 this will yield an approximately 100 to 200 g composite of shell liquor and meat. 
 Collect the appropriate quantities of shell liquor and meats in a sterile blender or 
 other suitable sterile container. Blend at low speed or stomach for 60 s. Remove 
@@ -345,7 +338,6 @@ Enrichments incubated in Campy gas in anaerobe jars should be 125 ml or less.
 Larger volumes should be divided into smaller amounts, aseptically dividing the 
 filters. 
 g. Swabs 
-Page | 12 
 Pipet 10 ml enrichment broth into sterile 50 ml Erlenmeyer flasks with foil tops. 
 Place one swab into each flask, aseptically breaking off the sticks below the top 
 of the flask. Replace covers loosely. Place flasks in anaerobe jar. To fit two 
@@ -384,7 +376,6 @@ b. 5 h pre-enrichment Use the 5 h method if any product has been refrigerated fo
 Incubate at 30°C for 3 h, then at 37°C for 2 h. NOTE: Incubate 
 microaerobically at 30°C unless using a non-shaking bath-bubbler system 
 (D-3). Bubbling static enrichments at 30°C fosters growth of anaerobes (D
-Page | 13 
 3). Perform the 37°C incubation under microaerobic conditions. This method 
 yields greater recovery for severely stressed organisms. 
 c. General information concerning both methods. Set the shaker speed for 
@@ -423,7 +414,6 @@ adjusting screw. This will give a flow rate of 2-3 bubbles per sec into each bag
 (figs. 1 & 3). Ensure that the pipet tip in each bag is inserted 2/3 into the broth. 
 Tie bubbler tubing for each enrichment loosely together above the baskets to 
 keep the bags standing upright. Bring the water level of the bath up slightly 
-Page | 14 
 higher than the level of the broths in the bags. Replenish water as needed during 
 the incubation period. 
 Refer to the BAM, 7th ed., 1992, chap. 7. for instructions on using Erlenmeyer 
@@ -464,7 +454,6 @@ lid slightly if needed. Open the main valve on the gas tank. Adjust the
 pressure to 6-8 lb with regulator adjusting screw (fig. 1). Attach chuck and 
 clip valve on the tank hose to the other valve on the lid. Open the regulator 
 on-off valve and fill jar to 5-10 lb. Disconnect the hose and close the 
-Page | 15 
 regulator valve. Repeat the evacuation and gassing twice more, ending 
 with a gassing step. When opening the jars, first release pressure by 
 pressing down on one of the valve stems with an inoculating loop handle 
@@ -504,8 +493,9 @@ When storing cultures in semi-solid medium, inoculate the medium at the surface 
 incubate loosely-capped tubes under microaerobic conditions, 24 h. See previous 
 paragraph for proper incubation temperatures. After incubation, tighten caps and place 
 away from direct light. Cultures can be stored up to 2 months with subsequent transfer. 
-Page | 16 
-Note: To ship cultures, grow the culture on AHB agar plates w/o antibiotics and swab 
+
+> [!NOTE]
+> To ship cultures, grow the culture on AHB agar plates w/o antibiotics and swab 
 off growth. Place swab in a sterile polypropylene screw-cap shipping tube filled with 
 Cary-Blair media. Aseptically break off the excess swab stem and tighten the tube cap. 
 Alternatively, grow culture and ship on AHB agar slants (in shipping test tube) w/wo 5% 
@@ -544,9 +534,7 @@ pick in 0.1 ml of contrast stain (50-50 mix of Gram's crystal violet to saline o
 After 3-5 min., prepare a wet mount and view under a 1000× oil-immersion light 
 microscope. Compare with a positive control culture. Campylobacter cells are curved, 
 1.5-5 m long, usually in chains resembling zigzag shapes (any length). Cells picked 
-Page | 17 
  
-Page | 18 
 from agar often demonstrate only "wiggly" motility, whereas those from broth swim 
 rapidly in corkscrew motion. About 10% of strains are nonmotile. Older or stressed cells 
 have decreased motility and may show coccoid forms. Wear gloves or wash hands and 
@@ -679,7 +667,6 @@ test, the culture might be another species of Campylobacter if other tests
 indicate Campylobacter. 
 Tests using diluted inoculum. Emulsify growth from colony into 5 ml 0.1% peptone and adjust 
 turbidity to McFarland No. 1. Use this suspension to inoculate the following tests. 
-Page | 19 
 1. Antibiotic inhibition. Swab an Abeyta-Hunt-Bark agar plate without antibiotics with the 
 suspension and drop nalidixic acid and cephalothin disks onto opposite sides of plate. 
 Incubate microaerobically, 24-48 h, 37°C. Any size zone indicates sensitivity. 
@@ -718,7 +705,6 @@ concentrator/evaporator units can be added by splitting the gas line to the tank
 It can also be mounted in a 42°C air incubator with a shaking platform placed inside and the gas 
 line connected through the wall of the incubator. A second line should go to a bubbler in a 37°C 
 incubator. 
-Page | 20 
 2. Fine metering S-series Nupro valve/Swage-lok apparatus 
 Determine how the valves should be arranged and connect with appropriate lengths of teflon 
 tubing. Leave one outlet port/valve. Determine the length of the teflon tubing pieces needed to 
@@ -764,7 +750,6 @@ NDX131 or Malthus Diagnostics X-131). If supplement is not available add 4 ml ea
 antibiotic concentrates (formulas below, solutions made separately). 
 Note: Substitute solubilized amphotericin B (Sigma Cat. No. A9528) for cycloheximide if 
 cycloheximide not available. (See G.2.a.3.) 
-Page | 21 
 Store powdered media in a tightly fastened container in a cool, dry area to reduce 
 oxygen infusion and peroxide formation, which can inhibit recovery of microaerophiles. 
 Use prepared broth within 1 month of preparation (preferably less than 2 weeks). 
@@ -811,7 +796,6 @@ Distilled water
 1000 ml 
 Autoclave 15 min at 121°C. Final pH, 7.4 ± 0.2. Cool and add the selective agents listed 
 below. 
-Page | 22 
 After pouring plates, dry plates overnight on bench.If plates must be used the same day, 
 place them in 42°C incubator for several hours. Do not dry in a hood with lids open. 
 Even very brief surface drying will inhibit campylobacter growth. 
@@ -857,7 +841,6 @@ Distilled water
 Mix ingredients, pH to 7.4 ± 0.2, boil and dispense 10 ml per 16 × 125 screw-cap tube. 
 Autoclave 121°C, 15 min. Keep tubes tightly capped during storage. Do not add horse blood or 
 antibiotics. 
-Page | 23 
 5. Semisolid Medium, modified, for Biochemical Identification  
 Base Medium   
 Campylobacter Enrichment Broth (Bolton) 

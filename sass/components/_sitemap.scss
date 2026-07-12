@@ -26,8 +26,8 @@ main > .sitemap-title {
 
 	// Pad items.
 	li, details {
+		margin-block: $base-padding * 0.35;
 		line-height: $line-height-tight;
-		margin-block: $base-padding * 0.25;
 	}
 
 	li.current, summary.current {

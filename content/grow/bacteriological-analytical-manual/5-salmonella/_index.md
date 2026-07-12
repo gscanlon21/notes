@@ -178,9 +178,9 @@ since it may be more difficult to confirm the presence of an atypical strain in 
 without an atypical control strain for guidance. 
 : Green fluorescent protein (GFP) control strains which fluoresce under UVA light, more 
 specifically at wavelengths between 360 to 400 nm, have been developed by FDA and 
-have been licensed by FDA to Microbiologics for distribution. 
-(https://www.microbiologics.com; 200 Cooper Avenue North St. Cloud, MN 56303, 
-1800-599-2847). The following cultures may be purchased from Microbiologics: 
+have been licensed by FDA to [Microbiologics](https://www.microbiologics.com) for distribution. 
+(200 Cooper Avenue North St. Cloud, MN 56303, 1800-599-2847). 
+The following cultures may be purchased from Microbiologics: 
 : - Salmonella enterica subsp. enterica serovar Gaminara Sal57 / FDA SAL5695 (typical, lactose negative, H2S positive), Catalog No. 01278UV. 
 : - Salmonella enterica subsp. enterica serovar Senftenberg Sal59 / FDA Sal5697 (atypical, lactose negative, H2S negative), Catalog No. 01226UV. 
 : - Salmonella enterica subsp. enterica serovar Mbandaka Sal58 / FDA SAL5696 (atypical, sucrose positive, H2S positive), Catalog No. 01230UV. 
@@ -269,7 +269,6 @@ about 1/4 turn and incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, belo
   poured over the surface of proportionately larger volumes of brilliant green water. 
   Prepare brilliant green water by adding 2 ml 1% brilliant green dye solution per 
   1000 ml sterile distilled water. Let container stand undisturbed for 60 ± 5 min. 
-  Page | 12 
   Incubate loosely capped container, without mixing or pH adjustment, for 24 ± 2 h 
   at 35 ± 2°C. Continue as in E.1-11, below. 
   
@@ -906,7 +905,6 @@ results, perform additional biochemical tests F.6.a-c, below).
 
     4. Serological flagellar (H) tests for Salmonella. If either polyvalent 
     flagellar (H) test (F.4, above) or the Spicer-Edwards flagellar (H) test 
-    Page | 26 
     tube test (F.5, above) has not already been performed, either test may 
     be performed here. 
     
@@ -1077,7 +1075,6 @@ Salmonella.
 f. 
 Bruker MALDI Biotyper Method (AOAC OMA method 2017.09): using matrix
 assisted laser desorption/ionization time-of-flight (MALDI-TOF) mass 
-Page | 30 
 spectrometry (MS) for the identification and confirmation of bacteria. 
 g. Other instrumental confirmation methods validated per FDA’s 
 Microbiological Methods Validation Guidelines, AOAC’s Appendix J, or ISO 

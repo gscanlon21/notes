@@ -6,35 +6,16 @@ article.v1 {
 		text-decoration-style: solid;
 	}
 
-	h1 {
-		position: relative;
-
-		&::after {
-			display: none;
-			background: linear-gradient(to right, color(--color-h1, var(--side-opacity)) 2px, color(--color-bg) 2px);
-			left: $site-padding * -1;
-			width: $site-padding;
-			position: absolute;
-			content: '';
-			top: 0.2em;
-			bottom: 0;
-		}
-
-		&+h1::before, &+h1::after {
-			display: none;
-		}
-	}
-
 	h2 {
 		position: relative;
 
 		&::after {
-			background: linear-gradient(to right, color(--color-bg) 2px, color(--color-h2, var(--side-opacity)) 2px, color(--color-h2, var(--side-opacity)) 4px, color(--color-bg) 4px);
-			left: $site-padding * -1;
-			width: $site-padding;
-			position: absolute;
 			content: '';
-			top: 0.2em;
+			background-color: color(--color-h2, var(--side-opacity));
+			left: $site-padding * -1;
+			position: absolute;
+			top: 0.15em;
+			width: 2px;
 			bottom: 0;
 		}
 
@@ -47,12 +28,13 @@ article.v1 {
 		position: relative;
 
 		&::after {
-			background: linear-gradient(to right, color(--color-bg) 4px, color(--color-h3, var(--side-opacity)) 4px, color(--color-h3, var(--side-opacity)) 6px, color(--color-bg) 6px);
-			left: $site-padding * -1;
-			width: $site-padding;
-			position: absolute;
 			content: '';
-			top: 0.2em;
+			background-color: color(--color-h3, var(--side-opacity));
+			transform: translateX($site-padding * 0.25);
+			left: $site-padding * -1;
+			position: absolute;
+			top: 0.15em;
+			width: 2px;
 			bottom: 0;
 		}
 
@@ -65,12 +47,13 @@ article.v1 {
 		position: relative;
 
 		&::after {
-			background: linear-gradient(to right, color(--color-bg) 8px, color(--color-h4, var(--side-opacity)) 8px, color(--color-h4, var(--side-opacity)) 10px, color(--color-bg) 10px);
-			left: $site-padding * -1;
-			width: $site-padding;
-			position: absolute;
 			content: '';
-			top: 0.2em;
+			background-color: color(--color-h4, var(--side-opacity));
+			transform: translateX($site-padding * 0.5);
+			left: $site-padding * -1;
+			position: absolute;
+			top: 0.15em;
+			width: 2px;
 			bottom: 0;
 		}
 

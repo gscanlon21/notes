@@ -93,7 +93,6 @@ pre-wetted coarse cheesecloth are used to perform this task.
 10. Separatory funnel. 
 11. Dialysis membrane MWCO 6,000-8,000 Daltons (e.g. Spectra/Por® with 
 closures) flat width 23 ± 2 mm. 
-Page | 4 
 12. Vacuum conical tube filtration devices (0.22µm membrane) such as Steriflip 
 (EMD Millipore) recommended for filtering liquid culture supernatants as a safety 
 measure to avoid aerosolization of enterotoxins. 
@@ -127,7 +126,6 @@ microorganisms or enterotoxins should be performed in an approved biosafety cabi
 product in a blender to homogenize the sample so that any SE present in the food is 
 evenly distributed. 
 a. For cheeses with rind, take cheese sample with 10% rind and 90% cheese. 
-Page | 5 
 b. For dried products, use equal amounts of water with product to blend or follow 
 manufacturer's instructions. 
 2. Weigh 25 g of sample in a glass beaker and transfer the test portion to a blender with 40 

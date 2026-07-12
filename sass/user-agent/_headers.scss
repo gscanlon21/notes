@@ -110,7 +110,7 @@ h5 {
 	margin-block-start: $site-padding * 1.5;
 
 	+ul, +ol, +menu, +.checklist-wrapper > ul {
-		margin-block-start: $site-padding * 0.5;
+		margin-block-start: $site-padding * 0.25;
 	}
 
 	&:has(+h5) {

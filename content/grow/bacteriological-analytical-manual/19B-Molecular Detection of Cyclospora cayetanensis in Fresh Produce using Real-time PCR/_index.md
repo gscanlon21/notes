@@ -70,42 +70,6 @@ available in the study publications (reference 4 and reference 5).
 >> This analytical procedure provides steps for isolation of C. cayetanensis oocysts from produce by 
 washing and subsequent DNA template preparation from produce washes.
 
-#### A1. Laboratory Facilities 
->> Best laboratory practices should be used to limit false positive results due to cross contamination. 
-The following work areas are recommended to complete the produce washing and DNA extraction 
-steps while minimizing the potential for contamination: 
-1. A laboratory bench for produce washing. 
-1. A hood for DNA extraction procedure.
-
-#### A2. Materials and Equipment
-- Interscience BagPage®+ 400 mL filter bags, 500/pk, Cat No. EW-36840-56 (Cole-Parmer) 
-- Interscience Bag Clips, 50/pk, Cat No. EW-36850-46 (Cole-Parmer) 
-- Disposable serological pipets, 5 mL and 25 mL or 50 mL 
-- Tray to hold filter bags during washing step (see Figure 1b-c) 
-- Stovall Belly Dancer or comparable orbital mixing platform 
-- Platform rocker 
-- 15 mL and 50 mL conical centrifuge tubes for produce washing 
-- Sorvall Legend RT+ refrigerated centrifuge or equivalent (for centrifugation of 15and 50 mL conical centrifuge tubes) 
-- 2 Liter (or larger) vacuum flask connected to house vacuum 
-- Short glass Pasteur pipets or regular [non-filtered] pipets tips at the end of [non-filtered] serological pipettes for vacuum aspiration of wash supernatants 
-- Empty 2 mL FastPrep® tubes and caps, Cat nos., 115076400 and 115064002 (MP Biomedicals) 
-- DNase-free 2.0 mL microcentrifuge tubes 
-- FastPrep®-24 Instrument (MP Biomedicals) or comparable homogenizer 
-- 15 mL conical centrifuge tubes for DNA binding step 
-- Benchtop centrifuge capable of spinning 2.0 mL tubes 
-- Micro pipettors 
-- Aerosol resistant micropipette tips 
-- Latex or nitrile gloves 
-- Vortex Mixer
-
-#### A3. Reagents 
-- Powdered Alconox® laboratory glassware detergent, Part no. EW-17775-0 (Cole-Parmer) 
-  - 1.0% Alconox stock solution (Appendix 1) 
-  - 0.1% Alconox produce wash solution (Appendix 1) 
-- FastDNA® SPIN Kit for Soil, Part no. 6560-200 (MP Biomedicals) 
-- 100% ethanol for DNA extraction procedure 
-- Sterile nuclease free deionized water for produce wash procedure 
-
 #### A4. Wash Procedure for Fresh Produce Samples 
 
 >> The standard wash procedure described below is optimal for leafy greens and herbs or sturdy 
@@ -117,10 +81,11 @@ pectin if not handled carefully.
 > Centrifugation of wash solution is performed as described below using a swinging bucket rotor with a brake setting of 6 (on a scale of 0-9) for deceleration. 
 
 
-A. Weigh produce to be analyzed in a BagPage®+ filter bag (25 grams of fresh produce or 
-50 grams of fresh berries). 
+**A.**
+: Weigh produce to be analyzed in a BagPage®+ filter bag (25 grams of fresh produce or 50 grams of fresh berries). 
 
-B. Add 100 mL of 0.1% Alconox to the produce sample in the filter bag. Lay the bottom 
+**B.**
+: Add 100 mL of 0.1% Alconox to the produce sample in the filter bag. Lay the bottom 
 portion of the bag flat on the bench with the opening edge folded up against a vertical 
 support (Figure 1a). Bags containing leafy greens or sturdy vegetables (but not those 
 containing fragile matrices such as berries) should be massaged gently with fingertips up 
@@ -128,7 +93,8 @@ the length of the bag a few times to remove most of the air. Bags containing ber
 should be sealed without massaging and without removing air. Seal the bags with the 
 bag clips. 
 
-C. Lay sealed bags containing leafy greens flat in a tray on a rocker platform with the 
+**C.**
+: Lay sealed bags containing leafy greens flat in a tray on a rocker platform with the 
 sealed opening edges propped up against the sides of the tray (Figure 1b) to control 
 potential leaks. The bags are stacked on top of one another in order to accommodate all. 
 Agitate for 30 minutes at 85 rpm (Stovall Belly Dancer set at 7.0 with maximum tilt) at 
@@ -137,29 +103,33 @@ stood upright in the tray (Figure 1c) to achieve better coverage of matrix with 
 solution and slowly rocked on a platform rocker for 30 minutes at low speed (e.g., 12 
 rocks per minute using a Hoefer Red Rocker set at 5.0). 
 
-D. Open bags and transfer the supernatant from the filtrate side of each BagPage®+ filter 
-bag into two labeled 50 mL conical centrifuge tubes using serological pipets. 
+**D.**
+: Open bags and transfer the supernatant from the filtrate side of each BagPage®+ filter bag into two labeled 50 mL conical centrifuge tubes using serological pipets. 
 
-E. Isolate wash debris containing oocysts by centrifugation in a swinging bucket rotor for 20 
-minutes at 2,000 × g with a brake setting of 6 (on a scale of 0-9) for deceleration. 
+**E.**
+: Isolate wash debris containing oocysts by centrifugation in a swinging bucket rotor for 20 minutes at 2,000 × g with a brake setting of 6 (on a scale of 0-9) for deceleration. 
 
-F. During the centrifugation, add an additional 100 mL of 0.1% Alconox to the produce in 
+**F.**
+: During the centrifugation, add an additional 100 mL of 0.1% Alconox to the produce in 
 each filter bag and tip the bag from side to side three to four times to rinse the food and 
 bag surfaces. Lean the bags containing the produce and rinse solution against a vertical 
 surface until needed in step A4H. 
 
-G. After the centrifugation use a short glass Pasteur pipet or regular [non-filtered] pipets tips 
+**G.**
+: After the centrifugation use a short glass Pasteur pipet or regular [non-filtered] pipets tips 
 at the end of [non-filtered] serological pipettes connected with tubing to a filter flask and 
 house vacuum to aspirate all but approximately 4 mL of the supernatant from each of the 
 50 mL tubes to waste without disturbing the wash debris pellets. 
 
-H. Transfer the rinse from the filtrate side of each BagPage®+ filter bag to the 
+**H.**
+: Transfer the rinse from the filtrate side of each BagPage®+ filter bag to the 
 corresponding two 50 mL conical tubes containing the first wash debris pellets from step 
 A4G. Centrifuge for 20 minutes at 2,000 × g to pellet the combined wash and rinse 
 debris. After the centrifugation aspirate all but approximately 4 ml of the supernatant 
 from each of the 50 mL tubes to waste without disturbing the pellets. 
 
-I. Pool each pair of wash debris pellets by resuspending with a 5 mL serological pipet in 
+**I.**
+: Pool each pair of wash debris pellets by resuspending with a 5 mL serological pipet in 
 the residual wash liquid and transferring to a single 15 mL conical centrifuge tube. Rinse 
 the pair of empty 50 mL tubes sequentially with 2 mL of dH2O and add to the contents of 
 the 15 mL tube. Centrifuge for 20 minutes at 2,000 × g to pellet the debris. After the 
@@ -172,12 +142,14 @@ centrifuge a portion in the 2 mL FastPrep tube at 14,000 × g for 4 minutes, asp
 supernatant without disturbing the pellet, and then add the remaining resuspended pellet 
 and tube rinse. 
 
-J. Centrifuge the 2 mL FastPrep tubes containing wash debris from step A4I at 14,000 × g 
+**J.**
+: Centrifuge the 2 mL FastPrep tubes containing wash debris from step A4I at 14,000 × g 
 for 4 minutes. Aspirate all but approximately 100-200 µL of the supernatant without 
 disturbing the pellet. Note: If a pooled debris pellet sample is greater than approximately 
 850 µL, the sample must be split into two 2 mL FastPrep lysing tubes. 
 
-K. Store at 4°C overnight or proceed as described in Section A5 for isolation of DNA immediately. 
+**K.**
+: Store at 4°C overnight or proceed as described in Section A5 for isolation of DNA immediately. 
 
 
 ##### Detection of Cyclospora cayetanensis in Produce
@@ -199,67 +171,74 @@ Kit for Soil following the modified instructions detailed below.
 *Items provided in the FastDNA® SPIN Kit for Soil. 
 
 ##### Modified FastDNA Spin Extraction Protocol 
-A. Assemble the samples to be extracted from wash procedure step A4J and add an empty 
-FastPrep tube as a DNA extraction control. 
+**A.**
+: Assemble the samples to be extracted from wash procedure step A4J and add an empty FastPrep tube as a DNA extraction control. 
 
-B. Carefully transfer into each tube in step A5A the beads from a Lysing Matrix E tube 
-(supplied with the FastDNA Spin Kit). 
+**B.**
+: Carefully transfer into each tube in step A5A the beads from a Lysing Matrix E tube (supplied with the FastDNA Spin Kit). 
 
-C. Add 122 µL MT buffer (FastDNA protocol step 3). 
+**C.**
+: Add 122 µL MT buffer (FastDNA protocol step 3). 
 
-D. Add 978 µL (or less) Sodium Phosphate Buffer (FastDNA protocol step 2) to the 
+**D.**
+: Add 978 µL (or less) Sodium Phosphate Buffer (FastDNA protocol step 2) to the 
 maximum fill height; leave at least 1.0 cm of air space at the top of the tube to allow 
 for efficient bead-beating (see Figure 2). Screw on cap securely. 
 Figure 2 
 
-E. Transfer the samples to a FastPrep-24 bead beater and homogenize at a setting of 6.5 
+**E.**
+: Transfer the samples to a FastPrep-24 bead beater and homogenize at a setting of 6.5 
 m/s (approximately 4000 rpm) for 60 seconds. Immediately remove the sample holder 
 containing the tubes from the instrument and place on ice for 3 minutes. Return the 
 sample holder to the bead beater and repeat the bead beating and the incubation on ice 
 as above. 
 
-F. Remove the tubes from the sample holder and centrifuge at 14,000 × g for 15 minutes 
-(FastDNA protocol step 5). 
+**F.**
+: Remove the tubes from the sample holder and centrifuge at 14,000 × g for 15 minutes (FastDNA protocol step 5). 
 
-G. Transfer the supernatant to a clean 2 mL tube. Add 250 µL PPS and mix by inverting by 
-hand 10 times (FastDNA protocol step 6). 
+**G.**
+: Transfer the supernatant to a clean 2 mL tube. Add 250 µL PPS and mix by inverting by hand 10 times (FastDNA protocol step 6). 
 
-H. Centrifuge at 14,000 × g for 5 minutes (FastDNA protocol step 7) then transfer 
-supernatant to a clean 15 mL Falcon tube containing 1.0 mL of resuspended Binding 
-Matrix. 
+**H.**
+: Centrifuge at 14,000 × g for 5 minutes (FastDNA protocol step 7) then transfer 
+supernatant to a clean 15 mL Falcon tube containing 1.0 mL of resuspended Binding Matrix. 
 
-I. Place on a rotator or invert by hand for 2 minutes and then allow silica matrix to settle for 
+**I.**
+: Place on a rotator or invert by hand for 2 minutes and then allow silica matrix to settle for 
 3 minutes (FastDNA protocol step 9). Centrifuge the 15 mL tubes briefly at 1000 × g for 
 1 minute in a swinging bucket rotor. 
 
-J. Remove and discard a total of 1.4 mL of supernatant from each tube in two 700 µL 
-aliquots. 
+**J.**
+: Remove and discard a total of 1.4 mL of supernatant from each tube in two 700 µL aliquots. 
 
-K. Resuspend the matrix in the remaining supernatant and transfer approximately 700 µL to 
+**K.**
+: Resuspend the matrix in the remaining supernatant and transfer approximately 700 µL to 
 a SPIN Filter in a catch tube. Centrifuge at 14,000 × g for 1 minute (FastDNA protocol 
 step 11). Empty the catch tube and add any remaining resuspended mixture to the SPIN 
 Filter and spin as before. Empty the catch tube again. 
 
-L. Add 500 µL prepared SWES-M to each filter. Gently resuspend each by pipetting up and 
-down (FastDNA protocol step 12). 
+**L.**
+: Add 500 µL prepared SWES-M to each filter. Gently resuspend each by pipetting up and down (FastDNA protocol step 12). 
 
-M. Centrifuge at 14,000 × g for 1 minute. Empty catch tube and replace (FastDNA protocol 
-step 13). 
+**M.**
+: Centrifuge at 14,000 × g for 1 minute. Empty catch tube and replace (FastDNA protocol step 13). 
 
-N. Centrifuge at 14,000 × g for 2 minutes to dry the matrix. Discard the catch tube and 
-replace with a new catch tube (FastDNA protocol step 14). 
+**N.**
+: Centrifuge at 14,000 × g for 2 minutes to dry the matrix. Discard the catch tube and replace with a new catch tube (FastDNA protocol step 14). 
 
-O. Air dry the filter for 5 minutes at room temperature (FastDNA protocol step 15). 
+**O.**
+: Air dry the filter for 5 minutes at room temperature (FastDNA protocol step 15). 
 
-P. Add 75 µL DES to the matrix in the spin filter. Resuspend the Binding Matrix by gently 
+**P.**
+: Add 75 µL DES to the matrix in the spin filter. Resuspend the Binding Matrix by gently 
 stirring with a small pipet tip. Incubate for 5 minutes in a heat block at 55°C. (FastDNA 
 protocol step 16). 
 
-Q. Centrifuge at 14,000 × g for 1 minute to recover the eluted DNA and then discard the 
-SPIN Filter (FastDNA protocol step 17). 
+**Q.**
+: Centrifuge at 14,000 × g for 1 minute to recover the eluted DNA and then discard the SPIN Filter (FastDNA protocol step 17). 
 
-R. Store the DNA samples at 4°C for up to 2 days or at -20 or -80°C for longer term prior 
-to performing the Real-Time PCR detection step described below.
+**R.**
+: Store the DNA samples at 4°C for up to 2 days or at -20 or -80°C for longer term prior to performing the Real-Time PCR detection step described below.
 
 
 ### B. Cyclospora cayetanensis Real-Time PCR Detection Method 
@@ -275,138 +254,6 @@ mitochondrial gene and uses an internal amplification control to monitor for pot
 derived inhibition of the reaction. The method also provides a synthetic positive control, allowing 
 sequence verification to identify false positives stemming from inadvertent laboratory 
 contamination.
-
-#### B1. Equipment and Supplies 
-A. Applied Biosystems 7500 Fast Real-Time PCR System with Software versions 1.4, 2.0, 
-or 2.3 or newer 
-B. Applied Biosystems MicroAmp® Fast 8-Tube Strip, 0.1 mL and MicroAmp® Optical 8- 
-Cap Strips, Cat Nos. 4358293 and 4323032 (ThermoFisher Scientific) or 
-equivalent, OR Applied Biosystems MicroAmp® Fast Optical 96-Well Reaction Plates, 
-0.1 mL, and MicroAmp® Optical Adhesive Film, Cat Nos. 4346907 and 4311971 
-(ThermoFisher Scientific) or equivalent 
-C. Benchtop centrifuge capable of spinning 96-Well reaction plates or a mini-centrifuge 
-capable of spinning 0.1 mL tube strips 
-D. Benchtop centrifuge capable of spinning 1.5-2.0 mL tubes 
-E. Micropipettors 
-F. Aerosol resistant micropipette tips 
-9 
-G. Latex or nitrile gloves 
-H. Vortex Mixer 
-I. 
-DNase-free microcentrifuge tubes, 1.5 mL, low retention 
-
-#### B2. Reagents 
-A. PrimeTimeTM Gene Expression Master Mix (IDT) (Cat. No 1055770 (1 x1 ml) or Cat No. 
-1055772 (1 x 5 ml). Separate tubes of reference dye (ROX) are included with the master 
-mix and need to be added to the master mix as a low reference dye for Applied 
-Biosystems 7500 Fast Real-Time PCR instruments following the manufacturer 
-instructions before use. 
-B. Sterile DNase-free TE buffer pH 7.5 (commercially prepared or see Appendix 2). 
-C. Primers, 500 µM stock solution (See Table 1 and Table 2). 
-D. Probes, 100 µM stock solution (See Table 3). 
-E. IAC Target (HMultra130-synIAC), working concentration 1E7 copies/µL. See Reagent 
-Ordering and Preparation Instructions, Section 3. 
-F. Positive control (Mit1AA gblock), 5E2 copies/µL. See Reagent Ordering and Preparation 
-Instructions, Section 3. 
-G. Negative control (Water, DNase-free).
-
-#### B3. Reagent Ordering and Preparation Instructions
->> All Primers, Probes, and Target control DNAs are commercially synthesized by Integrated DNA 
-Technologies (IDT), Coralville, IA. They could also be ordered from an equivalent manufacturer 
-based on the same specifications. 
-
-#### B3A. Primers
->> All primers are ordered from IDT normalized to a working concentration of 500 µM and stored at -20°C.
-
-**Primer Ordering Instructions**
-: Choose "Custom DNA Oligos" from the IDT online Order Menu 
-page. From the "Normalization" drop down menu → choose "Create a custom formulation" → 
-choose "Full product yield, to a specified µMolar concentration" → enter "500" and choose 
-"IDTE 8.0 pH" → Name the normalization "500 µM" and Save. Next, on the Oligo Entry page 
-enter the primer options as indicated below for each primer: 
-
-##### Table 1. Primer Ordering Instructions 
-TODO 
-##### Table 2. Primer Names and Sequences 
-TODO
-
-#### B3B. Probes
-
->> Taqman-style hydrolysis probes are used for detection of the C. cayetanensis and IAC targets. 
-The C. cayetanensis probe is labeled with 5’ FAM reporter dye and is double quenched with an 
-internal ZEN quencher and 3’ Iowa Black® FQ (IABkFQ) quencher. The IAC probe is labeled 
-with 5’ Cy5 reporter dye is double quenched with an internal TAO quencher and 3’ Iowa Black® 
-RQ-Sp (IAbRQSp) quencher. Probes are ordered from IDT and hydrated to working 
-concentrations as described below and stored at -20° C. 
-
-**Probe Ordering Instructions**
-: Probes are ordered from the IDT online order menu page by 
-choosing "Custom qPCR Probes" → choose PrimeTime qPCR Probes → choose 250 nmol or 1 
-µmol scale. Enter probe nucleotide sequence and choose "5’ Dye/3’ Quencher" options as 
-indicated for each probe in Table 3. (No "Services" options are required.) 
-
-##### Table 3. Probe Ordering Information 
-TODO
-
-**Preparation of Probe Working Solutions**
-: 100 µM Mit1P-FAM: Hydrate the lyophilized probe in sterile DNase-free TE buffer by adding the 
-volume specified on the accompanying IDT probe specification sheet for a 100 µM final 
-concentration. Vortex and centrifuge the hydrated probe briefly. 
-: 100 µM dd-IAC-Cy5: Hydrate the lyophilized probe in sterile DNase-free TE buffer by adding the 
-volume specified on the accompanying IDT probe specification sheet for a 100 µM final 
-concentration. Vortex and centrifuge the hydrated probe briefly. 
-
-#### B3C. IAC Target 
-
->> The IAC reaction target (HMultra130-synIAC) is a synthetic 200 bp ultramer DNA sequence 
-based on the internal amplification control developed by Deer et al., (2010). 
-
-**Ordering Instructions**
-: From the IDT online order menu page choose "Ultramer Oligos (up to 
-200 bases)" → On the Oligo Entry page enter or choose the following: 
-
-##### Table 4. Ultramer Oligo Description 
-TODO
-
-**Sequence**
-: TACAGCACCCTAGCTTGGTAGAATCGATCAGCTACGTGAGGTCCTACGACGATCGCCAAG 
-CATGCCCTAGCTAAGATGCATCGATTGCTCATCACGTACGTTAGGTCGACTAGGAGGACTG 
-GAGTGCATCGACTAGCTAAGATGGTTCGATTGCTCATCACGAAGGTTAGGTCGACTACGAA 
-CGAGTCGTATTGCAGGTT 
-
-**Preparation of IAC Target Working Solution**
-: Hydrate the ultramer and prepare dilutions in 
-TE pH 7.5 dilution buffer according to Appendix 3 to obtain the working concentration of 1E7 
-copies/µL. Store dilutions at -20° C.
-
-#### B3D. Positive Control 
-
->> The positive control DNA (Mit1AA gblock) is a 245 bp double stranded synthetic gBlocks® Gene 
-Fragment synthesized by IDT or from a different supplier based on these specifications: The 
-sequence corresponds to a region (4325 bp - 4569 bp, Genbank: KP231180.1) in the C. 
-cayetanensis Mitochondrial gene. In addition, this sequence contains traceable mutations 
-(T4385A and T4386A) within the amplicon generated by the real-time PCR primers used in this 
-protocol. 
-
-**Ordering Instructions**
-: From the IDT online order menu page choose "gBlocks Gene Fragments". 
-: Enter the following item name and sequence on the gBlocks® Gene Fragments Entry page: 
-
-**Item Name**
-: Mit1AA gblock 
-
-**Sequence**
-: ACAGTTGGTTTTCTATTTTCACCATTCTTGCTCACTGTATTAGTATTATTTAATTTTACTAATA 
-GAGAAGTTGGTACTACATCAGCTTCTCTGGTTTCATCAATTTGTTTAGGTGTTATTAGTACT 
-GAGTTACTACTATTTGTTAGCTTCTTCTGGGGTGCATACACCAGCATTCTATCTCCTAGTTA 
-TGTAACAGACTCCACCCTAGTAAGTCCAACTGAGGGTCTTGTAAGTATCTCTAGTAG 
-
->> Click "Add to Order" → answer "No" to all questions on the Terms and Disclosure pop up 
-window → type your name in the Signature box → accept the terms and conditions → click "Add 
-to Cart". The amount delivered will be 250 ngrams of the gBlock. Hydrate the gBlock and 
-prepare dilutions according to Appendix 4 to obtain the working solution concentration of 5E2 
-copies/µL. The positive control working solution can be stored at -20°C or 4°C. A fresh working 
-solution should be prepared from the frozen 5E3 dilution every 90 days. 
 
 #### B4. Reaction Setup and Execution 
 
@@ -538,7 +385,16 @@ TODO
 
 
 ## Appendix 2. Tris EDTA (TE) pH 7.5 buffer (10mM Tris, 0.1mM EDTA)
-?
+
+{% table(header="Tris EDTA components", footer="", class="narrow small") %}
+| Reagent                            | Volume  |
+|------------------------------------|---------|
+| 1 M Tris pH 7.5                    | 100 µL  |
+| 0.05M EDTA                         | 20 µL   |
+| PCR-grade water (Dnase/Rnase free) | 9.88 mL |
+{% end %}
+
+
 
 ## Appendix 3. Preparation of the Internal Amplification Control (IAC) Target Working Solution.
 ?

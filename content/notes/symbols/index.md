@@ -96,6 +96,11 @@ OH⁻
 ·
 ```
 ###### U+00B7
+###### Dot Operator
+```
+⋅
+```
+###### U+22C5
 ###### Union
 ```
 ∪
@@ -357,6 +362,12 @@ x̄
 ```
 ###### U+2089
 
+## Letters
+###### Latin Subscript Small Letter J
+```
+ⱼ
+```
+###### U+2C7C
 
 
 # Arrows

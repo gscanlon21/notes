@@ -1,6 +1,6 @@
 +++
 title = "Food Sampling and Preparation of Sample Homogenate"
-aliases = ["bam-chapter-1"]
+aliases = ["bam/chapter-1"]
 description = ""
 weight = 1
 
@@ -236,7 +236,7 @@ _See [Attached](一Chapter_1.pdf)_
 >> Analyze samples as indicated in current compliance programs.
 
 
-## Receipt of samples
+## Receipt of Samples
 **Condition of Sampling Container**
 : >> Check sampling containers for gross physical defects. 
   >> Carefully inspect plastic bags and bottles for tears, pinholes, and puncture marks. 

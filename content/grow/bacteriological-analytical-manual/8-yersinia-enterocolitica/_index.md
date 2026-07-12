@@ -25,9 +25,6 @@ alerts = [
 {{ hidden() }}
 
 
-# Hydroponic Lettuce
-?
-
 # Terminology
 ?
 

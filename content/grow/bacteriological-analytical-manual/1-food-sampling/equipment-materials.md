@@ -1,5 +1,6 @@
 +++
 title = "Equipment and Materials"
+aliases = ["bam/chapter-1/equipment-materials"]
 description = ""
 weight = 1
 

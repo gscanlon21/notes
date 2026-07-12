@@ -1,34 +1,37 @@
 article.v1 {
 	blockquote:not([class^="markdown-alert-"]) {
 		border-left: .25em solid color(--color-text, .5);
-		margin-inline-start: $base-padding * -0.75;
 		padding-inline-start: $base-padding * .5;
+		margin-inline-start: $base-padding * 0;
 		position: relative;
 		width: auto;
 
 		// Nested blockquotes
 		&:has(> blockquote) {
-			margin-inline-start: $base-padding * 3;
 			overflow-y: clip;
 			
-			&::before {
-				content: '“';
-				font-size: $base-font-size * 5;
-				top: $base-font-size * -0.25;
-				left: $site-padding * -2.5;
-				position: absolute;
-				line-height: 1;
-			}
+			@media (min-width: $small-width) {
+				margin-inline-start: $base-padding * 3;
 
-			&::after {
-				font-size: $base-font-size * 5;
-				right: $site-padding * -2;
-				bottom: $site-padding * 1;
-				position: absolute;
-				line-height: 1;
-				display: none;
-				content: '„';
-			}
+				&::before {
+					font-size: $base-font-size * 5;
+					top: $base-font-size * -0.25;
+					left: $site-padding * -2.5;
+					position: absolute;
+					line-height: 1;
+					content: '“';
+				}
+
+				&::after {
+					font-size: $base-font-size * 5;
+					right: $site-padding * -2;
+					bottom: $site-padding * 1;
+					position: absolute;
+					line-height: 1;
+					display: none;
+					content: '„';
+				}
+			}	
 
 			& > blockquote {
 				display: contents;
@@ -50,7 +53,7 @@ article.v1 {
 	}
 
 	// Title header for blockquotes.
-	h5:has(+blockquote:not([class^="markdown-alert-"]))  {
+	h6:has(+blockquote:not([class^="markdown-alert-"]))  {
 		margin-inline-start: $site-padding * 3.75;
 		margin-block-start: $base-padding * 1.25;
 		margin-block-end: $base-padding * -1;
@@ -86,4 +89,3 @@ article.v1 {
 		margin-block-start: $base-padding * 1.25;
 	}
 }
-

@@ -146,16 +146,16 @@ positive are confirmed using the mouse bioassay.
 [See Attached](一Chapter_17.pdf)
 
 ## III. Amplified ELISA Procedure for Detection of Botulinal Toxins A, B, E, and F from Culture. 
-These toxins can be detected using an amplified ELISA procedure that has a detection limit of 
+>> These toxins can be detected using an amplified ELISA procedure that has a detection limit of 
 approximately 10 MLD/mL. Toxic cultures may be more antigenic than purified toxins and the 
 level of detection using the ELISA may be more sensitive than the mouse bioassay. Both TPGY 
 and CMM are tested since more toxin may be generated in one medium compared to the other 
 and the mouse bioassay, which is needed for confirmation of ELISA tests, also utilizes these 
 media. 
-A. Equipment and Materials 
+
+### A. Equipment and Materials 
 1. Microplate, Dynex Immulon ll U-bottom, cat. No. 3655 
 2. Microtiter pipettors to deliver from 0.1- 2.0, 2-20, and 50-200 µl. 
-Page | 14 
 3. Multichannel pipettor, 8 or 12 place 50-200 µl 
 4. Pipets, disposable 1,5,10 ml 
 5. Glass test tubes 13X100 mm, 15X150 mm 
@@ -166,7 +166,8 @@ Page | 14
 10. Microplate reader (read 490 and 630 nm reference) 
 11. Microtiter plate seals 
 12. Multichannel pipet reservoirs 
-B. Media and Reagents 
+
+### B. Media and Reagents 
 1. Tryptone-peptone-glucose-yeast extract broth (TPGY). 
 2. Cooked meat medium (CMM). 
 3. 0.05M bicarbonate buffer: 0.8g Na2CO3 + 1.47g NaHCO3 in 500 ml distilled H2O, 
@@ -185,11 +186,11 @@ HCl, add 50 µl of Tween-20 and q.s. to 1 liter.
 9. Amplified ELISA substrate system (GibCo) 
 10. 0.3 M H2SO4: dilute concentrated acid (MW 98, specific gravity 1.84, purity 96
 98%) by adding 1 ml to 59 ml of distilled H2O. 
-11. Botulinal complex toxin standards A, B, E, and F. (Metabiologics Inc., Madison, 
-WI) 
-Page | 15 
-C. Amplified ELISA Procedure 
-1. Preparation of samples. Food samples or anaerobic isolates picked from agar 
+11. Botulinal complex toxin standards A, B, E, and F. (Metabiologics Inc., Madison, WI)
+
+### C. Amplified ELISA Procedure 
+##### 1. Preparation of samples. 
+>> Food samples or anaerobic isolates picked from agar 
 plates are inoculated into TPGY (without trypsin) and CMM as recommended in 
 Chapter 17 of the Bacteriological Analytical Manual (2001). TPGY broth and 
 cooked meat media are incubated for 5 days at 26°C and 35°C respectively. 
@@ -197,18 +198,24 @@ Cultures are centrifuged at 7,000 × g and 4°C for 30 min, supernatant pH is
 adjusted to 7.4-7.6 using 1 N NaOH or 1N HCl. Samples and controls are 
 analyzed in duplicate for TPGY and for CMM. Analyze undiluted and 1:5 
 dilutions of each culture supernatant. 1:5= 0.2 ml culture + 0.8 ml casein buffer. 
-2. Preparation of microtiter plates. Coat each well of the microtiter plate with 100 
+
+##### 2. Preparation of microtiter plates. 
+>> Coat each well of the microtiter plate with 100 
 µl of appropriate dilution of goat type A, E, or F or rabbit type B antitoxin diluted 
 in bicarbonate buffer. Prepare the number of needed microtiter plate wells to test 
 the sample. Dilute the stock antitoxins according to the accompanying directions. 
 Store plate with coating buffer overnight at 4°C with plastic seal cover on top of 
 plate to prevent drying. 
-3. ELISA analysis of culture media. 
-a. Remove plate from 4°C storage and wash plate 5 times in Tris buffered 
+
+##### 3. ELISA analysis of culture media. 
+**a.** 
+: Remove plate from 4°C storage and wash plate 5 times in Tris buffered 
 saline (TBST) with 45 second hold between each aspiration. Use a 
 commercial plate washer or other mechanical device; avoid using a 
 squeeze bottle to wash. 
-b. Block plate in casein buffer with by filling all wells to the top of the plate 
+
+**b.**
+: Block plate in casein buffer with by filling all wells to the top of the plate 
 (~300 µl/well) and incubate for 60-90 min at 35°C. Prepare the sample 
 and control dilutions while the plate is being blocked. 
 Negative controls: Duplicate wells with all reagents except toxin 
@@ -216,27 +223,35 @@ Negative controls: Duplicate wells with all reagents except toxin
 Positive controls: Test standard toxins type A, B, E, and F diluted in 
 sterile TPGY and CMM (pH 7.6) at a concentration of 2 ng/ml (~2-60 
 LD50/ng depending on toxin type). 
-c. Wash the blocked plate as above and then add the toxic samples and 
+
+**c.**
+: Wash the blocked plate as above and then add the toxic samples and 
 controls (100 µl/well). Work from the left side of the plate to the right side 
 when adding the reagents. 
 d. Incubate toxin-containing samples and controls for 2 hr. at 35°C. Prepare 
 the type A, B, E, and F biotin-labeled antibody reagents according to 
 directions while incubating the samples. Do not make more than you 
 need! 
-e. Wash plate 5 times in TBST as above. 
-f. 
-Add the diluted biotin-labeled goat antibody (100 µl/well) and incubate for 
-60 min at 35°C. 
-g. Wash plate 5 times in TBST as above. 
-Page | 16 
-h. Add the streptavidin-alkaline phosphatase conjugate diluted 1:10,000 in 
-casein buffer (100 µl/well), and incubate for 60 min at 35°C. 
-i. 
-j. 
-Wash 5 times in TBST with a final 10 minute soak (the last buffer wash is 
+
+**e.**
+: Wash plate 5 times in TBST as above. 
+
+**f.**
+: Add the diluted biotin-labeled goat antibody (100 µl/well) and incubate for 60 min at 35°C. 
+
+**g.**
+: Wash plate 5 times in TBST as above. 
+
+**h.**
+: Add the streptavidin-alkaline phosphatase conjugate diluted 1:10,000 in casein buffer (100 µl/well), and incubate for 60 min at 35°C. 
+
+**i.**
+: Wash 5 times in TBST with a final 10 minute soak (the last buffer wash is 
 not aspirated). After 10 minute soak, discard the wash and tamp the plate 
 several times on a paper towel to remove wash buffer. 
-Add 50 µl of the GIBCO substrate solution, incubate 12.5 min at room 
+
+**j.**
+: Add 50 µl of the GIBCO substrate solution, incubate 12.5 min at room 
 temperature on plate shaker (~100 rpm) then add 50 µl of the GIBCO 
 amplifier and incubate for approximately an additional 10 min. without 
 shaking. The plate should be taken to the plate reader immediately after 
@@ -248,11 +263,12 @@ appropriate sensitivity (absorbance ≥ 1.0) and negative controls are
 acceptable (absorbance not greater than ~ 0.30). The reaction can be 
 stopped with 50 µl of 0.3 M H2SO4 and the absorbance read up to two 
 hours later. 
-Results: A positive test is an absorbance value that is >0.20 above the 
+: Results: A positive test is an absorbance value that is >0.20 above the 
 absorbance observed in the negative controls (sterile uninoculated TPGY 
 broth or CMM). 
-D. Confirmation of positive ELISA samples. 
-The ELISA is used for screening culture media that may contain type A, B, E, and/or F 
+
+##### D. Confirmation of positive ELISA samples. 
+>> The ELISA is used for screening culture media that may contain type A, B, E, and/or F 
 botulinal toxins. Samples that are positive using the ELISA must be confirmed using the 
 mouse bioassay. 
 
@@ -272,7 +288,7 @@ mouse bioassay.
 
 ## IV. Detection of Type A, B, E, and F Clostridium botulinum Toxins Using Digoxigenin-labeled IgGs and the ELISA (DIG-ELISA). 
 
-This method is a modification of the amplified-ELISA (amp-ELISA). Digoxigenin-labeled 
+>> This method is a modification of the amplified-ELISA (amp-ELISA). Digoxigenin-labeled 
 antitoxin IgG's are substituted for biotin-labeled IgG's and anti-digoxigenin horse radish 
 peroxidase conjugate (HRP) is substituted for the streptavidin-alkaline phosphatase used in the 
 amp-ELISA. An appropriate substrate (TMB) is used for the HRP enzyme. The A, B, E, and F 
@@ -285,9 +301,9 @@ give a positive absorbance for more than one toxin type in the amp-ELISA as well
 ELISA (crossing between types). Generally, a 10-fold dilution will show that the true toxin type 
 will have a very high absorbance and the crossing type will have a negative absorbance. In 
 either case the toxic sample must be confirmed using the mouse bioassay. 
-A. Equipment and Materials 
+
+### A. Equipment and Materials 
 1. Microplate, Dynex Immulon ll U-bottom, cat. No. 3655 
-Page | 18 
 2. Microtiter pipettors to deliver from 0.1- 2.0, 2-20, and 50-200 µl. 
 3. Multichannel pipettor, 8 or 12 place 50-200 µl 
 4. Pipets, disposable 1,5,10 ml 
@@ -299,35 +315,37 @@ Page | 18
 10. Microplate reader (read 450 nm) 
 11. Microtiter plate seals 
 12. Multichannel pipet reservoirs 
-B. Media and Reagents 
+
+### B. Media and Reagents 
 1. Tryptone-peptone-glucose-yeast extract broth (TPGY). 
 2. Cooked meat medium (CMM). 
-3. 0.05M bicarbonate buffer: 0.8g Na2CO3 + 1.47g NaHCO3 in 500 ml distilled 
-H2O, pH 9.6. Capsules to prepare 100 ml volume are available from Sigma. 
-4. 1% Casein buffer: Add 10.0g vitamin-free casein (Research Organics) + 7.65g 
-NaCl, 0.724g Na2HPO4 (anhydrous), 0.21g KH2PO4 to 900 ml H2O, and 3 ml of 1 
-M NaOH. Heat with stirring to ~ 80°C to dissolve casein. Check pH and adjust to 
-7.9 with 1 M NaOH, q.s. to 1 liter. Sterilize at 121°C for 20 min. Final pH is ~7.4
-7.6. Casein blocker ready to use product is available from Pierce that gives 
-slightly lower absorbance values than in-house prepared casein buffer. (SRL, 
-Atlanta, GA). 
+3. 0.05M bicarbonate buffer: 0.8g Na2CO3 + 1.47g NaHCO3 in 500 ml distilled H2O, pH 9.6. 
+    - Capsules to prepare 100 ml volume are available from Sigma. 
+4. 1% Casein buffer: 
+    - Add 10.0g vitamin-free casein (Research Organics) + 7.65g NaCl, 0.724g Na2HPO4 (anhydrous), 0.21g KH2PO4 to 900 ml H2O, and 3 ml of 1 M NaOH. 
+    - Heat with stirring to ~ 80°C to dissolve casein. 
+    - Check pH and adjust to 7.9 with 1 M NaOH, q.s. to 1 liter. 
+    - Sterilize at 121°C for 20 min. 
+    - Final pH is ~7.4-7.6. 
+    - Casein blocker ready to use product is available from Pierce that gives slightly lower absorbance values than in-house prepared casein buffer. (SRL, Atlanta, GA). 
 5. Goat type A, B, E, or F digoxigenin-labeled antitoxin (SRL, Atlanta, GA). 
 6. Phosphate buffered saline with 0.005% Tween 20 wash buffer (PBST). 
-1.2 g Na2HPO4 (anhydrous), 0.22g NaH2PO4.H20, 8.5g NaCl per liter distilled 
-H2O. Adjust pH to 7.5 Add 50 µl of Tween 20/L PBS. Sterilize at 121°C for 20 
-min. 10 × PBST: 12.0g Na2HPO4 (anhydrous), 2.2g NaH2PO4.H20, 85.0g NaCl 
-per liter distilled H2O. Adjust pH to 7.5 Add 500 µl of Tween 20/L PBS. 1 × PBST 
-is then prepared by adding 100 ml of 10X PBST to 900 ml of distilled H2O and 
-mixing before use. 10X PBS is available commercially from GibCo. 
+    - 1.2 g Na2HPO4 (anhydrous), 0.22g NaH2PO4.H20, 8.5g NaCl per liter distilled H2O. 
+    - Adjust pH to 7.5 Add 50 µl of Tween 20/L PBS. Sterilize at 121°C for 20 min. 
+    - 10 × PBST: 12.0g Na2HPO4 (anhydrous), 2.2g NaH2PO4.H20, 85.0g NaCl per liter distilled H2O. 
+    - Adjust pH to 7.5 Add 500 µl of Tween 20/L PBS. 1 × PBST is then prepared by adding 100 ml of 10X PBST to 900 ml of distilled H2O and mixing before use. 
+    : 10X PBS is available commercially from GibCo. 
 7. Anti-digoxigenin HRP poly conjugate (Roche Applied Science). 
 8. Tetra methyl benzidine (Ultra-TMB) (Pierce). 
-Page | 19 
 9. 0.5 M H2SO4. 
 10. Botulinal complex toxin standards A, B, E, and F. (Metabiologics Inc., Madison, 
 WI) 
-C. DIG-ELISA Procedure 
-1. Preparation of samples. 
-a. Cultural sample preparation. Food samples or anaerobic isolates 
+
+### C. DIG-ELISA Procedure 
+##### 1. Preparation of samples. 
+**Cultural Sample Preparation**
+a.
+: Food samples or anaerobic isolates 
 picked from agar plates are inoculated into TPGY (without trypsin) and 
 CMM as recommended in Chapter 17 of the Bacteriological Analytical 
 Manual (2001). TPGY broth and cooked meat media are incubated for 5 
@@ -336,7 +354,10 @@ days at 26°C and 35°C respectively. Cultures are centrifuged at 7,000
 NaOH or 1N HCl. Samples and controls are analyzed in duplicate for 
 TPGY and for CMM. Analyze undiluted and 1:5 dilutions of each culture 
 supernatant. 1:5= 0.2 ml culture + 0.8 ml casein buffer. 
-b. Food sample preparation. If a food has a liquid packing medium, the 
+
+**Food Sample Preparation**
+b.
+: If a food has a liquid packing medium, the 
 liquid may be removed, centrifuged as above to remove solids and/or fats 
 and the supernatant/ aqueous layer directly analyzed by ELISA after pH 
 adjustment to 7.4-7.6. If the food is a solid or semi-solid, the toxin must be 
@@ -352,18 +373,21 @@ be spiked with known standard toxin(s) at 2ng toxin/mL (~100 MLD/mL) of
 the food extract in casein buffer to monitor the possible inhibition of the 
 ELISA by the food. Botulinal neurotoxin standards were diluted in casein 
 buffer and used as controls or for spiking foods prior to analysis. 
-2. Preparation of microtiter plates. Coat each well of the microtiter plate with 100 
-µl of appropriate dilution of goat type A, E, or F or rabbit type B antitoxin diluted 
-in bicarbonate buffer. Prepare the number of needed microtiter plate wells to test 
-the sample. Dilute the stock antitoxins according to the accompanying directions. 
-Store plate with coating buffer overnight at 4°C with plastic seal cover on top of 
-plate to prevent evaporation. 
-3. ELISA analysis of samples. 
-a. Remove plate from 4°C storage and wash plate 5 times in PBST with 45 
+
+##### 2. Preparation of microtiter plates. 
+>> Coat each well of the microtiter plate with 100 µl of appropriate dilution of goat type A, E, or F or rabbit type B antitoxin diluted in bicarbonate buffer. 
+Prepare the number of needed microtiter plate wells to test the sample. 
+Dilute the stock antitoxins according to the accompanying directions. 
+Store plate with coating buffer overnight at 4°C with plastic seal cover on top of plate to prevent evaporation. 
+
+##### 3. ELISA analysis of samples. 
+**a.**
+: Remove plate from 4°C storage and wash plate 5 times in PBST with 45 
 second hold between each aspiration. Use a commercial plate washer or 
 other mechanical device; avoid using a squeeze bottle to wash. 
-Page | 20 
-b. Block plate in casein buffer with by filling all wells to the top of the plate 
+
+**b.**
+: Block plate in casein buffer with by filling all wells to the top of the plate 
 (~300 µl/well) and incubate for 60-90 min at 35°C. Prepare the sample 
 and control dilutions while the plate is being blocked. 
 Negative controls: Duplicate wells are tested with all reagents except 
@@ -379,25 +403,35 @@ Results are compared to the positive control that consists of toxin spiked
 into casein to demonstrate if the product inhibits the ELISA. The product 
 may be diluted further to remove inhibitory substances but will lower the 
 sensitivity of the test. 
-c. Wash the blocked plate as above and then add the toxic samples and 
+
+**c.**
+: Wash the blocked plate as above and then add the toxic samples and 
 controls (100 µl/well). Work from the left side of the plate to the right side 
 when adding the reagents. 
-d. Incubate toxin-containing samples and controls for 2 hr. at 35°C. Prepare 
+
+**d.**
+: Incubate toxin-containing samples and controls for 2 hr. at 35°C. Prepare 
 the type A, B, E, and F digoxigenin-labeled antibody reagents according 
 to directions while incubating the samples. Do not make more than you 
 need! 
-e. Wash plate 5 times in PBST as above. 
-f. 
-Add the diluted digoxigenin-labeled goat antibody (100 µl/well) and 
-incubate for 60 min at 35°C. 
-g. Wash plate 5 times in PBST as above. 
-h. Add the anti-digoxigenin poly HRP conjugate diluted 1:5,000 in casein 
-buffer (100 µl/well), and incubate for 60 min at 35°C. 
-i. 
-j. 
-Wash 5 times in PBST then tamp the plate several times on a paper towel 
-to remove any residual wash buffer. 
-Add 100 µl of the TMB (substrate at room temperature) solution, incubate 
+
+**e.**
+: Wash plate 5 times in PBST as above. 
+
+**f.**
+: Add the diluted digoxigenin-labeled goat antibody (100 µl/well) and incubate for 60 min at 35°C. 
+
+**g.**
+: Wash plate 5 times in PBST as above. 
+
+**h.**
+: Add the anti-digoxigenin poly HRP conjugate diluted 1:5,000 in casein buffer (100 µl/well), and incubate for 60 min at 35°C. 
+
+**i.**
+: Wash 5 times in PBST then tamp the plate several times on a paper towel to remove any residual wash buffer. 
+
+**j.**
+: Add 100 µl of the TMB (substrate at room temperature) solution, incubate 
 20-30 min at 35°C. Positive sample wells will begin to turn a blue-green 
 color. High toxin samples will develop color within a few minutes. The 
 analysis can be stopped with 100 µl of stop reagent at any time (within 
@@ -406,12 +440,13 @@ appropriate sensitivity (absorbance ≥ 1.0) and negative controls are
 acceptable (absorbance not greater than ~ 0.39). The plate should be 
 taken to the plate reader immediately after addition of the stop solution. 
 Measure absorbance at 450 nm on microplate reader. 
-Page | 21 
 Results: A positive test is an absorbance value that is >0.20 above the 
 absorbance observed in the negative controls (sterile uninoculated TPGY 
 broth or CMM or negative food sample). As in any ELISA, higher 
 background absorbance will result if plates are insufficiently washed. 
-D. Confirmation of positive ELISA samples. The DIG-ELISA was designed for screening 
+
+##### D. Confirmation of positive ELISA samples. 
+>> The DIG-ELISA was designed for screening 
 TPGY and CMM culture media that may contain type A, B, E, and/or F botulinal toxins. 
 Some food matrices may be inhibitory to the test or may generate false positive results. 
 Samples that are positive or are inhibitory to the DIG-ELISA test must be confirmed 
@@ -431,10 +466,8 @@ using the mouse bioassay.
   6. Measure absorbance on plates with microplate reader at 450 nm. 
 
 ## V. Specific Detection of Clostridium botulinum Types A, B, E, and F Using the Polymerase Chain Reaction (PCR). 
-For additional information on this PCR method, contact Kathy E. Craven or Joseph L. Ferreira at 
-FDA, ORA, Southeast Regional Laboratory, 60-8th Street, N.E., Atlanta, GA 30309. Telephone: 
-(404) 253-1200; FAX: (404)253-1210. 
-Clostridium botulinum organisms generally produce one of four neurotoxin types (A, B, E, and 
+
+>> Clostridium botulinum organisms generally produce one of four neurotoxin types (A, B, E, and 
 F) associated with human illness. Neurotoxin type determination is important in determining the 
 identification of the bacterium. A PCR method was developed to identify 24 hour botulinal 
 cultures as potential type A, B, E and F neurotoxin producers as well as culture of other 
@@ -444,7 +477,8 @@ enabling the simultaneous testing for types A, B, E, and F in a single thermal c
 primer set was specific for its corresponding toxin type. Additionally, a DNA extraction 
 procedure was included to remove inhibitory substances that may affect amplification. This 
 procedure is rapid, sensitive, and specific for the identification of toxigenic C. botulinum. 
-Because of the severity of neuroparalytic illness caused by botulinal neurotoxin, a rapid 
+
+>> Because of the severity of neuroparalytic illness caused by botulinal neurotoxin, a rapid 
 diagnosis for the specific toxin type is necessary during illness outbreaks suspected of being 
 foodborne. The PCR technique has also been used to detect multiple botulinal toxin-producing 
 types within a single PCR assay (4,6). The PCR assay for the toxin gene type is determined 
@@ -453,7 +487,8 @@ five days of culture growth before toxin is detected (5,9). The PCR method may a
 conjunction with the mouse bioassay to determine toxin type. For example, a culture that is PCR 
 positive for the type A toxin gene would require mouse protection/testing confirmation only for 
 toxin type A. 
-A. Equipment and Materials 
+
+### A. Equipment and Materials 
 1. Programmable automatic thermocycler 
 2. Horizontal gel electrophoresis apparatus 
 3. Electrophoresis constant-voltage power supply 
@@ -469,11 +504,11 @@ A. Equipment and Materials
 13. Aerosol-resistant pipet tips 
 14. Microcentrifuge 
 15. UV transilluminator 
-16. Polaroid camera and Polaroid film 3000 ISO or comparable Gel Documentation 
-System 
-B. Media and Reagents 
-Molecular biology grade reagents are recommended and are available from various 
-manufacturers. 
+16. Polaroid camera and Polaroid film 3000 ISO or comparable Gel Documentation System 
+
+### B. Media and Reagents 
+>> Molecular biology grade reagents are recommended and are available from various manufacturers. 
+
 1. Tryptone-peptone glucose yeast extract broth (TPGY). 
 2. Phosphate-buffered saline, pH 7.4 (PBS) 
 3. Tris EDTA, pH 8.0 (1X TE). 10mM Tris-HCL, 1mM EDTA, pH 8.0 in distilled 
@@ -492,17 +527,18 @@ Triton X-100
 12. Clostridium botulinum neurotoxin oligonucleotide primers types A, B, E, and F, 10 
 µM stock solutions (2). 
 13. Light mineral oil, optional 
-Page | 24 
 14. Sterile deionized water, RNase and DNase free 
 15. 10× TBE (0.9 M Tris-borate, 0.02 M EDTA, pH 8.3) 
 16. Agarose (nucleic acid electrophoresis grade) 
 17. Ethidium bromide solution, 10 mg/ml 
 18. 6× sample loading buffer 
 19. DNA molecular weight markers (e.g., 123 bp ladder or 100 bp ladder) 
-C. Procedure for amplification of C. botulinum neurotoxin A, B, E, and F gene 
-fragments from presumptive C. botulinum isolates using TPBY enrichment broth 
-Food sample preparation and enrichment (Chapter 17, Part l Mouse Bioassay, Section D). 
-1. DNA isolation Procedures. Boil sterile 10 ml portions of Tryptone-Peptone
+
+### C. Procedure for amplification of C. botulinum neurotoxin A, B, E, and F gene fragments from presumptive C. botulinum isolates using TPBY enrichment broth 
+>> Food sample preparation and enrichment (Chapter 17, Part l Mouse Bioassay, Section D). 
+
+##### 1. DNA isolation Procedures
+>> Boil sterile 10 ml portions of Tryptone-Peptone
 Glucose-Yeast Extract Broth (TPGY) in a water bath for 10 min and quickly cool 
 to room temperature just prior to use. Inoculate TPGY with presumptive C. 
 botulinum isolates using a disposable sterile inoculating loop and incubate 
@@ -522,9 +558,11 @@ Centrifuge the ethanol-salt preparations at 14,000 rpm. Discard supernatants and
 dry pellets using a DNA Speed-Vacuum (Savant Instruments, Inc., Holbrook, 
 NY). Re hydrate pellets in 200-µl sterile TE buffer and store immediately at -20° 
 C until PCR analysis is performed. 
-2. Alternative DNA isolation/preparation procedures. Cell lysis by boiling can 
-also be performed to simplify the procedure. C. botulinal cultures are grown 24 
-hours as previously described. Remove a 1.4 ml aliquot and centrifuge at 14,000 
+
+##### 2. Alternative DNA isolation/preparation procedures
+>> Cell lysis by boiling can also be performed to simplify the procedure. 
+C. botulinal cultures are grown 24 hours as previously described. 
+Remove a 1.4 ml aliquot and centrifuge at 14,000 
 × g for 2 min. Boil the suspension in a water bath for 10 min and centrifuge at 
 14,000 × g for 2 min to remove cell debris. Remove the supernatants and place 
 into a sterile microcentrifuge tube. Store at -20°C until PCR analysis is 
@@ -535,10 +573,11 @@ are followed. The method used for lysis of gram positive organisms prior to
 extraction of the DNA for PCR is important. Unless DNA concentrations are 
 determined before PCR analysis, it may be necessary to test dilutions of the DNA 
 sample to avoid false negative results caused by too little or too much DNA when 
-Page | 25 
 using commercially available kits. We recommend the use of no more than 344 
 ng of total DNA be used for the PCR analysis. 
-Note: DNA purification before amplification is recommended to reduce the 
+
+> [!NOTE]
+> DNA purification before amplification is recommended to reduce the 
 possibility of inhibitory substances in cultures from affecting the PCR and to 
 increase the concentration of target DNA. Purification of DNA removes inhibitory 
 substances that may affect PCR amplification. Simple boiling of the cell culture 
@@ -549,58 +588,68 @@ consistently lysed C. botulinum cells (2). The amount of isolated DNA yielding
 positive results using this amplification method ranged from approximately 0.34 
 ng- 5,160 ng DNA per 100-µl total volume PCR reaction. Using DNA 
 concentrations outside this range may result in false negative results. 
-This method is rapid and reliable for the identification of type A, B, E and F toxin
+
+>> This method is rapid and reliable for the identification of type A, B, E and F toxin
 producing clostridial strains. PCR results for typing clostridial toxin genes were 
 obtained in approximately 4 hours following a 24-hour incubation of the culture. 
 This method is not limited by culture production of the neurotoxin which requires 
 up to five days incubation prior to analysis by ELISA or the mouse bioassay (3,5). 
 The PCR products also can be toxin gene typed or confirmed by using type
 specific oligonucleotide or polynucleotide DNA probes. 
-Oligonucleotide Primers. Desalted oligonucleotide primers are obtained from 
-commerical suppliers. Primers were derived from published DNA sequences 
-for C. botulinum structural genes encoding types A, B, E, and F neurotoxins (1, 3, 
-7, 8). The forward (F) and reverse (R) PCR primer sequences are: 
-Type A 
-F 5' -GTG ATA CAA CCA GAT GGT AGT TAT AG -3' 
-R 5' -AAA AAA CAA GTC CCA ATT ATT AAC TTT -3' 
-Type B 
-F 5' -GAG ATG TTT GTG AAT ATT ATG ATC CAG -3' 
-R 5'- GTT CAT GCA TTA ATA TCA AGG CTG G -3' 
-Type E 
-F 5'- CCA GGC GGT TGT CAA GAA TTT TAT -3' 
-R 5'- TCA AAT AAA TCA GGC TCT GCT CCC -3' 
-Type F 
-F 5'-GCT TCA TTA AAG AAC GGA AGC AGT GCT-3' 
-R 5'- GTG GCG CCT TTG TAC CTT TTC TAG G -3' 
-PCR reaction preparation. Primer sets for each of the types are used in 
+
+**Oligonucleotide Primers**
+: Desalted oligonucleotide primers are obtained from commerical suppliers. 
+Primers were derived from published DNA sequences for C. botulinum structural genes encoding types A, B, E, and F neurotoxins (1, 3, 7, 8). 
+: The forward (F) and reverse (R) PCR primer sequences are: 
+: **Type A**
+  : F 5' -GTG ATA CAA CCA GAT GGT AGT TAT AG -3' 
+  : R 5' -AAA AAA CAA GTC CCA ATT ATT AAC TTT -3' 
+
+  **Type B**
+  : F 5' -GAG ATG TTT GTG AAT ATT ATG ATC CAG -3' 
+  : R 5'- GTT CAT GCA TTA ATA TCA AGG CTG G -3' 
+
+  **Type E** 
+  : F 5'- CCA GGC GGT TGT CAA GAA TTT TAT -3' 
+  : R 5'- TCA AAT AAA TCA GGC TCT GCT CCC -3' 
+
+  **Type F**
+  : F 5'-GCT TCA TTA AAG AAC GGA AGC AGT GCT-3' 
+  : R 5'- GTG GCG CCT TTG TAC CTT TTC TAG G -3' 
+
+**PCR reaction preparation**
+: Primer sets for each of the types are used in 
 separate PCR reactions. PCR reactions are performed in a 100 µl volume 
 mixture containing , 1 × PCR buffer [10 mM Tris-HCl pH 9.0, 50 mM KCl, and 
 0.1% Triton X-100], 2.5 mM MgCl2, 0.5 µ'M concentration of each primer set (A, 
 B, E, or F), 200 µM concentration of each deoxynucleotide triphosphate (dATP, 
 dGTP, dCTP, and dTTP), 2.5 U Taq DNA polymerase, and 2 µl of sample DNA. 
-Page | 26 
 If necessary add approx. 50-70 µl of sterile mineral oil. Thermal cyclers equipped 
 with heated covers will not require the addition of a mineral oil overlay. If PCR 
 reaction volumes are decreased to 50 µl, the amount of template should be 
 decreased to 1.0 µl. 
-Note: It is recommended to add sample DNA to the PCR reaction mixture last in 
+: > [!NOTE]
+  > It is recommended to add sample DNA to the PCR reaction mixture last in 
 order to decrease potential contamination of PCR reagents. Positive and 
 negative controls should be included in each analysis. Negative controls 
 containing all of the reagents but lacking template DNA processed as described 
 above are used to monitor for contamination with C. botulinum amplicons. 
-Temperature cycling. PCR conditions for simultaneous amplification of toxin 
-gene fragments A, B, E, and F are: 
-One cycle at 95°C for 5 min 
+
+**Temperature cycling**
+: PCR conditions for simultaneous amplification of toxin gene fragments A, B, E, and F are: 
+: One cycle at 95°C for 5 min 
 Thirty cycles of 94 °C for 1 min (denaturation) 
 60°C for 1 min (annealing) 
 72°C for 1 min (extension) 
 Final incubation of 72 °C for 10 min 
 Holding temperature of 4°C 
-Multiplex PCR for the amplification of A and E or B and F toxin gene fragments 
+: Multiplex PCR for the amplification of A and E or B and F toxin gene fragments 
 has been performed successfully using these primers but with lower PCR 
 product yields (4). These four primer pairs can not be used together in one 
 multiplex reaction because the primers are incompatible. 
-Agarose gel analysis of PCR products. Prepare a 1.2-1.5 % agarose gel in 0.5 
+
+**Agarose gel analysis of PCR products**
+: Prepare a 1.2-1.5 % agarose gel in 0.5 
 × TBE containing 0.5 µg ethidium bromide/ml agarose. Agarose may be melted 
 in 0.5 × TBE using a microwave. Cast gel and allow to solidify. Mix 10 µl portions 
 of PCR products with approximately 2.0 µl 6× gel loading dye and load onto gel 
@@ -609,7 +658,7 @@ included on each gel in order to determine the approximate molecular weight of
 PCR products. Molecular weight markers should contain fragments which 
 bracket the target sequence size. Apply a constant voltage of 10 V/cm and allow 
 amplified fragments to migrate until appropriate band separation is achieved. 
-A short-wave UV light is used to visualize bands relative to the molecular weight 
+: A short-wave UV light is used to visualize bands relative to the molecular weight 
 marker. Predicted fragment lengths for each toxin gene fragment are: Type A, 
 983-bp; Type B, 492-bp; Type E, 410-bp, and Type F, 1137-bp. Photographs of 
 the gels are used to document the results using either a polaroid camera or a 

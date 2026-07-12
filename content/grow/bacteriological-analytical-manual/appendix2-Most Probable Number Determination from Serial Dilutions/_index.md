@@ -7,7 +7,7 @@ weight = 37
 authors = ["Robert Blodgett"]
 updated = 2026-06-01
 site_version = 1
-toc_level = 2
+toc_level = 3
 see_also = [
   { title = "Appendix 2", href = "https://www.fda.gov/food/laboratory-methods-food/bam-appendix-2-most-probable-number-serial-dilutions" },
 ]
@@ -182,23 +182,25 @@ the outcome were (3, 1, 0), multiply the Table 1 MPN/g estimate, 43/g, by 10 to 
 
 
 ## Bounds and Approximations for a Design without a Table 
-?
+>> The MPN for a serial dilutions not addressed by any table (e.g., resulting from accidental loss of some tubes) may be computed by iteration or bounded [as follows](一Appendix_2.pdf). 
 
 
 ## MPN for a Single Dilution with any Positive Tubes 
-?
+>> CIf just one dilution has any positive tubes, then a simpler expression gives its MPN. 
+
+>> **MPN/g = (1/m) × 2.303 × log₁₀ ((∑ tⱼmⱼ) / (∑ (tⱼ - gⱼ)mⱼ))**
+
+>> Where m denotes the amount of sample in each tube in the dilution with a positive tube.
 
 
 ## Special Requirements and Tables Included 
->> The attached spreadsheet should be able to handle most specialized designs. Garthright and 
-Blodgett (2003) discusses this spreadsheet. Requests for special computations and different 
-designs will be honored as resources permit. Designs may be requested with more or less than 
-3 dilutions, uneven numbers of tubes, different confidence levels, etc. (Telephone 301-436
-1836 or write the Division of Mathematics, FDA/CFSAN, 5100 Paint Branch Parkway, HFS-205 
-Rm 2D-011, College Park, MD 20740) The most-published designs, three 10-fold dilutions with 
-3, 5, 8, or 10 tubes at each dilution, are presented here. 
+>> The attached spreadsheet should be able to handle most specialized designs. 
+Garthright and Blodgett (2003) discusses this spreadsheet. 
+Requests for special computations and different designs will be honored as resources permit. 
+Designs [may be requested](一Appendix_2.pdf) with more or less than 3 dilutions, uneven numbers of tubes, different confidence levels, etc. 
+The most-published designs, three 10-fold dilutions with 3, 5, 8, or 10 tubes at each dilution, are presented here. 
 
->> Click on the link https://mpncalc.galaxytrakr.org/External Link Disclaimer to automatically 
+>> [Click on the link](https://mpncalc.galaxytrakr.org/) to automatically 
 calculate the MPN point estimate and confidence intervals of varying levels (80%, 90%, 95% or 
 99%). The confidence interval method implemented in this application uses the large sample 
 theory approach of Jarvis et al. (2010), with a slight modification for all-positive or all-negative 
@@ -213,19 +215,19 @@ and Blodgett RJ (2002), an assessment of how likely the observed experimental ou
 >> Excel Spreadsheet to Calculate Values 
 
 ##### Table 1: For 3 tubes each at 0.1, 0.01, and 0.001 g inocula, the MPNs per gram and 95 percent confidence intervals. 
-TODO
+[See Attached](一Appendix_2.pdf)
 
 ##### Table 2: For 5 tubes each at 0.1, 0.01, and 0.001 g inocula, the MPNs and 95 percent confidence intervals. 
-TODO
+[See Attached](一Appendix_2.pdf)
 
 ##### Table 3: For 10 tubes at each of 0.1, 0.01, and 0.001 g inocula, the MPNs and 95 percent confidence intervals.
-TODO
+[See Attached](一Appendix_2.pdf)
 
 ##### Table 4: For 8 tubes at each of 0.1, 0.01, and 0.001 g inocula, the MPNs and 95 percent confidence intervals. 
-TODO
+[See Attached](一Appendix_2.pdf)
 
 ##### Table 5: For 10 tubes at 10 ml inocula, the MPN per 100 ml and 95 percent confidence intervals. 
-TODO
+[See Attached](一Appendix_2.pdf)
 
 
 ## Note on Spreadsheet and Tables 
