@@ -97,47 +97,7 @@ citrus juices for presence of E. coli in conjunction with the Juice HACCP rule.
 
 ## I. Conventional Method for coliforms, fecal coliforms and E. coli
 
-A. Equipment and materials 
-1. Covered water bath, with circulating system to maintain temperature of 44.5 ± 
-0.2°C.  The temperature for water baths for the shellfish program is 44.5°C ± 
-0.2°C. Water level should be above the medium in immersed tubes. 
-2. Immersion-type thermometer, 1-55°C, about 55 cm long, with 0.1°C subdivisions, 
-certified by National Institute of Standards and Technology (NIST), or equivalent 
-Incubator, 35 ± 0.5°C. 
-3. Balance with capacity of >2 kg and sensitivity of 0.1 g 
-4. Blender and blender jar (see Chapter 1) 
-5. Sterile graduated pipets, 1.0 and 10.0 mL 
-6. Sterile utensils for sample handling (see Chapter 1) 
-7. Dilution bottles made of borosilicate glass, with polyethylene screw caps 
-equipped with Teflon liners. Commercially prepared dilution bottles containing 
-sterile Butterfield's phosphate buffer can also be used. 
-8. Quebec colony counter, or equivalent, with magnifying lens 
-9. Longwave UV light [~365 nm], not to exceed 6 W. 
-10. pH meter 
-B. Media and Reagents 
-1. Brilliant green lactose bile (BGLB) broth, 2% (M25) 
-2. Lauryl tryptose (LST) broth (M76) 
-3. Lactose Broth (M74) 
-4. EC broth (M49) 
-5. Levine's eosin-methylene blue (L-EMB) agar (M80) 
-6. Tryptone (tryptophane) broth (M164) 
-7. MR-VP broth (M104) 
-8. Koser's citrate broth (M72) 
-9. Plate count agar (PCA) (standard methods) (M124) 
-10. Butterfield's phosphate-buffered water (R11) or equivalent diluent 
-(Note: This same formulation is referred to as Buffered Dilution Water in American Public Health 
-Association. 1970. Recommended Procedures for the Examination of Seawater and Shellfish, 
-4th ed. APHA, Washington, DC., p14-15) 
-11. Kovacs' reagent (R38) 
-12. Voges-Proskauer (VP) reagents (R89) 
-13. Gram stain reagents (R32) 
-14. Methyl red indicator (R44) 
-15. Violet red bile agar (VRBA) (M174) 
-16. VRBA-MUG agar (M175) 
-17. EC-MUG medium (M50) 
-18. Lauryl tryptose MUG (LST-MUG) broth (M77) 
-19. Peptone Diluent, 0.5% (R97) 
-C. MPN - Presumptive test for coliforms, fecal coliforms and E. coli 
+### C. MPN - Presumptive test for coliforms, fecal coliforms and E. coli 
 Weigh 50 g of food into sterile high-speed blender jar (see Chapter 1 and current FDA 
 compliance programs for instructions on sample size and compositing) Frozen samples can be 
 softened by storing for <18 h at 2-5°c, but do not thaw. Add 450 mL of Butterfield's phosphate
@@ -157,13 +117,15 @@ Incubate LST tubes at 35°C± 0.5°C . Examine tubes and record reactions at 24 
 i.e., displacement of medium in fermentation vial or effervescence when tubes are gently 
 agitated. Re-incubate gas-negative tubes for an additional 24 h and examine and record 
 reactions again at 48 ± 3 h. Perform confirmed test on all presumptive positive (gas) tubes. 
-D. MPN - Confirmed test for coliforms 
+
+### D. MPN - Confirmed test for coliforms 
 From each gassing LST or lactose broth tube, transfer a loopful of suspension to a tube of 
 BGLB broth, avoiding pellicle if present. (a sterile wooden applicator stick may also be used for 
 these transfers). Incubate BGLB tubes at 35°C ± 0.5°C and examine for gas production at 48 ± 
 3 h. Calculate most probable number (MPN) (see Appendix 2) of coliforms based on proportion 
 of confirmed gassing LST tubes for 3 consecutive dilutions. 
-E. MPN - Confirmed test for fecal coliforms and E. coli 
+
+### E. MPN - Confirmed test for fecal coliforms and E. coli 
 From each gassing LST or Lactose broth tube from the Presumptive test, transfer a loopful of 
 each suspension to a tube of EC broth (a sterile wooden applicator stick may also be used for 
 these transfers). Incubate EC tubes 24 ± 2 h at 44.5°C and examine for gas production. If 
@@ -171,7 +133,8 @@ negative, reincubate and examine again at 48 ± 2 h. Use results of this test to
 coliform MPN. To continue with E. coli analysis, proceed to Section F below. The EC broth MPN 
 method may be used for seawater and shellfish since it conforms to recommended procedures 
 (1). 
-F. MPN - Completed test for E. coli. 
+
+### F. MPN - Completed test for E. coli. 
 To perform the completed test for E. coli, gently agitate each gassing EC tube, remove a loopful 
 of broth and streak for isolation on a L-EMB agar plate and incubate for 18-24 h at 35°C ± 0.5°C 
 . Examine plates for suspicious E. coli colonies, i.e., dark centered and flat, with or without 
@@ -203,7 +166,8 @@ on proportion of EC tubes in 3 successive dilutions that contain E. coli.
 NOTE: Alternatively, instead of performing the IMViC test, use API20E or the automated VITEK 
 biochemical assay to identify the organism as E. coli. Use growth from the PCA slants and 
 perform these assays as described by the manufacturer. 
-G. Solid medium method - Coliforms 
+
+### G. Solid medium method - Coliforms 
 Prepare violet red bile agar (VRBA) according to manufacturer's instructions. Cool to 48°C 
 before use. Prepare, homogenize, and decimally dilute sample as described in section I. C 
 above so that isolated colonies will be obtained when plated. Transfer two 1 mL aliquots of each 
@@ -228,7 +192,8 @@ Alternatively, E. coli colonies can be distinguished among the coliform colonies
 adding 100 µg of 4-methyl-umbelliferyl-β-D-glucuronide (MUG) per mL in the VRBA overlay. 
 After incubation, observe for bluish fluorescence around colonies under longwave UV light. (see 
 LST-MUG section II for theory and applicability.) 
-H. Membrane Filtration (MF) Method - coliforms: see Section III. Bottled Water. 
+
+### H. Membrane Filtration (MF) Method - coliforms: see Section III. Bottled Water. 
 Food homogenates will easily clog filters, hence MF are most suitable for analysis of water 
 samples; however, MF may be used in the analysis of liquid foods that do not contain high 
 levels of particulate matter such as bottled water (see Section III for application of MF). 
@@ -236,7 +201,7 @@ levels of particulate matter such as bottled water (see Section III for applicat
 
 ## II. LST-MUG Method for Detecting E. coli in Chilled or Frozen Foods Exclusive of Bivalve Molluscan Shellfish 
 
-The LST-MUG assay is based on the enzymatic activity of β-glucuronidase (GUD), which 
+>> The LST-MUG assay is based on the enzymatic activity of β-glucuronidase (GUD), which 
 cleaves the substrate 4-methylumbelliferyl β-D-glucuronide (MUG), to release 4
 methylumbelliferone (MU). When exposed to longwave (365 nm) UV light, MU exhibits a bluish 
 fluorescence that is easily visualized in the medium or around the colonies. Over 95% of E. 
@@ -262,20 +227,27 @@ foods, exclusive of shellfish (28). See Sec. IV.4. D. for precautions in using M
 shellfish. For information on MUG assay contact, Dr. Bill Burkhardt III 
 (email William.Burkhardt@fda.hhs.gov ), FDA, CFSAN, Dauphin Island, AL, 36528; 251-406
 8125.  
-CAUTION: To observe for fluorescence, examine inoculated LST-MUG tubes under longwave 
+
+> [!CAUTION]
+> To observe for fluorescence, examine inoculated LST-MUG tubes under longwave 
 (365 nm) UV light in the dark. A 6-watt hand-held UV lamp is adequate and safe. When using a 
 more powerful UV source, such as a 15-watt fluorescent lamp, wear protective glasses or 
 goggles. Also, prior to use in MUG assays, examine all glass tubes for auto fluorescence. 
 Cerium oxide, which is sometimes added to glass as a quality control measure, will fluoresce 
 under UV light and interfere with the MUG test (25). The use of positive and negative control 
 strains for MUG reaction is essential. 
-A. Equipment and material: see section I.A above and in addition, 
-1. New, disposable borosilicate glass tubes (100 × 16 mm) 
-2. New, disposable borosilicate glass Durham vials (50 × 9 mm) for gas collection 
-3. Longwave UV lamp, not to exceed 6-watt 
-B. Media and reagents: see section I.B above 
-C. Presumptive LST-MUG test for E. coli. 
-Prepare food samples and perform the MPN Presumptive test as described in section I.C. 
+
+**A. Equipment and material**
+: see section I.A above and in addition, 
+: 1. New, disposable borosilicate glass tubes (100 × 16 mm) 
+: 2. New, disposable borosilicate glass Durham vials (50 × 9 mm) for gas collection 
+: 3. Longwave UV lamp, not to exceed 6-watt 
+
+**B. Media and reagents**
+: see section I.B above 
+
+**C. Presumptive LST-MUG test for E. coli**. 
+: Prepare food samples and perform the MPN Presumptive test as described in section I.C. 
 above, except use LST-MUG tubes instead of LST. Be sure to inoculate one tube of LST-MUG 
 with a known GUD-positive E. coli isolate as positive control (ATCC 25922). In addition, 
 inoculate another tube with a culture of Enterobacter aerogenes (ATCC 13048) culture of 

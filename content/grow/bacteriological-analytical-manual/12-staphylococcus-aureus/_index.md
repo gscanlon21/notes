@@ -8,7 +8,7 @@ authors = ["Sandra Tallent", "Jennifer Hait", "Reginald W. Bennett", "Gayle A. L
 subtitle = "Chapter 12"
 updated = 2026-06-01
 site_version = 1
-toc_level = 2
+toc_level = 3
 see_also = [
   { title = "Chapter 12", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-12-staphylococcus-aureus" },
 ]
@@ -66,25 +66,10 @@ nontoxic staphylococci.
 >> This method is suitable for the analysis of foods in which more than 100 S. aureus cells/g may 
 be expected. It conforms to the method in ref. 1. 
 
-A. Equipment and materials 
-1. Same basic equipment as for conventional plate count (Chapter 3). 
-2. Drying cabinet or incubator for drying surface of agar plates 
-3. Sterile bent glass streaking rods, hockey stick or hoe-shaped, with fire-polished 
-ends, 3-4 mm diameter, 15-20 cm long, with an angled spreading surface 45-55 
-mm long 
-B. Media and reagents 
-1. Baird-Parker medium (M17) 
-2. Trypticase (tryptic) soy agar (TSA) (M152) 
-3. Brain heart infusion (BHI) broth (M24) 
-4. Coagulase plasma (rabbit) with EDTA 
-5. Toluidine blue-DNA agar (M148) 
-6. Lysostaphin (Schwartz-Mann, Mountain View Ave., Orangeburg, NY 10962) 
-7. Tryptone yeast extract agar (M165) 
-8. Paraffin oil, sterile 
-9. 0.02 M phosphate-saline buffer (R61), containing 1% NaCl 
-10. Catalase test (R12) 
-C. Preparation of sample (see BAM Chapter 1). 
-D. Isolation and enumeration of S. aureus 
+### C. Preparation of sample 
+(see BAM Chapter 1). 
+
+### D. Isolation and enumeration of S. aureus 
 1. For each dilution to be plated, aseptically transfer 1 ml sample suspension to 3 
 plates of Baird-Parker agar, distributing 1 ml of inoculum equitably to 3 plates 
 (e.g., 0.4 ml, 0.3 ml, and 0.3 ml). Spread inoculum over surface of agar plate, 
@@ -113,7 +98,8 @@ count nontypical colonies. Select > 1 colony of each type counted and test for
 coagulase production. Add number of colonies on triplicate plates represented by 
 colonies giving positive coagulase test and multiply by the sample dilution factor. 
 Report this number as number of S. aureus/g of food tested. 
-E. Coagulase test 
+
+### E. Coagulase test 
 Transfer suspect S. aureus colonies into small tubes containing 0.2-0.3 ml BHI broth and 
 emulsify thoroughly. Inoculate agar slant of suitable maintenance medium, e.g., TSA, 
 with loopful of BHI suspension. Incubate BHI culture suspension and slants 18-24 h at 
@@ -127,7 +113,8 @@ positive and negative cultures simultaneously with suspect cultures of unknown
 coagulase activity. Stain all suspect cultures with Gram reagent and observe 
 microscopically. A latex agglutination test (AUREUS TESTTM, Trisum Corp., Taipei, 
 Taiwan) may be substituted for the coagulase test if a more rapid procedure is desired. 
-F. Ancillary tests 
+
+### F. Ancillary tests 
 1. Catalase test. Use growth from TSA slant for catalase test on glass slide or spot 
 plate, and illuminate properly to observe production of gas bubbles. 
 2. Anaerobic utilization of glucose. Inoculate tube of carbohydrate fermentation 
@@ -159,8 +146,9 @@ sample (15 min in boiling water bath) of broth cultures used for coagulase test 
 well on prepared slide. Incubate slides in moist chamber 4 h at 35-37°C. 
 Development of bright pink halo extending at least 1 mm from periphery of well 
 indicates a positive reaction. 
-G. Some typical characteristics of 2 species of staphylococci and the micrococci, which 
-may be helpful in their identification, are shown in Table 1. 
+
+### G. Some typical characteristics of 2 species of staphylococci and the micrococci, which may be helpful in their identification, are 
+shown in Table 1. 
 
 ##### Table 1. Typical characteristics of S. aureus, S. epidermidis, and micrococci(a) 
 TODO
@@ -171,12 +159,17 @@ TODO
 products in which small numbers of S. aureus are expected and in foods expected to contain a 
 large population of competing species. 
 
-- Equipment and materials--Same as for Direct Plate Count Method, above. 
-- Media and reagents--Same as for Direct Plate Count Method, above. In addition: Trypticase (tryptic) soy broth (TSB) containing 10% NaCl and 1% sodium pyruvate (M154a). 
-- Preparation of sample--Same as for Direct Plate Count Method, above. 
-- Determination of MPN 
+**Equipment and materials**
+: Same as for Direct Plate Count Method, above. 
 
->> Inoculate 3 tubes of TSB containing 10% NaCl and 1% sodium pyruvate (B, above) with 1 ml 
+**Media and reagents**
+: Same as for Direct Plate Count Method, above. In addition: Trypticase (tryptic) soy broth (TSB) containing 10% NaCl and 1% sodium pyruvate (M154a). 
+
+**Preparation of Sample**
+: Same as for Direct Plate Count Method, above. 
+
+**Determination of MPN**
+: Inoculate 3 tubes of TSB containing 10% NaCl and 1% sodium pyruvate (B, above) with 1 ml 
 portions of decimal dilutions of each sample. Highest dilution must give negative endpoint. 
 Incubate tubes 48 ± 2 h at 35-37°C. Using 3 mm loop, transfer 1 loopful from each tube showing 
 growth (turbidity) to plate of Baird-Parker medium with properly dried surface. Vortex-mix tubes 

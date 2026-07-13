@@ -15,10 +15,10 @@ see_also = []
 {{ hidden() }}
 
 
-# Enumeration of Yeasts and Molds in Food
-# --Dilution Plating Technique 
+> # Enumeration of Yeasts and Molds in Food
+> # --Dilution Plating Technique 
 
-## Equipment and Materials 
+## Equipment and Materials
 ## A.
 1. Basic equipment (and appropriate techniques) for preparation of sample homogenate, see [Chapter 1](/bam/chapter-1/equipment-materials)
 2. Equipment for plating samples, see [Chapter 3](/bam/chapter-3/equipment-materials)

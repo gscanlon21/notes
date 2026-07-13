@@ -61,4 +61,14 @@ article.v1 {
 			display: none;
 		}
 	}
+
+	blockquote:has(>h1), blockquote:has(>h2), blockquote:has(>h3), blockquote:has(>h4) {
+		border-left: none !important;
+		padding: 0 !important;
+		margin: 0 !important;
+
+		&:first-child > h1, &:first-child > h2, &:first-child > h3, &:first-child > h4 {
+			margin: 0 !important;
+		}
+	}
 }
