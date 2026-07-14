@@ -12,6 +12,7 @@ article.v1 {
 		&::after {
 			content: '';
 			background-color: color(--color-h2, var(--side-opacity));
+			transform: translateX(2px);
 			left: $site-padding * -1;
 			position: absolute;
 			top: 0.15em;
@@ -30,7 +31,7 @@ article.v1 {
 		&::after {
 			content: '';
 			background-color: color(--color-h3, var(--side-opacity));
-			transform: translateX($site-padding * 0.25);
+			transform: translateX(5px);
 			left: $site-padding * -1;
 			position: absolute;
 			top: 0.15em;
@@ -49,7 +50,7 @@ article.v1 {
 		&::after {
 			content: '';
 			background-color: color(--color-h4, var(--side-opacity));
-			transform: translateX($site-padding * 0.5);
+			transform: translateX(8px);
 			left: $site-padding * -1;
 			position: absolute;
 			top: 0.15em;
