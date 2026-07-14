@@ -85,8 +85,9 @@ by squeezing filled sac while holding open end tightly closed. Empty sac and pla
 water until use.
 
 ## D. Extraction of Enterotoxin from Food Portion  
-NOTE: this procedure and other procedures that may generate aerosols of pathogenic 
-microorganisms or enterotoxins should be performed in an approved biosafety cabinet. 
+> [!NOTE]
+> This procedure and other procedures that may generate aerosols of pathogenic microorganisms or enterotoxins should be performed in an approved biosafety cabinet. 
+
 1. If possible, grind entire food product or portions from representative selections of the 
 product in a blender to homogenize the sample so that any SE present in the food is 
 evenly distributed. 
