@@ -8,7 +8,7 @@ authors = ["Wallace H. Andrews (ret.), Hua Wang, Andrew Jacobson (ret.), Beilei 
 subtitle = "Chapter 5"
 updated = 2026-06-01
 site_version = 1
-toc_level = 2
+toc_level = 3
 see_also = [
   { title = "*Salmonella", href = "https://www.cdc.gov/salmonella/about/index.html" },
   { title = "Chapter 5", href = "https://www.fda.gov/food/laboratory-methods-food/bam-chapter-5-salmonella" },
@@ -75,127 +75,6 @@ positive controls. A non-Salmonella strain negative control and an uninoculated 
 are also needed for sample analysis. Refer to Section B.56 for Suggested Quality Control 
 Cultures.
 
-
-
-## A. Equipment and Materials 
-1. Blender and sterile blender jars 
-2. Sterile, homogenizer blender filter bags (710 ml) or equivalent, sterile 500 ml wide
-mouth, screw-cap jars, sterile 500 ml Erlenmeyer flasks, sterile 250 ml beakers, sterile 
-glass or paper funnels of appropriate size, and, optionally, containers of appropriate 
-capacity to accommodate large and composited samples 
-3. Sterile, bent glass or plastic spreader rods 
-4. Balance, 2000 g capacity, sensitivity of 0.1 g 
-5. Balance, 120 g capacity, sensitivity of 5 mg 
-6. Incubator, 35 ± 2°C 
-7. Refrigerated incubator or laboratory refrigerator, 4 ± 2°C 
-8. Water bath, 49 ± 1°C 
-9. Water bath, circulating, thermostatically-controlled, 42 ± 0.2°C and 43 ± 0.2°C 
-10. Sterile spoons or other appropriate instruments for transferring food samples 
-11. Sterile culture dishes, 15 × 100 mm, glass or plastic 
-12. Sterile pipets, 1 ml, with 0.01 ml graduations; 5 and 10 ml, with 0.1 ml graduations 
-13. Sterile inoculating needle and inoculating loop (10 µl and 1 µl) 
-14. Sterile test or culture tubes, 16 × 150 mm and 20 × 150 mm; serological tubes, 10 × 75 
-mm or 13 × 100 mm 
-15. Test or culture tube racks 
-16. Vortex mixer 
-17. Sterile shears, large scissors, scalpel, and forceps 
-18. Fisher or Bunsen burner 
-19. pH test paper (pH range 6-8) with maximum graduations of 0.4 pH units per color 
-change 22. pH meter 
-20. Plastic bags, 28 × 37 cm, sterile, with resealable tape (Items 21-22 are needed in the 
-analysis of frog legs and rabbit carcasses.) 
-21. Plastic beakers, 4 liter, autoclavable, for holding plastic bag during shaking and 
-incubation 
-22. Sponges, non-bactericidal, or equivalent 
-23. Swabs, non-bactericidal, cotton-tipped 
-24. Ultraviolet (UV) light source with an emission wavelength between 360 to 400 nm when 
-Green Fluorescent Protein (GFP)-UV control strains are used. 
-
-
-
-## B. Media, Reagents, and Quality Control Cultures 
-1. Lactose broth (M74) 
-2. Nonfat dry milk (reconstituted) (M111) 
-3. Selenite cystine (SC) broth (M134) 
-4. Tetrathionate (TT) broth (M145) 
-5. Rappaport-Vassiliadis (RV) medium (M132). NOTE: RV medium must be made rom its 
-individual ingredients. Commercial formulations are not acceptable. 
-6. Xylose lysine desoxycholate (XLD) agar (M179) 
-7. Hektoen enteric (HE) agar (M61) 
-8. Bismuth sulfite (BS) agar (M19) 
-9. Triple sugar iron agar (TSI) (M149) 
-10. Tryptone (tryptophane) broth (M164) 
-11. Trypticase (tryptic) soy broth (M154) 
-12. Trypticase soy-tryptose broth (M160) 
-13. MR-VP broth (M104) 
-14. Simmons citrate agar (M138) 
-15. Urea broth (M171) 
-16. Urea broth (rapid) (M172) 
-17. Malonate broth (M92) 
-18. Lysine iron agar (LIA) (Edwards and Fife) (M89) 
-19. Lysine decarboxylase broth (M87) 
-20. Motility test medium (semisolid) (M103) 
-21. Potassium cyanide (KCN) broth (M126) 
-22. Phenol red carbohydrate broth (M121) 
-23. Purple carbohydrate broth (M130) 
-24. MacConkey agar (M91) 
-25. Nutrient broth (M114) 
-26. Brain heart infusion (BHI) broth (M24) 
-27. Papain solution, 5% (M56a) 
-28. Cellulase solution, 1% (M187) 
-29. Tryptose blood agar base (M166) 
-30. Universal preenrichment broth (M188) 
-31. Universal preenrichment broth (without ferric ammonium citrate) (M188a) 
-32. Buffered peptone water (M192) 
-33. Dey-Engley broth (M193) 
-34. Potassium sulfite powder, anhydrous 
-35. Chlorine solution, 200 ppm, containing 0.1% sodium dodecyl sulfate (R12a) 
-36. Ethanol, 70% (R23) 
-37. Kovacs' reagent (R38) 
-38. Voges-Proskauer (VP) test reagents (R89) 
-39. Creatine phosphate crystals 
-40. Potassium hydroxide solution, 40% (R65) 
-41. 1 N Sodium hydroxide solution (R73) 
-42. 1 N Hydrochloric acid (R36) 
-43. Brilliant green dye solution, 1% (R8) 
-44. Bromcresol purple dye solution, 0.2% (R9) 
-45. Methyl red indicator (R44) 
-46. Sterile distilled water 
-47. Tergitol anionic 7 (R78) 
-48. Triton X-100 (R86) 
-49. Physiological saline solution, 0.85% (sterile) (R63) 
-50. Formalinized physiological saline solution (R27) 
-51. Salmonella polyvalent somatic (O) antiserum 
-52. Salmonella polyvalent flagellar (H) antiserum 
-53. Salmonella somatic group (O) antisera: A, B, C1, C2, C3, D1, D2, E1, E2, E3, E4, F, G, H, I, 
-Vi, and other groups, as appropriate 
-54. Salmonella Spicer-Edwards flagellar (H) antisera 
-55. Modified buffered peptone water, two formulas (M192b, M192c) 
-
-**Suggested Quality Control Cultures**
-: Analysts must use both typical and atypical Salmonella controls for sample analysis, 
-since it may be more difficult to confirm the presence of an atypical strain in a sample 
-without an atypical control strain for guidance. 
-: Green fluorescent protein (GFP) control strains which fluoresce under UVA light, more 
-specifically at wavelengths between 360 to 400 nm, have been developed by FDA and 
-have been licensed by FDA to [Microbiologics](https://www.microbiologics.com) for distribution. 
-(200 Cooper Avenue North St. Cloud, MN 56303, 1800-599-2847). 
-The following cultures may be purchased from Microbiologics: 
-: - Salmonella enterica subsp. enterica serovar Gaminara Sal57 / FDA SAL5695 (typical, lactose negative, H2S positive), Catalog No. 01278UV. 
-: - Salmonella enterica subsp. enterica serovar Senftenberg Sal59 / FDA Sal5697 (atypical, lactose negative, H2S negative), Catalog No. 01226UV. 
-: - Salmonella enterica subsp. enterica serovar Mbandaka Sal58 / FDA SAL5696 (atypical, sucrose positive, H2S positive), Catalog No. 01230UV. 
-: Non-GFP fluorescent Salmonella control strains may also be used for sample 
-analysis. In addition to the positive control cultures (typical Salmonella; lactose 
-negative, H2S positive), 3 additional Salmonella cultures are recommended to 
-assist in the selection of atypical Salmonella colony morphology on selective 
-agars. These cultures are a lactose positive, H2S-positive S. diarizonae 
-(47:i:z53:z57, ATCC 12325) and a lactose-negative, H2S-negative S. Abortusequi 
-(4,12:-:e,n,x, ATCC 9842); or a lactose-positive, H2S-negative S. diarizonae 
-(60:r:e,n,x,z15, ATCC 29934). These cultures may be obtained from the American 
-Type Culture Collection (http://www.atcc.org/), 10801 University Boulevard, 
-Manassas, VA 20110-2209.
-
-
 ## C. Preparation of Foods for the Detection and Isolation of Salmonella 
 >> The following methods for sample homogenate preparation and preenrichment are based on the 
 analysis of a 25 g analytical unit at a 1:9 sample/broth ratio. Depending on the extent of 
@@ -203,7 +82,7 @@ compositing, add enough broth to maintain this 1:9 ratio unless otherwise indica
 samples not analyzed on an exact weight basis, e.g., frog legs, refer to the specific method for 
 instructions. 
 
-1. Dried egg yolk, dried egg whites, dried whole eggs, liquid milk (skim milk, 2% fat 
+### 1. Dried egg yolk, dried egg whites, dried whole eggs, liquid milk (skim milk, 2% fat 
 milk, whole, and buttermilk), and prepared powdered mixes (cake, cookie, 
 doughnut, biscuit, and bread), infant formula, and oral or tube feedings containing 
 egg. Preferably, do not thaw frozen samples before analysis. If frozen sample must be 
@@ -221,7 +100,7 @@ determine pH with test paper. Adjust pH, if necessary, to 6.8 ± 0.2 with steril
 or 1 N HCl. Cap jar securely and mix well before determining final pH. Loosen jar cap 
 about 1/4 turn and incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, below. 
 
-2. Eggs 
+### 2. Eggs 
   a. Shell eggs [15,16]. Eggs with chipped, cracked, or broken shells are not 
   included in the sample. Remove any adherent material from the shell eggs 
   surface. Disinfect egg surface with a solution consisting of 3 parts of 70% alcohol 
@@ -260,7 +139,7 @@ about 1/4 turn and incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, belo
   appropriate container. Add 225 ml trypticase soy broth (TSB) (without ferrous 
   sulfate) and mix well by swirling. Continue as in E.1-11. 
 
-3. Nonfat dry milk 
+### 3. Nonfat dry milk 
   a. Instant. Aseptically weigh 25 g sample into sterile beaker (250 ml) or other 
   appropriate container. Using sterile glass or paper funnel (made with tape to 
   withstand autoclaving), pour 25 g analytical unit gently and slowly over surface of 
@@ -277,7 +156,7 @@ about 1/4 turn and incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, belo
 
 4. Dry whole milk. Examine as described for instant nonfat dry milk, except that the 25 g analytical units may not be composited. 
 
-5. Casein 
+### 5. Casein 
   a. Lactic casein. Aseptically weigh 25 g sample into sterile beaker (250 ml) or 
   other appropriate container. Using sterile glass or paper funnel (made with tape 
   to withstand autoclaving), pour 25 g analytical unit gently and slowly over the 
@@ -303,8 +182,8 @@ about 1/4 turn and incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, belo
   test paper. Adjust pH, if necessary, to 6.8 ± 0.2. Loosen jar about 1/4 turn and 
   incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, below. 
 
-6. Soy flour. Examine as described for rennet casein, except 25 g analytical units (25 g) may not be composited. 
-7. Fresh, frozen, or dried products. Preferably, do not thaw frozen samples before 
+### 6. Soy flour. Examine as described for rennet casein, except 25 g analytical units (25 g) may not be composited. 
+### 7. Fresh, frozen, or dried products. Preferably, do not thaw frozen samples before 
 analysis. If frozen sample must be tempered to obtain analytical portion, thaw 
 suitable portion as rapidly as possible to minimize increase in number of competing 
 organisms or to reduce potential of injuring Salmonella organisms. Thaw below 45°C 
@@ -341,20 +220,20 @@ within 18 h at 2-5°C.
   2°C. Continue as in 
   E.1-11, below. 
 
-8. Dried yeast (active and inactive yeast). Aseptically weigh 25 g sample into sterile, 
+### 8. Dried yeast (active and inactive yeast). Aseptically weigh 25 g sample into sterile, 
 wide-mouth, screw-cap jar (500 ml) or other appropriate container. Add 225 ml sterile 
 trypticase soy broth (TSB). Mix well to form smooth suspension. Let stand 60 ± 5 min at 
 room temperature with jar securely capped. Mix well by swirling and determine pH with 
 test paper. Adjust pH, if necessary, to 6.8 ± 0.2, mixing well before determining final pH. 
 Loosen jar cap 1/4 turn and incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, below. 
 
-9. Frosting and topping mixes. Aseptically weigh 25 g sample into sterile, wide-mouth, 
+### 9. Frosting and topping mixes. Aseptically weigh 25 g sample into sterile, wide-mouth, 
 screw-cap jar (500 ml) or other appropriate container. Add 225 ml nutrient broth and mix 
 well. Cap jar securely and let stand 60 ± 5 min at room temperature. Mix well by swirling 
 and determine pH with test paper. Adjust pH, if necessary, to 6.8 ± 0.2. Loosen jar cap 
 about 1/4 turn and incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, below. 
 
-10. Spices 
+### 10. Spices 
   a. Black pepper, white pepper, celery seed or flakes, chili powder or flakes, 
   cumin, paprika, parsley flakes, rosemary, sesame seed, thyme, and 
   vegetable flakes. Aseptically weigh 25 g sample into sterile, wide-mouth, screw
@@ -405,7 +284,7 @@ about 1/4 turn and incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, belo
   oregano leaves), 475ml of TSB should be added to 25 g of samples. Continue to 
   pre-enrich the rinsate as in C.10.a. 
 
-11. Candy and candy coating (including chocolate). Aseptically weigh 25 g sample into 
+### 11. Candy and candy coating (including chocolate). Aseptically weigh 25 g sample into 
 sterile blending container. Add 225 ml sterile, reconstituted nonfat dry milk and blend 2 
 min. Aseptically transfer homogenized mixture to sterile, wide-mouth, screw-cap jar (500 
 ml) or other appropriate container and let stand 60 ± 5 min at room temperature with jar 
@@ -414,7 +293,7 @@ necessary, to 6.8 ± 0.2. Add 0.45 ml 1% aqueous brilliant green dye solution an
 well. Loosen jar caps 1/4 turn and incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, 
 below. 
 
-12. Coconut. Aseptically weigh 25 g sample into sterile, wide-mouth, screw-cap jar (500 ml) 
+### 12. Coconut. Aseptically weigh 25 g sample into sterile, wide-mouth, screw-cap jar (500 ml) 
 or other appropriate container. Add 225 ml sterile lactose broth, shake well, and let stand 
 60 ± 5 min at room temperature with jar securely capped. Mix well by swirling and 
 determine pH with test paper. Adjust pH, if necessary, to 6.8 ± 0.2. Add up to 2.25 ml 
@@ -423,7 +302,7 @@ Triton X-100. Limit use of these surfactants to minimum quantity needed to initi
 foaming. For Triton X-100 this quantity may be as little as 2 or 3 drops. Loosen jar cap 
 about l/4 turn and incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, below. 
 
-13. Food dyes and food coloring substances. For dyes with pH 6.0 or above (10% 
+### 13. Food dyes and food coloring substances. For dyes with pH 6.0 or above (10% 
 aqueous suspension), use method described for dried whole eggs in C.l, above. For 
 laked dyes or dyes with pH below 6.0, aseptically weigh 25 g sample into sterile, wide- 
 mouth, screwcap jar (500 ml) or other appropriate container. Add 225 ml tetrathionate 
@@ -432,14 +311,14 @@ with jar securely capped. Using pH meter, adjust pH to 6.8 ± 0.2. Add 2.25 ml 0
 brilliant green dye solution and mix thoroughly by swirling. Loosen jar cap about 1/4 turn 
 and incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, below. = 
 
-14. Gelatin. Aseptically weigh 25 g sample into sterile, wide-mouth, screw-cap jar (500 ml) 
+### 14. Gelatin. Aseptically weigh 25 g sample into sterile, wide-mouth, screw-cap jar (500 ml) 
 or other appropriate container. Add 225 ml sterile lactose broth and 5 ml 5% aqueous 
 papain solution and mix well. Cap jar securely and incubate at 35 ± 2°C for 60 ± 5 min. 
 Mix well by swirling and determine pH with test paper. Adjust pH, if necessary, to 6.8 ± 
 0.2. Loosen jar cap about 1/4 turn and incubate 24 ± 2 h at 35 ± 2°C. Continue as in 
 E.1-11 below. 
 
-15. Meats, meat substitutes, meat by-products, animal substances, glandular 
+### 15. Meats, meat substitutes, meat by-products, animal substances, glandular 
 products, and meals (fish, meat, bone). Aseptically weigh 25 g sample into sterile 
 blending container. Add 225 ml sterile lactose broth and blend 2 min. Aseptically transfer 
 homogenized mixture to sterile wide-mouth, screw-cap jar (500 ml) or other appropriate 
@@ -455,7 +334,7 @@ Surfactants will not be needed in analysis of powdered glandular products. Loose
 caps 1/4 turn and incubate sample mixtures 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, 
 below. 
 
-16. Frog legs. (This method is used for all domestic and imported frog legs.) Place 15 pairs 
+### 16. Frog legs. (This method is used for all domestic and imported frog legs.) Place 15 pairs 
 of frog legs into sterile plastic bag and cover with sterile lactose broth at a 1:9 sample-to- 
 broth (g/ml) ratio (see A, 23-24, above). If single legs are estimated to average 25 g or 
 more, examine only one leg of each of 15 pairs. Place bag in large plastic beaker or 
@@ -464,14 +343,14 @@ by swirling and determine pH with test paper. Adjust pH, if necessary, to 6.8 ±
 plastic bag containing the frog legs and lactose broth into plastic beaker or other suitable 
 container. Incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, below. 
 
-17. Rabbit carcasses. (This method is used for all domestic and imported rabbit 
+### 17. Rabbit carcasses. (This method is used for all domestic and imported rabbit 
 carcasses.) Place rabbit carcass into sterile plastic bag. Place bag in beaker or other 
 suitable container. Add sterile lactose broth at a 1:9 sample-to-broth (g/ml) ratio to cover 
 carcass (see A, 23-24, above). Mix well by swirling and let stand 60 ± 5 min at room 
 temperature. Mix well by swirling and determine pH with test paper. Adjust pH, if 
 necessary, to 6.8 ± 0.2. Incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, below. 
 
-18. Guar gum. Aseptically weigh 25 g sample into sterile beaker (250 ml) or other 
+### 18. Guar gum. Aseptically weigh 25 g sample into sterile beaker (250 ml) or other 
 appropriate container. Prepare a 1.0% cellulase solution (add 1 g cellulase to 99 ml 
 sterile distilled water). Dispense into 150 ml bottles. (Cellulase solution may be stored at 
 2-5°C for up to 2 weeks). Add 225 ml sterile lactose broth and 2.25 ml sterile 1% 
@@ -481,7 +360,7 @@ container. While vigorously stirring the cellulase/lactose broth with magnetic s
 Cap jar securely and let stand 60 ± 5 min at room temperature. Incubate loosely capped 
 container without pH adjustment, for 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, below. 
 
-19. Orange juice (pasteurized and unpasteurized), apple cider (pasteurized and 
+### 19. Orange juice (pasteurized and unpasteurized), apple cider (pasteurized and 
 unpasteurized), and apple juice (pasteurized). Aseptically add 25 ml sample to 225 
 ml universal preenrichment broth (UPB) in a sterile, wide mouth, screw-capped jar (500 
 ml) or other appropriate container. Swirl the flask contents thoroughly. Cap jar securely 
@@ -489,7 +368,7 @@ and let stand 60 ± 5 min at room temperature. Do not adjust pH. Incubate loosel
 capped container for 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, below (treat as a low 
 microbial load food). 
 
-20. Pig ears and other types of dog chew pieces. Place 1 piece (or 2-3 pieces if smaller 
+### 20. Pig ears and other types of dog chew pieces. Place 1 piece (or 2-3 pieces if smaller 
 sizes) from each sample unit into sterile plastic bag. Place bag into large beaker or other 
 suitable container. Add sterile lactose broth at a 1:9 sample-to-broth (g/ml) ratio to cover 
 pieces (see A, 23-24, above). Mix well by swirling and let stand 60 ± 5 min at room 
@@ -500,7 +379,7 @@ added, the maximum volume of added surfactant is 2.25 ml. Limit use of these
 surfactants to minimum quantity to initiate foaming. Incubate 24 ± 2 h at 35 ± 2°C. 
 Continue as in E.1-11, below. 
 
-21. Cantaloupes. Preferably, do not thaw frozen samples before analysis. If frozen sample 
+### 21. Cantaloupes. Preferably, do not thaw frozen samples before analysis. If frozen sample 
 must be tempered to obtain analytical portion, thaw suitable portion as rapidly as 
 possible to minimize increase in number of competing organisms or to reduce potential 
 of injuring Salmonella organisms. Thaw below 45°C for <15 min with continuous 
@@ -522,7 +401,7 @@ container, for support during incubation. Allow the open-end flap of the plastic
 Let stand for 60 ± 5 min at room temperature. Do not adjust pH. Incubate slightly opened 
 bag, containing cantaloupe, for 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, below. 
 
-22. Mangoes. Preferably, do not thaw frozen samples before analysis. If frozen sample 
+### 22. Mangoes. Preferably, do not thaw frozen samples before analysis. If frozen sample 
 must be tempered to obtain analytical portion, thaw suitable portion as rapidly as 
 possible to minimize increase in number of competing organisms or to reduce 
 potential of injuring Salmonella organisms. Thaw below 45°C for <15 min with 
@@ -545,7 +424,7 @@ incubation.
 Let stand for 60 ± 5 min at room temperature. Incubate slightly opened bag for 24 ± 2 h 
 at 35 ± 2°C. Continue as in E.1-11, below. 
 
-23. Tomatoes. For comminuted or cut fruit, aseptically weigh 25 g sample into sterile 
+### 23. Tomatoes. For comminuted or cut fruit, aseptically weigh 25 g sample into sterile 
 blending container. Add 225 ml universal preenrichment broth (UPB) and blend 2 min. 
 Aseptically transfer homogenized mixture to sterile, wide-mouth, screw-cap jar (500 ml) 
 or other appropriate container and let stand 60 ± 5 min at room temperature with jar 
@@ -564,7 +443,7 @@ container, for support during incubation. Allow the open-end flap of the plastic
 Let stand for 60 ± 5 min at room temperature. Do not adjust pH. Incubate slightly opened 
 bag for 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, below. 
 
-24. Environmental testing. Sample environmental surfaces with sterile swabs or sponges 
+### 24. Environmental testing. Sample environmental surfaces with sterile swabs or sponges 
 following manufacturer’s swab/sponge sampling instruction. Place the swab/sponge in 
 a sterile Whirl-Pak® bag, or equivalent, that contains approximately 10 ml  Dey-Engley 
 (D/E) neutralizing broth to cover the swab/sponge. 
@@ -578,14 +457,14 @@ container.  Sponge in D/E neutralizing broth can be also added to 225 ml mBPW
 (M192c). Ensure contents are mixed thoroughly and incubate 24 ± 2 h at 35 ± 2°C. 
 Continue examination as in E.1-11, below.   
 
-25. Alfalfa seeds and mung beans. Aseptically weigh 25g alfalfa seeds or mung beans 
+### 25. Alfalfa seeds and mung beans. Aseptically weigh 25g alfalfa seeds or mung beans 
 into a sterile 500 ml Erlenmeyer flask. Aseptically add 225 ml lactose broth to the test 
 portion and swirl the Erlenmeyer flask. Cover the mouth of the Erlenmeyer flask with 
 sterile aluminum foil and allow contents to stand at room temperature for 60 ± 5 min. 
 Adjust the pH of the culture to 6.8 ± 0.2, if necessary. Incubate for 24 ± 2h at 35 ± 2°C. 
 Continue as in E.1-11, below (treat as high microbial load food). 
 
-26. Mamey pulp. If frozen, sample must be tempered to obtain analytical portion, thaw 
+### 26. Mamey pulp. If frozen, sample must be tempered to obtain analytical portion, thaw 
 suitable portion as rapidly as possible to minimize increase in number of competing 
 organisms or to reduce potential of injuring Salmonella organisms. Thaw below 45 ± 
 0.2°C for <15 min with continuous agitation in thermostatically controlled water bath 
@@ -603,7 +482,7 @@ Add 225 ml sterile universal preenrichment broth (UPB), mix by swirling, and let
 loosen jar cap about 1/4 turn. Incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, 
 below. 
 
-27. Fresh leafy green vegetables, herbs and sprouts (baby spinach, cabbage, iceberg 
+### 27. Fresh leafy green vegetables, herbs and sprouts (baby spinach, cabbage, iceberg 
 lettuce, Romaine lettuce, Spring mix, basil, cilantro, dill, curly parsley, culantro, 
 Italian parsley, watercress, alfalfa, mung bean, clover, radish and broccoli 
 sprouts). Aseptically weigh 25 g into a sterile wide mouth Erlenmeyer flask or other 
@@ -612,12 +491,12 @@ adding 225 ml modified buffered peptone water (mBPW, M192b) and completely soak
 contents without any homogenization. Incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1- 
 11, below. 
 
-28. Animal food. Aseptically weigh 25 g sample into a sterile sample filter bag. Place the 
+### 28. Animal food. Aseptically weigh 25 g sample into a sterile sample filter bag. Place the 
 bag into a large container or rack for support during incubation. Add 225 ml sterile 
 buffered peptone water (BPW). Mix well by swirling and briefly hand massage for 2 min. 
 Incubate 24 ± 2 h at 35 ± 2°C. Continue as in E.1-11, below. 
 
-29. Spent sprout irrigation water from alfalfa, mung bean, and broccoli varieties. 
+### 29. Spent sprout irrigation water from alfalfa, mung bean, and broccoli varieties. 
 Aseptically add 375 ml sample to 1,125 ml universal preenrichment broth (UPB) in a 
 sterile Whirl-Pak filter bag, or equivalent. Place bag into large container or rack for 
 support during incubation. Mix well by swirling. Incubate 24 ± 2 h at 35 ± 2°C. Continue 
@@ -654,14 +533,14 @@ Section F, below.
 >> The following Salmonella isolation procedures consist of selective enrichment, selective plating, 
 and biochemical screening. 
 
-1. After preenrichment, gently shake incubated sample: 
+### 1. After preenrichment, gently shake incubated sample: 
 Guar gum and foods suspected to be contaminated with S. Typhi. Transfer 1 ml 
 mixture to 10 ml selenite cystine (SC) broth and another 1 ml mixture to 10 ml 
 Tetrathionate (TT) broth. Vortex. 
 All other foods. Transfer 0.1 ml mixture to 10 ml Rappaport-Vassiliadis (RV) medium 
 and another 1 ml mixture to 10 ml TT broth. Vortex. 
 
-2. Incubate selective enrichment media as follows: 
+### 2. Incubate selective enrichment media as follows: 
 Foods with a high microbial load. Incubate RV medium 24 ± 2 h at 42 ± 0.2°C 
 (circulating, thermostatically-controlled, water bath). Incubate TT broth 24 ± 2 h at 43 ± 
 0.2°C (circulating, thermostatically controlled, water bath). 
@@ -671,24 +550,24 @@ thermostatically controlled, water bath). Incubate TT broth 24 ± 2 h at 35 ± 2
 Guar gum and foods suspected to be contaminated with S. Typhi. Incubate SC and 
 TT broths 24 ± 2 h at 35 ± 2°C. 
 
-3. Mix (vortex, if tube) and streak 3 mm loopful (10 µl) incubated TT broth on bismuth 
+### 3. Mix (vortex, if tube) and streak 3 mm loopful (10 µl) incubated TT broth on bismuth 
 sulfite (BS) agar, xylose lysine desoxycholate (XLD) agar, and Hektoen enteric (HE) 
 agar. Prepare BS plates the day before streaking and store in dark at room 
 temperature until streaked. 
 
-4. Repeat with 3 mm loopful (10 µl) of RV medium (for samples of high and low microbial 
+### 4. Repeat with 3 mm loopful (10 µl) of RV medium (for samples of high and low microbial 
 load foods) and of SC broth (for guar gum) on XLD, HE, and BS agars. 
 
-5. Refer to 994.04 in Official Methods of Analysis [2] for option of refrigerating incubated 
+### 5. Refer to 994.04 in Official Methods of Analysis [2] for option of refrigerating incubated 
 sample preenrichments and incubated sample selective enrichments (SC and TT broths 
 only) of low moisture foods (LMF) for up to 72 h. LMF have a water activity of less than 
 or equal to 0.85 such as nuts, dried fruits, cereal products and chocolate etc. This option 
 allows sample analyses to be initiated as late as Thursday while still avoiding weekend 
 work. 
 
-6. Incubate plates 24 ± 2 h at 35 ± 2°C. 
+### 6. Incubate plates 24 ± 2 h at 35 ± 2°C. 
 
-7. Examine plates for the presence of colonies that may be Salmonella. 
+### 7. Examine plates for the presence of colonies that may be Salmonella. 
 Salmonella Flipbook, a pictorial general guide may be used to aid analysts in the 
 detection and identification of Salmonella growing on the plating media and screening 
 slants (prepared by Matthew J. Forstner, Laboratory Services, Minnesota Department of 
@@ -726,13 +605,13 @@ present on BS agar after 24 ± 2 h, then do not pick any colonies but reincubate
 an additional 24 ± 2 h. If typical or suspicious colonies are not present after 48 ± 
 2 h incubation, then pick 2 or more atypical colonies. 
 
-8. Lightly touch the very center of the colony to be picked with sterile inoculating needle 
+### 8. Lightly touch the very center of the colony to be picked with sterile inoculating needle 
 and inoculate TSI slant by streaking slant and stabbing butt. Without flaming, inoculate 
 LIA slant by stabbing butt twice and then streaking slant. Since lysine decarboxylation 
 reaction is strictly anaerobic, the LIA slants must have deep butt (4 cm). Store picked 
 selective agar plates at 5-8°C. 
 
-9. Incubate TSI and LIA slants at 35 ± 2°C for 24 ± 2 h. Cap tubes loosely to maintain 
+### 9. Incubate TSI and LIA slants at 35 ± 2°C for 24 ± 2 h. Cap tubes loosely to maintain 
 aerobic conditions while incubating slants to prevent excessive H2S production. 
 Salmonella in culture typically produces alkaline (red) slant and acid (yellow) butt, with or 
 without production of H2S (blackening of agar) in TSI. In LIA, Salmonella typically 
@@ -741,7 +620,7 @@ tube as acidic (negative) reaction. Do not eliminate cultures that produce disco
 butt of tube solely on this basis. Most Salmonella cultures produce H2S in LIA. Some 
 non- Salmonella cultures produce a brick-red reaction in LIA slants. 
 
-10. Cultures that give an alkaline butt in LIA should be retained as potential Salmonella 
+### 10. Cultures that give an alkaline butt in LIA should be retained as potential Salmonella 
 isolates and submitted for biochemical and serological tests if the TSI slant is either 
 alkaline over acid or acid over acid. Cultures that give an acid butt in LIA and an alkaline 
 slant and acid butt in TSI should also be considered potential Salmonella isolates and 
@@ -755,7 +634,7 @@ slant and acid butt) pick additional suspicious colonies from selective medium p
 giving presumed-positive culture and inoculate TSI and LIA slants as described in E.8, 
 above. 
 
-11. Apply biochemical and serological identification tests to: 
+### 11. Apply biochemical and serological identification tests to: 
 a. Three presumptive TSI cultures recovered from set of plates streaked from RV 
 medium (or SC broth for guar gum), if present, and 3 presumptive TSI agar 
 cultures recovered from plates streaked from TT broth, if present. 
@@ -770,7 +649,7 @@ biochemical and serological tests. Examine a minimum of 6 TSI cultures for each
 E.11consist of purification, serological tests, biochemical tests, confirmation using official 
 methods, whole genome sequencing (WGS) and SeqSero analysis for serotype identification. 
 
-1. Mixed cultures. Streak TSI agar cultures that appear to be mixed on MacConkey agar, 
+### 1. Mixed cultures. Streak TSI agar cultures that appear to be mixed on MacConkey agar, 
 HE agar, or XLD agar. Incubate plates 24 ± 2 h at 35 ± 2°C. Examine plates for 
 presence of colonies suspected to be Salmonella. 
 a. MacConkey agar. Typical colonies appear transparent and colorless, sometimes 
@@ -781,7 +660,7 @@ c. Xylose lysine desoxycholate (XLD) agar. See E.7.b, above. Transfer at least 2
 colonies suspected to be Salmonella to TSI and LIA slants as described in E.7, 
 above, and continue as in E.9, above. 
 
-2. Pure cultures 
+### 2. Pure cultures 
 a. Urease test (conventional). With sterile needle, inoculate growth from each 
 presumed-positive TSI slant culture into tubes of urea broth. Since occasional, 
 uninoculated tubes of urea broth turn purple-red (positive test) on standing, 
@@ -791,8 +670,7 @@ presumed-positive TSI slant culture into tubes of rapid urea broth. Incubate 2 h
 37 ± 0.5°C water bath. Discard all cultures giving positive test. Retain for further 
 study all cultures that give negative test (no change in color of medium). 
 
-3. Serological somatic (O) tests for Salmonella. (Pre-test all antisera to Salmonella with 
-known cultures.) 
+### 3. Serological somatic (O) tests for Salmonella. (Pre-test all antisera to Salmonella with known cultures.) 
 a. Polyvalent somatic (O) test. Using wax pencil, mark off 2 sections about 1 × 2 
 cm each on inside of glass or plastic petri dish (15 × 100 mm). Commercially 
 available sectioned slides may be used. Emulsify 3 mm loopful of culture from 
@@ -819,7 +697,7 @@ that give positive agglutination with individual somatic (O) antiserum as positi
 for that group. Record cultures that do not react with individual somatic (O) 
 antiserum as negative for that group. 
 
-4. Serological polyvalent flagellar (H) test 
+### 4. Serological polyvalent flagellar (H) test 
 a. Perform the polyvalent flagellar (H) test at this point, or later, as described in F.5 
 below. Inoculate growth from each urease-negative TSI agar slant into either 1) 
 BHI broth and incubate 4-6 h at 35 ± 2°C until visible growth occurs (to test on 
@@ -851,7 +729,8 @@ turbidity. Late or weak agglutination should be considered negative.
 Physiological saline (0.85%, pH 7.4) is used as a negative control and must be 
 negative. 
 
-5. Spicer-Edwards serological test. Use this test as an alternative to the polyvalent 
+### 5. Spicer-Edwards serological test. 
+>> Use this test as an alternative to the polyvalent 
 flagellar (H) test. It may also be used with cultures giving nonspecific agglutination in 
 polyvalent flagellar (H) test. Perform Spicer-Edwards flagellar (H) antisera test as 
 described in F.4.b, above. Perform additional biochemical tests (F.6.a-c, below) on 
@@ -861,58 +740,59 @@ possible, obtain 2 positive cultures for additional biochemical testing F.6.a-c,
 all urease-negative TSI cultures from sample give negative serological flagellar (H) test 
 results, perform additional biochemical tests F.6.a-c, below). 
 
-6. Testing of urease-negative cultures 
+### 6. Testing of urease-negative cultures 
   
-  a. Lysine decarboxylase broth. If LIA test was satisfactory, it need not be 
-  repeated. Use lysine decarboxylase broth for final determination of lysine 
-  decarboxylase if culture gives doubtful LIA reaction. Inoculate broth with small 
-  amount of growth from TSI slant suspicious for Salmonella. Replace cap tightly 
-  and incubate 48 ± 2 h at 35 ± 2°C but examine at 24 ± 2 h intervals. Salmonella 
-  species cause alkaline reaction indicated by purple color throughout medium. 
-  Negative test is indicated by yellow color throughout medium. If medium appears 
-  discolored (neither purple nor yellow) add a few drops of 0.2% bromcresol purple 
-  dye and re-read tube reactions. 
+a. Lysine decarboxylase broth. If LIA test was satisfactory, it need not be 
+repeated. Use lysine decarboxylase broth for final determination of lysine 
+decarboxylase if culture gives doubtful LIA reaction. Inoculate broth with small 
+amount of growth from TSI slant suspicious for Salmonella. Replace cap tightly 
+and incubate 48 ± 2 h at 35 ± 2°C but examine at 24 ± 2 h intervals. Salmonella 
+species cause alkaline reaction indicated by purple color throughout medium. 
+Negative test is indicated by yellow color throughout medium. If medium appears 
+discolored (neither purple nor yellow) add a few drops of 0.2% bromcresol purple 
+dye and re-read tube reactions. 
+
+b. Phenol red dulcitol broth or purple broth base with 0.5% dulcitol. Inoculate 
+broth with small amount of growth from TSI culture. Replace cap loosely and 
+incubate 48 ± 2 h at 35 ± 2°C but examine after 24 ± 2 h. Most Salmonella 
+species give positive test, indicated by gas formation in inner fermentation vial 
+and acid pH (yellow) of medium. Production of acid should be interpreted as a 
+positive reaction. Negative test is indicated by no gas formation in inner 
+fermentation vial and red (with phenol red as indicator) or purple (with bromcresol 
+purple as indicator) color throughout medium. 
+
+c. Tryptone (or tryptophane) broth. Inoculate broth with small growth from TSI 
+agar culture. Incubate 24 ± 2 h at 35 ± 2°C and proceed as follows: 
+
+  1. Potassium cyanide (KCN) broth. Transfer 3 mm loopful of 24-h 
+  tryptophane broth culture to KCN broth. Heat rim of tube so that good 
+  seal is formed when tube is stoppered with wax-coated cork. Incubate 
+  48 ± 2 h at 35 ± 2°C but examine after 24 ± 2 h. Interpret growth 
+  (indicated by turbidity) as positive. Most Salmonella species do not grow 
+  in this medium, as indicated by lack of turbidity. 
+
+  2. Malonate broth. Transfer 3 mm loopful of 24-h tryptone broth culture to 
+  malonate broth. Since occasional uninoculated tubes of malonate broth 
+  turn blue (positive test) on standing, include uninoculated tube of this 
+  broth as control. Incubate 48 ± 2 h at 35 ± 2°C but examine after 24 ± 2 
+  h. Most Salmonella species cultures give negative test (green or 
+  unchanged color) in this broth. 
+  3. Indole test. Transfer 5 ml of 24-h tryptophane broth culture to empty 
+  test tube. Add 0.2-0.3 ml Kovacs' reagent. Most Salmonella cultures 
+  give negative test (lack of deep red color at surface of broth). Record 
+  intermediate shades of orange and pink as ±. 
+
+  4. Serological flagellar (H) tests for Salmonella. If either polyvalent 
+  flagellar (H) test (F.4, above) or the Spicer-Edwards flagellar (H) test 
+  tube test (F.5, above) has not already been performed, either test may 
+  be performed here. 
   
-  b. Phenol red dulcitol broth or purple broth base with 0.5% dulcitol. Inoculate 
-  broth with small amount of growth from TSI culture. Replace cap loosely and 
-  incubate 48 ± 2 h at 35 ± 2°C but examine after 24 ± 2 h. Most Salmonella 
-  species give positive test, indicated by gas formation in inner fermentation vial 
-  and acid pH (yellow) of medium. Production of acid should be interpreted as a 
-  positive reaction. Negative test is indicated by no gas formation in inner 
-  fermentation vial and red (with phenol red as indicator) or purple (with bromcresol 
-  purple as indicator) color throughout medium. 
-  
-  c. Tryptone (or tryptophane) broth. Inoculate broth with small growth from TSI 
-  agar culture. Incubate 24 ± 2 h at 35 ± 2°C and proceed as follows: 
+  5. Discard as not Salmonella any culture that shows either positive indole 
+  test and negative serological flagellar (H) test, or positive KCN test and 
+  negative lysine decarboxylase test. 
 
-    1. Potassium cyanide (KCN) broth. Transfer 3 mm loopful of 24-h 
-    tryptophane broth culture to KCN broth. Heat rim of tube so that good 
-    seal is formed when tube is stoppered with wax-coated cork. Incubate 
-    48 ± 2 h at 35 ± 2°C but examine after 24 ± 2 h. Interpret growth 
-    (indicated by turbidity) as positive. Most Salmonella species do not grow 
-    in this medium, as indicated by lack of turbidity. 
-
-    2. Malonate broth. Transfer 3 mm loopful of 24-h tryptone broth culture to 
-    malonate broth. Since occasional uninoculated tubes of malonate broth 
-    turn blue (positive test) on standing, include uninoculated tube of this 
-    broth as control. Incubate 48 ± 2 h at 35 ± 2°C but examine after 24 ± 2 
-    h. Most Salmonella species cultures give negative test (green or 
-    unchanged color) in this broth. 
-    3. Indole test. Transfer 5 ml of 24-h tryptophane broth culture to empty 
-    test tube. Add 0.2-0.3 ml Kovacs' reagent. Most Salmonella cultures 
-    give negative test (lack of deep red color at surface of broth). Record 
-    intermediate shades of orange and pink as ±. 
-
-    4. Serological flagellar (H) tests for Salmonella. If either polyvalent 
-    flagellar (H) test (F.4, above) or the Spicer-Edwards flagellar (H) test 
-    tube test (F.5, above) has not already been performed, either test may 
-    be performed here. 
-    
-    5. Discard as not Salmonella any culture that shows either positive indole 
-    test and negative serological flagellar (H) test, or positive KCN test and 
-    negative lysine decarboxylase test. 
-
-7. Additional biochemical tests. Classify as Salmonella those cultures which exhibit 
+### 7. Additional biochemical tests. 
+>> Classify as Salmonella those cultures which exhibit 
 typical Salmonella reactions for tests 1-11, shown in Table 1. If one TSI culture from 25 
 g analytical unit is classified as Salmonella, further testing of other TSI cultures from the 
 same 25 g analytical unit is unnecessary. Cultures that contain demonstrable Salmonella 
@@ -922,140 +802,110 @@ F.2, above.
 Perform the following additional tests on cultures that do not give typical Salmonella 
 reactions for tests 1-11 in Table 1 and that consequently do not classify as Salmonella. 
   
-  a. Phenol red lactose broth or purple lactose broth. 
-    
-    1. Inoculate broth with small amount of growth from unclassified 24-48 h 
-    TSI slant. Incubate 48 ± 2 h at 35 ± 2°C but examine after 24 ± 2 h. 
-    Positive — acid production (yellow) and gas production in inner 
-    fermentation vial. Consider production of acid only as positive reaction. 
-    Most cultures of Salmonella give negative test result, indicated by no 
-    gas formation in inner fermentation vial and red (with phenol red as 
-    indicator) or purple (with bromcresol purple as indicator) throughout 
-    medium. 
-    
-    2. Discard as not Salmonella, cultures that give positive lactose tests, 
-    except cultures that give acid slants in TSI and positive reactions in LIA, 
-    or cultures that give positive malonate broth reactions. Perform further 
-    tests on these cultures to determine if they are S. arizonae. 
+a. Phenol red lactose broth or purple lactose broth. 
   
-  b. Phenol red sucrose broth or purple sucrose broth. Follow procedure 
-  described in F.7a.1, above. Discard as not Salmonella, cultures that give positive 
-  sucrose tests, except those that give acid slants in TSI and positive reactions in 
-  LIA. 
+  1. Inoculate broth with small amount of growth from unclassified 24-48 h 
+  TSI slant. Incubate 48 ± 2 h at 35 ± 2°C but examine after 24 ± 2 h. 
+  Positive — acid production (yellow) and gas production in inner 
+  fermentation vial. Consider production of acid only as positive reaction. 
+  Most cultures of Salmonella give negative test result, indicated by no 
+  gas formation in inner fermentation vial and red (with phenol red as 
+  indicator) or purple (with bromcresol purple as indicator) throughout 
+  medium. 
   
-  c. MR-VP broth. Inoculate medium with small amount of growth from each 
-  unclassified TSI slant suspected to contain Salmonella. Incubate 48 ± 2 h at 35 ± 
-  2°C. 
-    
-    1. Perform Voges-Proskauer (VP) test at room temperature as follows: 
-    Transfer 1 ml 48h culture to test tube and incubate remainder of MR-VP 
-    broth an additional 48 ± 2 h at 35 ± 2°C. Add 0.6 ml α-naphthol and 
-    shake well. Add 0.2 ml 40% KOH solution and shake. To intensify and 
-    speed reaction, add a few crystals of creatine. Read results after 4 h; 
-    development of pink-to-ruby red color throughout medium is positive 
-    test. Most cultures of Salmonella are VP-negative, indicated by absence 
-    of development of pink-to-red color throughout broth. 
-    
-    2. Perform methyl red test as follows: To 5 ml of 96-h MR-VP broth, add 5- 
-    6 drops of methyl red indicator. Read results immediately. Most 
-    Salmonella cultures give positive test, indicated by diffuse red color in 
-    medium. A distinct yellow color is a negative test. Discard, as not 
-    Salmonella, cultures that give positive KCN and VP tests and negative 
-    methyl red test. 
+  2. Discard as not Salmonella, cultures that give positive lactose tests, 
+  except cultures that give acid slants in TSI and positive reactions in LIA, 
+  or cultures that give positive malonate broth reactions. Perform further 
+  tests on these cultures to determine if they are S. arizonae. 
 
-  d. Simmons citrate agar. Inoculate this agar, using needle containing growth from 
-  unclassified TSI agar slant. Inoculate by streaking slant and stabbing butt. 
-  Incubate 96 ± 2 h at 35 ± 2°C. Read results as follows: 
-  Positive — presence of growth, usually accompanied by color change from 
-  green to blue. Most cultures of Salmonella are citrate-positive. 
-  Negative — no growth or very little growth and no color change. 
+b. Phenol red sucrose broth or purple sucrose broth. Follow procedure 
+described in F.7a.1, above. Discard as not Salmonella, cultures that give positive 
+sucrose tests, except those that give acid slants in TSI and positive reactions in 
+LIA. 
 
-  e. Classification of cultures. Classify, as Salmonella, cultures that have reaction 
-  patterns of Table l. Discard, as not Salmonella, cultures that give results listed in 
-  any subdivision of Table 2. Perform additional tests described in Edwards and 
-  Ewing's Identification of Enterobacteriaceae (3) to classify any culture that is not 
-  clearly identified as Salmonella by classification scheme in Table l or not 
-  eliminated as not being Salmonella by test reactions in Table 2. If neither of 2 
-  TSI cultures carried through biochemical tests confirms the isolate as 
-  Salmonella, perform biochemical tests, beginning with F.6, on remaining urease- 
-  negative TSI cultures from same 25 g analytical unit. 
+c. MR-VP broth. Inoculate medium with small amount of growth from each 
+unclassified TSI slant suspected to contain Salmonella. Incubate 48 ± 2 h at 35 ± 
+2°C. 
+  
+  1. Perform Voges-Proskauer (VP) test at room temperature as follows: 
+  Transfer 1 ml 48h culture to test tube and incubate remainder of MR-VP 
+  broth an additional 48 ± 2 h at 35 ± 2°C. Add 0.6 ml α-naphthol and 
+  shake well. Add 0.2 ml 40% KOH solution and shake. To intensify and 
+  speed reaction, add a few crystals of creatine. Read results after 4 h; 
+  development of pink-to-ruby red color throughout medium is positive 
+  test. Most cultures of Salmonella are VP-negative, indicated by absence 
+  of development of pink-to-red color throughout broth. 
+  
+  2. Perform methyl red test as follows: To 5 ml of 96-h MR-VP broth, add 5- 
+  6 drops of methyl red indicator. Read results immediately. Most 
+  Salmonella cultures give positive test, indicated by diffuse red color in 
+  medium. A distinct yellow color is a negative test. Discard, as not 
+  Salmonella, cultures that give positive KCN and VP tests and negative 
+  methyl red test. 
 
-  f. Table 1. Biochemical and serological reactions of Salmonella 
- 
- 
-# 
- 
-Test or substrate 
- 
-Positive Result 
- 
-Negative Result 
-Salmonella 
-species 
-reaction(a) 
-1. Glucose (TSI) yellow butt red butt + 
-2. Lysine decarboxylase 
-(LIA) purple butt yellow butt + 
-3. H2S (TSI and LIA) blackening no blackening + 
-4. Urease purple-red color no color change − 
-5. Lysine decarboxylase 
-broth purple color yellow color + 
-6. Phenol red dulcitol broth yellow color and/or 
-gas no gas; no color change     +(b) 
-7. KCN broth growth no growth − 
-8. Malonate broth blue color no color change     −(c) 
-9. Indole test red color at surface yellow color at surface − 
-10. Polyvalent flagellar test agglutination no agglutination + 
-11. Polyvalent somatic test agglutination no agglutination + 
-12. Phenol red lactose broth yellow color and/or 
-gas no gas; no color change     −(c) 
-13. Phenol red sucrose 
-broth 
-yellow color and/or 
-gas no gas; no color change − 
-14. Voges-Proskauer test pink-to-red color no color change − 
-15. Methyl red test diffuse red color diffuse yellow color + 
-16. Simmons citrate growth; blue color no growth; no color 
-change v 
-a +: 90% or more positive in 1 or 2 days; −: 90% or more negative in 1 or 2 days; v: variable. 
-b Majority of S. arizonae cultures are negative. 
-c Majority of S. arizonae cultures are positive. 
-Table 2. Criteria for discarding non-Salmonella cultures 
-# 
-Test or substrate 
-Urease 
-Results 
-1. 
-positive (purple-red color) 
-positive (red color at surface) negative (no 
-agglutination) 
-2. 
-Indole test and 
-Polyvalent flagellar (H) test; or 
-Indole test and 
-Spicer-Edwards flagellar test 
-positive (red color at surface) negative (no 
-agglutination) 
-3. 
-Lysine decarboxylase and 
-KCN broth 
-negative (yellow color) positive (growth) 
-4. 
-Phenol red lactose broth 
-positive (yellow color and/or gas)(a), (b) 
-5. 
-Phenol red sucrose broth 
-positive (yellow color and/or gas)(b) 
-6. 
-KCN broth, 
-Voges-Proskauer test, and 
-Methyl red test 
-positive (growth) positive (pink-to-red color) 
-negative (diffuse yellow color) 
-a Test malonate broth positive cultures further to determine if they are S. arizonae. 
-b Do not discard positive broth cultures if corresponding LIA cultures give typical Salmonella 
-reactions; test further to determine if they are Salmonella species. 
-8. Official confirmation methods for presumptive Salmonella isolates. 
+d. Simmons citrate agar. Inoculate this agar, using needle containing growth from 
+unclassified TSI agar slant. Inoculate by streaking slant and stabbing butt. 
+Incubate 96 ± 2 h at 35 ± 2°C. Read results as follows: 
+Positive — presence of growth, usually accompanied by color change from 
+green to blue. Most cultures of Salmonella are citrate-positive. 
+Negative — no growth or very little growth and no color change. 
+
+e. Classification of cultures. Classify, as Salmonella, cultures that have reaction 
+patterns of Table l. Discard, as not Salmonella, cultures that give results listed in 
+any subdivision of Table 2. Perform additional tests described in Edwards and 
+Ewing's Identification of Enterobacteriaceae (3) to classify any culture that is not 
+clearly identified as Salmonella by classification scheme in Table l or not 
+eliminated as not being Salmonella by test reactions in Table 2. If neither of 2 
+TSI cultures carried through biochemical tests confirms the isolate as 
+Salmonella, perform biochemical tests, beginning with F.6, on remaining urease- 
+negative TSI cultures from same 25 g analytical unit. 
+
+##### f. Tables
+{% table(header="Biochemical and serological reactions of Salmonella") %}
+|  #  | Test or substrate          | Positive Result         | Negative Result            | *Salmonella* species reaction(a) |
+|:---:|----------------------------|-------------------------|----------------------------|:--------------------------------:|
+| 1.  | Glucose (TSI)              | yellow butt             | red butt                   |                +                 |
+| 2.  | Lysine decarboxylase (LIA) | purple butt             | yellow butt                |                +                 |
+| 3.  | H₂S (TSI and LIA)          | blackening              | no blackening              |                +                 |
+| 4.  | Urease                     | purple-red color        | no color change            |                −                 |
+| 5.  | Lysine decarboxylase broth | purple color            | yellow color               |                +                 |
+| 6.  | Phenol red dulcitol broth  | yellow color and/or gas | no gas; no color change    |               +(b)               |
+| 7.  | KCN broth                  | growth                  | no growth                  |                −                 |
+| 8.  | Malonate broth             | blue color              | no color change            |               −(c)               |
+| 9.  | Indole test                | red color at surface    | yellow color at surface    |                −                 |
+| 10. | Polyvalent flagellar test  | agglutination           | no agglutination           |                +                 |
+| 11. | Polyvalent somatic test    | agglutination           | no agglutination           |                +                 |
+| 12. | Phenol red lactose broth   | yellow color and/or gas | no gas; no color change    |               −(c)               |
+| 13. | Phenol red sucrose broth   | yellow color and/or gas | no gas; no color change    |                −                 |
+| 14. | Voges-Proskauer test       | pink-to-red color       | no color change            |                −                 |
+| 15. | Methyl red test            | diffuse red color       | diffuse yellow color       |                +                 |
+| 16. | Simmons citrate            | growth; blue color      | no growth; no color change |                V                 |
+{% end %}
+
+<h6>
+  a +: 90% or more positive in 1 or 2 days; −: 90% or more negative in 1 or 2 days; v: variable. 
+  b Majority of S. arizonae cultures are negative. 
+  c Majority of S. arizonae cultures are positive. 
+</h6>
+
+{% table(header="Criteria for discarding non-Salmonella cultures ") %}
+| #  | Test or substrate                                                                               | Results                                                                                                                        |
+|:--:|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| 1. | Urease                                                                                          | positive (purple-red color)                                                                                                    |
+| 2. | Indole test and Polyvalent flagellar (H) test; or Indole test and Spicer-Edwards flagellar test | positive (red color at surface) negative (no agglutination)<br><br>positive (red color at surface) negative (no agglutination) |
+| 3. | Lysine decarboxylase and KCN broth                                                              | negative (yellow color) positive (growth)                                                                                      |
+| 4. | Phenol red lactose broth                                                                        | positive (yellow color and/or gas)<sup>(a), (b)</sup>                                                                          |
+| 5. | Phenol red sucrose broth                                                                        | positive (yellow color and/or gas)<sup>(b)</sup>                                                                               |
+| 6. | KCN broth, Voges-Proskauer test, and Methyl red test                                            | positive (growth) positive (pink-to-red color) negative (diffuse yellow color)                                                 |
+{% end %}
+
+<h6>
+  a Test malonate broth positive cultures further to determine if they are S. arizonae. 
+  b Do not discard positive broth cultures if corresponding LIA cultures give typical Salmonella 
+  reactions; test further to determine if they are Salmonella species. 
+</h6>
+
+### 8. Official confirmation methods for presumptive Salmonella isolates. 
 a. Serological confirmation: perform the Salmonella serological somatic (O) test 
 (F.3.a, above) and the Salmonella serological flagellar (H) test (F.4, above) or 
 the Spicer-Edwards flagellar (H) test (F.5, above). Serological confirmation must 
@@ -1089,8 +939,9 @@ methods.
 according to additional tests specified in F. 2-7, above, or additional 
 tests as specified by Ewing [3], or send to reference typing laboratory 
 for definitive serotyping and identification. 
-9. Treatment of cultures giving negative flagellar (H) test. 
-If biochemical reactions of certain flagellar (H)-negative culture strongly suggest that it is 
+
+### 9. Treatment of cultures giving negative flagellar (H) test. 
+>> If biochemical reactions of certain flagellar (H)-negative culture strongly suggest that it is 
 Salmonella, the negative flagellar agglutination may be the result of nonmotile organisms 
 or insufficient development of flagellar antigen. Proceed as follows: Inoculate motility test 
 medium in petri dish, using small amount of growth from TSI slant. Inoculate by stabbing 
@@ -1107,7 +958,8 @@ Denver Laboratory for further identification and/or serotyping. Laboratories oth
 FDA should make arrangements with a reference laboratory for the serotyping of 
 Salmonella cultures. 
 
-10. Submission of cultures for WGS and serotyping. Submit 1 isolate of each somatic 
+### 10. Submission of cultures for WGS and serotyping. 
+>> Submit 1 isolate of each somatic 
 group recovered from each analytical unit, unless otherwise instructed. Submit cultures 
 on BHI agar slants in screw-cap tubes (13 × 100 mm or 16 × 125 mm) with caps secured 
 tightly. Label each tube with sample number, subsample (analytical unit) number, and 

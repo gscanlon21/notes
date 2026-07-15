@@ -41,23 +41,6 @@ sec. 977.27 (4).
 
 ## Conventional Plate Count Method
 
-### Equipment and Materials
-1. The work bench should be leveled, clean and with ample surface. The laboratory should be free of dust and drafts. The microbial density of air in working area, measured in fallout pour plates taken during plating, should not exceed 15 colonies/ plate during 15 min exposure.
-2. Storage space, free of dust and insects and adequate for protection of equipment and supplies
-3. Petri dishes, glass, or plastic (at least 15 × 90 mm)
-4. Pipets with pipet aids (no mouth pipetting) or pipettors, 1, 5, and 10 ml, graduated in 0.1 ml units
-5. Dilution bottles, 6 oz (160 ml), borosilicate-resistant glass, with rubber stoppers or plastic screw caps
-6. Pipet and petri dish containers, adequate for protection
-7. Circulating water bath, for tempering agar, thermostatically controlled to 45 ± 1°C
-8. Incubator, 35 ± 1°C; milk, 32 ± 1°C
-9. Colony counter, dark-field, Quebec, or equivalent, with suitable light source and grid plate
-10. Tally register
-11. Dilution blanks, 90 ± 1 ml Butterfield's phosphate-buffered dilution water (R11); milk, 99 ± 2 ml
-12. Plate count agar (standard methods) (M124)
-13. Refrigerator, to cool and maintain samples at 0-5°C; milk, 0-4.4°C
-14. Freezer, to maintain frozen samples from -15 to -20°C
-15. Thermometers with appropriate range; accuracy checked with a thermometer certified by the National Institute of Standards and Technology (NIST)
-
 ### Procedure for analysis of frozen, chilled, precooked, or prepared foods
 >> Using separate sterile pipets, prepare decimal dilutions of 10-2, 10-3, 10-4, and others as 
 appropriate of food homogenate (see Chapter 1 for sample preparation) by transferring 10 ml of 
