@@ -87,11 +87,13 @@ based on the same specifications.
 >> All primers are ordered from IDT normalized to a working concentration of 500 µM and stored at -20°C.
 
 **Primer Ordering Instructions**
-: Choose "Custom DNA Oligos" from the IDT online Order Menu 
-page. From the "Normalization" drop down menu → choose "Create a custom formulation" → 
-choose "Full product yield, to a specified µMolar concentration" → enter "500" and choose 
-"IDTE 8.0 pH" → Name the normalization "500 µM" and Save. Next, on the Oligo Entry page 
-enter the primer options as indicated below for each primer: 
+: Choose "Custom DNA Oligos" from the IDT online Order Menu page. 
+: From the "Normalization" drop down menu:
+: - Choose "Create a custom formulation"
+: - Choose "Full product yield, to a specified µMolar concentration" 
+: - Enter "500" and choose "IDTE 8.0 pH"
+: - Name the normalization "500 µM" and Save. 
+: Next, on the Oligo Entry page enter the primer options as indicated below for each primer: 
 
 ##### Table 1. Primer Ordering Instructions 
 TODO 

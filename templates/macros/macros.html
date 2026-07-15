@@ -20,10 +20,12 @@
 		{% if item.title is not starting_with('4') and item.title is not starting_with('5') %}
 		{% if item.title is not starting_with('6') and item.title is not starting_with('7') %}
 		{% if item.title is not starting_with('8') and item.title is not starting_with('9') %}
-		{% if item.title is not ending_with('.') and item.title is not ending_with(':') and item.title is not ending_with('%') %}
+		{% if item.title is not ending_with('.') and item.title is not ending_with(':') %}
+		{% if item.title is not ending_with('!') and item.title is not ending_with('%') %}
 			<li>
 				<a href="{{ item.permalink }}">{{ item.title }}</a>
 			</li>
+		{% endif %}
 		{% endif %}
 		{% endif %}
 		{% endif %}

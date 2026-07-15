@@ -7,7 +7,7 @@ sort_by = "title"
 [extra]
 updated = 2027-01-01
 site_version = 1
-toc_level = 2
+toc_level = 3
 see_also = [
   { title = "Permalink", href = "/vision-therapy" },
   { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
@@ -23,10 +23,14 @@ see_also = [
 # Vision Therapy Tools
 
 > [!NOTE]
-> For vision therapy charts, see the following list:
+> For vision therapy charts, click into the links in the following list:
 
 **[Aperture Rule](/vision-therapy/aperture-rule)**
-: DESCRIPTION HERE
+_Requires an Aperture Rule Trainer!_
+: An aperture rule trainer forces your eyes to see separate images using mechanical means.
+: If a single aperture is used, your eyes are required to converge near the two images, creating a convergence demand in order to fuse the two images.
+: If a double aperture is used, your eyes are required to converge distant the two images, creating a divergence demand in order to fuse the two images.
+: [Visual skills?]
 
 **[Arrow Chart](/vision-therapy/arrow-chart)**
 : DESCRIPTION HERE
@@ -93,6 +97,85 @@ see_also = [
 
 **[Tranaglyph](/vision-therapy/tranaglyph)**
 : DESCRIPTION HERE
+
+## Instructions
+### [Aperture Rule](/vision-therapy/aperture-rule)
+### _Requires an Aperture Rule Trainer!_
+#### Training Convergence
+?
+#### Training Divergence
+?
+#### BIM/BOP
+?
+##### How to increase difficulty?
+?
+
+
+### [Arrow Chart](/vision-therapy/arrow-chart)
+: INSTRUCTION HERE
+
+### [Arrow Color Chart](/vision-therapy/arrow-color-chart)
+: INSTRUCTION HERE
+
+### [Barrel Card](/vision-therapy/barrel-card)
+: INSTRUCTION HERE
+
+### [Closed/Open/Flat](/vision-therapy/closed-open-flat)
+: INSTRUCTION HERE
+
+### [Fusion Card](/vision-therapy/fusion-card)
+: INSTRUCTION HERE
+
+### [Hart Chart](/vision-therapy/hart-chart)
+: INSTRUCTION HERE
+
+### [Letter Saccades](/vision-therapy/letter-saccades)
+: INSTRUCTION HERE
+
+### [Letter Search](/vision-therapy/letter-search)
+: INSTRUCTION HERE
+
+### [Letter Tracking](/vision-therapy/letter-tracking)
+: INSTRUCTION HERE
+
+### [Line Counting](/vision-therapy/line-counting)
+: INSTRUCTION HERE
+
+### [Number Dots](/vision-therapy/number-dots)
+: INSTRUCTION HERE
+
+### [Number Grid](/vision-therapy/number-grid)
+: INSTRUCTION HERE
+
+### [Number Saccades](/vision-therapy/number-saccades)
+: INSTRUCTION HERE
+
+### [Number Search](/vision-therapy/number-search)
+: INSTRUCTION HERE
+
+### [Shape Chart](/vision-therapy/shape-chart)
+: INSTRUCTION HERE
+
+### [Shape Color Chart](/vision-therapy/shape-color-chart)
+: INSTRUCTION HERE
+
+### [Single Target](/vision-therapy/single-target)
+: INSTRUCTION HERE
+
+### [Slap Tap](/vision-therapy/slap-tap)
+: INSTRUCTION HERE
+
+### [Space Fixator](/vision-therapy/space-fixator)
+: INSTRUCTION HERE
+
+### [Spot the Match](/vision-therapy/spot-the-match)
+: INSTRUCTION HERE
+
+### [Stereo Circles](/vision-therapy/stereo-circles)
+: INSTRUCTION HERE
+
+### [Tranaglyph](/vision-therapy/tranaglyph)
+: INSTRUCTION HERE
 
 
 # Equipment

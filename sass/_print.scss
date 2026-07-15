@@ -35,15 +35,15 @@
 @media print {
 	.page, .section {
 		margin-inline-start: 3mm !important;
+		margin-block-start: 3mm !important;
 		margin-inline-end: 0 !important;
 		padding-block-end: 0 !important;
-		margin-block: 0 !important;
+		margin-block-end: 0 !important;
 	}
 
 	.context {
         border-bottom: 1px solid color(--color-text, 0.75);
 		margin-inline-start: 3mm !important;
-		margin-block-end: 3mm !important;
 		justify-content: space-between;
 		display: flex !important;
 		padding-bottom: 1mm;
