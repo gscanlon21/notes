@@ -20,8 +20,80 @@ see_also = [
 {{ hidden() }}
 
 
+# Vision Therapy Tools
+
 > [!NOTE]
-> For vision therapy charts, see the subsections in the sidebar.
+> For vision therapy charts, see the following list:
+
+**[Aperture Rule](/vision-therapy/aperture-rule)**
+: DESCRIPTION HERE
+
+**[Arrow Chart](/vision-therapy/arrow-chart)**
+: DESCRIPTION HERE
+
+**[Arrow Color Chart](/vision-therapy/arrow-color-chart)**
+: DESCRIPTION HERE
+
+**[Barrel Card](/vision-therapy/barrel-card)**
+: DESCRIPTION HERE
+
+**[Closed/Open/Flat](/vision-therapy/closed-open-flat)**
+: DESCRIPTION HERE
+
+**[Fusion Card](/vision-therapy/fusion-card)**
+: DESCRIPTION HERE
+
+**[Hart Chart](/vision-therapy/hart-chart)**
+: DESCRIPTION HERE
+
+**[Letter Saccades](/vision-therapy/letter-saccades)**
+: DESCRIPTION HERE
+
+**[Letter Search](/vision-therapy/letter-search)**
+: DESCRIPTION HERE
+
+**[Letter Tracking](/vision-therapy/letter-tracking)**
+: DESCRIPTION HERE
+
+**[Line Counting](/vision-therapy/line-counting)**
+: DESCRIPTION HERE
+
+**[Number Dots](/vision-therapy/number-dots)**
+: DESCRIPTION HERE
+
+**[Number Grid](/vision-therapy/number-grid)**
+: DESCRIPTION HERE
+
+**[Number Saccades](/vision-therapy/number-saccades)**
+: DESCRIPTION HERE
+
+**[Number Search](/vision-therapy/number-search)**
+: DESCRIPTION HERE
+
+**[Shape Chart](/vision-therapy/shape-chart)**
+: DESCRIPTION HERE
+
+**[Shape Color Chart](/vision-therapy/shape-color-chart)**
+: DESCRIPTION HERE
+
+**[Single Target](/vision-therapy/single-target)**
+: DESCRIPTION HERE
+
+**[Slap Tap](/vision-therapy/slap-tap)**
+: DESCRIPTION HERE
+
+**[Space Fixator](/vision-therapy/space-fixator)**
+: DESCRIPTION HERE
+
+**[Spot the Match](/vision-therapy/spot-the-match)**
+: DESCRIPTION HERE
+
+**[Stereo Circles](/vision-therapy/stereo-circles)**
+: DESCRIPTION HERE
+
+**[Tranaglyph](/vision-therapy/tranaglyph)**
+: DESCRIPTION HERE
+
 
 # Equipment
 

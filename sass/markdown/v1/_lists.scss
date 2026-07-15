@@ -1,4 +1,8 @@
 article.v1 { 
+	blockquote + ul, blockquote + ol, blockquote + menu {
+		margin-block-start: $base-padding * 0.75;
+	}
+
 	ul, ol, menu {
 		li + li {
 			margin-block-start: $base-padding * 0.1;

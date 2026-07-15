@@ -98,13 +98,14 @@ citrus juices for presence of E. coli in conjunction with the Juice HACCP rule.
 ## I. Conventional Method for coliforms, fecal coliforms and E. coli
 
 ### C. MPN - Presumptive test for coliforms, fecal coliforms and E. coli 
-Weigh 50 g of food into sterile high-speed blender jar (see Chapter 1 and current FDA 
+>> Weigh 50 g of food into sterile high-speed blender jar (see Chapter 1 and current FDA 
 compliance programs for instructions on sample size and compositing) Frozen samples can be 
 softened by storing for <18 h at 2-5°c, but do not thaw. Add 450 mL of Butterfield's phosphate
 buffered water and blend for 2 min. If <50 g of sample are available, weigh portion that is 
 equivalent to half of the sample and add sufficient volume of sterile diluent to make a 1:10 
 dilution. The total volume in the blender jar should completely cover the blades. 
-Prepare decimal dilutions with sterile Butterfield's phosphate diluent or equivalent. Number of 
+
+>> Prepare decimal dilutions with sterile Butterfield's phosphate diluent or equivalent. Number of 
 dilutions to be prepared depends on anticipated coliform density. Shake all suspensions 25 
 times in 30 cm arc or vortex mix for 7 s. Using at least 3 consecutive dilutions, inoculate 1 mL 
 aliquots from each dilution into 3 LST tubes for a 3 tube MPN analysis (other analysis may 
@@ -113,20 +114,21 @@ accuracy, use a 1 mL or 5 mL pipet for inoculation. Do not use pipets to deliver
 total volume; eg. a 10 mL pipet to deliver 0.5 mL. Hold pipet at angle so that its lower edge rests 
 against the tube.  Not more than 15 min  should  elapse  from  time  the  sample 
 is  blended  until  all  dilutions  are  inoculated  in appropriate media. 
-Incubate LST tubes at 35°C± 0.5°C . Examine tubes and record reactions at 24 ± 2 h for gas, 
+
+>> Incubate LST tubes at 35°C± 0.5°C . Examine tubes and record reactions at 24 ± 2 h for gas, 
 i.e., displacement of medium in fermentation vial or effervescence when tubes are gently 
 agitated. Re-incubate gas-negative tubes for an additional 24 h and examine and record 
 reactions again at 48 ± 3 h. Perform confirmed test on all presumptive positive (gas) tubes. 
 
 ### D. MPN - Confirmed test for coliforms 
-From each gassing LST or lactose broth tube, transfer a loopful of suspension to a tube of 
+>> From each gassing LST or lactose broth tube, transfer a loopful of suspension to a tube of 
 BGLB broth, avoiding pellicle if present. (a sterile wooden applicator stick may also be used for 
 these transfers). Incubate BGLB tubes at 35°C ± 0.5°C and examine for gas production at 48 ± 
 3 h. Calculate most probable number (MPN) (see Appendix 2) of coliforms based on proportion 
 of confirmed gassing LST tubes for 3 consecutive dilutions. 
 
 ### E. MPN - Confirmed test for fecal coliforms and E. coli 
-From each gassing LST or Lactose broth tube from the Presumptive test, transfer a loopful of 
+>> From each gassing LST or Lactose broth tube from the Presumptive test, transfer a loopful of 
 each suspension to a tube of EC broth (a sterile wooden applicator stick may also be used for 
 these transfers). Incubate EC tubes 24 ± 2 h at 44.5°C and examine for gas production. If 
 negative, reincubate and examine again at 48 ± 2 h. Use results of this test to calculate fecal 
@@ -135,66 +137,82 @@ method may be used for seawater and shellfish since it conforms to recommended p
 (1). 
 
 ### F. MPN - Completed test for E. coli. 
-To perform the completed test for E. coli, gently agitate each gassing EC tube, remove a loopful 
+>> To perform the completed test for E. coli, gently agitate each gassing EC tube, remove a loopful 
 of broth and streak for isolation on a L-EMB agar plate and incubate for 18-24 h at 35°C ± 0.5°C 
 . Examine plates for suspicious E. coli colonies, i.e., dark centered and flat, with or without 
 metallic sheen. Transfer up to 5 suspicious colonies from each L-EMB plate to PCA 
 slants, incubate them for 18-24 h at 35°C ± 0.5°C and use for further testing. 
-NOTE: Identification of any 1 of the 5 colonies as E. coli is sufficient to regard that EC tube as 
+
+> [!NOTE]
+> Identification of any 1 of the 5 colonies as E. coli is sufficient to regard that EC tube as 
 positive; hence, not all 5 isolates may need to be tested. 
-Perform Gram stain. All cultures appearing as Gram-negative, short rods should be tested for 
+
+>> Perform Gram stain. All cultures appearing as Gram-negative, short rods should be tested for 
 the IMViC reactions below and also re-inoculated back into LST to confirm gas production. 
-Indole production. Inoculate tube of tryptone broth and incubate 24 ± 2 h at 35°C ± 0.5°C . Test 
+
+>> Indole production. Inoculate tube of tryptone broth and incubate 24 ± 2 h at 35°C ± 0.5°C . Test 
 for indole by adding 0.2-0.3 mL of Kovacs' reagent. Appearance of distinct red color in upper 
 layer is positive test. 
-Voges-Proskauer (VP)-reactive compounds. Inoculate tube of MR-VP broth and incubate 48 ± 2 
+
+>> Voges-Proskauer (VP)-reactive compounds. Inoculate tube of MR-VP broth and incubate 48 ± 2 
 h at 35°C± 0.5°C . Transfer 1 mL to 13 × 100 mm tube. Add 0.6 mL α-naphthol solution and 0.2 
 mL 40% KOH, and shake. Add a few crystals of creatine. Shake and let stand 2 h. Test is 
 positive if eosin pink color develops. 
-Methyl red-reactive compounds. After VP test, incubate MR-VP tube additional 48 ± 2 h at 
+
+>> Methyl red-reactive compounds. After VP test, incubate MR-VP tube additional 48 ± 2 h at 
 35°C± 0.5°C . Add 5 drops of methyl red solution to each tube. Distinct red color is positive test. 
 Yellow is negative reaction. 
-Citrate. Lightly inoculate tube of Koser's citrate broth; avoid detectable turbidity. Incubate for 96 
+
+>> Citrate. Lightly inoculate tube of Koser's citrate broth; avoid detectable turbidity. Incubate for 96 
 h at 35°C ± 0.5°C . Development of distinct turbidity is positive reaction. 
 Gas from lactose. Inoculate a tube of LST and incubate 48 ± 2 h at 35°C ± 0.5°C . Gas 
 production (displacement of medium from inner vial) or effervescence after gentle agitation is 
 positive reaction. 
-Interpretation: All cultures that (a) ferment lactose with gas production within 48 h at 35°C, (b) 
+
+>> Interpretation: All cultures that (a) ferment lactose with gas production within 48 h at 35°C, (b) 
 appear as Gram-negative nonsporeforming rods and (c) give IMViC patterns of ++-- (biotype 1) 
 or -+-- (biotype 2) are considered to be E. coli. Calculate MPN (see Appendix 2) of E. coli based 
 on proportion of EC tubes in 3 successive dilutions that contain E. coli. 
-NOTE: Alternatively, instead of performing the IMViC test, use API20E or the automated VITEK 
+
+> [!NOTE]
+> Alternatively, instead of performing the IMViC test, use API20E or the automated VITEK 
 biochemical assay to identify the organism as E. coli. Use growth from the PCA slants and 
 perform these assays as described by the manufacturer. 
 
 ### G. Solid medium method - Coliforms 
-Prepare violet red bile agar (VRBA) according to manufacturer's instructions. Cool to 48°C 
+>> Prepare violet red bile agar (VRBA) according to manufacturer's instructions. Cool to 48°C 
 before use. Prepare, homogenize, and decimally dilute sample as described in section I. C 
 above so that isolated colonies will be obtained when plated. Transfer two 1 mL aliquots of each 
 dilution to petri dishes, and use either of the following two pour plating methods, depending on 
 whether injured or stressed cells are suspected to be present (1). 
-Pour 10 mL VRBA tempered to 48°C into plates, swirl plates to mix, and let solidify. To prevent 
+
+>> Pour 10 mL VRBA tempered to 48°C into plates, swirl plates to mix, and let solidify. To prevent 
 surface growth and spreading of colonies, overlay with 5 mL VRBA, and let solidify. If 
 resuscitation is necessary, pour a basal layer of 8-10 mL of tryptic soy agar tempered to 48°C. 
 Swirl plates to mix, and incubate at room temperature for 2 ± 0.5 h. Then overlay with 8-10 mL 
 of melted, cooled VRBA and let solidify. 
-Invert solidified plates and incubate 18-24 h at 35°C. Incubate dairy products at 32°C (2). 
+
+>> Invert solidified plates and incubate 18-24 h at 35°C. Incubate dairy products at 32°C (2). 
 Examine plates under magnifying lens and with illumination. Count purple-red colonies that are 
 0.5 mm or larger in diameter and surrounded by zone of precipitated bile acids. Plates should 
 have 25-250 colonies. To confirm that the colonies are coliforms, pick at least 10 representative 
 colonies and transfer each to a tube of BGLB broth. Incubate tubes at 35°C. Examine at 24 and 
 48 h for gas production. 
-NOTE: If gas-positive BGLB tube shows a pellicle, perform Gram stain to ensure that gas 
+
+> [!NOTE]
+> If gas-positive BGLB tube shows a pellicle, perform Gram stain to ensure that gas 
 production was not due to Gram-positive, lactose-fermenting bacilli. 
-Determine the number of coliforms per gram by multiplying the number of suspect colonies by 
+
+>> Determine the number of coliforms per gram by multiplying the number of suspect colonies by 
 percent confirmed in BGLB by dilution factor. 
-Alternatively, E. coli colonies can be distinguished among the coliform colonies on VRBA by 
+
+>> Alternatively, E. coli colonies can be distinguished among the coliform colonies on VRBA by 
 adding 100 µg of 4-methyl-umbelliferyl-β-D-glucuronide (MUG) per mL in the VRBA overlay. 
 After incubation, observe for bluish fluorescence around colonies under longwave UV light. (see 
 LST-MUG section II for theory and applicability.) 
 
 ### H. Membrane Filtration (MF) Method - coliforms: see Section III. Bottled Water. 
-Food homogenates will easily clog filters, hence MF are most suitable for analysis of water 
+>> Food homogenates will easily clog filters, hence MF are most suitable for analysis of water 
 samples; however, MF may be used in the analysis of liquid foods that do not contain high 
 levels of particulate matter such as bottled water (see Section III for application of MF). 
 
@@ -224,9 +242,7 @@ fluorescence in the medium under longwave UV light, thus it is capable of provid
 presumptive identification of E. coli within 24 h (18, 28). The LST-MUG method described below 
 has been adopted as Official Final Action by the AOAC for testing for E. coli in chilled or frozen 
 foods, exclusive of shellfish (28). See Sec. IV.4. D. for precautions in using MUG in testing 
-shellfish. For information on MUG assay contact, Dr. Bill Burkhardt III 
-(email William.Burkhardt@fda.hhs.gov ), FDA, CFSAN, Dauphin Island, AL, 36528; 251-406
-8125.  
+shellfish.   
 
 > [!CAUTION]
 > To observe for fluorescence, examine inoculated LST-MUG tubes under longwave 
