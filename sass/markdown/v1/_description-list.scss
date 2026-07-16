@@ -101,6 +101,10 @@ article.v1 {
 			& > blockquote:not([class^="markdown-alert-"]) {
 				margin-block-start: $base-padding * 0;
 			}
+
+			& > h5 {
+				margin-block-start: 0;
+			}
 		}
 
 		dd + dd {

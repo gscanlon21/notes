@@ -9,6 +9,9 @@ toc_level = 2
 see_also = [
   { title = "Fossil", href = "https://www.framesdirect.com/eyeglasses/fossil" },
   { title = "Nautica", href = "https://www.framesdirect.com/eyeglasses/nautica" },  
+  { title = "Hoya Sync III", href = "https://www.hoyavision.com/vision-products/single-vision-lenses/sync-iii/" },
+  { title = "Essilor Eyezen", href = "https://www.essilor.com/us-en/products/eyezen/" },
+  { title = "Laser Safety Glasses", href = "https://www.noirinsight.com/" },
 ]
 +++
 
@@ -25,6 +28,11 @@ see_also = [
 
 **Progressive Lenses**
 : Progressive lenses don’t have any visible lines, but allow wearers to gradually shift from distance to intermediate to close-up vision help. People who want a more traditional look to their lenses tend to choose progressives, but they can be pricey and harder to adapt to.
+
+**Sync Lens**
+: 3/24 wearing Hoya Sync III 9
+: -or- Essilor's Eyezen 3
+: - Hoya has one more stronger lens, Essilor has one too, but it's less. (+1.20 Hoya vs. +1.10 Essilor)
 
 
 # Frames

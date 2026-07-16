@@ -12,207 +12,223 @@ see_also = [
   { title = "Permalink", href = "/vision-therapy" },
   { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
   { title = "Font Family: Optician Sans", href = "https://github.com/anewtypeofinterference/Optician-Sans" },
-  { title = "Evidence-Based Natural Treatments for Optimizing Vision and Eye Health", href = "https://www.rupahealth.com/post/evidence-based-natural-treatments-for-optimizing-vision-and-eye-health" },
-  { title = "A Functional Medicine Eye Health Protocol: Testing, Supplements, and Best Nutrition", href = "https://www.rupahealth.com/post/a-functional-medicine-eye-health-protocol" },
 ]
 +++
 
 {{ hidden() }}
 
 
-# Vision Therapy Tools
+# Vision Therapy Charts
 
 > [!NOTE]
-> For vision therapy charts, click into the links in the following list:
+> For vision therapy charts, click into the links in the left column.
 
 **[Aperture Rule](/vision-therapy/aperture-rule)**
 _Requires an Aperture Rule Trainer!_
-: An aperture rule trainer forces your eyes to see separate images using mechanical means.
-: If a single aperture is used, your eyes are required to converge near the two images, creating a convergence demand in order to fuse the two images.
-: If a double aperture is used, your eyes are required to converge distant the two images, creating a divergence demand in order to fuse the two images.
-: [Visual skills?]
+: ##### Exercises
+  - [Aperture Rule Trainer](https://aworkoutaday.com/exercises?Name=Aperture+Rule+Trainer)
 
 **[Arrow Chart](/vision-therapy/arrow-chart)**
-: DESCRIPTION HERE
+: ##### Exercises
+  - [Directionality Arrows](https://aworkoutaday.com/exercises?Name=Directionality+Arrows)
 
 **[Arrow Color Chart](/vision-therapy/arrow-color-chart)**
-: DESCRIPTION HERE
+: ##### Exercises
 
 **[Barrel Card](/vision-therapy/barrel-card)**
-: DESCRIPTION HERE
+: ##### Exercises
 
 **[Closed/Open/Flat](/vision-therapy/closed-open-flat)**
-: DESCRIPTION HERE
+: ##### Exercises
 
 **[Fusion Card](/vision-therapy/fusion-card)**
-: DESCRIPTION HERE
+: ##### Exercises
+  - [Free Space Fusion Card](https://aworkoutaday.com/exercises?Name=Free+Space+Fusion+Card)
 
 **[Hart Chart](/vision-therapy/hart-chart)**
-: DESCRIPTION HERE
+: ##### Exercises
+  - [Hart Chart](https://aworkoutaday.com/exercises?Name=Hart+Chart)
+  - [Hart Chart Pushups](https://aworkoutaday.com/exercises?Name=Hart+Chart+Pushups)
+  - [Saccades](https://aworkoutaday.com/exercises?Name=Saccades)
+  - [Split Vision Saccades](https://aworkoutaday.com/exercises?Name=Split+Vision+Saccades)
+  - [Near/Far Accommodative Rock Chart](https://aworkoutaday.com/exercises?Name=Near%2FFar+Accommodative+Rock+Chart)
+  - [Wach's Mental Minus](https://aworkoutaday.com/exercises?Name=Wachs%27+Mental+Minus)
 
 **[Letter Saccades](/vision-therapy/letter-saccades)**
-: DESCRIPTION HERE
+: ##### Exercises
 
 **[Letter Search](/vision-therapy/letter-search)**
-: DESCRIPTION HERE
+: ##### Exercises
 
 **[Letter Tracking](/vision-therapy/letter-tracking)**
-: DESCRIPTION HERE
+: ##### Exercises
+  - [Alphabet Saccades](https://aworkoutaday.com/exercises?Name=Alphabet+Saccades)
 
 **[Line Counting](/vision-therapy/line-counting)**
-: DESCRIPTION HERE
+: ##### Exercises
+  - [Line Counting](https://aworkoutaday.com/exercises?Name=Line+Counting)
 
 **[Number Dots](/vision-therapy/number-dots)**
-: DESCRIPTION HERE
+: ##### Exercises
+  - [Dots Card](https://aworkoutaday.com/exercises?Name=Dots+Card)
 
 **[Number Grid](/vision-therapy/number-grid)**
-: DESCRIPTION HERE
+: ##### Exercises
 
 **[Number Saccades](/vision-therapy/number-saccades)**
-: DESCRIPTION HERE
+: ##### Exercises
 
 **[Number Search](/vision-therapy/number-search)**
-: DESCRIPTION HERE
+: ##### Exercises
 
 **[Shape Chart](/vision-therapy/shape-chart)**
-: DESCRIPTION HERE
+: ##### Exercises
 
 **[Shape Color Chart](/vision-therapy/shape-color-chart)**
-: DESCRIPTION HERE
+: ##### Exercises
 
 **[Single Target](/vision-therapy/single-target)**
-: DESCRIPTION HERE
+: ##### Exercises
 
 **[Slap Tap](/vision-therapy/slap-tap)**
-: DESCRIPTION HERE
+: ##### Exercises
+  - [Slap Tap](https://aworkoutaday.com/exercises?Name=Slap+Tap)
 
 **[Space Fixator](/vision-therapy/space-fixator)**
-: DESCRIPTION HERE
+: ##### Exercises
+  - [Look, Ready, Touch, Back](https://aworkoutaday.com/exercises?Name=Look%2C+Ready%2C+Touch%2C+Back)
+  - [Ready, Touch, Look, Back](https://aworkoutaday.com/exercises?Name=Ready%2C+Touch%2C+Look%2C+Back)
 
 **[Spot the Match](/vision-therapy/spot-the-match)**
-: DESCRIPTION HERE
+: ##### Exercises
+  - [Spot the Match](https://aworkoutaday.com/exercises?Name=Spot+the+Match)
 
 **[Stereo Circles](/vision-therapy/stereo-circles)**
-: DESCRIPTION HERE
+: ##### Exercises
+  - [Sliding Stereo Circles](https://aworkoutaday.com/exercises?Name=Sliding+Stereo+Circles)
 
 **[Tranaglyph](/vision-therapy/tranaglyph)**
-: DESCRIPTION HERE
-
-## Instructions
-### [Aperture Rule](/vision-therapy/aperture-rule)
-### _Requires an Aperture Rule Trainer!_
-#### Training Convergence
-?
-#### Training Divergence
-?
-#### BIM/BOP
-?
-##### How to increase difficulty?
-?
-
-
-### [Arrow Chart](/vision-therapy/arrow-chart)
-: INSTRUCTION HERE
-
-### [Arrow Color Chart](/vision-therapy/arrow-color-chart)
-: INSTRUCTION HERE
-
-### [Barrel Card](/vision-therapy/barrel-card)
-: INSTRUCTION HERE
-
-### [Closed/Open/Flat](/vision-therapy/closed-open-flat)
-: INSTRUCTION HERE
-
-### [Fusion Card](/vision-therapy/fusion-card)
-: INSTRUCTION HERE
-
-### [Hart Chart](/vision-therapy/hart-chart)
-: INSTRUCTION HERE
-
-### [Letter Saccades](/vision-therapy/letter-saccades)
-: INSTRUCTION HERE
-
-### [Letter Search](/vision-therapy/letter-search)
-: INSTRUCTION HERE
-
-### [Letter Tracking](/vision-therapy/letter-tracking)
-: INSTRUCTION HERE
-
-### [Line Counting](/vision-therapy/line-counting)
-: INSTRUCTION HERE
-
-### [Number Dots](/vision-therapy/number-dots)
-: INSTRUCTION HERE
-
-### [Number Grid](/vision-therapy/number-grid)
-: INSTRUCTION HERE
-
-### [Number Saccades](/vision-therapy/number-saccades)
-: INSTRUCTION HERE
-
-### [Number Search](/vision-therapy/number-search)
-: INSTRUCTION HERE
-
-### [Shape Chart](/vision-therapy/shape-chart)
-: INSTRUCTION HERE
-
-### [Shape Color Chart](/vision-therapy/shape-color-chart)
-: INSTRUCTION HERE
-
-### [Single Target](/vision-therapy/single-target)
-: INSTRUCTION HERE
-
-### [Slap Tap](/vision-therapy/slap-tap)
-: INSTRUCTION HERE
-
-### [Space Fixator](/vision-therapy/space-fixator)
-: INSTRUCTION HERE
-
-### [Spot the Match](/vision-therapy/spot-the-match)
-: INSTRUCTION HERE
-
-### [Stereo Circles](/vision-therapy/stereo-circles)
-: INSTRUCTION HERE
-
-### [Tranaglyph](/vision-therapy/tranaglyph)
-: INSTRUCTION HERE
+: ##### Exercises
+  - [Tranaglyph](https://aworkoutaday.com/exercises?Name=Tranaglyph)
 
 
 # Equipment
 
-## Prism Lens
+**Aperture Rule Trainer**
+<img src="一aperture-rule-trainer.jpg" />
+: An aperture rule trainer forces your eyes to see separate images using mechanical means.
+: If a single aperture is used, your eyes are required to converge near the two images, creating a convergence demand in order to fuse the two images.
+: If a double aperture is used, your eyes are required to converge distant the two images, creating a divergence demand in order to fuse the two images.
 
-**Base-in**
-Requires divergence.
-: The thick end of the lens (the base) should face towards your nose.
-: The image is shifted outwards—towards the small end of the lens (the apex).
-: - This requires your eyes to diverge and shift outwards as well to match and fuse the images.
+**Brock String**
+<img src="一brock-string.jif" />
+: A string of beads.
+: > [!TIP]
+  > Use an [Alpine Butterfly Loop Knot](https://www.animatedknots.com/alpine-butterfly-loop-knot) to create a back-stop for each bead threaded onto the string.
 
-**Base-out**
-Requires convergence.
-: The thick end of the lens (the base) should face away from your nose.
-: The image is shifted inwards—towards the small end of the lens (the apex).
-: - This requires your eyes to converge and shift inwards as well to match and fuse the images.
+**Prism Lens**
+<img src="一prism-lens.jif" />
+: A triangular shaped lens that shifts the image from one eye inwards or outwards.
+: **Base-In**
+  Requires divergence.
+  : The thick end of the lens (the base) should face towards your nose.
+  : The image is shifted outwards—towards the small end of the lens (the apex).
+  : - This requires your eyes to diverge and shift outwards as well to match and fuse the images.
 
-## Brock String
-<details><summary>Image</summary>
-
-![Brock String](brock_string.jif)
-</details>
-
-> [!TIP]
-> Use an Alpine Butterfly Loop Knot[^1] to create a back-stop for each bead threaded onto the string.
+  **Base-Out**
+  Requires convergence.
+  : The thick end of the lens (the base) should face away from your nose.
+  : The image is shifted inwards—towards the small end of the lens (the apex).
+  : - This requires your eyes to converge and shift inwards as well to match and fuse the images.
 
 
 # About
 
-##### Eye Conditions That Can Be Improved with Vision Therapy[^2]
-- Focusing Problems
-- Depth Perception Problems
-- Hand-Eye Coordination Problems
-- Strabismus and Amblyopia
+## Visual Skills
 
+**Eye Movement Control**
+Oculomotility
+: The ability to move both eyes together to point at an intended target or follow along a path.
+: Includes saccades, pursuits, and vestibulo-ocular movements.
 
+**Eye Teaming**
+Binocularity
+: The ability for each eye to send information to the brain and for the brain to combine it into one clear image.
+: Poor eye teaming can result in blurred vision, moving print, reduced depth perception, and double vision.
+: The brain may suppress information from one eye as an adaptation to reduce confusion.
 
-[^1]: [How to Tie an Alpine Butterfly Loop Knot?](https://www.animatedknots.com/alpine-butterfly-loop-knot)
-[^2]: [What Does Vision Therapy Fix?](https://www.rebuildyourvision.com/blog/vision-training/eye-conditions-that-can-be-addressed-with-vision-therapy/)
+**Convergence**
+: The inward movement of the eyes to focus on an object at a close distance.
+
+**Divergence**
+: The outward movement of the eyes while looking at distant objects.
+
+**Vergence**
+: The ability to move both eyes together to focus on a specific point.
+: Includes both convergence and divergence.
+
+**Focus Accommodation**
+: The ability to efficiently and quickly adjust focus between near and far distances.
+
+**Depth Perception**
+: The ability to judge whether objects are closer or farther away relative to other objects.
+
+**Peripheral Vision**
+: The ability to see objects to either side while looking straight ahead without moving your head.
+
+**Gross-Motor Coordination**
+: The ability to integrate visual information in order to move through space accurately and comfortably.
+
+**Fine-Motor Coordination**
+: The ability to integrate visual information in order to perform small, close-up activities with accuracy and comfort.
+
+**Visual Motor Integration**
+: The ability to coordinate body movements with visual information.
+: Combines gross-motor and fine-motor coordination.
+
+**Laterality and Directionality**
+: Awareness that the body has two distinct sides (right and left).
+
+**Visual Spatial Relations**
+: The ability to understand directional concepts that organize external visual space.
+
+**Visual Spatial Orientation**
+: The ability to understand how the orientation of visual items affects spatial perception.
+
+**Visual Spatial Skills**
+: A broad set of abilities that enable understanding where we and objects are in space.
+: Supports organizing and navigating through the environment.
+: Includes laterality and directionality, visual spatial relations, and visual spatial orientation.
+
+**Eye Movement Skills**
+: A broad category encompassing eye movement control, eye teaming, convergence, divergence, focus accommodation, depth perception, peripheral vision, gross-motor coordination, fine-motor coordination, laterality and directionality, visual spatial relations, and visual spatial orientation.
+
+**Visual Spatial Memory**
+: The ability to recognize specific features of objects or forms, remember their locations in space, and understand their relationships to one another.
+
+**Visual Sequential Memory**
+: The ability to remember symbols or characters in the order they were seen.
+
+**Visual Memory**
+: The ability to readily recall characteristics of visually presented information.
+: Includes both visual sequential memory and visual spatial memory.
+
+**Visualization**
+: The ability to create a mental picture or image.
+
+**Figure Ground**
+: The ability to distinguish an object from its background.
+
+**Visual Closure**
+: The ability to recognize a complete image even when only part of it is visible.
+
+**Visual Form Recognition**
+Visual Form Discrimination
+: The ability to identify similarities and differences between objects or images.
+
+**Visual Form Constancy**
+: The ability to recognize or sort objects, shapes, symbols, letters, or words despite changes in size, orientation, or position.
+
+**Visual Acuity**
+: The measurement of how clearly we see at specific distances.
+
