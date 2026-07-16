@@ -1,8 +1,9 @@
 +++
 title = "Bodhrán"
-updated = 2025-03-03
+description = ""
 
 [extra]
+updated = 2025-03-03
 see_also = [
 	{ title = "Ken Larson", href = "https://www.modhran.com/" },
 	{ title = "Hedwitschak Drums", href = "https://www.bodhranmaker.de/" },

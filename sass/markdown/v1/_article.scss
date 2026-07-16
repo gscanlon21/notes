@@ -6,7 +6,7 @@ article.v1 {
 	> :first-child {
 		margin-block-start: $site-padding * 3 !important;
 
-		&.visibility--hidden + * {
+		&.visibility--hidden + *, &.display--none + * {
 			margin-block-start: $site-padding * 3 !important;
 		}
 	}

@@ -10,5 +10,8 @@ see_also = []
 
 {{ hidden() }}
 
-Before installing lightshot, turn off the Print Screen Shortcut under Ease of Access Keyboard Settings. 
-Doing this should allow it to register "prtscr" as the default keyboard shortcut.
+> [!TIP]
+> Before installing lightshot, turn off the Print Screen Shortcut under Ease of Access Keyboard Settings. 
+> Doing this should allow it to register "PrtScr" as the default keyboard shortcut.
+>> PrtScr Keybinding
+

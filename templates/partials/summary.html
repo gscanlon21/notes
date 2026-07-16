@@ -96,27 +96,6 @@
             {% endfor %}
             {% endif %}
 
-			{% if page.extra.map | default(value=section.extra.map) %} 
-            {% for also in page.extra.map | default(value=section.extra.map) %}
-				<dt>{{ also.key }}</dt>
-                <dd class="summary-item">
-                    {% if also.href %} 
-                        <a class="reverse-indent" href="{{ also.href }}" target="_blank" rel="noreferrer">
-							{{ also.title | default(value=also.href) | safe }}{{ load_data(path="static/icons/arrow-square-out.svg") | safe }}
-						</a>
-                    {% elif also.file and also.file is starting_with("/") %}
-                        {% set url = get_url(path=also.file) %}
-                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
-                    {% elif also.file and also.file is not starting_with("/") %}
-                        {% set url = get_url(path=current_path ~ also.file) %}
-                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
-                    {% else %}
-                        <div class="reverse-indent"><code>{{ also.title | safe }}</code></div>
-                    {% endif %}
-                </dd>
-            {% endfor %}
-            {% endif %}
-
 			{{ macros::render_assets(name="PDFs", types=["pdf"]) }}
 			{{ macros::render_assets(name="Documents", types=["txt", "docx"]) }}
 			{{ macros::render_assets(name="Spreadsheets", types=["xls", "xlsx"]) }}
@@ -168,6 +147,27 @@
 								<option value="{{ selectOption }}">{{ selectOption }}</option>
 							{% endfor %}
 						</select>
+                    {% endif %}
+                </dd>
+            {% endfor %}
+            {% endif %}
+
+			{% if page.extra.map | default(value=section.extra.map) %} 
+            {% for also in page.extra.map | default(value=section.extra.map) %}
+				<dt>{{ also.key }}</dt>
+                <dd class="summary-item">
+                    {% if also.href %} 
+                        <a class="reverse-indent" href="{{ also.href }}" target="_blank" rel="noreferrer">
+							{{ also.title | default(value=also.href) | safe }}{{ load_data(path="static/icons/arrow-square-out.svg") | safe }}
+						</a>
+                    {% elif also.file and also.file is starting_with("/") %}
+                        {% set url = get_url(path=also.file) %}
+                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
+                    {% elif also.file and also.file is not starting_with("/") %}
+                        {% set url = get_url(path=current_path ~ also.file) %}
+                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
+                    {% else %}
+                        <div class="reverse-indent"><code>{{ also.title | safe }}</code></div>
                     {% endif %}
                 </dd>
             {% endfor %}

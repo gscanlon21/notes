@@ -11,12 +11,14 @@ see_also = [
 
 {{ hidden() }}
 
-# Settings
-- General
-	- Search
-		- [ ] _Match whole filename when using wildcards_
-	- Results
-		- [x] _Open path with double click in path column_
+# Options
+# _Ctrl+P
+**General**
+: **Search**
+  : - [ ] _Match whole filename when using wildcards_
+	
+  **Results**
+  : - [x] _Open path with double click in path column_
 
 # Search
 

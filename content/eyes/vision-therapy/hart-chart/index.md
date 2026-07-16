@@ -27,6 +27,11 @@ options = [
   { name = "Rows & Columns", id = "row-col-range", type = "range", min = 2, max = 10, value = 10 },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
+map = [
+  { key = "Full Alphabet", title = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" },
+  { key = "BS 4274-1:2003 Letters", title = "CDEFHKNPRUVZ"},
+  { key = "Snellen Chart Letters", title = "CDEFLOPTZ" },
+]
 +++
 
 <div id="hart-chart" class="chart defer"></div>
