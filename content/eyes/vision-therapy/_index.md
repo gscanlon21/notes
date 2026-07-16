@@ -13,103 +13,85 @@ see_also = [
   { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
   { title = "Font Family: Optician Sans", href = "https://github.com/anewtypeofinterference/Optician-Sans" },
 ]
+comments = [
+  "Don't put any exercises here. Those should be linked to from each individual tool."
+]
 +++
 
 {{ hidden() }}
 
 
-# Vision Therapy Charts
-
-> [!NOTE]
-> For vision therapy charts, click into the links in the left column.
+# Vision Therapy Tools
 
 **[Aperture Rule](/vision-therapy/aperture-rule)**
 _Requires an Aperture Rule Trainer!_
-: ##### Exercises
-  - [Aperture Rule Trainer](https://aworkoutaday.com/exercises?Name=Aperture+Rule+Trainer)
+: Image generator for an aperture rule trainer.
 
 **[Arrow Chart](/vision-therapy/arrow-chart)**
-: ##### Exercises
-  - [Directionality Arrows](https://aworkoutaday.com/exercises?Name=Directionality+Arrows)
+: A chart of arrows for directional exercises.
 
 **[Arrow Color Chart](/vision-therapy/arrow-color-chart)**
-: ##### Exercises
+: A chart of colored arrows for decoding exercises.
 
 **[Barrel Card](/vision-therapy/barrel-card)**
-: ##### Exercises
+: ?
 
 **[Closed/Open/Flat](/vision-therapy/closed-open-flat)**
-: ##### Exercises
+: ?
 
 **[Fusion Card](/vision-therapy/fusion-card)**
-: ##### Exercises
-  - [Free Space Fusion Card](https://aworkoutaday.com/exercises?Name=Free+Space+Fusion+Card)
+: ?
 
 **[Hart Chart](/vision-therapy/hart-chart)**
-: ##### Exercises
-  - [Hart Chart](https://aworkoutaday.com/exercises?Name=Hart+Chart)
-  - [Hart Chart Pushups](https://aworkoutaday.com/exercises?Name=Hart+Chart+Pushups)
-  - [Saccades](https://aworkoutaday.com/exercises?Name=Saccades)
-  - [Split Vision Saccades](https://aworkoutaday.com/exercises?Name=Split+Vision+Saccades)
-  - [Near/Far Accommodative Rock Chart](https://aworkoutaday.com/exercises?Name=Near%2FFar+Accommodative+Rock+Chart)
-  - [Wach's Mental Minus](https://aworkoutaday.com/exercises?Name=Wachs%27+Mental+Minus)
+: ?
 
 **[Letter Saccades](/vision-therapy/letter-saccades)**
-: ##### Exercises
+: ?
 
 **[Letter Search](/vision-therapy/letter-search)**
-: ##### Exercises
+: ?
 
 **[Letter Tracking](/vision-therapy/letter-tracking)**
-: ##### Exercises
-  - [Alphabet Saccades](https://aworkoutaday.com/exercises?Name=Alphabet+Saccades)
+: ?
 
 **[Line Counting](/vision-therapy/line-counting)**
-: ##### Exercises
-  - [Line Counting](https://aworkoutaday.com/exercises?Name=Line+Counting)
+: ?
 
 **[Number Dots](/vision-therapy/number-dots)**
-: ##### Exercises
-  - [Dots Card](https://aworkoutaday.com/exercises?Name=Dots+Card)
+: ?
 
 **[Number Grid](/vision-therapy/number-grid)**
-: ##### Exercises
+: ?
 
 **[Number Saccades](/vision-therapy/number-saccades)**
-: ##### Exercises
+: ?
 
 **[Number Search](/vision-therapy/number-search)**
-: ##### Exercises
+: ?
 
 **[Shape Chart](/vision-therapy/shape-chart)**
-: ##### Exercises
+: ?
 
 **[Shape Color Chart](/vision-therapy/shape-color-chart)**
-: ##### Exercises
+: ?
 
 **[Single Target](/vision-therapy/single-target)**
-: ##### Exercises
+: ?
 
 **[Slap Tap](/vision-therapy/slap-tap)**
-: ##### Exercises
-  - [Slap Tap](https://aworkoutaday.com/exercises?Name=Slap+Tap)
+: ?
 
 **[Space Fixator](/vision-therapy/space-fixator)**
-: ##### Exercises
-  - [Look, Ready, Touch, Back](https://aworkoutaday.com/exercises?Name=Look%2C+Ready%2C+Touch%2C+Back)
-  - [Ready, Touch, Look, Back](https://aworkoutaday.com/exercises?Name=Ready%2C+Touch%2C+Look%2C+Back)
+: ?
 
 **[Spot the Match](/vision-therapy/spot-the-match)**
-: ##### Exercises
-  - [Spot the Match](https://aworkoutaday.com/exercises?Name=Spot+the+Match)
+: ?
 
 **[Stereo Circles](/vision-therapy/stereo-circles)**
-: ##### Exercises
-  - [Sliding Stereo Circles](https://aworkoutaday.com/exercises?Name=Sliding+Stereo+Circles)
+: ?
 
 **[Tranaglyph](/vision-therapy/tranaglyph)**
-: ##### Exercises
-  - [Tranaglyph](https://aworkoutaday.com/exercises?Name=Tranaglyph)
+: ?
 
 
 # Equipment
@@ -123,6 +105,9 @@ _Requires an Aperture Rule Trainer!_
 **Brock String**
 <img src="一brock-string.jif" />
 : A string of beads.
+: Position the first bead so it is 12 inches from the handle.
+: Position the second bead so it is 5 feet from the handle.
+: Position the third bead so it is 8 feet from the handle.
 : > [!TIP]
   > Use an [Alpine Butterfly Loop Knot](https://www.animatedknots.com/alpine-butterfly-loop-knot) to create a back-stop for each bead threaded onto the string.
 
