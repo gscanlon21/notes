@@ -58,7 +58,7 @@
 			background-color: color(--color-bg);
 			transform: rotateY(180deg);
 
-			& > strong {
+			& > .front {
 				text-align: center;
 			}
 
@@ -92,7 +92,7 @@
 			line-height: 1;
 			z-index: -1;
 			bottom: 8px;
-			right: 8px;
+			left: 8px;
 		}
 
 		.current-card {
@@ -102,7 +102,13 @@
 			line-height: 1;
 			z-index: -1;
 			bottom: 8px;
-			left: 8px;
+			right: 8px;
+		}
+
+		&[data-group="2"] {
+			.current-card {
+				font-weight: bold;
+			}
 		}
 	}
 }

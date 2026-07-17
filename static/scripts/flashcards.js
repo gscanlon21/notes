@@ -75,6 +75,7 @@ function renderFlashcards(flashcardSections) {
 			const progress = flashcardSection.flashcards.filter(f => f.group === 2).length / flashcardSection.flashcards.length;
 			const flashcard = flashcardSection.flashcards[currentIndex];
 
+			section.dataset.group = flashcard.group;
 			section.innerHTML = `
 				<div class="card-header">${flashcardSection.header}</div>
 				<div class="flashcard-front">
@@ -89,11 +90,11 @@ function renderFlashcards(flashcardSections) {
 						</ul>
 					</div>
 				</div>
-				<div class="current-card">
-					${flashcardSection.progress.toFixed(0)}%
-				</div>
 				<div class="card-counter">
 					${currentIndex + 1} / ${flashcardSection.flashcards.length}
+				</div>
+				<div class="current-card">
+					${flashcardSection.progress.toFixed(0)}%
 				</div>
 			`;			
 		}
