@@ -47,7 +47,7 @@ see_also = []
 8. Lysozyme broth (M90) 
 9. Voges-Proskauer medium (M177) 
 10. Nitrate broth (M108) 
-11. Nutrient agar for B. cereus (M113) 
+11. Nutrient agar for _B. cereus_ (M113) 
 12. Motility medium (B. cereus) (M100) 
 13. Trypticase soy-sheep blood agar (M159) 
 14. Nitrite detection reagents (R48) 

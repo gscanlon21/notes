@@ -22,3 +22,9 @@ _6.22 Quart Capacity_
   > - [x] 
   > - [ ] 
   > - [ ] 
+
+
+## OXO Good Grips Salad Spinner
+
+> [!IMPORTANT]
+> Water gets stuck in the spinning mechanism and must be taken apart to fully clean and dry.
