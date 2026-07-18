@@ -16,7 +16,7 @@ see_also = []
 # USB-C Charger is Loose
 
 **1.**
-: Try cleaning the charger port with a floss pick.
+: Try cleaning the charger port using a floss pick or paint brush.
 : The plastic will not conduct electricity or scratch the metal inside the port.
 
 **2.**
