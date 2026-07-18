@@ -12,9 +12,10 @@ see_also = []
 {{ hidden() }}
 
 
-# Bikes
+# Outdoor Bikes
 
 **Kona Dew**
+_Hybrid Bike_
 : > - [ ]
   > - [ ]
   > - [ ]
@@ -22,7 +23,7 @@ see_also = []
   > - [ ]
 
 
-# Bike Accessories
+## Bike Accessories
 
 **BarEnd MSW Short Black**
 : > - [x]
@@ -30,3 +31,15 @@ see_also = []
   > - [ ]
   > - [ ]
   > - [ ]
+
+
+# Stationary Bikes
+
+**Keiser M3i**
+: Seat Height: I
+: Handlebar Height: 5
+: > - [x]
+  > - [x]
+  > - [x]
+  > - [x]
+  > - [x]

@@ -65,3 +65,19 @@ _Card Game_
   > - [ ] 
   > - [ ] 
   > - [ ] 
+
+**Desperate Oasis**
+_Card Game_
+: ?
+
+**Fruit Boss**
+_Card Game_
+: ?
+
+**Cubirds**
+_Card Game_
+: ?
+
+**Tap 4**
+_Card Game_
+: ?
