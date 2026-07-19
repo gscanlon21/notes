@@ -10,6 +10,7 @@ site_version = 1
 toc_level = 3
 see_also = [
   { title = "Permalink", href = "/vision-therapy" },
+  { title = "Vestibular", href = "https://vestibular.org/" },
   { title = "Vision Therapy Exercises", href = "https://aworkoutaday.com/exercises?StrengthMuscle=536870912" },
   { title = "Font Family: Optician Sans", href = "https://github.com/anewtypeofinterference/Optician-Sans" },
 ]

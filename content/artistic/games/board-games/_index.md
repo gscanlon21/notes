@@ -81,3 +81,7 @@ _Card Game_
 **Tap 4**
 _Card Game_
 : ?
+
+**Goblin Vaults**
+_Card Game_
+: ?
