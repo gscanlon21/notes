@@ -1,0 +1,8482 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	
+	
+		<title>Single-Cell mRNA Sequencing - ascallion</title>
+	
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://ascallion.com/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://ascallion.com/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://ascallion.com/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://ascallion.com/site.webmanifest?h=d3283d8cdd099d8504a1">
+
+	
+	<link rel="stylesheet" type="text/css" href="https://ascallion.com/site.css?h=e01115d5dbacb91d77c3" media="all">
+	
+
+	
+	
+		
+
+		
+		
+	
+	
+    
+	
+		
+		
+
+		
+		
+	
+
+	
+
+	<script defer src="https://ascallion.com/elasticlunr.min.js?h=4f648b9e42abdef9c436"></script>
+	<script defer src="https://ascallion.com/search_index.en.js?h=a30d723d064c257d4b9b"></script>
+
+	
+
+	<script defer src="https://ascallion.com/scripts/search.js?h=e0cb59a66a29474a29dd"></script>
+	<script defer src="https://ascallion.com/scripts/content.js?h=a0194cd68f625f112245"></script>
+	<script defer src="https://ascallion.com/scripts/flashcards.js?h=0b0e21120d1635f4a897"></script>
+
+	
+</head>
+
+<body>
+	
+	<header id="header">
+		<span class="header-item">
+
+<div id="search">
+  <input id="search-input" type="search" placeholder="Search">
+
+  <div id="search-results" style="display: none;">
+      <ul id="search-results__items"></div>
+  </div>
+</div></span>
+		<span class="header-item"><a class="unstyle" href="https://ascallion.com/">ascallion</a></span>
+		<span class="header-item"><a href="https://ascallion.com/">Sitemap</a></span>
+	</header>
+	
+
+	<nav class="print context">
+		<div class="left">
+			Single-Cell mRNA Sequencing
+		</div>
+		<div class="right">
+			
+		</div>
+	</nav>
+
+	<main id="main">
+		
+    <div class="header-wrap">
+        <div class="sidebar-left header header-wrap">
+            <form id="options" class="header-item">
+    <header id="summary">
+        <h2 class="header-title">
+            
+                <span>Single-Cell mRNA Sequencing</span>
+            
+              
+        </h2> 
+         
+            <h4 class="subtitle">Single-Cell RNA-seq</h4>
+        
+
+		
+
+		
+
+        <dl>
+             
+            <dt>Description</dt>
+            <dd>A method for assaying chromatin accessibility genome-wide</dd>
+            
+
+            
+
+            
+
+            
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+
+			
+
+			
+
+			
+
+             
+            <dt>Last Updated</dt>
+            <dd>2026-06-01</dd>
+            
+            
+            <dt>Reading Time</dt>
+            <dd>10 minute(s)</dd>
+
+			<dt>Word Count</dt>
+            <dd><span id="word-count">1904</span> words</dd>
+        </dl>
+
+		<div id="flashcard-container"></div>
+		
+
+
+
+
+    </header>
+</form>
+            
+
+
+<div class="header-item">
+	<h3 class="sitemap-title header-title">Table of Contents</h3>
+	<nav class="sitemap condensed">
+		
+			
+<ul class="sitemap-list">
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https:&#x2F;&#x2F;ascallion.com&#x2F;researching&#x2F;analysis&#x2F;transcriptomics&#x2F;single-cell-rna-seq&#x2F;#generic-atac-seq-analysis-workflow">Generic ATAC-seq Analysis Workflow</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+<ul class="sitemap-list">
+	
+	
+	
+	
+	
+</ul>
+
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https:&#x2F;&#x2F;ascallion.com&#x2F;researching&#x2F;analysis&#x2F;transcriptomics&#x2F;single-cell-rna-seq&#x2F;#guides-tools">Guides &amp; Tools</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+<ul class="sitemap-list">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</ul>
+
+		
+	
+	
+	
+</ul>
+
+		
+	</nav>
+</div>
+
+
+        </div>
+
+        <div class="sidebar-right header">
+			<div class="header-item">
+				
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap">
+	<menu class="sitemap-list">
+		
+			
+			
+				<li><a href="https://ascallion.com/">ascallion</a></li>
+			
+		
+			
+			
+				<li><a href="https://ascallion.com/researching/">Researching</a></li>
+			
+		
+			
+			
+				<li><a href="https://ascallion.com/researching/analysis/">Analysis</a></li>
+			
+		
+			
+			
+				<li><a href="https://ascallion.com/researching/analysis/transcriptomics/">Transcriptomics</a></li>
+			
+		
+		
+			<li class="current">Single-Cell mRNA Sequencing</li>
+		
+	</menu>
+</nav>
+
+			</div>
+            
+			<div class="header-item">
+            	
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap">
+	
+	
+	
+		
+
+
+
+	
+
+
+    
+        <menu class="sitemap-list">
+            
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/ATAC-seq/">Assay for Transposase-Accessible Chromatin using Sequencing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/bulk-rna-seq/">Bulk mRNA Sequencing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+            <li class="current">Single-Cell mRNA Sequencing</li>
+        
+		
+    
+	
+
+
+        </menu>
+    
+    
+    
+
+
+	
+</nav>
+
+            </div>
+
+            <div class="header-item screen-large">
+                <h3 class="sitemap-title">Sitemap</h3>
+                <nav class="sitemap">
+                    
+
+
+
+	
+
+
+    
+    
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/applications/">Applications</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/everything/">Everything</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/excel/">Excel</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/inkscape/">Inkscape</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/lightshot/">Lightshot</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/lively/">Lively</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/applications/browsers/">Browsers</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/browsers/firefox/">Firefox</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/browsers/ladybird/">Ladybird</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/applications/photos/">Photos</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/photos/fastflix/">Fastflix</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/artistic/">Artistic</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/origami/">Origami</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/pixel-sorting/">Pixel Sorting</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/artistic/games/">Games</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/artistic/games/board-games/">Board Games</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/games/board-games/hive/">Hive</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/artistic/games/video-games/">Video Games</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/artistic/languages/">Languages</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/languages/spanish/">Spanish</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/artistic/languages/english/">English</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/languages/english/haikus/">Haikus</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/languages/english/jokes/">Jokes</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/languages/english/puns/">Puns</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/languages/english/quips/">Quips</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/artistic/laser/">Laser</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/laser/lightburn/">Lightburn</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/laser/polar/">Polar</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/artistic/music/">Music</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/music/bodhrán/">Bodhrán</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/clean/">Clean</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/car/">Car</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/clothes/">Clothes</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/glasses/">Glasses</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/odors/">Odors</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/clean/home/">Home</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/home/carpet/">Carpet</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/home/fridge/">Fridge</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/home/robot_vacuums/">Robot Vacuums</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/cook/">Cook</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/cook/water/">Water</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/cook/equipment/">Equipment</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/cook/equipment/salad-spinners/">Salad Spinners</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/cook/ingredients/">Ingredients</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/eyes/">Eyes</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/eyes/charts/">Eye Charts</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/charts/amsler-grid/">Amsler Grid</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/charts/astigmatism-chart/">Astigmatism Chart</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/charts/contrast-sensitivity-chart/">Contrast Sensitively Chart</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/eyes/conditions/">Eye Conditions</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/conditions/conjunctivitis/">Conjunctivitis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/conditions/macular-degeneration/">Macular Degeneration</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/eyes/vision-therapy/">Vision Therapy</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/aperture-rule/">Aperture Rule</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/arrow-chart/">Arrow Chart</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/arrow-color-chart/">Arrow Color Chart</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/barrel-card/">Barrel Card</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/closed-open-flat/">Closed&#x2F;Open&#x2F;Flat</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/fusion-card/">Fusion Card</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/hart-chart/">Hart Chart</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/letter-saccades/">Letter Saccades</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/letter-search/">Letter Search</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/letter-tracking/">Letter Tracking</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/line-counting/">Line Counting</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/number-dots/">Number Dots</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/number-grid/">Number Grid</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/number-saccades/">Number Saccades</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/number-search/">Number Search</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/shape-chart/">Shape Chart</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/shape-color-chart/">Shape Color Chart</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/single-target/">Single Target</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/slap-tap/">Slap Tap</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/space-fixator/">Space Fixator</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/spot-the-match/">Spot the Match</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/stereo-circles/">Stereo Circles</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/tranaglyph/">Tranaglyph</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/fixes/">Fixes</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/ac/">AC</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/dishwasher/">Dishwasher</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/glasses/">Glasses</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/disposal/">Sink Disposal</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/toilets/">Toilets</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/washing_machine/">Washing Machine</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/window_film/">Window Film</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/">Grow</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/nutrients/">Nutrients</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/fertilizers/">Fertilizers</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/harvesting/">Harvesting</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/">Bacteriological Analytical Manual</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/1-food-sampling/">Food Sampling and Preparation of Sample Homogenate</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/1-food-sampling/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/2-microscopic-examination/">Microscopic Examination of Foods, and Care and Use of the Microscope</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/2-microscopic-examination/hydroponic-produce/">Hydroponic Produce</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/2-microscopic-examination/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/3-aerobic-plate-count/">Aerobic Plate Count</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/3-aerobic-plate-count/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/3-aerobic-plate-count/hydroponic-produce/">Hydroponic Produce</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/4-enumeration-of-e-coli/">Enumeration of Escherichia coli and the Coliform Bacteria</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/4-enumeration-of-e-coli/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/4A-diarrheagenic-e-coli/">Diarrheagenic Escherichia coli</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/4A-diarrheagenic-e-coli/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/5-salmonella/">Salmonella</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/5-salmonella/hydroponic-produce/">Hydroponic Produce</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/5-salmonella/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/6-shigella/">Shigella</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/6-shigella/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/10-listeria/">Listeria monocytogenes</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/10-listeria/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/12-staphylococcus-aureus/">Staphylococcus aureus</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/12-staphylococcus-aureus/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/13b-staphylococcal-enterotoxins/">Staphylococcal Enterotoxins Detection Methods</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/13b-staphylococcal-enterotoxins/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/14-bacillus-cereus/">Bacillus cereus</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/14-bacillus-cereus/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/14-bacillus-cereus/hydroponic-produce/">Hydroponic Produce</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/17-clostridium-botulinum/">Clostridium botulinum</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/17-clostridium-botulinum/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/18-Yeasts, Molds, and Mycotoxins/">Yeasts, Molds, and Mycotoxins</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/18-Yeasts, Molds, and Mycotoxins/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/19-Parasitic Animals in Foods/">Parasitic Animals in Foods</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/19-Parasitic Animals in Foods/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/19A-Detection of Cyclospora and Cryptosporidium from Fresh Produce/">Detection of Cyclospora and Cryptosporidium from Fresh Produce: Isolation and Identification by Polymerase Chain Reaction (PCR) and Microscopic Analysis</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/19A-Detection of Cyclospora and Cryptosporidium from Fresh Produce/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/19B-Molecular Detection of Cyclospora cayetanensis in Fresh Produce using Real-time PCR/">Molecular Detection of Cyclospora cayetanensis in Fresh Produce using Real-time PCR</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/19B-Molecular Detection of Cyclospora cayetanensis in Fresh Produce using Real-time PCR/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/19C-Dead-end Ultrafiltration for the Detection of Cyclospora cayetanensis from Agricultural Water/">Dead-end Ultrafiltration for the Detection of Cyclospora cayetanensis from Agricultural Water</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/19C-Dead-end Ultrafiltration for the Detection of Cyclospora cayetanensis from Agricultural Water/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/25-investigation-of-food/">Investigation of Food Implicated in Illness</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/26-enteric-viruses/">Concentration, Extraction and Detection of Enteric Viruses from Food and Appendices</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/26-enteric-viruses/equipment-materials/">Equipment and Materials</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/bacteriological-analytical-manual/26-enteric-viruses/appendices/">Appendices</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/appendix2-Most Probable Number Determination from Serial Dilutions/">Most Probable Number Determination from Serial Dilutions</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/bacteriological-analytical-manual/appendix4-Food and Feed Items that are of current Interest to the FDA for Microbiological Methods Validation/">Food and Feed Items that are of current Interest to the FDA for Microbiological Methods Validation</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/commodities/">Commodities</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/commodities/spinach/">Spinach</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/commodities/lettuce/">Lettuce</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/food-safety/">Food Safety</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/growing-mediums/">Growing Mediums</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/hydroponics/">Hydroponics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/hydroponics/techniques/">Techniques</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/hydroponics/techniques/kratky-method/">Kratky Method</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/hydroponics/techniques/kratky-method/supplies/">Supplies</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/hydroponics/techniques/kratky-method/supplies/mason-jars/">Mason Jars</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/hydroponics/techniques/kratky-method/supplies/net-cups/">Net Cups</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/hydroponics/water-quality/">Water Quality</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/hydroponics/water-quality/water-temperature/">Water Temperature</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/hydroponics/water-quality/potential-of-hydrogen/">Potential of Hydrogen</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/hydroponics/water-quality/electrical-conductivity/">Electrical Conductivity</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/plant-health/">Plant Health</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/plant-health/pests/">Pests</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/plant-health/algae/">Algae</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/plant-health/pruning/">Pruning</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/plant-health/diseases/">Diseases</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/plant-health/diseases/powdery-mildew/">Powdery Mildew</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/grow/seedlings/">Seedlings</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/seedlings/seed-starting/">Seed Starting</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/items/">Items</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/appliances/">Appliances</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/bikes/">Bikes</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/glasses/">Glasses</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/health/">Health</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/tea/">Tea</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/items/clothes/">Clothes</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/clothes/bedding/">Bedding</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/clothes/hats/">Hats</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/items/clothes/shoes/">Shoes</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/clothes/shoes/socks/">Socks</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/clothes/shoes/orthotics/">Orthotics</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/items/electronics/">Electronics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/electronics/fairphone/">Fairphone</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/electronics/stereos/">Stereos</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/electronics/wled/">W-LED</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/items/oral/">Oral</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/oral/floss/">Floss</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/oral/gum/">Gum</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/oral/toothpaste/">Toothpaste</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/items/woodworking/">Woodworking</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/woodworking/sealant/">Sealant</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/media/">Media</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/newsletters/">Newsletters</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/podcasts/">Podcasts</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/tongue-twisters/">Tongue Twisters</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/youtube/">Youtube</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/media/books/">Books</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/books/artofnvc/">The Art of Nonviolent Communication</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/media/books/academic/">Academic</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/books/academic/They-Say-I-Say/">They Say, I Say</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/media/books/fantasy/">Fantasy</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/media/books/other/">Other</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/media/books/sci-fi/">Science Fiction</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/media/books/sci-fi/short_stories/">Short Stories</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/books/sci-fi/short_stories/stories-of-your-life-and-others/">Stories of Your Life and Others</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/books/sci-fi/short_stories/a-view-from-the-stars/">A View from the Stars</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/media/movies/">Movies</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/media/movies/sci-fi/">Science Fiction</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/media/music/">Music</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/media/scripts/">Scripts</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/scripts/acupuncture/">Acupuncture</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/scripts/celiac-disease/">On Celiac Disease</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/media/speeches/">Speeches</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/media/transcripts/">Transcripts</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/medic/">Medic</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/sleep/">Sleep</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/medic/cardiovascular/">Cardiovascular System</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/cardiovascular/blood-pressure/">Blood Pressure</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/medic/digestion/">Digestive System</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/antibiotics/">Antibiotics</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/malabsorbtion/">Malabsorption</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/microplastics/">Microplastics</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/medic/digestion/minerals/">Minerals</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/molybdenum/">Molybdenum</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/copper/">Copper</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/iron/">Iron</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/lithium/">Lithium</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/selenium/">Selenium</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/zinc/">Zinc</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/magnesium/">Magnesium</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/medic/digestion/pillars/">Core Pillars of Gut Health</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/pillars/fueling_resilience/">Pillar 1 - Food</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/pillars/reducing_stress/">Pillar 2 - Stress</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/pillars/lifestyle/">Pillar 3 - Lifestyle</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/pillars/exposure/">Pillar 4 - Exposure</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/pillars/supplements/">Pillar 5 - Supplements</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/medic/kinesiology/">Kinesiology</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/kinesiology/feet/">Feet</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/kinesiology/posture/">Posture</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/medic/nutrients/">Nutrients</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/nutrients/ferritin/">Ferritin</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/nutrients/iron/">Iron</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/medic/oral/">Oral</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/oral/xylitol/">Xylitol</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/notes/">Notes</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/notes/android/">Android</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/notes/symbols/">Symbols</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/notes/words/">Words</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/notes/terminology/">Terminology</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/notes/terminology/biological-sciences/">Biological Terminology</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/office/">Office</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/office/e-ink/">E-Ink</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/office/ergonomics/">Ergonomics</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/office/supplies/">Office Supplies</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/plants/">Plants</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/plants/birds/">Birds</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/birds/bird-strikes/">Bird Strikes</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/plants/birds/identification/">Bird Identification</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/plants/birds/watching/">Bird Watching</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/birds/watching/owls/">Owls</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/plants/gardening/">Gardening</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/gardening/homesteading/">Homesteading</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/gardening/plant_labels/">Plant Labels</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/gardening/planting/">Planting</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/gardening/pruning/">Pruning</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/gardening/rain_barrels/">Rain Barrels</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/plants/identification/">Identification</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/identification/trees/">Trees</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/plants/native_plants/">MO Native Plants</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/native_plants/ground_cover/">Ground Cover</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/native_plants/master-naturalist/">Missouri Master Naturalist</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/native_plants/nurseries/">Native Plants Nurseries</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/native_plants/prairie_seeds/">Prairie Seeds</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/plants/plant-crafts/">Plant Crafts</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/plant-crafts/ikebana/">Ikebana</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/plant-crafts/plant_impressions/">Plant Impressions</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/plant-crafts/pressed_flowers/">Pressed Flowers</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/projects/">Projects</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/editorconfig/">Editor Config</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/projects/a-diary-a-day/">A Diary a Day</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/projects/a-feast-a-day/">A Feast a Day</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/">Data Sources</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/microbiome/">Microbiome</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/microbiome/ANSES-CIQUAL/">ANSES-CIQUAL</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/microbiome/food-data-central/">FDA FoodData Central</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/microbiome/foo-db/">FooDB</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/microbiome/food-microbionet/">Food Microbionet</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/nutrition/">Nutrition</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/projects/a-workout-a-day/">A Workout a Day</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/projects/reverse-dictionary/">Reverse Dictionary</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/projects/learn-bioinformatics/">Learn Bioinformatics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/">Intro to Bioinformatics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/1-course-overview/">Course Overview</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/2-biology-review/">Molecular Biology Review</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/3-gene-expression-data-format/">Gene Expression Data Format</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/4-differential-expression-analysis/">Differential Expression Analysis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/5-quick-statistics-lesson/">Quick Statistics Lesson</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/6-gene-expression-omnibus/">Downloading Data from the Gene Expression Omnibus (GEO)</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/7-processing-rna-seq-data/">Reading and Processing RNA-seq Data</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/8-differential-expression-analysis,-p-value,-log2-fold-change/">Differential Expression Analysis, P-Value, Log₂ Fold Change</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/9-enrichr/">Enrichr</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/10-gene-expression-heatmap-plot/">Gene Expression Heatmap Plot</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/11-more-gene-expression-plots/">More Gene Expression Plots</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/12-project-1-conclusion,-project-2-ntro/">Project 1 Conclusion, Project 2 Intro</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/13-review-of-mendelian-genetics/">Review of Mendelian Genetics</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/14-modern-genetics/">Modern Genetics</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/15-project-2-genome-wide-association-study-(gwas)/">Project 2 - Genome Wide Association Study (GWAS)</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/16-gwas-dataset-format/">GWAS Dataset Format</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/17-logistic-regression-review/">Logistic Regression Review</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/18-additivity-assumption-in-gwas/">Additivity Assumption in GWAS</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/19-reading-in-gwas-data/">Reading in GWAS Data</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/20-minor-allele-frequency-filter/">Minor Allele Frequency Filter</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/21-gwas-analysis/">GWAS Analysis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/22-ucsc-genome-browser/">UCSC Genome Browser</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/23-manhattan-plot/">Manhattan Plot</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/24-checking-gwas-results,-project-2-conclusion/">Checking GWAS Results, Project 2 Conclusion</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/25-educational-resources-for-bioinformatics-and-computational-biology/">Educational Resources for Bioinformatics and Computational Biology</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/projects/learn-bioinformatics/bioinformatics-101/">Bioinformatics 101</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/">Research</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/graveyard/">Graveyard</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/metabolomics/">Metabolomics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/metabolomics/rna-interference/">RNA Interference</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/metabolomics/endocrinology/">Endocrinology</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/metabolomics/genomics/">Genomics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/metabolomics/genomics/atogg1/">AtOGG1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/metabolomics/genomics/gmexpa1/">GmEXPA1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/metabolomics/genomics/mre11/">MRE11</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/metabolomics/ionomics/">Ionomics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/metabolomics/nutrigenomics/">Nutrigenomics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/metabolomics/proteomics/">Proteomics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/metabolomics/proteomics/PAR-proteins/">PAR Proteins</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/metabolomics/proteomics/hypothetical-proteins/">Hypothetical Proteins</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/metabolomics/proteomics/microproteins/">Micro Proteins</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/metabolomics/transcriptomics/">Transcriptomics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/evolution/">Evolution</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/evolution/evolutionary-mismatch-theory/">Evolutionary Mismatch Theory</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/evolution/micro-evolutionary-priming/">Micro-Evolutionary Priming</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/microbiome/">Microbiome</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/epigenetics/">Epigenetics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/epigenetics/acetylation/">Acetylation</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/epigenetics/demethylation/">Demethylation</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/epigenetics/lactylation/">Lactylation</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/epigenetics/methylation/">Methylation</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/epigenetics/reprogramming/">Reprogramming</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/epigenetics/inheritance/">Epigenetic Inheritance</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/epigenetics/inheritance/c-elegans/">in C. elegans</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/">Physiology</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/detoxification/">Detoxification</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/efferocytosis/">Efferocytosis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/gene-environment/">Gene-by-Environment Interactions</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/acclimation/">Acclimation</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/acclimation/altitude/">to Altitude</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/acclimation/altitude/humans/">in humans</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/acclimation/temperature/">to Temperature</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/acclimation/temperature/c-elegans/">in C. elegans</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/adaptation/">Adaptation</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/adaptation/diet/">to Diet</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/adaptation/diet/c-elegans/">in C. Elegans</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/adaptation/glucose/">to Excessive Glucose</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/adaptation/glucose/c-elegans/">in C. Elegans</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/adaptation/hypoxia/">to Hypoxia</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/adaptation/hypoxia/c-elegans/">in C. elegans</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/adaptation/hypoxia/humans/">in humans</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/adaptation/hypoxia/rodents/">in rodents</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/adaptation/termperature/">to Temperature</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/cell-division/">Cell Division</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/cell-division/asymmetric/">Asymmetric Cell Division</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/cell-signaling/">Cell Signaling</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/cell-signaling/hedgehog-signaling/">Hedgehog Signaling</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/cell-signaling/notch-signaling/">Notch Signaling</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/cell-signaling/wnt-signaling/">WNT Signaling</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/development/">Development</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/development/arabidopsis/">of Arabidopsis</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/metabolism/">Metabolism</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/metabolism/c-elegans/">in C. Elegans</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/metabolism/energy/">of Energy</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/shock/">Shock</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/tolerance/">Tolerance</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/tolerance/desiccation/">to Desiccation</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/tolerance/desiccation/arabidopsis/">in Arabidopsis</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/tolerance/desiccation/arabidopsis/seed-longevity/">for Seed Longevity</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/tolerance/desiccation/tardigrades/">in Tardigrades</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/physiology/transcription/">Transcription</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/physiology/transcription/alternative-splicing/">Alternative Splicing</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/epidemiology/">Epidemiology</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/epidemiology/neuro-diseases/">Neuro Diseases</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/epidemiology/oncology/">Oncology</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/epidemiology/oncology/epigenetics/">Epigenetics</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/epidemiology/obesity/">Obesity</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/epidemiology/pharmacology/">Pharmacology</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/epidemiology/immunology/">Immunology</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/epidemiology/immunology/immunogenomics/">Immunogenomics</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/pathophysiology/">Pathophysiology</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/pathophysiology/hypertension/">Hypertension</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/pathophysiology/perinatal-asphyxia/">Perinatal Asphyxia</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/pathophysiology/perinatal-asphyxia/hypoxic-Ischemic-encephalopathy/">Hypoxic-Ischemic Encephalopathy</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/psychology/">Psychology</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/research/psychology/neuropsychology/">Neuropsychology</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/psychology/neuropsychology/hpa-axis/">HPA Axis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/psychology/neuropsychology/neuroimmune-network-hypothesis/">Neuroimmune Network Hypothesis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/research/psychology/neuropsychology/sam-axis/">SAM Axis</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/">Researching</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/organisms/">Organisms</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/organisms/arabidopsis/">Arabidopsis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/organisms/elegans/">C. elegans</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/references/">References</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/references/libraries/">Libraries</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/libraries/webster-library/">Webster Library</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/references/pubmed/">Pubmed</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/pubmed/mesh/">Pubmed - MeSH</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/pubmed/searching/">Pubmed - Searching</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/references/styles/">Styles</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/styles/apa/">APA</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/styles/vancouver/">Vancouver</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/clinical-informatics/">Clinical Informatics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/bioinformatics/">Bioinformatics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/bioinformatics/resources/">Resources</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/resources/plants/">Plants</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/resources/yeast/">Yeast</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/bioinformatics/projects/">Projects</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/projects/episcanpy/">epiScanpy</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/bioinformatics/tools/">Tools</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/tools/blast/">Basic Local Alignment Search Tool</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/methodology/">Methodology</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/controlled-deterioration-treatment/">Controlled Deterioration Treatment</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/direct-protein-delivery/">Direct Protein Delivery</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/floral-dip-transformation/">Floral Dip Transformation</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/lactate-pyruvate/">Lactate&#x2F;Pyruvate Assays</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/plasmid-design/">Plasmid Design</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/primer-design/">Primer Design</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/propidium-iodide-staining/">Propidium Iodide Staining</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/real-time-pcr/">Real-Time PCR</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/rna-editing/">RNA Editing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/seed-priming/">Seed Priming</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/tetrazolium-assay/">Tetrazolium Assay</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/transformation/">Transformation</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/methodology/culture/">Culture</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/culture/heart/">Heart Tissue</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/methodology/rna-sequencing/">RNA Sequencing</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/rna-sequencing/single-cell/">Single Cell RNA Sequencing</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/equipment/">Equipment</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/equipment/electrical-conductivity/">Electrical Conductivity Meters</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/equipment/electrical-conductivity/conductivity-meter/">Conductivity Meter</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/equipment/electrical-conductivity/pasport-conductivity-sensor/">PASPORT Conductivity Sensor</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/equipment/potential-of-hydrogen/">pH Meters</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/equipment/potential-of-hydrogen/orion-star-a211/">Thermo Scientific™ Orion Star™ A211 Benchtop pH Meter</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/chemicals/">Chemicals</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/statistics/">Statistics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/bayesian/">Bayesian</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/frequentist/">Frequentist</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/generalized-linear-model/">Generalized Linear Model</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/negative-binomial/">Negative Binomial</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/normalization/">Normalization</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/principal-component-analysis/">Principal Component Analysis</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/analysis/">Analysis</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/researching/analysis/transcriptomics/">Transcriptomics</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/ATAC-seq/">Assay for Transposase-Accessible Chromatin using Sequencing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/bulk-rna-seq/">Bulk mRNA Sequencing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/single-cell-rna-seq/">Single-Cell mRNA Sequencing</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/">Software</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/architecting/">Architecting</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/applications/">Applications</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/applications/beekeeper/">Beekeeper Studio</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/applications/desmos/">Desmos</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/applications/smartgit/">Smartgit</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/databases/">Databases</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/databases/postgresql/">PostgreSQL</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/databases/postgresql/permissions/">Permissions</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/databases/sql_server/">SQL Server</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/desktops/">Desktops</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/desktops/linux/">Linux</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/desktops/windows/">Windows</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/chkdsk/">chkdsk</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/dism/">dism</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/netsh/">netsh</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/performance_monitor/">Performance Monitor</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/sfc/">sfc</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/wsl/">wsl</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/editors/">Editors</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/editors/vscode/">Visual Studio Code</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/editors/visual_studio/">Visual Studio</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/editors/visual_studio/interactive/">C# Interactive</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/editors/visual_studio/settings/">Visual Studio Settings</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/frameworks/">Frameworks</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/frameworks/dotnet/">.NET</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/frameworks/dotnet/exceptions/">Exceptions</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/frameworks/dotnet/iisexpress/">IIS Express</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/hosting/">Hosting</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/hosting/digitalocean/">DigitalOcean</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/hosting/zola/">Zola</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/languages/">Languages</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/languages/csharp/">CSharp</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/languages/css/">CSS</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/languages/css/named-colors/">Named Colors</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/languages/powershell/">Powershell</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/languages/rust/">Rust</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/packages/">Packages</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/packages/redis/">Redis</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/programs/">Programs</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/curl/">Curl</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/jmeter/">JMeter</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/jq/">jq</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/regex/">Regex</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/ssh/">SSH</a></li>
+        
+    
+	
+
+
+        
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/programs/git/">Git</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/git/bfg/">BFG Repo-Cleaner</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/git/conventional_commits/">Conventional Commits</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/git/config/">Git Config</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/git/performance/">Git Performance</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/git/submodules/">Git Submodules</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+                
+                    
+
+
+
+	
+
+
+    
+        <details >
+			
+				<summary><a href="https://ascallion.com/software/security/">Security</a></summary>
+			
+            
+            <menu class="sitemap-list">
+                
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/security/encryption/">Encryption</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/security/openssl/">OpenSSL</a></li>
+        
+    
+	
+
+
+        
+                
+            </menu>
+        </details>
+    
+
+
+                
+            </menu>
+        </details>
+    
+
+
+    
+        
+
+
+
+	
+
+
+
+    
+
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+	
+	
+    <article id="content" class="page v1" data-slug="single-cell-rna-seq" data-orientation="">
+		<aside class="display--none">
+</aside>
+<dl>
+<dt><strong>ATAC-seq: A Method for Assaying Chromatin Accessibility Genome-Wide</strong>
+Buenrostro et al. 2015
+<em><a href="/doi/10.1002/0471142727.mb2129s109.pdf">Methodology</a></em></dt>
+<dd>?</dd>
+<dt><strong>Review and Evaluate the Bioinformatics Analysis Strategies of ATAC-seq and CUT&amp;Tag Data</strong>
+Cheng et al. 2024
+<em><a href="/doi/10.1093/gpbjnl/qzae054.pdf">Research Article</a></em></dt>
+<dd>?</dd>
+<dt><strong>Analytical Approaches for ATAC-seq Data Analysis</strong>
+Smith et al. 2021
+<em><a href="/doi/10.1002/cphg.101.pdf">Research Article</a></em></dt>
+<dd>"Here, we explain the fundamentals of ATAC-seq data processing, summarize common analysis approaches, and review computational tools to provide recommendations for different research questions."</dd>
+</dl>
+<h1 id="generic-atac-seq-analysis-workflow">Generic ATAC-seq Analysis Workflow</h1>
+<h5 id="general-data-processing">General Data Processing</h5>
+<dl>
+<dt><strong>Convert Format</strong>
+1.</dt>
+<dd>?</dd>
+<dt><strong>Raw Read Quality</strong>
+1.5</dt>
+<dd>?</dd>
+<dt><strong>Trim Adapters</strong>
+2.</dt>
+<dd>?</dd>
+<dt><strong>Align Reads</strong>
+3.</dt>
+<dd>?</dd>
+<dt><strong>Remove Mitochondrial Reads</strong>
+4.</dt>
+<dd>?</dd>
+<dt><strong>Deduplicate</strong>
+5.</dt>
+<dd>?</dd>
+<dt><strong>Signal Tracks</strong>
+6.</dt>
+<dd>?</dd>
+<dt><strong>Call Peaks</strong>
+7.</dt>
+<dd>?</dd>
+<dt><strong>QC Plots</strong>
+7a.</dt>
+<dd>?</dd>
+<dt><strong>Summary Statistics</strong>
+7b.</dt>
+<dd>?</dd>
+</dl>
+<h5 id="project-specific-analysis">Project Specific Analysis</h5>
+<dl>
+<dt><strong>Motif Enhancement</strong>
+9.</dt>
+<dd>?</dd>
+<dt><strong>Differentially Accessible Regions</strong>
+9.</dt>
+<dd>?</dd>
+<dt><strong>Region Enrichment</strong>
+9.</dt>
+<dd>?</dd>
+<dt><strong>Nucleosome Positioning</strong>
+9.</dt>
+<dd>?</dd>
+</dl>
+<h1 id="guides-tools">Guides &amp; Tools</h1>
+<h6 id="table-1-step-by-step-guides-to-performing-atac-seq-data-analysis">Table 1: Step by Step Guides to Performing ATAC-seq Data Analysis</h6>
+<div class="table-wrapper " style="width:100%">
+<table><thead><tr><th>Title and author</th><th>Notes and link</th><th>Last Updated</th></tr></thead><tbody>
+<tr><td><strong>ATAC-seq data analysis: from FASTQ to peaks</strong><br>Yiwei Niu</td><td><a rel="noopener noreferrer external" target="_blank" href="https://yiweiniu.github.io/blog/2019/03/ATAC-seq-data-analysis-from-FASTQ-to-peaks/">Blog style walkthrough of generalized ATAC-seq data analysis.</a></td><td>2019</td></tr>
+<tr><td><strong>BIOINF525 Lab 3.2</strong><br>Steve Parker</td><td><a rel="noopener noreferrer external" target="_blank" href="https://github.com/ParkerLab/">Minimal standard ATAC-seq analysis walkthrough.</a></td><td>2016</td></tr>
+<tr><td><strong>Analysis of ATAC-seq data in R and Bioconductor</strong><br>Rockefeller Bioinformatics Resource</td><td><a rel="noopener noreferrer external" target="_blank" href="https://rockefelleruniversity.github.io/RU_ATACseq/">Bioconductor ATAC-seq analysis course.</a></td><td>2018</td></tr>
+<tr><td><strong>ATAC-seq</strong><br>John M. Gaspar</td><td><a rel="noopener noreferrer external" target="_blank" href="https://github.com/harvardinformatics/ATAC-seq">Generalized ATAC-seq analysis walkthrough with included custom scripts.</a></td><td>2019</td></tr>
+<tr><td><strong>ATAC-seq data analysis</strong><br>Delisle L; Doyle M; &amp; Heyl F</td><td><a rel="noopener noreferrer external" target="_blank" href="https://galaxyproject.github.io/training-material/topics/epigenetics/tutorials/atac-seq/tutorial.html">Galaxy training walkthrough of generalized ATAC-seq analysis.</a></td><td>2020</td></tr>
+</tbody></table>
+</div>
+<h6 id="analytical-approaches-for-atac-seq-data-analysis"><a href="/doi/10.1002/cphg.101.pdf">Analytical Approaches for ATAC-seq Data Analysis</a></h6>
+<h6 id="table-2-raw-atac-seq-data-processing-pipelines">Table 2: Raw ATAC-seq Data Processing Pipelines</h6>
+<div class="table-wrapper " style="width:100%">
+<table><thead><tr><th>Pipeline</th><th>Language</th><th>Notes</th><th>Docs</th><th>Citation</th></tr></thead><tbody>
+<tr><td>AIAP</td><td>Bash; R; Python</td><td>Optimized analysis with novel QC metrics</td><td>++</td><td>Liu et al. (2019)<br>Last updated: 2019</td></tr>
+<tr><td>ATAC2GRN</td><td>Bash; Python</td><td>Parameter optimized ATAC-seq pipeline</td><td>+</td><td>Pranzatelli, Michael, &amp; Chiorini (2018)<br>Last updated: 2018</td></tr>
+<tr><td>ATAC-pipe</td><td>Python; R</td><td>Analysis pipeline for ATAC-seq data including TF footprinting; cell-type classification; and regulatory network creation</td><td>+++</td><td>Zuo et al. (2019)<br>Last updated: 2019</td></tr>
+<tr><td>ATACProc</td><td>Bash; Python; R</td><td>Complete pipeline with additional downstream analyses included</td><td>++</td><td>Unpublished<br>Last updated: 2019</td></tr>
+<tr><td>Basepair</td><td>NA</td><td>Commercial. Web-based GUI for complete analysis</td><td>?</td><td>Unpublished</td></tr>
+<tr><td>CIPHER</td><td>R; Perl; Python</td><td>A data processing platform for ChIP-seq; RNA-seq; MNase-seq; DNase-seq; ATAC-seq; and GRO-seq datasets</td><td>+</td><td>Guzman &amp; D’Orso (2017)<br>Last updated: 2017</td></tr>
+<tr><td>ENCODE</td><td>Python; Bash</td><td>Complete pipeline following ENCODE standards for ATAC/DNase-seq analysis</td><td>++</td><td>Unpublished<br>Last updated: 2020</td></tr>
+<tr><td>esATAC</td><td>R</td><td>Complete pipeline including downstream analyses</td><td>+++</td><td>Wei, Zhang, Fang, Li, &amp; Wang (2018)<br>Last updated: 2019</td></tr>
+<tr><td>GUAVA</td><td>Java; Python; R</td><td>GUI based complete ATAC-seq pipeline</td><td>+</td><td>Divate &amp; Cheung (2018)<br>Last updated: 2019</td></tr>
+<tr><td>I-ATAC</td><td>Java</td><td>GUI based interactive ATAC-seq pipeline</td><td>+</td><td>Ahmed &amp; Ucar (2017)<br>Last updated: 2017</td></tr>
+<tr><td>nfcore/atacseq</td><td>Python; R</td><td>Complete pipeline build using Nextflow</td><td>+++</td><td>Ewels et al. (2019)<br>Last updated: 2019</td></tr>
+<tr><td>PEPATAC</td><td>Python; R; Perl</td><td>Complete pipeline with unique analytical approaches and QC metrics</td><td>+++</td><td>Unpublished<br>Last updated: 2019</td></tr>
+<tr><td>pyflow-ATACseq</td><td>Bash; Python</td><td>ATAC-seq snakemake pipeline with included nucleosome positioning and TF footprinting</td><td>++</td><td>Unpublished<br>Last updated: 2019</td></tr>
+<tr><td>snakePipes ATAC-seq</td><td>Python</td><td>Workflow system including ATAC-seq analysis</td><td>+++</td><td>Bhardwaj et al. (2019)<br>Last updated: 2019</td></tr>
+<tr><td>Tobias Rausch</td><td>Bash; R; Python</td><td>Complete pipeline with emphasis on downstream analyses</td><td>++</td><td>Rausch et al. (2019)<br>Last updated: 2020</td></tr>
+</tbody></table>
+</div>
+<h6 id="analytical-approaches-for-atac-seq-data-analysis-1"><a href="/doi/10.1002/cphg.101.pdf">Analytical Approaches for ATAC-seq Data Analysis</a></h6>
+<h6 id="table-3-atac-seq-advanced-quality-control-metric-tools">Table 3: ATAC-seq Advanced Quality Control Metric Tools</h6>
+<div class="table-wrapper " style="width:100%">
+<table><thead><tr><th>Tool</th><th>Languages</th><th>Notes</th><th>Docs</th><th>Citation</th></tr></thead><tbody>
+<tr><td>ATAqC</td><td>Bash; Python</td><td>Generate ATAC-seq specific quality control metrics.</td><td>+</td><td>Unpublished<br>Last updated: 2017</td></tr>
+<tr><td>ATACseqQC</td><td>R</td><td>Provides ATAC-seq specific quality control metrics and transcription factor footprinting.</td><td>+++</td><td>Ou et al. (2018)<br>Last updated: 2018</td></tr>
+<tr><td>ataqv</td><td>C++; Bash</td><td>ATAC-seq QC and visualization.</td><td>+++</td><td>Orchard, Kyono, Hensley, Kitzman, &amp; Parker (2020)<br>Last updated: 2020</td></tr>
+</tbody></table>
+</div>
+<h6 id="analytical-approaches-for-atac-seq-data-analysis-2"><a href="/doi/10.1002/cphg.101.pdf">Analytical Approaches for ATAC-seq Data Analysis</a></h6>
+<h6 id="table-4-peak-calling-tools">Table 4: Peak Calling Tools</h6>
+<div class="table-wrapper " style="width:100%">
+<table><thead><tr><th>Tool</th><th>Languages</th><th>Notes</th><th>Docs</th><th>Citation</th></tr></thead><tbody>
+<tr><td>F-Seq</td><td>Java</td><td>Can be used as general peak caller to identify regions of open chromatin.</td><td>++</td><td>Boyle et al. (2008)<br>Last updated: 2016</td></tr>
+<tr><td>Genrich</td><td>C</td><td>Peak caller for genomic enrichment assays with specific ATAC-seq mode.</td><td>+++</td><td>unpublished<br>Last updated: 2020</td></tr>
+<tr><td>HMMRATAC</td><td>Java</td><td>Identify nucleosome positioning and leverage ATAC-seq specific read outs to call peaks.</td><td>+++</td><td>Tarbell &amp; Liu (2019)<br>Last updated: 2020</td></tr>
+<tr><td>Hotspot2</td><td>C++</td><td>Identify significantly enriched genomic regions.</td><td>++</td><td>Unpublished<br>Last updated: 2019</td></tr>
+<tr><td>HOMER</td><td>Perl; C++</td><td>Suite of tools that include the ability to call peaks from DNA enrichment assays.</td><td>+++</td><td>Heinz et al. (2010)</td></tr>
+<tr><td>MACS2</td><td>Python</td><td>Specifically designed for ChIP-seq but broadly applicable to any DNA enrichment assay to call peaks.</td><td>+++</td><td>Zhang et al. (2020)<br>Last updated: 2020</td></tr>
+<tr><td>PeaKDEck</td><td>Perl</td><td>Peak calling program for DNase-seq data.</td><td>+++</td><td>McCarthy &amp; O’Callaghan (2014)<br>Last updated: 2014</td></tr>
+</tbody></table>
+</div>
+<h6 id="analytical-approaches-for-atac-seq-data-analysis-3"><a href="/doi/10.1002/cphg.101.pdf">Analytical Approaches for ATAC-seq Data Analysis</a></h6>
+<h6 id="table-5-tools-to-investigate-differentially-accessible-regions">Table 5: Tools to Investigate Differentially Accessible Regions</h6>
+<div class="table-wrapper " style="width:100%">
+<table><thead><tr><th>Tool</th><th>Languages</th><th>Notes</th><th>Docs</th><th>Citation</th></tr></thead><tbody>
+<tr><td>DAStk</td><td>Python</td><td>Identifies changes in transcription factor activity by looking at changes in chromatin accessibility</td><td>+++</td><td>Tripodi et al. (2018)<br>Last updated: 2020</td></tr>
+<tr><td>diffTF</td><td>Python; R</td><td>Identifies differential transcription factors. Can operate in basic mode with just chromatin accessibility or in classification mode where it integrates RNA-seq.</td><td>+++</td><td>Berest et al. (2019)<br>Last updated: 2020</td></tr>
+</tbody></table>
+</div>
+<h6 id="analytical-approaches-for-atac-seq-data-analysis-4"><a href="/doi/10.1002/cphg.101.pdf">Analytical Approaches for ATAC-seq Data Analysis</a></h6>
+<h6 id="table-6-motif-enrichment-and-transcription-factor-footprinting-tools">Table 6: Motif Enrichment and Transcription Factor Footprinting Tools</h6>
+<div class="table-wrapper " style="width:100%">
+<table><thead><tr><th>Tool</th><th>Languages</th><th>Notes</th><th>Docs</th><th>Citation</th></tr></thead><tbody>
+<tr><td>BiFET</td><td>R</td><td>Identify overrepresented transcription factor footprints.</td><td>++</td><td>Youn et al. (2019)<br>Last updated: 2019</td></tr>
+<tr><td>BinDNase</td><td>R</td><td>Transcription factor binding prediction using DNase-seq.</td><td>+</td><td>Kähärä &amp; Lähdesmäki (2015)<br>Last updated: 2015</td></tr>
+<tr><td>CENTIPEDE</td><td>R</td><td>Transcription factor footprinting and binding site prediction.</td><td>++</td><td>Pique-Regi et al. (2011)<br>Last updated: 2010</td></tr>
+<tr><td>DeFCoM</td><td>Python</td><td>Detecting transcription factor footprints and underlying motifs using supervised learning.</td><td>+++</td><td>Quach &amp; Furey (2017)<br>Last updated: 2017</td></tr>
+<tr><td>DNase2TF</td><td>R</td><td>Identify footprint candidates from DNase-seq data on user-specified regions.</td><td>+</td><td>Sung et al. (2014)<br>Last updated: 2017</td></tr>
+<tr><td>HINT-ATAC</td><td>Python</td><td>Use open chromatin data to identify transcription factor footprints with modifications specific to ATAC-seq data.</td><td>+++</td><td>Li et al. (2019)<br>Last updated: 2019</td></tr>
+<tr><td>HOMER</td><td>Perl; C++</td><td>A suite of tools for motif discovery and enrichment.</td><td>+++</td><td>Heinz et al. (2010)<br>Last updated: 2019</td></tr>
+<tr><td>MEME Suite</td><td>Perl; Python</td><td>Suite of tools for motif discovery; enrichment; and GO term analyses.</td><td>+++</td><td>Bailey et al. (2009)<br>Last updated: 2020</td></tr>
+<tr><td>PIQ</td><td>Bash; R</td><td>Models genome-wide DNase profiles to identify transcription factor binding sites.</td><td>++</td><td>Sherwood et al. (2014)<br>Last updated: 2016</td></tr>
+<tr><td>TOBIAS</td><td>Python</td><td>Identify transcription factor footprints.</td><td>++</td><td>Bentsen et al. (2019)<br>Last updated: 2020</td></tr>
+<tr><td>TRACE</td><td>Python</td><td>Transcription factor footprinting.</td><td>++</td><td>Ouyang &amp; Boyle (2019)<br>Last updated: 2020</td></tr>
+<tr><td>Wellington</td><td>Python</td><td>Identify TF footprints using DNase-seq data.</td><td>+++</td><td>Piper et al. (2013)<br>Last updated: 2019</td></tr>
+</tbody></table>
+</div>
+<h6 id="analytical-approaches-for-atac-seq-data-analysis-5"><a href="/doi/10.1002/cphg.101.pdf">Analytical Approaches for ATAC-seq Data Analysis</a></h6>
+<h6 id="table-7-tools-to-investigate-nucleosome-positioning">Table 7: Tools to Investigate Nucleosome Positioning</h6>
+<div class="table-wrapper " style="width:100%">
+<table><thead><tr><th>Tool</th><th>Languages</th><th>Notes</th><th>Docs</th><th>Citation</th></tr></thead><tbody>
+<tr><td>HMMRATAC</td><td>Java</td><td>Identify nucleosome positioning and leverage ATAC-seq specific read outs to call peaks.</td><td>+++</td><td>Tarbell &amp; Liu (2019)<br>Last updated: 2020</td></tr>
+<tr><td>NucleoATAC</td><td>Python; R</td><td>Call nucleosomes using ATAC-seq data.</td><td>+++</td><td>Schep et al. (2015)<br>Last updated: 2019</td></tr>
+<tr><td>NucTools</td><td>Perl; R</td><td>Calculate nucleosome occupancy profiles on chromatin accessibility data.</td><td>+++</td><td>Vainshtein et al. (2017)<br>Last updated: 2019</td></tr>
+</tbody></table>
+</div>
+<h6 id="analytical-approaches-for-atac-seq-data-analysis-6"><a href="/doi/10.1002/cphg.101.pdf">Analytical Approaches for ATAC-seq Data Analysis</a></h6>
+<h6 id="table-8-tools-to-investigate-region-enrichment">Table 8: Tools to Investigate Region Enrichment</h6>
+<div class="table-wrapper " style="width:100%">
+<table><thead><tr><th>Tool</th><th>Languages</th><th>Notes</th><th>Docs</th><th>Citation</th></tr></thead><tbody>
+<tr><td>Annotatr</td><td>R</td><td>Annotate summarize and visualize genomic regions.</td><td>+++</td><td>Cavalcante &amp; Sartor (2017)<br>Last updated: 2019</td></tr>
+<tr><td>BART/BARTweb</td><td>Python</td><td>Predict factors that bind at cis-regulatory regions.</td><td>+++</td><td>Wang et al. (2018)<br>Last updated: 2020</td></tr>
+<tr><td>chipenrich</td><td>R</td><td>Perform gene set enrichment testing using genomic regions.</td><td>+++</td><td>Welch et al. (2014)<br>Last updated: 2020</td></tr>
+<tr><td>coloc-stats</td><td>Python</td><td>Perform co-localization analysis of genomic regions.</td><td>+++</td><td>Simovski et al. (2018)<br>Last updated: 2019</td></tr>
+<tr><td>COLO</td><td>JSP</td><td>Identify genomic features in close proximity to user-submitted genomic regions.</td><td>++</td><td>Kim et al. (2015)<br>Last updated: 2015</td></tr>
+<tr><td>FEATnotator</td><td>Perl; R</td><td>Annotate genomic regions.</td><td>++</td><td>Podicheti &amp; Mockaitis (2015)<br>Last updated: 2018</td></tr>
+<tr><td>GenomeRunner</td><td>.NET</td><td>Perform annotation and enrichment of genomic regions against default or custom regulatory regions.</td><td>++</td><td>Dozmorov et al. (2016)<br>Last updated: 2016</td></tr>
+<tr><td>GenometriCorr</td><td>R</td><td>Determine spatial correlation between region sets.</td><td>++</td><td>Favorov et al. (2012)<br>Last updated: 2020</td></tr>
+<tr><td>Genomic Association Tester</td><td>Python</td><td>Calculate the significance of overlaps between multiple genomic region sets.</td><td>+++</td><td>Heger et al. (2013)<br>Last updated: 2019</td></tr>
+<tr><td>GIGGLE</td><td>C</td><td>Genomics search engine to uncover significantly shared genomic loci (regions) between data.</td><td>+++</td><td>Layer et al. (2018)<br>Last updated: 2019</td></tr>
+<tr><td>GLANET</td><td>Java; Perl</td><td>Genomic loci annotation and enrichment tool between sets of genomic regions.</td><td>+++</td><td>Otlu et al. (2017)<br>Last updated: 2019</td></tr>
+<tr><td>GREAT</td><td>C</td><td>Annotate genomic regions.</td><td>+++</td><td>McLean et al. (2010)<br>Last updated: 2019</td></tr>
+<tr><td>LOLA/LOLAweb</td><td>R</td><td>Determine significant enrichment between region sets to inform on biological meaning.</td><td>+++</td><td>Sheffield &amp; Bock (2016)<br>Last updated: 2019</td></tr>
+<tr><td>regioneR</td><td>R</td><td>Evaluate significant associations between region sets using permutation testing.</td><td>+++</td><td>Gel et al. (2016)<br>Last updated: 2020</td></tr>
+<tr><td>StereoGene</td><td>C++; R</td><td>Estimate genome-wide correlation between pairs of genomic features.</td><td>++</td><td>Stavrovskaya et al. (2017)<br>Last updated: 2019</td></tr>
+</tbody></table>
+</div>
+<h6 id="analytical-approaches-for-atac-seq-data-analysis-7"><a href="/doi/10.1002/cphg.101.pdf">Analytical Approaches for ATAC-seq Data Analysis</a></h6>
+<h6 id="table-9-available-tools-for-single-cell-atac-seq-data-processing">Table 9: Available Tools for Single-Cell ATAC-seq Data Processing</h6>
+<div class="table-wrapper " style="width:100%">
+<table><thead><tr><th>Tool</th><th>Languages</th><th>Notes</th><th>Docs</th><th>Citation</th></tr></thead><tbody>
+<tr><td>BAP</td><td>R; Python</td><td>Bead-based scATAC-seq data processing.</td><td>++</td><td>Lareau et al. (2019)<br>Last updated: 2019</td></tr>
+<tr><td>BROCKMAN</td><td>R; Bash; Ruby</td><td>Convert genomics data into K-mer words associated with chromatin marks used to compare and identify changes across samples.</td><td>++</td><td>de Boer &amp; Regev (2018)<br>Last updated: 2018</td></tr>
+<tr><td>Cell Ranger ATAC</td><td>NA</td><td>Commercial. Set of analysis pipelines for Chromium single cell ATAC-seq.</td><td>+++</td><td>Unpublished</td></tr>
+<tr><td>chromVAR</td><td>R</td><td>Identify transcription factor accessibility in single-cell data. Enables clustering of single-cell ATAC-seq data.</td><td>+++</td><td>Schep et al. (2017)<br>Last updated: 2019</td></tr>
+<tr><td>Cicero</td><td>R</td><td>Predict cis-regulatory DNA interactions using single-cell chromatin accessibility data.</td><td>+++</td><td>Pliner et al. (2018)<br>Last updated: 2019</td></tr>
+<tr><td>cisTopic</td><td>R</td><td>Identify cell states and cis-regulatory topics from single-cell data.</td><td>+++</td><td>Bravo González-Blas et al. (2019)<br>Last updated: 2019</td></tr>
+<tr><td>scABC</td><td>R</td><td>Classify single-cell ATAC using unsupervised clustering and identify chromatin regions specific to cell identity.</td><td>+</td><td>Zamanighomi et al. (2018)<br>Last updated: 2019</td></tr>
+<tr><td>SCALE</td><td>Python</td><td>Clustering and visualization of single-cell ATAC-seq data into interpretable cell populations.</td><td>++</td><td>Xiong et al. (2019)<br>Last updated: 2019</td></tr>
+<tr><td>Scasat</td><td>Bash; Python; R</td><td>Complete pipeline to process scATAC-seq data with simple steps.</td><td>+++</td><td>Baker et al. (2019)<br>Last updated: 2019</td></tr>
+<tr><td>scATAC-pro</td><td>R; Python</td><td>Comprehensive pipeline for single cell ATAC-seq analysis.</td><td>+++</td><td>Yu et al. (2019)<br>Last updated: 2020</td></tr>
+<tr><td>scOpen</td><td>Python</td><td>Chromatin-accessibility estimation of single-cell ATAC data.</td><td>+</td><td>Li et al. (2019)<br>Last updated: 2020</td></tr>
+<tr><td>SCRAT</td><td>R</td><td>Useful for studying single cell heterogeneity. Can identify changes in gene sets or transcription factor binding sites. Includes GUI and web-based service.</td><td>+++</td><td>Ji et al. (2017)<br>Last updated: 2018</td></tr>
+<tr><td>SnapATAC</td><td>R; Python</td><td>Single Nucleus Analysis Pipeline for ATAC-seq.</td><td>+++</td><td>Fang et al. (2019)<br>Last updated: 2019</td></tr>
+</tbody></table>
+</div>
+<h6 id="analytical-approaches-for-atac-seq-data-analysis-8"><a href="/doi/10.1002/cphg.101.pdf">Analytical Approaches for ATAC-seq Data Analysis</a></h6>
+
+	</article>
+
+	</main>
+
+	
+	<footer id="footer">
+	<span class="footer-item fixed left"><a class="unstyle" href="#">Back to Top</a></span>
+    <span class="footer-item"><a href="https://ascallion.com/">About</a></span>
+    <span class="footer-item"><a class="unstyle" href="#">Back to Top</a></span>
+    <span class="footer-item"><a href="https://github.com/gscanlon21">Github</a></span>
+	<span class="footer-item fixed right"><a class="unstyle" href="#">Back to Top</a></span>
+</footer>
+	
+
+	
+	
+		
+
+		
+    	
+		
+
+	
+	
+		
+		
+
+		
+		
+		
+
+	
+	
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+article.v1 table th, article.v1 table td {
+	white-space: nowrap;
+	padding: .25em;
+}
+
+article.v1 h2 + h2 {
+	display: block;
+}
+
+article.v1 h3 + h3 {
+	display: block;
+}
