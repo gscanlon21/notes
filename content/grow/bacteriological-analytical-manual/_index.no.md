@@ -1,6 +1,7 @@
 +++
 title = "Bacteriological Analytical Manual"
 description = "The FDA's preferred laboratory procedures for microbiological analyses of foods and cosmetics."
+aliases = ["bacteriological-analytical-manual", "bam"]
 sort_by = "weight"
 
 [extra]
