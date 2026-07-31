@@ -12,6 +12,10 @@ see_also = []
 
 
 > [!TIP]
+> Prefix a cell with an apostrophe (`'`) to tell excel to treat it as literal text.
+>> Disable Auto-Formatting
+
+> [!TIP]
 > You can hit the little box between A and 1 to select the entire sheet (or hit ctrl + A) and format it as text.
 >> Disable Auto-Formatting
 
