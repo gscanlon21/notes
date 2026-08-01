@@ -7,15 +7,15 @@
 				{% set path = page.extra.site | default(value=section.extra.site) %}
 				{% if path is starting_with("/") %}
 					<a class="site" href="{{ path | safe }}" rel="noreferrer">
-						{{ page.title | default(value=section.title) }}
+						{{ page.title | default(value=section.title) | safe }}
 					</a>
 				{% else %}
 					<a class="site" href="{{ path | safe }}" target="_blank" rel="noreferrer">
-						{{ page.title | default(value=section.title) }}
+						{{ page.title | default(value=section.title) | safe }}
 					</a>
 				{% endif %}
             {% else %}
-                <span>{{ page.title | default(value=section.title) }}</span>
+                <span>{{ page.title | default(value=section.title) | safe }}</span>
             {% endif %}
             {% if page.extra.version | default(value=section.extra.version) %} 
                 <sub class="version">{{ page.extra.version | default(value=section.extra.version) }}</sub>
