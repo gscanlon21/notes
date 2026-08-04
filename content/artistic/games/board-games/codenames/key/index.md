@@ -8,6 +8,7 @@ subtitle = "for Codenames"
 orientation = "portrait"
 updated = 2027-01-01
 site_version = 1
+theme = "light"
 toc_level = 2
 see_also = [
   { title = "Permalink", href = "/codenames/key" },

@@ -13,7 +13,7 @@ const states = ["front", "neutral", "red", "blue", "assassin"];
 async function generateCodenamesBoard() {
 	chart.innerHTML = "";
 
-	const text = await fetch("./word-list.txt").then(r => r.text());
+	const text = await fetch("./一Word_List_Core.txt").then(r => r.text());
 	const words = text.split(/\r?\n/).map(w => w.trim()).filter(Boolean);
 	const shuffledWords = shuffle(words).slice(0, 25);
 

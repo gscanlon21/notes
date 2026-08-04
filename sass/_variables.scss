@@ -24,66 +24,82 @@ $body-width-small: 80rem !default;
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-bg: #{to-rgb(#333)};
-        --color-text: #{to-rgb(#fff)};
-		--color-italic: #{to-rgb(#FFB6C1)};
+@mixin light-theme() {
+	--color-bg: #{to-rgb(#fff)};
+	--color-text: #{to-rgb(#000)};
+	--color-italic: #{to-rgb(#800000)};
 
-		// Header colors
-		--color-h1: #{to-rgb(#fff)};
-		--color-h2: #{to-rgb(#DC143C)};
-		--color-h3: #{to-rgb(#32CD32)};
-		--color-h4: #{to-rgb(#1E90FF)};
+	// Header colors
+	--color-h1: #{to-rgb(#000)};
+	--color-h2: #{to-rgb(#DC143C)};
+	--color-h3: #{to-rgb(#32CD32)};
+	--color-h4: #{to-rgb(#1E90FF)};
 
-        // Link coloring
-        --color-link: 109,182,255;
-        --color-link-visited: 182,109,255;
+	// Color of code
+	--color-code: #{to-rgb(#dcdcdc)};
+	--color-code-bg: #{to-rgb(#1F1F1F)};
+	--color-code-link: 109,182,255;
+	--color-code-link-visited: 182,109,255;
 
-        // Color of code
-        --color-code: #{to-rgb(#dcdcdc)};
-        --color-code-bg: #{to-rgb(#1F1F1F)};
-        --color-code-link: var(--color-link);
-        --color-code-link-visited: var(--color-link-visited);
+	// Search
+	--color-search: var(--color-text);
+	--color-search-bg: #{to-rgb(#ddd)};
 
-        // Search
-        --color-search: var(--color-text);
-        --color-search-bg: #{to-rgb(#555)};
+	// Link coloring
+	--color-link: 0,109,219;
+	--color-link-visited: 73,0,146;
 
-        // Scrollbar coloring
-        --color-scrollbar: #{to-rgb(#888)};
-        --color-scrollbar-bg: #{to-rgb(#444)};
-    }
+	// Scrollbar coloring
+	--color-scrollbar: #{to-rgb(#888)};
+	--color-scrollbar-bg: #{to-rgb(#444)};
+}
+
+@mixin dark-theme() {
+	--color-bg: #{to-rgb(#333)};
+	--color-text: #{to-rgb(#fff)};
+	--color-italic: #{to-rgb(#FFB6C1)};
+
+	// Header colors
+	--color-h1: #{to-rgb(#fff)};
+	--color-h2: #{to-rgb(#DC143C)};
+	--color-h3: #{to-rgb(#32CD32)};
+	--color-h4: #{to-rgb(#1E90FF)};
+
+	// Link coloring
+	--color-link: 109,182,255;
+	--color-link-visited: 182,109,255;
+
+	// Color of code
+	--color-code: #{to-rgb(#dcdcdc)};
+	--color-code-bg: #{to-rgb(#1F1F1F)};
+	--color-code-link: var(--color-link);
+	--color-code-link-visited: var(--color-link-visited);
+
+	// Search
+	--color-search: var(--color-text);
+	--color-search-bg: #{to-rgb(#555)};
+
+	// Scrollbar coloring
+	--color-scrollbar: #{to-rgb(#888)};
+	--color-scrollbar-bg: #{to-rgb(#444)};
+}
+
+:root, :root[data-theme="light"] {
+    @include light-theme();
+}
+
+:root[data-theme="dark"] {
+    @include dark-theme();
 }
 
 @media (prefers-color-scheme: light) {
-    :root {
-        --color-bg: #{to-rgb(#fff)};
-        --color-text: #{to-rgb(#000)};
-		--color-italic: #{to-rgb(#800000)};
+    :root:not([data-theme="light"]):not([data-theme="dark"]) {
+        @include light-theme();
+    }
+}
 
-		// Header colors
-		--color-h1: #{to-rgb(#000)};
-		--color-h2: #{to-rgb(#DC143C)};
-		--color-h3: #{to-rgb(#32CD32)};
-		--color-h4: #{to-rgb(#1E90FF)};
-
-        // Color of code
-        --color-code: #{to-rgb(#dcdcdc)};
-        --color-code-bg: #{to-rgb(#1F1F1F)};
-        --color-code-link: 109,182,255;
-        --color-code-link-visited: 182,109,255;
-
-        // Search
-        --color-search: var(--color-text);
-        --color-search-bg: #{to-rgb(#ddd)};
-
-        // Link coloring
-        --color-link: 0,109,219;
-        --color-link-visited: 73,0,146;
-
-        // Scrollbar coloring
-        --color-scrollbar: #{to-rgb(#888)};
-        --color-scrollbar-bg: #{to-rgb(#444)};
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]):not([data-theme="dark"]) {
+        @include dark-theme();
     }
 }
