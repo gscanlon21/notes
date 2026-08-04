@@ -15,6 +15,13 @@ see_also = [
   { title = "Official Words", href = "https://codenames.miraheze.org/wiki/Category:Word_Collections" },
 ]
 options = [
+  { 
+    name = "Word List", id = "word-list", type = "select", options = [
+      { name = "Word List: Base (899 words)", value = "一Word_List_Base.txt" },
+      { name = "Word List: Core (800 words)", value = "一Word_List_Core.txt" },
+      { name = "Word List (400 words)", value = "一Word_List.txt" },
+    ] 
+  },
   { name = "Regenerate", id = "regenerate", type = "button" },
 ]
 +++

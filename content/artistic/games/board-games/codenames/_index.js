@@ -5,6 +5,7 @@ window.addEventListener("beforeunload", (event) => {
 
 const chart = document.getElementById("codenames-board");
 const regenerate = document.getElementById("regenerate");
+const wordList = document.getElementById("word-list");
 
 const shuffle = (array) => [...array].sort(() => Math.random() - 0.5);
 
@@ -13,7 +14,7 @@ const states = ["front", "neutral", "red", "blue", "assassin"];
 async function generateCodenamesBoard() {
 	chart.innerHTML = "";
 
-	const text = await fetch("./一Word_List_Core.txt").then(r => r.text());
+	const text = await fetch(`./${wordList.value}`).then(r => r.text());
 	const words = text.split(/\r?\n/).map(w => w.trim()).filter(Boolean);
 	const shuffledWords = shuffle(words).slice(0, 25);
 
@@ -51,6 +52,7 @@ async function generateCodenamesBoard() {
 }
 
 generateCodenamesBoard();
+wordList.addEventListener('change', generateCodenamesBoard);
 regenerate.addEventListener('click', () => {
 	if (window.confirm('Are you sure?')) {
 		generateCodenamesBoard();

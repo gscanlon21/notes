@@ -146,7 +146,7 @@
 						<label for="{{ option.id }}">{{ option.name }}</label>
                         <select id="{{ option.id }}" name="{{ name }}" type="select">
 							{% for selectOption in option.options %}
-								<option value="{{ selectOption }}">{{ selectOption }}</option>
+								<option value="{{ selectOption.value | default(value=selectOption) }}">{{ selectOption.name | default(value=selectOption) }}</option>
 							{% endfor %}
 						</select>
                     {% endif %}
