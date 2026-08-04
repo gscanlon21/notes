@@ -19,13 +19,12 @@
 }
 
 .word {
-    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
 	transition: transform 500ms ease;
     transform-style: preserve-3d;
-	border: 2px solid #b8a77a;
+	border: 4px solid #b8a77a;
 	text-transform: uppercase;
 	justify-content: center;
-    aspect-ratio: 1.6 / 1;
+    aspect-ratio: 2 / 1;
     align-items: center;
     perspective: 1000px;
 	position: relative;
@@ -47,7 +46,6 @@
 .word-front,
 .word-back {
     backface-visibility: hidden;
-    border: 2px solid #b8a77a;
 	justify-content: center;
 	align-items: center;
     border-radius: 8px;
@@ -59,7 +57,7 @@
 }
 
 .word-front {
-	font-size: clamp(.8rem, 1.5vw, 1.3rem);
+	font-size: clamp(.75rem, 2vw, 1.25rem);
     text-transform: uppercase;
 	text-align: center;
     font-weight: bold;

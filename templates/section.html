@@ -26,6 +26,9 @@
 		</div>
 	</div>
 
-	{% set site_version = page.extra.site_version | default(value=1) %}
-	<article id="content" class="section v{{ site_version }}">{{ section.content | safe }}</article>
+	{% set orientation = section.extra.orientation | default(value="") %}
+	{% set site_version = section.extra.site_version | default(value=1) %}
+	<article id="content" class="section v{{ site_version }}" data-slug="{{ section.title }}" data-orientation="{{ orientation }}">
+		{{ section.content | safe }}
+	</article>
 {% endblock content %}

@@ -1,6 +1,7 @@
 +++
 title = "Research"
 sort_by = "title"
+aliases = ["research"]
 
 [extra]
 section_sort_by = "weight"

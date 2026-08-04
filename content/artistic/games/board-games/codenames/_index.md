@@ -1,6 +1,6 @@
 +++
 title = "Codenames"
-description = "Codenames is a party game for 4+ players where two teams compete by guessing words related to clues given by their spymaster. ~15 min."
+description = "Codenames is a party game for 4+ players where two teams compete by guessing words related to clues given by their spymaster. ~20 min."
 aliases = ["codenames"]
 
 [extra]

@@ -82,7 +82,7 @@ _[Article](/doi/10.1002/cbic.202100534.pdf)_
 
 **Casting CRISPR-Cas13d to fish for microprotein functions in animal development**
 Treichel et al. 2022 
-_[Review Article](/doi/10.1016/j.isci.2022.105547.pdf)_ 
+_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC9700322/)_ 
 : ?
 
 

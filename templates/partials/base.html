@@ -20,7 +20,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="/favicon/favicon-16x16.png", cachebust=false) }}">
 	<link rel="manifest" href="{{ get_url(path="/site.webmanifest", cachebust=true) }}">
 
-	{% set orientation = page.extra.orientation | default(value="site") %}
+	{% set orientation = page.extra.orientation | default(value=section.extra.orientation | default(value="site")) %}
 	<link rel="stylesheet" type="text/css" href="{{ get_url(path="/" ~ orientation ~ ".css", cachebust=true) }}" media="all">
 	{% if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
 		<link rel="stylesheet" type="text/css" href="{{ get_url(path="/dark.css", cachebust=true) }}" media="(prefers-color-scheme: dark)" />

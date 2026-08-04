@@ -16,7 +16,7 @@ see_also = []
 
 **Methods for studying metabolism in Drosophila**
 Tennessen et al. 2014
-_[Author Manuscript](/doi/10.1016/j.ymeth.2014.02.034.pdf)_ 
+_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC4048761/)_ 
 : ?
 
 
