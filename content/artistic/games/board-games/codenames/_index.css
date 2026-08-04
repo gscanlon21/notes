@@ -3,7 +3,6 @@
     padding-bottom: 3rem;
     margin-bottom: -3rem;
     align-items: center;
-    overflow-x: clip;
     display: flex;
 }
 
@@ -13,7 +12,6 @@
     position: relative;
     text-align: center;
 	line-height: 1;
-    overflow: clip;
 	color: black;
     display: grid;
 	width: 100%;

@@ -26,6 +26,8 @@ $body-width-small: 80rem !default;
 
 @mixin light-theme() {
 	--color-bg: #{to-rgb(#fff)};
+	--color-bg-alt: #{to-rgb(#333)};
+
 	--color-text: #{to-rgb(#000)};
 	--color-italic: #{to-rgb(#800000)};
 
@@ -56,6 +58,8 @@ $body-width-small: 80rem !default;
 
 @mixin dark-theme() {
 	--color-bg: #{to-rgb(#333)};
+	--color-bg-alt: #{to-rgb(#fff)};
+	
 	--color-text: #{to-rgb(#fff)};
 	--color-italic: #{to-rgb(#FFB6C1)};
 
