@@ -17,7 +17,8 @@ see_also = [
 **Evolutionary Mismatch and How To Evaluate It: A Basic Tutorial**
 Lloyd et al. 2024
 _[Article](/doi/10.5281/zenodo.13966113.pdf)_ 
-: ?
+: "The first part of the article provides a basic tutorial on evolutionary mismatch by clarifying central concepts in mismatch: that of ancestral environment (E1), the novel environment (E2), and the trait under study (T)."
+: "The final section presents a list of practical questions for evaluating evolutionary mismatch hypotheses."
 
 
 **Mismatch Resistance and the Problem of Evolutionary Novelty**
