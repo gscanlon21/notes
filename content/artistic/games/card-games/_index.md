@@ -1,5 +1,5 @@
 +++
-title = "Games"
+title = "Card Games"
 sort_by = "title"
 
 [extra]

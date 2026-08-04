@@ -14,6 +14,7 @@
 	text-align: center;
 	position: relative;
 	justify-self: center;
+	/*For grid reference:*/
 	margin-inline-end: 1em;
 }
 

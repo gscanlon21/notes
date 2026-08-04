@@ -109,7 +109,8 @@
 				{% if option.global | default(value=false) %} 
 					{% set name = option.id | default(value='') %}
 				{% else %}
-					{% set name = page.slug ~ "-" ~ option.id | default(value='') %}
+					{% set slug = section.slug | default(value=page.slug | default(value='')) %}
+					{% set name = slug ~ "-" ~ option.id | default(value='') %}
 				{% endif %}
                 <dd class="summary-item reverse-indent" data-type="{{ option.type }}">
 					{% set value = option.value | default(value="") %}
