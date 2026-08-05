@@ -1,38 +1,37 @@
-{% import "macros/macros.html" as macros %}
 
 <form id="options" class="header-item">
     <header id="summary">
         <h2 class="header-title">
-            {% if page.extra.site | default(value=section.extra.site) %}
-				{% set path = page.extra.site | default(value=section.extra.site) %}
-				{% if path is starting_with("/") %}
+            {% if page?.extra?.site | default(value=section?.extra?.site) %}
+				{% set path = page?.extra?.site | default(value=section?.extra?.site) %}
+				{% if path is starting_with(pat="/") %}
 					<a class="site" href="{{ path | safe }}" rel="noreferrer">
-						{{ page.title | default(value=section.title) | safe }}
+						{{ page?.title | default(value=section?.title) | safe }}
 					</a>
 				{% else %}
 					<a class="site" href="{{ path | safe }}" target="_blank" rel="noreferrer">
-						{{ page.title | default(value=section.title) | safe }}
+						{{ page?.title | default(value=section?.title) | safe }}
 					</a>
 				{% endif %}
             {% else %}
-                <span>{{ page.title | default(value=section.title) | safe }}</span>
+                <span>{{ page?.title | default(value=section?.title) | safe }}</span>
             {% endif %}
-            {% if page.extra.version | default(value=section.extra.version) %} 
-                <sub class="version">{{ page.extra.version | default(value=section.extra.version) }}</sub>
+            {% if page?.extra?.version | default(value=section?.extra?.version) %} 
+                <sub class="version">{{ page?.extra?.version | default(value=section?.extra?.version) }}</sub>
             {% endif %}  
         </h2> 
-        {% if page.extra.subtitle | default(value=section.extra.subtitle) %} 
-            <h4 class="subtitle">{{ page.extra.subtitle | default(value=section.extra.subtitle) }}</h4>
+        {% if page?.extra?.subtitle | default(value=section?.extra?.subtitle) %} 
+            <h4 class="subtitle">{{ page?.extra?.subtitle | default(value=section?.extra?.subtitle) }}</h4>
         {% endif %}
 
-		{% if page.extra.caution | default(value=section.extra.caution) %} 
+		{% if page?.extra?.caution | default(value=section?.extra?.caution) %} 
 			<blockquote class="markdown-alert-caution">
-				<p>{{ page.extra.caution | default(value=section.extra.caution) }}</p>
+				<p>{{ page?.extra?.caution | default(value=section?.extra?.caution) }}</p>
 			</blockquote>
         {% endif %}
 
-		{% if page.extra.alerts | default(value=section.extra.alerts) %} 
-			{% for alert in page.extra.alerts | default(value=section.extra.alerts) %}
+		{% if page?.extra?.alerts | default(value=section?.extra?.alerts) %} 
+			{% for alert in page?.extra?.alerts | default(value=section?.extra?.alerts) %}
 				<blockquote class="markdown-alert-{{ alert.type }}">
 					<p>{{ alert.content }}</p>
 					{% if alert.title %} 
@@ -45,24 +44,24 @@
 		{% endif %}
 
         <dl>
-            {% if page.description | default(value=section.description) %} 
+            {% if page?.description | default(value=section?.description) %} 
             <dt>Description</dt>
-            <dd>{{ page.description | default(value=section.description) | safe }}</dd>
+            <dd>{{ page?.description | default(value=section?.description) | safe }}</dd>
             {% endif %}
 
-            {% if page.extra.authors | default(value=page.authors | default(value=section.extra.authors)) %} 
+            {% if page?.extra?.authors | default(value=page?.authors | default(value=section?.extra?.authors)) %} 
             <dt>Authors</dt>
-            {% for author in page.extra.authors | default(value=page.authors | default(value=section.extra.authors)) %}
+            {% for author in page?.extra?.authors | default(value=page?.authors | default(value=section?.extra?.authors)) %}
                 <dd>{{ author }}</dd>
             {% endfor %}
             {% endif %}
 
-            {% if page.extra.rating | default(value=section.extra.rating | default(value=-1)) >= 0 %} 
+            {% if page?.extra?.rating | default(value=section?.extra?.rating | default(value=-1)) >= 0 %} 
             <dt>Rating</dt>
             <dd>
                 <blockquote>
                     <ul>
-                        {% set ratingEnd = page.extra.rating | default(value=section.extra.rating) %}
+                        {% set ratingEnd = page?.extra?.rating | default(value=section?.extra?.rating) %}
 						{% set ratingStart = 5 - ratingEnd %}
                         {% for rating in range(end=ratingEnd) %}
                         	<li><input type="checkbox" checked="" style="pointer-events: none;"></li>
@@ -75,18 +74,18 @@
             </dd>
             {% endif %}
 
-            {% if page.extra.see_also | default(value=section.extra.see_also) %} 
+            {% if page?.extra?.see_also | default(value=section?.extra?.see_also) %} 
             <dt>See Also</dt>
-            {% for also in page.extra.see_also | default(value=section.extra.see_also) %}
+            {% for also in page?.extra?.see_also | default(value=section?.extra?.see_also) %}
                 <dd class="summary-item">
                     {% if also.href %} 
                         <a class="reverse-indent" href="{{ also.href }}" target="_blank" rel="noreferrer">
 							{{ also.title | default(value=also.href) | safe }}
 						</a>
-                    {% elif also.file and also.file is starting_with("/") %}
+                    {% elif also.file and also.file is starting_with(pat="/") %}
                         {% set url = get_url(path=also.file) %}
                         <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
-                    {% elif also.file and also.file is not starting_with("/") %}
+                    {% elif also.file and also.file is not starting_with(pat="/") %}
                         {% set url = get_url(path=current_path ~ also.file) %}
                         <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
                     {% else %}
@@ -96,20 +95,20 @@
             {% endfor %}
             {% endif %}
 
-			{{ macros::render_assets(name="PDFs", types=["pdf"]) }}
-			{{ macros::render_assets(name="Documents", types=["txt", "docx"]) }}
-			{{ macros::render_assets(name="Spreadsheets", types=["xls", "xlsx"]) }}
-			{{ macros::render_assets(name="Programs", types=["py", "R"]) }}
-			{{ macros::render_assets(name="Audio", types=["mp3"]) }}
-			{{ macros::render_assets(name="ZIPs", types=["zip"]) }}
+			{{<macros.render_assets page={page} section={section} name="PDFs" types={["pdf"]} />}}
+			{#{ macros::render_assets(name="Documents", types=["txt", "docx"]) }#}
+			{#{ macros::render_assets(name="Spreadsheets", types=["xls", "xlsx"]) }#}
+			{#{ macros::render_assets(name="Programs", types=["py", "R"]) }#}
+			{#{ macros::render_assets(name="Audio", types=["mp3"]) }#}
+			{#{ macros::render_assets(name="ZIPs", types=["zip"]) }#}
 
-			{% if page.extra.options | default(value=section.extra.options) %} 
+			{% if page?.extra?.options | default(value=section?.extra?.options) %} 
             <dt>Options</dt>
-            {% for option in page.extra.options | default(value=section.extra.options) %}
+            {% for option in page?.extra?.options | default(value=section?.extra?.options) %}
 				{% if option.global | default(value=false) %} 
 					{% set name = option.id | default(value='') %}
 				{% else %}
-					{% set slug = section.slug | default(value=page.slug | default(value='')) %}
+					{% set slug = section?.slug | default(value=page?.slug | default(value='')) %}
 					{% set name = slug ~ "-" ~ option.id | default(value='') %}
 				{% endif %}
                 <dd class="summary-item reverse-indent" data-type="{{ option.type }}">
@@ -154,18 +153,18 @@
             {% endfor %}
             {% endif %}
 
-			{% if page.extra.map | default(value=section.extra.map) %} 
-            {% for also in page.extra.map | default(value=section.extra.map) %}
+			{% if page?.extra?.map | default(value=section?.extra?.map) %} 
+            {% for also in page?.extra?.map | default(value=section?.extra?.map) %}
 				<dt>{{ also.key }}</dt>
                 <dd class="summary-item">
                     {% if also.href %} 
                         <a class="reverse-indent" href="{{ also.href }}" target="_blank" rel="noreferrer">
 							{{ also.title | default(value=also.href) | safe }}{{ load_data(path="static/icons/arrow-square-out.svg") | safe }}
 						</a>
-                    {% elif also.file and also.file is starting_with("/") %}
+                    {% elif also.file and also.file is starting_with(pat="/") %}
                         {% set url = get_url(path=also.file) %}
                         <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
-                    {% elif also.file and also.file is not starting_with("/") %}
+                    {% elif also.file and also.file is not starting_with(pat="/") %}
                         {% set url = get_url(path=current_path ~ also.file) %}
                         <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
                     {% else %}
@@ -175,26 +174,26 @@
             {% endfor %}
             {% endif %}
 
-			{% if page.extra.key_words | default(value=section.extra.key_words) %} 
+			{% if page?.extra?.key_words | default(value=section?.extra?.key_words) %} 
             <dt>Key Words</dt>
-            {% for key_word in page.extra.key_words | default(value=section.extra.key_words) %}
+            {% for key_word in page?.extra?.key_words | default(value=section?.extra?.key_words) %}
                 <dd>{{ key_word | safe }}</dd>
             {% endfor %}
             {% endif %}
 
-            {% if page.updated | default(value=page.extra.updated | default(value=section.extra.updated)) %} 
+            {% if page?.updated | default(value=page?.extra?.updated | default(value=section?.extra?.updated)) %} 
             <dt>Last Updated</dt>
-            <dd>{{ page.updated | default(value=page.extra.updated | default(value=section.extra.updated)) }}</dd>
+            <dd>{{ page?.updated | default(value=page?.extra?.updated | default(value=section?.extra?.updated)) }}</dd>
             {% endif %}
             
             <dt>Reading Time</dt>
-            <dd>{{ page.reading_time | default(value=section.reading_time) }} minute(s)</dd>
+            <dd>{{ page?.reading_time | default(value=section?.reading_time) }} minute(s)</dd>
 
 			<dt>Word Count</dt>
-            <dd><span id="word-count">{{ page.word_count | default(value=section.word_count) }}</span> words</dd>
+            <dd><span id="word-count">{{ page?.word_count | default(value=section?.word_count) }}</span> words</dd>
         </dl>
 
 		<div id="flashcard-container"></div>
-		{{ macros::render_html(types=["svg"]) }}
+		{#{ macros::render_html(types=["svg"]) }#}
     </header>
 </form>

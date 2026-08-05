@@ -1,4 +1,3 @@
-{% import "macros/macros.html" as macros %}
 {% extends "partials/base.html" %}
 
 {% block content %}
@@ -10,17 +9,17 @@
 
 		<div class="sidebar-right header">
 			<div class="header-item">
-				{{ macros::render_ancestors(ancestors=section.ancestors) }}
+				{{<macros.render_ancestors page={page} section={section} ancestors={section.ancestors} />}}
 			</div>
 
 			<div class="header-item">
-				{{ macros::render_siblings(for=section) }}
+				{{<macros.render_siblings for={section} />}}
 			</div>
 
 			<div class="header-item screen-large">
 				<h3 class="sitemap-title">Sitemap</h3>
 				<nav class="sitemap">
-					{{ macros::render_sitemap(path="_index.md") }}
+					{{<macros.render_sitemap path="_index.md" />}}
 				</nav>
 			</div>
 		</div>

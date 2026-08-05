@@ -1,6 +1,5 @@
 +++
 title = "ascallion"
-template = "section.html"
+template = "sitemap.html"
 sort_by = "title"
 +++
-

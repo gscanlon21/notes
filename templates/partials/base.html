@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang={{ lang }} data-theme="{{ page.extra.theme | default(value=section.extra.theme | default(value='')) }}">
+<html lang={{ lang }} data-theme="{{ page?.extra?.theme | default(value=section?.extra?.theme | default(value='')) }}">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="{{ config.description }}">
-	{% set page_title = page.title | default(value=section.title | default(value='')) %}
+	{% set page_title = page?.title | default(value=section?.title | default(value='')) %}
 	{% if page_title and config.title and page_title != config.title %}
 		<title>{{ page_title }} - {{ config.title }}</title>
 	{% elif config.title %}
@@ -20,14 +20,14 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="/favicon/favicon-16x16.png", cachebust=false) }}">
 	<link rel="manifest" href="{{ get_url(path="/site.webmanifest", cachebust=true) }}">
 
-	{% set orientation = page.extra.orientation | default(value=section.extra.orientation | default(value="site")) %}
+	{% set orientation = page?.extra?.orientation | default(value=section?.extra?.orientation | default(value="site")) %}
 	<link rel="stylesheet" type="text/css" href="{{ get_url(path="/" ~ orientation ~ ".css", cachebust=true) }}" media="all">
 	{% if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
 		<link rel="stylesheet" type="text/css" href="{{ get_url(path="/dark.css", cachebust=true) }}" media="(prefers-color-scheme: dark)" />
 		<link rel="stylesheet" type="text/css" href="{{ get_url(path="/light.css", cachebust=true) }}" media="(prefers-color-scheme: light)" />
 	{% endif %}
 
-	{% set parent_path = section.ancestors | default(value=page.ancestors | default(value=[])) | last %}
+	{% set parent_path = section?.ancestors | default(value=page?.ancestors | default(value=[])) | last %}
 	{% if parent_path %}
 		{% set parent_section = get_section(path=parent_path) %}
 
@@ -35,7 +35,7 @@
 		{% if parent_css %}<style>{{ parent_css | safe }}</style>{% endif %}
 	{% endif %}
 	
-    {% set css_path = section.path | default(value=page.path | default(value='')) %}
+    {% set css_path = section?.path | default(value=page?.path | default(value='')) %}
 	{% if css_path %}
 		{% set section_css = load_data(path=css_path ~ "_index.css", required=false) %}
 		{% if section_css %}<style>{{ section_css | safe }}</style>{% endif %}
@@ -45,7 +45,7 @@
 	{% endif %}
 
 	{% if lang != config.default_language %}
-		{% set sub_path = section.path | default(value=page.path) | default(value=[]) | split(pat=lang) | last %}
+		{% set sub_path = section?.path | default(value=page?.path) | default(value=[]) | split(pat=lang) | last %}
 		
 		{% set sub_section_css = load_data(path=sub_path ~ "_index.no.css", required=false) %}
 		{% if sub_section_css %}<style>{{ sub_section_css | safe }}</style>{% endif %}
@@ -60,7 +60,8 @@
 	{% if lang != config.default_language %}
 		{% set hash = get_hash(literal="" ~ get_random(start=0, end=99) ~ "") %}
 		{% set submodule_path_lang = current_path | split(pat="/content/") | first %}
-		{% set submodule_path = submodule_path_lang | trim_start_matches(pat="/" ~ lang) %}
+		{% set submodule_path = "test" %}
+		submodule_path_lang | trim_start_matches(pat="/" ~ lang)
 		<script defer src="{{ get_url(path="/scripts/lunr.stemmer.js", cachebust=true) }}"></script>
 		<script defer src="{{ get_url(path="/scripts/lunr." ~ lang ~ ".js", cachebust=true) }}"></script>
 		<script defer src="{{ submodule_path ~ "/public/search_index." ~ lang ~ ".js?h=" ~ hash }}"></script>
@@ -70,7 +71,7 @@
 	<script defer src="{{ get_url(path="/scripts/content.js", cachebust=true) }}"></script>
 	<script defer src="{{ get_url(path="/scripts/flashcards.js", cachebust=true) }}"></script>
 
-	{% if page.extra.stylesheets | default(value=section.extra.stylesheets) %}
+	{% if page?.extra?.stylesheets | default(value=section?.extra?.stylesheets) %}
 		{% for stylesheet in page.extra.stylesheets | default(value=section.extra.stylesheets) %}
 			<link href="{{ stylesheet | safe }}" rel="stylesheet">	
 		{% endfor %}
@@ -88,10 +89,10 @@
 
 	<nav class="print context">
 		<div class="left">
-			{{ page.title | default(value=section.title | default(value="")) }}
+			{{ page?.title | default(value=section?.title | default(value="")) }}
 		</div>
 		<div class="right">
-			{{ page.extra.context | default(value=section.extra.context | default(value="")) }}
+			{{ page?.extra?.context | default(value=section?.extra?.context | default(value="")) }}
 		</div>
 	</nav>
 
@@ -104,7 +105,7 @@
 	{% include "partials/footer.html" %}
 	{% endblock footer %}
 
-	{% set parent_section_path = section.ancestors | default(value=page.ancestors | default(value=[])) | last %}
+	{% set parent_section_path = section?.ancestors | default(value=page?.ancestors | default(value=[])) | last %}
 	{% if parent_section_path %}
 		{% set parent_section = get_section(path=parent_section_path) %}
 
@@ -112,7 +113,7 @@
     	{% if parent_js %}<script type="module">{{ parent_js | safe }}</script>{% endif %}
 	{% endif %}	
 
-	{% set js_path = section.path | default(value=page.path | default(value='')) %}
+	{% set js_path = section?.path | default(value=page?.path | default(value='')) %}
 	{% if js_path %}
 		{% set section_js = load_data(path=js_path ~ "_index.js", required=false) %}
 		{% if section_js %}<script type="module">{{ section_js | safe }}</script>{% endif %}
