@@ -72,7 +72,7 @@
 	<script defer src="{{ get_url(path="/scripts/flashcards.js", cachebust=true) }}"></script>
 
 	{% if page?.extra?.stylesheets | default(value=section?.extra?.stylesheets) %}
-		{% for stylesheet in page.extra.stylesheets | default(value=section.extra.stylesheets) %}
+		{% for stylesheet in page?.extra?.stylesheets | default(value=section?.extra?.stylesheets) %}
 			<link href="{{ stylesheet | safe }}" rel="stylesheet">	
 		{% endfor %}
 	{% endif %}
