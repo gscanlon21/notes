@@ -14,7 +14,6 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
 
 
 # Terminology
