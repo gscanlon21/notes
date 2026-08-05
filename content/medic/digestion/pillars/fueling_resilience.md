@@ -1,10 +1,10 @@
 +++
 title = "Pillar 1 - Food"
-authors = ["Kiran Krishnan"]
 updated = 2025-03-05
 weight = 1
 
 [extra]
+authors = ["Kiran Krishnan"]
 see_also = [
   { title = "9 Ways to Increase Butyrate in the Gut", href = "https://layerorigin.com/blogs/blog-layer-origin-nutrition/9-ways-to-increase-butyrate-in-the-gut" },
 ]
