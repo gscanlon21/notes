@@ -141,12 +141,14 @@
 {% component macros.render_siblings(for) %}
 <h3 class="sitemap-title">Siblings</h3>
 <nav class="sitemap">
+	{% if for.ancestors | last %}
 	{% set ancestor_section = get_section(path=for.ancestors | last) %}
 	{# If this is a section and the parent section is transparent #}
 	{% if section and ancestor_section.transparent %}
 		{{<macros.render_sitemap path={for.relative_path} first_pass={true} current_path={for.relative_path} />}}
 	{% else %}
 		{{<macros.render_sitemap path={ancestor_section.relative_path} first_pass={true} current_path={for.relative_path} />}}
+	{% endif %}
 	{% endif %}
 </nav>
 {% endcomponent macros.render_siblings %}
@@ -162,7 +164,7 @@
 		{% endif %}
 	{% endfor %}
 {% endfor %}
-{% if page %}
+{% if page and page.ancestors | last %}
 	{% set ancestor_section = get_section(path=page.ancestors | last) %}
 	{% for asset in ancestor_section.assets | default(value=[]) %}
 		{% for type in types %}
@@ -182,7 +184,7 @@
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
-	{% if page %}
+	{% if page and page.ancestors | last %}
 		{% set ancestor_section = get_section(path=page.ancestors | last) %}
 		{% for asset in ancestor_section.assets | default(value=[]) %}
 			{% for type in types %}
