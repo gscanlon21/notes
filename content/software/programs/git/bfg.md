@@ -4,7 +4,7 @@ description = "The BFG is a simpler, faster alternative to git-filter-branch for
 
 [extra]
 site = "https://rtyley.github.io/bfg-repo-cleaner/"
-updated = 2026-01-01
+updated = 2027-01-01
 see_also = [
   { title = "Github", href = "https://github.com/rtyley/bfg-repo-cleaner" },
 ]

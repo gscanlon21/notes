@@ -3,7 +3,7 @@ title = "CSS"
 description = ""
 
 [extra]
-updated = 2026-01-01
+updated = 2027-01-01
 see_also = []
 +++
 

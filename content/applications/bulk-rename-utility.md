@@ -1,8 +1,9 @@
 +++
 title = "Bulk Rename Utility"
-updated = 2026-01-01
+description = ""
 
 [extra]
+updated = 2026-01-01
 site = "https://www.bulkrenameutility.co.uk/"
 see_also = []
 +++
