@@ -96,11 +96,11 @@
             {% endif %}
 
 			{{<macros.render_assets page={page} section={section} name="PDFs" types={["pdf"]} />}}
-			{#{ macros::render_assets(name="Documents", types=["txt", "docx"]) }#}
-			{#{ macros::render_assets(name="Spreadsheets", types=["xls", "xlsx"]) }#}
-			{#{ macros::render_assets(name="Programs", types=["py", "R"]) }#}
-			{#{ macros::render_assets(name="Audio", types=["mp3"]) }#}
-			{#{ macros::render_assets(name="ZIPs", types=["zip"]) }#}
+			{{<macros.render_assets page={page} section={section} name="Documents" types={["txt", "docx"]} />}}
+			{{<macros.render_assets page={page} section={section} name="Spreadsheets" types={["xls", "xlsx"]} />}}
+			{{<macros.render_assets page={page} section={section} name="Programs" types={["py", "R"]} />}}
+			{{<macros.render_assets page={page} section={section} name="Audio" types={["mp3"]} />}}
+			{{<macros.render_assets page={page} section={section} name="ZIPs" types={["zip"]} />}}
 
 			{% if page?.extra?.options | default(value=section?.extra?.options) %} 
             <dt>Options</dt>
@@ -194,6 +194,6 @@
         </dl>
 
 		<div id="flashcard-container"></div>
-		{#{ macros::render_html(types=["svg"]) }#}
+		{{ <macros.render_html page={page} section={section} types={["svg"]} /> }}
     </header>
 </form>

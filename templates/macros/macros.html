@@ -227,8 +227,8 @@
 {#
     Renders a page's assets.
 #}
-{% component macros.render_html(types) %}
-{% for asset in page.assets | default(value=section.assets) %}
+{% component macros.render_html(page, section, types) %}
+{% for asset in page?.assets | default(value=section?.assets) %}
 	{% for type in types %}
 		{% if asset is ending_with(pat=type) %}
 			{% set_global has_asset = true %}
@@ -237,7 +237,7 @@
 {% endfor %}
 
 {% if has_asset | default(value=false) %} 
-{% for asset in page.assets | default(value=section.assets) %}
+{% for asset in page?.assets | default(value=section?.assets) %}
 	{% for type in types %}
 		{% if asset is ending_with(pat=type) %}
 			{% set filename = asset | split(pat="/") | last | split(pat="\\") | last | split(pat=".") | first %}
