@@ -13,7 +13,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 **IBC Tote Rain Barrel**

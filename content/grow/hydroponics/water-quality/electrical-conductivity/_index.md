@@ -10,7 +10,7 @@ toc_level = 2
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 
 > [!IMPORTANT]
@@ -40,7 +40,7 @@ see_also = []
 
 
 
-{% table(header="Nutrient Availability", footer="[Science in Hydroponics](https://scienceinhydroponics.com/2025/10/ph-vs-nutrient-availability-rethinking-the-classic-charts.html)") %}
+
 | Nutrient | Broad Availability Range | Notes / Reason |
 |----------|--------------------------|----------------|
 | **NO₃⁻-N** | 4.0 to 8.5 | Soluble across all relevant pH; uptake independent of pH in hydroponic solution. Old charts confused microbial nitrification with solubility. |
@@ -56,14 +56,14 @@ see_also = []
 | **Copper (Cu, unchelated)** | Best <6.0; poor >7.0 | Cu²⁺ strongly hydrolyzes, falls out of solution quickly with rising pH. |
 | **Boron (B)** | Best 5.5 to 6.8 | Boric acid is readily available in this range; at higher pH, more borate forms, reducing uptake. |
 | **Molybdenum (Mo)** | Improves >6.0 | Molybdate solubility increases with pH; plants often deficient in acidic conditions, more available at neutral/alkaline pH. |
-{% end %}
-
-
-{{ image(title="Nutrient Availability", file="一nutrient-availability.webp") }}
 
 
 
-{% table(header="Acceptable values for common nutrients found in water.", footer="[Electrical Conductivity & pH Guide](一electrical-conductivity-and-ph-guide-for-hydroponics.pdf)") %}
+
+
+
+
+
 | Nutrients             | Acceptable value (ppm) |
 |-----------------------|------------------------|
 | Sodium                | <50                    |
@@ -71,7 +71,7 @@ see_also = []
 | Magnesium bicarbonate | <50                    |
 | Chloride              | <140                   |
 | Sulfate               | <100                   |
-{% end %}
+
 
 
 

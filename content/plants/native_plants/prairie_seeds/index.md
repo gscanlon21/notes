@@ -8,7 +8,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 # Seeding Dates
 Plant mixes with forbs from Nov 15th to Mar 15th.

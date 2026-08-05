@@ -12,7 +12,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 # Molecular Biology Review
@@ -76,7 +76,7 @@ _Base Pair_
   **Guanine**
 
 ## Translation
-{{ image(title="Amino Acids Codon Chart", file="一Codon_Chart.svg") }}
+
 
 > mRNA > Amino Acids > Proteins.
 

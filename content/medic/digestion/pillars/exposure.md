@@ -8,4 +8,3 @@ weight = 4
 see_also = []
 +++
 
-{{ hidden() }}

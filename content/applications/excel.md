@@ -8,7 +8,7 @@ site = ""
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 
 > [!TIP]

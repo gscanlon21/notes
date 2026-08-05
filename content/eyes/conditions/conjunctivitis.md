@@ -9,7 +9,7 @@ toc_level = 2
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 # Key Takeaways[^1]
 - Managing conjunctivitis at home with safe and effective self-care remedies can alleviate discomfort and support healing. 

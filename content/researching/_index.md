@@ -10,7 +10,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 # Article Types

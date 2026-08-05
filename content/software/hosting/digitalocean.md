@@ -10,7 +10,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 # The DigitalOcean Command Line Client
 # doctl 

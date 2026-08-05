@@ -12,5 +12,5 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 

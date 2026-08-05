@@ -8,7 +8,7 @@ toc_level = 2
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 # Cleanser
 Mix dawn dish soap with warm water. Spray on the lens and rinse off with warm water. Dry with a clean microfiber cloth.

@@ -13,7 +13,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 > [!IMPORTANT]
 > Adequate fat is necessary for cushioning in the body.
@@ -21,11 +21,11 @@ see_also = [
 # Car Accidents
 
 ##### Involved in a Serious Car Accident
-{% checklist() %}
+
 - [ ] TODO
-{% end %}
+
 
 ##### Involved in a Minor Car Accident
-{% checklist() %}
+
 - [ ] TODO
-{% end %}
+

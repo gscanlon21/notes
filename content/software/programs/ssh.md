@@ -5,7 +5,7 @@ updated = 2021-09-19
 [extra]
 +++
 
-{{ hidden() }}
+
 
 # Windows Powershell
 

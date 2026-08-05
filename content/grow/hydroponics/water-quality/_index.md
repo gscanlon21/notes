@@ -14,12 +14,12 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 # Electrical Conductivity & pH
 
-{% table(header="Optimum range of electrical conductivity (EC) and pH values for hydroponic crops.", footer="[Electrical Conductivity & pH Guide](一Electrical_Conductivity_and_pH_Guide_for_Hydroponics.pdf)") %}
+
 | Crops          | EC (mS/cm) | pH         |
 |----------------|------------|------------|
 | Asparagus      | 1.4 to 1.8 | 6.0 to 6.8 |
@@ -48,12 +48,12 @@ see_also = [
 | Strawberry     | 1.8 to 2.2 | 6          |
 | Sage           | 1.0 to 1.6 | 5.5 to 6.5 |
 | Tomato         | 2.0 to 4.0 | 6.0 to 6.5 |
-{% end %}
+
 
 
 # Hydroponic Recipes
 
-{% table(header="Target nitrogen feed rates (in ppm N) for several hydroponic crops.", footer="[A Recipe for Hydroponic Success](一Hydroponic_Recipes.pdf)") %}
+
 | Type                                                                                  | Propagation (ppm N) | Production (ppm N) |
 |---------------------------------------------------------------------------------------|---------------------|--------------------|
 | Buttercrunch/Boston Bibb                                                              | 125                 | 150                |
@@ -67,5 +67,5 @@ see_also = [
 | Cucumber                                                                              | 125                 | 175                |
 | Heavy Feeders (cabbage, kale, spinach, Swiss chard, mustard greens, mizuna, escarole) | 125                 | 175–200            |
 | Light Feeder Lettuce (arugula, watercress, spring mix)                                | 125                 | 125–150            |
-{% end %}
+
 

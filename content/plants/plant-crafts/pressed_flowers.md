@@ -14,7 +14,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 # What Flowers to Press
 - Flat flowers are best for pressing.

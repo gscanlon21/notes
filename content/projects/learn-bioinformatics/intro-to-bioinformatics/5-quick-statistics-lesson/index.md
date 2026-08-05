@@ -10,7 +10,7 @@ authors = ["Mike Saint-Antoine"]
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 
 ##### How many flips of a coin would it take to know with absolute certainty that a coin is biased (weighted on one side)?

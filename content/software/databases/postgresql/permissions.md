@@ -3,7 +3,7 @@ title = "Permissions"
 updated = 2023-11-28
 +++
 
-{{ hidden() }}
+
 
 # Grant Permissions
 ```sql

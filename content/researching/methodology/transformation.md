@@ -14,7 +14,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 # Terminology
@@ -34,7 +34,7 @@ _[Review Article](/doi/10.34172/bi.30019.pdf)_
 : ?
 
 
-{% table(header="Summary of CRISPR delivery methods in plant genome editing", footer="[CRISPR-based gene editing in plants: Focus on reagents and their delivery tools](/doi/10.34172/bi.30019.pdf)") %}
+
 | Method                                      | Description                                                                                                                                                                     | Applications and Advantages                                                                                                                                | Limitations and Challenges                                                                              |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Agrobacterium-Mediated Transformation (AMT) | _Agrobacterium tumefaciens_ delivers CRISPR components through T-DNA transfer, allowing gene editing in various plants.                                                           | - AMT effectively modifies wheat, tomato, tobacco, etc.<br>- CRISPR-Cas9 via AMT enhances grain weight, yields, and provides resistance to powdery mildew. | - Limited cargo capacity.<br>- Off-target effects can occur.                                            |
@@ -42,7 +42,7 @@ _[Review Article](/doi/10.34172/bi.30019.pdf)_
 | Electroporation                             | Electrical current creates temporary pores in cell membranes, facilitating efficient entry of CRISPR components.                                                                | - High efficiency and minimal off-target effects.<br>- Used in tobacco and switchgrass for CRISPR-Cas9 delivery.                                           | - Dependency on electric field application.                                                             |
 | Expression of Developmental Regulators      | WUS and BBM induce new embryogenesis, transforming rejected lines. Ectopic expression of regulators (IPT, STM, BBM, GRF4, GIF1) enhances transformation frequencies.            | - Successful transformation of previously rejected lines.<br>- Increased genome-edited plant numbers with CRISPR-Cas9 and developmental regulators.        | - Poor performance in DNA delivery and plant regeneration.                                              |
 | RNA Viruses and Mobile Guide RNAs           | TRV, a positive-strand RNA virus, delivers sgRNAs into Cas9-overexpressing plants through _Agrobacterium_ infiltration. Sonchus yellow net rhabdovirus delivers sgRNA and SpCas9. | - TRV achieves systemic, heritable gene editing.<br>- Sonchus yellow net rhabdovirus induces heritable mutations.                                          | - Low cargo capacity of viruses.<br>- TRV can't transmit to progeny.                                    |
-{% end %}
+
 
 
 

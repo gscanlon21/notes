@@ -3,7 +3,7 @@ title = "Haikus"
 updated = 2025-03-03
 +++
 
-{{ hidden() }}
+
 
 > When grass is dying
 > <br>

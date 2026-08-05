@@ -4,7 +4,7 @@ updated = 2021-02-21
 draft = true
 +++
 
-{{ hidden() }}
+
 
 # Conventions
 My preferences for naming conventions and syntax usages

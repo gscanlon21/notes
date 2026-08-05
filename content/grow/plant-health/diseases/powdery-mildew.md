@@ -11,7 +11,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 > [!TIP]
 > Mineral oils or vegetable oils can be sprayed on the leaves to control powdery mildew.

@@ -2,7 +2,7 @@
 title = "Git Performance"
 +++
 
-{{ hidden() }}
+
 
 # Config
 

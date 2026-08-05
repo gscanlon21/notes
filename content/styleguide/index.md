@@ -13,7 +13,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 # `Alerts`
@@ -221,15 +221,15 @@ Code can also be displayed inline by surounding the code with back ticks. `/* Th
 
 # `Tables`
 - - -
-{% table(header="Has an Empty Header") %}
+
 |             | **Yes**     | **No**            |
 |------------:|:-----------:|:-----------------:|
 | **Present** | Hit         | Miss              |
 | **Absent**  | False Alarm | Correct Rejection |
-{% end %}
+
 <br>
 
-{% table(header="Cooking Temperature & Safety", footer="The Food Lab by J. Kenji López-Alt `362`") %}
+
 | Degrees Fahrenheit | Time for Chicken | Time for Turkey | Time for Beef |
 |:------------------:|:----------------:|:---------------:|:-------------:|
 | 135                | 63.3 minutes     | 64 minutes      | 37 minutes    |
@@ -239,4 +239,4 @@ Code can also be displayed inline by surounding the code with back ticks. `/* Th
 | 155                | 44.2 seconds     | 1.2 minutes     | 23 seconds    |
 | 160                | 13.7 seconds     | 25.6 seconds    | Instantaneous |
 | 165                | Instantaneous    | Instantaneous   | Instantaneous |
-{% end %}
+

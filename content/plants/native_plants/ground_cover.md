@@ -6,7 +6,7 @@ updated = 2025-12-12
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 # Sedum
 

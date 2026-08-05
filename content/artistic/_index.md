@@ -11,6 +11,6 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 **Be Bold**

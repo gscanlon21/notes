@@ -7,7 +7,7 @@ site = "https://www.bulkrenameutility.co.uk/"
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 
 ##### Rename .md to .no.md

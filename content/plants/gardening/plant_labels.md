@@ -9,7 +9,7 @@ toc_level = 2
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 # Survey Stakes
 24x2x1 in. 

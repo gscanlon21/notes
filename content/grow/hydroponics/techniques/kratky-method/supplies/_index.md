@@ -9,7 +9,7 @@ toc_level = 2
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 
 > [!IMPORTANT]
@@ -44,8 +44,8 @@ see_also = []
 
 
 # Growing Kits
-{% checklist() %}
+
 - [ ] 1 64oz Mason Jar
-{% end %}
+
 
 

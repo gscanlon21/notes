@@ -10,11 +10,11 @@ updated = 2026-06-01
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 
 # Terminology
-{{ image(title="Amino Acids Codon Chart", file="一Codon_Chart.svg") }}
+
 
 **Exons**
 : Coding regions of a protein.
@@ -47,14 +47,14 @@ Open Reading Frame
 : The "reading", however, refers to the RNA produced by transcription of the DNA and its subsequent interaction with the ribosome in translation
 : Since DNA is interpreted in groups of three nucleotides (codons), a DNA strand has three distinct reading frames. The double helix of a DNA molecule has two anti-parallel strands; with the two strands having three reading frames each, there are six possible frame translations.
 
-{% table(header="Open Reading Frames", footer="Open reading frame is bold in reading frame 2") %}
+
 | DNA               | GTACATGAAGAGGTTTACTGAAGGCCGCGTAGAAGCTTAGGTAC                       |
 |:-----------------:|:------------------------------------------------------------------:|
 | **RNA**           | **GUACAUGAAGAGGUUUACUGAAGGCCGCGUAGAAGCUUAGGUAC**                   |
 | Reading Frame 1   | GUA CAU GAA GAG GUU UAC UGA AGG CCG CGU AGA AGC UUA GGU AC         |
 | _Reading Frame 2_ | GUAC **_AUG_ AAG AGG UUU ACU GAA GGC CGC GUA GAA GCU** _UAG_ GUA C |
 | Reading Frame 3   | GUACA UGA AGA GGU UUA CUG AAG GCC GCG UAG AAG CUU AGG UAC          |
-{% end %}
+
 
 
 

@@ -11,7 +11,7 @@ updated = 2026-06-01
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 
 **ATAC-seq: A Method for Assaying Chromatin Accessibility Genome-Wide**
@@ -97,7 +97,7 @@ _[Research Article](/doi/10.1002/cphg.101.pdf)_
 
 # Guides & Tools
 
-{% table(header="Step by Step Guides to Performing ATAC-seq Data Analysis", footer="[Analytical Approaches for ATAC-seq Data Analysis](/doi/10.1002/cphg.101.pdf)") %}
+
 | Title and author | Notes and link | Last Updated |
 |------------------|----------------|-----|
 | **ATAC-seq data analysis: from FASTQ to peaks**<br>Yiwei Niu | [Blog style walkthrough of generalized ATAC-seq data analysis.](https://yiweiniu.github.io/blog/2019/03/ATAC-seq-data-analysis-from-FASTQ-to-peaks/) | 2019 |
@@ -105,9 +105,9 @@ _[Research Article](/doi/10.1002/cphg.101.pdf)_
 | **Analysis of ATAC-seq data in R and Bioconductor**<br>Rockefeller Bioinformatics Resource | [Bioconductor ATAC-seq analysis course.](https://rockefelleruniversity.github.io/RU_ATACseq/) | 2018 |
 | **ATAC-seq**<br>John M. Gaspar | [Generalized ATAC-seq analysis walkthrough with included custom scripts.](https://github.com/harvardinformatics/ATAC-seq) | 2019 |
 | **ATAC-seq data analysis**<br>Delisle L; Doyle M; & Heyl F | [Galaxy training walkthrough of generalized ATAC-seq analysis.](https://galaxyproject.github.io/training-material/topics/epigenetics/tutorials/atac-seq/tutorial.html) | 2020 |
-{% end %}
 
-{% table(header="Raw ATAC-seq Data Processing Pipelines", footer="[Analytical Approaches for ATAC-seq Data Analysis](/doi/10.1002/cphg.101.pdf)") %}
+
+
 | Pipeline | Language | Notes | Docs | Citation |
 |----------|-----------|-------|------|----------|
 | AIAP | Bash; R; Python | Optimized analysis with novel QC metrics | ++ | Liu et al. (2019)<br>Last updated: 2019 |
@@ -125,21 +125,21 @@ _[Research Article](/doi/10.1002/cphg.101.pdf)_
 | pyflow-ATACseq | Bash; Python | ATAC-seq snakemake pipeline with included nucleosome positioning and TF footprinting | ++ | Unpublished<br>Last updated: 2019 |
 | snakePipes ATAC-seq | Python | Workflow system including ATAC-seq analysis | +++ | Bhardwaj et al. (2019)<br>Last updated: 2019 |
 | Tobias Rausch | Bash; R; Python | Complete pipeline with emphasis on downstream analyses | ++ | Rausch et al. (2019)<br>Last updated: 2020 |
-{% end %}
 
 
 
-{% table(header="ATAC-seq Advanced Quality Control Metric Tools", footer="[Analytical Approaches for ATAC-seq Data Analysis](/doi/10.1002/cphg.101.pdf)") %}
+
+
 | Tool | Languages | Notes | Docs | Citation |
 |------|------------|-------|------|----------|
 | ATAqC | Bash; Python | Generate ATAC-seq specific quality control metrics. | + | Unpublished<br>Last updated: 2017 |
 | ATACseqQC | R | Provides ATAC-seq specific quality control metrics and transcription factor footprinting. | +++ | Ou et al. (2018)<br>Last updated: 2018 |
 | ataqv | C++; Bash | ATAC-seq QC and visualization. | +++ | Orchard, Kyono, Hensley, Kitzman, & Parker (2020)<br>Last updated: 2020 |
 
-{% end %}
 
 
-{% table(header="Peak Calling Tools", footer="[Analytical Approaches for ATAC-seq Data Analysis](/doi/10.1002/cphg.101.pdf)") %}
+
+
 | Tool | Languages | Notes | Docs | Citation |
 |------|------------|-------|------|----------|
 | F-Seq | Java | Can be used as general peak caller to identify regions of open chromatin. | ++ | Boyle et al. (2008)<br>Last updated: 2016 |
@@ -149,18 +149,18 @@ _[Research Article](/doi/10.1002/cphg.101.pdf)_
 | HOMER | Perl; C++ | Suite of tools that include the ability to call peaks from DNA enrichment assays. | +++ | Heinz et al. (2010) |
 | MACS2 | Python | Specifically designed for ChIP-seq but broadly applicable to any DNA enrichment assay to call peaks. | +++ | Zhang et al. (2020)<br>Last updated: 2020 |
 | PeaKDEck | Perl | Peak calling program for DNase-seq data. | +++ | McCarthy & O’Callaghan (2014)<br>Last updated: 2014 |
-{% end %}
 
 
-{% table(header="Tools to Investigate Differentially Accessible Regions", footer="[Analytical Approaches for ATAC-seq Data Analysis](/doi/10.1002/cphg.101.pdf)") %}
+
+
 | Tool | Languages | Notes | Docs | Citation |
 |------|------------|-------|------|----------|
 | DAStk | Python | Identifies changes in transcription factor activity by looking at changes in chromatin accessibility | +++ | Tripodi et al. (2018)<br>Last updated: 2020 |
 | diffTF | Python; R | Identifies differential transcription factors. Can operate in basic mode with just chromatin accessibility or in classification mode where it integrates RNA-seq. | +++ | Berest et al. (2019)<br>Last updated: 2020 |
-{% end %}
 
 
-{% table(header="Motif Enrichment and Transcription Factor Footprinting Tools", footer="[Analytical Approaches for ATAC-seq Data Analysis](/doi/10.1002/cphg.101.pdf)") %}
+
+
 | Tool | Languages | Notes | Docs | Citation |
 |------|------------|-------|------|----------|
 | BiFET | R | Identify overrepresented transcription factor footprints. | ++ | Youn et al. (2019)<br>Last updated: 2019 |
@@ -175,18 +175,18 @@ _[Research Article](/doi/10.1002/cphg.101.pdf)_
 | TOBIAS | Python | Identify transcription factor footprints. | ++ | Bentsen et al. (2019)<br>Last updated: 2020 |
 | TRACE | Python | Transcription factor footprinting. | ++ | Ouyang & Boyle (2019)<br>Last updated: 2020 |
 | Wellington | Python | Identify TF footprints using DNase-seq data. | +++ | Piper et al. (2013)<br>Last updated: 2019 |
-{% end %}
 
 
-{% table(header="Tools to Investigate Nucleosome Positioning", footer="[Analytical Approaches for ATAC-seq Data Analysis](/doi/10.1002/cphg.101.pdf)") %}
+
+
 | Tool | Languages | Notes | Docs | Citation |
 |------|------------|-------|------|----------|
 | HMMRATAC | Java | Identify nucleosome positioning and leverage ATAC-seq specific read outs to call peaks. | +++ | Tarbell & Liu (2019)<br>Last updated: 2020 |
 | NucleoATAC | Python; R | Call nucleosomes using ATAC-seq data. | +++ | Schep et al. (2015)<br>Last updated: 2019 |
 | NucTools | Perl; R | Calculate nucleosome occupancy profiles on chromatin accessibility data. | +++ | Vainshtein et al. (2017)<br>Last updated: 2019 |
-{% end %}
 
-{% table(header="Tools to Investigate Region Enrichment", footer="[Analytical Approaches for ATAC-seq Data Analysis](/doi/10.1002/cphg.101.pdf)") %}
+
+
 | Tool | Languages | Notes | Docs | Citation |
 |------|------------|-------|------|----------|
 | Annotatr | R | Annotate summarize and visualize genomic regions. | +++ | Cavalcante & Sartor (2017)<br>Last updated: 2019 |
@@ -204,9 +204,9 @@ _[Research Article](/doi/10.1002/cphg.101.pdf)_
 | LOLA/LOLAweb | R | Determine significant enrichment between region sets to inform on biological meaning. | +++ | Sheffield & Bock (2016)<br>Last updated: 2019 |
 | regioneR | R | Evaluate significant associations between region sets using permutation testing. | +++ | Gel et al. (2016)<br>Last updated: 2020 |
 | StereoGene | C++; R | Estimate genome-wide correlation between pairs of genomic features. | ++ | Stavrovskaya et al. (2017)<br>Last updated: 2019 |
-{% end %}
 
-{% table(header="Available Tools for Single-Cell ATAC-seq Data Processing", footer="[Analytical Approaches for ATAC-seq Data Analysis](/doi/10.1002/cphg.101.pdf)") %}
+
+
 | Tool | Languages | Notes | Docs | Citation |
 |------|------------|-------|------|----------|
 | BAP | R; Python | Bead-based scATAC-seq data processing. | ++ | Lareau et al. (2019)<br>Last updated: 2019 |
@@ -222,4 +222,4 @@ _[Research Article](/doi/10.1002/cphg.101.pdf)_
 | scOpen | Python | Chromatin-accessibility estimation of single-cell ATAC data. | + | Li et al. (2019)<br>Last updated: 2020 |
 | SCRAT | R | Useful for studying single cell heterogeneity. Can identify changes in gene sets or transcription factor binding sites. Includes GUI and web-based service. | +++ | Ji et al. (2017)<br>Last updated: 2018 |
 | SnapATAC | R; Python | Single Nucleus Analysis Pipeline for ATAC-seq. | +++ | Fang et al. (2019)<br>Last updated: 2019 |
-{% end %}
+

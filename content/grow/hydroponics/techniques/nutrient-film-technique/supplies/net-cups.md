@@ -11,7 +11,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 **AC Infinity 2-Inch Net Cups**

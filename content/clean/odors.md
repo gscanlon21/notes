@@ -8,13 +8,13 @@ toc_level = 2
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 # Dust
 Dust collects odors the way fabric can.
 
 ##### Common Locations of Dust
-{% checklist() %}
+
 - [ ] On top of door frames.
 - [ ] On ceiling fan blades.
 - [ ] Walls can accumulate dust.
@@ -25,4 +25,4 @@ Dust collects odors the way fabric can.
 - [ ] On baseboards.
 - [ ] On top of the refrigerator.
 - [ ] On tops of kitchen cabinets.
-{% end %}
+

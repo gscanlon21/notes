@@ -9,7 +9,7 @@ toc_level = 2
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 > [!NOTE]
 > Water temperature of 72 to 75 F is optimal.[^1]

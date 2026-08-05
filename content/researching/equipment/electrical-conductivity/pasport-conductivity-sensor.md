@@ -12,7 +12,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 
@@ -98,13 +98,13 @@ The PS-2116A Conductivity Sensor measures the conductivity of ionic and non-ioni
 The Conductivity Sensor is extremely sensitive. A reading 25 µS/cm for a sample of pure water is well within tolerances. Pure water is difficult to find in a typical classroom setting. To make meaningful judgments based on conductivity readings, it is essential to understand the scale and range of this measurement.
 
 
-{% table(header="Conductivity Values for Common Aqueous Solutions at 25°C", footer="") %}
+
 | Solution         | Value           |
 |------------------|-----------------|
 | Ultra-Pure Water | 0.05–0.75 µS/cm |
 | Drinking Water   | 50–1500 µS/cm   |
 | Ocean Water      | 53,000 µS/cm    |
-{% end %}
+
 
 
 ---

@@ -23,6 +23,6 @@ options = [
 ]
 +++
 
-{% table() %}
+
 <div id="space-fixator"></div>
-{% end %}
+

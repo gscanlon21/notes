@@ -11,7 +11,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 # Windshield
 

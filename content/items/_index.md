@@ -12,15 +12,15 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 # To Buy
-{% checklist() %}
+
 - [ ] Xylitol Gum
 - [ ] Serious Steel Resistance Bands
 - [ ] Dinner Plates (~10in, round, plastic-free)
-{% end %}
+
 
 
 # Boycotts

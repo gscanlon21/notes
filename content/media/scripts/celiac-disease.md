@@ -10,7 +10,7 @@ toc_level = 2
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 
 Celiac disease occurs when a person consumes gluten, a protein found in wheat, barley, and rye. For people with this condition, eating gluten triggers an immune response that damages the lining of the small intestine — specifically, the villi, which are tiny, finger-like projections that absorb nutrients. When the villi are damaged, the body can no longer absorb nutrients properly.

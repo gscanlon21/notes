@@ -11,7 +11,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 > [!TIP]
 > Use the same size hole saw as your net cups.

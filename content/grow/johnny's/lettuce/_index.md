@@ -14,7 +14,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 > [!TIP]
 > Lettuce varieties that excel in hydroponics typically have a compact and upright growth habit to maximize greenhouse space; resistance to tip burn, which can be a problem for rapidly growing greens; resistance to bolting; and resistance to diseases, such as downy mildew, that are common in indoor growing environments.

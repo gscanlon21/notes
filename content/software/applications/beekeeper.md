@@ -7,7 +7,7 @@ site = "https://www.beekeeperstudio.io/"
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 # Backup/Restore Table Columns
 - Export whole table (sql)

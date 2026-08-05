@@ -19,7 +19,7 @@ comments = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 # Vision Therapy Tools

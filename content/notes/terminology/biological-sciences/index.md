@@ -83,7 +83,7 @@ Introgressive Hybridization
 
 ## Metabolomics
 
-{{ image(title="Metabolomics Schema", file="Metabolomics_schema.png") }}
+
 
 **Proteome**
 : The entire set of proteins that is, or can be, expressed by a genome, cell, tissue, or organism at a certain time. 

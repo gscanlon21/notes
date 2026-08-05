@@ -12,7 +12,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 # Mediums

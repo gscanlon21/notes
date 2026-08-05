@@ -7,7 +7,7 @@ updated = 2027-01-01
 toc_level = 1
 +++
 
-{{ hidden() }}
+
 
 
 # Lettuce Puns

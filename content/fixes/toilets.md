@@ -7,7 +7,7 @@ updated = 2026-02-01
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 ##### Chain Coming Off the Plug
 Use zip ties so the chain doesn't come off the plug.

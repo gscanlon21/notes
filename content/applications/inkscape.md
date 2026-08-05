@@ -8,5 +8,5 @@ site = "https://inkscape.org/"
 see_also = []
 +++
 
-{{ hidden() }}
+
 

@@ -9,7 +9,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 # Options
 # _Ctrl+P
@@ -29,7 +29,7 @@ see_also = [
 *.png|*.jpg|*.jpeg dupe:
 ```
 
-{{ extend() }}
+
 
 ###### Only These File Types Inside a Parent Folder
 ```powershell
@@ -43,7 +43,7 @@ path:"C:\Users\*\OneDrive\Pictures\" *.png|*.jpg|*.jpeg dupe:
 "C:\Users\*\OneDrive\Pictures\" test.png
 ```
 
-{{ extend() }}
+
 
 ###### Only the Parent Folder
 ```

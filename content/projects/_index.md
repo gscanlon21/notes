@@ -8,4 +8,4 @@ section_sort_by = "weight"
 site = "https://github.com/gscanlon21"
 +++
 
-{{ hidden() }}
+

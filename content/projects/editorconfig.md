@@ -10,7 +10,7 @@ map = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 ###### .editorconfig

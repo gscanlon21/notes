@@ -9,7 +9,7 @@ toc_level = 2
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 
 **Modeling Bibb Lettuce Nitrogen Uptake and Biomass Productivity in Vertical Hydroponic Agriculture**

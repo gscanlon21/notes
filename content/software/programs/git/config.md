@@ -8,7 +8,7 @@ see_also = []
 +++
 
 
-{{ hidden() }}
+
 
 
 ###### .git/config

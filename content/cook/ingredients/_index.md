@@ -13,12 +13,12 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 # Fruit
 
-{% table(header="Fruits High in Fiber", footer="[GoodRx](https://www.goodrx.com/well-being/gut-health/high-fiber-fruits)") %}
+
 | Fruit         | Serving Size          | Fiber Content |
 |---------------|-----------------------|---------------|
 | Passion Fruit | 1 cup                 | 24 g          |
@@ -37,7 +37,7 @@ see_also = [
 | Banana        | 1 medium (7–8 inches) | 3 g           |
 | Prunes        | 4 prunes              | 3 g           |
 | Mango         | 1 cup (pieces)        | 3 g           |
-{% end %}
+
 
 
 # Vinegar

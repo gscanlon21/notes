@@ -20,7 +20,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 # Bird Strikes
 

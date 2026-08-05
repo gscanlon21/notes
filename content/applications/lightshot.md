@@ -8,7 +8,7 @@ site = "https://app.prntscr.com/en/index.html"
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 > [!TIP]
 > Before installing lightshot, turn off the Print Screen Shortcut under Ease of Access Keyboard Settings. 

@@ -17,7 +17,7 @@ see_also = [
 map = []
 +++
 
-{{ hidden() }}
+
 
 
 # Terminology

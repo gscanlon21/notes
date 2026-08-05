@@ -8,7 +8,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 # Coolant
 - Unseal the tank and extract the old fluid with a baster or fluid extractor.

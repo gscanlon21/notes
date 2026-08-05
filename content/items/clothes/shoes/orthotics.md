@@ -14,7 +14,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 > [!TIP]
 > Carbon fiber plates should be used with a stiff soled shoe or they might crack.

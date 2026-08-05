@@ -10,7 +10,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 # Active vs. Passive Voice[^active-passive]

@@ -16,7 +16,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 > [!TIP]
@@ -25,7 +25,7 @@ see_also = [
 >> Ball of Foot Pain
 
 # Overview
-{{ image(title="Posture-Deforming Footwear Features", file="一Posture_Deforming.webp") }}
+
 
 **Size**
 : US Men's 12
@@ -34,7 +34,7 @@ see_also = [
 : Wide shoes — Need room for the toes to spread.
 
 ## Attributes
-{{ image(title="Heel-to-Toe Drop", file="一Heel_Elevation_vs._Zero-Drop_Shoe.webp") }}
+
 
 **Heel-to-Toe Drop**
 : Refers to the height of the heel compared to the height of the toes.

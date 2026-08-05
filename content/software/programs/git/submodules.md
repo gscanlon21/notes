@@ -2,7 +2,7 @@
 title = "Git Submodules"
 +++
 
-{{ hidden() }}
+
 
 # Errors
 

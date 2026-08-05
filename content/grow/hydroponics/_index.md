@@ -9,12 +9,12 @@ toc_level = 2
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 
 # Abbreviations and Units
 
-{% table(header="Abbreviations and Units", footer="[Cornell CEA Lettuce Handbook](一Cornell-CEA-Lettuce-Handbook.pdf)") %}
+
 | Abbreviation | Term                                   | Description                                                                                                                                   |
 |--------------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | A            | Area                                   | Square feet or square meter.                                                                                                                  |
@@ -38,5 +38,5 @@ see_also = []
 | SI           | System Internationale                  | International system of units aka metric system - built around 7 basic units of measurements                                                  |
 | μmol/m²/s    | micro-mole per square meter per second | Instantaneous PAR light                                                                                                                       |
 | μS/cm        | microsiemens per centimeter            | A unit of measurement for electrical conductivity                                                                                             |
-{% end %}
+
 

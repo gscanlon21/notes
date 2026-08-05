@@ -11,7 +11,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 Check on them in 1.5 weeks. If roots are at least 1.5 inches long, move into the hydroponics system. 

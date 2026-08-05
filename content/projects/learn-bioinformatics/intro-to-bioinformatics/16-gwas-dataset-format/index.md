@@ -10,4 +10,4 @@ authors = ["Mike Saint-Antoine"]
 see_also = []
 +++
 
-{{ hidden() }}
+

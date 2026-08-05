@@ -9,7 +9,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 
 # Pens

@@ -11,7 +11,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 # Features
 - [x] Slanted or dual roller brushes are better for hair de-tangling.

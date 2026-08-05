@@ -11,7 +11,7 @@ see_also = [
 ]
 +++
 
-{{ hidden() }}
+
 
 > [!CAUTION]
 > Avoid non-food grade plastics such as PVC (#3) and Polystyrene (#6), as these may release harmful chemicals into the soil.

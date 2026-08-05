@@ -3,7 +3,7 @@ title = "C# Interactive"
 updated = 2021-02-21
 +++
 
-{{ hidden() }}
+
 
 # C# Interactive
 

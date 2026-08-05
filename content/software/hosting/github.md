@@ -8,7 +8,7 @@ site = "https://github.com/"
 see_also = []
 +++
 
-{{ hidden() }}
+
 
 ##### How to Remove Contributions from your Github Profile
 Unlink and re-link the commit author's email address from your profile.
