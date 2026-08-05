@@ -3,7 +3,7 @@
 {% block content %}
     <h1 class="sitemap-title">Sitemap</h1>
     <nav class="sitemap">
-        {{<macros.render_sitemap path="_index.md" />}}
+        {{<macros.render_sitemap config={config} path="_index.md" />}}
     </nav>
 
     {% if section?.content | default(value=page?.content) %}

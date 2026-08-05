@@ -36,7 +36,7 @@ main > .sitemap-title {
 	}
 
 	// Pad between submenus.
-	& > menu + menu, & > menu:not(:empty) + details, & > details + details, & > li + details {
+	& > menu + menu, & > menu:not(:empty):has(> *) + details, & > details + details, & > li + details {
 		margin-block-start: $base-padding;
 	}
 

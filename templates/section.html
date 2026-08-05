@@ -13,13 +13,13 @@
 			</div>
 
 			<div class="header-item">
-				{{<macros.render_siblings for={section} />}}
+				{{<macros.render_siblings config={config} for={section} />}}
 			</div>
 
 			<div class="header-item screen-large">
 				<h3 class="sitemap-title">Sitemap</h3>
 				<nav class="sitemap">
-					{{<macros.render_sitemap path="_index.md" />}}
+					{{<macros.render_sitemap config={config} path="_index.md" />}}
 				</nav>
 			</div>
 		</div>
