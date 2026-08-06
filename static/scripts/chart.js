@@ -1,4 +1,4 @@
-import Chart from "https://cdn.jsdelivr.net/npm/chart.js/+esm";
+import { Chart } from "https://cdn.jsdelivr.net/npm/chart.js/+esm";
 
 document.querySelectorAll("table").forEach(table => {
     const firstHeader = table.tHead?.rows[0]?.cells[0]?.textContent?.trim();
