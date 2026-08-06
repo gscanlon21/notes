@@ -57,7 +57,7 @@
 }
 
 .word-front {
-	font-size: clamp(.75rem, 2vw, 1.25rem);
+	font-size: clamp(.75rem, 2vw, 1.5rem);
     text-transform: uppercase;
 	text-align: center;
     font-weight: bold;
@@ -68,7 +68,7 @@
 	justify-content: start;
 	align-items: end;
 	font-weight: 500;
-	font-size: .7em;
+	font-size: .75em;
 }
 
 .red {
