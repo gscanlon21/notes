@@ -68,9 +68,9 @@
 {#
     Iterates though the site's pages and subsection and renders nested lists for each.
 #}
-{% component macros.render_sitemap(config, path, first_pass: bool = true, current_path: string = "") %}
+{% component macros.render_sitemap(config, path: string, lang: string, first_pass: bool = true, current_path: string = "") %}
 {% set show_localhost = config.base_url == "http://127.0.0.1:1111" and current_path == '' %}
-{% set section_info = get_section(path=path) %}
+{% set section_info = get_section(path=path, lang=lang) %}
 {% if section_info.extra.section_sort_by | default(value="none") == "weight" %}
 	{% set subsections = section_info.subsections %}
 {% else %}
@@ -85,17 +85,20 @@
     {% endif %}
     
     {% for subsection in subsections %}
-        {{<macros.render_sitemap config={config} path={subsection} first_pass={false} current_path={current_path} />}}
+        {{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={false} current_path={current_path} />}}
     {% endfor %}
 {% elif section_info.extra.in_sitemap | default(value=true) or show_localhost %}
     {% if section_info.transparent %}
         {% for subsection in subsections %}
-            {{<macros.render_sitemap config={config} path={subsection} first_pass={false} current_path={current_path} />}}
+            {{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={false} current_path={current_path} />}}
         {% endfor %}
     {% elif section_info.in_search_index | default(value=true) == true %}
         <details {% if current_path == section_info.relative_path %}open{% endif %}>
 			{% if current_path == section_info.relative_path %}
             	<summary class="current">{{ section_info.title }}</summary>
+			{% elif config.default_language != lang %}
+				{% set sub_path = section_info.relative_path | replace(from="_index.md", to="") | replace(from="index.md", to="") | replace(from="_index.no.md", to="") | replace(from="index.no.md", to="") %}
+				<summary><a href="{{ "/" ~ lang ~ "/" ~ sub_path }}">{{ section_info.title }}</a></summary>
 			{% else %}
 				<summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></summary>
 			{% endif %}
@@ -104,7 +107,7 @@
 				{{<macros.render_list_links config={config} pages={section_info.pages} />}}
         
                 {% for subsection in subsections %}
-                    {{<macros.render_sitemap config={config} path={subsection} first_pass={false} current_path={current_path} />}}
+                    {{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={false} current_path={current_path} />}}
                 {% endfor %}
             </menu>
         </details>
@@ -140,17 +143,17 @@
 {#
     Renders a page's siblings.
 #}
-{% component macros.render_siblings(config, for) %}
+{% component macros.render_siblings(config, for, lang: string) %}
 <h3 class="sitemap-title">Siblings</h3>
 <nav class="sitemap">
 	{% if for.ancestors | last %}
-	{% set ancestor_section = get_section(path=for.ancestors | last, allow_missing=true) %}
+	{% set ancestor_section = get_section(path=for.ancestors | last, lang=lang, allow_missing=false) %}
 	{% if ancestor_section %}
 	{# If this is a section and the parent section is transparent #}
 	{% if section and ancestor_section.transparent %}
-		{{<macros.render_sitemap config={config} path={for.relative_path} first_pass={true} current_path={for.relative_path} />}}
+		{{<macros.render_sitemap config={config} lang={lang} path={for.relative_path} first_pass={true} current_path={for.relative_path} />}}
 	{% else %}
-		{{<macros.render_sitemap config={config} path={ancestor_section.relative_path} first_pass={true} current_path={for.relative_path} />}}
+		{{<macros.render_sitemap config={config} lang={lang} path={ancestor_section.relative_path} first_pass={true} current_path={for.relative_path} />}}
 	{% endif %}
 	{% endif %}
 	{% endif %}

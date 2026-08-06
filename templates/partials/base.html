@@ -81,7 +81,7 @@
 	{% block header %}
 	<header id="header">
 		<span class="header-item">{% include 'partials/search.html' %}</span>
-		<span class="header-item"><a class="unstyle" href="{{ get_url(path="@/_index.md") }}">ascallion</a></span>
+		<span class="header-item"><a class="unstyle" href="{{ get_url(path="@/_index.md", lang=config.default_language) }}">ascallion</a></span>
 		<span class="header-item"><a href="{{ get_url(path="@/_index.md") }}">Sitemap</a></span>
 	</header>
 	{% endblock header %}
