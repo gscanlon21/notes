@@ -69,6 +69,7 @@
 	<script defer src="{{ get_url(path="/scripts/search.js", cachebust=true) }}"></script>
 	<script defer src="{{ get_url(path="/scripts/content.js", cachebust=true) }}"></script>
 	<script defer src="{{ get_url(path="/scripts/flashcards.js", cachebust=true) }}"></script>
+	<script type="module" src="{{ get_url(path="/scripts/chart.js", cachebust=true) }}"></script>
 
 	{% if page?.extra?.stylesheets | default(value=section?.extra?.stylesheets) %}
 		{% for stylesheet in page?.extra?.stylesheets | default(value=section?.extra?.stylesheets) %}
