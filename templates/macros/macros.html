@@ -241,7 +241,7 @@
 	{% for type in types %}
 		{% if asset is ending_with(pat=type) %}
 			{% set filename = asset | split(pat="/") | last | split(pat="\\") | last | split(pat=".") | first %}
-			<div class="display--none" data-code="{{ filename }}">{{ load_data(path=asset) | safe }}</div>
+			<div class="display--none" data-code="{{ filename }}">{{ load_data(path=asset, required=false) | safe }}</div>
 		{% endif %}
 	{% endfor %}
 {% endfor %}

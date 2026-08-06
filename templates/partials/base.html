@@ -60,8 +60,7 @@
 	{% if lang != config.default_language %}
 		{% set hash = get_hash(literal="" ~ get_random(start=0, end=99) ~ "") %}
 		{% set submodule_path_lang = current_path | split(pat="/content/") | first %}
-		{% set submodule_path = "test" %}
-		submodule_path_lang | trim_start_matches(pat="/" ~ lang)
+		{% set submodule_path = submodule_path_lang | trim_start(pat="/" ~ lang) %}
 		<script defer src="{{ get_url(path="/scripts/lunr.stemmer.js", cachebust=true) }}"></script>
 		<script defer src="{{ get_url(path="/scripts/lunr." ~ lang ~ ".js", cachebust=true) }}"></script>
 		<script defer src="{{ submodule_path ~ "/public/search_index." ~ lang ~ ".js?h=" ~ hash }}"></script>
