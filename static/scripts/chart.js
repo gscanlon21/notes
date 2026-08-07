@@ -17,7 +17,7 @@ document.querySelectorAll("table").forEach(table => {
 	const mins = [];
 	const maxs = [];
 
-	[...table.tBodies[0].rows].forEach(row => {
+	Array.from(table.tBodies[0].rows).forEach(row => {
 		labels.push(row.cells[0].textContent.trim());
 		values.push(Number(row.cells[1].textContent));
 		mins.push(Number(row.cells[2].textContent));
@@ -51,6 +51,19 @@ document.querySelectorAll("table").forEach(table => {
 			]
 		},
 		options: {
+			responsive: true,
+			maintainAspectRatio: true,
+			elements: {
+				line: {
+					tension: 0.1,
+				},
+				point: {
+					// Increase the radius around the point when the tooltip shows
+					hitRadius: 5,
+					// Increase the size of the point when the user is withing the bounds of the hitRadius
+					hoverRadius: 5,
+				},
+			},
 			scales: {
 				x: {
 					// https://www.chartjs.org/docs/next/axes/cartesian/time.html
@@ -80,7 +93,21 @@ document.querySelectorAll("table").forEach(table => {
 					font: {
 						size: 18
 					}
-				}
+				},
+				legend: {
+					display: true,
+					labels: {
+						usePointStyle: false,
+					},
+				},
+				tooltip: {
+					callbacks: {
+						title: (context) => {
+							// Pretty-print the x-axis date in the hover tooltip
+							return new Date(context[0].parsed.x).toDateString();
+						},
+					},
+				},
 			}
 		}
 	});

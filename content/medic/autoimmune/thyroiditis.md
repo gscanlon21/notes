@@ -14,22 +14,41 @@ see_also = [
 
 # Terminology
 
-**?**
-: ?
+**Thyroid Peroxidase**
+: TPO
+
+**Thyroid Stimulating Hormone**
+: TSH
+
+**Thyroglobulin**
+: Tg
+
+**Antibody**
+: Ab
+
+**Grave's Disease**
+: Grave's disease is an autoimmune disorder that affects the thyroid gland and causes hyperthyroidism.
+
+**Hashimoto's Disease**
+: Hashimoto's disease is an autoimmune disorder that affects the thyroid gland and causes hypothyroidism.
 
 
 # Diagnostic Biomarkers
 
-**Thyroid Stimulating Hormone (TSH)**
+**Thyroid Stimulating Hormone**
+TSH
 : ?
 
-**Total Thyroxine (T4)**
+**Total Thyroxine**
+Total T4
 : ?
 
-**Free Thyroxine (T4)**
+**Free Thyroxine**
+Free T4
 : ?
 
-**Free Triiodothyronine (T3)**
+**Free Triiodothyronine**
+Free T3
 : ?
 
 
@@ -52,24 +71,36 @@ TgAb
 
 ## Quest
 
-**[Thyroid Peroxidase and Thyroglobulin Antibodies](https://testdirectory.questdiagnostics.com/test/test-detail/7260/thyroid-peroxidase-and-thyroglobulin-antibodies)**
-: ?
-
 **[Thyroid Panel with TSH](https://testdirectory.questdiagnostics.com/test/test-detail/7444/thyroid-panel-with-tsh)**
 : ?
 
 **[Comprehensive Thyroid Test Panel](https://www.questhealth.com/product/comprehensive-thyroid-test-panel/18659M.html)**
 : ?
 
+**[Thyroid Peroxidase and Thyroglobulin Antibodies](https://testdirectory.questdiagnostics.com/test/test-detail/7260/thyroid-peroxidase-and-thyroglobulin-antibodies)**
+: Measures TPOAb and TgAb.
+: Incomplete. Doesn't measure levels of thyroid hormones.
+: > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+
 
 ## Labcorp
-
-**[https://www.labcorp.com/tests/006684/thyroid-antibodies](https://www.labcorp.com/tests/006684/thyroid-antibodies)**
-: ?
 
 **[Thyroid Profile With TSH](https://www.labcorp.com/tests/000620/thyroid-profile-with-tsh)**
 : ?
 
+**[Thyroid Antibodies](https://www.labcorp.com/tests/006684/thyroid-antibodies)**
+: Includes Thyroid Peroxidase (TPO) Ab; Thyroglobulin Antibody.
+: Incomplete. Doesn't measure levels of thyroid hormones.
+: > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  
 
 ## Lifeextension
 
