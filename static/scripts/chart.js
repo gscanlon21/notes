@@ -53,11 +53,22 @@ document.querySelectorAll("table").forEach(table => {
 		options: {
 			scales: {
 				x: {
+					// https://www.chartjs.org/docs/next/axes/cartesian/time.html
 					type: "time",
 					time: {
-						unit: "day",
+						minUnit: 'day',
 						displayFormats: {
 							day: "yyyy-MM-dd"
+						}
+					},
+					ticks: {
+						major: {
+							// Allow displaying June 1st as just June
+							enabled: true,
+						},
+						font: (context) => {
+							// Bold major data points (June is bolded, June 11th is not)
+							return { weight: (context.tick && context.tick.major) ? 'bold' : '' };
 						}
 					}
 				}
