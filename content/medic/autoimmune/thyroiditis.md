@@ -3,7 +3,7 @@ title = "Autoimmune Thyroiditis"
 description = "Thyroid autoimmune disease."
 
 [extra]
-updated = 2026-01-01
+updated = 2027-01-01
 site_version = 1
 toc_level = 2
 see_also = [
