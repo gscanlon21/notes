@@ -20,7 +20,7 @@ document.querySelectorAll("table").forEach(table => {
 	const ratio = getComputedStyle(canvas).aspectRatio;
 	const [w, h] = ratio.split('/').map(Number);
 
-	Chart.defaults.font.size = 16;
+	Chart.defaults.font.size = 14;
 	new Chart(canvas, {
 		type: "line",
 		data: {
@@ -36,14 +36,14 @@ document.querySelectorAll("table").forEach(table => {
 					data: mins,
 					borderDash: [5, 5],
 					pointRadius: 0,
-					borderWidth: 1
+					borderWidth: 2,
 				},
 				{
 					label: "Max",
 					data: maxs,
 					borderDash: [5, 5],
 					pointRadius: 0,
-					borderWidth: 1
+					borderWidth: 2,
 				}
 			]
 		},
@@ -51,15 +51,16 @@ document.querySelectorAll("table").forEach(table => {
 			responsive: true,
 			aspectRatio: w / h,
 			maintainAspectRatio: true,
+			// https://www.chartjs.org/docs/latest/configuration/elements.html
 			elements: {
 				line: {
 					tension: 0.1,
 				},
 				point: {
 					// Increase the radius around the point when the tooltip shows.
-					hitRadius: 5,
+					hitRadius: 6,
 					// Increase the size of the point when the user is withing the bounds of the hitRadius.
-					hoverRadius: 5,
+					hoverRadius: 6,
 				},
 			},
 			scales: {
@@ -67,7 +68,7 @@ document.querySelectorAll("table").forEach(table => {
 					// https://www.chartjs.org/docs/next/axes/cartesian/time.html
 					type: "time",
 					time: {
-						minUnit: 'day',
+						minUnit: 'month',
 						displayFormats: {
 							day: "yyyy-MM-dd"
 						}
@@ -89,15 +90,10 @@ document.querySelectorAll("table").forEach(table => {
 					display: true,
 					text: title,
 					font: {
-						size: 18
-					}
-				},
-				legend: {
-					display: true,
-					labels: {
-						usePointStyle: false,
+						size: 18,
 					},
 				},
+				// https://www.chartjs.org/docs/latest/configuration/tooltip.html
 				tooltip: {
 					callbacks: {
 						title: (context) => {
@@ -105,6 +101,9 @@ document.querySelectorAll("table").forEach(table => {
 							return new Date(context[0].parsed.x).toDateString();
 						},
 					},
+				},
+				legend: {
+					display: false,
 				},
 			}
 		}

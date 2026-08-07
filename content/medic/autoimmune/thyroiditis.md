@@ -14,21 +14,29 @@ see_also = [
 
 # Terminology
 
-**Thyroid Peroxidase**
-TPO
-: ?
+**Pituitary Gland**
+: Your thyroid is controlled by a gland in your brain called the pituitary gland.
+: The pituitary gland makes thyroid-stimulating hormone (TSH).
 
 **Thyroid Stimulating Hormone**
 TSH
-: ?
+: Prompts the thyroid gland to increase hormone production.
+
+**Thyroid Peroxidase**
+TPO
+: An enzyme expressed mainly in the thyroid.
+: Used by the thyroid gland to make thyroid hormones (T4 and T3) and store iodine in the body.
 
 **Thyroglobulin**
 Tg
-: ?
+: A precursor to thyroid hormones that is produced by the thyroid gland.
+: Thyroglobulin is a large protein used by the thyroid gland to make thyroid hormones (T4 and T3) and store iodine in the body.
 
 **Antibody**
 Ab
-: ?
+: Also known as immunoglobulins.
+: A large protein used by the immune system to identify and neutralize antigens such as those that exist on bacteria and virus cells, including those that cause disease. 
+: Each individual antibody recognizes one or more specific antigens, and antigens (a portmanteau of "antibody generator") of virtually any size and chemical composition can be recognized.
 
 **Grave's Disease**
 : Grave's disease is an autoimmune disorder that affects the thyroid gland and causes hyperthyroidism.
@@ -41,7 +49,14 @@ Ab
 
 **Thyroid Stimulating Hormone**
 TSH
-: Evaluates overall thyroid function.
+: TSH tells your thyroid how much thyroid hormone it needs to make.
+: - Too much TSH may signal your thyroid gland to produce too many hormones.
+: - Too little TSH may not signal to your thyroid gland to produce enough hormones.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
 
 **Total Thyroxine**
 Total T4
@@ -66,6 +81,10 @@ Thyroid Hormone-binding Ratio (THBR)
 
 ## Antibodies
 
+**Thyroglobulin Antibody**
+TgAb
+: More suggestive of Hashimoto's disease.
+
 **Thyroid Peroxidase Antibody**
 TPOAb
 : Indicative of Hashimoto's disease, Grave's disease, and possibly thyroid cancer.
@@ -74,62 +93,52 @@ TPOAb
 TSHR-Ab
 : Strongly linked to  Graves' disease.
 
-**Thyroglobulin Antibody**
-TgAb
-: More suggestive of Hashimoto's disease.
-
 **Thyroid Stimulating Immunoglobulin**
 TSI
-: ?
+: Strongly linked to  Graves' disease.
+
 
 # Diagnostic Testing
 
-## Quest
+**Hormone Testing**
+: Good for maintenance.
 
-**[Thyroid Panel with TSH](https://testdirectory.questdiagnostics.com/test/test-detail/7444/thyroid-panel-with-tsh)**
-: Includes: T3 Uptake, T4 (Thyroxine) Total, Free T4 Index (T7), TSH.
-
-**[Comprehensive Thyroid Test Panel](https://www.questhealth.com/product/comprehensive-thyroid-test-panel/18659M.html)**
-: Includes: Thyroid-stimulating hormone (TSH); Free T4; Free T3; Thyroid peroxidase (TPO) antibodies; Thyroglobulin (Tg) antibodies.
-
-**[Thyroid Peroxidase and Thyroglobulin Antibodies](https://testdirectory.questdiagnostics.com/test/test-detail/7260/thyroid-peroxidase-and-thyroglobulin-antibodies)**
-: Measures TPOAb and TgAb.
-: Incomplete. Doesn't measure levels of thyroid hormones.
-: > - [x] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
+**Antibody Testing**
+: Good for diagnosing thyroid autoimmunity.
+: Less important to get rechecked often.
 
 
-## Labcorp
-
-**[Thyroid Profile With TSH](https://www.labcorp.com/tests/000620/thyroid-profile-with-tsh)**
-: Includes: Free thyroxine index; T3 uptake (THBR); thyroid-stimulating hormone (TSH); thyroxine (T4).
-
-**[Thyroid Antibodies](https://www.labcorp.com/tests/006684/thyroid-antibodies)**
-: Includes Thyroid Peroxidase (TPO) Ab; Thyroglobulin Antibody.
-: Incomplete. Doesn't measure levels of thyroid hormones.
-: > - [x] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-
-
-## Lifeextension
-
-**[Thyroid Panel (TSH, T4, Free T4, Free T3) Blood Test](https://www.lifeextension.com/lab-testing/itemqd304131/thyroid-panel-tsh-t4-free-t4-free-t3-blood-test)**
-: Includes: Thyroid-Stimulating Hormone (TSH), Total Thyroxine (T4), Free Thyroxine (T4), Free Tri-iodothyronine (T3).
+## Life Extension
 
 **[Comprehensive Thyroid Panel](https://www.lifeextension.com/lab-testing/itemqd100018/comprehensive-thyroid-panel)**
-: Includes: Thyroid-Stimulating Hormone (TSH), Total Thyroxine (T4), Free Thyroxine (T4), Free Tri-iodothyronine (T3), Reverse T3, Thyroglobulin antibody (ATA), Thyroid Peroxidase antibody (TPO).
+_TSH, T4, Free T4, Free T3, Reverse T3, TgAb, TPOAb_
+: Good for maintenance.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
 
 **[Thyroid Panel with Reverse T3](https://www.lifeextension.com/lab-testing/itemqd100044/thyroid-panel-with-reverse-t3)**
-: Includes: Thyroid-Stimulating Hormone (TSH); Total Thyroxine (T4); Free Thyroxine (T4); Free Tri-iodothyronine (T3); Reverse T3.
+_TSH, T4, Free T4, Free T3, Reverse T3_
+: Good for maintenance.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+
+**[Thyroid Panel Blood Test](https://www.lifeextension.com/lab-testing/itemqd304131/thyroid-panel-tsh-t4-free-t4-free-t3-blood-test)**
+_TSH, T4, Free T4, Free T3_
+: Good for maintenance.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
 
 **[Thyroid Antibody Panel Blood Test](https://www.lifeextension.com/lab-testing/itemqd100004/thyroid-antibody-panel-blood-test)**
-: Includes: Thyroid antithyroglobulin antibody (ATA); Thyroid peroxidase antibody (TPO).
+_TgAb, TPOAb_
 : Incomplete. Doesn't measure levels of thyroid hormones.
 : > - [x] 
   > - [ ] 
@@ -137,3 +146,27 @@ TSI
   > - [ ] 
   > - [ ] 
   
+
+## Quest Health
+
+**[Comprehensive Thyroid Test Panel](https://www.questhealth.com/product/comprehensive-thyroid-test-panel/18659M.html)**
+_TSH, T4, Free T4, Free T3, TgAb, TPOAb_
+: Too expensive.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+
+
+## Labcorp OnDemand
+
+**[Standard Thyroid Test](https://www.ondemand.labcorp.com/lab-tests/thyroid-test)**
+_TSH, Free T4_
+: Incomplete. Does not measure T3.
+: Too expensive.
+: > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
