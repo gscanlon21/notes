@@ -66,10 +66,16 @@
 		<script defer src="{{ submodule_path ~ "/public/search_index." ~ lang ~ ".js?h=" ~ hash }}"></script>
 	{% endif %}
 
+	{% if page?.extra?.scripts | default(value=section?.extra?.scripts) %}
+		{% for script in page?.extra?.scripts | default(value=section?.extra?.scripts) %}
+			<script src="{{ script | safe }}"></script>
+		{% endfor %}
+	{% endif %}
+
 	<script defer src="{{ get_url(path="/scripts/search.js", cachebust=true) }}"></script>
 	<script defer src="{{ get_url(path="/scripts/content.js", cachebust=true) }}"></script>
 	<script defer src="{{ get_url(path="/scripts/flashcards.js", cachebust=true) }}"></script>
-	<script type="module" src="{{ get_url(path="/scripts/chart.js", cachebust=true) }}"></script>
+	<script defer src="{{ get_url(path="/scripts/chart.js", cachebust=true) }}"></script>
 
 	{% if page?.extra?.stylesheets | default(value=section?.extra?.stylesheets) %}
 		{% for stylesheet in page?.extra?.stylesheets | default(value=section?.extra?.stylesheets) %}

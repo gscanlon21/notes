@@ -1,5 +1,3 @@
-import { Chart } from "https://cdn.jsdelivr.net/npm/chart.js/auto/+esm";
-
 document.querySelectorAll("table").forEach(table => {
     const firstHeader = table.tHead?.rows[0]?.cells[0]?.textContent?.trim();
 	const title = table.tHead?.rows[0]?.cells[1]?.textContent?.trim();
@@ -53,6 +51,17 @@ document.querySelectorAll("table").forEach(table => {
 			]
 		},
 		options: {
+			scales: {
+				x: {
+					type: "time",
+					time: {
+						unit: "day",
+						displayFormats: {
+							day: "yyyy-MM-dd"
+						}
+					}
+				}
+			},
 			plugins: {
 				title: {
 					display: true,
