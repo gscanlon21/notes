@@ -16,6 +16,11 @@ document.querySelectorAll("table").forEach(table => {
 
 	const canvas = document.createElement("canvas");
 	table.replaceWith(canvas);
+
+	const ratio = getComputedStyle(canvas).aspectRatio;
+	const [w, h] = ratio.split('/').map(Number);
+
+	Chart.defaults.font.size = 16;
 	new Chart(canvas, {
 		type: "line",
 		data: {
@@ -44,15 +49,16 @@ document.querySelectorAll("table").forEach(table => {
 		},
 		options: {
 			responsive: true,
-			maintainAspectRatio: false,
+			aspectRatio: w / h,
+			maintainAspectRatio: true,
 			elements: {
 				line: {
 					tension: 0.1,
 				},
 				point: {
-					// Increase the radius around the point when the tooltip shows
+					// Increase the radius around the point when the tooltip shows.
 					hitRadius: 5,
-					// Increase the size of the point when the user is withing the bounds of the hitRadius
+					// Increase the size of the point when the user is withing the bounds of the hitRadius.
 					hoverRadius: 5,
 				},
 			},
