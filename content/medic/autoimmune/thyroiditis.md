@@ -7,9 +7,14 @@ updated = 2027-01-01
 site_version = 1
 toc_level = 2
 see_also = [
+  { title = "Thyroid Function Tests", href = "https://www.thyroid.org/thyroid-function-tests/" },
   { title = "Hashimoto's Thyroiditis", href = "https://www.hopkinsmedicine.org/health/conditions-and-diseases/hashimotos-thyroiditis" },
 ]
 +++
+
+> [!CAUTION]
+> Biotin (vitamin B7) should not be taken for 2 days before blood is drawn for accurate thyroid function testing.
+>> Medications That Interfere with Thyroid Function Testing
 
 
 # Terminology
@@ -18,9 +23,13 @@ see_also = [
 : Your thyroid is controlled by a gland in your brain called the pituitary gland.
 : The pituitary gland makes thyroid-stimulating hormone (TSH).
 
-**Thyroid Stimulating Hormone**
-TSH
-: Prompts the thyroid gland to increase hormone production.
+
+## Biomolecules
+
+**Thyrotropin-Releasing Hormone**
+: TRH
+: Produced by neurons in the hypothalamus.
+: Stimulates the release of thyroid-stimulating hormone (TSH).
 
 **Thyroid Peroxidase**
 TPO
@@ -32,11 +41,24 @@ Tg
 : A precursor to thyroid hormones that is produced by the thyroid gland.
 : Thyroglobulin is a large protein used by the thyroid gland to make thyroid hormones (T4 and T3) and store iodine in the body.
 
+**Thyroid Stimulating Hormone**
+TSH
+: Prompts the thyroid gland to increase hormone production.
+
+**Triiodothyronine**
+: The T3 hormone.
+
+**Thyroxine**
+: The T4 hormone.
+
 **Antibody**
 Ab
 : Also known as immunoglobulins.
 : A large protein used by the immune system to identify and neutralize antigens such as those that exist on bacteria and virus cells, including those that cause disease. 
 : Each individual antibody recognizes one or more specific antigens, and antigens (a portmanteau of "antibody generator") of virtually any size and chemical composition can be recognized.
+
+
+## Pathologies
 
 **Grave's Disease**
 : Grave's disease is an autoimmune disorder that affects the thyroid gland and causes hyperthyroidism.
@@ -58,26 +80,48 @@ TSH
   > - [x] 
   > - [x] 
 
-**Total Thyroxine**
-Total T4
+**Total T4**
 : Measures the total amount of T4 produced by the thyroid gland.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
 
-**Free Thyroxine**
-Free T4
+**Free T4**
 : Measures the amount of T4 available to the cells and tissues.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
 
-**Free Tri-iodothyronine**
-Free T3
+**Free T3**
 : Measures the amount of T3 (the active form of the hormone) available to the cells and tissues
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+
+**Thyrotropin-Releasing Hormone**
+TRH
+: Used in the diagnosis of hyperthyroidism.
+: > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
 
 **Reverse T3**
 : Measures the non-functioning form of the active hormone T3.
+: > In healthy, non-hospitalized people, measurement of reverse T3 does not help determine whether hypothyroidism exists or not, and is not clinically useful.
+: > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
 
-**T3 Uptake**
-Thyroid Hormone-binding Ratio (THBR)
-: This is a thyroid function test for the diagnosis of hypothyroidism or hyperthyroidism, used with thyroxine (T4) or equivalent to provide free T4 index, FTI. 
-: An indirect measure of binding protein, the T3 uptake reflects available binding sites (i.e., reflects TBG). 
-: T3 uptake is not a measurement of serum T3. It should never be used alone; rather, its usual application is use with thyroxine (T4).
 
 ## Antibodies
 
@@ -91,10 +135,14 @@ TPOAb
 
 **Thyroid-Stimulating Hormone Receptor Antibody**
 TSHR-Ab
-: Strongly linked to  Graves' disease.
+: Strongly linked to Graves' disease.
 
 **Thyroid Stimulating Immunoglobulin**
 TSI
+: Strongly linked to Graves' disease.
+
+**Thyrotropin Receptor Antibody**
+TRAb
 : Strongly linked to  Graves' disease.
 
 
