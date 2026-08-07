@@ -78,6 +78,9 @@ TSHR-Ab
 TgAb
 : More suggestive of Hashimoto's disease.
 
+**Thyroid Stimulating Immunoglobulin**
+TSI
+: ?
 
 # Diagnostic Testing
 
