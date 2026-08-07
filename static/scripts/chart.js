@@ -6,17 +6,7 @@ document.querySelectorAll("table").forEach(table => {
         return;
     }
 
-	const canvas = document.createElement("canvas");
-	canvas.height = 400;
-	canvas.width = 800;
-
-	table.replaceWith(canvas);
-
-    const labels = [];
-	const values = [];
-	const mins = [];
-	const maxs = [];
-
+    const labels = [], values = [], mins = [], maxs = [];
 	Array.from(table.tBodies[0].rows).forEach(row => {
 		labels.push(row.cells[0].textContent.trim());
 		values.push(Number(row.cells[1].textContent));
@@ -24,6 +14,8 @@ document.querySelectorAll("table").forEach(table => {
 		maxs.push(Number(row.cells[3].textContent));
 	});
 
+	const canvas = document.createElement("canvas");
+	table.replaceWith(canvas);
 	new Chart(canvas, {
 		type: "line",
 		data: {
@@ -52,7 +44,7 @@ document.querySelectorAll("table").forEach(table => {
 		},
 		options: {
 			responsive: true,
-			maintainAspectRatio: true,
+			maintainAspectRatio: false,
 			elements: {
 				line: {
 					tension: 0.1,

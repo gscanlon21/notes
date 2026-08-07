@@ -1,0 +1,16 @@
+canvas + canvas {
+	margin-block-start: $base-padding * 1.25;
+}
+
+
+@media (max-width: ($small-width - 1px)) {
+	canvas {
+		aspect-ratio: 4 / 3;
+	}
+}
+
+@media (min-width: $small-width) {
+	canvas {
+		aspect-ratio: 2 / 1;
+	}	
+}
