@@ -64,6 +64,9 @@ document.querySelectorAll("table").forEach(table => {
 				},
 			},
 			scales: {
+				y: {
+					min: 0,
+				},
 				x: {
 					// https://www.chartjs.org/docs/next/axes/cartesian/time.html
 					type: "time",
