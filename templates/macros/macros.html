@@ -147,15 +147,14 @@
 <h3 class="sitemap-title">Siblings</h3>
 <nav class="sitemap">
 	{% if for.ancestors | last %}
-	{% set ancestor_section = get_section(path=for.ancestors | last, lang=lang, allow_missing=false) %}
-	{% if ancestor_section %}
-	{# If this is a section and the parent section is transparent #}
-	{% if section and ancestor_section.transparent %}
-		{{<macros.render_sitemap config={config} lang={lang} path={for.relative_path} first_pass={true} current_path={for.relative_path} />}}
-	{% else %}
-		{{<macros.render_sitemap config={config} lang={lang} path={ancestor_section.relative_path} first_pass={true} current_path={for.relative_path} />}}
-	{% endif %}
-	{% endif %}
+		{% set ancestor_section = get_section(path=for.ancestors | last, lang=lang, allow_missing=false) %}
+		{% if ancestor_section %}
+			{% if section and ancestor_section.transparent %}
+				{{<macros.render_sitemap config={config} lang={lang} path={for.relative_path} first_pass={true} current_path={for.relative_path} />}}
+			{% else %}
+				{{<macros.render_sitemap config={config} lang={lang} path={ancestor_section.relative_path} first_pass={true} current_path={for.relative_path} />}}
+			{% endif %}
+		{% endif %}
 	{% endif %}
 </nav>
 {% endcomponent macros.render_siblings %}

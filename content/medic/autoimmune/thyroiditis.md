@@ -80,14 +80,6 @@ TSH
   > - [x] 
   > - [x] 
 
-**Total T4**
-: Measures the total amount of T4 produced by the thyroid gland.
-: > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [x] 
-
 **Free T4**
 : Measures the amount of T4 available to the cells and tissues.
 : > - [x] 
@@ -96,17 +88,26 @@ TSH
   > - [x] 
   > - [x] 
 
-**Free T3**
-: Measures the amount of T3 (the active form of the hormone) available to the cells and tissues
+**Total T4**
+: Measures the total amount of T4 produced by the thyroid gland.
 : > - [x] 
   > - [x] 
   > - [x] 
   > - [x] 
-  > - [x] 
+  > - [ ] 
 
-**Thyrotropin-Releasing Hormone**
-TRH
-: Used in the diagnosis of hyperthyroidism.
+**Total T3**
+: Measures the total amount of T3 produced by the thyroid gland.
+: > T3 testing rarely is helpful in the hypothyroid patient, since it is the last test to become abnormal. Patients can be severely hypothyroid with a high TSH and low FT4 or FTI, but have a normal T3.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+
+**Free T3**
+: Measures the amount of T3 (the active form of the hormone) available to the cells and tissues.
+: > Measurement of free T3 is possible, but is often not reliable and therefore not typically helpful.
 : > - [x] 
   > - [x] 
   > - [ ] 
