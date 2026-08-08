@@ -1,7 +1,6 @@
 h5:has(+ canvas) {
-	position: absolute;
-	color: transparent;
-	font-size: 0;
+	text-align: center;
+	font-style: normal;
 }
 
 canvas + canvas, div:has(> canvas) + div:has(> canvas) {

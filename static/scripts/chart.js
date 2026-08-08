@@ -93,14 +93,6 @@ document.querySelectorAll("table").forEach(table => {
 				}
 			},
 			plugins: {
-				title: {
-					text: title,
-					display: true,
-					color: "rgb(var(--color-text))",
-					font: {
-						size: 18,
-					},
-				},
 				// https://www.chartjs.org/docs/latest/configuration/tooltip.html
 				tooltip: {
 					mode: 'point',
@@ -113,6 +105,9 @@ document.querySelectorAll("table").forEach(table => {
 					},
 				},
 				legend: {
+					display: false,
+				},
+				title: {
 					display: false,
 				},
 			}
