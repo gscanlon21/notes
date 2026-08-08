@@ -105,6 +105,8 @@ document.querySelectorAll("table").forEach(table => {
 				},
 				// https://www.chartjs.org/docs/latest/configuration/tooltip.html
 				tooltip: {
+					mode: 'point',
+					intersect: true,
 					callbacks: {
 						title: (context) => {
 							// Pretty-print the x-axis date in the hover tooltip
