@@ -70,9 +70,6 @@ document.querySelectorAll("table").forEach(table => {
 				},
 			},
 			scales: {
-				y: {
-					suggestedMin: 0,
-				},
 				x: {
 					// https://www.chartjs.org/docs/next/axes/cartesian/time.html
 					type: "time",
@@ -97,8 +94,9 @@ document.querySelectorAll("table").forEach(table => {
 			},
 			plugins: {
 				title: {
-					display: true,
 					text: title,
+					display: true,
+					color: "rgb(var(--color-text))",
 					font: {
 						size: 18,
 					},
