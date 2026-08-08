@@ -9,17 +9,17 @@
 
         <div class="sidebar-right header">
 			<div class="header-item">
-				{{<macros.render_ancestors for={page} lang={lang} />}}
+				{{<macros.render_ancestors for={page} config={config} lang={lang} />}}
 			</div>
             
 			<div class="header-item">
-				{{<macros.render_siblings config={config} for={page} lang={lang} />}}
+				{{<macros.render_siblings for={page} config={config} lang={lang} />}}
             </div>
 
             <div class="header-item screen-large">
                 <h3 class="sitemap-title">Sitemap</h3>
                 <nav class="sitemap">
-					{{<macros.render_sitemap config={config} lang={lang} path="_index.md" />}}
+					{{<macros.render_sitemap path="_index.md" config={config} lang={lang} />}}
                 </nav>
             </div>
         </div>
