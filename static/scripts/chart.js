@@ -14,10 +14,8 @@ document.querySelectorAll("table").forEach(table => {
 		maxs.push(Number(row.cells[3].textContent));
 	});
 
-	const wrapper = document.createElement("div");
 	const canvas = document.createElement("canvas");
-	wrapper.appendChild(canvas);
-	table.replaceWith(wrapper);
+	table.replaceWith(canvas);
 
 	const ratio = getComputedStyle(canvas).aspectRatio;
 	const [w, h] = ratio.split('/').map(Number);

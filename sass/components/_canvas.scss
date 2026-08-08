@@ -4,12 +4,12 @@ canvas + canvas {
 
 @media (max-width: ($small-width - 1px)) {
 	canvas {
-		aspect-ratio: 4 / 3;
+		aspect-ratio: 16 / 9;
 	}
 }
 
 @media (min-width: $small-width) {
 	canvas {
-		aspect-ratio: 5 / 2;
+		aspect-ratio: 25 / 9;
 	}	
 }
