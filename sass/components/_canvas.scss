@@ -1,4 +1,10 @@
-canvas + canvas {
+h5:has(+ canvas) {
+	color: color(--color-bg);
+	position: absolute;
+	font-size: 0;
+}
+
+canvas + canvas, div:has(> canvas) + div:has(> canvas) {
 	margin-block-start: $base-padding * 2.25;
 }
 
@@ -10,6 +16,6 @@ canvas + canvas {
 
 @media (min-width: $small-width) {
 	canvas {
-		aspect-ratio: 25 / 9;
+		aspect-ratio: 21 / 6;
 	}	
 }

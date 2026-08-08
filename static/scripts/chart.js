@@ -14,8 +14,14 @@ document.querySelectorAll("table").forEach(table => {
 		maxs.push(Number(row.cells[3].textContent));
 	});
 
+	const titleElement = document.createElement("h5");
 	const canvas = document.createElement("canvas");
-	table.replaceWith(canvas);
+	const wrapper = document.createElement("div");
+
+	titleElement.textContent = title;
+	wrapper.appendChild(titleElement);
+	wrapper.appendChild(canvas);
+	table.replaceWith(wrapper);
 
 	const ratio = getComputedStyle(canvas).aspectRatio;
 	const [w, h] = ratio.split('/').map(Number);
@@ -65,7 +71,7 @@ document.querySelectorAll("table").forEach(table => {
 			},
 			scales: {
 				y: {
-					min: 0,
+					suggestedMin: 0,
 				},
 				x: {
 					// https://www.chartjs.org/docs/next/axes/cartesian/time.html
@@ -77,6 +83,7 @@ document.querySelectorAll("table").forEach(table => {
 						}
 					},
 					ticks: {
+						maxTicksLimit: 5,
 						major: {
 							// Allow displaying June 1st as just June
 							enabled: true,
