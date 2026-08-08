@@ -119,21 +119,18 @@
 {#
     Iterates though the site's ancestors and renders lists for each.
 #}
-{% component macros.render_ancestors(page, section, ancestors) %}
+{% component macros.render_ancestors(for, lang: string) %}
 <h3 class="sitemap-title header-title">Ancestors</h3>
 <nav class="sitemap">
 	<menu class="sitemap-list">
-		{% for ancestor in ancestors %}
-			{% set ancestor_info = get_section(path=ancestor, allow_missing=true) %}
-			{% if ancestor_info %}
+		{% for ancestor in for.ancestors %}
+			{% set ancestor_info = get_section(path=ancestor, lang=lang, allow_missing=false) %}
 			{% if not ancestor_info.transparent and ancestor_info.relative_path != "_index.no.md" %}
 				<li><a href="{{ get_url(path="@/" ~ ancestor_info.relative_path) }}">{{ ancestor_info.title }}</a></li>
 			{% endif %}
-			{% endif %}
 		{% endfor %}
-		{% if section?.transparent | default(value=page?.transparent | default(value=false)) != true
-			and section?.relative_path | default(value=page?.relative_path) != "_index.no.md" %}
-			<li class="current">{{ section?.title | default(value=page?.title) | safe }}</li>
+		{% if for.transparent != true and for.relative_path != "_index.no.md" %}
+			<li class="current">{{ for.title | safe }}</li>
 		{% endif %}
 	</menu>
 </nav>
