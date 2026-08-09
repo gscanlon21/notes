@@ -45,7 +45,7 @@
 #}
 {% component macros.render_list_links(config, pages, current_path: string = "", sort: bool = false) %}
 {% for item in pages %}
-	{% set show_localhost = config?.base_url == "http://127.0.0.1:1111" and current_path == '' %}
+	{% set show_localhost = config.mode == "serve" and current_path == '' %}
     {% if current_path != '' or item.relative_path is not containing(pat="doi") or item.relative_path is not containing(pat="/index.md") %}
 	{% if item.extra.in_sitemap | default(value=true) or show_localhost %}
         {% if item.relative_path == current_path %}
@@ -69,7 +69,7 @@
     Iterates though the site's pages and subsection and renders nested lists for each.
 #}
 {% component macros.render_sitemap(config, path: string, lang: string, first_pass: bool = true, current_path: string = "") %}
-{% set show_localhost = config.base_url == "http://127.0.0.1:1111" and current_path == '' %}
+{% set show_localhost = config.mode == "serve" and current_path == '' %}
 {% set section_info = get_section(path=path, lang=lang) %}
 {% if section_info.extra.section_sort_by | default(value="none") == "weight" %}
 	{% set subsections = section_info.subsections %}
