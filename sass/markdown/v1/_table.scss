@@ -87,10 +87,12 @@ article.v1 {
 	}
 
 	table {
-		width: 100%;
+		width: stretch;
 		border-spacing: 0;
 		border-collapse: collapse;
 		margin-block-start: $base-padding * 0.1;
+		/* Or else print border gets cut off: */
+		margin-inline-end: 1px;
 
 		th:empty {
 			border: 0;

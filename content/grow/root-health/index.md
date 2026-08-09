@@ -13,25 +13,93 @@ see_also = [
 +++
 
 
-| Domain                | 0 = healthy         | 1                | 2                     | 3 = severe                        |
-| --------------------- | ------------------- | ---------------- | --------------------- | --------------------------------- |
-| **Root color**        | White/cream         | Slight tan       | Brown/gray            | Dark brown/black                  |
-| **Texture**           | Firm, crisp         | Slightly soft    | Soft                  | Mushy/slimy                       |
-| **Odor**              | None/earthy         | Slightly unusual | Noticeable sour/musty | Rotten/swampy                     |
-| **Root hairs**        | Abundant            | Mild reduction   | Sparse                | Essentially absent                |
-| **Branching/density** | Dense, vigorous     | Mildly reduced   | Sparse                | Major dieback                     |
-| **Root Integrity**    | Intact              | Minor damage     | Some sloughing        | Sheath sloughs/roots disintegrate |
-| **New root growth**   | Strong white growth | Present          | Minimal               | None                              |
-| **Plant response**    | Vigorous            | Mild stress      | Wilting/yellowing     | Severe decline                    |
+# Assessment
+
+| Assessment                    | 0 | 1 | 2 | 3 |
+|-------------------------------|---|---|---|---|
+| [**Abundance**](#abundance)   |   |   |   |   |
+| [**Branching**](#branching)   |   |   |   |   |
+| [**Root Color**](#root-color) |   |   |   |   |
+| [**Root Hairs**](#root-hairs) |   |   |   |   |
+| [**Texture**](#texture)       |   |   |   |   |
 
 
+#### Abundance
+#### _[go back](#assessment)
 
-The width of the tap root.
-The number of roots extending below the excavation point.
-Any horizontal growth or sharp angles, which may indicate potential soil barriers or
-compaction.
+**0**
+: Roots are abundant.
+
+**1**
+: Growth is moderate.
+
+**2**
+: Growth is poor.
+
+**3**
+: Growth is minimal.
 
 
-Poor: Roots are restricted, sparse, or lack abundant growth.
-Fair: Roots are somewhat restricted, with some fine roots visible, but growth is moderate.
-Good: Roots are abundant, well-branched, and appear unrestricted, indicating healthy growth.
+#### Branching
+#### _[go back](#assessment)
+
+**0**
+: Roots are well-branched.
+
+**1**
+: Roots are somewhat restricted, with some fine roots visible, but growth is moderate.
+
+**2**
+: Roots are restricted, sparse, or lack abundant growth.
+
+**3**
+: Growth is minimal.
+
+
+#### Root Color
+#### _[go back](#assessment)
+
+**0**
+: White/Cream   
+
+**1**
+: Slight Tan
+
+**2**
+: Brown/Gray           
+
+**3**
+: Dark Brown/Black
+
+
+#### Root Hairs
+#### _[go back](#assessment)
+
+**0**
+: Abundant
+
+**1**
+: Some 
+
+**2**
+: Sparse
+
+**3**
+: Absent
+
+
+#### Texture
+#### _[go back](#assessment)
+
+**0**
+: Firm, crisp  
+
+**1**
+: Slightly soft
+
+**2**
+: Soft
+
+**3**
+: Mushy/slimy
+
