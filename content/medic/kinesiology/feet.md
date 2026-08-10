@@ -12,7 +12,7 @@ see_also = [
 ]
 +++
 
-
+Try a felt! metatarsal pad. Can cut out some above the 2nd mtp joint to relieve pressure.
 
 
 # Capsulitis

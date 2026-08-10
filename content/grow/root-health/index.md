@@ -7,6 +7,7 @@ updated = 2027-01-01
 site_version = 1
 toc_level = 2
 see_also = [
+  { title = "Lettuce Root Structure", href = "https://soilandhealth.org/wp-content/uploads/01aglibrary/010137veg.roots/010137ch34.html" },
   { title = "Speed II Questionnaire", href = "https://visionsource-snydereyegroup.com/wp-content/uploads/sites/958/2018/10/SPEED-II.pdf" },
   { title = "Root Growth Assessment", href = "https://cog.ca/wp-content/uploads/2025/04/COG_Root-Growth-Assessment-Field-Sheet_Regenerative-Organic-Hub.pdf" },
 ]
@@ -17,89 +18,55 @@ see_also = [
 
 | Assessment                    | 0 | 1 | 2 | 3 |
 |-------------------------------|---|---|---|---|
-| [**Abundance**](#abundance)   |   |   |   |   |
 | [**Branching**](#branching)   |   |   |   |   |
 | [**Root Color**](#root-color) |   |   |   |   |
-| [**Root Hairs**](#root-hairs) |   |   |   |   |
 | [**Texture**](#texture)       |   |   |   |   |
-
-
-#### Abundance
-#### _[go back](#assessment)
-
-**0**
-: Roots are abundant.
-
-**1**
-: Growth is moderate.
-
-**2**
-: Growth is poor.
-
-**3**
-: Growth is minimal.
 
 
 #### Branching
 #### _[go back](#assessment)
 
 **0**
-: Roots are well-branched.
+: Numerous lateral and fine roots form a dense, well-distributed network.
 
 **1**
-: Roots are somewhat restricted, with some fine roots visible, but growth is moderate.
+: Lateral roots are present and reasonably distributed, but branching is somewhat reduced.
 
 **2**
-: Roots are restricted, sparse, or lack abundant growth.
+: Lateral roots are relatively few, short, or poorly branched; substantial areas of the root system are sparsely occupied.
 
 **3**
-: Growth is minimal.
+: Very few lateral roots are present, or the roots are predominantly unbranched/coiled with little fine-root development.
 
 
 #### Root Color
 #### _[go back](#assessment)
 
 **0**
-: White/Cream   
+: Predominantly white to cream, especially on actively growing root portions.
 
 **1**
-: Slight Tan
+: Mostly healthy white/cream roots with noticeable light tan discoloration.
 
 **2**
-: Brown/Gray           
+: A substantial portion of the roots are brown or gray.      
 
 **3**
-: Dark Brown/Black
-
-
-#### Root Hairs
-#### _[go back](#assessment)
-
-**0**
-: Abundant
-
-**1**
-: Some 
-
-**2**
-: Sparse
-
-**3**
-: Absent
+: Roots are predominantly dark brown to black.
 
 
 #### Texture
 #### _[go back](#assessment)
 
 **0**
-: Firm, crisp  
+: Roots are firm and resilient when gently handled.
 
 **1**
-: Slightly soft
+: Roots have slight loss of firmness but remain structurally intact.
 
 **2**
-: Soft
+: Roots are noticeably soft and lack normal firmness.
 
 **3**
-: Mushy/slimy
+: Roots are mushy, slimy, collapsing, or readily disintegrate when handled.
 
