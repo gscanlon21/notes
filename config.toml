@@ -33,11 +33,13 @@ hard_link_static = true
 # The default language.
 default_language = "en"
 
+
+###########
 [languages]
 [languages.no]
-build_search_index = false
 
 
+########
 [search]
 # Whether to include the title of the page/section in the index.
 include_title = true
@@ -58,6 +60,7 @@ include_content = true
 truncate_content_length = 10000
 
 
+##############
 [link_checker]
 # Skip link checking for external URLs that start with these prefixes.
 skip_prefixes = []
@@ -72,7 +75,7 @@ internal_level = "error"
 external_level = "error"
 
 
-
+##########
 [markdown]
 # If this is true, a `rel="noopener"` will always automatically be added for security reasons.
 external_links_target_blank = true
@@ -96,7 +99,7 @@ github_alerts = true
 bottom_footnotes = true
 
 
-# https://github.com/getzola/giallo?tab=readme-ov-file#built-in
+####################### https://github.com/getzola/giallo?tab=readme-ov-file#built-in
 [markdown.highlighting]
 error_on_missing_language = false
 
@@ -112,9 +115,16 @@ theme = "min-dark"
 #light_theme = "gruvbox-light"
 #dark_theme = "github-dark"
 
+# Where to insert the data attributes for codeblocks. Default to on the <code> element.
+# Other options are: "pre", "both" and "none"
+data_attr_position = "both"
 
+
+#########
 [slugify]
 paths = "safe"
 
+
+#######
 [extra]
 # Put all your custom variables here
