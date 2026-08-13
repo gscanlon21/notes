@@ -3,7 +3,7 @@ title = "Browsers"
 sort_by = "title"
 
 [extra]
-updated = 2026-06-01
+updated = 2027-01-01
 site_version = 1
 toc_level = 2
 see_also = [
@@ -14,3 +14,20 @@ see_also = [
 +++
 
 
+# Browser Extensions
+
+## uBlock Origin
+
+### Filter Syntax
+
+`@@`
+_Allow Rule_
+: Negates another filter.
+
+`||`
+_Domain Match_
+: Means the root domain, including subdomain prefixes.
+
+`^`
+_Separator Character_
+: Matches a URL separator such as /, ?, &, =, :, or the end of the URL.
