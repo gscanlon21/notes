@@ -145,15 +145,15 @@
 {#
     Renders a page's siblings.
 #}
-{% component macros.render_siblings(config, for, lang: string) %}
+{% component macros.render_siblings(for, config, lang: string) %}
 <h3 class="sitemap-title">Siblings</h3>
 <nav class="sitemap">
 	{% if for.ancestors | last %}
 		{% set ancestor_section = get_section(path=for.ancestors | last, lang=lang, allow_missing=false) %}
 		{% if ancestor_section %}
-			{% if section and ancestor_section.transparent %}
+			{% if for and ancestor_section.transparent %}
 				{{<macros.render_sitemap config={config} lang={lang} path={for.relative_path} first_pass={true} current_path={for.relative_path} />}}
-			{% else %}
+			{% elif not ancestor_section.transparent %}
 				{{<macros.render_sitemap config={config} lang={lang} path={ancestor_section.relative_path} first_pass={true} current_path={for.relative_path} />}}
 			{% endif %}
 		{% endif %}
