@@ -16,12 +16,14 @@
 				{{<macros.render_siblings for={section} config={config} lang={lang} />}}
 			</div>
 
-			<div class="header-item screen-large">
-				<h3 class="sitemap-title">Sitemap</h3>
-				<nav class="sitemap">
-					{{<macros.render_sitemap path="_index.md" config={config} lang={lang} />}}
-				</nav>
-			</div>
+			{% if config.default_language == lang %}
+				<div class="header-item screen-large">
+					<h3 class="sitemap-title">Sitemap</h3>
+					<nav class="sitemap">
+						{{<macros.render_sitemap path="_index.md" config={config} lang={lang} />}}
+					</nav>
+				</div>
+			{% endif %}
 		</div>
 	</div>
 
