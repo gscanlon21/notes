@@ -85,7 +85,7 @@
     {% endif %}
     
     {% for subsection in subsections %}
-        {{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={false} current_path={current_path} />}}
+        {{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={section_info.transparent} current_path={current_path} />}}
     {% endfor %}
 {% elif section_info.extra.in_sitemap | default(value=true) or show_localhost %}
     {% if section_info.transparent %}
