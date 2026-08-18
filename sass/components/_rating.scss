@@ -2,6 +2,7 @@
 dd:has(blockquote input[type="checkbox"]) {
 	margin-block-start: 0 !important;
 	align-items: start;
+	flex-wrap: wrap;
 	display: flex;
 }
 
@@ -23,6 +24,7 @@ blockquote:has(input[type="checkbox"]) {
 	}
 
 	ul {
+		counter-reset: item;
 		display: contents;
 		padding: 0;
 		border: 0;
@@ -37,16 +39,31 @@ blockquote:has(input[type="checkbox"]) {
 		font-size: $base-padding * 1.25;
 		margin-block-start: 0 !important;
 
-		&:has(input[type="checkbox"]:checked):before {
+		&:has(input[type="checkbox"]:checked) {
+			counter-increment: item;
+		}
+
+		&:has(input[type="checkbox"]:checked)::before {
 			vertical-align: top;
 			content: "\2605";
 			line-height: 1;
 		}
 
-		&:has(input[type="checkbox"]:not(:checked)):before {
+		&:has(input[type="checkbox"]:not(:checked))::before {
 			vertical-align: top;
 			content: "\2606";
 			line-height: 1;
+		}
+
+		&:last-child:not(:nth-child(5)) {
+			&::after {
+				font-size: $base-font-size;
+				min-width: $base-font-size;
+				content: counter(item);
+				text-align: center;
+				position: absolute;
+				line-height: 1;
+			}
 		}
 	}
 }
