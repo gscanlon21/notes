@@ -69,49 +69,53 @@
     Iterates though the site's pages and subsection and renders nested lists for each.
 #}
 {% component macros.render_sitemap(config, path: string, lang: string, first_pass: bool = true, current_path: string = "") %}
-{% set show_localhost = config.mode == "serve" and current_path == '' %}
+
 {% set section_info = get_section(path=path, lang=lang) %}
 {% if section_info.extra.section_sort_by | default(value="none") == "weight" %}
 	{% set subsections = section_info.subsections %}
 {% else %}
 	{% set subsections = section_info.subsections | sort %}
 {% endif %}
-{% if first_pass %}
-    {% if section_info.pages | length > 0 or show_localhost and section_info.pages | length > 0 %}
-	{# first > 0 should be section_info.pages | filter(attribute="extra.in_sitemap", value=false) | length #}
-        <menu class="sitemap-list">
-            {{<macros.render_list_links config={config} pages={section_info.pages} current_path={current_path} />}}
-        </menu>
-    {% endif %}
-    
-    {% for subsection in subsections %}
-        {{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={section_info.transparent} current_path={current_path} />}}
-    {% endfor %}
-{% elif section_info.extra.in_sitemap | default(value=true) or show_localhost %}
-    {% if section_info.transparent %}
-        {% for subsection in subsections %}
-            {{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={false} current_path={current_path} />}}
-        {% endfor %}
-    {% elif section_info.in_search_index | default(value=true) == true %}
-        <details {% if current_path == section_info.relative_path %}open{% endif %}>
-			{% if current_path == section_info.relative_path %}
-            	<summary class="current">{{ section_info.title }}</summary>
-			{% elif config.default_language != lang %}
-				{% set sub_path = section_info.relative_path | replace(from="_index.md", to="") | replace(from="index.md", to="") | replace(from="_index.no.md", to="") | replace(from="index.no.md", to="") %}
-				<summary><a href="{{ "/" ~ lang ~ "/" ~ sub_path }}">{{ section_info.title }}</a></summary>
-			{% else %}
-				<summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></summary>
-			{% endif %}
-            
-            <menu class="sitemap-list">
-				{{<macros.render_list_links config={config} pages={section_info.pages} />}}
-        
-                {% for subsection in subsections %}
-                    {{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={false} current_path={current_path} />}}
-                {% endfor %}
-            </menu>
-        </details>
-    {% endif %}
+
+{% set show_localhost = config.mode == "serve" and current_path == '' %}
+{% if section_info.extra.in_sitemap | default(value=true) or show_localhost %}
+	{% if first_pass %}
+		{% if section_info.pages | length > 0 or show_localhost and section_info.pages | length > 0 %}
+		{# first > 0 should be section_info.pages | filter(attribute="extra.in_sitemap", value=false) | length #}
+			<menu class="sitemap-list">
+				{{<macros.render_list_links config={config} pages={section_info.pages} current_path={current_path} />}}
+			</menu>
+		{% endif %}
+		
+		{% for subsection in subsections %}
+			{{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={section_info.transparent} current_path={current_path} />}}
+		{% endfor %}
+	{% else %}
+		{% if section_info.transparent %}
+			{% for subsection in subsections %}
+				{{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={false} current_path={current_path} />}}
+			{% endfor %}
+		{% else %}
+			<details {% if current_path == section_info.relative_path %}open{% endif %}>
+				{% if current_path == section_info.relative_path %}
+					<summary class="current">{{ section_info.title }}</summary>
+				{% elif config.default_language != lang %}
+					{% set sub_path = section_info.relative_path | replace(from="_index.md", to="") | replace(from="index.md", to="") | replace(from="_index.no.md", to="") | replace(from="index.no.md", to="") %}
+					<summary><a href="{{ "/" ~ lang ~ "/" ~ sub_path }}">{{ section_info.title }}</a></summary>
+				{% else %}
+					<summary><a href="{{ get_url(path="@/" ~ section_info.relative_path) }}">{{ section_info.title }}</a></summary>
+				{% endif %}
+				
+				<menu class="sitemap-list">
+					{{<macros.render_list_links config={config} pages={section_info.pages} />}}
+			
+					{% for subsection in subsections %}
+						{{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={false} current_path={current_path} />}}
+					{% endfor %}
+				</menu>
+			</details>
+		{% endif %}
+	{% endif %}
 {% endif %}
 {% endcomponent macros.render_sitemap %}
 

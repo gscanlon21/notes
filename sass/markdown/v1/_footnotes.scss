@@ -4,13 +4,15 @@ article.v1 {
 		font-size: $site-font-size * 0.8;
 		display: inline-block;
 		
-		& a::before {
-			content: '[';
-		}
+		// Added to Zola.
+		//& a::before {
+		//	content: '[';
+		//}
 
-		& a::after {
-			content: ']';
-		}
+		// Added to Zola.
+		//& a::after {
+		//	content: ']';
+		//}
 
 		// Footnotes bleed together in a paragraph.
 		//& + .footnote-reference::before {
