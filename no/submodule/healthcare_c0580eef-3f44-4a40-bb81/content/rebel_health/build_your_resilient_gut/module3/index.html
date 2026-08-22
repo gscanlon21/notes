@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang=no data-theme="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	
+	
+		<title>Module 3</title>
+	
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://ascallion.com/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://ascallion.com/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://ascallion.com/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://ascallion.com/site.webmanifest?h=d3283d8cdd099d8504a1">
+
+	
+	<link rel="stylesheet" type="text/css" href="https://ascallion.com/site.css?h=742c1dd59d765cedb7f1" media="all">
+	
+
+	
+	
+		
+
+		
+		
+	
+	
+    
+	
+		
+		
+
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+		
+	
+
+	<script defer src="https://ascallion.com/elasticlunr.min.js?h=4f648b9e42abdef9c436"></script>
+	<script defer src="https://ascallion.com/search_index.en.js?h=75e1f932ed78e46db928"></script>
+
+	
+		
+		
+		
+		<script defer src="https://ascallion.com/scripts/lunr.stemmer.js?h=e017028ea92174715af2"></script>
+		<script defer src="https://ascallion.com/scripts/lunr.no.js?h=4993417f9c2ff596dbdf"></script>
+		<script defer src="/submodule/healthcare_c0580eef-3f44-4a40-bb81/public/search_index.no.js?h=NYw20hAR3DzY/TRIeUCN36KQIzeAdhfFM1ye8DuSFrPUkg6AaPTtYRYO6ZFrBNz7"></script>
+	
+
+	
+
+	<script defer src="https://ascallion.com/scripts/search.js?h=e0cb59a66a29474a29dd"></script>
+	<script defer src="https://ascallion.com/scripts/content.js?h=a0194cd68f625f112245"></script>
+	<script defer src="https://ascallion.com/scripts/flashcards.js?h=0b0e21120d1635f4a897"></script>
+	<script defer src="https://ascallion.com/scripts/assessment.js?h=89c341c9cfdff8fd3a38"></script>
+	<script defer src="https://ascallion.com/scripts/chart.js?h=5feed9f60304b71795ac"></script>
+
+	
+</head>
+
+<body>
+	
+	<header id="header">
+		<span class="header-item">
+
+<div id="search">
+  <input id="search-input" type="search" placeholder="Search">
+
+  <div id="search-results" style="display: none;">
+      <ul id="search-results__items"></div>
+  </div>
+</div></span>
+		<span class="header-item"><a class="unstyle" href="https://ascallion.com/">ascallion</a></span>
+		<span class="header-item"><a href="https://ascallion.com/no/">Sitemap</a></span>
+	</header>
+	
+
+	<nav class="print context">
+		<div class="left">
+			Module 3
+		</div>
+		<div class="right">
+			
+		</div>
+	</nav>
+
+	<main id="main">
+		
+	<div class="header-wrap">
+		<div class="sidebar-left header header-wrap">
+			
+<form id="options" class="header-item">
+    <header id="summary">
+        <h2 class="header-title">
+            
+				
+				
+					<a class="site" href="https://rebelhealth.co/" target="_blank" rel="noreferrer">
+						Module 3
+					</a>
+				
+            
+              
+        </h2> 
+         
+            <h4 class="subtitle">Leaky Gut &amp; Endotoxemia</h4>
+        
+
+		
+
+		
+
+        <dl>
+            
+
+             
+            <dt>Authors</dt>
+            
+                <dd>Kiran Krishnan</dd>
+            
+            
+
+            
+
+             
+            <dt>See Also</dt>
+            
+                <dd class="summary-item">
+                    
+                        
+                        <a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/Lesson1.mp3" target="_blank">Lesson 1 - The Mighty Mucosa</a>
+                    
+                </dd>
+            
+                <dd class="summary-item">
+                    
+                        
+                        <a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/Lesson2.mp3" target="_blank">Lesson 2 - An Introduction to Intestinal Physiology</a>
+                    
+                </dd>
+            
+                <dd class="summary-item">
+                    
+                        
+                        <a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/Lesson3.mp3" target="_blank">Lesson 3 - The Consequences of Leaky Gut</a>
+                    
+                </dd>
+            
+                <dd class="summary-item">
+                    
+                        
+                        <a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/Lesson4.mp3" target="_blank">Lesson 4 - Understanding Metabolic Endotoxemia</a>
+                    
+                </dd>
+            
+                <dd class="summary-item">
+                    
+                        
+                        <a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/Lesson5.mp3" target="_blank">Lesson 5 - Root Causes & Drivers of Leaky Gut & Metabolic Endotoxemia</a>
+                    
+                </dd>
+            
+                <dd class="summary-item">
+                    
+                        
+                        <a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/Lesson6.mp3" target="_blank">Lesson 6 - Reversing Leaky Gut & Reducing Metabolic Endotoxemia</a>
+                    
+                </dd>
+            
+            
+
+			
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+			
+		
+	
+
+	
+		
+			
+		
+	
+
+
+
+ 
+	<dt>PDFs</dt>
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+		
+			
+				
+<dd class="summary-item">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/一Slides.pdf" target="_blank">Slides</a>
+	
+</dd>
+
+			
+		
+	
+		
+			
+				
+<dd class="summary-item">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/一Transcript.pdf" target="_blank">Transcript</a>
+	
+</dd>
+
+			
+		
+	
+	
+
+
+			
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+
+
+
+
+			
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+
+
+
+
+			
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+
+
+
+
+			
+
+	
+		
+			
+		
+	
+
+	
+		
+			
+		
+	
+
+	
+		
+			
+		
+	
+
+	
+		
+			
+		
+	
+
+	
+		
+			
+		
+	
+
+	
+		
+			
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+
+
+ 
+	<dt>Audio</dt>
+	
+		
+			
+				
+<dd class="summary-item">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/Lesson1.mp3" target="_blank">Lesson1</a>
+	
+</dd>
+
+			
+		
+	
+		
+			
+				
+<dd class="summary-item">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/Lesson2.mp3" target="_blank">Lesson2</a>
+	
+</dd>
+
+			
+		
+	
+		
+			
+				
+<dd class="summary-item">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/Lesson3.mp3" target="_blank">Lesson3</a>
+	
+</dd>
+
+			
+		
+	
+		
+			
+				
+<dd class="summary-item">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/Lesson4.mp3" target="_blank">Lesson4</a>
+	
+</dd>
+
+			
+		
+	
+		
+			
+				
+<dd class="summary-item">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/Lesson5.mp3" target="_blank">Lesson5</a>
+	
+</dd>
+
+			
+		
+	
+		
+			
+				
+<dd class="summary-item">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/Lesson6.mp3" target="_blank">Lesson6</a>
+	
+</dd>
+
+			
+		
+	
+		
+			
+		
+	
+		
+			
+		
+	
+	
+
+
+			
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+
+
+
+
+
+			
+
+			
+
+			
+
+            
+            
+            <dt>Reading Time</dt>
+            <dd>1 minute(s)</dd>
+
+			<dt>Word Count</dt>
+            <dd><span id="word-count">183</span> words</dd>
+        </dl>
+
+		<div id="flashcard-container"></div>
+		
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+
+
+
+    </header>
+</form>
+			
+
+
+<div class="header-item">
+	<h3 class="sitemap-title header-title">Table of Contents</h3>
+	<nav class="sitemap condensed">
+		
+			
+<ul class="sitemap-list">
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module3/#key-points">Key Points</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+</ul>
+
+		
+	</nav>
+</div>
+
+
+		</div>
+
+		<div class="sidebar-right header">
+			<div class="header-item">
+				
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap">
+	<menu class="sitemap-list">
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/">Healthcare</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/">Rebel Health</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/">Build Your Resilient Gut</a></li>
+				
+			
+		
+		
+			<li class="current">Module 3</li>
+		
+	</menu>
+</nav>
+
+			</div>
+
+			<div class="header-item">
+				
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap">
+	
+		
+		
+			
+				
+
+
+
+	
+
+
+
+
+	
+		
+		
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					
+					<summary><a href="/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module1/">Module 1</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					
+					<summary><a href="/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module2/">Module 2</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details open>
+				
+					<summary class="current">Module 3</summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					
+					<summary><a href="/no/submodule/healthcare_c0580eef-3f44-4a40-bb81/content/rebel_health/build_your_resilient_gut/module4/">Module 4</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+	
+
+
+			
+		
+	
+</nav>
+
+			</div>
+
+			
+		</div>
+	</div>
+
+	
+	
+	<article id="content" class="section v1" data-slug="Module 3" data-orientation="">
+		<h1 id="key-points">Key Points</h1>
+<ul>
+<li>IgA is a binding molecule that neutralizes toxins without eliciting an inflammatory immune response.</li>
+<li>The diversity and expression of IgA is dependant on the microbiome.
+<ul>
+<li>The microbiome activates and stimulates the immune cells to produce IgA through cross talk with the mucosa layer via pattern recognition receptors.</li>
+<li>Pattern recognition receptors read patterns on structures of viruses, bacteria (including commensal bacteria), food particles, antigens. When reading these patterns, the mucosa layer secretes more IgA to neutralize these compounds. This is called oral tolerance, and losing this functionality via a dysbiotic gut causes sensitivities in foods and a dysfunctional/inflammatory gut.
+<ul>
+<li>If you don't have enough IgA secreted in your gut, your body replaces it with IgE which is pro-inflammatory and can cause allergic reactions and activate mast cells and so on via the release of histamines.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Bad gram-negative bacteria releases LPS which is an inflammatory fat-soluble toxin.
+<ul>
+<li>LPS is carried through the body via our bodies emulsification process, made worse by a high-fat diet because the body will produce more emulsifiers when fat is detected in the diet.</li>
+</ul>
+</li>
+</ul>
+
+	</article>
+
+	</main>
+
+	
+	<footer id="footer">
+	<span class="footer-item fixed left"><a class="unstyle" href="#">Back to Top</a></span>
+    <span class="footer-item"><a href="https://ascallion.com/">About</a></span>
+    <span class="footer-item"><a class="unstyle" href="#">Back to Top</a></span>
+    <span class="footer-item"><a href="https://github.com/gscanlon21">Github</a></span>
+	<span class="footer-item fixed right"><a class="unstyle" href="#">Back to Top</a></span>
+</footer>
+	
+
+	
+	
+		
+
+		
+    	
+		
+
+	
+	
+		
+		
+
+		
+		
+		
+
+	
+	
+</body>
+
+</html>

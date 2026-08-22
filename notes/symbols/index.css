@@ -1,0 +1,10 @@
+/* Make symbols larger */
+article.v1 code {
+    line-height: 1.25;
+	font-size: 2rem;
+}
+
+/* Reduce spacing between code blocks */
+article.v1 h6+h6:has(+pre), article.v1 pre+h6:has(+pre) {
+	margin-block-start: 0.5em;
+}
