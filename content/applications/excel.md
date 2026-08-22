@@ -25,3 +25,9 @@ see_also = []
 : Click on the column you want to freeze.
 : Go to `View`, click `Freeze Panes`.
 : Select `Up to Column _`
+
+**How to Setup Data Validation**
+: Enter your list of the fixed values. (These have to be in the same sheet as the cell you want to restrict).
+: Click on the cell you want to restrict. Select "validation" from the Excel "Data" pull down menu.
+: In the pull down on the "Settings" tab select "List".
+: click In the box labeled "Source" then select the cells that contain the values set up in step 1.
