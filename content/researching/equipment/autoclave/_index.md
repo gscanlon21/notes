@@ -18,5 +18,6 @@ see_also = []
 > [!IMPORTANT]
 > Use secondary containment when autoclaving liquids.
 
-
+> [!IMPORTANT]
+> Make sure to fill the secondary container with DI water when autoclaving jars of liquid!
 
