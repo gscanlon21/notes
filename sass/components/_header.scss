@@ -23,11 +23,13 @@
 	column-gap: $site-padding * 1.5;
 
 	> :first-of-type {
-		flex: 1;
+		min-width: $min-content-width;
 		flex-grow: 2;
+		flex: 1;
 	}
 
 	> :last-of-type {
+		min-width: $min-content-width;
 		flex: 1;
 	}
 }
@@ -57,10 +59,11 @@
 	}
 
 	.header-item {
-		flex: 1;
-		display: flex;
-		pointer-events: all;
+		min-width: $min-content-width;
 		flex-direction: column;
+		pointer-events: all;
+		display: flex;
+		flex: 1;
 	}
 
 	#summary {

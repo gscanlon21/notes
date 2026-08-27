@@ -12,6 +12,8 @@ $large-width: 1600px !default;
 $sidebar-width: 18rem !default;
 $body-width-large: 60rem !default;
 $body-width-small: 80rem !default;
+/* min-width of header items for flex-wrap */
+$min-content-width: 16rem !default;
 
 @media (min-width: $large-width) {
     :root {
