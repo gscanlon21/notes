@@ -45,6 +45,7 @@
 			padding-block: $base-padding * 2;
 			min-height: min-content;
 			position: relative;
+			width: stretch;
 
 			& > strong {
 				font-size: $base-font-size * 1.75;
@@ -75,6 +76,7 @@
 			}
 
 			.flashcard-list {
+				margin-block-start: $base-padding * 0.5;
 				padding-inline: $base-padding * 1;
     			margin-inline: $base-padding * -1;
 				overflow-y: auto;
@@ -84,7 +86,7 @@
 					margin: $base-padding * 0;
 					line-height: $line-height-tight;
 
-					& > li {
+					& > li:not(:first-of-type) {
 						margin-block-start: $base-padding * 0.5;
 					}
 				}
