@@ -26,8 +26,8 @@ function generateFlashcards() {
 
 				const front = element.querySelector("strong")?.textContent.trim();
 				currentFlashcard = { 
-					group: front ? 1 : 2,
 					front: front ?? element.textContent.trim(), 
+					group: element.querySelector("del") ? 2 : 1,
 					subheader: element.querySelector("em")?.textContent.trim() ?? "", 
 					back: [], 
 				};
@@ -41,6 +41,7 @@ function generateFlashcards() {
 			flashcards.push(currentFlashcard);
 		}
 
+		flashcards.push(...generateListFlashcards(wrapper));
 		if (flashcards.length > 0) {
 			flashcardSections.push(new FlashcardSection({
 				className: wrapper.dataset.class,
@@ -55,6 +56,45 @@ function generateFlashcards() {
 
 	return flashcardSections;
 }
+
+function generateListFlashcards(wrapper) {
+	const flashcards = [];
+
+	for (const list of wrapper.querySelectorAll(':scope > ol, :scope > ul')) {
+		for (const element of list.children) {
+			if (element.tagName !== "LI") {
+				continue;
+			}
+
+			const clone = element.cloneNode(true);
+			clone.querySelectorAll(':scope > ol, :scope > ul').forEach(list => list.remove());
+
+			const front = clone.querySelector("strong")?.textContent.trim();
+			const subheader = clone.querySelector("em")?.textContent.trim() ?? "";
+
+			const back = [];
+			const nestedList = element.querySelector(':scope > ol, :scope > ul');
+
+			if (nestedList) {
+				for (const child of nestedList.children) {
+					if (child.tagName === "LI") {
+						back.push(child.textContent.trim());
+					}
+				}
+			}
+
+			flashcards.push({ 
+				group: clone.querySelector("del") ? 2 : 1, 
+				front: front ?? clone.textContent.trim(), 
+				subheader, 
+				back, 
+			});
+		}
+	}
+
+	return flashcards;
+}
+
 
 function renderFlashcards(flashcardSections) {
 	if (!flashcardSections.length) {
@@ -72,15 +112,20 @@ function renderFlashcards(flashcardSections) {
 
 		let currentIndex = 0;
 		function render() {
-			const progress = flashcardSection.flashcards.filter(f => f.group === 2).length / flashcardSection.flashcards.length;
 			const flashcard = flashcardSection.flashcards[currentIndex];
 
 			section.dataset.group = flashcard.group;
 			section.innerHTML = `
-				<div class="card-header">${flashcardSection.header}</div>
 				<div class="flashcard-front">
+					<div class="card-header">${flashcardSection.header}</div>
 					<strong>${flashcard.front}</strong>
 					<em>${flashcard.subheader}</em>
+					<div class="card-counter">
+						${currentIndex + 1} / ${flashcardSection.flashcards.length}
+					</div>
+					<div class="current-card">
+						${flashcardSection.progress.toFixed(0)}%
+					</div>
 				</div>
 				<div class="flashcard-back">
 					<strong>${flashcard.front}</strong>
@@ -89,12 +134,6 @@ function renderFlashcards(flashcardSections) {
 							${flashcard.back.map(text => `<li>${text}</li>`).join("")}
 						</ul>
 					</div>
-				</div>
-				<div class="card-counter">
-					${currentIndex + 1} / ${flashcardSection.flashcards.length}
-				</div>
-				<div class="current-card">
-					${flashcardSection.progress.toFixed(0)}%
 				</div>
 			`;			
 		}

@@ -25,12 +25,10 @@
 	> :first-of-type {
 		flex: 1;
 		flex-grow: 2;
-		min-width: $min-content-width;
 	}
 
 	> :last-of-type {
 		flex: 1;
-		min-width: $min-content-width;
 	}
 }
 
@@ -63,7 +61,6 @@
 		display: flex;
 		pointer-events: all;
 		flex-direction: column;
-		min-width: $min-content-width;
 	}
 
 	#summary {

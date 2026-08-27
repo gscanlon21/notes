@@ -1,3 +1,9 @@
+.flashcard-wrapper {
+	del {
+		text-decoration-color: color(--color-text, 0.25);
+	}
+}
+
 #flashcard-container {
 	
 	&:empty {
@@ -9,12 +15,13 @@
 		transform-style: preserve-3d;
 		transition: transform 400ms;
 		justify-content: center;
+		flex-direction: column;
 		align-items: center;
 		position: relative;
 		user-select: none;
+		min-height: 200px;
 		cursor: pointer;
 		display: flex;
-		height: 200px;
 		width: 100%;
 
 		&.flipped {
@@ -29,14 +36,18 @@
 			justify-content: center;
 			flex-direction: column;
 			align-items: center;
-			position: absolute;
+			flex: 1 1 auto;
 			display: flex;
 			inset: 0;
 		}
 
 		.flashcard-front {
+			padding-block: $base-padding * 2;
+			min-height: min-content;
+			position: relative;
+
 			& > strong {
-				font-size: $base-padding * 2;
+				font-size: $base-font-size * 1.75;
 				text-align: center;
 				line-height: 1;
 			}
@@ -57,6 +68,7 @@
 		.flashcard-back {
 			background-color: color(--color-bg);
 			transform: rotateY(180deg);
+			position: absolute;
 
 			& > .front {
 				text-align: center;
@@ -66,12 +78,14 @@
 				padding-inline: $base-padding * 1;
     			margin-inline: $base-padding * -1;
 				overflow-y: auto;
+				flex: 1 1 auto;
 
 				& > ul {
 					margin: $base-padding * 0;
+					line-height: $line-height-tight;
 
-					& > li:not(:first-of-type) {
-						margin-block-start: $base-padding * 0.1;
+					& > li {
+						margin-block-start: $base-padding * 0.5;
 					}
 				}
 			}

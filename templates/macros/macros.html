@@ -1,5 +1,18 @@
 {# Uses the Tera templating engine. https://keats.github.io/tera/ #}
 
+
+{#
+    Renders flashcards.
+#}
+{% component macros.flashcards(header: string = "") %}
+<div class="flashcard-wrapper" data-header="{{ header }}">
+
+{{ body | safe }}
+
+</div>
+{% endcomponent macros.flashcards %}
+
+
 {#
     Renders the table of contents.
 #}
