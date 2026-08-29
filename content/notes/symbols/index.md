@@ -132,6 +132,11 @@ x̄
 
 
 # Greek Symbols
+###### Greek Capital Letter Delta
+```
+Δ
+```
+###### U+394
 ###### Greek Small Letter Alpha
 ```
 α
