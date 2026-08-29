@@ -26,6 +26,8 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="wrapper" class="chart">
   <div id="letter-circles-inner" class="letter-circle"></div>
   <div id="letter-circles-middle" class="letter-circle"></div>

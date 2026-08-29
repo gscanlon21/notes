@@ -30,5 +30,7 @@ alerts = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="decoding-chart" class="chart"></div>
 <div id="arrow-chart" class="chart"></div>

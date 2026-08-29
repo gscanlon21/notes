@@ -8,3 +8,5 @@ authors = ["Kiran Krishnan"]
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+

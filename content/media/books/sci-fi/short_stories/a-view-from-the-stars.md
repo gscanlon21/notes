@@ -9,6 +9,8 @@ rating = 4
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 **Time Enough for Love**
 : A journey through the author's discovery and experience with science fiction writing and publishing.

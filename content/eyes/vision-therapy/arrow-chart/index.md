@@ -30,5 +30,7 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="arrow-chart"></div>
 

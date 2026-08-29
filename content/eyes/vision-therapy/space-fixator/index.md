@@ -23,6 +23,8 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 <div id="space-fixator"></div>
 

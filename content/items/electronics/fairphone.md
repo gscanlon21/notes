@@ -6,3 +6,5 @@ updated = 2025-12-12
 site = "https://www.fairphone.com/"
 see_also = []
 +++
+
+{{ <hidden page={page} section={section} /> }}

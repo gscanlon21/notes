@@ -9,6 +9,8 @@ toc_level = 2
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 > [!TIP]
 > "What?" and "how?" questions are more open to discussion and feel less accusatory than "why?" questions.

@@ -7,5 +7,7 @@ updated = 2026-07-01
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 

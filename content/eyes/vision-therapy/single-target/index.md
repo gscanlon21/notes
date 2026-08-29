@@ -25,6 +25,8 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="single-target-wrapper" class="chart">
   <div id="single-target" class="target"></div>
 </div>

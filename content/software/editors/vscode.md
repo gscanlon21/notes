@@ -8,6 +8,8 @@ see_also = []
 alerts = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 > [!NOTE]
 > Open settings with `Ctrl+,`

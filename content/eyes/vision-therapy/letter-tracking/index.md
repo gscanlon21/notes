@@ -30,6 +30,8 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="letter-tracking" class="chart">
   <p></p>
   <p></p>

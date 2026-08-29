@@ -8,6 +8,8 @@ see_also = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Anterior Pelvic Tilt

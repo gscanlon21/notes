@@ -12,6 +12,8 @@ see_also = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 > [!CAUTION]
 > Biotin (vitamin B7) should not be taken for 2 days before blood is drawn for accurate thyroid function testing.
 >> Medications That Interfere with Thyroid Function Testing

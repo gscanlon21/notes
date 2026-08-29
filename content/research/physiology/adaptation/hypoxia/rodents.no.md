@@ -8,6 +8,8 @@ rating = 5
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 

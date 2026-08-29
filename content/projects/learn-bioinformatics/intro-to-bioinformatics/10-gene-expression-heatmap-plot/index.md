@@ -10,4 +10,6 @@ authors = ["Mike Saint-Antoine"]
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 

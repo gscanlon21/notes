@@ -7,6 +7,8 @@ site = "https://www.beekeeperstudio.io/"
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Backup/Restore Table Columns

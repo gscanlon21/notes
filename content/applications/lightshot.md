@@ -8,6 +8,8 @@ site = "https://app.prntscr.com/en/index.html"
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 > [!TIP]

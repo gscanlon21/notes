@@ -6,6 +6,8 @@ updated = 2025-11-11
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 # Dasung Paperlike U Series
 
 ## Quick Start 

@@ -9,6 +9,8 @@ rating = 3
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 **Tower of Babylon**
 : A story about people tunneling through the vault of heaven. But unbeknownst to them, their world is shaped in a way that they were tunneling through the Earth's crust back up to the surface.

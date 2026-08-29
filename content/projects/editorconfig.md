@@ -10,6 +10,8 @@ map = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 

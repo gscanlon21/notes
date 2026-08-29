@@ -23,6 +23,8 @@ alerts = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 

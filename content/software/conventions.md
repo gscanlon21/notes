@@ -4,6 +4,8 @@ updated = 2021-02-21
 draft = true
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Conventions

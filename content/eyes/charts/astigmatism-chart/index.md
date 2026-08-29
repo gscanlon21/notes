@@ -21,4 +21,6 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="chart" class="chart defer"></div>

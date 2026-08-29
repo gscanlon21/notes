@@ -9,6 +9,8 @@ see_also = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Directory Structure

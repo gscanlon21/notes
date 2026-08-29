@@ -14,6 +14,8 @@ see_also = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # What Flowers to Press

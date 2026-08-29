@@ -8,6 +8,8 @@ site = "https://github.com/"
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 ##### How to Remove Contributions from your Github Profile

@@ -21,6 +21,8 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="number-dots" class="chart">
   <div class="number-dot" data-number="10"><div class="number">10</div></div>
   <div class="number-dot" data-number="9"><div class="number">9</div></div>

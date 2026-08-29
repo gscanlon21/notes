@@ -28,4 +28,6 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="hart-chart" class="chart defer"></div>

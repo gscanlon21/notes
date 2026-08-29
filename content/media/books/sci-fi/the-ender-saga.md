@@ -10,6 +10,8 @@ rating = 4
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 **Ender's Game**

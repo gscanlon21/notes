@@ -21,4 +21,6 @@ alerts = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="codenames-key" class="chart defer"></div>

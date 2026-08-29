@@ -8,6 +8,8 @@ site = "https://www.bulkrenameutility.co.uk/"
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 

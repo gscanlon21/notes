@@ -29,6 +29,8 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="chart" class="chart defer">
   <div id="stereo-circles">
     <div id="left-eye" class="circle left red">

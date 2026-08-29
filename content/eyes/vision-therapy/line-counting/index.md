@@ -27,4 +27,6 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="line-counting" class="chart"></div>

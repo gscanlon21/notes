@@ -12,6 +12,8 @@ see_also = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 # Agility Training LED Strip
 
 AP SSID

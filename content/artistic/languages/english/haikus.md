@@ -3,6 +3,8 @@ title = "Haikus"
 updated = 2025-03-03
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 > When grass is dying

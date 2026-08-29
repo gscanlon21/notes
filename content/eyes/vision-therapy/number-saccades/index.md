@@ -27,6 +27,8 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 <div id="number-circle" class="chart"></div>
 

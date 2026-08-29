@@ -6,6 +6,8 @@ updated = 2021-02-21
 site = "https://redis.io/"
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Redis

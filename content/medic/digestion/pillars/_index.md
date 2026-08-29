@@ -7,6 +7,8 @@ section_sort_by = "weight"
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Gut Dysbiosis

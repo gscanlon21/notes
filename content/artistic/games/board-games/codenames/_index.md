@@ -26,4 +26,6 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="codenames-board" class="chart defer"></div>

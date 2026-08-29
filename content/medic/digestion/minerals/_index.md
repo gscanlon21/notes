@@ -5,4 +5,6 @@ title = "Minerals"
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 

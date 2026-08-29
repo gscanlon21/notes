@@ -3,6 +3,8 @@ title = "Performance Monitor"
 updated = 2021-05-24
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Performance Monitor

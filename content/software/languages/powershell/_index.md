@@ -7,6 +7,8 @@ site = "https://docs.microsoft.com/en-us/powershell/"
 version = "7.1.3"
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Powershell

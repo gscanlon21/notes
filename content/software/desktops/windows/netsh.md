@@ -6,6 +6,8 @@ updated = 2021-05-24
 site = "https://docs.microsoft.com/en-us/windows-server/networking/technologies/netsh/netsh"
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # netsh

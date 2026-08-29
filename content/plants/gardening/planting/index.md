@@ -7,6 +7,8 @@ site_version = 1
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Benefits of Urban Trees[^1]

@@ -29,4 +29,6 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="slap-tap" class="chart"></div>

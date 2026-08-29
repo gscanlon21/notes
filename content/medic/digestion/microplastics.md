@@ -7,6 +7,8 @@ updated = 2025-06-06
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 Avoid clothing, bedding, towels, upholstery, bags, shoes, and other items made with virgin (new):

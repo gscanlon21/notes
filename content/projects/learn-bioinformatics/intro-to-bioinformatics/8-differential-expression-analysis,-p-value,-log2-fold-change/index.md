@@ -17,6 +17,8 @@ see_also = [
 map = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 

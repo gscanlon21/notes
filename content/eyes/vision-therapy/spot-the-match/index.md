@@ -28,6 +28,8 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="spot-the-match-wrapper">
   <div id="spot-the-match-left" class="spot-the-match"></div>
   <div id="spot-the-match-right" class="spot-the-match"></div>

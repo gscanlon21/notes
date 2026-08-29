@@ -8,4 +8,6 @@ site = "https://github.com/cdgriffith/FastFlix"
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 

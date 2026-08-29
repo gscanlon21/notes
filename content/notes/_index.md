@@ -6,6 +6,8 @@ sort_by = "title"
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # To Do

@@ -5,4 +5,6 @@ title = "Ferritin"
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 

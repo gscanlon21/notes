@@ -8,6 +8,8 @@ weight = 3
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 ### Lifestyle

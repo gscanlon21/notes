@@ -6,6 +6,8 @@ updated = 2021-05-23
 site = "https://curl.se/"
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Curl

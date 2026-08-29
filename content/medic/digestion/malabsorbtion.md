@@ -6,6 +6,8 @@ updated = 2025-05-05
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Malabsorption

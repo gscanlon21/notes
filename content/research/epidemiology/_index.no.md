@@ -11,4 +11,6 @@ subtitle = "Diseases"
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 

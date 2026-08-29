@@ -10,6 +10,8 @@ see_also = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 # Performance
 Compile all apps ahead of time
 

@@ -10,5 +10,7 @@ toc_level = 2
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 

@@ -19,6 +19,8 @@ comments = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 

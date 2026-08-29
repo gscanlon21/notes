@@ -10,6 +10,8 @@ see_also = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Healing the Gut

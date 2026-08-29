@@ -25,4 +25,6 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="letter-chart" class="chart"></div>

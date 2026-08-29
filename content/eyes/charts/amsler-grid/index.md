@@ -20,4 +20,6 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="amsler-grid" class="chart defer"></div>

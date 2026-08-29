@@ -7,6 +7,8 @@ site = "https://www.conventionalcommits.org"
 version = "1.0.0"
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Conventional Commits

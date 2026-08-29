@@ -2,6 +2,8 @@
 title = "Git Performance"
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Config

@@ -7,4 +7,6 @@ site = "https://ladybird.org/"
 see_also = []
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 

@@ -24,6 +24,8 @@ options = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 <div id="chart" class="chart">
   <div class="stack-of-barrels">
     <div class="barrel left small"></div>

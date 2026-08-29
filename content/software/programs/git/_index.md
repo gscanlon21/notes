@@ -9,6 +9,8 @@ updated = 2027-01-01
 version = "2.30.1"
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 

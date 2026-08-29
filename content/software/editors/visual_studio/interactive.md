@@ -3,6 +3,8 @@ title = "C# Interactive"
 updated = 2021-02-21
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # C# Interactive

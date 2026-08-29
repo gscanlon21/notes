@@ -2,6 +2,8 @@
 title = "Git Submodules"
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 # Errors

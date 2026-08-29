@@ -9,3 +9,5 @@ see_also = [
   { title = "Seed St. Louis Planting Calendar (2026)", href = "https://seedstl.org/wp-content/uploads/2026/01/2026-Planting-Calendar.pdf" },
 ]
 +++
+
+{{ <hidden page={page} section={section} /> }}

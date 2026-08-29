@@ -6,4 +6,6 @@ updated = 2025-03-03
 site = "https://lightburnsoftware.com/"
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 

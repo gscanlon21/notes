@@ -100,6 +100,8 @@ see_also = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 
 
 English is a germanic language with lots of latin vocabulary. Spanish is a modern latin language. Latin words in English can be converted to Spanish very easily.
