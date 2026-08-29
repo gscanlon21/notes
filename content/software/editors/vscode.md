@@ -5,8 +5,13 @@ updated = 2025-02-27
 [extra]
 site = "https://code.visualstudio.com/"
 see_also = []
+alerts = []
 +++
 
+
+> [!NOTE]
+> Open settings with `Ctrl+,`
+>> Settings
 
 
 ###### Settings
@@ -81,6 +86,7 @@ see_also = []
   "**/*.csv*": true,
   "**/*.svg*": true,
   "**/*.pdf*": true,
+  "**/*.ipynb*": true,
 },
 
 // Autosave after 10s
@@ -93,10 +99,8 @@ see_also = []
   "**/.git": true,
   "**/dist": true,
   "**/public": true,
-  "**/static": true,
   "**/.vscode": true,
   "**/.github": true,
-  "**/templates": true,
   "**/git_hooks": true,
   "**/config.toml": true,
   "**/node_modules": true,

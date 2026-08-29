@@ -2,18 +2,6 @@
 
 
 {#
-    Renders flashcards.
-#}
-{% component macros.flashcards(header: string = "") %}
-<div class="flashcard-wrapper" data-header="{{ header }}">
-
-{{ body | safe }}
-
-</div>
-{% endcomponent macros.flashcards %}
-
-
-{#
     Renders the table of contents.
 #}
 {% component macros.render_toc(toc, max_level, exclude: string = "") %}

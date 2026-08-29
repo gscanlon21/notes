@@ -10,6 +10,8 @@ see_also = [
 ]
 +++
 
+{{ <hidden page={page} section={section} /> }}
+
 # Water Pollution[^1]
 
 ## Lawn and Yard Care
