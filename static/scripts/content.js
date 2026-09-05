@@ -29,6 +29,17 @@ for (const dd of Array.from(document.querySelectorAll('dl + dd'))) {
 	dd.previousElementSibling.appendChild(dd);
 }
 
+// Combine sibling description lists for image support.
+for (const second of document.querySelectorAll('dl + dl')) {
+    const first = second.previousElementSibling;
+
+    while (second.firstChild) {
+        first.appendChild(second.firstChild);
+    }
+
+    second.remove();
+}
+
 // Copy multi-line code elements when they are clicked. Flash the bg.
 for (const element of Array.from(document.getElementsByTagName('pre'))) {
     element.addEventListener('click', () => {

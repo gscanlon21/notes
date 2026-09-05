@@ -40,6 +40,10 @@ article.v1 {
 		dd {
 			grid-column: 2;
 			overflow-x: auto;
+
+			&:empty {
+				display: none;
+			}
 			
 			&:has(+dd) {
 				padding-block-end: $base-padding * 0.5;
