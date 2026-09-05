@@ -24,6 +24,11 @@ for (const element of Array.from(document.getElementsByTagName('article'))) {
     element.innerHTML = element.innerHTML.trim();
 }
 
+// Insert inline image <dd> elements into the end of the parent list.
+for (const dd of Array.from(document.querySelectorAll('dl + dd'))) {
+	dd.previousElementSibling.appendChild(dd);
+}
+
 // Copy multi-line code elements when they are clicked. Flash the bg.
 for (const element of Array.from(document.getElementsByTagName('pre'))) {
     element.addEventListener('click', () => {

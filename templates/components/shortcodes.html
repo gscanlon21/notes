@@ -51,7 +51,8 @@
 
 
 
-{% component image(header: string = "") %}
+{% component image(title: string, file: string, open: bool = false, inline: bool = false, style: string = "") %}
+{% if inline %}<dd>{% endif %}
 {% if open | default(value=false) %}
 <details open="open" class="image" style="{{ style | default(value="") }}">
   <summary>
@@ -68,6 +69,7 @@
 
 ![{{ title }}]({{ file }})
 </details>
+{% if inline %}</dd>{% endif %}
 {% endcomponent image %}
 
 
