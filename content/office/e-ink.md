@@ -1,8 +1,10 @@
 +++
 title = "E-Ink"
-updated = 2025-11-11
+description = ""
 
 [extra]
+updated = 2026-01-01
+toc_level = 3
 see_also = []
 +++
 

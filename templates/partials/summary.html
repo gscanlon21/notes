@@ -155,27 +155,6 @@
             {% endfor %}
             {% endif %}
 
-			{% if page?.extra?.map | default(value=section?.extra?.map) %} 
-            {% for also in page?.extra?.map | default(value=section?.extra?.map) %}
-				<dt>{{ also.key }}</dt>
-                <dd class="summary-item">
-                    {% if also.href %} 
-                        <a class="reverse-indent" href="{{ also.href }}" target="_blank" rel="noreferrer">
-							{{ also.title | default(value=also.href) | safe }}{{ load_data(path="static/icons/arrow-square-out.svg") | safe }}
-						</a>
-                    {% elif also.file and also.file is starting_with(pat="/") %}
-                        {% set url = get_url(path=also.file) %}
-                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
-                    {% elif also.file and also.file is not starting_with(pat="/") %}
-                        {% set url = get_url(path=current_path ~ also.file) %}
-                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
-                    {% else %}
-                        <div class="reverse-indent"><code>{{ also.title | safe }}</code></div>
-                    {% endif %}
-                </dd>
-            {% endfor %}
-            {% endif %}
-
 			{% if page?.extra?.key_words | default(value=section?.extra?.key_words) %} 
             <dt>Key Words</dt>
             {% for key_word in page?.extra?.key_words | default(value=section?.extra?.key_words) %}
@@ -193,6 +172,29 @@
 
 			<dt>Word Count</dt>
             <dd><span id="word-count">{{ page?.word_count | default(value=section?.word_count) }}</span> words</dd>
+
+			{% if page?.extra?.map | default(value=section?.extra?.map) %} 
+            {% for also in page?.extra?.map | default(value=section?.extra?.map) %}
+				<dt>{{ also.key }}</dt>
+                <dd class="summary-item">
+                    {% if also.href %} 
+                        <a class="reverse-indent" href="{{ also.href }}" target="_blank" rel="noreferrer">
+							{{ also.title | default(value=also.href) | safe }}{{ load_data(path="static/icons/arrow-square-out.svg") | safe }}
+						</a>
+                    {% elif also.file and also.file is starting_with(pat="/") %}
+                        {% set url = get_url(path=also.file) %}
+                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
+                    {% elif also.file and also.file is not starting_with(pat="/") %}
+                        {% set url = get_url(path=current_path ~ also.file) %}
+                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
+                    {% elif also.copyable %}
+                        <div class="reverse-indent"><code>{{ also.title | safe }}</code></div>
+					{% else %}
+                        <div class="reverse-indent">{{ also.title | safe }}</div>
+                    {% endif %}
+                </dd>
+            {% endfor %}
+            {% endif %}
         </dl>
 
 		<div id="flashcard-container"></div>

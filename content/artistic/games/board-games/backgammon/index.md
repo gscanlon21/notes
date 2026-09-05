@@ -1,6 +1,6 @@
 +++
 title = "Backgammon"
-description = "2 Players"
+description = "A game of luck and skill."
 updated = 2027-01-01
 
 [extra]
@@ -10,14 +10,16 @@ see_also = [
   { title = "Backgammon Rules", href = "https://www.bkgm.com/rules.html" },
   { title = "Backgammon Variants", href = "https://bkgm.com/variants/" },
 ]
+map = [
+  { key = "Players", title = "2" },
+]
 +++
 
 {{ <hidden page={page} section={section} /> }}
 
 
 # Overview
-**Setup**
-: {{ <image title="Backgammon Setup" file="一Backgammon_Start.gif" inline={true} /> }}
+{{ <image title="Backgammon Setup" file="一Backgammon_Start.gif" /> }}
 
 
 # Rules

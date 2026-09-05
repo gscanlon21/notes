@@ -3,21 +3,24 @@ article.v1 {
 		border: 2px dashed color(--color-text);
 		margin-block: $base-padding * 1;
 
-		summary {
+		& > summary {
 			margin-inline-start: $base-padding * 0.5;
 			padding-block-start: $base-padding * 0.1;
 			padding-block-end: $base-padding * 0.125;
 			padding-inline: $base-padding * 0.1;
 
-			p {
+			& > p {
 				margin-block: $base-padding * 0;
 				font-weight: normal;
 			}
 		}
 
-		p {
-			img {
-				padding: $base-padding * 0.5;
+		& > p {
+			margin-block-start: $base-padding * 0.25;
+			padding: $base-padding * 0.5;
+
+			& > img {
+				max-width: 100%;
 			}
 		}
 	}
