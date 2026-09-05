@@ -1,0 +1,10 @@
+.chart {
+	font-family: "Optician Sans";
+	font-weight: normal;
+}
+
+@media print {
+	.print.context {
+		display: none !important;
+	}
+} 
