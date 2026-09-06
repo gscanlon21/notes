@@ -179,18 +179,18 @@
                 <dd class="summary-item">
                     {% if also.href %} 
                         <a class="reverse-indent" href="{{ also.href }}" target="_blank" rel="noreferrer">
-							{{ also.title | default(value=also.href) | safe }}{{ load_data(path="static/icons/arrow-square-out.svg") | safe }}
+							{{ also.value | default(value=also.href) | safe }}{{ load_data(path="static/icons/arrow-square-out.svg") | safe }}
 						</a>
                     {% elif also.file and also.file is starting_with(pat="/") %}
                         {% set url = get_url(path=also.file) %}
-                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
+                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.value | default(value=also.file) | safe }}</a>
                     {% elif also.file and also.file is not starting_with(pat="/") %}
                         {% set url = get_url(path=current_path ~ also.file) %}
-                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.title | default(value=also.file) | safe }}</a>
+                        <a class="reverse-indent" href="{{ url }}" target="_blank">{{ also.value | default(value=also.file) | safe }}</a>
                     {% elif also.copyable %}
-                        <div class="reverse-indent"><code>{{ also.title | safe }}</code></div>
+                        <div class="reverse-indent"><code>{{ also.value | safe }}</code></div>
 					{% else %}
-                        <div class="reverse-indent">{{ also.title | safe }}</div>
+                        <div class="reverse-indent">{{ also.value | safe }}</div>
                     {% endif %}
                 </dd>
             {% endfor %}

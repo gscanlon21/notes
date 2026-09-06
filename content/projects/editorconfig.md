@@ -6,7 +6,7 @@ description = ""
 updated = 2026-06-01
 see_also = []
 map = [
-  { key = "Filename", title = ".editorconfig" },
+  { key = "Filename", value = ".editorconfig" },
 ]
 +++
 

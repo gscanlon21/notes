@@ -11,7 +11,7 @@ see_also = [
   { title = "Backgammon Variants", href = "https://bkgm.com/variants/" },
 ]
 map = [
-  { key = "Players", title = "2" },
+  { key = "Players", value = "2" },
 ]
 +++
 

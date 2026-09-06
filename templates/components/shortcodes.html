@@ -24,7 +24,7 @@
 
 {% if page?.extra?.map | default(value=section?.extra?.map) %} 
 {% for map in page?.extra?.map | default(value=section?.extra?.map) %}
-  <div class="display--none">{{ map.title }}</div>
+  <div class="display--none">{{ map.value }}</div>
 {% endfor %}
 {% endif %}
 
