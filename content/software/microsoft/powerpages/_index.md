@@ -21,6 +21,7 @@ see_also = [
 
 ###### Display PDF Attachments
 ```html
+{% raw %}
 {% if note.mimetype == "application/pdf" and note.documentbody %}
 <div class="attachment-preview">
   <iframe
@@ -32,4 +33,5 @@ see_also = [
   </iframe>
 </div>
 {% endif %}
+{% endraw %}
 ```
