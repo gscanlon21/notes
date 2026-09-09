@@ -491,5 +491,6 @@
 		"XYXX",
 		"Zellie's",
 		"Zotero"
-	]
+	],
+	"sarif-viewer.connectToGithubCodeScanning": "off"
 }
