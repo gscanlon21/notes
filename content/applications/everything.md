@@ -15,12 +15,20 @@ see_also = [
 
 # Options
 # _Ctrl+P
-**General**
-: **Search**
-  : - [ ] _Match whole filename when using wildcards_
-	
-  **Results**
-  : - [x] _Open path with double click in path column_
+
+## General
+**Search**
+: - [ ] _Match whole filename when using wildcards_
+
+**Results**
+: - [x] _Open path with double click in path column_
+
+## Indexes
+**Exclude**
+: **Exclude Folders**
+  : Filter: `*\notes\public\**`
+
+
 
 # Search
 
@@ -31,12 +39,11 @@ see_also = [
 *.png|*.jpg|*.jpeg dupe:
 ```
 
-
-
 ###### Only These File Types Inside a Parent Folder
 ```powershell
 path:"C:\Users\*\OneDrive\Pictures\" *.png|*.jpg|*.jpeg dupe:
 ```
+
 
 ## Find in a Folder
 
@@ -44,8 +51,6 @@ path:"C:\Users\*\OneDrive\Pictures\" *.png|*.jpg|*.jpeg dupe:
 ```
 "C:\Users\*\OneDrive\Pictures\" test.png
 ```
-
-
 
 ###### Only the Parent Folder
 ```
