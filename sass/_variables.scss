@@ -13,6 +13,7 @@ $body-width-max: 1000px !default;
 /* min-width of header items for flex-wrap */
 $min-content-width: 16rem !default;
 $small-breakpoint: 600px !default;
+$body-margin: 0mm !default;
 
 @media (min-width: $body-width-max) {
     :root {

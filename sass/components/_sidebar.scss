@@ -7,7 +7,7 @@ article {
 	display: none;
 }
 
-@container (min-width: calc(#{$body-width-min} + 38rem + 2rem)){
+@container (min-width: calc(#{$body-margin} + #{$body-margin} + #{$body-width-min} + 38rem + 2rem)){
   	article {
 		order: 2;
 	}

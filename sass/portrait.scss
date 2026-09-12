@@ -3,9 +3,9 @@
 $min-content-width: 16rem;
 $sidebar-width: 17.5rem;
 $small-breakpoint: 600px;
-$body-width-max: calc(8.5in + 40rem);
-$body-width-min-large: calc(8.5in + 2rem);
-$body-width-min-small: calc(8.5in + 20rem);
+$body-width-min: 8.5in;
+$body-width-max: 8.5in;
+$body-margin: 10mm;
 
 @import 'site';
 

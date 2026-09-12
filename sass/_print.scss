@@ -1,3 +1,13 @@
+article[data-orientation="portrait"] {
+	/* Subtract 25mm for page margins */
+	--page-size: calc(11in - 25mm);
+}
+
+article[data-orientation="landscape"] {
+	/* Subtract 25mm for page margins */
+	--page-size: calc(8.5in - 25mm);
+}
+
 @media screen {
 	article[data-orientation="portrait"] {
 		margin-block: 10mm;
@@ -7,7 +17,6 @@
 		}
 
 		&::after {
-			--page-size: calc(11in - 20mm);
 			background: repeating-linear-gradient(to bottom, transparent 0in var(--page-size), rgba(var(--color-text), 0.25) var(--page-size) calc(var(--page-size) + 2px));
 			position: absolute;
 			height: 100%;
@@ -25,7 +34,6 @@
 		}
 
 		&::after {
-			--page-size: calc(8.5in - 20mm);
 			background: repeating-linear-gradient(to bottom, transparent 0in var(--page-size), rgba(var(--color-text), 0.25) var(--page-size) calc(var(--page-size) + 2px));
 			position: absolute;
 			height: 100%;
@@ -46,27 +54,35 @@
 @media print {
 	.page, .section {
 		margin-inline-start: 3mm !important;
-		margin-block-start: 3mm !important;
-		margin-inline-end: 0 !important;
+		margin-block-start: 0mm !important;
+		margin-inline-end: 3mm !important;
 		padding-block-end: 0 !important;
 		margin-block-end: 0 !important;
+		overflow: visible;
 	}
 
 	.context {
-        border-bottom: 1px solid color(--color-text, 0.75);
-		margin-inline-start: 3mm !important;
 		justify-content: space-between;
+		writing-mode: vertical-lr;
 		display: flex !important;
-		padding-bottom: 1mm;
+		width: calc(100% - 3mm);
+		letter-spacing: 0.1px;
+		align-items: flex-end;
+		position: absolute;
 		font-size: 12px;
-		width: 100%;
+		height: 100%;
     }
 }
 
+/* @Page applies to app pages
+ and must have a consistent 
+ margin top and bottom */
 @page {
-	margin-top: 7mm;
+	// For h# borders
 	margin-left: 7mm;
-	margin-right: 10mm;
+	// Corner staples
+	margin-top: 15mm;
+	margin-right: 7mm;
 	margin-bottom: 10mm;
 }
 

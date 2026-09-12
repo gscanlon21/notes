@@ -41,6 +41,7 @@ main {
 	position: relative;
 	flex-direction: row;
 	padding: $base-padding;
+	justify-content: center;
 	max-width: calc(100% - 2rem); 
 
 	article {
