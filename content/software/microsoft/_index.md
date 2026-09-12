@@ -11,3 +11,12 @@ see_also = []
 {{ <hidden page={page} section={section} /> }}
 
 
+**PowerApps**
+: Requires the user has access to the sharepoint account.
+
+**PowerPages**
+: Okay for unauthenticated access.
+: Uses DataVerse for backend data tables.
+
+**DataVerse**
+: Backend database tables for either PowerApps or PowerPages.
