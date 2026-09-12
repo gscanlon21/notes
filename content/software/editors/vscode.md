@@ -4,6 +4,7 @@ updated = 2025-02-27
 
 [extra]
 site = "https://code.visualstudio.com/"
+key_words = ["vscode"]
 see_also = []
 alerts = []
 +++
@@ -11,13 +12,16 @@ alerts = []
 {{ <hidden page={page} section={section} /> }}
 
 
+
+# Settings
 > [!NOTE]
 > Open settings with `Ctrl+,`
 >> Settings
 
-
-###### Settings
+###### Editor Settings
 ```json
+
+"editor.fontSize": 15,
 
 // When opening a file, `editor.tabSize` and `editor.insertSpaces`
 // will be detected based on the file contents. Set to false to keep
@@ -35,32 +39,50 @@ alerts = []
 // Insert spaces when pressing Tab. This setting is overridden
 // based on the file contents when `editor.detectIndentation` is true.
 "editor.insertSpaces": false,
+```
+###### Workbench Settings
+```json
 
 // Controls the size of editor tabs. 
 "workbench.editor.wrapTabs": true,
-"workbench.editor.tabSizing": "fixed",
-
+"workbench.editor.tabSizing": "fit",
+"workbench.editor.enablePreview": true,
+"workbench.editor.highlightModifiedTabs": true,
+	
 // Controls the maximum width of tabs when Workbench › Editor: Tab Sizing size is set to fixed.
 "workbench.editor.tabSizingFixedMaxWidth": 160,
 // Controls the minimum width of tabs when Workbench › Editor: Tab Sizing size is set to fixed.
 "workbench.editor.tabSizingFixedMinWidth": 80,
+
+"workbench.editor.tabActionUnpinVisibility": true,
+"workbench.editor.tabActionReserveSpace": true,
+"workbench.editor.tabActionCloseVisibility": false,
+"workbench.editor.splitOnDragAndDrop": false,
+"workbench.editor.showIcons": false,
+"workbench.editor.pinnedTabSizing": "normal",
+"workbench.editor.openPositioning": "last",
+"workbench.editor.limit.excludeDirty": false,
+"workbench.editor.labelFormat": "default",
+"workbench.editor.enablePreviewFromQuickOpen": true,
+"workbench.editor.enablePreviewFromCodeNavigation": true,
+"workbench.editor.closeOnFileDelete": true,
+"workbench.editor.enablePreview": false,
 
 // Controls the size of pinned editor tabs.
 "workbench.editor.pinnedTabSizing": "normal",
 "workbench.editor.pinnedTabsOnSeparateRow": true,
 
 // Controls the maximum number of opened editors. 
-"workbench.editor.limit.enabled": true,
+"workbench.editor.limit.enabled": false,
 "workbench.editor.limit.value": 12,
 
 // Controls where editors open. 
 // Select first or last to open editors independently from the currently active one.
 // Select left or right to open editors to the left or right of the currently active one. 
 "workbench.editor.openPositioning": "last",
-
-// Increase the font size of the file explorer.
-"window.zoomLevel": 1,
-"editor.fontSize": 15,
+```
+###### Language Settings
+```json
 
 // Markdown Specific Settings
 "[markdown]": {
@@ -78,6 +100,9 @@ alerts = []
 "[html]": {
   "editor.codeLens": false,
 },
+```
+###### Search Settings
+```json
 
 // Ignore search files
 "search.exclude": {
@@ -90,6 +115,9 @@ alerts = []
   "**/*.pdf*": true,
   "**/*.ipynb*": true,
 },
+```
+###### Files Settings
+```json
 
 // Autosave after 10s
 "files.autoSave": "afterDelay",
@@ -112,4 +140,9 @@ alerts = []
   "**/CNAME": true,
 },
 ```
-###### `Ctrl` `,`
+###### Window Settings
+```json
+
+// Increase the font size of the file explorer.
+"window.zoomLevel": 1,
+```
