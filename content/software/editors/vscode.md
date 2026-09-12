@@ -54,9 +54,10 @@ alerts = []
 // Controls the minimum width of tabs when Workbench › Editor: Tab Sizing size is set to fixed.
 "workbench.editor.tabSizingFixedMinWidth": 80,
 
+"workbench.editor.tabActionReserveSpace": false,
 "workbench.editor.tabActionUnpinVisibility": true,
-"workbench.editor.tabActionReserveSpace": true,
-"workbench.editor.tabActionCloseVisibility": false,
+"workbench.editor.tabActionCloseVisibility": true,
+
 "workbench.editor.splitOnDragAndDrop": false,
 "workbench.editor.showIcons": false,
 "workbench.editor.pinnedTabSizing": "normal",
