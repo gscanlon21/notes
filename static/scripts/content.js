@@ -19,7 +19,7 @@ for (const element of Array.from(document.getElementsByTagName('menu'))) {
 // Remove whitespace from article elements so they are :empty.
 for (const element of Array.from(document.getElementsByTagName('article'))) {
 	for (const hidden of element.getElementsByTagName('aside')) {
-		element.parentNode.insertBefore(hidden, element);
+		document.body.insertAdjacentElement('beforeend', hidden);
 	}
     element.innerHTML = element.innerHTML.trim();
 }
