@@ -87,21 +87,25 @@
 
 <body>
 	{% block header %}
-	<header id="header">
-		<span class="header-item">{% include 'partials/search.html' %}</span>
-		<span class="header-item"><a class="unstyle" href="{{ get_url(path="@/_index.md", lang=config.default_language) }}">ascallion</a></span>
-		<span class="header-item"><a href="{{ get_url(path="@/_index.md") }}">Sitemap</a></span>
+	<header id="site-header">
+		<nav id="site-nav">
+			<span class="nav-item">{% include 'partials/search.html' %}</span>
+			<span class="nav-item"><a class="unstyle" href="{{ get_url(path="@/_index.md", lang=config.default_language) }}">ascallion</a></span>
+			<span class="nav-item"><a href="{{ get_url(path="@/_index.md") }}">Sitemap</a></span>
+		</nav>
+
+		<nav class="print context">
+			<div class="left">
+				{{ page?.title | default(value=section?.title | default(value="")) }}
+			</div>
+			<div class="right">
+				{{ page?.extra?.context | default(value=section?.extra?.context | default(value="")) }}
+			</div>
+		</nav>
 	</header>
 	{% endblock header %}
 
-	<nav class="print context">
-		<div class="left">
-			{{ page?.title | default(value=section?.title | default(value="")) }}
-		</div>
-		<div class="right">
-			{{ page?.extra?.context | default(value=section?.extra?.context | default(value="")) }}
-		</div>
-	</nav>
+	
 
 	<main id="main">
 		{% block content %}

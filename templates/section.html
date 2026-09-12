@@ -5,12 +5,14 @@
 		{% include "partials/summary.html" %}
 		{% include "partials/toc.html" %}
 
-		<div class="header-item screen-small">
-			{{<macros.render_ancestors for={section} config={config} lang={lang} />}}
-		</div>
+		<div class="header-wrap screen-small">
+			<div class="header-item">
+				{{<macros.render_ancestors for={section} config={config} lang={lang} />}}
+			</div>
 
-		<div class="header-item screen-small">
-			{{<macros.render_siblings for={section} config={config} lang={lang} />}}
+			<div class="header-item">
+				{{<macros.render_siblings for={section} config={config} lang={lang} />}}
+			</div>
 		</div>
 	</div>
 	
