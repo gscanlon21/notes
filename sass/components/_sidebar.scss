@@ -1,16 +1,37 @@
-// Move the sidebars to the left and right sides of the screen when space is available.
-@media screen and (min-width: $large-width) {
-	.sidebar-left {
-		top: 0;
-		position: absolute;
-		width: $sidebar-width;
-		left: -$sidebar-width - .5rem;
+article {
+	order: 3;
+}
+
+.sidebar-right {
+	order: 2;
+	display: none;
+}
+
+@container (min-width: calc(#{$body-width-min} + 38rem + 2rem)){
+  	article {
+		order: 2;
 	}
 
 	.sidebar-right {
-		top: 0;
-		position: absolute;
-		width: $sidebar-width;
-		right: -$sidebar-width - .5rem;
+		order: 3;
+		display: block;
 	}
+
+	.screen-small {
+		display: none !important;
+	}
+}
+
+.sidebar-left, .sidebar-right {
+	width: $sidebar-width;
+	align-content: start;
+}
+
+.sidebar-left, .sidebar-right {
+	flex: 1 1 $sidebar-width;
+}
+
+.sidebar-left {
+	max-width: $body-width-max;
+	margin-inline: auto;
 }

@@ -2,10 +2,10 @@
 
 $min-content-width: 16rem;
 $sidebar-width: 17.5rem;
-$small-width: 600px;
-$large-width: calc(11in + 40rem);
-$body-width-large: calc(11in + 2rem);
-$body-width-small: calc(11in + 20rem);
+$small-breakpoint: 600px;
+$body-width-max: calc(11in + 40rem);
+$body-width-min-large: calc(11in + 2rem);
+$body-width-min-small: calc(11in + 20rem);
 
 @import 'site';
 

@@ -1,12 +1,13 @@
 {% extends "partials/base.html" %}
 
 {% block content %}
-    <h1 class="sitemap-title">Sitemap</h1>
-    <nav class="sitemap">
-        {{<macros.render_sitemap config={config} lang={lang} path="_index.md" />}}
-    </nav>
-
     {% if section?.content | default(value=page?.content) %}
-        <article id="content" class="sitemap">{{ section?.content | default(value=page?.content) | safe }}</article>
+		<article id="content" class="sitemap">
+			<h1 class="sitemap-title">Sitemap</h1>
+			<nav class="sitemap">
+				{{<macros.render_sitemap config={config} lang={lang} path="_index.md" />}}
+			</nav>
+			{{ section?.content | default(value=page?.content) | safe }}
+		</article>
     {% endif %}
 {% endblock content %}

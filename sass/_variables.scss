@@ -8,22 +8,21 @@ $site-font-size: 1rem;
 $line-height-loose: 1.5;
 $line-height-tight: 1.25;
 $sidebar-width: 18rem !default;
-$body-width-large: 48rem !default;
-$body-width-small: 64rem !default;
-$small-width: calc($body-width-small + 18rem) !default;
-$large-width: calc($body-width-large + 38.5rem) !default;
+$body-width-min: 800px !default;
+$body-width-max: 1000px !default;
 /* min-width of header items for flex-wrap */
 $min-content-width: 16rem !default;
+$small-breakpoint: 600px !default;
 
-@media (min-width: $large-width) {
+@media (min-width: $body-width-max) {
     :root {
-        --body-width: #{$body-width-large};
+        --body-width: #{$body-width-min};
     }
 }
 
-@media (max-width: (calc($large-width - 1px))) {
+@media (max-width: (calc($body-width-max - 1px))) {
     :root {
-        --body-width: #{$body-width-small};
+        --body-width: #{$body-width-min};
     }
 }
 

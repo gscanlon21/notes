@@ -10,7 +10,7 @@ article.v1 {
 		&:has(> blockquote) {
 			overflow-y: clip;
 			
-			@media (min-width: $small-width) {
+			@media (min-width: $small-breakpoint) {
 				margin-inline-start: $base-padding * 3;
 
 				&::before {
@@ -31,7 +31,7 @@ article.v1 {
 					display: none;
 					content: '„';
 				}
-			}	
+			}
 
 			& > blockquote {
 				display: contents;

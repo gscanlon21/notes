@@ -23,7 +23,7 @@ see_also = [
 
 
 
-
+{% <table> %}
 | Degrees Fahrenheit | Time for Chicken | Time for Turkey | Time for Beef |
 |:------------------:|:----------------:|:---------------:|:-------------:|
 | 135                | 63.3 minutes     | 64 minutes      | 37 minutes    |
@@ -33,7 +33,7 @@ see_also = [
 | 155                | 44.2 seconds     | 1.2 minutes     | 23 seconds    |
 | 160                | 13.7 seconds     | 25.6 seconds    | Instantaneous |
 | 165                | Instantaneous    | Instantaneous   | Instantaneous |
-
+{% </table> %}
 
 
 # Pesticides

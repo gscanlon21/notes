@@ -6,7 +6,7 @@
 	visibility: hidden !important;
 }
 
-@media screen and (max-width: (calc($large-width - 1px))) {
+@media screen and (max-width: (calc($body-width-max - 1px))) {
 	.screen-large {
 		display: none !important;
 	}

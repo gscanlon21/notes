@@ -39,7 +39,7 @@
 	pointer-events: none;
 	
 	// For fixed 'Back to Top' button.
-	@media (min-width: $large-width) {
+	@media (min-width: $body-width-max) {
 		padding-block-end: $base-padding * 5;
 		background-image: linear-gradient(to top, 
 			transparent $base-padding * 2, rgb(var(--color-bg)) $base-padding * 4, rgb(var(--color-bg)));

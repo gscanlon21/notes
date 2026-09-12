@@ -121,7 +121,7 @@ article.v1 {
 			}
 		}
 
-		@media (min-width: $small-width) {
+		@media (min-width: $small-breakpoint) {
 			dt {
 				&:not(.wrap) {
 					max-width: min(33vw, calc(var(--body-width) * 0.33));
@@ -134,7 +134,7 @@ article.v1 {
 			}		
 		}
 
-		@media (max-width: (calc($small-width - 1px))) {
+		@media (max-width: (calc($small-breakpoint - 1px))) {
 			grid-template-columns: auto;
 
 			dt,

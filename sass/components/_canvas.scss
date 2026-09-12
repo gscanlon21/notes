@@ -7,13 +7,13 @@ canvas + canvas, div:has(> canvas) + div:has(> canvas) {
 	margin-block-start: $base-padding * 2.25;
 }
 
-@media (max-width: (calc($small-width - 1px))) {
+@media (max-width: (calc($small-breakpoint - 1px))) {
 	canvas {
 		aspect-ratio: 16 / 9;
 	}
 }
 
-@media (min-width: $small-width) {
+@media (min-width: $small-breakpoint) {
 	canvas {
 		aspect-ratio: 21 / 6;
 	}	

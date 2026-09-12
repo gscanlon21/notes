@@ -2,7 +2,7 @@
 main > .sitemap-title {
 	margin-block-start: $site-padding * 2;
 
-	@media (min-width: $large-width) {
+	@media (min-width: $body-width-max) {
 		margin-block-start: $site-padding * 3;
 	}
 }
@@ -11,6 +11,10 @@ main > .sitemap-title {
 .sitemap-title:has(+ .sitemap:empty),
 .sitemap-title:has(+ .sitemap > .sitemap-list:only-child:empty) {
 	display: none;
+}
+
+article.sitemap {
+	width: 100cqw;
 }
 
 // Sitemap

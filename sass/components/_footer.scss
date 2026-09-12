@@ -33,7 +33,7 @@
 				transform: translateX(calc(calc(var(--body-width) / 2) + 50%))
 			}
 
-			@media (max-width: (calc($large-width - 1px))) {
+			@media (max-width: (calc($body-width-max - 1px))) {
 				display: none;
 			}
 		}

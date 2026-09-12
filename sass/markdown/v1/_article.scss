@@ -1,7 +1,7 @@
 article.v1 {
 	position: relative;
-	height: 100%;
-	width: auto;
+	//height: 100%;
+	width: 100cqw;
 
 	> :first-child {
 		margin-block-start: $site-padding * 3 !important;
@@ -31,7 +31,7 @@ article.v1 {
 		display: flex;
 		height: 100%;
 
-		@media (max-width: (calc($large-width - 1px))) {
+		@media (max-width: (calc($body-width-max - 1px))) {
 			margin-block-start: $base-padding * 2;
 		}
 	}
@@ -44,7 +44,7 @@ article.v1 {
 		display: flex;
 		height: 100%;
 
-		@media (max-width: (calc($large-width - 1px))) {
+		@media (max-width: (calc($body-width-max - 1px))) {
 			margin-block-start: $base-padding * 2;
 		}
 	}

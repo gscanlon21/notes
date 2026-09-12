@@ -5,6 +5,8 @@ html {
 	min-height: 100%;
 	overflow-y: scroll;
 	justify-content: center;
+	container-type: inline-size;
+	container-name: html;
 }
 
 body {
@@ -16,7 +18,7 @@ body {
 		"Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
 		"Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 
-	max-width: var(--body-width);
+	//max-width: var(--body-width);
 	margin-block: $base-padding;
 	margin-inline: 0;
 	width: 100%;
@@ -26,14 +28,30 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: calc(100% - 2rem);
+	container-type: inline-size;
+	container-name: body;
 }
 
 main {
+	gap: 1rem;
+	margin: auto;
 	height: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	position: relative;
-	flex-direction: column;
+	flex-direction: row;
 	padding: $base-padding;
+	max-width: calc(100% - 2rem); 
+
+	article {
+		width: 100%;
+		min-width: 0;
+		flex-shrink: 1;
+		flex-grow: 99999;
+		flex-basis: $body-width-min;
+		max-width: $body-width-max;
+		margin-inline: auto;
+	}
 }
 
 strong {
@@ -127,7 +145,7 @@ details {
 		cursor: pointer;
 		user-select: none;
 		// Messes with img captions.
-		//max-width: $small-width;
+		//max-width: $small-breakpoint;
 
 		&:focus {
 			outline: none;
