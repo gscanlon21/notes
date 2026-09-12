@@ -25,6 +25,9 @@ see_also = [
 **Diagnosis**
 : [Sjogren's Foundation](https://sjogrens.org/understanding-sjogrens/diagnosis)
 
+**Treatment**
+: [Sjogren's Foundation](https://sjogrens.org/treatment-and-care/treatments-for-sjogrens-disease)
+
 
 
 # Terminology

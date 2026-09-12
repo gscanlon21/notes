@@ -191,11 +191,11 @@
 {% endif %}
 
 {% if has_asset | default(value=false) %} 
-	<dt>{{ name }}</dt>
+	<dt class="asset {{ name }}">{{ name }}</dt>
 	{% for asset in page?.assets | default(value=section?.assets | default(value=[])) %}
 		{% for type in types %}
 			{% if asset is ending_with(pat=type) %}
-				{{<macros.render_asset asset={asset} />}}
+				{{<macros.render_asset name={name} asset={asset} />}}
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
@@ -204,7 +204,7 @@
 		{% for asset in ancestor_section.assets | default(value=[]) %}
 			{% for type in types %}
 				{% if asset is ending_with(pat=type) %}
-					{{<macros.render_asset asset={asset} />}}
+					{{<macros.render_asset name={name} asset={asset} />}}
 				{% endif %}
 			{% endfor %}
 		{% endfor %}
@@ -216,8 +216,8 @@
 {#
     Renders a page's assets.
 #}
-{% component macros.render_asset(asset: string) %}
-<dd class="summary-item">
+{% component macros.render_asset(name: string, asset: string) %}
+<dd class="summary-item asset {{ name }}">
 	{% set filename = asset | split(pat="/") | last | split(pat='\\') | last | split(pat='.') | first %}
 	{% set title = filename | replace(from="---", to=" - ") | replace(from="--", to=": ") | replace(from="_", to=" ") | replace(from="一", to="") %}
 	{% if asset is starting_with(pat="/") %}
