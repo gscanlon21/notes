@@ -18,15 +18,43 @@ see_also = [
 
 ## Gel Ink
 
-**Pilot G2 0.7**
+**Kaco KEYBO 0.7**
 _Preferred_
+: > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+
+**TUL 0.7**
+: > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+
+**Uniball Zento 0.7**
+: > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+
+**Pentel EnerGel 0.7**
+: > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+
+**Pilot G2 0.7**
 : Certain colors of the gel can be scratchy.
 : Ink lasts a fair while.
 : Too expensive.
 : > - [x] 
   > - [x] 
   > - [x] 
-  > - [x] 
+  > - [ ] 
   > - [ ] 
 
 **Sharpie S-Gel 0.7**
@@ -36,12 +64,5 @@ _Preferred_
 : > - [x] 
   > - [x] 
   > - [x] 
-  > - [x] 
-  > - [ ] 
-
-**Pentel EnerGel 0.7**
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
   > - [ ] 
   > - [ ] 
