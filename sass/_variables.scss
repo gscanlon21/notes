@@ -7,11 +7,11 @@ $base-font-size: 1em;
 $site-font-size: 1rem;
 $line-height-loose: 1.5;
 $line-height-tight: 1.25;
-$small-width: 600px !default;
-$large-width: 1600px !default;
 $sidebar-width: 18rem !default;
-$body-width-large: 60rem !default;
-$body-width-small: 80rem !default;
+$body-width-large: 48rem !default;
+$body-width-small: 64rem !default;
+$small-width: calc($body-width-small + 18rem) !default;
+$large-width: calc($body-width-large + 38.5rem) !default;
 /* min-width of header items for flex-wrap */
 $min-content-width: 16rem !default;
 

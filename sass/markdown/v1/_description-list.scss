@@ -134,7 +134,7 @@ article.v1 {
 			}		
 		}
 
-		@media (max-width: ($small-width - 1px)) {
+		@media (max-width: (calc($small-width - 1px))) {
 			grid-template-columns: auto;
 
 			dt,
