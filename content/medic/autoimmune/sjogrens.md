@@ -3,16 +3,28 @@ title = "Sjögren's"
 description = ""
 
 [extra]
-key_words = ["Sjorgen's", "Sjorgens", "Sjorgen"]
+key_words = ["Sjogren's", "Sjogrens", "Sjogren"]
 updated = 2026-01-01
 site_version = 1
 toc_level = 2
 see_also = [
+  { title = "Reddit", href = "https://www.reddit.com/r/Sjogrens/" },
+  { title = "Sjogren's Foundation", href = "https://sjogrens.org/" },
   { title = "Rheumatoid Factor Test", href = "https://medlineplus.gov/lab-tests/rheumatoid-factor-rf-test/" },
 ]
 +++
 
 {{ <hidden page={page} section={section} /> }}
+
+
+# Overview
+
+**Symptoms**
+: [Sjogren's Foundation](https://sjogrens.org/understanding-sjogrens/sjogrens-disease-signs-and-symptoms)
+
+**Diagnosis**
+: [Sjogren's Foundation](https://sjogrens.org/understanding-sjogrens/diagnosis)
+
 
 
 # Terminology

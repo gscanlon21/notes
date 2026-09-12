@@ -2,8 +2,11 @@
 #footer {
 	display: flex;
 	position: relative;
+	align-self: center;
+	width: calc(100% - 2em);
 	flex-wrap: wrap-reverse;
 	column-gap: $base-padding;
+	max-width: $body-width-max;
 	margin-inline: $base-padding;
 	padding-block-start: $base-padding;
 	margin-block-start: $base-padding * 2;
