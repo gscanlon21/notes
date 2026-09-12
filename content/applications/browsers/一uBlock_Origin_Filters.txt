@@ -1,3 +1,5 @@
+youtube.com/shorts
+youtube.com/playables
 reddit.com/r/all
 reddit.com/r/popular
 reddit.com/r/politics
@@ -12,5 +14,9 @@ reddit.com/r/tinder
 reddit.com/r/facebook
 reddit.com/r/instagram
 reddit.com/r/GirlDinnerDiaries
-youtube.com/playables
-youtube.com/shorts
+copilot.microsoft.com
+gemini.google.com
+chatgpt.com
+claude.com
+grok.com
+x.com
