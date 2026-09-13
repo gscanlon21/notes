@@ -26,7 +26,7 @@ see_also = [
 ## Indexes
 **Exclude**
 : **Exclude Folders**
-  : Filter: `*\notes\public\**`
+  : Filter: `**\notes\**\public\**`, `**\notes\public\**`, `**\_notes\**`
 
 
 
