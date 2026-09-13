@@ -123,6 +123,11 @@ OH⁻
 x̄
 ```
 ###### U+0078 U+0304
+###### Greek Small Letter Theta
+```
+θ
+```
+###### U+03B8
 
 
 # Cooking Symbols
@@ -314,6 +319,11 @@ x̄
 ⁻
 ```
 ###### U+207B
+###### Superscript Minus + Superscript One
+```
+⁻¹
+```
+###### U+207B + U+00B9
 
 
 # Subscripts
@@ -370,11 +380,17 @@ x̄
 ###### U+2089
 
 ## Letters
+###### Latin Subscript Small Letter X
+```
+ₓ
+```
+###### U+2093
 ###### Latin Subscript Small Letter J
 ```
 ⱼ
 ```
 ###### U+2C7C
+
 
 
 # Arrows
