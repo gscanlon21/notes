@@ -1,0 +1,51 @@
+.page {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.chart {
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	display: flex;
+	flex-grow: 1;
+	--scale: 1;
+}
+
+.stack-of-barrels {
+	justify-content: center;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	gap: var(--gap);
+	display: flex;
+}
+
+.barrel {
+	height: calc(1.75 * var(--size) * var(--scale));
+	width: calc(var(--size) * var(--scale));
+}
+
+.barrel.right {
+	background-color: rgb(var(--color-right));
+}
+
+.barrel.left {
+	background-color: rgb(var(--color-left));
+}
+
+.barrel.large {
+	border-radius: 30%;
+	--scale: 1;
+}
+
+.barrel.medium {
+	border-radius: 20%;
+	--scale: 0.75;
+}
+
+.barrel.small {
+	border-radius: 10%;
+	--scale: 0.5;
+}

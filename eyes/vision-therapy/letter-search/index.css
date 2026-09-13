@@ -1,0 +1,23 @@
+#letter-chart {
+	text-align: center;
+	position: relative;
+	aspect-ratio: 1;
+	line-height: 1;
+	height: 600px;
+	width: 100%;
+}
+
+.letter {
+	/* Position using center point */
+	transform: translate(-50%, -50%);
+	position: absolute;
+	aspect-ratio: 1;
+}
+
+.letter.red {
+	color: rgb(var(--color-red));
+}
+
+.letter.green {
+	color: rgb(var(--color-green));
+}

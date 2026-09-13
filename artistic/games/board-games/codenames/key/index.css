@@ -1,0 +1,48 @@
+.page {
+    justify-content: center;
+	padding-bottom: 3rem;
+    margin-bottom: -3rem;
+	align-items: center;
+	display: flex;
+}
+
+.chart {
+	background-color: rgb(var(--color-bg-alt));
+	grid-template-columns: repeat(5, 1fr);
+	border-radius: 10px 10px 0 0;
+	justify-self: center;
+	text-align: center;
+	position: relative;
+	line-height: 1;
+	display: grid;
+	padding: 10px;
+	width: 280px;
+	gap: 2px;
+}
+
+.chart::after {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	transform: translateX(-50%);
+	pointer-events: none;
+	position: absolute;
+	filter: blur(99px);
+	height: 160px;
+	width: 320px;
+    z-index: -1;
+	content: "";
+    left: 50%;
+    top: 50%;
+    
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,.5) 75%,
+        rgba(0,0,0,.25) 100%
+    )
+}
+
+.key-cell {
+	border: 2px solid rgb(var(--color-bg-alt));
+	border-radius: 5px;
+	aspect-ratio: 1;
+}

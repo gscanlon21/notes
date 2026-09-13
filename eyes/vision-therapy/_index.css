@@ -1,0 +1,18 @@
+article.v1 {
+	align-self: start;
+}
+
+.chart {
+	font-family: "Optician Sans";
+	font-weight: normal;
+}
+
+@media print {
+	.print.context {
+		display: none !important;
+	}
+} 
+
+.asset.SVGs, .asset.Images {
+	display: none;
+}

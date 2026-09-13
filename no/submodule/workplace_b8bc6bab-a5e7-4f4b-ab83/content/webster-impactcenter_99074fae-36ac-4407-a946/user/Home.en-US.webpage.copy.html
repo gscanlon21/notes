@@ -1,0 +1,1046 @@
+<div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container" style="padding: 0px; display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 300px;">
+      {% include 'entity_list' key: 'Active Job Opportunity' isNLSearchEnabled: 'false' isModern:'false' %}
+    
+      {% comment %}
+===========================================================
+  OPPORTUNITY DIRECTORY
+  Table: cr34c_opportunity
+
+  Search:
+    ?search=
+
+  Compensation:
+    ?compensation=hourly
+    ?compensation=full-time
+    ?compensation=part-time
+
+  Pagination:
+    ?page=1
+===========================================================
+{% endcomment %}
+
+{% assign page_size = 10 %}
+{% assign current_page = request.params.page | default: 1 | plus: 0 %}
+
+{% if current_page < 1 %}
+  {% assign current_page = 1 %}
+{% endif %}
+
+{% assign search = request.params.search | default: "" %}
+{% assign compensation = request.params.compensation | default: "" %}
+
+
+{% comment %}
+===========================================================
+  VALIDATE COMPENSATION FILTER
+===========================================================
+{% endcomment %}
+
+{% assign valid_compensation = "" %}
+
+{% if compensation == "hourly" %}
+  {% assign valid_compensation = "hourly" %}
+{% elsif compensation == "full-time" %}
+  {% assign valid_compensation = "full-time" %}
+{% elsif compensation == "part-time" %}
+  {% assign valid_compensation = "part-time" %}
+{% endif %}
+
+
+{% comment %}
+===========================================================
+  COUNT QUERY
+===========================================================
+{% endcomment %}
+
+{% fetchxml opportunity_count %}
+
+<fetch aggregate="true">
+
+  <entity name="cr34c_opportunity">
+
+    <attribute
+      name="cr34c_opportunityid"
+      alias="total_count"
+      aggregate="count"
+    />
+
+    <filter type="and">
+
+      <!-- Active opportunities only -->
+      <condition
+        attribute="cr34c_active"
+        operator="eq"
+        value="1"
+      />
+
+      {% if search != "" %}
+        <filter type="or">
+
+          <condition
+            attribute="cr34c_name"
+            operator="like"
+            value="%{{ search | xml_escape }}%"
+          />
+
+          <condition
+            attribute="cr34c_description"
+            operator="like"
+            value="%{{ search | xml_escape }}%"
+          />
+
+          <condition
+            attribute="cr34c_location"
+            operator="like"
+            value="%{{ search | xml_escape }}%"
+          />
+
+        </filter>
+      {% endif %}
+
+      {% if valid_compensation != "" %}
+
+        <condition
+          attribute="cr34c_compensation"
+          operator="eq"
+          value="{{ valid_compensation | xml_escape }}"
+        />
+
+      {% endif %}
+
+    </filter>
+
+  </entity>
+
+</fetch>
+
+{% endfetchxml %}
+
+
+{% assign total_results =
+  opportunity_count.results.entities[0].total_count
+  | default: 0
+  | plus: 0
+%}
+
+
+{% comment %}
+===========================================================
+  CALCULATE NUMBER OF PAGES
+===========================================================
+{% endcomment %}
+
+{% assign total_pages = total_results | divided_by: page_size %}
+{% assign remainder = total_results | modulo: page_size %}
+
+{% if remainder > 0 %}
+  {% assign total_pages = total_pages | plus: 1 %}
+{% endif %}
+
+{% if total_pages == 0 %}
+  {% assign total_pages = 1 %}
+{% endif %}
+
+
+{% comment %}
+===========================================================
+  PREVENT REQUESTING A PAGE THAT DOES NOT EXIST
+===========================================================
+{% endcomment %}
+
+{% if current_page > total_pages %}
+  {% assign current_page = total_pages %}
+{% endif %}
+
+
+{% comment %}
+===========================================================
+  CALCULATE RESULT RANGE
+===========================================================
+{% endcomment %}
+
+{% assign first_result =
+  current_page
+  | minus: 1
+  | times: page_size
+  | plus: 1
+%}
+
+{% assign last_result =
+  current_page
+  | times: page_size
+%}
+
+{% if last_result > total_results %}
+  {% assign last_result = total_results %}
+{% endif %}
+
+
+{% comment %}
+===========================================================
+  MAIN QUERY
+===========================================================
+{% endcomment %}
+
+{% fetchxml opportunities %}
+
+<fetch
+  count="{{ page_size }}"
+  page="{{ current_page }}"
+>
+
+  <entity name="cr34c_opportunity">
+
+    <attribute name="cr34c_opportunityid" />
+    <attribute name="cr34c_active" />
+    <attribute name="cr34c_name" />
+    <attribute name="cr34c_description" />
+    <attribute name="cr34c_contactemail" />
+    <attribute name="cr34c_applylink" />
+    <attribute name="cr34c_compensation" />
+    <attribute name="cr34c_location" />
+
+    <filter type="and">
+
+      <!-- Active opportunities -->
+      <condition
+        attribute="cr34c_active"
+        operator="eq"
+        value="1"
+      />
+
+      {% if search != "" %}
+
+        <filter type="or">
+
+          <condition
+            attribute="cr34c_name"
+            operator="like"
+            value="%{{ search | xml_escape }}%"
+          />
+
+          <condition
+            attribute="cr34c_description"
+            operator="like"
+            value="%{{ search | xml_escape }}%"
+          />
+
+          <condition
+            attribute="cr34c_location"
+            operator="like"
+            value="%{{ search | xml_escape }}%"
+          />
+
+        </filter>
+
+      {% endif %}
+
+
+      {% if valid_compensation != "" %}
+
+        <condition
+          attribute="cr34c_compensation"
+          operator="eq"
+          value="{{ valid_compensation | xml_escape }}"
+        />
+
+      {% endif %}
+
+    </filter>
+
+    <order
+      attribute="cr34c_name"
+      descending="false"
+    />
+
+  </entity>
+
+</fetch>
+
+{% endfetchxml %}
+
+
+
+<div class="opportunity-directory">
+
+  <!-- =====================================================
+       SEARCH
+  ====================================================== -->
+
+  <div class="opportunity-search-row">
+
+    <form method="get" class="opportunity-search">
+
+      <input
+        type="text"
+        name="search"
+        value="{{ search | escape }}"
+        placeholder="Search"
+        aria-label="Search opportunities"
+      />
+
+      <input
+        type="hidden"
+        name="compensation"
+        value="{{ compensation | escape }}"
+      />
+
+      <button
+        type="submit"
+        aria-label="Search"
+        class="search-button"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="16.5" y1="16.5" x2="22" y2="22"></line>
+        </svg>
+      </button>
+
+    </form>
+
+
+    <a
+      href="{{ request.path }}"
+      class="clear-all"
+    >
+      CLEAR ALL
+    </a>
+
+  </div>
+
+
+
+  <div class="opportunity-layout">
+
+
+    <!-- ===================================================
+         LEFT FILTER PANEL
+    ==================================================== -->
+
+    <aside class="opportunity-filters">
+
+      <div class="filter-section">
+
+        <h3>COMPENSATION/FUNDING</h3>
+
+        <label class="filter-option">
+
+          <input
+            type="radio"
+            name="compensation-filter"
+            value=""
+            {% if compensation == "" %}checked{% endif %}
+            onchange="applyCompensationFilter(this.value)"
+          />
+
+          <span>All</span>
+
+        </label>
+
+
+        <label class="filter-option">
+
+          <input
+            type="radio"
+            name="compensation-filter"
+            value="hourly"
+            {% if compensation == "hourly" %}checked{% endif %}
+            onchange="applyCompensationFilter(this.value)"
+          />
+
+          <span>Hourly</span>
+
+        </label>
+
+
+        <label class="filter-option">
+
+          <input
+            type="radio"
+            name="compensation-filter"
+            value="full-time"
+            {% if compensation == "full-time" %}checked{% endif %}
+            onchange="applyCompensationFilter(this.value)"
+          />
+
+          <span>Full-Time</span>
+
+        </label>
+
+
+        <label class="filter-option">
+
+          <input
+            type="radio"
+            name="compensation-filter"
+            value="part-time"
+            {% if compensation == "part-time" %}checked{% endif %}
+            onchange="applyCompensationFilter(this.value)"
+          />
+
+          <span>Part-Time</span>
+
+        </label>
+
+      </div>
+
+    </aside>
+
+
+
+    <!-- ===================================================
+         RESULTS
+    ==================================================== -->
+
+    <main class="opportunity-results">
+
+
+      <!-- RESULT COUNT -->
+
+      <div class="result-count">
+
+        {% if total_results > 0 %}
+
+          Showing
+          {{ first_result }}
+          -
+          {{ last_result }}
+          of
+          {{ total_results }}
+          results
+
+        {% else %}
+
+          Showing 0 results
+
+        {% endif %}
+
+      </div>
+
+
+
+      <!-- =================================================
+           OPPORTUNITY CARDS
+      ================================================== -->
+
+      {% for opportunity in opportunities.results.entities %}
+
+        <article class="opportunity-card">
+
+
+          <!-- TITLE -->
+
+          <h2 class="opportunity-title">
+
+            {{ opportunity.cr34c_name | escape }}
+
+          </h2>
+
+
+
+          <!-- LOCATION -->
+
+          {% if opportunity.cr34c_location %}
+
+            <div class="opportunity-meta">
+
+              <span class="meta-icon">
+
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"
+                  ></path>
+
+                  <circle
+                    cx="12"
+                    cy="10"
+                    r="2.5"
+                  ></circle>
+
+                </svg>
+
+              </span>
+
+              <span>
+                Location:
+                <strong>
+                  {{ opportunity.cr34c_location | escape }}
+                </strong>
+              </span>
+
+            </div>
+
+          {% endif %}
+
+
+
+          <!-- COMPENSATION -->
+
+          {% if opportunity.cr34c_compensation %}
+
+            <div class="opportunity-meta">
+
+              <span class="meta-icon">
+
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect
+                    x="3"
+                    y="5"
+                    width="18"
+                    height="14"
+                    rx="2"
+                  ></rect>
+
+                  <line
+                    x1="7"
+                    y1="9"
+                    x2="17"
+                    y2="9"
+                  ></line>
+
+                  <line
+                    x1="7"
+                    y1="13"
+                    x2="13"
+                    y2="13"
+                  ></line>
+
+                </svg>
+
+              </span>
+
+              <span>
+                Compensation:
+                <strong>
+                  {{ opportunity.cr34c_compensation | escape }}
+                </strong>
+              </span>
+
+            </div>
+
+          {% endif %}
+
+
+
+          <!-- DESCRIPTION -->
+
+          {% if opportunity.cr34c_description %}
+
+            <div class="opportunity-description">
+
+              {{ opportunity.cr34c_description }}
+
+            </div>
+
+          {% endif %}
+
+
+
+          <!-- CONTACT -->
+
+          {% if opportunity.cr34c_contactemail %}
+
+            <div class="opportunity-contact">
+
+              <strong>Contact:</strong>
+
+              <a
+                href="mailto:{{ opportunity.cr34c_contactemail | escape }}"
+              >
+                {{ opportunity.cr34c_contactemail | escape }}
+              </a>
+
+            </div>
+
+          {% endif %}
+
+
+
+          <!-- APPLY -->
+
+          {% if opportunity.cr34c_applylink %}
+
+            <div class="opportunity-actions">
+
+              <a
+                href="{{ opportunity.cr34c_applylink | escape }}"
+                class="apply-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                APPLY
+              </a>
+
+            </div>
+
+          {% endif %}
+
+
+        </article>
+
+      {% endfor %}
+
+
+
+      <!-- EMPTY STATE -->
+
+      {% if total_results == 0 %}
+
+        <div class="no-results">
+
+          <h3>No opportunities found</h3>
+
+          <p>
+            Try changing your search or compensation filter.
+          </p>
+
+        </div>
+
+      {% endif %}
+
+
+
+      <!-- =================================================
+           PAGINATION
+      ================================================== -->
+
+      {% if total_results > 0 and total_pages > 1 %}
+
+        <nav
+          class="opportunity-pagination"
+          aria-label="Opportunity pagination"
+        >
+
+          <!-- PREVIOUS -->
+
+          {% if current_page > 1 %}
+
+            <a
+              class="pagination-arrow"
+              href="?page={{ current_page | minus: 1 }}&search={{ search | url_encode }}&compensation={{ compensation | url_encode }}"
+              aria-label="Previous page"
+            >
+              &laquo;
+            </a>
+
+          {% endif %}
+
+
+
+          <!-- PAGE NUMBERS -->
+
+          {% for page_number in (1..total_pages) %}
+
+            {% if page_number == current_page %}
+
+              <span class="pagination-page active">
+                {{ page_number }}
+              </span>
+
+            {% else %}
+
+              <a
+                class="pagination-page"
+                href="?page={{ page_number }}&search={{ search | url_encode }}&compensation={{ compensation | url_encode }}"
+              >
+                {{ page_number }}
+              </a>
+
+            {% endif %}
+
+          {% endfor %}
+
+
+
+          <!-- NEXT -->
+
+          {% if current_page < total_pages %}
+
+            <a
+              class="pagination-arrow"
+              href="?page={{ current_page | plus: 1 }}&search={{ search | url_encode }}&compensation={{ compensation | url_encode }}"
+              aria-label="Next page"
+            >
+              &raquo;
+            </a>
+
+          {% endif %}
+
+        </nav>
+
+      {% endif %}
+
+    </main>
+
+  </div>
+
+</div>
+
+
+
+<script>
+
+function applyCompensationFilter(value) {
+
+  const params = new URLSearchParams(window.location.search);
+
+  /*
+   * Reset pagination whenever a filter changes.
+   */
+  params.delete("page");
+
+  if (value) {
+    params.set("compensation", value);
+  } else {
+    params.delete("compensation");
+  }
+
+  window.location.href =
+    window.location.pathname +
+    "?" +
+    params.toString();
+}
+
+</script>
+
+
+
+<style>
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.opportunity-directory {
+  width: 100%;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #333;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.opportunity-search-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.opportunity-search {
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+}
+
+.opportunity-search input[type="text"] {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #aaa;
+  padding: 8px 45px 8px 14px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 42px;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  color: #004f87;
+  cursor: pointer;
+}
+
+.clear-all {
+  display: inline-block;
+  border: 3px solid #0076b6;
+  padding: 8px 14px;
+  color: #005a91;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.clear-all:hover {
+  background: #0076b6;
+  color: white;
+}
+
+
+/* =========================================================
+   TWO COLUMN LAYOUT
+========================================================= */
+
+.opportunity-layout {
+  display: grid;
+  grid-template-columns: 420px minmax(0, 1fr);
+  gap: 65px;
+}
+
+
+/* =========================================================
+   FILTER PANEL
+========================================================= */
+
+.opportunity-filters {
+  border-top: 8px solid #0076b6;
+  background: #fff;
+  box-shadow: 0 0 0 8px #e6e6e6;
+  padding: 28px 25px;
+  align-self: start;
+}
+
+.filter-section h3 {
+  margin: 0 0 18px 0;
+  color: #003b70;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: .2px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.filter-option input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+
+
+/* =========================================================
+   RESULTS
+========================================================= */
+
+.opportunity-results {
+  min-width: 0;
+}
+
+.result-count {
+  margin: 8px 0 28px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   OPPORTUNITY CARD
+========================================================= */
+
+.opportunity-card {
+  padding: 0 0 28px 0;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #ddd;
+}
+
+.opportunity-title {
+  margin: 0 0 12px 0;
+  color: #0076b6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+.opportunity-title:hover {
+  color: #004f87;
+}
+
+
+.opportunity-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  font-size: 17px;
+}
+
+.meta-icon {
+  color: #0076b6;
+  display: flex;
+  align-items: center;
+}
+
+.opportunity-meta strong {
+  font-weight: normal;
+}
+
+
+.opportunity-description {
+  margin-top: 18px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+.opportunity-contact {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.opportunity-contact a {
+  color: #0076b6;
+}
+
+
+.opportunity-actions {
+  margin-top: 18px;
+}
+
+.apply-button {
+  display: inline-block;
+  padding: 9px 20px;
+  background: #0076b6;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+.apply-button:hover {
+  background: #004f87;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.no-results {
+  padding: 40px 0;
+}
+
+.no-results h3 {
+  color: #003b70;
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.opportunity-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 40px 0;
+}
+
+.pagination-page,
+.pagination-arrow {
+  min-width: 38px;
+  height: 38px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  color: #006ca8;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+.pagination-page:hover,
+.pagination-arrow:hover {
+  background: #e8f3f8;
+}
+
+.pagination-page.active {
+  background: #0076b6;
+  color: white;
+  border-color: #0076b6;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .opportunity-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .opportunity-filters {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .opportunity-search-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .opportunity-search {
+    width: 100%;
+  }
+
+  .clear-all {
+    align-self: flex-start;
+  }
+
+  .opportunity-title {
+    font-size: 19px;
+  }
+
+  .opportunity-meta,
+  .opportunity-description {
+    font-size: 16px;
+  }
+
+}
+
+</style>
+
+    </div>
+  </div>
+</div>

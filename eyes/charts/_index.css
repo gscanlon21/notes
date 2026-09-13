@@ -1,0 +1,11 @@
+@media print {
+	.page {
+		padding-bottom: 0 !important;
+		margin-bottom: 0 !important;
+	}
+}
+
+.chart {
+	font-family: "Optician Sans";
+	font-weight: normal;
+}
