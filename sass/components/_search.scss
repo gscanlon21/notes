@@ -1,39 +1,38 @@
 // Search styles
 #search {
-  #search-input {
-    color: color(--color-search);
-    background-color: color(--color-search-bg);
+	#search-input {
+		background-color: color(--color-search-bg);
+		color: color(--color-search);
 
-    &::placeholder {
-      color: inherit;
-    }
-  }
+		&::placeholder {
+			color: inherit;
+		}
+	}
 
-  #search-results {
-    z-index: 1;
-    position: absolute;
-    top: 2rem;
-    left: $base-padding;
-    right: $base-padding;
+	#search-results {
+		background-color: color(--color-search-bg);
+		border-radius: $border-radius;
+		color: color(--color-search);
+		right: $base-padding;
+		left: $base-padding;
+		position: absolute;
+		z-index: 1;
+		top: 2rem;
 
-    color: color(--color-search);
-    background-color: color(--color-search-bg);
-    border-radius: $border-radius;
+		#search-results__items {
+			padding-inline-start: $base-padding * 2;
+			padding-inline-end: $base-padding;
+			padding-block: $base-padding;
+			// Remove user-agent margin.
+			margin-block-end: 0;
 
-    #search-results__items {
-      padding-block: $base-padding;
-      padding-inline-end: $base-padding;
-      padding-inline-start: $base-padding * 2;
-      // Remove user-agent margin.
-      margin-block-end: 0;
+			li+li {
+				margin-top: $base-padding;
+			}
 
-      li + li {
-        margin-top: $base-padding;
-      }
-
-      .search-results__item {
-        display: unset;
-      }
-    }
-  }
+			.search-results__item {
+				display: unset;
+			}
+		}
+	}
 }

@@ -25,14 +25,12 @@
 function debounce(func, wait) {
 	let timeout;
 
-	return function () {
-		let context = this;
-		let args = arguments;
+	return function (...args) {
 		clearTimeout(timeout);
 
-		timeout = setTimeout(function () {
+		timeout = setTimeout(() => {
 			timeout = null;
-			func.apply(context, args);
+			func.apply(this, args);
 		}, wait);
 	};
 }
