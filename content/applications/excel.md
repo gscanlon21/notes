@@ -46,3 +46,21 @@ see_also = []
 ```
 =TEXT(IF(J13="Unknown",C13,J13)+XLOOKUP(N13,Seeds!A:A,Seeds!F:F),"yyyy-MM-dd")&" - "&TEXT(IF(J13="Unknown",C13,J13)+XLOOKUP(N13,Seeds!A:A,Seeds!G:G),"yyyy-MM-dd")
 ```
+
+
+# Conditional Formatting
+
+## Highlight Rows Where a Column is Blank
+
+**Apply To**
+: `A:XFD`
+: - The entire sheet.
+: `11:999999`
+: - Rows 11 on.
+
+**Format Cells where a Formula is True**
+: `=$K1=""`
+: `=AND($K1="",A1<>"")`
+: > [!NOTE]
+  > Start at the row your formula applies to!
+  > If your formula starts at row 11, start your formula at row 11.
