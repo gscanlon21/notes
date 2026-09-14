@@ -2,7 +2,7 @@
 title = "Nutrient Film Technique"
 description = "Too unwieldy"
 in_search_index = false
-render = false
+render = true
 
 [extra]
 in_sitemap = false

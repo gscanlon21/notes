@@ -4,20 +4,19 @@ html {
 	display: flex;
 	min-height: 100%;
 	overflow-y: scroll;
-	justify-content: center;
-	container-type: inline-size;
 	container-name: html;
-}
-
-body {
-	line-height: 1.5;
+	justify-content: center;
 	color: color(--color-text);
+	container-type: inline-size;
+	line-height: $line-height-loose;
 	background-color: color(--color-bg);
 	font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
 		"Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
 		"Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
 		"Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+}
 
+body {
 	//max-width: var(--body-width);
 	margin-block: $base-padding;
 	margin-inline: 0;
