@@ -56,9 +56,11 @@ see_also = []
 
 **Apply To**
 : `A:XFD`
-: - The entire sheet.
+: - Columns A through XFD.
 : `11:999999`
-: - Rows 11 on.
+: - Rows 11 through 999999.
+: `A11:AF999999`
+: - Range A11 to AF999999.
 
 **Format Cells where a Formula is True**
 : `=$K1=""`
