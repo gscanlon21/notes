@@ -11,6 +11,8 @@ see_also = []
 {{ <hidden page={page} section={section} /> }}
 
 
+> [!NOTE]
+> The `$` symbol locks a cell reference so that it doesn’t change when copying a formula.
 
 
 > [!TIP]
@@ -60,7 +62,8 @@ see_also = []
 
 **Format Cells where a Formula is True**
 : `=$K1=""`
-: `=AND($K1="",A1<>"")`
+: `=AND($K1="",$A1<>"")`
 : > [!NOTE]
   > Start at the row your formula applies to!
   > If your formula starts at row 11, start your formula at row 11.
+
