@@ -1,18 +1,24 @@
 {% extends "partials/base.html" %}
 
 {% block content %}
-	<div class="sidebar-left header header-wrap">
-		{% include "partials/summary.html" %}
-		{% include "partials/toc.html" %}
+	<div class="sidebar-left header">
+		<div class="header-wrap">
+			{% include "partials/summary.html" %}
+			{% include "partials/toc.html" %}
 
-		<div class="header-wrap screen-small">
-			<div class="header-item">
-				{{<macros.render_ancestors for={section} config={config} lang={lang} />}}
-			</div>
+			<div class="header-wrap screen-small">
+				<div class="header-item">
+					{{<macros.render_ancestors for={section} config={config} lang={lang} />}}
+				</div>
 
-			<div class="header-item">
-				{{<macros.render_siblings for={section} config={config} lang={lang} />}}
+				<div class="header-item">
+					{{<macros.render_siblings for={section} config={config} lang={lang} />}}
+				</div>
 			</div>
+		</div>
+
+		<div class="auto screen-medium-up">
+			<div class="footer-item fixed left"><a class="unstyle" href="#">Back to Top</a></div>
 		</div>
 	</div>
 	
@@ -39,5 +45,9 @@
 				</nav>
 			</div>
 		{% endif %}
+
+		<div class="auto">
+			<div class="footer-item fixed right"><a class="unstyle" href="#">Back to Top</a></div>
+		</div>
 	</div>
 {% endblock content %}
