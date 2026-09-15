@@ -22,30 +22,12 @@
 	}
 }
 
-article {
-	z-index: 1;
-
-	// For fixed 'Back to Top' button.
-	@media (min-width: $body-width-max) {
-		padding-block-end: $base-padding * 5;
-		background-image: linear-gradient(to top, 
-			transparent $base-padding * 2, rgb(var(--color-bg)) $base-padding * 4, rgb(var(--color-bg)));
-	}
-}
-
 // Section headers
 .header {
 	max-height: min-content;
 	pointer-events: none;
 	z-index: 1;
 	
-	// For fixed 'Back to Top' button.
-	@media (min-width: $body-width-max) {
-		padding-block-end: $base-padding * 5;
-		background-image: linear-gradient(to top, 
-			transparent $base-padding * 2, rgb(var(--color-bg)) $base-padding * 4, rgb(var(--color-bg)));
-	}
-
 	.header-title {
 		line-height: $line-height-tight;
 		margin-block-start: $site-padding * 2;
@@ -60,7 +42,6 @@ article {
 	}
 
 	.header-item {
-		background-image: linear-gradient(to top, rgba(0,0,0,0) 2em,  4em, rgb(var(--color-bg)));
 		min-width: $min-content-width;
 		flex-direction: column;
 		pointer-events: all;
