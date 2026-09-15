@@ -1,12 +1,14 @@
 /* Default Styles */
 
-@import 'functions';
-@import 'variables';
-@import 'atomic';
-@import 'general';
-@import 'user-agent/headers';
-@import 'user-agent/user-agent';
-@import 'user-agent/description-list';
+@import 'shared/functions';
+@import 'shared/variables';
+@import 'shared/atomic';
+@import 'shared/layout';
+@import 'shared/screen';
+@import 'shared/general';
+@import 'elements/headers';
+@import 'elements/user-agent';
+@import 'elements/description-list';
 @import 'components/assessment';
 @import 'components/flashcard';
 @import 'components/sitemap';
@@ -31,7 +33,7 @@
 @import 'markdown/v1/syntax';
 @import 'markdown/v1/print';
 @import 'markdown/v0/reset';
-@import 'print';
+@import 'shared/print';
 
 @font-face {
 	font-weight: 400;

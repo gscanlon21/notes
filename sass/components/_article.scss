@@ -16,11 +16,15 @@
 		min-width: $min-content-width;
 		flex: 1;
 	}
+
+	> .header-item {
+		flex: 1 !important;
+	}
 }
 
 article {
 	z-index: 1;
-	
+
 	// For fixed 'Back to Top' button.
 	@media (min-width: $body-width-max) {
 		padding-block-end: $base-padding * 5;
@@ -56,11 +60,14 @@ article {
 	}
 
 	.header-item {
+		background-image: linear-gradient(to top, rgba(0,0,0,0) 2em,  4em, rgb(var(--color-bg)));
 		min-width: $min-content-width;
 		flex-direction: column;
 		pointer-events: all;
+		position: relative;
 		display: flex;
-		flex: 1;
+		z-index: 2;
+		flex: 0;
 	}
 
 	#summary {
