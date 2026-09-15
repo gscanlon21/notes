@@ -6,6 +6,7 @@ $small-breakpoint: 600px;
 $body-width-max: calc(11in + 40rem);
 $body-width-min-large: calc(11in + 2rem);
 $body-width-min-small: calc(11in + 20rem);
+$print-margin: 10mm;
 
 @import 'site';
 

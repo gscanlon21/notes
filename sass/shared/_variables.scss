@@ -15,6 +15,8 @@ $min-content-width: 16rem !default;
 $small-breakpoint: 600px !default;
 $body-margin: 0mm !default;
 
+$print-margin: 15mm !default;
+
 $breakpoint-buffer: 0.2px;
 $breakpoint-small: "#{$body-margin} + #{$body-margin} + #{$body-width-min} + 19rem + 2rem";
 $breakpoint-large: "#{$body-margin} + #{$body-margin} + #{$body-width-min} + 38rem + 2rem";

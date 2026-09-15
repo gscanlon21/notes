@@ -1,16 +1,18 @@
+$print-margin-buffer: 3mm;
+
 article[data-orientation="portrait"] {
-	/* Subtract 25mm for page margins */
-	--page-size: calc(11in - 25mm);
+	/* Subtract $print-margin twice for each page margin */
+	--page-size: calc(11in - #{$print-margin} - #{$print-margin});
 }
 
 article[data-orientation="landscape"] {
-	/* Subtract 25mm for page margins */
-	--page-size: calc(8.5in - 25mm);
+	/* Subtract $print-margin twice for each page margin */
+	--page-size: calc(8.5in - #{$print-margin} - #{$print-margin});
 }
 
 @media screen {
 	article[data-orientation="portrait"] {
-		margin-block: 10mm;
+		margin-block: $print-margin;
 
 		& > :first-child {
 			margin-block-start: 0 !important;
@@ -27,7 +29,7 @@ article[data-orientation="landscape"] {
 	}
 
 	article[data-orientation="landscape"] {
-		margin-block: 10mm;
+		margin-block: $print-margin;
 
 		& > :first-child {
 			margin-block-start: 0 !important;
@@ -45,45 +47,47 @@ article[data-orientation="landscape"] {
 }
 
 @media screen and (min-width: $body-width-max) {
-	article[data-orientation="portrait"],
-    article[data-orientation="landscape"] {
-        margin-inline: 10mm;
+	article[data-orientation="landscape"],
+	article[data-orientation="portrait"] {
+        margin-inline: $print-margin;
     }
 }
 
 @media print {
 	.page, .section {
-		margin-inline-start: 3mm !important;
-		margin-block-start: 0mm !important;
-		margin-inline-end: 3mm !important;
-		padding-block-end: 0 !important;
-		margin-block-end: 0 !important;
+		margin-inline: $print-margin-buffer !important;
+		padding-inline: 0 !important;
+		padding-block: 0 !important;
+		margin-block: 0 !important;
 		overflow: visible;
 	}
 
 	.context {
+		width: calc(100% - $print-margin-buffer);
 		justify-content: space-between;
 		writing-mode: vertical-lr;
 		display: flex !important;
-		width: calc(100% - 3mm);
 		letter-spacing: 0.1px;
 		align-items: flex-end;
 		position: absolute;
 		font-size: 12px;
 		height: 100%;
     }
+
+	.header {
+		display: none;
+	}
 }
 
-/* @Page applies to app pages
+/* @Page applies to all pages
  and must have a consistent 
  margin top and bottom */
 @page {
-	// For h# borders
-	margin-left: 7mm;
-	// Corner staples
-	margin-top: 15mm;
-	margin-right: 7mm;
-	margin-bottom: 10mm;
+	// For header # borders and print page name context.
+	margin-right: $print-margin - $print-margin-buffer;
+	margin-left: $print-margin - $print-margin-buffer;
+	margin-bottom: $print-margin;
+	margin-top: $print-margin;
 }
 
 .print {
