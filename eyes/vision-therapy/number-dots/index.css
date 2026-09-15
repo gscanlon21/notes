@@ -1,0 +1,50 @@
+.page {
+    justify-content: center;
+	align-items: end;
+	display: flex;
+}
+
+#number-dots {
+	justify-content: center;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	position: relative;
+	gap: var(--gap);
+	flex-wrap: wrap;
+	display: flex;
+}
+
+#number-dots::before {
+	border-left: 1px solid currentColor;
+	position: absolute;
+	margin: auto;
+	height: 100%;
+	z-index: -1;
+	content: '';
+	width: 0px;
+	inset: 0;
+}
+
+.number-dot {
+	background-color: rgb(var(--color-bg));
+	border: 1px solid currentColor;
+	font-size: var(--font-size);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 50%;
+	aspect-ratio: 1;
+	line-height: 1;
+	display: flex;
+	padding: .1em;
+}
+
+.chart.start-at-one > .number-dot:last-child {
+	display: none;
+}
+
+
+.chart:not(.start-at-one) > .number-dot:first-child {
+	display: none;
+}
