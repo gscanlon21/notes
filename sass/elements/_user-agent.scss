@@ -52,6 +52,7 @@ main {
 		flex-basis: $body-width-min;
 		max-width: $body-width-max;
 		margin-inline: auto;
+		min-height: 7rem;
 	}
 }
 
