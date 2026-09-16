@@ -16,8 +16,13 @@ see_also = []
 
 
 > [!TIP]
+> Use `ctrl-shift-v` to paste without formatting!
+
+
+> [!TIP]
 > Prefix a cell with an apostrophe (`'`) to tell excel to treat it as literal text.
 >> Disable Auto-Formatting
+
 
 > [!TIP]
 > You can hit the little box between A and 1 to select the entire sheet (or hit ctrl + A) and format it as text.
@@ -69,3 +74,32 @@ see_also = []
   > Start at the row your formula applies to!
   > If your formula starts at row 11, start your formula at row 11.
 
+
+
+## Automate Rules
+
+###### Re-Apply Conditional Formatting Rules
+```
+function main(workbook: ExcelScript.Workbook) {
+	let conditionalFormatting: ExcelScript.ConditionalFormat;
+	let selectedSheet = workbook.getActiveWorksheet();
+
+  // Delete conditional format from range F42 on selectedSheet for priority 1
+	selectedSheet.getRanges("F42").getConditionalFormats()[1].delete();
+
+  // Delete conditional format from range F42 on selectedSheet for priority 0
+	selectedSheet.getRanges("F42").getConditionalFormats()[0].delete();
+
+	// Create custom from range A11:AF999999 on selectedSheet
+	conditionalFormatting = selectedSheet.getRange("A11:AF999999").addConditionalFormat(ExcelScript.ConditionalFormatType.custom);
+  conditionalFormatting.getCustom().getFormat().getFont().setColor("#000000");
+	conditionalFormatting.getCustom().getFormat().getFill().setColor("#FFC7CE");
+	conditionalFormatting.getCustom().getRule().setFormula("=AND($K11=\"\",$A11<>\"\")");
+
+	// Create custom from range A11:AF999999 on selectedSheet
+	conditionalFormatting = selectedSheet.getRange("A11:AF999999").addConditionalFormat(ExcelScript.ConditionalFormatType.custom);
+	conditionalFormatting.getCustom().getFormat().getFont().setColor("#000000");
+	conditionalFormatting.getCustom().getFormat().getFill().setColor("#FFEB9C");
+	conditionalFormatting.getCustom().getRule().setFormula("=AND($Y11=\"\",$K11<>\"\")");
+}
+```

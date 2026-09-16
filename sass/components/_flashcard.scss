@@ -30,9 +30,10 @@
 
 		.flashcard-front,
 		.flashcard-back {
+			margin-inline: $base-padding * 1;
+			padding-block: $base-padding * 1;
 			border: 2px solid currentColor;
 			backface-visibility: hidden;
-			padding: $base-padding * 1;
 			justify-content: center;
 			flex-direction: column;
 			align-items: center;
