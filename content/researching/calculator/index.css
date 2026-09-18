@@ -1,14 +1,9 @@
 
-.calculator {
-    width: 96%;
-    max-width: 1500px;
-    margin: 20px auto;
-}
 .layout {
-    display: grid;
     grid-template-columns: 440px 1fr;
-    gap: 35px;
     align-items: start;
+	display: grid;
+	gap: 35px;
 }
 
 /* =========================
@@ -17,33 +12,39 @@
 .controls {
     padding: 5px 0 0 25px;
 }
+
 .field {
     margin-bottom: 3px;
 }
+
 label {
-    display: block;
-    font-size: 32px;
     line-height: 1.1;
+	font-size: 2rem;
+	display: block;
 }
 
 .buttons {
+	margin-top: 18px;
     display: flex;
-    gap: 22px;
-    margin-top: 18px;
+	gap: 22px;
 }
 
 .status {
     width: 383px;
     margin-top: 18px;
-    font-size: 17px;
+    font-size: 1rem;
     line-height: 1.35;
     color: #555;
 }
-.status.error {
-    color: #a40000;
-}
-.status.success {
-    color: #175c17;
+
+.status {
+	&.error {
+		color: #a40000;
+	}
+
+	&.success {
+		color: #175c17;
+	}
 }
 
 /* =========================
@@ -52,16 +53,19 @@ label {
 .graph {
     min-width: 0;
 }
+
 .graph-title {
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: -5px;
 }
+
 .svg-wrap {
     width: 100%;
     max-width: 800px;
     margin: auto;
 }
+
 svg {
     width: 100%;
     height: auto;
@@ -75,71 +79,86 @@ svg {
     stroke: #222;
     stroke-width: 2;
 }
+
 .circle {
     fill: none;
     stroke: #333;
     stroke-width: 3;
 }
+
 .grid {
     fill: none;
     stroke: #ddd;
     stroke-width: 1;
 }
+
 .triangle {
     fill: rgba(70, 120, 210, 0.13);
     stroke: #315fa8;
     stroke-width: 4;
 }
+
 .projection {
     stroke: #777;
     stroke-width: 2;
     stroke-dasharray: 8 6;
 }
+
 .ray {
     stroke: #222;
     stroke-width: 4;
 }
+
 .point {
     fill: #d52f2f;
     stroke: white;
     stroke-width: 3;
 }
+
 .origin {
     fill: #111;
 }
+
 .angle-arc {
     fill: none;
     stroke: #555;
     stroke-width: 4;
 }
+
 .axis-label {
-    font-size: 25px;
+    font-size: 1.75rem;
     font-weight: bold;
 }
+
 .tick-label {
-    font-size: 18px;
+    font-size: 1rem;
 }
+
 .side-label {
-    font-size: 22px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
+
 .angle-label {
-    font-size: 25px;
+    font-size: 1.75rem;
     font-style: italic;
 }
+
 .coordinate {
-    font-size: 19px;
-    font-family: monospace;
+	font-family: monospace;
     font-weight: bold;
+    font-size: 1rem;
 }
+
 .right-angle {
     fill: none;
     stroke: #555;
     stroke-width: 3;
 }
+
 .info {
     text-align: center;
-    font-size: 22px;
+    font-size: 1.25rem;
     margin-top: -5px;
 }
 
@@ -147,14 +166,16 @@ svg {
     .layout {
         grid-template-columns: 1fr;
     }
+
     .controls {
         padding-left: 25px;
     }
+
     .graph {
         order: -1;
     }
-    input,
-    .status {
+
+    input, .status {
         width: calc(100vw - 60px);
         max-width: 500px;
     }
