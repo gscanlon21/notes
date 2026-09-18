@@ -70,7 +70,7 @@ function format(value) {
         value = 0;
     }
 
-    return Number(value.toFixed(8)).toString();
+    return Number(value.toFixed(4)).toString();
 }
 
 function clearDrawing() {
@@ -441,18 +441,14 @@ function drawTriangle(v) {
        Triangle
        --------------------------------------------- */
 
-    const triangle =
-        svgElement(
-            "polygon",
-            {
-                points: `
-                    ${CX},${CY}
-                    ${projectionX},${projectionY}
-                    ${pointX},${pointY}
-                `,
-                class: "triangle"
-            }
-        );
+    const triangle = svgElement("polygon", {
+		points: `
+			${CX},${CY}
+			${projectionX},${projectionY}
+			${pointX},${pointY}
+		`,
+		class: "triangle"
+	});
 
     drawing.appendChild(triangle);
 
@@ -460,17 +456,13 @@ function drawTriangle(v) {
        Horizontal projection
        --------------------------------------------- */
 
-    const horizontal =
-        svgElement(
-            "line",
-            {
-                x1: CX,
-                y1: CY,
-                x2: projectionX,
-                y2: projectionY,
-                class: "projection"
-            }
-        );
+    const horizontal = svgElement("line", {
+		x1: CX,
+		y1: CY,
+		x2: projectionX,
+		y2: projectionY,
+		class: "projection"
+	});
 
     drawing.appendChild(horizontal);
 
@@ -478,17 +470,14 @@ function drawTriangle(v) {
        Vertical projection
        --------------------------------------------- */
 
-    const vertical =
-        svgElement(
-            "line",
-            {
-                x1: projectionX,
-                y1: projectionY,
-                x2: pointX,
-                y2: pointY,
-                class: "projection"
-            }
-        );
+    const vertical = svgElement("line",
+	{
+		x1: projectionX,
+		y1: projectionY,
+		x2: pointX,
+		y2: pointY,
+		class: "projection"
+	});
 
     drawing.appendChild(vertical);
 
@@ -528,26 +517,19 @@ function drawTriangle(v) {
        --------------------------------------------- */
 
     const arcRadius = 75;
-
     const arcEndX = CX + arcRadius * Math.cos(angle);
-
     const arcEndY = CY - arcRadius * Math.sin(angle);
-
     const largeArc = v.A > 180 ? 1 : 0;
 
-    const arc =
-        svgElement(
-            "path",
-            {
-                d: `
-                    M ${CX + arcRadius} ${CY}
-                    A ${arcRadius} ${arcRadius}
-                      0 ${largeArc} 0
-                      ${arcEndX} ${arcEndY}
-                `,
-                class: "angle-arc"
-            }
-        );
+    const arc = svgElement("path", {
+		d: `
+			M ${CX + arcRadius} ${CY}
+			A ${arcRadius} ${arcRadius}
+				0 ${largeArc} 0
+				${arcEndX} ${arcEndY}
+		`,
+		class: "angle-arc"
+	});
 
     drawing.appendChild(arc);
 
@@ -555,16 +537,12 @@ function drawTriangle(v) {
        Terminal point
        --------------------------------------------- */
 
-    const point =
-        svgElement(
-            "circle",
-            {
-                cx: pointX,
-                cy: pointY,
-                r: 9,
-                class: "point"
-            }
-        );
+    const point = svgElement("circle", {
+		cx: pointX,
+		cy: pointY,
+		r: 9,
+		class: "point"
+	});
 
     drawing.appendChild(point);
 
@@ -572,16 +550,12 @@ function drawTriangle(v) {
        Origin
        --------------------------------------------- */
 
-    const origin =
-        svgElement(
-            "circle",
-            {
-                cx: CX,
-                cy: CY,
-                r: 6,
-                class: "origin"
-            }
-        );
+    const origin = svgElement("circle", {
+		cx: CX,
+		cy: CY,
+		r: 6,
+		class: "origin"
+	});
 
     drawing.appendChild(origin);
 
@@ -590,30 +564,15 @@ function drawTriangle(v) {
        --------------------------------------------- */
 
     const labelAngle = Math.min(v.A / 2, 75);
-
     const labelRad = labelAngle * Math.PI / 180;
-
     const labelRadius = 105;
 
-    const angleLabel =
-        svgElement(
-            "text",
-            {
-                x:
-                    CX +
-                    labelRadius *
-                    Math.cos(labelRad),
-
-                y:
-                    CY -
-                    labelRadius *
-                    Math.sin(labelRad),
-
-                class: "angle-label",
-
-                "text-anchor": "middle"
-            }
-        );
+    const angleLabel = svgElement("text", {
+		x: CX + labelRadius * Math.cos(labelRad),
+		y: CY - labelRadius * Math.sin(labelRad),
+		class: "angle-label",
+		"text-anchor": "middle"
+	});
 
     angleLabel.textContent = `A = ${format(v.A)}°`;
 
@@ -623,26 +582,13 @@ function drawTriangle(v) {
        Coordinate
        --------------------------------------------- */
 
-    const coordinate =
-        svgElement(
-            "text",
-            {
-                x:
-                    pointX +
-                    (x >= 0 ? 14 : -14),
-
-                y:
-                    pointY +
-                    (y >= 0 ? -15 : 28),
-
-                class: "coordinate",
-
-                "text-anchor":
-                    x >= 0
-                        ? "start"
-                        : "end"
-            }
-        );
+    const coordinate = svgElement("text",
+	{
+		x: pointX + (x >= 0 ? 14 : -14),
+		y: pointY + (y >= 0 ? -15 : 28),
+		class: "coordinate",
+		"text-anchor": x >= 0 ? "start" : "end"
+	});
 
     coordinate.textContent = `(${format(x)}, ${format(y)})`;
 
@@ -652,57 +598,35 @@ function drawTriangle(v) {
        Side labels
        --------------------------------------------- */
 
-    const bLabel =
-        svgElement(
-            "text",
-            {
-                x:
-                    (CX + projectionX) / 2,
-
-                y:
-                    CY + 30,
-
-                class: "side-label",
-
-                "text-anchor": "middle"
-            }
-        );
+    const bLabel = svgElement("text",
+	{
+		x: (CX + projectionX) / 2,
+		y: CY + 30,
+		class: "side-label",
+		"text-anchor": "middle"
+	});
 
     bLabel.textContent = `b = ${format(v.b)}`;
 
     drawing.appendChild(bLabel);
 
-    const aLabel =
-        svgElement(
-            "text",
-            {
-                x:
-                    projectionX + 18,
-
-                y:
-                    (projectionY + pointY) / 2,
-
-                class: "side-label"
-            }
-        );
+    const aLabel = svgElement("text",
+	{
+		x: projectionX + 18,
+		y: (projectionY + pointY) / 2,
+		class: "side-label"
+	});
 
     aLabel.textContent = `a = ${format(v.a)}`;
 
     drawing.appendChild(aLabel);
 
-    const cLabel =
-        svgElement(
-            "text",
-            {
-                x:
-                    (CX + pointX) / 2 + 10,
-
-                y:
-                    (CY + pointY) / 2 - 10,
-
-                class: "side-label"
-            }
-        );
+    const cLabel = svgElement("text",
+	{
+		x: (CX + pointX) / 2 + 10,
+		y: (CY + pointY) / 2 - 10,
+		class: "side-label"
+	});
 
     cLabel.textContent = `c = ${format(v.c)}`;
 
@@ -779,7 +703,6 @@ function calculate() {
         */
 
         status.className = "status";
-
         status.textContent = "The angles determine the shape, but you need at least one side to determine its size.";
 
         /*
