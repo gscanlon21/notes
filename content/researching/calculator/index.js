@@ -120,8 +120,7 @@ function validateInputs(v) {
         Angles must be between 0 and 90.
     */
     for (const key of ["A", "B"]) {
-        if (v[key] !== null &&
-            (v[key] <= 0 || v[key] >= 90)) {
+        if (v[key] !== null && (v[key] <= 0 || v[key] >= 90)) {
 
             return `${key} must be between 0° and 90°.`;
         }
@@ -190,7 +189,6 @@ function solveTriangle(v) {
            --------------------------------------------- */
 
         if (v.A !== null && v.B === null) {
-
             v.B = 90 - v.A;
             changed = true;
         }
@@ -204,14 +202,9 @@ function solveTriangle(v) {
            Side a + side b -> c
            --------------------------------------------- */
 
-        if (v.a !== null &&
-            v.b !== null &&
-            v.c === null) {
+        if (v.a !== null && v.b !== null && v.c === null) {
 
-            v.c = Math.sqrt(
-                v.a * v.a +
-                v.b * v.b
-            );
+            v.c = Math.sqrt(v.a * v.a + v.b * v.b);
 
             changed = true;
         }
@@ -220,18 +213,12 @@ function solveTriangle(v) {
            c + a -> b
            --------------------------------------------- */
 
-        if (v.c !== null &&
-            v.a !== null &&
-            v.b === null) {
+        if (v.c !== null && v.a !== null && v.b === null) {
 
-            const value =
-                v.c * v.c -
-                v.a * v.a;
+            const value = v.c * v.c - v.a * v.a;
 
             if (value < 0) {
-                throw new Error(
-                    "Side a cannot be longer than side c."
-                );
+                throw new Error("Side a cannot be longer than side c.");
             }
 
             v.b = Math.sqrt(value);
@@ -244,13 +231,10 @@ function solveTriangle(v) {
            --------------------------------------------- */
 
         if (v.c !== null && v.b !== null && v.a === null) {
-
             const value = v.c * v.c - v.b * v.b;
 
             if (value < 0) {
-                throw new Error(
-                    "Side b cannot be longer than side c."
-                );
+                throw new Error("Side b cannot be longer than side c.");
             }
 
             v.a = Math.sqrt(value);
@@ -262,8 +246,7 @@ function solveTriangle(v) {
            a + A -> c and b
            --------------------------------------------- */
 
-        if (v.a !== null &&
-            v.A !== null) {
+        if (v.a !== null && v.A !== null) {
 
             const rad = v.A * Math.PI / 180;
 
@@ -282,26 +265,22 @@ function solveTriangle(v) {
            a + B -> c and b
            --------------------------------------------- */
 
-        if (v.a !== null &&
-            v.B !== null) {
+        if (v.a !== null && v.B !== null) {
 
             const rad = v.B * Math.PI / 180;
 
             if (v.c === null) {
                 v.c = v.a / Math.cos(rad);
-
                 changed = true;
             }
 
             if (v.b === null) {
                 v.b = v.a * Math.tan(rad);
-
                 changed = true;
             }
 
             if (v.A === null) {
                 v.A = 90 - v.B;
-
                 changed = true;
             }
         }
@@ -311,18 +290,15 @@ function solveTriangle(v) {
            --------------------------------------------- */
 
         if (v.b !== null && v.B !== null) {
-
             const rad = v.B * Math.PI / 180;
 
             if (v.c === null) {
                 v.c = v.b / Math.sin(rad);
-
                 changed = true;
             }
 
             if (v.a === null) {
                 v.a = v.b / Math.tan(rad);
-
                 changed = true;
             }
         }
@@ -332,18 +308,15 @@ function solveTriangle(v) {
            --------------------------------------------- */
 
         if (v.b !== null && v.A !== null) {
-
             const rad = v.A * Math.PI / 180;
 
             if (v.c === null) {
                 v.c = v.b / Math.cos(rad);
-
                 changed = true;
             }
 
             if (v.a === null) {
                 v.a = v.b * Math.tan(rad);
-
                 changed = true;
             }
         }
@@ -352,20 +325,17 @@ function solveTriangle(v) {
            c + A -> a and b
            --------------------------------------------- */
 
-        if (v.c !== null &&
-            v.A !== null) {
+        if (v.c !== null && v.A !== null) {
 
             const rad = v.A * Math.PI / 180;
 
             if (v.a === null) {
                 v.a = v.c * Math.sin(rad);
-
                 changed = true;
             }
 
             if (v.b === null) {
                 v.b = v.c * Math.cos(rad);
-
                 changed = true;
             }
         }
@@ -374,22 +344,17 @@ function solveTriangle(v) {
            c + B -> a and b
            --------------------------------------------- */
 
-        if (v.c !== null &&
-            v.B !== null) {
+        if (v.c !== null && v.B !== null) {
 
             const rad = v.B * Math.PI / 180;
 
             if (v.b === null) {
-
                 v.b = v.c * Math.sin(rad);
-
                 changed = true;
             }
 
             if (v.a === null) {
-
                 v.a = v.c * Math.cos(rad);
-
                 changed = true;
             }
         }
@@ -399,64 +364,39 @@ function solveTriangle(v) {
            --------------------------------------------- */
 
         if (v.a !== null && v.b !== null) {
-
             if (v.A === null) {
-
                 v.A = Math.atan2(v.a, v.b) * 180 / Math.PI;
-
                 changed = true;
             }
 
             if (v.B === null) {
-
-                v.B =
-                    Math.atan2(
-                        v.b,
-                        v.a
-                    ) * 180 / Math.PI;
-
+                v.B = Math.atan2(v.b, v.a) * 180 / Math.PI;
                 changed = true;
             }
         }
 
-        if (v.a !== null &&
-            v.c !== null) {
+        if (v.a !== null && v.c !== null) {
 
             if (v.A === null) {
-
-                v.A =
-                    Math.asin(
-                        v.a / v.c
-                    ) * 180 / Math.PI;
-
+                v.A = Math.asin(v.a / v.c) * 180 / Math.PI;
                 changed = true;
             }
 
             if (v.B === null) {
-
                 v.B = 90 - v.A;
-
                 changed = true;
             }
         }
 
-        if (v.b !== null &&
-            v.c !== null) {
+        if (v.b !== null && v.c !== null) {
 
             if (v.B === null) {
-
-                v.B =
-                    Math.asin(
-                        v.b / v.c
-                    ) * 180 / Math.PI;
-
+                v.B = Math.asin(v.b / v.c) * 180 / Math.PI;
                 changed = true;
             }
 
             if (v.A === null) {
-
                 v.A = 90 - v.B;
-
                 changed = true;
             }
         }
@@ -556,17 +496,13 @@ function drawTriangle(v) {
        Hypotenuse / terminal ray
        --------------------------------------------- */
 
-    const ray =
-        svgElement(
-            "line",
-            {
-                x1: CX,
-                y1: CY,
-                x2: pointX,
-                y2: pointY,
-                class: "ray"
-            }
-        );
+    const ray = svgElement("line", {
+		x1: CX,
+		y1: CY,
+		x2: pointX,
+		y2: pointY,
+		class: "ray"
+	});
 
     drawing.appendChild(ray);
 
@@ -576,18 +512,14 @@ function drawTriangle(v) {
 
     const size = 18;
 
-    const marker =
-        svgElement(
-            "polyline",
-            {
-                points: `
-                    ${projectionX - size},${projectionY}
-                    ${projectionX - size},${projectionY - size}
-                    ${projectionX},${projectionY - size}
-                `,
-                class: "right-angle"
-            }
-        );
+    const marker = svgElement("polyline", {
+		points: `
+			${projectionX - size},${projectionY}
+			${projectionX - size},${projectionY - size}
+			${projectionX},${projectionY - size}
+		`,
+		class: "right-angle"
+	});
 
     drawing.appendChild(marker);
 
@@ -597,18 +529,11 @@ function drawTriangle(v) {
 
     const arcRadius = 75;
 
-    const arcEndX =
-        CX +
-        arcRadius *
-        Math.cos(angle);
+    const arcEndX = CX + arcRadius * Math.cos(angle);
 
-    const arcEndY =
-        CY -
-        arcRadius *
-        Math.sin(angle);
+    const arcEndY = CY - arcRadius * Math.sin(angle);
 
-    const largeArc =
-        v.A > 180 ? 1 : 0;
+    const largeArc = v.A > 180 ? 1 : 0;
 
     const arc =
         svgElement(
@@ -666,9 +591,7 @@ function drawTriangle(v) {
 
     const labelAngle = Math.min(v.A / 2, 75);
 
-    const labelRad =
-        labelAngle *
-        Math.PI / 180;
+    const labelRad = labelAngle * Math.PI / 180;
 
     const labelRadius = 105;
 
@@ -745,8 +668,7 @@ function drawTriangle(v) {
             }
         );
 
-    bLabel.textContent =
-        `b = ${format(v.b)}`;
+    bLabel.textContent = `b = ${format(v.b)}`;
 
     drawing.appendChild(bLabel);
 
@@ -764,8 +686,7 @@ function drawTriangle(v) {
             }
         );
 
-    aLabel.textContent =
-        `a = ${format(v.a)}`;
+    aLabel.textContent = `a = ${format(v.a)}`;
 
     drawing.appendChild(aLabel);
 
@@ -793,15 +714,10 @@ function drawTriangle(v) {
    ========================================================= */
 
 function calculate() {
-
     let values = getInputs();
 
     /* Count supplied values */
-
-    const supplied =
-        Object.values(values)
-            .filter(v => v !== null)
-            .length;
+    const supplied = Object.values(values).filter(v => v !== null).length;
 
     if (supplied < 2) {
         status.className = "status error";
@@ -815,7 +731,6 @@ function calculate() {
     }
 
     /* Validate */
-
     const validation = validateInputs(values);
 
     if (validation) {
