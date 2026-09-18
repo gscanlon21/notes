@@ -7,48 +7,25 @@ weight = 1050
 updated = 2026-06-01
 theme = "light"
 see_also = []
+options = [
+  { name = "Reset", id = "reset", type = "reset" },
+  { name = "Side a", id = "a", type = "number", value = "" },
+  { name = "Side b", id = "b", type = "number", value = "" },
+  { name = "Side c", id = "c", type = "number", value = "" },
+  { name = "Angle A", id = "A", type = "number", value = "" },
+  { name = "Angle B", id = "B", type = "number", value = "" },
+  { name = "Calculate", id = "calculate", type = "button" },
+]
 +++
 
 {{ <hidden page={page} section={section} /> }}
 
+<div id="status" class="status">
+    Enter any two independent values.
+</div>
 
 <div class="calculator">
     <div class="layout">
-        <!-- ==========================================
-             INPUT PANEL
-             ========================================== -->
-        <div class="controls">
-            <div class="field">
-                <label for="a">side a</label>
-                <input id="a" type="number" step="any">
-            </div>
-            <div class="field">
-                <label for="b">side b</label>
-                <input id="b" type="number" step="any">
-            </div>
-            <div class="field">
-                <label for="c">side c</label>
-                <input id="c" type="number" step="any">
-            </div>
-            <div class="field">
-                <label for="A">angle A</label>
-                <input id="A" type="number" step="any">
-            </div>
-            <div class="field">
-                <label for="B">angle B</label>
-                <input id="B" type="number" step="any">
-            </div>
-            <div class="buttons">
-                <button id="calculate">Calculate</button>
-                <button id="reset">Reset</button>
-            </div>
-            <div id="status" class="status">
-                Enter any two independent values.
-            </div>
-        </div>
-        <!-- ==========================================
-             UNIT CIRCLE
-             ========================================== -->
         <div class="graph">
             <div class="graph-title">
                 Unit Circle
