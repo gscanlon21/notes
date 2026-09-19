@@ -1,3 +1,5 @@
+const searchParams = new URLSearchParams(window.location.search);
+
 // Remove the disabled attribute from checkboxes so they're easier to see.
 for (const element of Array.from(document.getElementsByTagName('input'))) {
     if (element.type === 'checkbox' && element.disabled) {
@@ -100,6 +102,18 @@ for (const element of Array.from(document.getElementsByClassName('defer'))) {
 // Remove async classes from elements after the page has loaded.
 for (const element of Array.from(document.getElementsByClassName('async'))) {
     element.classList.remove('async');
+}
+
+// Scroll to element containing search text.
+if (searchParams.has('search')) {
+	const searchText = searchParams.get('search').toLowerCase();
+	for (const element of Array.from(document.querySelectorAll("*"))) {
+		const text = Array.from(element.childNodes).filter(e => e.nodeType === Node.TEXT_NODE).map(e => e.textContent).join('');
+		if (!element.hasAttribute('href') && text.toLowerCase().includes(searchText)) {
+			element.scrollIntoView({ behavior: "smooth", block: "start", });
+			break;
+		}
+	}
 }
 
 // Implementation of the Durstenfeld shuffle.

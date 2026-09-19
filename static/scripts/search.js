@@ -147,8 +147,9 @@ function makeTeaser(body, terms) {
 }
 
 function formatSearchResultItem(item, terms) { 
+	const searchInput = document.getElementById("search-input");
 	return '<div class="search-results__item">'
-		+ `<a href="${item.ref.replace("/content/no/", "/content/")}">${item.doc.title}</a>`
+		+ `<a href="${item.ref.replace("/content/no/", "/content/")}?search=${searchInput.value}">${item.doc.title}</a>`
 		+ `<div>${makeTeaser(item.doc.body, terms)}</div>`
 		+ '</div>';
 }
