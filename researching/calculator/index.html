@@ -1,0 +1,10206 @@
+<!DOCTYPE html>
+<html lang=en data-theme="light">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	
+	
+		<title>Trig Calculator - ascallion</title>
+	
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://ascallion.com/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://ascallion.com/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://ascallion.com/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://ascallion.com/site.webmanifest?h=d3283d8cdd099d8504a1">
+
+	
+	<link rel="stylesheet" type="text/css" href="https://ascallion.com/site.css?h=42a32016adf8192aa628" media="all">
+	
+
+	
+	
+		
+
+		
+		
+	
+	
+    
+	
+		
+		
+
+		
+		<style>
+.layout {
+    grid-template-columns: 440px 1fr;
+    align-items: start;
+	display: grid;
+	gap: 35px;
+}
+
+.status {
+	width: 383px;
+    margin-top: 18px;
+    font-size: 1rem;
+    line-height: 1.35;
+    color: #555;
+
+	&.error {
+		color: #a40000;
+	}
+
+	&.success {
+		color: #175c17;
+	}
+}
+
+.graph {
+    min-width: 0;
+}
+
+.graph-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.svg-wrap {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   SVG STYLES
+   ========================= */
+.axis {
+    stroke: #222;
+    stroke-width: 2;
+}
+
+.circle {
+    fill: none;
+    stroke: #333;
+    stroke-width: 3;
+}
+
+.grid {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 1;
+}
+
+.triangle {
+    fill: rgba(70, 120, 210, 0.13);
+    stroke: #315fa8;
+    stroke-width: 4;
+}
+
+.projection {
+    stroke: #777;
+    stroke-width: 2;
+    stroke-dasharray: 8 6;
+}
+
+.ray {
+    stroke: #222;
+    stroke-width: 4;
+}
+
+.point {
+    fill: #d52f2f;
+    stroke: white;
+    stroke-width: 3;
+}
+
+.origin {
+    fill: #111;
+}
+
+.angle-arc {
+    fill: none;
+    stroke: #555;
+    stroke-width: 4;
+}
+
+.axis-label {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.tick-label {
+    font-size: 1rem;
+}
+
+.side-label {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.angle-label {
+    font-size: 1.75rem;
+    font-style: italic;
+}
+
+.coordinate {
+	font-family: monospace;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.right-angle {
+    fill: none;
+    stroke: #555;
+    stroke-width: 3;
+}
+
+.info {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: -5px;
+}
+
+@media (max-width: 950px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .controls {
+        padding-left: 25px;
+    }
+
+    .graph {
+        order: -1;
+    }
+
+    input, .status {
+        width: calc(100vw - 60px);
+        max-width: 500px;
+    }
+}</style>
+	
+
+	
+
+	<script defer src="https://ascallion.com/elasticlunr.min.js?h=4f648b9e42abdef9c436"></script>
+	<script defer src="https://ascallion.com/search_index.en.js?h=b30f7cc5302ea57b4dc7"></script>
+
+	
+
+	
+
+	<script defer src="https://ascallion.com/scripts/content.js?h=32700918cda2ffea7b52"></script>
+	<script defer src="https://ascallion.com/scripts/flashcards.js?h=22bdef1589d551d16717"></script>
+	<script defer src="https://ascallion.com/scripts/assessment.js?h=89c341c9cfdff8fd3a38"></script>
+	<script defer src="https://ascallion.com/scripts/search.js?h=643c4ada606b1c2f98b4"></script>
+	<script defer src="https://ascallion.com/scripts/chart.js?h=5feed9f60304b71795ac"></script>
+
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.css">
+</head>
+
+<body>
+	
+	<header id="site-header">
+		<nav id="site-nav">
+			<div class="nav-item">
+
+<div id="search">
+  <input id="search-input" type="search" placeholder="Search">
+
+  <div id="search-results" style="display: none;">
+      <ul id="search-results__items"></div>
+  </div>
+</div></div>
+			<div class="nav-item"><a class="unstyle" href="https://ascallion.com/">ascallion</a></div>
+			<div class="nav-item"><a href="https://ascallion.com/">Sitemap</a></div>
+		</nav>
+
+		<nav class="print context">
+			<div class="left">
+				Trig Calculator
+			</div>
+			<div class="right">
+				
+			</div>
+		</nav>
+	</header>
+	
+
+	
+
+	<main id="main">
+		
+	<div class="sidebar-left header">
+		<div class="header-wrap">
+			
+<form id="options" class="header-item">
+    <header id="summary">
+        <h2 class="header-title">
+            
+                <span>Trig Calculator</span>
+            
+              
+        </h2> 
+        
+
+		
+
+		
+
+        <dl>
+            
+
+            
+
+            
+
+            
+
+			
+
+	
+		
+	
+
+	
+		
+	
+
+
+	
+	
+	
+		
+			
+				
+			
+		
+	
+	
+
+
+ 
+	<dt class="asset PDFs">PDFs</dt>
+	
+		
+			
+		
+	
+		
+			
+		
+	
+	
+		
+		
+			
+				
+					
+<dd class="summary-item asset PDFs">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/researching/一Plastics_Sterilization_Compatibility_Chart.pdf" target="_blank">Plastics Sterilization Compatibility Chart</a>
+	
+</dd>
+
+				
+			
+		
+	
+
+
+			
+
+	
+		
+	
+
+	
+		
+	
+
+
+	
+	
+	
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+
+
+	
+	
+	
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+
+	
+	
+	
+		
+			
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+
+	
+	
+	
+		
+			
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+
+	
+	
+	
+		
+			
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+
+	
+	
+	
+		
+			
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+
+	
+	
+	
+		
+			
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+
+	
+		
+	
+
+
+	
+	
+	
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+
+	
+		
+	
+
+
+	
+	
+	
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+
+	
+		
+	
+
+
+	
+	
+	
+		
+			
+		
+	
+	
+
+
+
+
+
+			 
+            <dt>Options</dt>
+            
+				
+					
+					
+				
+                <dd class="summary-item reverse-indent" data-type="reset">
+					
+                     
+                        <button id="reset" type="reset">Reset</button>
+                    
+                </dd>
+            
+				
+					
+					
+				
+                <dd class="summary-item reverse-indent" data-type="number">
+					
+                     
+						<label for="a">Side a</label>
+                        <input id="a" name="calculator-a" type="number" value="" />
+					
+                </dd>
+            
+				
+					
+					
+				
+                <dd class="summary-item reverse-indent" data-type="number">
+					
+                     
+						<label for="b">Side b</label>
+                        <input id="b" name="calculator-b" type="number" value="" />
+					
+                </dd>
+            
+				
+					
+					
+				
+                <dd class="summary-item reverse-indent" data-type="number">
+					
+                     
+						<label for="c">Side c</label>
+                        <input id="c" name="calculator-c" type="number" value="" />
+					
+                </dd>
+            
+				
+					
+					
+				
+                <dd class="summary-item reverse-indent" data-type="number">
+					
+                     
+						<label for="A">Angle A</label>
+                        <input id="A" name="calculator-A" type="number" value="" />
+					
+                </dd>
+            
+				
+					
+					
+				
+                <dd class="summary-item reverse-indent" data-type="number">
+					
+                     
+						<label for="B">Angle B</label>
+                        <input id="B" name="calculator-B" type="number" value="" />
+					
+                </dd>
+            
+				
+					
+					
+				
+                <dd class="summary-item reverse-indent" data-type="button">
+					
+                     
+                        <button id="calculate" type="button">Calculate</button>
+					
+                </dd>
+            
+            
+
+			
+
+            
+            
+            <dt>Reading Time</dt>
+            <dd>1 minute(s)</dd>
+
+			<dt>Word Count</dt>
+            <dd><span id="word-count">175</span> words</dd>
+
+			
+        </dl>
+
+		<div id="flashcard-container"></div>
+		
+
+	
+		
+	
+
+	
+		
+	
+
+
+
+
+    </header>
+</form>
+			
+
+
+
+
+			<div class="header-wrap screen-small">
+				<div class="header-item">
+					
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap">
+	<menu class="sitemap-list">
+		
+			
+			
+				
+					<li><a href="https://ascallion.com/">ascallion</a></li>
+				
+			
+		
+			
+			
+				
+					<li><a href="https://ascallion.com/researching/">Researching</a></li>
+				
+			
+		
+		
+			<li class="current">Trig Calculator</li>
+		
+	</menu>
+</nav>
+
+				</div>
+				
+				<div class="header-item">
+					
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap">
+	
+		
+		
+			
+				
+
+
+
+	
+
+
+
+
+	
+		
+		
+			<menu class="sitemap-list">
+				
+
+	
+    
+	
+        
+            <li class="current">Trig Calculator</li>
+        
+		
+    
+	
+
+
+			</menu>
+		
+		
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/analysis/">Analysis</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/analysis/transcriptomics/">Transcriptomics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/ATAC-seq/">Assay for Transposase-Accessible Chromatin using Sequencing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/bulk-rna-seq/">Bulk mRNA Sequencing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/single-cell-rna-seq/">Single-Cell mRNA Sequencing</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/bioinformatics/">Bioinformatics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/bioinformatics/projects/">Projects</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/projects/episcanpy/">epiScanpy</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/bioinformatics/resources/">Resources</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/resources/plants/">Plants</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/resources/yeast/">Yeast</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/bioinformatics/tools/">Tools</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/tools/blast/">Basic Local Alignment Search Tool</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/chemicals/">Chemicals</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/chemicals/pictograms/">GHS Pictograms</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/clinical-informatics/">Clinical Informatics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/equipment/">Equipment</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/equipment/autoclave/">Autoclave</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/equipment/electrical-conductivity/">Electrical Conductivity Meters</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/equipment/electrical-conductivity/conductivity-meter/">Conductivity Meter</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/equipment/electrical-conductivity/pasport-conductivity-sensor/">PASPORT Conductivity Sensor</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/equipment/potential-of-hydrogen/">pH Meters</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/equipment/potential-of-hydrogen/orion-star-a211/">Thermo Scientific™ Orion Star™ A211 Benchtop pH Meter</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/methodology/">Methodology</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/controlled-deterioration-treatment/">Controlled Deterioration Treatment</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/direct-protein-delivery/">Direct Protein Delivery</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/floral-dip-transformation/">Floral Dip Transformation</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/lactate-pyruvate/">Lactate/Pyruvate Assays</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/plasmid-design/">Plasmid Design</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/primer-design/">Primer Design</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/propidium-iodide-staining/">Propidium Iodide Staining</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/real-time-pcr/">Real-Time PCR</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/rna-editing/">RNA Editing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/seed-priming/">Seed Priming</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/tetrazolium-assay/">Tetrazolium Assay</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/transformation/">Transformation</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/methodology/culture/">Culture</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/culture/heart/">Heart Tissue</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/methodology/rna-sequencing/">RNA Sequencing</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/rna-sequencing/single-cell/">Single Cell RNA Sequencing</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/organisms/">Organisms</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/organisms/arabidopsis/">Arabidopsis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/organisms/elegans/">C. elegans</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/references/">References</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/references/libraries/">Libraries</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/libraries/webster-library/">Webster Library</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/references/pubmed/">Pubmed</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/pubmed/mesh/">Pubmed - MeSH</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/pubmed/searching/">Pubmed - Searching</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/references/styles/">Styles</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/styles/apa/">APA</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/styles/vancouver/">Vancouver</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/statistics/">Statistics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/bayesian/">Bayesian</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/frequentist/">Frequentist</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/generalized-linear-model/">Generalized Linear Model</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/negative-binomial/">Negative Binomial</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/normalization/">Normalization</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/principal-component-analysis/">Principal Component Analysis</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+	
+
+
+			
+		
+	
+</nav>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="flex--1 screen-medium-up">
+			<div class="footer-item fixed left"><a class="unstyle" href="#">Back to Top</a></div>
+		</div>
+	</div>
+
+	
+	
+    <article id="content" class="page v1" data-slug="calculator" data-orientation="">
+		<aside class="display--none">
+  <div class="display--none">index</div>
+  <div class="display--none">index</div>
+</aside>
+<div id="status" class="status">
+    Enter any two independent values.
+</div>
+<div class="calculator">
+    <div class="layout">
+        <div class="graph">
+            <div class="graph-title">
+                Unit Circle
+            </div>
+            <div class="svg-wrap">
+                <svg
+                    viewBox="0 0 800 800"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <!-- Unit circle -->
+                    <circle
+                        class="grid"
+                        cx="400"
+                        cy="400"
+                        r="300"
+                    />
+                    <circle
+                        class="circle"
+                        cx="400"
+                        cy="400"
+                        r="300"
+                    />
+                    <!-- Axes -->
+                    <line
+                        class="axis"
+                        x1="55"
+                        y1="400"
+                        x2="745"
+                        y2="400"
+                    />
+                    <line
+                        class="axis"
+                        x1="400"
+                        y1="55"
+                        x2="400"
+                        y2="745"
+                    />
+                    <!-- Labels -->
+                    <text
+                        class="axis-label"
+                        x="750"
+                        y="408"
+                    >x</text>
+                    <text
+                        class="axis-label"
+                        x="408"
+                        y="45"
+                    >y</text>
+                    <text
+                        class="tick-label"
+                        x="705"
+                        y="393"
+                    >1</text>
+                    <text
+                        class="tick-label"
+                        x="380"
+                        y="90"
+                    >1</text>
+                    <text
+                        class="tick-label"
+                        x="62"
+                        y="393"
+                    >−1</text>
+                    <text
+                        class="tick-label"
+                        x="380"
+                        y="725"
+                    >−1</text>
+                    <!-- Dynamic drawing -->
+                    <g id="drawing"></g>
+                </svg>
+            </div>
+            <div id="info" class="info">
+                Enter values to calculate the triangle.
+            </div>
+        </div>
+    </div>
+</div>
+
+	</article>
+	
+	<div class="sidebar-right header">
+		<div class="header-item">
+			
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap">
+	<menu class="sitemap-list">
+		
+			
+			
+				
+					<li><a href="https://ascallion.com/">ascallion</a></li>
+				
+			
+		
+			
+			
+				
+					<li><a href="https://ascallion.com/researching/">Researching</a></li>
+				
+			
+		
+		
+			<li class="current">Trig Calculator</li>
+		
+	</menu>
+</nav>
+
+		</div>
+		
+		<div class="header-item">
+			
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap">
+	
+		
+		
+			
+				
+
+
+
+	
+
+
+
+
+	
+		
+		
+			<menu class="sitemap-list">
+				
+
+	
+    
+	
+        
+            <li class="current">Trig Calculator</li>
+        
+		
+    
+	
+
+
+			</menu>
+		
+		
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/analysis/">Analysis</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/analysis/transcriptomics/">Transcriptomics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/ATAC-seq/">Assay for Transposase-Accessible Chromatin using Sequencing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/bulk-rna-seq/">Bulk mRNA Sequencing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/single-cell-rna-seq/">Single-Cell mRNA Sequencing</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/bioinformatics/">Bioinformatics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/bioinformatics/projects/">Projects</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/projects/episcanpy/">epiScanpy</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/bioinformatics/resources/">Resources</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/resources/plants/">Plants</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/resources/yeast/">Yeast</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/bioinformatics/tools/">Tools</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/tools/blast/">Basic Local Alignment Search Tool</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/chemicals/">Chemicals</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/chemicals/pictograms/">GHS Pictograms</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/clinical-informatics/">Clinical Informatics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/equipment/">Equipment</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/equipment/autoclave/">Autoclave</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/equipment/electrical-conductivity/">Electrical Conductivity Meters</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/equipment/electrical-conductivity/conductivity-meter/">Conductivity Meter</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/equipment/electrical-conductivity/pasport-conductivity-sensor/">PASPORT Conductivity Sensor</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/equipment/potential-of-hydrogen/">pH Meters</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/equipment/potential-of-hydrogen/orion-star-a211/">Thermo Scientific™ Orion Star™ A211 Benchtop pH Meter</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/methodology/">Methodology</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/controlled-deterioration-treatment/">Controlled Deterioration Treatment</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/direct-protein-delivery/">Direct Protein Delivery</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/floral-dip-transformation/">Floral Dip Transformation</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/lactate-pyruvate/">Lactate/Pyruvate Assays</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/plasmid-design/">Plasmid Design</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/primer-design/">Primer Design</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/propidium-iodide-staining/">Propidium Iodide Staining</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/real-time-pcr/">Real-Time PCR</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/rna-editing/">RNA Editing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/seed-priming/">Seed Priming</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/tetrazolium-assay/">Tetrazolium Assay</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/transformation/">Transformation</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/methodology/culture/">Culture</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/culture/heart/">Heart Tissue</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/methodology/rna-sequencing/">RNA Sequencing</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/rna-sequencing/single-cell/">Single Cell RNA Sequencing</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/organisms/">Organisms</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/organisms/arabidopsis/">Arabidopsis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/organisms/elegans/">C. elegans</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/references/">References</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/references/libraries/">Libraries</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/libraries/webster-library/">Webster Library</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/references/pubmed/">Pubmed</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/pubmed/mesh/">Pubmed - MeSH</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/pubmed/searching/">Pubmed - Searching</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/references/styles/">Styles</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/styles/apa/">APA</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/styles/vancouver/">Vancouver</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/statistics/">Statistics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/bayesian/">Bayesian</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/frequentist/">Frequentist</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/generalized-linear-model/">Generalized Linear Model</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/negative-binomial/">Negative Binomial</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/normalization/">Normalization</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/principal-component-analysis/">Principal Component Analysis</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+	
+
+
+			
+		
+	
+</nav>
+
+		</div>
+
+		
+			<div class="header-item screen-large">
+				<h3 class="sitemap-title">Sitemap</h3>
+				<nav class="sitemap">
+					
+
+
+
+	
+
+
+
+
+	
+		
+		
+			<menu class="sitemap-list">
+				
+
+	
+    
+	
+	
+
+	
+    
+	
+	
+
+	
+    
+	
+	
+
+	
+    
+	
+	
+
+	
+    
+	
+	
+
+	
+    
+	
+	
+
+	
+    
+	
+	
+
+
+			</menu>
+		
+		
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/applications/">Applications</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/bulk-rename-utility/">Bulk Rename Utility</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/everything/">Everything</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/excel/">Excel</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/inkscape/">Inkscape</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/lightshot/">Lightshot</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/lively/">Lively</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/applications/browsers/">Browsers</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/browsers/firefox/">Firefox</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/browsers/ladybird/">Ladybird</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/applications/photos/">Photos</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/applications/photos/fastflix/">Fastflix</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/artistic/">Artistic</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/custom-emojis/">Custom Emojis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/origami/">Origami</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/pixel-sorting/">Pixel Sorting</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/theater-plays/">Theater Plays</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/artistic/games/">Games</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/artistic/games/board-games/">Board Games</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/games/board-games/backgammon/">Backgammon</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/games/board-games/hive/">Hive</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/artistic/games/board-games/codenames/">Codenames</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/games/board-games/codenames/key/">Key</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/artistic/games/card-games/">Card Games</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/artistic/games/online-games/">Online Games</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/artistic/games/video-games/">Video Games</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/artistic/games/word-games/">Word Games</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/artistic/languages/">Languages</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/languages/spanish/">Spanish</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/artistic/languages/english/">English</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/languages/english/haikus/">Haikus</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/languages/english/jokes/">Jokes</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/languages/english/puns/">Puns</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/languages/english/quips/">Quips</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/artistic/laser/">Laser</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/laser/lightburn/">Lightburn</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/laser/polar/">Polar</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/artistic/music/">Music</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/artistic/music/bodhrán/">Bodhrán</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/clean/">Clean</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/car/">Car</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/clothes/">Clothes</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/glasses/">Glasses</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/odors/">Odors</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/clean/home/">Home</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/home/carpet/">Carpet</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/home/fridge/">Fridge</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/clean/home/robot_vacuums/">Robot Vacuums</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/cook/">Cook</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/cook/water/">Water</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/cook/equipment/">Equipment</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/cook/equipment/salad-spinners/">Salad Spinners</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/cook/ingredients/">Ingredients</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/eyes/">Eyes</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/eyes/charts/">Eye Charts</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/charts/amsler-grid/">Amsler Grid</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/charts/astigmatism-chart/">Astigmatism Chart</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/charts/contrast-sensitivity-chart/">Contrast Sensitively Chart</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/eyes/conditions/">Eye Conditions</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/conditions/conjunctivitis/">Conjunctivitis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/conditions/macular-degeneration/">Macular Degeneration</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/eyes/vision-therapy/">Vision Therapy</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/aperture-rule/">Aperture Rule</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/arrow-chart/">Arrow Chart</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/arrow-color-chart/">Arrow Color Chart</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/barrel-card/">Barrel Card</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/closed-open-flat/">Closed/Open/Flat</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/fusion-card/">Fusion Card</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/hart-chart/">Hart Chart</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/letter-saccades/">Letter Saccades</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/letter-search/">Letter Search</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/letter-tracking/">Letter Tracking</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/line-counting/">Line Counting</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/number-dots/">Number Dots</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/number-grid/">Number Grid</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/number-saccades/">Number Saccades</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/number-search/">Number Search</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/shape-chart/">Shape Chart</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/shape-color-chart/">Shape Color Chart</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/single-target/">Single Target</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/slap-tap/">Slap Tap</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/space-fixator/">Space Fixator</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/spot-the-match/">Spot the Match</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/stereo-circles/">Stereo Circles</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/eyes/vision-therapy/tranaglyph/">Tranaglyph</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/fixes/">Fixes</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/ac/">AC</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/dishwasher/">Dishwasher</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/glasses/">Glasses</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/disposal/">Sink Disposal</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/toilets/">Toilets</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/washing_machine/">Washing Machine</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/fixes/window_film/">Window Film</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/">Grow</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/fertilizers/">Fertilizers</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/nutrients/">Nutrients</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/root-health/">Root Health Assessment</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/food-safety/">Food Safety</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/growing-mediums/">Growing Mediums</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/harvesting/">Harvesting</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/harvesting/lettuce/">Lettuce</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/hydroponics/">Hydroponics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/hydroponics/techniques/">Techniques</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/hydroponics/techniques/kratky-method/">Kratky Method</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/hydroponics/techniques/kratky-method/supplies/">Supplies</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/hydroponics/techniques/kratky-method/supplies/mason-jars/">Mason Jars</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/hydroponics/techniques/kratky-method/supplies/net-cups/">Net Cups</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/hydroponics/water-quality/">Water Quality</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/hydroponics/water-quality/potential-of-hydrogen/">Potential of Hydrogen</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/hydroponics/water-quality/water-temperature/">Water Temperature</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/hydroponics/water-quality/electrical-conductivity/">Electrical Conductivity</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/johnny's/">Johnny&#39;s Selected Seeds</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/johnny's/lettuce/">Lettuce</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/plant-health/">Plant Health</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/plant-health/algae/">Algae</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/plant-health/pests/">Pests</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/plant-health/pruning/">Pruning</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/plant-health/diseases/">Diseases</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/plant-health/diseases/powdery-mildew/">Powdery Mildew</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/seedlings/">Seedlings</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/seedlings/seed-starting/">Seed Starting</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/grow/vegetables/">Vegetables</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/vegetables/lettuce/">Lettuce</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/grow/vegetables/spinach/">Spinach</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/items/">Items</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/appliances/">Appliances</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/bikes/">Bikes</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/glasses/">Glasses</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/health/">Health</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/tea/">Tea</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/items/clothes/">Clothes</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/clothes/bedding/">Bedding</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/clothes/hats/">Hats</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/items/clothes/shoes/">Shoes</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/clothes/shoes/orthotics/">Orthotics</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/clothes/shoes/socks/">Socks</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/items/electronics/">Electronics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/electronics/fairphone/">Fairphone</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/electronics/stereos/">Stereos</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/electronics/wled/">W-LED</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/items/oral/">Oral</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/oral/floss/">Floss</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/oral/gum/">Gum</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/oral/toothpaste/">Toothpaste</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/items/woodworking/">Woodworking</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/items/woodworking/sealant/">Sealant</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/media/">Media</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/newsletters/">Newsletters</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/podcasts/">Podcasts</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/tongue-twisters/">Tongue Twisters</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/youtube/">Youtube</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/media/books/">Books</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/books/artofnvc/">The Art of Nonviolent Communication</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/media/books/academic/">Academic</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/books/academic/They-Say-I-Say/">They Say, I Say</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/media/books/fantasy/">Fantasy</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/media/books/other/">Other</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/media/books/sci-fi/">Science Fiction</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/media/books/sci-fi/short_stories/">Short Stories</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/books/sci-fi/short_stories/a-view-from-the-stars/">A View from the Stars</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/books/sci-fi/short_stories/stories-of-your-life-and-others/">Stories of Your Life and Others</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/media/movies/">Movies</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/media/movies/sci-fi/">Science Fiction</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/media/music/">Music</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/media/scripts/">Scripts</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/scripts/acupuncture/">Acupuncture</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/media/scripts/celiac-disease/">On Celiac Disease</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/media/speeches/">Speeches</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/media/transcripts/">Transcripts</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/medic/">Medic</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/sleep/">Sleep</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/medic/autoimmune/">Autoimmune</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/autoimmune/thyroiditis/">Autoimmune Thyroiditis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/autoimmune/sjogrens/">Sjögren&#39;s</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/medic/cardiovascular/">Cardiovascular System</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/cardiovascular/blood-pressure/">Blood Pressure</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/medic/digestion/">Digestive System</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/antibiotics/">Antibiotics</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/malabsorbtion/">Malabsorption</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/microplastics/">Microplastics</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/medic/digestion/minerals/">Minerals</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/copper/">Copper</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/iron/">Iron</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/lithium/">Lithium</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/magnesium/">Magnesium</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/molybdenum/">Molybdenum</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/selenium/">Selenium</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/minerals/zinc/">Zinc</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/medic/digestion/pillars/">Core Pillars of Gut Health</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/pillars/fueling_resilience/">Pillar 1 - Food</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/pillars/reducing_stress/">Pillar 2 - Stress</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/pillars/lifestyle/">Pillar 3 - Lifestyle</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/pillars/exposure/">Pillar 4 - Exposure</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/digestion/pillars/supplements/">Pillar 5 - Supplements</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/medic/kinesiology/">Kinesiology</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/kinesiology/feet/">Feet</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/kinesiology/physical-therapy/">Physical Therapy</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/kinesiology/posture/">Posture</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/medic/nutrients/">Nutrients</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/nutrients/ferritin/">Ferritin</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/nutrients/iron/">Iron</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/medic/oral/">Oral</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/medic/oral/xylitol/">Xylitol</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/notes/">Notes</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/notes/abbreviations/">Abbreviations</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/notes/android/">Android</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/notes/symbols/">Symbols</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/notes/words/">Words</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/notes/scripts/">Scripts</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/notes/terminology/">Terminology</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/notes/terminology/biological-sciences/">Biological Terminology</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/office/">Office</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/office/e-ink/">E-Ink</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/office/ergonomics/">Ergonomics</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/office/supplies/">Office Supplies</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/plants/">Plants</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/plants/birds/">Birds</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/birds/bird-strikes/">Bird Strikes</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/plants/birds/identification/">Bird Identification</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/plants/birds/watching/">Bird Watching</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/birds/watching/owls/">Owls</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/plants/gardening/">Gardening</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/gardening/homesteading/">Homesteading</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/gardening/plant_labels/">Plant Labels</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/gardening/planting/">Planting</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/gardening/pruning/">Pruning</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/gardening/rain_barrels/">Rain Barrels</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/plants/identification/">Identification</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/identification/trees/">Trees</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/plants/native_plants/">MO Native Plants</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/native_plants/ground_cover/">Ground Cover</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/native_plants/master-naturalist/">Missouri Master Naturalist</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/native_plants/nurseries/">Native Plants Nurseries</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/native_plants/prairie_seeds/">Prairie Seeds</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/plants/plant-crafts/">Plant Crafts</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/plant-crafts/ikebana/">Ikebana</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/plant-crafts/plant_impressions/">Plant Impressions</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/plants/plant-crafts/pressed_flowers/">Pressed Flowers</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/projects/">Projects</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/editorconfig/">Editor Config</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/projects/a-diary-a-day/">A Diary a Day</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/projects/a-feast-a-day/">A Feast a Day</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/">Data Sources</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/microbiome/">Microbiome</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/microbiome/ANSES-CIQUAL/">ANSES-CIQUAL</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/microbiome/foo-db/">FooDB</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/microbiome/food-data-central/">FDA FoodData Central</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/microbiome/food-microbionet/">Food Microbionet</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/projects/a-feast-a-day/data-sources/nutrition/">Nutrition</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/projects/a-workout-a-day/">A Workout a Day</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/projects/learn-bioinformatics/">Learn Bioinformatics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/projects/learn-bioinformatics/bioinformatics-101/">Bioinformatics 101</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/">Intro to Bioinformatics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/1-course-overview/">Course Overview</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/2-biology-review/">Molecular Biology Review</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/3-gene-expression-data-format/">Gene Expression Data Format</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/4-differential-expression-analysis/">Differential Expression Analysis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/5-quick-statistics-lesson/">Quick Statistics Lesson</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/6-gene-expression-omnibus/">Downloading Data from the Gene Expression Omnibus (GEO)</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/7-processing-rna-seq-data/">Reading and Processing RNA-seq Data</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/8-differential-expression-analysis,-p-value,-log2-fold-change/">Differential Expression Analysis, P-Value, Log₂ Fold Change</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/9-enrichr/">Enrichr</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/10-gene-expression-heatmap-plot/">Gene Expression Heatmap Plot</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/11-more-gene-expression-plots/">More Gene Expression Plots</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/12-project-1-conclusion,-project-2-ntro/">Project 1 Conclusion, Project 2 Intro</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/13-review-of-mendelian-genetics/">Review of Mendelian Genetics</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/14-modern-genetics/">Modern Genetics</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/15-project-2-genome-wide-association-study-(gwas)/">Project 2 - Genome Wide Association Study (GWAS)</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/16-gwas-dataset-format/">GWAS Dataset Format</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/17-logistic-regression-review/">Logistic Regression Review</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/18-additivity-assumption-in-gwas/">Additivity Assumption in GWAS</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/19-reading-in-gwas-data/">Reading in GWAS Data</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/20-minor-allele-frequency-filter/">Minor Allele Frequency Filter</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/21-gwas-analysis/">GWAS Analysis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/22-ucsc-genome-browser/">UCSC Genome Browser</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/23-manhattan-plot/">Manhattan Plot</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/24-checking-gwas-results,-project-2-conclusion/">Checking GWAS Results, Project 2 Conclusion</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/projects/learn-bioinformatics/intro-to-bioinformatics/25-educational-resources-for-bioinformatics-and-computational-biology/">Educational Resources for Bioinformatics and Computational Biology</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/projects/reverse-dictionary/">Reverse Dictionary</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/">Researching</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/calculator/">Trig Calculator</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/analysis/">Analysis</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/analysis/transcriptomics/">Transcriptomics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/ATAC-seq/">Assay for Transposase-Accessible Chromatin using Sequencing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/bulk-rna-seq/">Bulk mRNA Sequencing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/analysis/transcriptomics/single-cell-rna-seq/">Single-Cell mRNA Sequencing</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/bioinformatics/">Bioinformatics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/bioinformatics/projects/">Projects</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/projects/episcanpy/">epiScanpy</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/bioinformatics/resources/">Resources</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/resources/plants/">Plants</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/resources/yeast/">Yeast</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/bioinformatics/tools/">Tools</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/bioinformatics/tools/blast/">Basic Local Alignment Search Tool</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/chemicals/">Chemicals</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/chemicals/pictograms/">GHS Pictograms</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/clinical-informatics/">Clinical Informatics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/equipment/">Equipment</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/equipment/autoclave/">Autoclave</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/equipment/electrical-conductivity/">Electrical Conductivity Meters</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/equipment/electrical-conductivity/conductivity-meter/">Conductivity Meter</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/equipment/electrical-conductivity/pasport-conductivity-sensor/">PASPORT Conductivity Sensor</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/equipment/potential-of-hydrogen/">pH Meters</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/equipment/potential-of-hydrogen/orion-star-a211/">Thermo Scientific™ Orion Star™ A211 Benchtop pH Meter</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/methodology/">Methodology</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/controlled-deterioration-treatment/">Controlled Deterioration Treatment</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/direct-protein-delivery/">Direct Protein Delivery</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/floral-dip-transformation/">Floral Dip Transformation</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/lactate-pyruvate/">Lactate/Pyruvate Assays</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/plasmid-design/">Plasmid Design</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/primer-design/">Primer Design</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/propidium-iodide-staining/">Propidium Iodide Staining</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/real-time-pcr/">Real-Time PCR</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/rna-editing/">RNA Editing</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/seed-priming/">Seed Priming</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/tetrazolium-assay/">Tetrazolium Assay</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/transformation/">Transformation</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/methodology/culture/">Culture</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/culture/heart/">Heart Tissue</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/methodology/rna-sequencing/">RNA Sequencing</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/methodology/rna-sequencing/single-cell/">Single Cell RNA Sequencing</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/organisms/">Organisms</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/organisms/arabidopsis/">Arabidopsis</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/organisms/elegans/">C. elegans</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/references/">References</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/references/libraries/">Libraries</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/libraries/webster-library/">Webster Library</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/references/pubmed/">Pubmed</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/pubmed/mesh/">Pubmed - MeSH</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/pubmed/searching/">Pubmed - Searching</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/references/styles/">Styles</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/styles/apa/">APA</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/references/styles/vancouver/">Vancouver</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/researching/statistics/">Statistics</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/bayesian/">Bayesian</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/frequentist/">Frequentist</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/generalized-linear-model/">Generalized Linear Model</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/negative-binomial/">Negative Binomial</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/normalization/">Normalization</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/researching/statistics/principal-component-analysis/">Principal Component Analysis</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/">Software</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/architecture/">Architecting</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/applications/">Applications</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/applications/beekeeper/">Beekeeper Studio</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/applications/desmos/">Desmos</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/applications/smartgit/">Smartgit</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/databases/">Databases</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/databases/postgresql/">PostgreSQL</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/databases/postgresql/permissions/">Permissions</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/databases/sql_server/">SQL Server</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/desktops/">Desktops</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/desktops/linux/">Linux</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/desktops/windows/">Windows</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/chkdsk/">chkdsk</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/dism/">dism</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/netsh/">netsh</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/performance_monitor/">Performance Monitor</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/sfc/">sfc</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/desktops/windows/wsl/">wsl</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/editors/">Editors</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/editors/rstudio/">RStudio</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/editors/vscode/">Visual Studio Code</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/editors/visual_studio/">Visual Studio</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/editors/visual_studio/interactive/">C# Interactive</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/editors/visual_studio/settings/">Visual Studio Settings</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/frameworks/">Frameworks</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/frameworks/dotnet/">.NET</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/frameworks/dotnet/exceptions/">Exceptions</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/frameworks/dotnet/iisexpress/">IIS Express</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/hosting/">Hosting</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/hosting/digitalocean/">DigitalOcean</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/hosting/zola/">Zola</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/languages/">Languages</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/languages/csharp/">CSharp</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/languages/css/">CSS</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/languages/css/named-colors/">Named Colors</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/languages/powershell/">Powershell</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/languages/rust/">Rust</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/microsoft/">Microsoft</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/microsoft/dataverse/">Dataverse</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/microsoft/powerapps/">Power Apps</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/microsoft/powerpages/">Power Pages</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/packages/">Packages</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/packages/redis/">Redis</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/programs/">Programs</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/curl/">Curl</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/jmeter/">JMeter</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/jq/">jq</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/regex/">Regex</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/ssh/">SSH</a></li>
+        
+    
+	
+
+
+			
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/programs/git/">Git</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/git/bfg/">BFG Repo-Cleaner</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/git/conventional_commits/">Conventional Commits</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/git/config/">Git Config</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/git/performance/">Git Performance</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/programs/git/submodules/">Git Submodules</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+						
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					<summary><a href="https://ascallion.com/software/security/">Security</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/security/encryption/">Encryption</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/software/security/openssl/">OpenSSL</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+			
+
+
+
+	
+
+
+
+
+
+		
+	
+
+
+				</nav>
+			</div>
+		
+
+		<div class="flex--1">
+			<div class="footer-item fixed right"><a class="unstyle" href="#">Back to Top</a></div>
+		</div>
+	</div>
+
+	</main>
+
+	
+	<footer id="footer">
+    <span class="footer-item"><a href="https://ascallion.com/">About</a></span>
+    <span class="footer-item"><a class="unstyle" href="#">Back to Top</a></span>
+    <span class="footer-item"><a href="https://github.com/gscanlon21">Github</a></span>
+</footer>
+	
+
+	
+	
+		
+
+		
+    	
+		
+
+	
+	
+		
+		
+
+		
+		<script type="module">
+/* =========================================================
+   RIGHT TRIANGLE CALCULATOR
+   =========================================================
+
+   Triangle convention:
+
+            /|
+           / |
+        c /  | a
+         /   |
+        / A  | 
+       /_____|
+          b
+
+   C = 90°
+   A is opposite side a
+   B is opposite side b
+   c is the hypotenuse
+
+   The user may enter ANY combination of values.
+
+   Two independent values are sufficient.
+   ========================================================= */
+
+const fields = {
+    a: document.getElementById("a"),
+    b: document.getElementById("b"),
+    c: document.getElementById("c"),
+    A: document.getElementById("A"),
+    B: document.getElementById("B")
+};
+
+const calculateButton = document.getElementById("calculate");
+const resetButton = document.getElementById("reset");
+const drawing = document.getElementById("drawing");
+const status = document.getElementById("status");
+const info = document.getElementById("info");
+
+/* SVG circle dimensions */
+
+const CX = 400;
+const CY = 400;
+const R = 300;
+
+/* =========================================================
+   HELPERS
+   ========================================================= */
+
+function number(id) {
+    const value = parseFloat(fields[id].value);
+    return Number.isFinite(value) ? value : null;
+}
+
+function setValue(id, value) {
+    if (value === null ||
+        !Number.isFinite(value)) {
+        return;
+    }
+
+    fields[id].value = format(value);
+}
+
+function format(value) {
+    if (!Number.isFinite(value)) {
+        return "";
+    }
+
+    if (Math.abs(value) < 1e-10) {
+        value = 0;
+    }
+
+    return Number(value.toFixed(4)).toString();
+}
+
+function clearDrawing() {
+    drawing.innerHTML = "";
+}
+
+function svgElement(name, attrs = {}) {
+    const element = document.createElementNS("http://www.w3.org/2000/svg", name);
+
+    for (const [key, value] of Object.entries(attrs)) {
+        element.setAttribute(key, value);
+    }
+
+    return element;
+}
+
+/* =========================================================
+   GET INPUTS
+   ========================================================= */
+
+function getInputs() {
+
+    return {
+        a: number("a"),
+        b: number("b"),
+        c: number("c"),
+        A: number("A"),
+        B: number("B")
+    };
+}
+
+/* =========================================================
+   VALIDATION
+   ========================================================= */
+
+function validateInputs(v) {
+    /*
+        Sides must be positive.
+    */
+    for (const key of ["c"]) {
+        if (v[key] !== null && v[key] <= 0) {
+            return `${key} must be greater than 0.`;
+        }
+    }
+
+    /*
+        Angles must be between 0 and 90.
+    */
+    for (const key of ["A", "B"]) {
+        if (v[key] !== null && (v[key] <= 0 || v[key] >= 90)) {
+
+            return `${key} must be between 0° and 90°.`;
+        }
+    }
+
+    /*
+        If both A and B are entered, they must add to 90.
+    */
+    if (v.A !== null && v.B !== null) {
+
+        if (Math.abs(v.A + v.B - 90) > 0.0001) {
+            return "Angles A and B must add up to 90°.";
+        }
+    }
+
+    /*
+        Check side relationships if enough
+        side information was supplied.
+    */
+    if (v.a !== null && v.b !== null && v.c !== null) {
+        const calculated = Math.sqrt(v.a * v.a + v.b * v.b);
+
+        if (Math.abs(calculated - v.c) > Math.max(0.0001, v.c * 0.0001)) {
+            return "The three sides do not form a valid right triangle.";
+        }
+    }
+
+    return null;
+}
+
+/* =========================================================
+   SOLVE TRIANGLE
+   ========================================================= */
+function solveTriangle(v) {
+
+    /*
+        We repeatedly use known information to
+        derive new information.
+
+        This makes combinations such as:
+
+            a + A
+            b + B
+            a + c
+            b + c
+            a + b
+            c + A
+            c + B
+            A + B + side
+
+        all work.
+    */
+
+    let changed = true;
+
+    let iterations = 0;
+
+    while (changed && iterations < 20) {
+
+        changed = false;
+
+        iterations++;
+
+        /* ---------------------------------------------
+           Angles
+           --------------------------------------------- */
+
+        if (v.A !== null && v.B === null) {
+            v.B = 90 - v.A;
+            changed = true;
+        }
+
+        if (v.B !== null && v.A === null) {
+            v.A = 90 - v.B;
+            changed = true;
+        }
+
+        /* ---------------------------------------------
+           Side a + side b -> c
+           --------------------------------------------- */
+
+        if (v.a !== null && v.b !== null && v.c === null) {
+
+            v.c = Math.sqrt(v.a * v.a + v.b * v.b);
+
+            changed = true;
+        }
+
+        /* ---------------------------------------------
+           c + a -> b
+           --------------------------------------------- */
+
+        if (v.c !== null && v.a !== null && v.b === null) {
+
+            const value = v.c * v.c - v.a * v.a;
+
+            if (value < 0) {
+                throw new Error("Side a cannot be longer than side c.");
+            }
+
+            v.b = Math.sqrt(value);
+
+            changed = true;
+        }
+
+        /* ---------------------------------------------
+           c + b -> a
+           --------------------------------------------- */
+
+        if (v.c !== null && v.b !== null && v.a === null) {
+            const value = v.c * v.c - v.b * v.b;
+
+            if (value < 0) {
+                throw new Error("Side b cannot be longer than side c.");
+            }
+
+            v.a = Math.sqrt(value);
+
+            changed = true;
+        }
+
+        /* ---------------------------------------------
+           a + A -> c and b
+           --------------------------------------------- */
+
+        if (v.a !== null && v.A !== null) {
+
+            const rad = v.A * Math.PI / 180;
+
+            if (v.c === null) {
+                v.c = v.a / Math.sin(rad);
+                changed = true;
+            }
+
+            if (v.b === null) {
+                v.b = v.a / Math.tan(rad);
+                changed = true;
+            }
+        }
+
+        /* ---------------------------------------------
+           a + B -> c and b
+           --------------------------------------------- */
+
+        if (v.a !== null && v.B !== null) {
+
+            const rad = v.B * Math.PI / 180;
+
+            if (v.c === null) {
+                v.c = v.a / Math.cos(rad);
+                changed = true;
+            }
+
+            if (v.b === null) {
+                v.b = v.a * Math.tan(rad);
+                changed = true;
+            }
+
+            if (v.A === null) {
+                v.A = 90 - v.B;
+                changed = true;
+            }
+        }
+
+        /* ---------------------------------------------
+           b + B -> c and a
+           --------------------------------------------- */
+
+        if (v.b !== null && v.B !== null) {
+            const rad = v.B * Math.PI / 180;
+
+            if (v.c === null) {
+                v.c = v.b / Math.sin(rad);
+                changed = true;
+            }
+
+            if (v.a === null) {
+                v.a = v.b / Math.tan(rad);
+                changed = true;
+            }
+        }
+
+        /* ---------------------------------------------
+           b + A -> c and a
+           --------------------------------------------- */
+
+        if (v.b !== null && v.A !== null) {
+            const rad = v.A * Math.PI / 180;
+
+            if (v.c === null) {
+                v.c = v.b / Math.cos(rad);
+                changed = true;
+            }
+
+            if (v.a === null) {
+                v.a = v.b * Math.tan(rad);
+                changed = true;
+            }
+        }
+
+        /* ---------------------------------------------
+           c + A -> a and b
+           --------------------------------------------- */
+
+        if (v.c !== null && v.A !== null) {
+
+            const rad = v.A * Math.PI / 180;
+
+            if (v.a === null) {
+                v.a = v.c * Math.sin(rad);
+                changed = true;
+            }
+
+            if (v.b === null) {
+                v.b = v.c * Math.cos(rad);
+                changed = true;
+            }
+        }
+
+        /* ---------------------------------------------
+           c + B -> a and b
+           --------------------------------------------- */
+
+        if (v.c !== null && v.B !== null) {
+
+            const rad = v.B * Math.PI / 180;
+
+            if (v.b === null) {
+                v.b = v.c * Math.sin(rad);
+                changed = true;
+            }
+
+            if (v.a === null) {
+                v.a = v.c * Math.cos(rad);
+                changed = true;
+            }
+        }
+
+        /* ---------------------------------------------
+           Three sides can give angles
+           --------------------------------------------- */
+
+        if (v.a !== null && v.b !== null) {
+            if (v.A === null) {
+                v.A = Math.atan2(v.a, v.b) * 180 / Math.PI;
+                changed = true;
+            }
+
+            if (v.B === null) {
+                v.B = Math.atan2(v.b, v.a) * 180 / Math.PI;
+                changed = true;
+            }
+        }
+
+        if (v.a !== null && v.c !== null) {
+
+            if (v.A === null) {
+                v.A = Math.asin(v.a / v.c) * 180 / Math.PI;
+                changed = true;
+            }
+
+            if (v.B === null) {
+                v.B = 90 - v.A;
+                changed = true;
+            }
+        }
+
+        if (v.b !== null && v.c !== null) {
+
+            if (v.B === null) {
+                v.B = Math.asin(v.b / v.c) * 180 / Math.PI;
+                changed = true;
+            }
+
+            if (v.A === null) {
+                v.A = 90 - v.B;
+                changed = true;
+            }
+        }
+    }
+
+    return v;
+}
+
+/* =========================================================
+   DRAW UNIT CIRCLE
+   ========================================================= */
+function drawTriangle(v) {
+
+    clearDrawing();
+
+    /*
+        We use angle A as the unit-circle angle.
+
+        Mathematical convention:
+
+             A = 0° -> positive x-axis
+             A > 0 -> counterclockwise
+    */
+
+    const angle = v.A * Math.PI / 180;
+    const x = Math.cos(angle);
+    const y = Math.sin(angle);
+
+    /*
+        Unit-circle screen coordinates.
+    */
+    const pointX = CX + x * R;
+    const pointY = CY - y * R;
+
+    /*
+        Projection onto x-axis.
+    */
+    const projectionX = pointX;
+    const projectionY = CY;
+
+    /* ---------------------------------------------
+       Triangle
+       --------------------------------------------- */
+
+    const triangle = svgElement("polygon", {
+		points: `
+			${CX},${CY}
+			${projectionX},${projectionY}
+			${pointX},${pointY}
+		`,
+		class: "triangle"
+	});
+
+    drawing.appendChild(triangle);
+
+    /* ---------------------------------------------
+       Horizontal projection
+       --------------------------------------------- */
+
+    const horizontal = svgElement("line", {
+		x1: CX,
+		y1: CY,
+		x2: projectionX,
+		y2: projectionY,
+		class: "projection"
+	});
+
+    drawing.appendChild(horizontal);
+
+    /* ---------------------------------------------
+       Vertical projection
+       --------------------------------------------- */
+
+    const vertical = svgElement("line",
+	{
+		x1: projectionX,
+		y1: projectionY,
+		x2: pointX,
+		y2: pointY,
+		class: "projection"
+	});
+
+    drawing.appendChild(vertical);
+
+    /* ---------------------------------------------
+       Hypotenuse / terminal ray
+       --------------------------------------------- */
+
+    const ray = svgElement("line", {
+		x1: CX,
+		y1: CY,
+		x2: pointX,
+		y2: pointY,
+		class: "ray"
+	});
+
+    drawing.appendChild(ray);
+
+    /* ---------------------------------------------
+       Right angle marker
+       --------------------------------------------- */
+
+    const size = 18;
+
+    const marker = svgElement("polyline", {
+		points: `
+			${projectionX - size},${projectionY}
+			${projectionX - size},${projectionY - size}
+			${projectionX},${projectionY - size}
+		`,
+		class: "right-angle"
+	});
+
+    drawing.appendChild(marker);
+
+    /* ---------------------------------------------
+       Angle arc
+       --------------------------------------------- */
+
+    const arcRadius = 75;
+    const arcEndX = CX + arcRadius * Math.cos(angle);
+    const arcEndY = CY - arcRadius * Math.sin(angle);
+    const largeArc = v.A > 180 ? 1 : 0;
+
+    const arc = svgElement("path", {
+		d: `
+			M ${CX + arcRadius} ${CY}
+			A ${arcRadius} ${arcRadius}
+				0 ${largeArc} 0
+				${arcEndX} ${arcEndY}
+		`,
+		class: "angle-arc"
+	});
+
+    drawing.appendChild(arc);
+
+    /* ---------------------------------------------
+       Terminal point
+       --------------------------------------------- */
+
+    const point = svgElement("circle", {
+		cx: pointX,
+		cy: pointY,
+		r: 9,
+		class: "point"
+	});
+
+    drawing.appendChild(point);
+
+    /* ---------------------------------------------
+       Origin
+       --------------------------------------------- */
+
+    const origin = svgElement("circle", {
+		cx: CX,
+		cy: CY,
+		r: 6,
+		class: "origin"
+	});
+
+    drawing.appendChild(origin);
+
+    /* ---------------------------------------------
+       Angle label
+       --------------------------------------------- */
+
+    const labelAngle = Math.min(v.A / 2, 75);
+    const labelRad = labelAngle * Math.PI / 180;
+    const labelRadius = 105;
+
+    const angleLabel = svgElement("text", {
+		x: CX + labelRadius * Math.cos(labelRad),
+		y: CY - labelRadius * Math.sin(labelRad),
+		class: "angle-label",
+		"text-anchor": "middle"
+	});
+
+    angleLabel.textContent = `A = ${format(v.A)}°`;
+
+    drawing.appendChild(angleLabel);
+
+    /* ---------------------------------------------
+       Coordinate
+       --------------------------------------------- */
+
+    const coordinate = svgElement("text",
+	{
+		x: pointX + (x >= 0 ? 14 : -14),
+		y: pointY + (y >= 0 ? -15 : 28),
+		class: "coordinate",
+		"text-anchor": x >= 0 ? "start" : "end"
+	});
+
+    coordinate.textContent = `(${format(x)}, ${format(y)})`;
+
+    drawing.appendChild(coordinate);
+
+    /* ---------------------------------------------
+       Side labels
+       --------------------------------------------- */
+
+    const bLabel = svgElement("text",
+	{
+		x: (CX + projectionX) / 2,
+		y: CY + 30,
+		class: "side-label",
+		"text-anchor": "middle"
+	});
+
+    bLabel.textContent = `b = ${format(v.b)}`;
+
+    drawing.appendChild(bLabel);
+
+    const aLabel = svgElement("text",
+	{
+		x: projectionX + 18,
+		y: (projectionY + pointY) / 2,
+		class: "side-label"
+	});
+
+    aLabel.textContent = `a = ${format(v.a)}`;
+
+    drawing.appendChild(aLabel);
+
+    const cLabel = svgElement("text",
+	{
+		x: (CX + pointX) / 2 + 10,
+		y: (CY + pointY) / 2 - 10,
+		class: "side-label"
+	});
+
+    cLabel.textContent = `c = ${format(v.c)}`;
+
+    drawing.appendChild(cLabel);
+}
+
+/* =========================================================
+   MAIN CALCULATION
+   ========================================================= */
+
+function calculate() {
+    let values = getInputs();
+
+    /* Count supplied values */
+    const supplied = Object.values(values).filter(v => v !== null).length;
+
+    if (supplied < 2) {
+        status.className = "status error";
+        status.textContent = "Enter at least two independent values.";
+
+        clearDrawing();
+
+        info.textContent = "Enter values to calculate the triangle.";
+
+        return;
+    }
+
+    /* Validate */
+    const validation = validateInputs(values);
+
+    if (validation) {
+        status.className = "status error";
+
+        status.textContent = validation;
+
+        clearDrawing();
+
+        info.textContent = "Invalid triangle.";
+
+        return;
+    }
+
+    /* Solve */
+
+    try {
+        values = solveTriangle(values);
+    } catch (error) {
+
+        status.className = "status error";
+        status.textContent = error.message;
+
+        clearDrawing();
+
+        return;
+    }
+
+    /* ---------------------------------------------
+       Check whether everything was solved
+       --------------------------------------------- */
+
+    const complete =
+        values.a !== null &&
+        values.b !== null &&
+        values.c !== null &&
+        values.A !== null &&
+        values.B !== null;
+
+    if (!complete) {
+        /*
+            This happens when the user supplied
+            two angles but no side.
+
+            The angles determine shape but not scale.
+        */
+
+        status.className = "status";
+        status.textContent = "The angles determine the shape, but you need at least one side to determine its size.";
+
+        /*
+            Still fill in angles.
+        */
+
+        setValue("A", values.A);
+        setValue("B", values.B);
+
+        info.textContent = `A = ${format(values.A)}°   B = ${format(values.B)}°`;
+
+        return;
+    }
+
+    /* ---------------------------------------------
+       Write solved values back to inputs
+       --------------------------------------------- */
+
+    setValue("a", values.a);
+    setValue("b", values.b);
+    setValue("c", values.c);
+    setValue("A", values.A);
+    setValue("B", values.B);
+
+    /* ---------------------------------------------
+       Success
+       --------------------------------------------- */
+
+    status.className = "status success";
+    status.textContent = "Triangle calculated successfully.";
+
+    info.textContent = `A = ${format(values.A)}°   •   B = ${format(values.B)}°   •   C = 90°`;
+
+    /* Draw */
+
+    drawTriangle(values);
+}
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+function reset() {
+    for (const field of Object.values(fields)) {
+        field.value = "";
+    }
+
+    clearDrawing();
+
+    status.className = "status";
+    status.textContent = "Enter any two independent values.";
+    info.textContent = "Enter values to calculate the triangle.";
+}
+
+/* =========================================================
+   EVENTS
+   ========================================================= */
+calculateButton.addEventListener("click", calculate);
+resetButton.addEventListener("click", reset);
+
+/*
+    Calculate when Enter is pressed.
+*/
+for (const input of Object.values(fields)) {
+    input.addEventListener("keydown", event => {
+            if (event.key === "Enter") {
+                calculate();
+            }
+        }
+    );
+}
+</script>
+		
+
+	
+	
+</body>
+
+</html>
+
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.js"></script>
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>

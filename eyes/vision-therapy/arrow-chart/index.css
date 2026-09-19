@@ -1,0 +1,35 @@
+.page {
+    justify-content: center;
+	padding-bottom: 3rem;
+    margin-bottom: -3rem;
+	align-items: center;
+	overflow-x: clip;
+	display: flex;
+}
+
+#arrow-chart {
+	display: grid;
+	line-height: 1;
+	max-width: 100%;
+	aspect-ratio: 1;
+	font-weight: 600;
+	text-align: center;
+	justify-self: center;
+	justify-items: center;
+	width: var(--chart-size);
+}
+
+.arrow {
+	align-self: center;
+	height: clamp(0%, var(--arrow-size), 100%);
+	overflow-y: clip;
+	aspect-ratio: 1;
+}
+
+.arrow.red {
+	color: rgb(var(--color-red));
+}
+
+.arrow.green {
+	color: rgb(var(--color-green));
+}
