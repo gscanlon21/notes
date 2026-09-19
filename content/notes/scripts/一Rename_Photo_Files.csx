@@ -3,21 +3,24 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Globalization;
+using System.Text.RegularExpressions;
+
+var suffix = Args.Count > 0 ? Args[0] : "Graham-Scanlon";
 
 var dateFormat = "yyyyMMdd_HHmmss";
-var suffix = Args.Count > 0 ? Args[0] : "Graham-Scanlon";
+var dateRegex = new Regex(@"\d{8}_\d{6}", RegexOptions.Compiled);
 
 var folderPath = Directory.GetCurrentDirectory();
 var photos = new DirectoryInfo(folderPath).GetFiles()
-	.Where(file => DateTime.TryParseExact(Path.GetFileNameWithoutExtension(file.Name), dateFormat, CultureInfo.InvariantCulture, DateTimeStyles.None, out _))
-    .Where(file => file.Name != Path.GetFileName(Environment.ProcessPath))
+	.Where(file => file.Name != Path.GetFileName(Environment.ProcessPath))
+	.Where(file => dateRegex.Match(Path.GetFileNameWithoutExtension(file.Name)).Success)
     .OrderBy(file => file.Name)
     .ToList();
 
 int id = 1;
 foreach (var photo in photos)
 {
-	var fileName = Path.GetFileNameWithoutExtension(photo.Name);
+	var fileName = dateRegex.Match(Path.GetFileNameWithoutExtension(file.Name)).Value;
     var photoDate = DateTime.ParseExact(fileName, dateFormat, CultureInfo.InvariantCulture);
 
     var newName = $"{photoDate:yyyy-MM-dd}_{id:D3}_{suffix}{photo.Extension}";
