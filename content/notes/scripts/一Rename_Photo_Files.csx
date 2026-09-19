@@ -17,12 +17,10 @@ var photos = new DirectoryInfo(folderPath).GetFiles()
 int id = 1;
 foreach (var photo in photos)
 {
-    var extension = photo.Extension;
-    var formattedId = id.ToString("D3");
 	var fileName = Path.GetFileNameWithoutExtension(photo.Name);
     var photoDate = DateTime.ParseExact(fileName, dateFormat, CultureInfo.InvariantCulture);
 
-    var newName = $"{photoDate:yyyy-MM-dd}_{formattedId}_{suffix}{extension}";
+    var newName = $"{photoDate:yyyy-MM-dd}_{id:D3}_{suffix}{photo.Extension}";
     var newPath = Path.Combine(folderPath, newName);
     Console.WriteLine($"{photo.Name} -> {newName}");
 	File.Move(photo.FullName, newPath);
