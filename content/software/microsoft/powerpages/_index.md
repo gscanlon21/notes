@@ -14,6 +14,13 @@ see_also = [
 
 
 
+# Components
+
+**Rich Text Editor**
+: Must be enabled on Power Pages by clicking `Edit code component` and then `Enable custom component`.
+
+
+
 # Web Templates
 
 ```html
