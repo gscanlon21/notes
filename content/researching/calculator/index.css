@@ -1,5 +1,6 @@
 
-.layout {
+.graph {
+	min-width: 0;
     grid-template-columns: 440px 1fr;
     align-items: start;
 	display: grid;
@@ -20,16 +21,6 @@
 	&.success {
 		color: #175c17;
 	}
-}
-
-.graph {
-    min-width: 0;
-}
-
-.graph-title {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: -5px;
 }
 
 .svg-wrap {
