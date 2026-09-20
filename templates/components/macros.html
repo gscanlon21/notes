@@ -16,11 +16,13 @@
 		{% if item.title is not starting_with(pat='_') and item.title is not starting_with(pat='-') %}
 		{% if item.title is not starting_with(pat='&') and item.title is not starting_with(pat='@') %}
 		{% if item.title is not starting_with(pat='#') and item.title is not starting_with(pat='*') %}
+		{% if item.title is not starting_with(pat='/') and item.title is not starting_with(pat='\\') %}
 		{% if item.title is not ending_with(pat='.') and item.title is not ending_with(pat=':') %}
 		{% if item.title is not ending_with(pat='!') and item.title is not ending_with(pat='%') %}
 			<li>
 				<a href="{{ item.permalink }}">{{ item.title }}</a>
 			</li>
+		{% endif %}
 		{% endif %}
 		{% endif %}
 		{% endif %}

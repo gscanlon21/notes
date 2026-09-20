@@ -1,5 +1,25 @@
-dd {
+dt, dd {
+	&:has(.katex-display) {
+		overflow-x: unset !important;
+	}
+
+	.katex-display {
+		margin-block: $base-padding * 0;
+	}
+
 	.katex-html {
 		text-align: start;
+	}
+}
+
+li {
+	.katex-html {
+		text-align: start;
+	}
+}
+
+strong {
+	.katex-display {
+		margin-block: $base-padding * 0;
 	}
 }

@@ -1,28 +1,3 @@
-
-/* =========================================================
-   RIGHT TRIANGLE CALCULATOR
-   =========================================================
-
-   Triangle convention:
-
-            /|
-           / |
-        c /  | a
-         /   |
-        / A  | 
-       /_____|
-          b
-
-   C = 90°
-   A is opposite side a
-   B is opposite side b
-   c is the hypotenuse
-
-   The user may enter ANY combination of values.
-
-   Two independent values are sufficient.
-   ========================================================= */
-
 const fields = {
     a: document.getElementById("a"),
     b: document.getElementById("b"),
@@ -37,16 +12,14 @@ const drawing = document.getElementById("drawing");
 const status = document.getElementById("status");
 const info = document.getElementById("info");
 
-/* SVG circle dimensions */
-
+// SVG circle dimensions
 const CX = 400;
 const CY = 400;
 const R = 300;
 
-/* =========================================================
-   HELPERS
-   ========================================================= */
 
+/* HELPERS
+************/
 function number(id) {
     const value = parseFloat(fields[id].value);
     return Number.isFinite(value) ? value : null;
@@ -87,12 +60,10 @@ function svgElement(name, attrs = {}) {
     return element;
 }
 
-/* =========================================================
-   GET INPUTS
-   ========================================================= */
 
+/* GET INPUTS
+***************/
 function getInputs() {
-
     return {
         a: number("a"),
         b: number("b"),
@@ -102,23 +73,18 @@ function getInputs() {
     };
 }
 
-/* =========================================================
-   VALIDATION
-   ========================================================= */
 
+/* VALIDATION
+***************/
 function validateInputs(v) {
-    /*
-        Sides must be positive.
-    */
+    // Sides must be positive.
     for (const key of ["c"]) {
         if (v[key] !== null && v[key] <= 0) {
             return `${key} must be greater than 0.`;
         }
     }
 
-    /*
-        Angles must be between 0 and 90.
-    */
+    // Angles must be between 0 and 90.
     for (const key of ["A", "B"]) {
         if (v[key] !== null && (v[key] <= 0 || v[key] >= 90)) {
 
@@ -126,9 +92,7 @@ function validateInputs(v) {
         }
     }
 
-    /*
-        If both A and B are entered, they must add to 90.
-    */
+    // If both A and B are entered, they must add to 90.
     if (v.A !== null && v.B !== null) {
 
         if (Math.abs(v.A + v.B - 90) > 0.0001) {
@@ -136,10 +100,7 @@ function validateInputs(v) {
         }
     }
 
-    /*
-        Check side relationships if enough
-        side information was supplied.
-    */
+    // Check side relationships if enough side information was supplied.
     if (v.a !== null && v.b !== null && v.c !== null) {
         const calculated = Math.sqrt(v.a * v.a + v.b * v.b);
 
@@ -151,43 +112,16 @@ function validateInputs(v) {
     return null;
 }
 
-/* =========================================================
-   SOLVE TRIANGLE
-   ========================================================= */
+/* SOLVE TRIANGLE
+*******************/
 function solveTriangle(v) {
-
-    /*
-        We repeatedly use known information to
-        derive new information.
-
-        This makes combinations such as:
-
-            a + A
-            b + B
-            a + c
-            b + c
-            a + b
-            c + A
-            c + B
-            A + B + side
-
-        all work.
-    */
-
     let changed = true;
-
     let iterations = 0;
-
     while (changed && iterations < 20) {
-
         changed = false;
-
         iterations++;
 
-        /* ---------------------------------------------
-           Angles
-           --------------------------------------------- */
-
+        // Angles
         if (v.A !== null && v.B === null) {
             v.B = 90 - v.A;
             changed = true;
@@ -198,23 +132,14 @@ function solveTriangle(v) {
             changed = true;
         }
 
-        /* ---------------------------------------------
-           Side a + side b -> c
-           --------------------------------------------- */
-
+        // Side a + side b -> c
         if (v.a !== null && v.b !== null && v.c === null) {
-
             v.c = Math.sqrt(v.a * v.a + v.b * v.b);
-
             changed = true;
         }
 
-        /* ---------------------------------------------
-           c + a -> b
-           --------------------------------------------- */
-
+        // c + a -> b
         if (v.c !== null && v.a !== null && v.b === null) {
-
             const value = v.c * v.c - v.a * v.a;
 
             if (value < 0) {
@@ -222,14 +147,10 @@ function solveTriangle(v) {
             }
 
             v.b = Math.sqrt(value);
-
             changed = true;
         }
 
-        /* ---------------------------------------------
-           c + b -> a
-           --------------------------------------------- */
-
+        // c + b -> a
         if (v.c !== null && v.b !== null && v.a === null) {
             const value = v.c * v.c - v.b * v.b;
 
@@ -238,16 +159,11 @@ function solveTriangle(v) {
             }
 
             v.a = Math.sqrt(value);
-
             changed = true;
         }
 
-        /* ---------------------------------------------
-           a + A -> c and b
-           --------------------------------------------- */
-
+        // a + A -> c and b
         if (v.a !== null && v.A !== null) {
-
             const rad = v.A * Math.PI / 180;
 
             if (v.c === null) {
@@ -261,12 +177,8 @@ function solveTriangle(v) {
             }
         }
 
-        /* ---------------------------------------------
-           a + B -> c and b
-           --------------------------------------------- */
-
+        // a + B -> c and b
         if (v.a !== null && v.B !== null) {
-
             const rad = v.B * Math.PI / 180;
 
             if (v.c === null) {
@@ -285,10 +197,7 @@ function solveTriangle(v) {
             }
         }
 
-        /* ---------------------------------------------
-           b + B -> c and a
-           --------------------------------------------- */
-
+        // b + B -> c and a
         if (v.b !== null && v.B !== null) {
             const rad = v.B * Math.PI / 180;
 
@@ -303,10 +212,7 @@ function solveTriangle(v) {
             }
         }
 
-        /* ---------------------------------------------
-           b + A -> c and a
-           --------------------------------------------- */
-
+        // b + A -> c and a
         if (v.b !== null && v.A !== null) {
             const rad = v.A * Math.PI / 180;
 
@@ -321,12 +227,8 @@ function solveTriangle(v) {
             }
         }
 
-        /* ---------------------------------------------
-           c + A -> a and b
-           --------------------------------------------- */
-
+        // c + A -> a and b
         if (v.c !== null && v.A !== null) {
-
             const rad = v.A * Math.PI / 180;
 
             if (v.a === null) {
@@ -340,12 +242,8 @@ function solveTriangle(v) {
             }
         }
 
-        /* ---------------------------------------------
-           c + B -> a and b
-           --------------------------------------------- */
-
+        // c + B -> a and b
         if (v.c !== null && v.B !== null) {
-
             const rad = v.B * Math.PI / 180;
 
             if (v.b === null) {
@@ -359,10 +257,7 @@ function solveTriangle(v) {
             }
         }
 
-        /* ---------------------------------------------
-           Three sides can give angles
-           --------------------------------------------- */
-
+        // Three sides can give angles
         if (v.a !== null && v.b !== null) {
             if (v.A === null) {
                 v.A = Math.atan2(v.a, v.b) * 180 / Math.PI;
@@ -376,7 +271,6 @@ function solveTriangle(v) {
         }
 
         if (v.a !== null && v.c !== null) {
-
             if (v.A === null) {
                 v.A = Math.asin(v.a / v.c) * 180 / Math.PI;
                 changed = true;
@@ -389,7 +283,6 @@ function solveTriangle(v) {
         }
 
         if (v.b !== null && v.c !== null) {
-
             if (v.B === null) {
                 v.B = Math.asin(v.b / v.c) * 180 / Math.PI;
                 changed = true;
@@ -405,11 +298,10 @@ function solveTriangle(v) {
     return v;
 }
 
-/* =========================================================
-   DRAW UNIT CIRCLE
-   ========================================================= */
-function drawTriangle(v) {
 
+/* DRAW UNIT CIRCLE
+*********************/
+function drawTriangle(v) {
     clearDrawing();
 
     /*
@@ -420,27 +312,19 @@ function drawTriangle(v) {
              A = 0° -> positive x-axis
              A > 0 -> counterclockwise
     */
-
     const angle = v.A * Math.PI / 180;
     const x = Math.cos(angle);
     const y = Math.sin(angle);
 
-    /*
-        Unit-circle screen coordinates.
-    */
+    // Unit-circle screen coordinates.
     const pointX = CX + x * R;
     const pointY = CY - y * R;
 
-    /*
-        Projection onto x-axis.
-    */
+    // Projection onto x-axis.
     const projectionX = pointX;
     const projectionY = CY;
 
-    /* ---------------------------------------------
-       Triangle
-       --------------------------------------------- */
-
+    // Triangle
     const triangle = svgElement("polygon", {
 		points: `
 			${CX},${CY}
@@ -452,10 +336,7 @@ function drawTriangle(v) {
 
     drawing.appendChild(triangle);
 
-    /* ---------------------------------------------
-       Horizontal projection
-       --------------------------------------------- */
-
+    // Horizontal projection
     const horizontal = svgElement("line", {
 		x1: CX,
 		y1: CY,
@@ -466,10 +347,7 @@ function drawTriangle(v) {
 
     drawing.appendChild(horizontal);
 
-    /* ---------------------------------------------
-       Vertical projection
-       --------------------------------------------- */
-
+    // Vertical projection
     const vertical = svgElement("line",
 	{
 		x1: projectionX,
@@ -481,10 +359,7 @@ function drawTriangle(v) {
 
     drawing.appendChild(vertical);
 
-    /* ---------------------------------------------
-       Hypotenuse / terminal ray
-       --------------------------------------------- */
-
+    // Hypotenuse / terminal ray
     const ray = svgElement("line", {
 		x1: CX,
 		y1: CY,
@@ -495,10 +370,7 @@ function drawTriangle(v) {
 
     drawing.appendChild(ray);
 
-    /* ---------------------------------------------
-       Right angle marker
-       --------------------------------------------- */
-
+    // Right angle marker
     const size = 18;
 
     const marker = svgElement("polyline", {
@@ -512,10 +384,7 @@ function drawTriangle(v) {
 
     drawing.appendChild(marker);
 
-    /* ---------------------------------------------
-       Angle arc
-       --------------------------------------------- */
-
+    // Angle arc 
     const arcRadius = 75;
     const arcEndX = CX + arcRadius * Math.cos(angle);
     const arcEndY = CY - arcRadius * Math.sin(angle);
@@ -533,10 +402,7 @@ function drawTriangle(v) {
 
     drawing.appendChild(arc);
 
-    /* ---------------------------------------------
-       Terminal point
-       --------------------------------------------- */
-
+    // Terminal point  
     const point = svgElement("circle", {
 		cx: pointX,
 		cy: pointY,
@@ -546,10 +412,7 @@ function drawTriangle(v) {
 
     drawing.appendChild(point);
 
-    /* ---------------------------------------------
-       Origin
-       --------------------------------------------- */
-
+    // Origin
     const origin = svgElement("circle", {
 		cx: CX,
 		cy: CY,
@@ -559,10 +422,7 @@ function drawTriangle(v) {
 
     drawing.appendChild(origin);
 
-    /* ---------------------------------------------
-       Angle label
-       --------------------------------------------- */
-
+    // Angle label
     const labelAngle = Math.min(v.A / 2, 75);
     const labelRad = labelAngle * Math.PI / 180;
     const labelRadius = 105;
@@ -578,10 +438,7 @@ function drawTriangle(v) {
 
     drawing.appendChild(angleLabel);
 
-    /* ---------------------------------------------
-       Coordinate
-       --------------------------------------------- */
-
+    // Coordinate
     const coordinate = svgElement("text",
 	{
 		x: pointX + (x >= 0 ? 14 : -14),
@@ -594,10 +451,7 @@ function drawTriangle(v) {
 
     drawing.appendChild(coordinate);
 
-    /* ---------------------------------------------
-       Side labels
-       --------------------------------------------- */
-
+    // Side labels
     const bLabel = svgElement("text",
 	{
 		x: (CX + projectionX) / 2,
@@ -633,14 +487,13 @@ function drawTriangle(v) {
     drawing.appendChild(cLabel);
 }
 
-/* =========================================================
-   MAIN CALCULATION
-   ========================================================= */
 
+/* MAIN CALCULATION
+*********************/
 function calculate() {
     let values = getInputs();
 
-    /* Count supplied values */
+    // Count supplied values
     const supplied = Object.values(values).filter(v => v !== null).length;
 
     if (supplied < 2) {
@@ -654,7 +507,7 @@ function calculate() {
         return;
     }
 
-    /* Validate */
+    // Validate
     const validation = validateInputs(values);
 
     if (validation) {
@@ -669,8 +522,7 @@ function calculate() {
         return;
     }
 
-    /* Solve */
-
+    // Solve
     try {
         values = solveTriangle(values);
     } catch (error) {
@@ -679,14 +531,10 @@ function calculate() {
         status.textContent = error.message;
 
         clearDrawing();
-
         return;
     }
 
-    /* ---------------------------------------------
-       Check whether everything was solved
-       --------------------------------------------- */
-
+    // Check whether everything was solved
     const complete =
         values.a !== null &&
         values.b !== null &&
@@ -695,31 +543,15 @@ function calculate() {
         values.B !== null;
 
     if (!complete) {
-        /*
-            This happens when the user supplied
-            two angles but no side.
-
-            The angles determine shape but not scale.
-        */
-
         status.className = "status";
-        status.textContent = "The angles determine the shape, but you need at least one side to determine its size.";
-
-        /*
-            Still fill in angles.
-        */
+        status.textContent = "At least one side is required.";
+		info.textContent = `A = ${format(values.A)}°   B = ${format(values.B)}°`;
 
         setValue("A", values.A);
         setValue("B", values.B);
 
-        info.textContent = `A = ${format(values.A)}°   B = ${format(values.B)}°`;
-
         return;
     }
-
-    /* ---------------------------------------------
-       Write solved values back to inputs
-       --------------------------------------------- */
 
     setValue("a", values.a);
     setValue("b", values.b);
@@ -727,24 +559,16 @@ function calculate() {
     setValue("A", values.A);
     setValue("B", values.B);
 
-    /* ---------------------------------------------
-       Success
-       --------------------------------------------- */
-
     status.className = "status success";
     status.textContent = "Triangle calculated successfully.";
-
     info.textContent = `A = ${format(values.A)}°   •   B = ${format(values.B)}°   •   C = 90°`;
-
-    /* Draw */
 
     drawTriangle(values);
 }
 
-/* =========================================================
-   RESET
-   ========================================================= */
 
+/* RESET
+**********/
 function reset() {
     for (const field of Object.values(fields)) {
         field.value = "";
@@ -757,15 +581,13 @@ function reset() {
     info.textContent = "Enter values to calculate the triangle.";
 }
 
-/* =========================================================
-   EVENTS
-   ========================================================= */
+/* EVENTS
+***********/
 calculateButton.addEventListener("click", calculate);
 resetButton.addEventListener("click", reset);
 
-/*
-    Calculate when Enter is pressed.
-*/
+
+// Calculate when Enter is pressed.
 for (const input of Object.values(fields)) {
     input.addEventListener("keydown", event => {
             if (event.key === "Enter") {
