@@ -16,7 +16,7 @@ see_also = []
 ## Switch/Case
 
 ```liquid
-
+{% raw %}
 {% case cat.name %}
   {% when 'Mini Fudge', 'Bo' %}
     <span>My cat</span>
@@ -25,6 +25,7 @@ see_also = []
   {% else %}
     <span>Not my cat</span>
 {% endcase %}
+{% endraw %}
 ```
 
 

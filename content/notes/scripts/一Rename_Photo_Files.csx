@@ -20,7 +20,7 @@ var photos = new DirectoryInfo(folderPath).GetFiles()
 int id = 1;
 foreach (var photo in photos)
 {
-	var fileName = dateRegex.Match(Path.GetFileNameWithoutExtension(file.Name)).Value;
+	var fileName = dateRegex.Match(Path.GetFileNameWithoutExtension(photo.Name)).Value;
     var photoDate = DateTime.ParseExact(fileName, dateFormat, CultureInfo.InvariantCulture);
 
     var newName = $"{photoDate:yyyy-MM-dd}_{id:D3}_{suffix}{photo.Extension}";
