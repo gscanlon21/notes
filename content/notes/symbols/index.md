@@ -160,6 +160,16 @@ x̄
 σ
 ```
 ###### U+03C3
+###### Greek Small Letter Lambda
+```
+λ
+```
+###### U+03BB
+###### Greek Small Letter Nu
+```
+ν
+```
+###### U+03BD
 
 
 
