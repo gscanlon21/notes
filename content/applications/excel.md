@@ -64,6 +64,9 @@ see_also = []
 **=TEXT(value, format_text)**
 : > `=TEXT(value, "General")`
 
+**=SWITCH(A2, "G", "Guard", "F", "Forward", "C", "Center", "None")**
+: ?
+
 
 ## Range Reference
 > [!NOTE]
