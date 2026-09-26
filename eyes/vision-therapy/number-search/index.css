@@ -1,0 +1,23 @@
+#number-chart {
+	line-height: 1;
+	aspect-ratio: 1;
+	text-align: center;
+	position: relative;
+	height: 600px;
+	width: 100%;
+}
+
+.number {
+	/* Position using center point */
+	transform: translate(-50%, -50%);
+	position: absolute;
+	aspect-ratio: 1;
+}
+
+.number.red {
+	color: rgb(var(--color-red));
+}
+
+.number.green {
+	color: rgb(var(--color-green));
+}

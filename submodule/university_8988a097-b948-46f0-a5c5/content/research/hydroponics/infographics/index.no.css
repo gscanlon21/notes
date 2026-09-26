@@ -1,0 +1,67 @@
+html {
+	counter-reset: page;
+}
+
+h1 {
+	margin-top: 2rem;
+}
+
+h2 {
+	margin-top: 1.75rem;
+}
+
+h3 {
+	margin-top: 1.5rem;
+}
+
+h4 {
+	margin-top: 1.25rem;
+}
+
+.title {
+	text-align: center;
+	font-style: normal;
+}
+
+.title small {
+	width: 0;
+	font-size: small;
+	font-weight: normal;
+	vertical-align: super;
+	display: inline-block;
+}
+
+@media print {
+	article a {
+		color: currentColor;
+		text-decoration: none;
+	}
+
+	article > :first-child {
+		margin-block-start: -4px !important;
+	}
+
+	section.footnotes {
+		margin-block-start: 2rem !important;
+
+		p {
+			font-size: 13px;
+		}
+	}
+}
+
+@page {
+	margin: 10mm;
+	
+	@bottom-left {
+		content: "Public Safety: 314-246-6911 or Ext. 6911 from any campus phone";
+		padding-block-end: 3mm;
+		font-size: 12px;
+	}
+
+	@bottom-right {
+		content: "Page " counter(page) " of " counter(pages);
+		padding-block-end: 3mm;
+		font-size: 12px;
+	}
+}
