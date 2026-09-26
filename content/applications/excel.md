@@ -11,9 +11,6 @@ see_also = []
 {{ <hidden page={page} section={section} /> }}
 
 
-> [!NOTE]
-> The `$` symbol locks a cell reference so that it doesn’t change when copying a formula.
-
 
 > [!TIP]
 > Use `ctrl-shift-v` to paste without formatting!
@@ -23,10 +20,6 @@ see_also = []
 > Prefix a cell with an apostrophe (`'`) to tell excel to treat it as literal text.
 >> Disable Auto-Formatting
 
-
-> [!TIP]
-> You can hit the little box between A and 1 to select the entire sheet (or hit ctrl + A) and format it as text.
->> Disable Auto-Formatting
 
 
 
@@ -42,6 +35,10 @@ see_also = []
 : In the pull down on the "Settings" tab select "List".
 : click In the box labeled "Source" then select the cells that contain the values set up in step 1.
 
+**Reference a Spill Formula from a Table**
+: Put the spill formula just offset the table and use:
+: `=OFFSET(INDIRECT(ADDRESS(ROW(),COLUMN())),0,-2)`
+
 
 
 # Formulas
@@ -53,6 +50,37 @@ see_also = []
 ```
 =TEXT(IF(J13="Unknown",C13,J13)+XLOOKUP(N13,Seeds!A:A,Seeds!F:F),"yyyy-MM-dd")&" - "&TEXT(IF(J13="Unknown",C13,J13)+XLOOKUP(N13,Seeds!A:A,Seeds!G:G),"yyyy-MM-dd")
 ```
+
+
+## Function Reference
+
+**&**
+: Used to combine functions.
+
+**=VALUE**
+: Get the value out of a cell ignoring any format specifiers.
+: > `'221` > `221`
+
+**=TEXT(value, format_text)**
+: > `=TEXT(value, "General")`
+
+
+## Range Reference
+> [!NOTE]
+> The `$` symbol locks a cell reference so that it doesn’t change when copying a formula.
+
+**[]**
+: Used to reference a table column by it's name.
+: - Use `@[]` to reference the singular cell in the row.
+: > Select only the column rows where the jar type matches. 
+: > `=FILTER(VALUE([Water Added (mL)]), ([Jar Type]=[@[Jar Type]]`
+
+
+# Cell Formatting
+
+> [!NOTE]
+> Use `Alt + Enter` to wrap text in a cell.
+> Select `Home > Wrap` to unwrap the auto-formatted text.
 
 
 # Conditional Formatting
@@ -73,7 +101,6 @@ see_also = []
 : > [!NOTE]
   > Start at the row your formula applies to!
   > If your formula starts at row 11, start your formula at row 11.
-
 
 
 ## Automate Rules
