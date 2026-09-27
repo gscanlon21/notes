@@ -39,6 +39,8 @@ see_also = []
 : Put the spill formula just offset the table and use:
 : `=OFFSET(INDIRECT(ADDRESS(ROW(),COLUMN())),0,-2)`
 
+**How to Round to 3 Sig Figs**
+: `=LET(x, A1, ROUND(x,3-INT(LOG10(ABS(x)))-1))`
 
 
 # Formulas

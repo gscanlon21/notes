@@ -34,6 +34,19 @@ see_also = [
 ###### U+4E00
 
 
+# Sex
+###### Male Sign
+```
+♂
+```
+###### U+2642
+###### Female Sign
+```
+♀
+```
+###### U+2640
+
+
 
 # Molecules
 ###### Oxygen
