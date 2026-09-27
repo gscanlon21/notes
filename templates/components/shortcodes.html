@@ -74,7 +74,7 @@
 
 
 
-{% component table(header: string = "") %}
+{% component table(header: string = "", footer: string = "", class: string = "", styles: string = "") %}
 {% if header %}
 ###### Table {{ nth }}: {{ header | safe }}
 {% endif %}
