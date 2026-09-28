@@ -14,3 +14,6 @@ see_also = [
 {{ <hidden page={page} section={section} /> }}
 
 
+**Floral Wire**
+: Used to support stems in ikebana arrangements.
+
