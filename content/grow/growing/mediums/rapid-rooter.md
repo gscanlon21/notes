@@ -15,9 +15,7 @@ see_also = [
 {{ <hidden page={page} section={section} /> }}
 
 
-
-
-
+# Instructions
 
 1. Soak plugs in water or mild nutrient solution to re-hydrate. 
 1. Place seed or cutting in center hole of plug.
@@ -33,5 +31,4 @@ see_also = [
   - Place plugs in tray insert with about ½ inch of water in the bottom. Cover with humidity dome to maintain moisture.
 1. Provide Light
   - Place under low-intensity grow light and maintain 70-80°F temperature for optimal germination. Roots typically emerge in 3-7 days.
-
 

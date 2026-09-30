@@ -1,5 +1,5 @@
 +++
-title = "Growing Mediums"
+title = "Mediums"
 description = ""
 
 [extra]

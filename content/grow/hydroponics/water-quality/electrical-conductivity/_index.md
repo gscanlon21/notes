@@ -42,7 +42,7 @@ see_also = []
 
 
 
-
+# Nutrient Availability Range
 | Nutrient | Broad Availability Range | Notes / Reason |
 |----------|--------------------------|----------------|
 | **NO₃⁻-N** | 4.0 to 8.5 | Soluble across all relevant pH; uptake independent of pH in hydroponic solution. Old charts confused microbial nitrification with solubility. |
@@ -65,7 +65,7 @@ see_also = []
 
 
 
-
+# Micronutrients
 | Nutrients             | Acceptable value (ppm) |
 |-----------------------|------------------------|
 | Sodium                | <50                    |
