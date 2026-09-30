@@ -15,7 +15,6 @@ see_also = [
 ]
 +++
 
-{{ <hidden page={page} section={section} /> }}
 
 {{ <hidden page={page} section={section} /> }}
 

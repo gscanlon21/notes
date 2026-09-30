@@ -6,10 +6,7 @@ description = ""
 updated = 2026-06-01
 site_version = 1
 toc_level = 2
-see_also = [
-  { title = "Seed Starting Method", href = "https://www.youtube.com/watch?v=MM7QNhs4h_4" },
-  { title = "Cotton Balls", href = "https://www.globalindustrial.com/p/sterile-cotton-balls-large-white-5-per-pack25-packs-per-case" },
-]
+see_also = []
 +++
 
 {{ <hidden page={page} section={section} /> }}
