@@ -1,6 +1,6 @@
 +++
-title = "Johnny's Selected Seeds"
-description = ""
+title = "Johnny's Seeds"
+description = "Johnny's Selected Seeds"
 
 [extra]
 updated = 2026-06-01
