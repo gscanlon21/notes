@@ -1,9 +1,9 @@
 +++
 title = "Spanish"
 sort_by = "title"
-updated = 2026-06-01
 
 [extra]
+updated = 2026-06-01
 see_also = [
   { title = "Dreaming Spanish", href = "https://www.dreaming.com/spanish" },
   { title = "Language Transfer", href = "https://www.languagetransfer.org/" },
