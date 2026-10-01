@@ -107,6 +107,9 @@ see_also = []
   > Start at the row your formula applies to!
   > If your formula starts at row 11, start your formula at row 11.
 
+**Format Cells where the Cell is Empty**
+_If the format range starts at 11_
+: `=AND(A11="", $A11<>"", A$10<>"")`
 
 ## Automate Rules
 

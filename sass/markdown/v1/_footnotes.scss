@@ -1,25 +1,4 @@
 article.v1 {
-	.footnote-reference {
-		margin-block-start: $base-padding * -1;
-		font-size: $site-font-size * 0.8;
-		display: inline-block;
-		
-		// Added to Zola.
-		//& a::before {
-		//	content: '[';
-		//}
-
-		// Added to Zola.
-		//& a::after {
-		//	content: ']';
-		//}
-
-		// Footnotes bleed together in a paragraph.
-		//& + .footnote-reference::before {
-		//	content: ',';
-		//}
-	}
-
 	.footnotes {
 		margin-block-start: $base-padding * 3;
 		padding-block-start: $base-padding * 0.5;
@@ -71,6 +50,33 @@ article.v1 {
 					order: 2;
 				}
 			}
+		}
+	}
+
+	.footnote-reference {
+		margin-block-start: $base-padding * -1;
+		font-size: $site-font-size * 0.8;
+		display: inline-block;
+		
+		// Added to Zola.
+		//& a::before {
+		//	content: '[';
+		//}
+
+		// Added to Zola.
+		//& a::after {
+		//	content: ']';
+		//}
+
+		// Footnotes bleed together in a paragraph.
+		//& + .footnote-reference::before {
+		//	content: ',';
+		//}
+	}
+
+	h6 {
+		.footnote-reference {
+			margin-block-start: $base-padding * -0.5;
 		}
 	}
 }

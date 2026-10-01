@@ -1,16 +1,13 @@
 +++
-title = "Vegetables"
+title = "Nutrients"
 description = ""
 
 [extra]
 updated = 2026-06-01
 site_version = 1
 toc_level = 2
-see_also = [
-  { title = "Johnny Seeds", href = "https://www.johnnyseeds.com/" },
-]
+see_also = []
 +++
 
 {{ <hidden page={page} section={section} /> }}
-
 

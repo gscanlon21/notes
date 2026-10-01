@@ -1,4 +1,14 @@
 article.v1 {
+  	counter-reset: table;
+
+	.table-index {
+		counter-increment: table;
+	}
+
+	.table-index::before {
+		content: counter(table);
+	}
+
 	// Table headers
 	h6:has(+ .table-wrapper) {
 		border-top-right-radius: $border-radius;
