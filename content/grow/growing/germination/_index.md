@@ -1,5 +1,5 @@
 +++
-title = "Seedlings"
+title = "Germination"
 description = "Store seeds in a cool, dry place."
 
 [extra]
