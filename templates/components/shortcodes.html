@@ -76,7 +76,7 @@
 
 {% component table(header: string = "", footer: string = "", class: string = "", styles: string = "") %}
 {% if header %}
-###### Table {{ nth }}: {{ header | safe }}
+###### Table <span class="table-index"></span>: {{ header | safe }}
 {% endif %}
 
 {% if not styles and footer and footer | length > 0 %}
