@@ -12,7 +12,42 @@ see_also = []
 {{ <hidden page={page} section={section} /> }}
 
 
+# Modified Sonneveld's solution
+Nitrogen (N)
+: 150
 
+Phosphorus (P)
+: 31
+
+Potassium (K)
+: 210
+
+Calcium (Ca)
+: 90
+
+Magnesium (Mg)
+: 24
+
+Iron (Fe)
+: 1.0
+
+Manganese (Mn)
+: 0.25
+
+Zinc (Zn)
+: 0.13
+
+Boron (B)
+: 0.16
+
+Copper (Cu)
+: 0.023
+
+Molybdenum (Mo)
+: 0.024
+
+
+# Research
 
 **Modeling Bibb Lettuce Nitrogen Uptake and Biomass Productivity in Vertical Hydroponic Agriculture**
 _[Article](一Modeling_Bibb_Lettuce_Nitrogen_Uptake_and_Biomass_Productivity_in_Vertical_Hydroponic_Agriculture.pdf)_
