@@ -1,3 +1,20 @@
+.katex-display {
+	display: inline-block !important;
+}
+
+strong {
+	.katex-display {
+		margin-block: $base-padding * 0;
+		display: block !important;
+	}
+}
+
+li {
+	.katex-html {
+		text-align: start;
+	}
+}
+
 dt, dd {
 	&:has(.katex-display) {
 		overflow-x: unset !important;
@@ -9,17 +26,5 @@ dt, dd {
 
 	.katex-html {
 		text-align: start;
-	}
-}
-
-li {
-	.katex-html {
-		text-align: start;
-	}
-}
-
-strong {
-	.katex-display {
-		margin-block: $base-padding * 0;
 	}
 }
