@@ -12,38 +12,73 @@ see_also = []
 {{ <hidden page={page} section={section} /> }}
 
 
-# Modified Sonneveld's solution
-Nitrogen (N)
+{% <table> %}
+### Table 1. Optimum ranges for water quality parameters to determine suitability of water sources for hydroponic cropping systems
+
+| Parameter | Optimum range |
+|---|---|
+| pH | 5.5–7 |
+| EC (dS/m) | 0.2–0.8 |
+| Alkalinity | 40–160 ppm CaCO3 equivalent |
+| Dissolved oxygen | >6 ppm |
+| Total suspended solids | <30 ppm |
+
+### Problematic ions
+
+| Parameter | Optimum range |
+|---|---|
+| Sodium | <50 ppm |
+| Chlorine | <70 ppm |
+| Sulfates | <90 ppm |
+| Boron | <0.5 ppm |
+| Fluor | <1 ppm |
+| Calcium | <150 ppm |
+| Magnesium | <75 ppm |
+| Iron | <1 ppm |
+| Manganese | <1 ppm |
+
+1 ppm is the same as 1 mg/L (1 mg of the element in 1 liter of water)
+{% </table> %}
+
+
+# Modified Sonneveld's Solution
+
+**Modified Sonneveld's Solution**
+: A popular hydroponic recipe for herbs and leafy greens.
+
+## Nutrients
+
+**Nitrogen (N)**
 : 150
 
-Phosphorus (P)
+**Phosphorus (P)**
 : 31
 
-Potassium (K)
+**Potassium (K)**
 : 210
 
-Calcium (Ca)
+**Calcium (Ca)**
 : 90
 
-Magnesium (Mg)
+**Magnesium (Mg)**
 : 24
 
-Iron (Fe)
+**Iron (Fe)**
 : 1.0
 
-Manganese (Mn)
+**Manganese (Mn)**
 : 0.25
 
-Zinc (Zn)
+**Zinc (Zn)**
 : 0.13
 
-Boron (B)
+**Boron (B)**
 : 0.16
 
-Copper (Cu)
+**Copper (Cu)**
 : 0.023
 
-Molybdenum (Mo)
+**Molybdenum (Mo)**
 : 0.024
 
 

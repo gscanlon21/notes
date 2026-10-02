@@ -20,7 +20,21 @@ see_also = [
 {{ <hidden page={page} section={section} /> }}
 
 
+# Fertilizers
 
+## Types
+
+**1-Part Formula**
+: Complete
+
+**2-Part Formula**
+: ?
+
+**3-Part Formula**
+: ?
+
+
+## Formulas
 
 **General Hydroponics MaxiGro Formula**
 _1-Part Formula is complete_
@@ -30,7 +44,6 @@ _1-Part Formula is complete_
   > - [ ]
   > - [ ]
   > - [ ]
-
 
 
 **Masterblend 8-15-36 Lettuce Formula**
