@@ -1,9 +1,10 @@
 +++
 title = "Fairphone"
-updated = 2025-12-12
+description = ""
 
 [extra]
 site = "https://www.fairphone.com/"
+updated = 2025-12-12
 see_also = []
 +++
 

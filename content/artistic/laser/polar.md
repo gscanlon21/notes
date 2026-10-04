@@ -1,8 +1,9 @@
 +++
 title = "Polar"
-updated = 2025-03-03
+description = ""
 
 [extra]
+updated = 2025-03-03
 see_also = [
     { title = "Replace the Coolant", href = "https://help.omtechlaser.com/hc/en-us/articles/32200229980057-How-do-I-correctly-replace-the-Coolant" }
 ]

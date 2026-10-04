@@ -1,9 +1,9 @@
 +++
 title = "Macular Degeneration"
 description = "Age-related macular degeneration (AMD) is a common eye disease in older adults that causes blurry central vision."
-updated = 2025-12-12
 
 [extra]
+updated = 2025-12-12
 site_version = 1
 toc_level = 2
 see_also = []

@@ -1,9 +1,11 @@
 +++
 title = "Jokes"
-updated = 2025-12-12
+description = ""
 
 [extra]
+updated = 2025-12-12
 toc_level = 0
+see_also = []
 +++
 
 {{ <hidden page={page} section={section} /> }}

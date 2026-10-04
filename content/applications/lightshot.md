@@ -1,10 +1,10 @@
 +++
 title = "Lightshot"
-updated = 2025-09-09
 description = "The fastest way to take a customizable screenshot"
 
 [extra]
 site = "https://app.prntscr.com/en/index.html"
+updated = 2025-09-09
 see_also = []
 +++
 

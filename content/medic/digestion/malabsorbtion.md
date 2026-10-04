@@ -1,8 +1,9 @@
 +++
 title = "Malabsorption"
-updated = 2025-05-05
+description = ""
 
 [extra]
+updated = 2025-03-05
 see_also = []
 +++
 

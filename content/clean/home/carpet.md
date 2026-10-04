@@ -1,8 +1,9 @@
 +++
 title = "Carpet"
-updated = 2025-10-10
+description = ""
 
 [extra]
+updated = 2025-10-10
 site_version = 1
 toc_level = 2
 see_also = [

@@ -1,8 +1,9 @@
 +++
 title = "Appliances"
-updated = 2025-06-01
+description = ""
 
 [extra]
+updated = 2025-06-01
 site_version = 1
 toc_level = 2
 see_also = [

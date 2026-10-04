@@ -1,9 +1,9 @@
 +++
 title = "Conjunctivitis"
 description = "Conjunctivitis, often called 'pink eye,' is an inflammation or infection of the conjunctiva – the thin, transparent layer of tissue that covers the white part of the eye and lines the inside of the eyelids. It can make the eyes appear red or pink, feel irritated, and produce discharge."
-updated = 2025-12-12
 
 [extra]
+updated = 2025-12-12
 site_version = 1
 toc_level = 2
 see_also = []

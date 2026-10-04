@@ -1,9 +1,10 @@
 +++
 title = "W-LED"
-updated = 2025-12-12
+description = ""
 
 [extra]
 site = "https://github.com/wled/WLED"
+updated = 2025-12-12
 see_also = [
     { title = "WLED", href = "https://github.com/wled/WLED" },
     { title = "WLED Installer", href = "https://install.wled.me/" },
