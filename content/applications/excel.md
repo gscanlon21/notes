@@ -97,8 +97,8 @@ see_also = []
 : - Columns A through XFD.
 : `11:999999`
 : - Rows 11 through 999999.
-: `A11:XFD999999`
-: - Range A11 to XFD999999.
+: `A11:AF999999`
+: - Range A11 to AF999999.
 
 **Format Cells where a Formula is True**
 : `=$K1=""`
@@ -111,10 +111,8 @@ see_also = []
 _If the format range starts at 11_
 : `=AND(A11="", $A11<>"", A$10<>"")`
 
-**Format Cells where the Cell is a Formula**
-_If the format range starts at 11_
+**Format Formula Cells**
 : `=ISFORMULA(A11)`
-
 
 ## Automate Rules
 
