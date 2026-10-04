@@ -111,6 +111,11 @@ see_also = []
 _If the format range starts at 11_
 : `=AND(A11="", $A11<>"", A$10<>"")`
 
+**Format Cells where the Cell is a Formula**
+_If the format range starts at 11_
+: `=ISFORMULA(A11)`
+
+
 ## Automate Rules
 
 ###### Re-Apply Conditional Formatting Rules
