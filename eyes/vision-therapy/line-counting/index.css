@@ -1,0 +1,29 @@
+.page {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.chart {
+	height: var(--height);
+	justify-self: center;
+	text-align: center;
+	font-weight: 600;
+	aspect-ratio: 1;
+	line-height: 1;
+	overflow: clip;
+	display: flex;
+}
+
+.line {
+	background-color: currentColor;
+	aspect-ratio: 1;
+}
+
+.line.red {
+	background-color: rgb(var(--color-red));
+}
+
+.line.green {
+	background-color: rgb(var(--color-green));
+}
