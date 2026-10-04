@@ -24,12 +24,17 @@ see_also = []
 ## Highlight Rows Where a Column is Blank
 
 **Apply To**
-: `A:XFD`
-: - Columns A through XFD.
+: `A:AX`
+: - Columns A through AX.
 : `11:999999`
 : - Rows 11 through 999999.
-: `A11:AF999999`
-: - Range A11 to AF999999.
+: `A11:AX99999`
+: - Range A11 to AX999999.
+
+> [!NOTE]
+> Don't go all the way to XFD or the scroll bar will shorten!
+>> Conditional Formatting Ranges
+
 
 **Format Cells where a Formula is True**
 : `=$K1=""`
