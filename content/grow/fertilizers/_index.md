@@ -14,6 +14,11 @@ see_also = [
 {{ <hidden page={page} section={section} /> }}
 
 
+> [!NOTE]
+> Most fertilizer salts dissolve best in hot water because they absorb heat from their surroundings - what's known as an endothermic reaction.
+>> Fertilizer Solubility
+
+
 # Fertilizers
 
 ## Types
