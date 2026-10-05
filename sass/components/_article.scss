@@ -77,6 +77,8 @@
 
 			a {
 				// Remove un-clickable space between lines.
+				padding-block-start: $base-padding * 0;
+				padding-block-end: $base-padding * 0.1;
 				display: inline-block;
 
 				svg {
