@@ -37,7 +37,7 @@ article.sitemap {
 		& > a, & > summary > a {
 			padding-block-start: $base-padding * 0.1;
 			padding-block-end: $base-padding * 0.25;
-			display: inline-block;
+			display: inline-flex;
 		}
 	}
 
