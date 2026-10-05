@@ -60,6 +60,7 @@ $breakpoint-large: "#{$body-margin} + #{$body-margin} + #{$body-width-min} + 38r
 	// Link coloring
 	--color-link: 0,109,219;
 	--color-link-visited: 73,0,146;
+	--color-link: var(--color-link-visited);
 
 	// Scrollbar coloring
 	--color-scrollbar: #{to-rgb(#888)};
@@ -83,6 +84,7 @@ $breakpoint-large: "#{$body-margin} + #{$body-margin} + #{$body-width-min} + 38r
 	// Link coloring
 	--color-link: 109,182,255;
 	--color-link-visited: 182,109,255;
+	--color-link: var(--color-link-visited);
 
 	// Color of code
 	--color-code: #{to-rgb(#dcdcdc)};

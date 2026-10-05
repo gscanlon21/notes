@@ -66,11 +66,12 @@ p {
 }
 
 a {
+	text-underline-offset: $site-padding * 0.1;
 	color: color(--color-link);
 
 	&:focus,
 	&:hover {
-		color: color(--color-link, 0.5);
+		color: color(--color-link, 0.65);
 	}
 
 	&:visited {
