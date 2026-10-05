@@ -1,5 +1,5 @@
 +++
-title = "GH"
+title = "General Hydroponics"
 description = ""
 
 [extra]
