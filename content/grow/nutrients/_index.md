@@ -42,46 +42,6 @@ see_also = []
 {% </table> %}
 
 
-# Modified Sonneveld's Solution
-
-**Modified Sonneveld's Solution**
-: A popular hydroponic recipe for herbs and leafy greens.
-
-## Nutrients
-
-**Nitrogen (N)**
-: 150
-
-**Phosphorus (P)**
-: 31
-
-**Potassium (K)**
-: 210
-
-**Calcium (Ca)**
-: 90
-
-**Magnesium (Mg)**
-: 24
-
-**Iron (Fe)**
-: 1.0
-
-**Manganese (Mn)**
-: 0.25
-
-**Zinc (Zn)**
-: 0.13
-
-**Boron (B)**
-: 0.16
-
-**Copper (Cu)**
-: 0.023
-
-**Molybdenum (Mo)**
-: 0.024
-
 
 # Research
 

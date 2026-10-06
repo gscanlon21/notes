@@ -121,7 +121,7 @@
 				{% endif %}
 				
 				<menu class="sitemap-list">
-					{{<macros.render_list_links config={config} pages={section_info.pages} />}}
+					{{<macros.render_list_links config={config} pages={section_info.pages} current_path={current_path} />}}
 			
 					{% for subsection in subsections %}
 						{{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={false} current_path={current_path} />}}
