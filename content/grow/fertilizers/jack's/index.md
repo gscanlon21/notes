@@ -13,3 +13,7 @@ see_also = [
 
 {{ <hidden page={page} section={section} /> }}
 
+
+> [!CAUTION]
+> Jack's 12-4-16 does not contain the necessary macronutrient sulfur. Add epsom salt after propagation for the vegetative growing period.
+
