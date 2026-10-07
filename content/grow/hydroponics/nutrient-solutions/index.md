@@ -12,14 +12,17 @@ see_also = [
 ]
 +++
 
+
 {{ <hidden page={page} section={section} /> }}
+
 
 # Terminology
 
 **Sonneveld's Solution**
-: 一A_Universal_Algorithm_for_Calculation_of_Nutrient_Solutions.pdf
-: 一A_Method_for_Calculating_the_Composition_of_Nutrient_Solutions_for_Soilless_Cultures.pdf
-: 一Determination_of_Micro_Nutrients_in_Substrates_by_Water_Extraction_and_Interpretation_of_the_Analytical_Data.pdf
+: Derived from:
+: - [A Universal Algorithm for Calculation of Nutrient Solutions](一A_Universal_Algorithm_for_Calculation_of_Nutrient_Solutions.pdf)
+: - [A Method for Calculating the Composition of Nutrient Solutions for Soilless Cultures](一A_Method_for_Calculating_the_Composition_of_Nutrient_Solutions_for_Soilless_Cultures.pdf)
+: - [Determination of Micro Nutrient in Substrates by Water Extraction and Interpretation of the Analytical Data](一Determination_of_Micro_Nutrients_in_Substrates_by_Water_Extraction_and_Interpretation_of_the_Analytical_Data.pdf)
 
 **Hoagland Solution**
 _from [Plant Physiology and Development](一Plant_Physiology_and_Development.pdf)_
@@ -32,17 +35,33 @@ Such high initial concentrations permit plants to be grown in a medium for exten
 Therefore, many researchers dilute their nutrient solutions several-fold and replenish them frequently to minimize fluctuations of nutrient concentration in the medium and in the plants.
 
 
-
 # Nutrient Solutions for Plants
 
 **Basil**
+: Derived from:
+: - Modified Sonneveld's Solution from Mattson N. & Peters, C. "A Recipe for Hydroponic Success"
+: - Modified Hoagland nutrient solution from Taiz et al. 2022 "Plant Physiology and Development"
+: - Commercial formulation from Solis-Toapanta et al. 2020 "Growth Rate and Nutrient Uptake of Basil in Small-Scale Hydroponics"
+
+
+## Research Nutrient Solutions for Plants
+
+**Basil**
 : Modified Sonneveld's Solution from Mattson N. & Peters, C. "A Recipe for Hydroponic Success"
+: Modified Hoagland nutrient solution from Taiz et al. 2022 "Plant Physiology and Development"
 
 **Lettuce**
-:
+: Modified Sonneveld's Solution from Mattson N. & Peters, C. "A Recipe for Hydroponic Success"
+: Modified Hoagland nutrient solution from Taiz et al. 2022 "Plant Physiology and Development"
 
 
-# Hydroponic Nutrient Solutions
+## Commercial Nutrient Solutions for Plants
+
+**Basil**
+: Commercial formulation from Solis-Toapanta et al. 2020 "Growth Rate and Nutrient Uptake of Basil in Small-Scale Hydroponics"
+
+
+# Hydroponic Nutrient Solutions Sources
 
 ## Leafy Greens & Herbs
 
@@ -58,7 +77,7 @@ _[Article](/grow/一/一A_Recipe_for_Hydroponic_Success.pdf)_
 **Plant Physiology and Development**
 Taiz et al. 2022
 _[Article](一Plant_Physiology_and_Development.pdf)_
-: `modified Hoagland nutrient solution from ""` 
+: `Modified Hoagland nutrient solution from Taiz et al. 2022 "Plant Physiology and Development"`
 : p 194. TABLE 7.3 Composition of a modified Hoagland nutrient solution for growing plants
 
 **MU Hydroponic Nutrient Solution Calculator**
@@ -81,8 +100,8 @@ _[Article](/grow/一/一Symptoms_of_Common_Nutrient_Deficiencies_in_Hydroponic_B
 **Growth Rate and Nutrient Uptake of Basil in Small-Scale Hydroponics**
 Solis-Toapanta et al. 2020
 _[Article](一Growth_Rate_and_Nutrient_Uptake_of_Basil_in_Small-Scale_Hydroponics.pdf)_
-: > Table3. Final nutrient concentration of a hydroponic solution used for basil plants grown inside a greenhouse or indoor environment for 8weeks under one of two nutrient solution management treatments.
-: - Use _W/O_ = without a nutrient solution replacement.
+: `Commercial formulation from Solis-Toapanta et al. 2020 "Growth Rate and Nutrient Uptake of Basil in Small-Scale Hydroponics"`
+: > Materials and Methods, _Fertilization_: Bottom center paragraph.
 
 
 #### Lettuce
