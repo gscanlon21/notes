@@ -1,9 +1,9 @@
 +++
-title = "Hydroponic Recipes"
+title = "Nutrient Solutions"
 description = ""
 
 [extra]
-key_words= ["nutrient solutions"]
+key_words= ["hydroponic recipes"]
 updated = 2026-06-01
 site_version = 1
 toc_level = 2
@@ -16,8 +16,13 @@ see_also = [
 
 # Terminology
 
+**Sonneveld's Solution**
+: 一A_Universal_Algorithm_for_Calculation_of_Nutrient_Solutions.pdf
+: 一A_Method_for_Calculating_the_Composition_of_Nutrient_Solutions_for_Soilless_Cultures.pdf
+: 一Determination_of_Micro_Nutrients_in_Substrates_by_Water_Extraction_and_Interpretation_of_the_Analytical_Data.pdf
+
 **Hoagland Solution**
-_from [Plant Physiology and Development](一Plant_Physiology_and_Development)_
+_from [Plant Physiology and Development](一Plant_Physiology_and_Development.pdf)_
 : > A nutrient solution for plant growth, originally formulated by Dennis R. Hoagland.
 : > This formulation is called a modified Hoagland solution, named after Dennis R. Hoagland, a scientist who did pioneering work on hydroponics in the 1930s.
 A modified Hoagland solution contains all known mineral elements needed for rapid plant growth. 
@@ -61,7 +66,7 @@ _[Article](/grow/一/一Symptoms_of_Common_Nutrient_Deficiencies_in_Hydroponic_B
 : The control nutrient solution is found on page 10.
 : This one has a high N concentration in the control solution.
 
-**Growth Rate and Nutrient Uptake of Basil in Small-scale Hydroponics**
+**Growth Rate and Nutrient Uptake of Basil in Small-Scale Hydroponics**
 Solis-Toapanta et al. 2020
 _[Article](一Growth_Rate_and_Nutrient_Uptake_of_Basil_in_Small-Scale_Hydroponics.pdf)_
 : > Table3. Final nutrient concentration of a hydroponic solution used for basil plants grown inside a greenhouse or indoor environment for 8weeks under one of two nutrient solution management treatments.
