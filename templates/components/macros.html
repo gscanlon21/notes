@@ -207,7 +207,7 @@
 	<dt class="asset {{ name }}">{{ name }}</dt>
 	{% for asset in page?.assets | default(value=section?.assets | default(value=[])) %}
 		{% for type in types %}
-			{% if asset is ending_with(pat=type) %}
+			{% if asset is ending_with(pat=type) and asset is not containing(pat="一一") %}
 				{{<macros.render_asset name={name} asset={asset} />}}
 			{% endif %}
 		{% endfor %}
@@ -216,7 +216,7 @@
 		{% set ancestor_section = get_section(path=page.ancestors | last) %}
 		{% for asset in ancestor_section.assets | default(value=[]) %}
 			{% for type in types %}
-				{% if asset is ending_with(pat=type) %}
+				{% if asset is ending_with(pat=type) and asset is not containing(pat="一一") %}
 					{{<macros.render_asset name={name} asset={asset} />}}
 				{% endif %}
 			{% endfor %}
