@@ -32,6 +32,16 @@ Such high initial concentrations permit plants to be grown in a medium for exten
 Therefore, many researchers dilute their nutrient solutions several-fold and replenish them frequently to minimize fluctuations of nutrient concentration in the medium and in the plants.
 
 
+
+# Nutrient Solutions for Plants
+
+**Basil**
+: Modified Sonneveld's Solution from Mattson N. & Peters, C. "A Recipe for Hydroponic Success"
+
+**Lettuce**
+:
+
+
 # Hydroponic Nutrient Solutions
 
 ## Leafy Greens & Herbs
@@ -39,6 +49,7 @@ Therefore, many researchers dilute their nutrient solutions several-fold and rep
 **A Recipe for Hydroponic Success**
 Mattson & Peters, 2014
 _[Article](/grow/一/一A_Recipe_for_Hydroponic_Success.pdf)_ 
+: `Modified Sonneveld's Solution from Mattson N. & Peters, C. "A Recipe for Hydroponic Success"`
 : Comparison of the nutrients (in ppm) supplied by the three different recipes for lettuce, herbs and leafy greens:
 : - Jack’s Hydro-FeED (16-4-17)
 : - Jack’s Hydroponic (5-12-26) + Calcium nitrate
@@ -46,7 +57,8 @@ _[Article](/grow/一/一A_Recipe_for_Hydroponic_Success.pdf)_
 
 **Plant Physiology and Development**
 Taiz et al. 2022
-_[Article](一Plant_Physiology_and_Development.pdf)_ 
+_[Article](一Plant_Physiology_and_Development.pdf)_
+: `modified Hoagland nutrient solution from ""` 
 : p 194. TABLE 7.3 Composition of a modified Hoagland nutrient solution for growing plants
 
 **MU Hydroponic Nutrient Solution Calculator**
