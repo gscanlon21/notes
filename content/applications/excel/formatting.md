@@ -10,6 +10,8 @@ see_also = []
 {{ <hidden page={page} section={section} /> }}
 
 
+**Custom Number Format**
+: `[=0]0;0.00##########`
 
 
 # Cell Formatting

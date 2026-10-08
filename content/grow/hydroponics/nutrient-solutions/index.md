@@ -35,6 +35,25 @@ Such high initial concentrations permit plants to be grown in a medium for exten
 Therefore, many researchers dilute their nutrient solutions several-fold and replenish them frequently to minimize fluctuations of nutrient concentration in the medium and in the plants.
 
 
+# Overview
+
+> [!NOTE]
+> Choose a recipe that has been successful: 
+> - For the plant you want to grow. 
+> - For your regional location and environmental conditions. 
+> - For the time of year you wish to grow. 
+> 
+> IF you notice deficiency/toxicity symptoms, THEN adjustments to the recipe can be made to compensate.
+>> How to Find the Perfect Nutrient Solution Recipe[^1]
+
+> [!CAUTION]
+> Sulfur (a macronutrient) and chloride (a micronutrient) concentrations are not given in this recipe.
+> That does not mean that sulfur and chloride are not present.
+> Usually sulfur is added with magnesium and chloride is added with the manganese and copper.  
+> Enough will be added with these other elements to be sufficient (see calculations below).
+>> Sulfur[^1]
+
+
 # Nutrient Solutions for Plants
 
 **Basil**
@@ -96,6 +115,12 @@ Mattson & Merrill, 2016
 _[Article](/grow/一/一Symptoms_of_Common_Nutrient_Deficiencies_in_Hydroponic_Basil.pdf)_
 : The control nutrient solution is found on page 10.
 : This one has a high N concentration in the control solution.
+: **The control plant pictures don't appear healthy.**
+: > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
 
 **Growth Rate and Nutrient Uptake of Basil in Small-Scale Hydroponics**
 Solis-Toapanta et al. 2020
@@ -118,15 +143,25 @@ _[Article](一Growth_and_Tissue_Elemental_Composition_Response.pdf)_
 D'Oria et al. 2021
 _[Article](https://doi.org/10.3389/fpls.2021.641678)_
 _[Data Sheet 1](一一Compositions_of_the_Nutrient_Solutions_Derived_from_Hoagland's_Nutrient_Solution.pdf)_
-: Research article focuses on _Brassica napus_ -- a plant from the mustard family.
 : Compositions of the nutrient solutions derived from hoagland's nutrient solution.
-
+: **Research article focuses on _Brassica napus_ -- a plant from the mustard family.**
+: > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
 
 **Nutrient deficiencies modify the ionomic composition of plant tissues...**
 Maillard et al. 2016
 _[Article](一Nutrient_Deficiencies_Modify_the_Ionomic_Composition_of_Plant_Tissues.pdf)_
 _[Supplementary Materials](一一Supplementary_Data_S1_S5.pdf)_
-: Research article focuses on _Brassica napus_ -- a plant from the mustard family.
 : Nutrient compositions are found in the supplementary data.
+: **Research article focuses on _Brassica napus_ -- a plant from the mustard family.**
+: > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
 
 
+[^1]: [UA CEAC FERTIGATION SYSTEMS AND NUTRIENT SOLUTIONS](一Fertigation_Systems_and_Nutrient_Solutions.pdf)
