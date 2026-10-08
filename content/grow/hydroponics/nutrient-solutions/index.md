@@ -37,7 +37,7 @@ Therefore, many researchers dilute their nutrient solutions several-fold and rep
 
 # Overview
 
-> [!NOTE]
+> [!TIP]
 > Choose a recipe that has been successful: 
 > - For the plant you want to grow. 
 > - For your regional location and environmental conditions. 
