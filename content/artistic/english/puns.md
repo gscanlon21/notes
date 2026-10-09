@@ -26,7 +26,11 @@ toc_level = 1
 - [ ] Water Lettuce
 - [ ] Keep Growing
 - [ ] Pesty Pesto
-- [ ] Best o' Pesto
+- [ ] Jar o' Lantern
+- [ ] Snack o' Lantern
+- [ ] Lettuce Bee Herbal Tea
+- [ ] Head Honcho
+- [ ] Big Cheese
 - [ ] Mr. Green, in the Lounge, with the Jar
 - [ ] Mr. Green, in the Study, with the Jar
 - [x] Mr. Green, in the Hall, with the Jar
@@ -34,6 +38,8 @@ toc_level = 1
 - [x] You've made it this jar
 - [x] Lettuce Bee Bold
 - [x] Romaine Calm
+- [x] Superb Herb
+- [x] Best o' Pesto
 - [x] Chop Chop Real Smooth
 - [x] Look Out And-Grow!
 - [x] Duck Duck Produce

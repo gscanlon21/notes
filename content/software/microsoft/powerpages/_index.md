@@ -7,6 +7,7 @@ sort_by = "title"
 updated = 2026-03-01
 see_also = [
   { title = "Liquid Objects", href = "https://learn.microsoft.com/en-us/power-pages/configure/liquid/liquid-objects" },
+  { title = "Liquid Filters", href = "https://learn.microsoft.com/en-us/power-pages/configure/liquid/liquid-filters" },
 ]
 +++
 
