@@ -22,3 +22,4 @@ Gather the leaves in the morning after the dew has dried, but before the tempera
 
 [^1]: Iowa State University: Growing and Using Basil
 [^2]: https://yardandgarden.extension.iastate.edu/how-to/growing-harvesting-and-drying-herbs
+
