@@ -5,7 +5,17 @@ using System.Linq;
 using System.Globalization;
 using System.Text.RegularExpressions;
 
-var suffix = Args.Count > 0 ? Args[0] : "Graham-Scanlon";
+static string GetArg(IList<string> args, string name, string defaultValue)
+{
+    var index = args.IndexOf($"--{name}");
+
+    return index >= 0 && index + 1 < args.Count
+        ? args[index + 1]
+        : defaultValue;
+}
+
+var suffix = GetArg(Args, "suffix", "Graham-Scanlon");
+int.TryParse(GetArg(Args, "page", "1"), out int page);
 
 var dateFormat = "yyyyMMdd_HHmmss";
 var dateRegex = new Regex(@"\d{8}_\d{6}", RegexOptions.Compiled);
@@ -17,19 +27,18 @@ var photos = new DirectoryInfo(folderPath).GetFiles()
     .OrderBy(file => file.Name)
     .ToList();
 
-int id = 1;
 foreach (var photo in photos)
 {
 	var fileName = dateRegex.Match(Path.GetFileNameWithoutExtension(photo.Name)).Value;
     var photoDate = DateTime.ParseExact(fileName, dateFormat, CultureInfo.InvariantCulture);
 
-    var newName = $"{photoDate:yyyy-MM-dd}_{id:D3}_{suffix}{photo.Extension}";
+    var newName = $"{photoDate:yyyy-MM-dd}_{page:D3}_{suffix}{photo.Extension}";
     var newPath = Path.Combine(folderPath, newName);
     Console.WriteLine($"{photo.Name} -> {newName}");
 	File.Move(photo.FullName, newPath);
 
-    id++;
+    page++;
 }
 
 Console.WriteLine();
-Console.WriteLine($"{id - 1} files renamed.");
+Console.WriteLine($"{photos.Count} files renamed.");

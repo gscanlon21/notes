@@ -20,5 +20,5 @@ see_also = []
 **Rename Photo Files**
 : Download and move script into photo folder.
 : Open folder in terminal and run with the default suffix:
-: - `dotnet script .\一Rename_Photo_Files.csx`
+: - `dotnet script .\一Rename_Photo_Files.csx --page 1`
 
