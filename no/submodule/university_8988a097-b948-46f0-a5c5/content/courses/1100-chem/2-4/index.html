@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang=no data-theme="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	
+	
+		<title>Predicting Geometry</title>
+	
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://ascallion.com/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://ascallion.com/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://ascallion.com/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://ascallion.com/site.webmanifest?h=d3283d8cdd099d8504a1">
+
+	
+	<link rel="stylesheet" type="text/css" href="https://ascallion.com/site.css?h=7058014b85e32271cf8f" media="all">
+	
+
+	
+	
+		
+
+		
+		
+	
+	
+    
+	
+		
+		
+
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+		
+	
+
+	<script defer src="https://ascallion.com/elasticlunr.min.js?h=4f648b9e42abdef9c436"></script>
+	<script defer src="https://ascallion.com/search_index.en.js?h=b2078c126a046963b747"></script>
+
+	
+		
+		
+		
+		<script defer src="https://ascallion.com/scripts/lunr.stemmer.js?h=e017028ea92174715af2"></script>
+		<script defer src="https://ascallion.com/scripts/lunr.no.js?h=4993417f9c2ff596dbdf"></script>
+		<script defer src="/submodule/university_8988a097-b948-46f0-a5c5/public/search_index.no.js?h=I/T9m2wNbtB9VTxPqBkl+pQh5qiOiQ91Q5G9aEGq1XDLhBsYPmgnwcCXcn6TquV/"></script>
+	
+
+	
+
+	<script defer src="https://ascallion.com/scripts/content.js?h=32700918cda2ffea7b52"></script>
+	<script defer src="https://ascallion.com/scripts/flashcards.js?h=22bdef1589d551d16717"></script>
+	<script defer src="https://ascallion.com/scripts/assessment.js?h=89c341c9cfdff8fd3a38"></script>
+	<script defer src="https://ascallion.com/scripts/search.js?h=643c4ada606b1c2f98b4"></script>
+	<script defer src="https://ascallion.com/scripts/chart.js?h=5feed9f60304b71795ac"></script>
+
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.css">
+</head>
+
+<body>
+	
+	<header id="site-header">
+		<nav id="site-nav">
+			<div class="nav-item">
+
+<div id="search">
+  <input id="search-input" type="search" placeholder="Search">
+
+  <div id="search-results" style="display: none;">
+      <ul id="search-results__items"></div>
+  </div>
+</div></div>
+			<div class="nav-item"><a class="unstyle" href="https://ascallion.com/">ascallion</a></div>
+			<div class="nav-item"><a href="https://ascallion.com/">Sitemap</a></div>
+		</nav>
+
+		<nav class="print context">
+			<div class="left">
+				Predicting Geometry
+			</div>
+			<div class="right">
+				
+			</div>
+		</nav>
+	</header>
+	
+
+	
+
+	<main id="main">
+		
+	<div class="sidebar-left header">
+		<div class="header-wrap">
+			
+<form id="options" class="header-item">
+    <header id="summary">
+        <h2 class="header-title">
+            
+                <span>Predicting Geometry</span>
+            
+              
+        </h2> 
+        
+
+		
+
+		
+
+        <dl>
+             
+            <dt>Description</dt>
+            <dd>Patterns</dd>
+            
+
+             
+            <dt>Authors</dt>
+            
+                <dd>Dr. Fields</dd>
+            
+            
+
+            
+
+             
+            <dt>See Also</dt>
+            
+                <dd class="summary-item">
+                     
+                        <a class="reverse-indent" href="https://openstax.org/details/books/biology-2e" target="_blank" rel="noreferrer">
+							Textbook
+						</a>
+                    
+                </dd>
+            
+            
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+
+			
+
+			
+
+            
+            
+            <dt>Reading Time</dt>
+            <dd>2 minute(s)</dd>
+
+			<dt>Word Count</dt>
+            <dd><span id="word-count">356</span> words</dd>
+
+			
+        </dl>
+
+		<div id="flashcard-container"></div>
+		
+
+
+
+
+    </header>
+</form>
+			
+
+
+<div class="header-item">
+	<h3 class="sitemap-title header-title">Table of Contents</h3>
+	<nav class="sitemap condensed">
+		
+			
+<ul class="sitemap-list">
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-4/#drawing-lewis-structures">Drawing Lewis Structures</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-4/#lewis-structures-for-molecules">Lewis Structures for Molecules</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+<ul class="sitemap-list">
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-4/#higher-bond-order">Higher Bond Order</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-4/#lewis-structures">Lewis Structures</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+</ul>
+
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-4/#electronegativity-trend">Electronegativity Trend</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-4/#resonance-structure">Resonance Structure</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+<ul class="sitemap-list">
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-4/#resonance-hybrid">Resonance Hybrid</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+</ul>
+
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-4/#molecular-ions">Molecular Ions</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+</ul>
+
+		
+	</nav>
+</div>
+
+
+
+			<div class="header-wrap screen-small">
+				<div class="header-item">
+					
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap">
+	<menu class="sitemap-list">
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/university_8988a097-b948-46f0-a5c5/content/">University</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/">Courses</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/">1100 Chemistry</a></li>
+				
+			
+		
+		
+			<li class="current">Predicting Geometry</li>
+		
+	</menu>
+</nav>
+
+				</div>
+				
+				<div class="header-item">
+					
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap">
+	
+		
+		
+			
+				
+
+
+
+	
+
+
+
+
+	
+		
+		
+			<menu class="sitemap-list">
+				
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-exam/">Exam 1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-1/">Unit 1.1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-2/">Unit 1.2</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-3/">Unit 1.3</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-4/">Unit 1.4</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-1/">Unit 2.1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-2/">Unit 2.2</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-3/">Unit 2.3</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+            <li class="current">Predicting Geometry</li>
+        
+		
+    
+	
+
+
+			</menu>
+		
+		
+		
+		
+	
+
+
+			
+		
+	
+</nav>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="flex--1 screen-medium-up">
+			<div class="footer-item fixed left"><a class="unstyle" href="#">Back to Top</a></div>
+		</div>
+	</div>
+
+	
+	
+    <article id="content" class="page v1" data-slug="2-4" data-orientation="">
+		<aside class="display--none">
+  <div class="display--none">Textbook</div>
+</aside>
+<dl>
+<dt><strong>Molecular Geomoetry</strong></dt>
+<dd>How molecules bond and interact</dd>
+<dt><strong>Lewis Structures</strong></dt>
+<dd>Respresent distribution of valence electrons</dd>
+</dl>
+<h1 id="drawing-lewis-structures">Drawing Lewis Structures</h1>
+<ul>
+<li>Draw atoms using chemical symbols</li>
+<li>Each side of a chemical symbol represents the orbitals for valence electrons.
+<ul>
+<li>Most atoms have 1 s-orbital and 3 p-orbitals = 4 total.</li>
+</ul>
+</li>
+<li>Place valence electrons one electron in each orbital first before filling in second electron.</li>
+</ul>
+<h1 id="lewis-structures-for-molecules">Lewis Structures for Molecules</h1>
+<ul>
+<li>Select central atom
+<ul>
+<li>Atom with highest bonding capacity</li>
+<li>If multiple have same, choose largest (by radius).</li>
+<li>
+<blockquote>
+<p>H20 = Oxygen</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Count total valence electrons in entire molecule
+<ul>
+<li>
+<blockquote>
+<p>H20 = 8</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Connect all other atoms to central atom using 1 bond.
+<ul>
+<li>Subtract 2 valence electrons for every single bond.</li>
+</ul>
+</li>
+<li>Start with outer atoms when drawing in remaining electrons.</li>
+</ul>
+<h2 id="higher-bond-order">Higher Bond Order</h2>
+<ul>
+<li>If electrons shells aren't a full octet, then shift two electrons to make a bond.</li>
+<li>Shift electrons to fill all valence shells.</li>
+</ul>
+<h2 id="lewis-structures">Lewis Structures</h2>
+<blockquote class="markdown-alert-note">
+<p>Charge determines best lewis structure.</p>
+</blockquote>
+<ul>
+<li>
+<p>Best will have minimized formal charge.</p>
+<ul>
+<li>Any negative charge will be on most electronegative atom.</li>
+</ul>
+<dl>
+<dt><strong>Formal Charge</strong></dt>
+<dd>Number of valence electrons in free atom - # bonds - # non-bonding electrons.</dd>
+<dt><strong># bonds</strong></dt>
+<dd>count 1 per bond.</dd>
+<dt><strong># non-binding electrons</strong></dt>
+<dd>count individual dots.</dd>
+</dl>
+<ul>
+<li>Formal charges are calculated per atom in molecules
+<ul>
+<li>charge written as superscript on element symbol.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="electronegativity-trend">Electronegativity Trend</h1>
+<ul>
+<li>Ability for an atom to attract shared electrons in a covalent bond.</li>
+<li>Increases down and to the right.</li>
+</ul>
+<h1 id="resonance-structure">Resonance Structure</h1>
+<ul>
+<li>Multiple ways to draw lewis structures, if bonds and elements are symmetric, bonds may be either/or.</li>
+</ul>
+<h2 id="resonance-hybrid">Resonance Hybrid</h2>
+<ul>
+<li>Bond length is averaged.</li>
+<li>O-O and O=O have different bond lengths.</li>
+</ul>
+<h1 id="molecular-ions">Molecular Ions</h1>
+<ul>
+<li>
+<p>Account for charge in valence electron count.</p>
+</li>
+<li>
+<p>#valence electrons -&gt; minus charge of ion.</p>
+</li>
+</ul>
+<p>H3O+ -&gt; (3 * 1) + (6) - (1) (minus 1 from positive charge)</p>
+<ul>
+<li>Put molecules in brackets with total charge as superscript.</li>
+</ul>
+<dl>
+<dt><strong>Radicals</strong></dt>
+<dd>Molecule with odd number of valence electrons.</dd>
+<dd>One of your non-bonding electrons will be unpaired.</dd>
+</dl>
+<hr />
+<p>Phosphorous has exceptions to the octet rule and can form bonds up to bonding capacity (5 &amp; 6 respectively).</p>
+<ul>
+<li>Goes down due to octet rule, going up only gives you 4 bonding capacity.</li>
+<li>N maxes out 4 bonds due to octet rule.</li>
+</ul>
+
+	</article>
+	
+	<div class="sidebar-right header">
+		<div class="header-item">
+			
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap">
+	<menu class="sitemap-list">
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/university_8988a097-b948-46f0-a5c5/content/">University</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/">Courses</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/">1100 Chemistry</a></li>
+				
+			
+		
+		
+			<li class="current">Predicting Geometry</li>
+		
+	</menu>
+</nav>
+
+		</div>
+		
+		<div class="header-item">
+			
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap">
+	
+		
+		
+			
+				
+
+
+
+	
+
+
+
+
+	
+		
+		
+			<menu class="sitemap-list">
+				
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-exam/">Exam 1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-1/">Unit 1.1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-2/">Unit 1.2</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-3/">Unit 1.3</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-4/">Unit 1.4</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-1/">Unit 2.1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-2/">Unit 2.2</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-3/">Unit 2.3</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+            <li class="current">Predicting Geometry</li>
+        
+		
+    
+	
+
+
+			</menu>
+		
+		
+		
+		
+	
+
+
+			
+		
+	
+</nav>
+
+		</div>
+
+		
+
+		<div class="flex--1">
+			<div class="footer-item fixed right"><a class="unstyle" href="#">Back to Top</a></div>
+		</div>
+	</div>
+
+	</main>
+
+	
+	<footer id="footer">
+    <span class="footer-item"><a href="https://ascallion.com/">About</a></span>
+    <span class="footer-item"><a class="unstyle" href="#">Back to Top</a></span>
+    <span class="footer-item"><a href="https://github.com/gscanlon21">Github</a></span>
+</footer>
+	
+
+	
+	
+		
+
+		
+    	
+		
+
+	
+	
+		
+		
+
+		
+		
+		
+
+	
+	
+</body>
+
+</html>
+
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.js"></script>
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
