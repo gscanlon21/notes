@@ -1,11 +1,14 @@
 .katex-display {
 	margin-block: $base-padding * 0 !important;
 	display: inline-block !important;
+
+	.mfrac {
+		line-height: 2.5;
+	}
 }
 
 strong {
 	.katex-display {
-		margin-block: $base-padding * 0;
 		display: block !important;
 	}
 }
