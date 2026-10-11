@@ -1,6 +1,6 @@
 .flashcard-wrapper {
 	del {
-		text-decoration-color: color(--color-text, 0.25);
+		text-decoration-color: color(--color-text, 0.5);
 	}
 }
 
@@ -29,7 +29,6 @@
 
 		.flashcard-front,
 		.flashcard-back {
-			margin-inline: $base-padding * 1;
 			padding-block: $base-padding * 1;
 			border: 2px solid currentColor;
 			backface-visibility: hidden;
@@ -87,11 +86,12 @@
 				padding-block-end: $base-padding * 1;
 				padding-inline: $base-padding * 1;
     			margin-inline: $base-padding * -1;
+				scrollbar-width: none;
 				overflow-y: auto;
 				flex: 1 1 auto;
 
 				& > ul {
-					padding-inline-start: $base-padding * 1.25;
+					padding-inline-start: $base-padding * 2;
 					padding-inline-end: $base-padding * 1;
 					line-height: $line-height-tight;
 					margin: $base-padding * 0;
