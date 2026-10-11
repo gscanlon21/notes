@@ -50,6 +50,7 @@ _Preferred_
 **Pilot G2 0.7**
 : Certain colors of the gel can be scratchy.
 : Ink lasts a fair while.
+: They break too easily.
 : Too expensive.
 : > - [x] 
   > - [x] 

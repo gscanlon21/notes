@@ -29,6 +29,8 @@ toc_level = 1
 - [ ] Jar o' Lantern
 - [ ] Snack o' Lantern
 - [ ] Lettuce Bee Herbal Tea
+- [ ] Grow Grow Grow!
+- [ ] Do Not Bypass Grow, Do Not Collect $200
 - [ ] Head Honcho
 - [ ] Big Cheese
 - [ ] Mr. Green, in the Lounge, with the Jar
