@@ -84,8 +84,7 @@ article.v1 {
 		& > code {
 			margin: 0;
 			padding: 0;
-			/* Messes with block code:
-			display: inline-flex;*/
+			display: inline;
 
 			&[data-lang]:not([data-lang="plain"])::before {
 				// Display the code lang.
@@ -98,5 +97,9 @@ article.v1 {
 				display: none;
 			}
 		}
+	}
+
+	code {
+		display: inline-flex;
 	}
 }

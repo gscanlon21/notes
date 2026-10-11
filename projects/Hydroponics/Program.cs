@@ -1,4 +1,5 @@
 using Hydroponics.Charts;
+using Hydroponics.Charts.Graphs;
 using Hydroponics.Excel;
 using Hydroponics.Helpers;
 using Hydroponics.Interfaces;
@@ -10,7 +11,7 @@ var outDir = args.Length > 1 ? args[1] : Path.Combine(programDir, "output", "plo
 var data = new HydroponicsData(WorkbookLoader.Load(xlsxPath));
 var charts = new IChart[]
 {
-    new HarvestLeavesChart(),
+    new TransplantRootLengthChart(),
 };
 
 Directory.CreateDirectory(outDir);

@@ -8,7 +8,16 @@ article.v1 {
 
 		li {
 			& + li {
+				margin-block-start: $base-padding * 0.25;
+			}
+
+			// Nested Lists
+			ul, ol, menu {
 				margin-block-start: $base-padding * 0.1;
+
+				li + li {
+					margin-block-start: $base-padding * 0.1;
+				}
 			}
 
 			// Spacing for List Items

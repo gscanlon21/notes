@@ -1,6 +1,20 @@
 .flashcard-wrapper {
 	del {
-		text-decoration-color: color(--color-text, 0.5);
+		text-decoration-line: none;
+		text-decoration-style: wavy;
+		color: rgb(var(--color-complete));
+
+		@media (prefers-color-scheme: light) {
+			text-decoration-color: color(--color-text, 0.3);
+		}
+
+		@media (prefers-color-scheme: dark) {
+			text-decoration-color: color(--color-text, 0.5);
+		}
+
+		& + ul {
+			color: rgb(var(--color-complete));
+		}
 	}
 }
 

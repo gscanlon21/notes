@@ -20,6 +20,7 @@ article.v1 {
 			padding: $base-padding * 0.5;
 
 			& > img {
+				max-height: 80vh;
 				max-width: 100%;
 			}
 		}

@@ -50,6 +50,7 @@ Therefore, many researchers dilute their nutrient solutions several-fold and rep
 > Sulfur (a macronutrient) and chloride (a micronutrient) concentrations are not given in this recipe.
 > That does not mean that sulfur and chloride are not present.
 > Usually sulfur is added with magnesium and chloride is added with the manganese and copper.  
+>
 > Enough will be added with these other elements to be sufficient (see calculations below).
 >> Sulfur[^1]
 

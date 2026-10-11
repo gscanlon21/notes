@@ -33,7 +33,7 @@ function generateFlashcards() {
 				};
 			}
 			else if (element.tagName === "DD" && currentFlashcard) {
-				currentFlashcard.back.push(element.textContent.trim());
+				currentFlashcard.back.push(element.innerHTML);
 			}
 		}
 
@@ -78,7 +78,7 @@ function generateListFlashcards(wrapper) {
 			if (nestedList) {
 				for (const child of nestedList.children) {
 					if (child.tagName === "LI") {
-						back.push(child.textContent.trim());
+						back.push(child.innerHTML);
 					}
 				}
 			}
