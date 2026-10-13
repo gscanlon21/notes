@@ -32,10 +32,45 @@ _Leggy Plants_
 
 
 
+**https://pubmed.ncbi.nlm.nih.gov/27485855/**
+? et al. ?
+_[Research Article](https://pubmed.ncbi.nlm.nih.gov/27485855/)_
+`doi`
+: ?
 
-https://pubmed.ncbi.nlm.nih.gov/27485855/
-https://pubmed.ncbi.nlm.nih.gov/40015250/
-https://pubmed.ncbi.nlm.nih.gov/34923398/
-https://pubmed.ncbi.nlm.nih.gov/28000503/
-https://pubmed.ncbi.nlm.nih.gov/38497647/
-https://pubmed.ncbi.nlm.nih.gov/35771351/
+
+**https://pubmed.ncbi.nlm.nih.gov/40015250/**
+? et al. ?
+_[Research Article](https://pubmed.ncbi.nlm.nih.gov/40015250/)_
+`doi`
+: ?
+
+
+**https://pubmed.ncbi.nlm.nih.gov/34923398/**
+? et al. ?
+_[Research Article](https://pubmed.ncbi.nlm.nih.gov/34923398/)_
+`doi`
+: ?
+
+
+**https://pubmed.ncbi.nlm.nih.gov/28000503/**
+? et al. ?
+_[Research Article](https://pubmed.ncbi.nlm.nih.gov/28000503/)_
+`doi`
+: ?
+
+
+**https://pubmed.ncbi.nlm.nih.gov/38497647/**
+? et al. ?
+_[Research Article](https://pubmed.ncbi.nlm.nih.gov/38497647/)_
+`doi`
+: ?
+
+
+**https://pubmed.ncbi.nlm.nih.gov/35771351/**
+? et al. ?
+_[Research Article](https://pubmed.ncbi.nlm.nih.gov/35771351/)_
+`doi`
+: ?
+
+
