@@ -49,6 +49,12 @@ RAM
 
 # Research
 
+**Protective holobiome promotes strawberry  tolerance of biotic stresses**
+? et al. ?
+_[Research Article](https://link.springer.com/article/10.1007/s44154-026-00294-5)_
+`doi`
+: ?
+
 **Root exudates in controlled environment agriculture: composition, function, and future directions**
 ? et al. ?
 _[Research Article](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2025.1567707/full)_
