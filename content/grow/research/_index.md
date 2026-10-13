@@ -46,24 +46,19 @@ _[Research Article](/Cross-species analysis of abiotic stress in hydroponic leaf
 `doi`
 : ?
 
+**Studying Thermopriming-Mediated Short- and Long-Term Acquired Thermotolerance in Arabidopsis thaliana**
+? et al. ?
+_[Research Article](https://pubmed.ncbi.nlm.nih.gov/38869799/)_
+`doi`
+: ?
 
-https://pubmed.ncbi.nlm.nih.gov/41874898/
-https://pubmed.ncbi.nlm.nih.gov/38140476/
-https://pubmed.ncbi.nlm.nih.gov/39943041/
-https://pubmed.ncbi.nlm.nih.gov/40357154/
-
-
-
-https://pubmed.ncbi.nlm.nih.gov/37740489/
-https://pubmed.ncbi.nlm.nih.gov/38869799/
-https://pubmed.ncbi.nlm.nih.gov/38869799/
-https://pubmed.ncbi.nlm.nih.gov/30655560/
-https://pmc.ncbi.nlm.nih.gov/articles/PMC8505460/
-https://pubmed.ncbi.nlm.nih.gov/34636184/
+**Mechanical stress acclimation in plants: Linking hormones and somatic memory to thigmomorphogenesis**
+? et al. ?
+_[Research Article](https://pubmed.ncbi.nlm.nih.gov/34984703/)_
+`doi`
+: ?
 
 
-
-https://pubmed.ncbi.nlm.nih.gov/34984703/
 https://pubmed.ncbi.nlm.nih.gov/28615006/
 https://pubmed.ncbi.nlm.nih.gov/38474042/
 https://pubmed.ncbi.nlm.nih.gov/21459830/
