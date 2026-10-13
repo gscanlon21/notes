@@ -12,6 +12,7 @@ see_also = []
 
 
 
+# Common Tasks
 
 ##### Rename .md to .no.md
 
@@ -22,6 +23,21 @@ see_also = []
 
   **Replace**
   : `.no.md`
+
+**Filters**
+: - [x] Subfolders
+
+
+
+##### Rename .no.md to .md
+
+**Regex**
+: - [x] Inc.Ext.
+: **Match**
+  : `\.no\.md$`
+
+  **Replace**
+  : `.md`
 
 **Filters**
 : - [x] Subfolders

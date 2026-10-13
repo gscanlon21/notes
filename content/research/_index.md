@@ -21,15 +21,15 @@ see_also = [
 # Article Types
 
 **Research Article**
-: Presents new experimental or observational findings.
-: Good for citing specific data, methods, and discoveries.
+: New research.
+: Good for citing specific data and methods.
 
 **Review Article**
-: Summarizes and synthesizes many studies on a topic.
+: Reviews and aggregates multiple research articles on an area of research.
 : Good for background information and field overviews.
 
 **Systematic Review**
-: Uses a formal method to collect and evaluate all relevant studies.
+: Evaluates a collection of similar studies.
 
 **Meta-Analysis**
 : Statistically combines results from multiple studies.

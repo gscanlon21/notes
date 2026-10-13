@@ -58,13 +58,51 @@ _[Research Article](https://pubmed.ncbi.nlm.nih.gov/34984703/)_
 `doi`
 : ?
 
+**Genomic and Epigenomic Changes in the Progeny of Cold-Stressed Arabidopsis thaliana Plants**
+? et al. ?
+_[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC10932141/)_
+`doi`
+: ?
 
-https://pubmed.ncbi.nlm.nih.gov/28615006/
-https://pubmed.ncbi.nlm.nih.gov/38474042/
-https://pubmed.ncbi.nlm.nih.gov/21459830/
-https://pubmed.ncbi.nlm.nih.gov/23767915/
-https://pubmed.ncbi.nlm.nih.gov/39808224/
-https://pubmed.ncbi.nlm.nih.gov/39853503/
+**Genetic and epigenetic effects of plant-pathogen interactions: an evolutionary perspective**
+? et al. ?
+_[Research Article](https://pubmed.ncbi.nlm.nih.gov/21459830/)_
+`doi`
+: ?
+
+
+**Brief temperature stress during reproductive stages alters meiotic recombination and somatic mutation rates in the progeny of Arabidopsis**
+? et al. ?
+_[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC5471674/)_
+`doi`
+: ?
+
+
+**Hyperosmotic priming of Arabidopsis seedlings establishes a long-term somatic memory accompanied by specific changes of the epigenome**
+**Brief temperature stress during reproductive stages alters meiotic recombination and somatic mutation rates in the progeny of Arabidopsis**
+? et al. ?
+_[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC3707022/)_
+`doi`
+: ?
+
+**Epigenetics in the modern era of crop improvements**
+? et al. ?
+_[Research Article](https://pubmed.ncbi.nlm.nih.gov/39808224/)_
+`doi`
+: ?
+
+**Stress resilience in plants: the complex interplay between heat stress memory and resetting**
+? et al. ?
+_[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC11840417/)_
+`doi`
+: ?
+
+**Epigenetic Regulation of Plant Gametophyte Development**
+? et al. ?
+_[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC6627097/)_
+`doi`
+: ?
+
 https://pubmed.ncbi.nlm.nih.gov/31234519/
 
 https://pubmed.ncbi.nlm.nih.gov/25038583/
