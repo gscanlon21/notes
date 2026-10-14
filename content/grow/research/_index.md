@@ -33,7 +33,8 @@ RAM
 : Often induced and grown as a cell culture with the help of hormones.
 
 **Embryogenesis**
-: ?
+: The development of the human embryo from the zygote.
+: Involving cell growth and differentiation into various tissues and organs. 
 
 **Cell Potency**
 : ?
