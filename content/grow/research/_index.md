@@ -28,8 +28,9 @@ SAM
 RAM
 : ?
 
-**Callus Induction**
-: ?
+**Callus**
+: A mass of unorganized plant cells used to cover and repair plant wounds. 
+: Often induced and grown as a cell culture with the help of hormones.
 
 **Embryogenesis**
 : ?
@@ -48,6 +49,24 @@ RAM
 
 
 # Research
+
+**Sweet Basil (Ocimum basilicum L.)―A Review of Its Botany, Phytochemistry, Pharmacological Activities, and Biotechnological Development**
+? et al. ?
+_[Review Article](https://www.mdpi.com/2223-7747/12/24/4148)_
+`doi`
+: ?
+
+**Root Exudates in Soilless Culture Conditions**
+? et al. ?
+_[Research Article](https://www.mdpi.com/2223-7747/14/3/479)_
+`doi`
+: ?
+
+**https://pmc.ncbi.nlm.nih.gov/articles/PMC10855264/**
+? et al. ?
+_[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC10855264/)_
+`doi`
+: ?
 
 **Protective holobiome promotes strawberry  tolerance of biotic stresses**
 ? et al. ?
