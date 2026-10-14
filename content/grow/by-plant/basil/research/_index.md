@@ -67,17 +67,40 @@ _[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC12903902/)_
 
 
 
-****
+**Nutraceutical Profiles of Two Hydroponically Grown Sweet Basil Cultivars as Affected by the Composition of the Nutrient Solution and the Inoculation With Azospirillum brasilense**
 ? et al. ?
-_[Research Article]()_
+_[Research Article](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2020.596000/full)_
 `doi`
 : ?
 
 
 
-****
+**Microbial Pathogens in Aquaponics Potentially Hazardous for Human Health**
 ? et al. ?
-_[Research Article]()_
+_[Research Article](https://www.mdpi.com/2076-2607/11/12/2824)_
+`doi`
+: ?
+
+
+**Friends and Foes: Bacteria of the Hydroponic Plant Microbiome**
+? et al. ?
+_[Research Article](https://www.mdpi.com/2223-7747/13/21/3069)_
+`doi`
+: ?
+
+
+
+**How does a little stress stimulate a plant?**
+? et al. ?
+_[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7080411/)_
+`doi`
+: ?
+
+
+
+**Microalgae as next generation plant growth additives: Functions, applications, challenges and circular bioeconomy based solutions**
+? et al. ?
+_[Research Article](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2023.1073546/full)_
 `doi`
 : ?
 
