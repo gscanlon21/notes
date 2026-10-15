@@ -15,3 +15,9 @@ see_also = [
 {{ <hidden page={page} section={section} /> }}
 
 
+# Photodemon
+
+**Removing a Background**
+: Use the magic wand to select the background color, press delete.
+
+

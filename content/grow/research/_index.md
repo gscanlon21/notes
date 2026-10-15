@@ -53,9 +53,25 @@ RAM
   **Totipotent**
   : ?
 
+**_In planta_ transformation**
+: Gene editing intact plants or tissues without callus culture or regeneration. 
+: > The floral dip transformation method for _Arabidopsis thaliana_ - Clough & Bent 1998.
 
 
 # Research
+
+**In planta particle bombardment (iPB): A new method for plant transformation and genome editing**
+? et al. ?
+_[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7434670/)_
+`doi`
+: "Our in planta particle bombardment (iPB) method utilizes the shoot apical meristem (SAM) as a target tissue."
+: "The SAM contains a subepidermal cell layer termed L2, from which germ cells later develop during floral organogenesis."
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+: {{ <image title="Procedure" file="一10.5511_plantbiotechnology.20.0206a_01.jpg" inline={true} /> }}
 
 **Efficient genome editing by CRISPR-Cas12a in common wheat via shoot apical meristem delivery**
 Luo et al. 2025
@@ -81,6 +97,20 @@ _[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC8006942/)_
 **In Planta Genome Editing in Commercial Wheat Varieties: Use of TaQsd1 to Lengthen Seed Dormancy**
 ? et al. ?
 _[Review Article](https://pubmed.ncbi.nlm.nih.gov/38977577/)_
+`doi`
+: ?
+
+
+**Enhancing gene editing and gene targeting efficiencies in Arabidopsis thaliana by using an intron‐containing version of ttLbCas12a**
+? et al. ?
+_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC9946132/)_
+`doi`
+: ?
+
+
+**Introduction of a second “Green Revolution” mutation into wheat via in planta CRISPR/Cas9 delivery**
+? et al. ?
+_[Letter](https://pmc.ncbi.nlm.nih.gov/articles/PMC8968346/)_
 `doi`
 : ?
 
@@ -179,7 +209,7 @@ _[Review Article](https://www.sciencedirect.com/science/article/pii/S15345807210
 
 **TLS (FUS) binds RNA in vivo and engages in nucleo-cytoplasmic shuttling**
 Zinszner et al. 1997
-_[Research Article](10.1242_jcs.110.15.1741.pdf)_
+_[Research Article](一10.1242_jcs.110.15.1741.pdf)_
 `10.1242/jcs.110.15.1741`
 : ?
 
