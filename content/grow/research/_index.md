@@ -8,6 +8,7 @@ site_version = 1
 toc_level = 2
 see_also = [
   { title = "Mobile CRISPR in Plants", href = "https://www.youtube.com/watch?v=4gcVBgAr73M" },
+  { title = "Agroinfiltration", href = "https://en.wikipedia.org/wiki/Agroinfiltration" },
 ]
 +++
 
@@ -55,6 +56,102 @@ RAM
 
 
 # Research
+
+**Efficient genome editing by CRISPR-Cas12a in common wheat via shoot apical meristem delivery**
+Luo et al. 2025
+_[Letter](https://pmc.ncbi.nlm.nih.gov/articles/PMC12673671/)_
+`10.1093/plphys/kiaf611`
+: ?
+
+
+**An in planta biolistic method for stable wheat transformation**
+? et al. ?
+_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC5597576/)_
+`doi`
+: ?
+
+
+**In planta Genome Editing in Commercial Wheat Varieties**
+? et al. ?
+_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC8006942/)_
+`doi`
+: ?
+
+
+**In Planta Genome Editing in Commercial Wheat Varieties: Use of TaQsd1 to Lengthen Seed Dormancy**
+? et al. ?
+_[Review Article](https://pubmed.ncbi.nlm.nih.gov/38977577/)_
+`doi`
+: ?
+
+
+
+**Heritable transgene-free genome editing in plants by grafting of wild-type shoots to transgenic donor rootstocks**
+Awan et al. 2026
+_[Review Article](https://www.nature.com/articles/s41587-022-01585-8)_
+`doi`
+: Uses Agrobacterium-mediated infiltration.
+
+
+**tRNA-Related Sequences Trigger Systemic mRNA Transport in Plants**
+? et al. ?
+_[Review Article](https://academic.oup.com/plcell/article/28/6/1237/6098293)_
+`doi`
+: ?
+
+
+**RNA phloem transport mediated by pre-miRNA and viral tRNA-like structures**
+? et al. ?
+_[Review Article](https://www.sciencedirect.com/science/article/abs/pii/S0168945219301451)_
+`doi`
+: ?
+
+
+**Developing a mobile RNA delivery system for grafting trait improvement**
+? et al. ?
+_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC13354801/)_
+`doi`
+: ?
+
+
+**Heritable gene editing using FT mobile guide RNAs and DNA viruses**
+? et al. ?
+_[Review Article](https://link.springer.com/article/10.1186/s13007-021-00719-4)_
+`doi`
+: ?
+
+
+**Mobile Flowering Locus T RNA – Biological Relevance and Biotechnological Potential**
+? et al. ?
+_[Review Article](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.792192/full)_
+`doi`
+: ?
+
+
+**Transgene-free plant genome editing via viral delivery of miniature CRISPR-Cas12f**
+? et al. ?
+_[Review Article](https://pubmed.ncbi.nlm.nih.gov/42219400/)_
+`doi`
+: ?
+
+
+**CRISPR genome editing in plants without tissue culture**
+? et al. ?
+_[Review Article](https://pubmed.ncbi.nlm.nih.gov/41702797/)_
+`doi`
+: ?
+
+**Plant gene editing through de novo induction of meristems**
+Maher et al. 2019
+_[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC6954279/)_
+`10.1038/s41587-019-0337-2`
+: "Here, we report that concomitant expression of DRs and gene editing reagents creates transgenic and gene edited shoots through de novo meristem induction. Further, these shoots produce flowers and seeds and ultimately transmit transgenes and gene edits to the next generation."
+: "The first step in Fast-TrACC is the optimization of A. tumefaciens cultures for gene transfer (1). Seedlings are germinated in 6-well plates and co-cultured with the optimized A. tumefaciens strains (2). After approximately two weeks, dark green growths begin to form (3) that ultimately produce shoot-like structures (4). The shoot-like growths are then induced to form roots."
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
 
 
 **Twenty years on: The inner workings of the shoot apical meristem, a developmental dynamo**
@@ -123,7 +220,7 @@ _[Research Article](https://www.mdpi.com/2223-7747/14/3/479)_
 `doi`
 : ?
 
-**https://pmc.ncbi.nlm.nih.gov/articles/PMC10855264/**
+**The Shoot Apical Meristem: An Evolutionary Molding of Higher Plants**
 ? et al. ?
 _[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC10855264/)_
 `doi`
