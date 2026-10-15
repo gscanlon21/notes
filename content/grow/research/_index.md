@@ -6,7 +6,9 @@ description = ""
 updated = 2027-01-01
 site_version = 1
 toc_level = 2
-see_also = []
+see_also = [
+  { title = "Mobile CRISPR in Plants", href = "https://www.youtube.com/watch?v=4gcVBgAr73M" },
+]
 +++
 
 {{ <hidden page={page} section={section} /> }}
@@ -19,6 +21,9 @@ see_also = []
 
 **Plant Meristem**
 : "A structure composed of specialized tissue found in plants, consisting of stem cells, known as meristematic cells, which are undifferentiated cells capable of continuous cellular division."[^1]
+: There are 9 long-lived meristematic cells in _Arabidopsis thaliana_, 3 in each lineage (L1, L2, L3)[^2].
+: - There are dozen of cells involved in the meristem organizing center and stem cell signaling (WUSCHEL vs CLV1, CLV3).
+: - There are hundreds of cells involved in the regulation of plant development (miR156, miR172, AP2-like genes) 
 
 **Shoot Apical Meristem**
 SAM
@@ -50,6 +55,61 @@ RAM
 
 
 # Research
+
+
+**Twenty years on: The inner workings of the shoot apical meristem, a developmental dynamo**
+? et al. ?
+_[Review Article](https://www.sciencedirect.com/science/article/pii/S0012160609013840)_
+`doi`
+: ?
+
+
+**Plasticity of the Arabidopsis shoot apical meristem during floral transition**
+? et al. ?
+_[Review Article](https://www.sciencedirect.com/science/article/pii/S136952662600021X)_
+`doi`
+: ?
+
+
+
+**A single-cell analysis of the Arabidopsis vegetative shoot apex**
+? et al. ?
+_[Review Article](https://www.sciencedirect.com/science/article/pii/S1534580721001611)_
+`doi`
+: ?
+
+
+
+**TLS (FUS) binds RNA in vivo and engages in nucleo-cytoplasmic shuttling**
+Zinszner et al. 1997
+_[Research Article](10.1242_jcs.110.15.1741.pdf)_
+`10.1242/jcs.110.15.1741`
+: ?
+
+
+**Cellular parameters of the shoot apical meristem in Arabidopsis.**
+? et al. ?
+_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC144064/)_
+`doi`
+: ?
+
+
+**RNA Motifs and Modification Involve in RNA Long-Distance Transport in Plants**
+? et al. ?
+_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC8047152/)_
+`doi`
+: ?
+
+**Analyzing and Predicting Phloem Mobility of Macromolecules with an Online Database**
+? et al. ?
+_[Review Article](https://pubmed.ncbi.nlm.nih.gov/31197814/)_
+`doi`
+: ?
+
+
+
+
+
 
 **Sweet Basil (Ocimum basilicum L.)―A Review of Its Botany, Phytochemistry, Pharmacological Activities, and Biotechnological Development**
 ? et al. ?
@@ -226,3 +286,5 @@ _[Research Article](https://pubmed.ncbi.nlm.nih.gov/32076719/)_
 
 
 [^1]: [https://en.wikipedia.org/wiki/Meristem](https://en.wikipedia.org/wiki/Meristem)
+[^2]: [Twenty years on: The inner workings of the shoot apical meristem, a developmental dynamo](https://www.sciencedirect.com/science/article/pii/S0012160609013840)
+
