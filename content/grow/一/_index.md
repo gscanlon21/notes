@@ -1,6 +1,6 @@
 +++
 title = "一"
-order = 99999
+weight = 99999
 in_search_index = false
 
 [extra]
