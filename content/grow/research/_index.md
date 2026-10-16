@@ -71,7 +71,7 @@ _[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7434670/)_
   > - [x] 
   > - [ ] 
   > - [ ] 
-: {{ <image title="Procedure" file="一10.5511_plantbiotechnology.20.0206a_01.jpg" inline={true} /> }}
+: {{ <image title="Procedure" file="10.5511_plantbiotechnology.20.0206a_01.jpg" inline={true} /> }}
 
 **Efficient genome editing by CRISPR-Cas12a in common wheat via shoot apical meristem delivery**
 Luo et al. 2025
@@ -80,8 +80,8 @@ _[Letter](https://pmc.ncbi.nlm.nih.gov/articles/PMC12673671/)_
 : ?
 
 
-**An in planta biolistic method for stable wheat transformation**
-? et al. ?
+**An _in planta_ biolistic method for stable wheat transformation**
+Hamada et al. 2017
 _[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC5597576/)_
 `doi`
 : ?
@@ -209,7 +209,7 @@ _[Review Article](https://www.sciencedirect.com/science/article/pii/S15345807210
 
 **TLS (FUS) binds RNA in vivo and engages in nucleo-cytoplasmic shuttling**
 Zinszner et al. 1997
-_[Research Article](一10.1242_jcs.110.15.1741.pdf)_
+_[Research Article](10.1242_jcs.110.15.1741.pdf)_
 `10.1242/jcs.110.15.1741`
 : ?
 
