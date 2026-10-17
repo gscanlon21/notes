@@ -67,7 +67,7 @@
   </summary>
 {% endif %}
 
-![{{ title }}]({{ file }})
+![{{ title }}]({{ file | replace(from="/", to="") }})
 </details>
 {% if inline %}</dd>{% endif %}
 {% endcomponent image %}

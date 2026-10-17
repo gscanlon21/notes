@@ -176,7 +176,7 @@ _[Review Article](https://www.sciencedirect.com/science/article/pii/S15345807210
 
 **TLS (FUS) binds RNA in vivo and engages in nucleo-cytoplasmic shuttling**
 Zinszner et al. 1997
-_[Research Article](10.1242_jcs.110.15.1741.pdf)_
+_[Research Article](10.1242⧸jcs.110.15.1741.pdf)_
 `10.1242/jcs.110.15.1741`
 : ?
 
@@ -391,7 +391,7 @@ _[Review Article](https://www.nature.com/articles/s41587-022-01585-8)_
   > - [x] 
   > - [x] 
   > - [ ] 
-: {{ <image title="Procedure" file="10.1038/s41587-022-01585-8.webp" inline={true} /> }}
+: {{ <image title="Procedure" file="10.1038⧸s41587-022-01585-8.webp" inline={true} /> }}
 
 
 **Plant gene editing through de novo induction of meristems**
@@ -405,7 +405,7 @@ _[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC6954279/)_
   > - [x] 
   > - [ ] 
   > - [ ] 
-: {{ <image title="Procedure" file="10.1038_s41587-019-0337-2.jpg" inline={true} /> }}
+: {{ <image title="Procedure" file="10.1038⧸s41587-019-0337-2.jpg" inline={true} /> }}
 
 
 
@@ -422,7 +422,7 @@ _[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7434670/)_
   > - [x] 
   > - [ ] 
   > - [ ] 
-: {{ <image title="Procedure" file="10.5511_plantbiotechnology.20.0206a_01.jpg" inline={true} /> }}
+: {{ <image title="Procedure" file="10.5511⧸plantbiotechnology.20.0206a.jpg" inline={true} /> }}
 
 **Efficient genome editing by CRISPR-Cas12a in common wheat via shoot apical meristem delivery**
 Luo et al. 2025
@@ -434,7 +434,7 @@ _[Letter](https://pmc.ncbi.nlm.nih.gov/articles/PMC12673671/)_
   > - [x] 
   > - [ ] 
   > - [ ] 
-: {{ <image title="Procedure" file="10.1093_plphys_kiaf611_01.jpg" inline={true} /> }}
+: {{ <image title="Procedure" file="10.1093⧸plphys_kiaf611.jpg" inline={true} /> }}
 
 
 

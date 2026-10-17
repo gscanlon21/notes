@@ -186,7 +186,9 @@
 {% for asset in page?.assets | default(value=section?.assets | default(value=[])) %}
 	{% for type in types %}
 		{% if asset is ending_with(pat=type) %}
-			{% set_global has_asset = true %}
+			{% if asset is not containing(pat="一一") and asset is not containing(pat="10.") %}
+				{% set_global has_asset = true %}
+			{% endif %}
 		{% endif %}
 	{% endfor %}
 {% endfor %}
@@ -196,7 +198,9 @@
 	{% for asset in ancestor_section.assets | default(value=[]) %}
 		{% for type in types %}
 			{% if asset is ending_with(pat=type) %}
-				{% set_global has_asset = true %}
+				{% if asset is not containing(pat="一一") and asset is not containing(pat="10.") %}
+					{% set_global has_asset = true %}
+				{% endif %}
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
