@@ -401,9 +401,9 @@ _[Review Article](https://www.nature.com/articles/s41587-022-01585-8)_
 ## In Planta Particle Bombardment
 
 **In planta particle bombardment (iPB): A new method for plant transformation and genome editing**
-? et al. ?
+Imai et al. 2020
 _[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7434670/)_
-`doi`
+`10.5511/plantbiotechnology.20.0206a`
 : "Our in planta particle bombardment (iPB) method utilizes the shoot apical meristem (SAM) as a target tissue."
 : "The SAM contains a subepidermal cell layer termed L2, from which germ cells later develop during floral organogenesis."
 : > - [x] 
