@@ -64,7 +64,7 @@ RAM
 : Gene editing of intact plants or tissues without callus tissue culture or regeneration. 
 : > The floral dip transformation method for _Arabidopsis thaliana_ - Clough & Bent 1998.
 
-**Flowering Locus T**
+**Flowering Locus T.**
 FT
 : FT is transcribed in leaf vascular tissue and then moves to the shoot apical meristem to induce flowering. 
 : FT RNA has previously been demonstrated to enable cell-to-cell movement when fused to a messenger RNA that binds green fluorescent protein (GFP).
@@ -73,9 +73,16 @@ FT
 sgRNAs
 : ?
 
+**Flowering Hormones**
+Florigen
+: ?
+
 **Agroinfiltration**
 _Agrobacterium tumefaciens mediated induction_
 : "The gene transfer occurs when the plant signals are induced and physical contact is made between the plant cells and the bacteria. The bacteria create a mechanism that burrows a hole and transfers the new T-DNA strand into the plant cell."[^3]
+
+**TLSs**
+: tRNA-like structures.
 
 **RNA Motifs**
 : A structure or pattern common to all RNAs within a group.
@@ -91,7 +98,7 @@ _Agrobacterium tumefaciens mediated induction_
 
 **Hypothesis**
 : So you take agrobacterium and add it to a nutrient solution. 
-: The agrobacterium contains CRISPR Cas9 DNA, and a tobacco
+: If you target the bacteria with a virus, and have that virus ambient RNA with TLS, will the plant pick up and translate the ambient RNA. 
 
 **Multiplexed heritable gene editing using RNA viruses and mobile single guide RNAs**
 Ellison et al. 2020
@@ -115,7 +122,8 @@ _[Brief Communication](10.1038⧸s41477-020-0670-y.pdf)_
 Zhang et al. 2016 
 _[Article](https://academic.oup.com/plcell/article/28/6/1237/6098293)_
 `10.1105/tpc.15.01056`
-: ?
+: "Phenotypic and enzymatic assays on grafted plants indicated that mRNAs harboring a distinctive TLS can move from transgenic roots into wild-type leaves and from transgenic leaves into wild-type flowers or roots; these mRNAs can also be translated into proteins after transport."
+: "Our results suggest that tRNA-derived sequences with predicted stem-bulge-stem-loop structures are sufficient to mediate mRNA transport and seem to be necessary for the mobility of a large number of endogenous transcripts that can move through graft junctions."
 
 **Impacts of RNA Mobility Signals on Virus Induced Somatic and Germline Gene Editing**
 et al. 
@@ -142,6 +150,13 @@ _[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC106392/)_
 : ?
 
 
+**RNA phloem transport mediated by pre-miRNA and viral tRNA-like structures**
+Lezzhov et al. 2019
+_[Research Article](https://www.sciencedirect.com/science/article/abs/pii/S0168945219301451)_
+`10.1016/j.plantsci.2019.04.005`
+: ?
+
+
 **Systemic movement of FT mRNA and a possible role in floral induction**
 Jackson et al. 2012
 _[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC3373133/)_
@@ -155,7 +170,7 @@ _[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC3373133/)_
 
 **Identification of mRNAs that Move Over Long Distances Using an RNA-Seq Analysis of Arabidopsis/Nicotiana benthamiana Heterografts**
  et al. 
-_[Article](up.com/pcp/article-abstract/56/2/311/1816181)_
+_[Article](https://academic.oup.com/pcp/article-abstract/56/2/311/1816181)_
 ``
 : ?
 
@@ -200,13 +215,23 @@ _[Review Article](https://academic.oup.com/plcell/article/28/6/1237/6098293)_
 `doi`
 : ?
 
-
-**RNA phloem transport mediated by pre-miRNA and viral tRNA-like structures**
-? et al. ?
-_[Review Article](https://www.sciencedirect.com/science/article/abs/pii/S0168945219301451)_
-`doi`
+**TLS (FUS) binds RNA in vivo and engages in nucleo-cytoplasmic shuttling**
+Zinszner et al. 1997
+_[Research Article](10.1242⧸jcs.110.15.1741.pdf)_
+`10.1242/jcs.110.15.1741`
 : ?
 
+**RNA Motifs and Modification Involve in RNA Long-Distance Transport in Plants**
+Wang et al. 2021
+_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC8047152/)_
+`10.3389/fcell.2021.651278`
+: ?
+
+**Analyzing and Predicting Phloem Mobility of Macromolecules with an Online Database**
+? et al. ?
+_[Review Article](https://pubmed.ncbi.nlm.nih.gov/31197814/)_
+`doi`
+: ?
 
 **Developing a mobile RNA delivery system for grafting trait improvement**
 ? et al. ?
@@ -214,7 +239,6 @@ _[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC13354801/)_
 `doi`
 : ?
 
-_[Article](https://academic.o
 
 **Heritable gene editing using FT mobile guide RNAs and DNA viruses**
 ? et al. ?
@@ -265,38 +289,11 @@ _[Review Article](https://www.sciencedirect.com/science/article/pii/S15345807210
 `doi`
 : ?
 
-
-
-**TLS (FUS) binds RNA in vivo and engages in nucleo-cytoplasmic shuttling**
-Zinszner et al. 1997
-_[Research Article](10.1242⧸jcs.110.15.1741.pdf)_
-`10.1242/jcs.110.15.1741`
-: ?
-
-
 **Cellular parameters of the shoot apical meristem in Arabidopsis.**
 ? et al. ?
 _[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC144064/)_
 `doi`
 : ?
-
-
-**RNA Motifs and Modification Involve in RNA Long-Distance Transport in Plants**
-? et al. ?
-_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC8047152/)_
-`doi`
-: ?
-
-**Analyzing and Predicting Phloem Mobility of Macromolecules with an Online Database**
-? et al. ?
-_[Review Article](https://pubmed.ncbi.nlm.nih.gov/31197814/)_
-`doi`
-: ?
-
-
-
-
-
 
 **Sweet Basil (Ocimum basilicum L.)―A Review of Its Botany, Phytochemistry, Pharmacological Activities, and Biotechnological Development**
 ? et al. ?

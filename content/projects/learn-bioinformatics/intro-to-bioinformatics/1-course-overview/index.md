@@ -18,7 +18,11 @@ see_also = []
 
 ## Central Dogma of Molecular Biology
 ## _Gene Expression 
-> DNA > (transcription) > mRNA ("transcripts") > (translation) > Proteins
+> - > DNA 
+> - > (transcription) 
+> - > mRNA ("transcripts") 
+> - > (translation) 
+> - > Proteins
 
 Can be thought of as a semi-random stochastic process, where quantities of transcripts and genes are made based on biological needs of the cell and float around and break down over time. Something like cancer or environmental disruptors may change the biological needs of the cell (different gene expression patterns).
 

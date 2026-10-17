@@ -16,7 +16,6 @@ see_also = [
 
 
 
-
 # Molecular Biology Review
 It can be useful, though not accurate, to think about gene expression as a 1:1:1 ratio between genes:transcripts:proteins.
 
@@ -79,8 +78,9 @@ _Base Pair_
 
 ## Translation
 
-
-> mRNA > Amino Acids > Proteins.
+> - > mRNA 
+> - > Amino Acids 
+> - > Proteins.
 
 mRNA sequence can be thought of in triplets, where a triplet of nucleotides is called a codon.
 
