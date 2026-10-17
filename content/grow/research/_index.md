@@ -60,25 +60,6 @@ RAM
 
 # Research
 
-**In planta particle bombardment (iPB): A new method for plant transformation and genome editing**
-? et al. ?
-_[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7434670/)_
-`doi`
-: "Our in planta particle bombardment (iPB) method utilizes the shoot apical meristem (SAM) as a target tissue."
-: "The SAM contains a subepidermal cell layer termed L2, from which germ cells later develop during floral organogenesis."
-: > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [ ] 
-  > - [ ] 
-: {{ <image title="Procedure" file="10.5511_plantbiotechnology.20.0206a_01.jpg" inline={true} /> }}
-
-**Efficient genome editing by CRISPR-Cas12a in common wheat via shoot apical meristem delivery**
-Luo et al. 2025
-_[Letter](https://pmc.ncbi.nlm.nih.gov/articles/PMC12673671/)_
-`10.1093/plphys/kiaf611`
-: {{ <image title="Procedure" file="10.1093_plphys_kiaf611_01.jpg" inline={true} /> }}
-
 
 **An _in planta_ biolistic method for stable wheat transformation**
 Hamada et al. 2017
@@ -408,6 +389,36 @@ _[Research Article](https://www.nature.com/articles/s41477-021-01015-8)_
 _[Research Article](https://pubmed.ncbi.nlm.nih.gov/32076719/)_
 ``
 : ?
+
+
+
+
+# In Planta Particle Bombardment
+
+**In planta particle bombardment (iPB): A new method for plant transformation and genome editing**
+? et al. ?
+_[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7434670/)_
+`doi`
+: "Our in planta particle bombardment (iPB) method utilizes the shoot apical meristem (SAM) as a target tissue."
+: "The SAM contains a subepidermal cell layer termed L2, from which germ cells later develop during floral organogenesis."
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+: {{ <image title="Procedure" file="10.5511_plantbiotechnology.20.0206a_01.jpg" inline={true} /> }}
+
+**Efficient genome editing by CRISPR-Cas12a in common wheat via shoot apical meristem delivery**
+Luo et al. 2025
+_[Letter](https://pmc.ncbi.nlm.nih.gov/articles/PMC12673671/)_
+`10.1093/plphys/kiaf611`
+: Uses particle bombardment.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+: {{ <image title="Procedure" file="10.1093_plphys_kiaf611_01.jpg" inline={true} /> }}
 
 
 
