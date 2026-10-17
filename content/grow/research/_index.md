@@ -16,6 +16,7 @@ see_also = [
 
 
 # Terminology
+{% <flashcards header="Terminology"> %}
 
 **Apical**
 : Pertaining to an apex.
@@ -63,14 +64,45 @@ RAM
 : Gene editing intact plants or tissues without callus culture or regeneration. 
 : > The floral dip transformation method for _Arabidopsis thaliana_ - Clough & Bent 1998.
 
+**Flowering Locus T**
+FT
+: FT is transcribed in leaf vascular tissue and then moves to the shoot apical meristem to induce flowering. 
+: FT RNA has previously been demonstrated to enable cell-to-cell movement when fused to a messenger RNA that binds green fluorescent protein (GFP).
+{% </flashcards> %}
+
+
 
 # Research
 
+**Multiplexed heritable gene editing using RNA viruses and mobile single guide RNAs**
+Ellison et al. 2020
+_[Brief Communication](10.1038⧸s41477-020-0670-y.pdf)_
+`10.1038/s41477-020-0670-y`
+: ?
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+: {{ <image title="Procedure" file="10.1038⧸s41477-020-0670-y.jpg" inline={true} /> }}
 
-**An _in planta_ biolistic method for stable wheat transformation**
-Hamada et al. 2017
-_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC5597576/)_
-`doi`
+
+**Systemic movement of FT mRNA and a possible role in floral induction**
+ et al. 
+_[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC3373133/)_
+`10.3389/fpls.2012.00127`
+: ?
+
+**Identification of mRNAs that Move Over Long Distances Using an RNA-Seq Analysis of Arabidopsis/Nicotiana benthamiana Heterografts**
+ et al. 
+_[Article](https://academic.oup.com/pcp/article-abstract/56/2/311/1816181)_
+``
+: ?
+
+**Selective Targeting of Mobile mRNAs to Plasmodesmata for Cell-to-Cell Movement**
+ et al. 
+_[Article](https://academic.oup.com/plphys/article/177/2/604/6117094)_
+``
 : ?
 
 
@@ -145,9 +177,9 @@ _[Review Article](https://pubmed.ncbi.nlm.nih.gov/42219400/)_
 
 
 **CRISPR genome editing in plants without tissue culture**
-? et al. ?
+Li et al. 2026
 _[Review Article](https://pubmed.ncbi.nlm.nih.gov/41702797/)_
-`doi`
+`10.1016/j.tibtech.2025.12.017`
 : ?
 
 
@@ -409,7 +441,8 @@ _[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC6954279/)_
 
 
 
-## In Planta Particle Bombardment
+## _In Planta_ Particle Bombardment
+## (iPB)
 
 **In planta particle bombardment (iPB): A new method for plant transformation and genome editing**
 Imai et al. 2020
@@ -419,7 +452,7 @@ _[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7434670/)_
 : "The SAM contains a subepidermal cell layer termed L2, from which germ cells later develop during floral organogenesis."
 : > - [x] 
   > - [x] 
-  > - [x] 
+  > - [ ] 
   > - [ ] 
   > - [ ] 
 : {{ <image title="Procedure" file="10.5511⧸plantbiotechnology.20.0206a.jpg" inline={true} /> }}
@@ -431,12 +464,23 @@ _[Letter](https://pmc.ncbi.nlm.nih.gov/articles/PMC12673671/)_
 : Uses particle bombardment.
 : > - [x] 
   > - [x] 
-  > - [x] 
+  > - [ ] 
   > - [ ] 
   > - [ ] 
 : {{ <image title="Procedure" file="10.1093⧸plphys_kiaf611.jpg" inline={true} /> }}
 
 
+
+**An _in planta_ biolistic method for stable wheat transformation**
+Hamada et al. 2017
+_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC5597576/)_
+`10.1038/s41598-017-11936-0`
+: Uses _in planta_ particle bombardment.
+: > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
 
 
 [^1]: [https://en.wikipedia.org/wiki/Meristem](https://en.wikipedia.org/wiki/Meristem)

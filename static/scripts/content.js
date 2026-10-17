@@ -94,6 +94,13 @@ for (const element of Array.from(document.querySelectorAll('.footnotes-list a'))
 	}
 }
 
+// Add target="_blank" to asset links.
+for (const element of Array.from(document.querySelectorAll('article.v1 a'))) {
+	if (element.href.endsWith(".pdf")) {
+		element.setAttribute('target', '_blank');
+	}
+}
+
 // Remove defer classes from elements after the page has loaded.
 for (const element of Array.from(document.getElementsByClassName('defer'))) {
     element.classList.remove('defer');
