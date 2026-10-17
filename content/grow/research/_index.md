@@ -61,24 +61,48 @@ RAM
   : ?
 
 **_In planta_ transformation**
-: Gene editing intact plants or tissues without callus culture or regeneration. 
+: Gene editing of intact plants or tissues without callus tissue culture or regeneration. 
 : > The floral dip transformation method for _Arabidopsis thaliana_ - Clough & Bent 1998.
 
 **Flowering Locus T**
 FT
 : FT is transcribed in leaf vascular tissue and then moves to the shoot apical meristem to induce flowering. 
 : FT RNA has previously been demonstrated to enable cell-to-cell movement when fused to a messenger RNA that binds green fluorescent protein (GFP).
+
+**Single Guide RNAs**
+sgRNAs
+: ?
+
+**Agroinfiltration**
+_Agrobacterium tumefaciens mediated induction_
+: "The gene transfer occurs when the plant signals are induced and physical contact is made between the plant cells and the bacteria. The bacteria create a mechanism that burrows a hole and transfers the new T-DNA strand into the plant cell."[^3]
+
+**RNA Motifs**
+: A structure or pattern common to all RNAs within a group.
+
+## Plants
+**_Nicotiana benthamiana_**
+: A close relative to tobacco.
 {% </flashcards> %}
 
 
 
 # Research
 
+**Hypothesis**
+: So you take agrobacterium and add it to a nutrient solution. 
+: The agrobacterium contains CRISPR Cas9 DNA, and a tobacco
+
 **Multiplexed heritable gene editing using RNA viruses and mobile single guide RNAs**
 Ellison et al. 2020
 _[Brief Communication](10.1038⧸s41477-020-0670-y.pdf)_
 `10.1038/s41477-020-0670-y`
-: ?
+: _Agrobacterium is used to transfer viral DNA encoding viral RNA into Cas9 transgenic plants. The viral RNA expresses single guide RNAs that meld with Cas9 in the transgenic plants._
+: "Cas9 transgenic plants are infected with an RNA virus that expresses single guide RNAs (sgRNAs). The sgRNAs are augmented with sequences that promote cell-to-cell mobility."
+: "We hypothesized that, if fused to a sgRNA, FT might promote entry into the shoot apical meristem and create heritable gene edits at higher frequencies."
+: "To test this hypothesis, we added the A. thaliana FT coding sequence to the 3′-end of a sgRNA that targets all alleles of phytoene desaturase (PDS) in Nicotiana benthamiana."
+: "The sgRNAs fused to FT sequences were cloned into a tobacco rattle virus (TRV) vector that can be delivered to plants via infection by Agrobacterium tumefaciens"
+: "Flowering Locus T is not the only RNA that moves between cells. Plant phloem exudates contain many transfer RNA-like sequences capable of cell-to-cell movement."
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -87,15 +111,51 @@ _[Brief Communication](10.1038⧸s41477-020-0670-y.pdf)_
 : {{ <image title="Procedure" file="10.1038⧸s41477-020-0670-y.jpg" inline={true} /> }}
 
 
+**tRNA-Related Sequences Trigger Systemic mRNA Transport in Plants**
+Zhang et al. 2016 
+_[Article](https://academic.oup.com/plcell/article/28/6/1237/6098293)_
+`10.1105/tpc.15.01056`
+: ?
+
+**Impacts of RNA Mobility Signals on Virus Induced Somatic and Germline Gene Editing**
+et al. 
+_[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC9219249/)_
+``
+: ?
+
+**Agrobacterium Transformation of Arabidopsis thaliana Roots**
+et al. 
+_[Article](https://link.springer.com/protocol/10.1385/1-59745-130-4:105)_
+``
+: ?
+
+**Agrobacterium-mediated plant transformation: biology and applications**
+et al. 
+_[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC6501860/)_
+``
+: ?
+
+**Root Colonization by Agrobacterium tumefaciens Is Reduced in cel, attB, attD, and attR Mutants**
+et al. 
+_[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC106392/)_
+``
+: ?
+
+
 **Systemic movement of FT mRNA and a possible role in floral induction**
- et al. 
+Jackson et al. 2012
 _[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC3373133/)_
 `10.3389/fpls.2012.00127`
-: ?
+: "This raises the possibility the FT mRNA may be moving systemically through the plant and into the SAM as an RNA–protein complex, whether FT protein is also a component of this mobile complex remains to be determined."
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
 
 **Identification of mRNAs that Move Over Long Distances Using an RNA-Seq Analysis of Arabidopsis/Nicotiana benthamiana Heterografts**
  et al. 
-_[Article](https://academic.oup.com/pcp/article-abstract/56/2/311/1816181)_
+_[Article](up.com/pcp/article-abstract/56/2/311/1816181)_
 ``
 : ?
 
@@ -154,6 +214,7 @@ _[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC13354801/)_
 `doi`
 : ?
 
+_[Article](https://academic.o
 
 **Heritable gene editing using FT mobile guide RNAs and DNA viruses**
 ? et al. ?
@@ -485,4 +546,4 @@ _[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC5597576/)_
 
 [^1]: [https://en.wikipedia.org/wiki/Meristem](https://en.wikipedia.org/wiki/Meristem)
 [^2]: [Twenty years on: The inner workings of the shoot apical meristem, a developmental dynamo](https://www.sciencedirect.com/science/article/pii/S0012160609013840)
-
+[^3]: [https://en.wikipedia.org/wiki/Agroinfiltration](https://en.wikipedia.org/wiki/Agroinfiltration)

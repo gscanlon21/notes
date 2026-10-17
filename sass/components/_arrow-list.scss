@@ -1,0 +1,45 @@
+blockquote:has(> ul > li > blockquote) {
+	padding-inline-start: 0 !important;
+	border-left: none !important;
+}
+
+blockquote > ul:has(> li > blockquote) {
+	& > li > blockquote {
+		padding-inline-start: 0 !important;
+		border-left: none !important;
+		margin-block-end: 0;
+	}
+
+	& > li > blockquote {
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		overflow-y: clip;
+	}
+
+	& > li:first-of-type > blockquote {
+		&::before {
+			bottom: $site-font-size * -0.55;
+			font-size: $base-font-size * 2;
+			position: absolute;
+			content: '⤳';
+		}
+
+		& > p {
+			padding-inline-start: $base-padding * 1.85;
+		}
+	}
+
+	& > li:has(> blockquote) + li > blockquote {
+		&::before {
+			bottom: $site-font-size * -0.55;
+			font-size: $base-font-size * 2;
+			position: absolute;
+			content: '⤷';
+		}
+
+		& > p {
+			padding-inline-start: $base-padding * 1.25;
+		}
+	}
+}
