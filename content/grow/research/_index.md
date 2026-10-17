@@ -77,7 +77,7 @@ _[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7434670/)_
 Luo et al. 2025
 _[Letter](https://pmc.ncbi.nlm.nih.gov/articles/PMC12673671/)_
 `10.1093/plphys/kiaf611`
-: ?
+: {{ <image title="Procedure" file="10.1093_plphys_kiaf611_01.jpg" inline={true} /> }}
 
 
 **An _in planta_ biolistic method for stable wheat transformation**
