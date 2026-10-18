@@ -117,6 +117,23 @@ _[Brief Communication](10.1038⧸s41477-020-0670-y.pdf)_
   > - [x] 
 : {{ <image title="Procedure" file="10.1038⧸s41477-020-0670-y.jpg" inline={true} /> }}
 
+**A universal pipeline for mobile mRNA detection and insights into heterografting advantages under chilling stress**
+et al. 
+_[Article](https://www.nature.com/articles/s41438-019-0236-1)_
+``
+: ?
+
+**Systemic spreading of exogenous applied RNA biopesticides in the crop plant Hordeum vulgare**
+et al. 
+_[Article](https://link.springer.com/article/10.1186/s41544-020-00052-3)_
+``
+: ?
+
+**Foliar-applied double-stranded RNA is mobile, transfers to plant pathogens, and triggers RNAi**
+et al. 
+_[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC12784973/)_
+``
+: ?
 
 **tRNA-Related Sequences Trigger Systemic mRNA Transport in Plants**
 Zhang et al. 2016 
