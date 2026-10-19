@@ -103,7 +103,9 @@ _Agrobacterium tumefaciens mediated induction_
 **Developing a method for customized induction of flowering**
  et al. 
 _[Article](https://link.springer.com/article/10.1186/1472-6750-11-36)_
-: ?
+: "Our starting point was plants with strongly delayed flowering due to silencing of FT with an artificial microRNA directed at FT (amiR-FT)."
+: "In order to induce flowering in a controlled way, the FTa1 gene was then expressed under the control of an alcohol-inducible promoter in the late flowering amiR-FT plants. Upon exposure to ethanol, FTa1 was rapidly up regulated and this resulted in the synchronous induction of flowering."
+
 
 **Highly Specific Gene Silencing by Artificial MicroRNAs in Arabidopsis**
  et al. 
