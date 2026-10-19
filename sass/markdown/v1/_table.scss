@@ -61,10 +61,15 @@ article.v1 {
 			width: auto;
 		}
 
+		&.wide td {
+			min-width: 15rem;
+		}
+
 		&.small {
 			table {
 				th, td {
-					padding: $base-padding * 0.25;
+					padding-inline: $base-padding * 0.35;
+					padding-block: $base-padding * 0.15;
 				}
 			}
 		}
