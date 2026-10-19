@@ -100,6 +100,51 @@ _Agrobacterium tumefaciens mediated induction_
 : So you take agrobacterium and add it to a nutrient solution. 
 : If you target the bacteria with a virus, and have that virus ambient RNA with TLS, will the plant pick up and translate the ambient RNA. 
 
+**Developing a method for customized induction of flowering**
+ et al. 
+_[Article](https://link.springer.com/article/10.1186/1472-6750-11-36)_
+: ?
+
+**Highly Specific Gene Silencing by Artificial MicroRNAs in Arabidopsis**
+ et al. 
+_[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC1456875/)_
+: ?
+
+
+**Export of FT Protein from Phloem Companion Cells Is Sufficient for Floral Induction in Arabidopsis**
+ et al. 
+_[Article](https://www.cell.com/current-biology/fulltext/S0960-9822(07)01389-9)_
+: ?
+
+
+**Highly Specific Gene Silencing by Artificial MicroRNAs in Arabidopsis**
+ et al. 
+_[Article](https://academic.oup.com/plcell/article/18/5/1121/6114907)_
+: ?
+
+
+**RNA translocation between parasitic plants and their hosts**
+ et al. 
+_[Article](https://pubmed.ncbi.nlm.nih.gov/19253417/)_
+: ?
+
+
+**Parasites plant microRNAs in the host**
+ et al. 
+_[Article](https://www.nature.com/articles/nrg.2018.3)_
+: ?
+
+
+**Cross-kingdom RNA interference promotes arbuscular mycorrhiza development**
+ et al. 
+_[Article](https://www.nature.com/articles/s41477-026-02247-2)_
+: ?
+
+
+
+
+
+
 **Multiplexed heritable gene editing using RNA viruses and mobile single guide RNAs**
 Ellison et al. 2020
 _[Brief Communication](10.1038⧸s41477-020-0670-y.pdf)_
