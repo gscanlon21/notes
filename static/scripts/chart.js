@@ -1,18 +1,26 @@
 document.querySelectorAll("table").forEach(table => {
-    const firstHeader = table.tHead?.rows[0]?.cells[0]?.textContent?.trim();
-	const title = table.tHead?.rows[0]?.cells[1]?.textContent?.trim();
+	const headers = Array.from(table.tHead?.rows[0]?.cells || []).map(cell => cell.textContent.trim());
+    const dateIndex = headers.findIndex(header => header.toLowerCase() === "date");
+    const minIndex = headers.findIndex(header => header.toLowerCase() === "min");
+    const maxIndex = headers.findIndex(header => header.toLowerCase() === "max");
+	
+	if (dateIndex === -1) {
+		return;
+	}
 
-    if (!firstHeader?.toLowerCase().startsWith("date")) {
-        return;
-    }
+    const valueColumns = headers.map((header, index) => ({ header, index })).filter(column =>
+		column.index > dateIndex && column.index < minIndex
+	);
 
-    const labels = [], values = [], mins = [], maxs = [];
-	Array.from(table.tBodies[0].rows).forEach(row => {
-		labels.push(row.cells[0].textContent.trim());
-		values.push(Number(row.cells[1].textContent));
-		mins.push(Number(row.cells[2].textContent));
-		maxs.push(Number(row.cells[3].textContent));
-	});
+    const rows = Array.from(table.tBodies[0]?.rows || []);
+    const labels = rows.map(row => row.cells[dateIndex].textContent.trim());
+	const title = valueColumns.map(column => column.header).join(", ");
+
+    const datasets = valueColumns.map(column => ({
+        data: rows.map(row => Number(row.cells[column.index]?.textContent.trim() || 0)),
+		label: column.header,
+        borderWidth: 2,
+    }));
 
 	const titleElement = document.createElement("h5");
 	const canvas = document.createElement("canvas");
@@ -31,27 +39,22 @@ document.querySelectorAll("table").forEach(table => {
 		type: "line",
 		data: {
 			labels,
-			datasets: [
+			datasets: [ ...datasets,
 				{
-					label: table.tHead.rows[0].cells[1].textContent,
-					data: values,
-					borderWidth: 2
-				},
-				{
+					data: rows.map(row => Number(row.cells[minIndex]?.textContent.trim() || 0)),
+					borderDash: [5, 5],
+					pointRadius: 0,
+					borderWidth: 2,
 					label: "Min",
-					data: mins,
-					borderDash: [5, 5],
-					pointRadius: 0,
-					borderWidth: 2,
 				},
 				{
-					label: "Max",
-					data: maxs,
+					data: rows.map(row => Number(row.cells[maxIndex]?.textContent.trim() || 0)),
 					borderDash: [5, 5],
 					pointRadius: 0,
 					borderWidth: 2,
+					label: "Max",
 				}
-			]
+			],
 		},
 		options: {
 			responsive: true,
