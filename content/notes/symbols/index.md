@@ -13,6 +13,23 @@ see_also = [
 {{ <hidden page={page} section={section} /> }}
 
 
+
+# Dashes
+
+**Solidus**
+*U+2013*
+: `–`
+
+**Em Dash**
+*U+2014*
+: `—`
+
+**CJK Unified Ideograph-4E00**
+*U+4E00*
+: `一`
+
+
+
 # Slashes
 
 ## Forward Slashes
@@ -49,20 +66,6 @@ _U+29F7_
 : `⧷`
 
 
-
-# Dashes
-
-**Solidus**
-*U+2013*
-: `–`
-
-**Em Dash**
-*U+2014*
-: `—`
-
-**CJK Unified Ideograph-4E00**
-*U+4E00*
-: `一`
 
 # Sex
 

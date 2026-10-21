@@ -117,6 +117,16 @@ _[Review Article](https://www.mdpi.com/1422-0067/26/14/6773)_
   > - [x] 
   > - [x] 
 
+**Induction of flowering in Arabidopsis through functional peptide-mediated FT mRNA delivery**
+Odahara et al. 2025
+_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC12214894/)_
+`10.1038/s41598-025-05773-9`
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+
 **Leveraging RNA interference technology for selective and sustainable crop protection**
  et al. 
 _[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC11703868)_
