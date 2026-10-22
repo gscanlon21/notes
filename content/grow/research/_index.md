@@ -117,10 +117,25 @@ _[Review Article](https://www.mdpi.com/1422-0067/26/14/6773)_
   > - [x] 
   > - [x] 
 
+**Mobile Flowering Locus T RNA - Biological Relevance and Biotechnological Potential**
+ et al. 
+_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC8761650/)_
+``
+: "Many systemically mobile mRNAs have been revealed in phloem. However, very few of them have been found to be of clear signaling functions."
+: "Nevertheless, accumulating evidence supports the notion of the long-distance movement of FT mRNA from leaf to shoot apex meristem and its role in flowering."
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+
+
 **Induction of flowering in Arabidopsis through functional peptide-mediated FT mRNA delivery**
 Odahara et al. 2025
 _[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC12214894/)_
 `10.1038/s41598-025-05773-9`
+: "We developed a non-transgenic flowering induction system in the model plant Arabidopsis, employing the exogenous introduction of FT mRNA through a functional peptide-mediated delivery."
+: "Utilizing the functional peptide BP100-KH9 as a nanocarrier for nucleic acid delivery into plant cells, we confirmed the production of FT protein from the introduced FT mRNA, which was fused with a reporter gene Citrine."
 : > - [x] 
   > - [x] 
   > - [x] 
