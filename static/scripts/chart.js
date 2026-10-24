@@ -17,7 +17,15 @@ document.querySelectorAll("table").forEach(table => {
 	const title = valueColumns.map(column => column.header).join(", ");
 
     const datasets = valueColumns.map(column => ({
-        data: rows.map(row => Number(row.cells[column.index]?.textContent.trim() || 0)),
+        data: rows.map(row => {
+			const raw = row.cells[column.index]?.textContent.trim();
+			const y = Number(raw?.match(/[\d.]+/)?.at(0) || 0);
+			return {
+				x: row.cells[dateIndex].textContent.trim(),
+				y: raw.includes('<') ? y - 1 : y,
+				value: raw,
+			};
+		}),
 		label: column.header,
         borderWidth: 2,
     }));
@@ -104,6 +112,9 @@ document.querySelectorAll("table").forEach(table => {
 						title: (context) => {
 							// Pretty-print the x-axis date in the hover tooltip
 							return new Date(context[0].parsed.x).toDateString();
+						},
+						label: (context) => {
+							return `${context.dataset.label}: ${context.raw.value || context.raw}`;
 						},
 					},
 				},
