@@ -1,0 +1,41 @@
+.page {
+    justify-content: center;
+	flex-direction: column;
+	padding-bottom: 3rem;
+    margin-bottom: -3rem;
+	align-items: center;
+	overflow-x: clip;
+	display: flex;
+	row-gap: 2rem;
+}
+
+#decoding-chart {
+	justify-self: center;
+	text-align: center;
+	line-height: 1;
+	display: grid;
+	gap: 1em;
+}
+
+#arrow-chart {
+	display: grid;
+	line-height: 1;
+	aspect-ratio: 1;
+	text-align: center;
+	justify-self: center;
+}
+
+.arrow {
+	height: var(--size);
+	overflow-y: clip;
+	aspect-ratio: 1;
+	display: flex;
+}
+
+.arrow.red {
+	color: rgb(var(--color-red));
+}
+
+.arrow.green {
+	color: rgb(var(--color-green));
+}

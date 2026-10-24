@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang=no data-theme="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	
+	
+		<title>Inferring Charge Distribution</title>
+	
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://ascallion.com/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://ascallion.com/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://ascallion.com/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://ascallion.com/site.webmanifest?h=d3283d8cdd099d8504a1">
+
+	
+	<link rel="stylesheet" type="text/css" href="https://ascallion.com/site.css?h=ee4dac0738b0cc5a719c" media="all">
+	
+
+	
+	
+		
+
+		
+		
+	
+	
+    
+	
+		
+		
+
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+		
+	
+
+	<script defer src="https://ascallion.com/elasticlunr.min.js?h=4f648b9e42abdef9c436"></script>
+	<script defer src="https://ascallion.com/search_index.en.js?h=adb06c9b5ada745a76fe"></script>
+
+	
+		
+		
+		
+		<script defer src="https://ascallion.com/scripts/lunr.stemmer.js?h=e017028ea92174715af2"></script>
+		<script defer src="https://ascallion.com/scripts/lunr.no.js?h=4993417f9c2ff596dbdf"></script>
+		<script defer src="/submodule/university_8988a097-b948-46f0-a5c5/public/search_index.no.js?h=Bu4BgoervPRBsVi5WyOZQWQyTHpvPKE64a/Qp/l1MuRidNOQlfe4QSrUmXeqhBVO"></script>
+	
+
+	
+
+	<script defer src="https://ascallion.com/scripts/content.js?h=fc38ac5be070a665f252"></script>
+	<script defer src="https://ascallion.com/scripts/flashcards.js?h=51b6c39fb2b2d905a4e9"></script>
+	<script defer src="https://ascallion.com/scripts/assessment.js?h=89c341c9cfdff8fd3a38"></script>
+	<script defer src="https://ascallion.com/scripts/search.js?h=643c4ada606b1c2f98b4"></script>
+	<script defer src="https://ascallion.com/scripts/chart.js?h=574210fb0cf752fe1a4c"></script>
+	<script type="module" src="https://ascallion.com/scripts/table.js?h=d48a7a8e79f64ce839d5"></script>
+
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.css">
+</head>
+
+<body>
+	
+	<header id="site-header">
+		<nav id="site-nav">
+			<div class="nav-item">
+
+<div id="search">
+  <input id="search-input" type="search" placeholder="Search">
+
+  <div id="search-results" style="display: none;">
+      <ul id="search-results__items"></div>
+  </div>
+</div></div>
+			<div class="nav-item"><a class="unstyle" href="https://ascallion.com/">ascallion</a></div>
+			<div class="nav-item"><a href="https://ascallion.com/">Sitemap</a></div>
+		</nav>
+
+		<nav class="print context">
+			<div class="left">
+				Inferring Charge Distribution
+			</div>
+			<div class="right">
+				
+			</div>
+		</nav>
+	</header>
+	
+
+	
+
+	<main id="main">
+		
+	<div class="sidebar-left header">
+		<div class="header-wrap">
+			
+<form id="options" class="header-item">
+    <header id="summary">
+        <h2 class="header-title">
+            
+                <span>Inferring Charge Distribution</span>
+            
+              
+        </h2> 
+        
+
+		
+
+		
+
+        <dl>
+            
+
+             
+            <dt>Authors</dt>
+            
+                <dd>Dr. Fields</dd>
+            
+            
+
+            
+
+             
+            <dt>See Also</dt>
+            
+                <dd class="summary-item">
+                     
+                        <a class="reverse-indent" href="https://openstax.org/details/books/biology-2e" target="_blank" rel="noreferrer">
+							Textbook
+						</a>
+                    
+                </dd>
+            
+            
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+			
+
+
+	
+	
+
+
+
+
+
+			
+
+			
+
+            
+            
+            <dt>Reading Time</dt>
+            <dd>4 minute(s)</dd>
+
+			<dt>Word Count</dt>
+            <dd><span id="word-count">609</span> words</dd>
+
+			
+        </dl>
+
+		<div id="flashcard-container"></div>
+		
+
+
+
+
+    </header>
+</form>
+			
+
+
+<div class="header-item">
+	<h3 class="sitemap-title header-title">Table of Contents</h3>
+	<nav class="sitemap condensed">
+		
+			
+<ul class="sitemap-list">
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/3-2/#inferring-charge-distribution">Inferring Charge Distribution</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+<ul class="sitemap-list">
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/3-2/#electron-distribution">Electron Distribution</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/3-2/#partial-charges">Partial Charges</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/3-2/#bond-dipoles">Bond Dipoles</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/3-2/#bond-polarity">Bond Polarity</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/3-2/#net-dipole-moment">net dipole moment</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/3-2/#scenario-1-a-nonpolar-molecule">Scenario #1: A nonpolar molecule</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/3-2/#scenario-2-a-nonpolar-molecule">Scenario #2: A nonpolar molecule</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/3-2/#scenario-3-a-polar-molecule">Scenario #3: A polar molecule</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/3-2/#hydrocarbons">Hydrocarbons</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<li>
+				<a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/3-2/#infared-radiation-relations">Infared Radiation Relations</a>
+			</li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+</ul>
+
+		
+	
+	
+	
+</ul>
+
+		
+	</nav>
+</div>
+
+
+
+			<div class="header-wrap screen-small">
+				<div class="header-item">
+					
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap">
+	<menu class="sitemap-list">
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/university_8988a097-b948-46f0-a5c5/content/">University</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/">Courses</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/">1100 Chemistry</a></li>
+				
+			
+		
+		
+			<li class="current">Inferring Charge Distribution</li>
+		
+	</menu>
+</nav>
+
+				</div>
+				
+				<div class="header-item">
+					
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap">
+	
+		
+		
+			
+				
+
+
+
+	
+
+
+
+
+	
+		
+		
+			<menu class="sitemap-list">
+				
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-exam/">Exam 1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-1/">Unit 1.1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-2/">Unit 1.2</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-3/">Unit 1.3</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-4/">Unit 1.4</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-1/">Unit 2.1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-2/">Unit 2.2</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-3/">Unit 2.3</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-4/">Predicting Geometry</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/3-1/">Three-Dimensional Geometry</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+            <li class="current">Inferring Charge Distribution</li>
+        
+		
+    
+	
+
+
+			</menu>
+		
+		
+		
+		
+	
+
+
+			
+		
+	
+</nav>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="flex--1 screen-medium-up">
+			<div class="footer-item fixed left"><a class="unstyle" href="#">Back to Top</a></div>
+		</div>
+	</div>
+
+	
+	
+    <article id="content" class="page v1" data-slug="3-2" data-orientation="">
+		<aside class="display--none">
+  <div class="display--none">Textbook</div>
+</aside>
+<h1 id="inferring-charge-distribution">Inferring Charge Distribution</h1>
+<p>Central goal: Understand how to infer charge distribution in a molecule based on its atomic composition, connectivity, and three dimensional geometry</p>
+<h2 id="electron-distribution">Electron Distribution</h2>
+<p>Electronegativities of different elemental atoms</p>
+<p>The electronegativity of different atoms in a molecule influence the
+distribution of electrons in the electron cloud</p>
+<h2 id="partial-charges">Partial Charges</h2>
+<p>Electrons will spend more time in regions around atoms that are more electronegative, resulting in partial charges in a molecule</p>
+<p>Partial charge = small electric charge resulting from uneven distribution of valance electrons in a molecule</p>
+<p>Partial charges are represented by a lowercase delta, followed by either a negative or positive sign
+δ-   =    partial negative
+δ+   =   partial positive</p>
+<p>We write the partial negative/positive charges next to the corresponding regions in the molecule
+Partial charge =/= formal charge!</p>
+<h2 id="bond-dipoles">Bond Dipoles</h2>
+<p>Differences in electronegativity (EN) results in bond dipoles and different classifications of bonds</p>
+<p>Polar covalent bond = Covalent bond in which the participating atoms have an EN difference of 0.4 or greater (involve partial positive and negative charges)
+Nonpolar covalent bond = Covalent bond in which the participating atoms have an EN difference less than 0.4</p>
+<p>Tells us about the polarity of a bond. The greater then EN difference, the more polar the bond</p>
+<p>Ionic bonds have EN differences greater than 1.8, but are a metal + nonmetal and therefore don’t get these classifications</p>
+<p>EN of O = 3.5
+EN of H = 2.1</p>
+<p>3.5-2.1 = 1.4</p>
+<h2 id="bond-polarity">Bond Polarity</h2>
+<p>Draw a dipole vector along a bond starting at the partially positive and ending at the partially negative region of the bond</p>
+<p>EN of C = 2.5
+EN of H = 2.1
+EN of F = 4.0</p>
+<p>For C-F: 4.0-2.5 = 1.5</p>
+<p>For C-H: 2.5-2.1= 0.4</p>
+<p>A longer arrow = a more polar bond (use this when you have bonds of different polarities in the same molecule)</p>
+<p>EN of O = 3.5
+EN of H = 2.1</p>
+<p>3.5-2.1 = 1.4</p>
+<p>We represent the polarity of polar bonds using arrows</p>
+<h2 id="net-dipole-moment">net dipole moment</h2>
+<p>Summing the vectors results in one of two scenarios:</p>
+<ol>
+<li>
+<p>The dipoles cancel and the net dipole moment is zero (non-polar molecule)</p>
+</li>
+<li>
+<p>The diploes sum to give a net dipole in one direction (polar molecule)</p>
+</li>
+</ol>
+<p>This will be important to predicting interactions between molecules in Unit 3!</p>
+<p>We sum the vectors drawn on each bond to determine the net dipole moment</p>
+<h2 id="scenario-1-a-nonpolar-molecule">Scenario #1: A nonpolar molecule</h2>
+<p>Each bond is polar, but because their dipoles are of equal magnitude (same EN difference) and pointing in opposite directions, they cancel out and our molecule is non-polar</p>
+<h2 id="scenario-2-a-nonpolar-molecule">Scenario #2: A nonpolar molecule</h2>
+<p>If, in the molecular geometry of a compound, the bond dipoles are evenly spaced, they will cancel! (even if the angles are hard to visualize)</p>
+<h2 id="scenario-3-a-polar-molecule">Scenario #3: A polar molecule</h2>
+<p>Net dipole moment</p>
+<p>Add the vectors “head to tail” to get the net dipole moment</p>
+<p>In water, we have two bond dipoles. When summed, the total dipole of the molecule is pointing up</p>
+<h2 id="hydrocarbons">Hydrocarbons</h2>
+<p>EN differences between C and H is barely polar
+CH bonds are evenly distributed
+Overall, hydrocarbons are nonpolar</p>
+<p>Hydrocarbons (molecules made up of only hydrogen and carbon) are a special case</p>
+<p>EN of C = 2.5
+EN of H = 2.1</p>
+<p>For C-H: 2.5-2.1= 0.4</p>
+<h2 id="infared-radiation-relations">Infared Radiation Relations</h2>
+<p>Molecules must have a polar bond in order to be IR light active</p>
+<p>Which of the following molecules are IR active?</p>
+<p>Bond polarity allows us to predict which molecules will interact with IR radiation</p>
+<p>A note: often structures are drawn with lone pairs implied. On an exam you will be expected to include lone pairs when asked to draw Lewis structures, but I will specify this in the question.</p>
+
+	</article>
+	
+	<div class="sidebar-right header">
+		<div class="header-item">
+			
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap">
+	<menu class="sitemap-list">
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/university_8988a097-b948-46f0-a5c5/content/">University</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/">Courses</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/">1100 Chemistry</a></li>
+				
+			
+		
+		
+			<li class="current">Inferring Charge Distribution</li>
+		
+	</menu>
+</nav>
+
+		</div>
+		
+		<div class="header-item">
+			
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap">
+	
+		
+		
+			
+				
+
+
+
+	
+
+
+
+
+	
+		
+		
+			<menu class="sitemap-list">
+				
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-exam/">Exam 1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-1/">Unit 1.1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-2/">Unit 1.2</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-3/">Unit 1.3</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/1-4/">Unit 1.4</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-1/">Unit 2.1</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-2/">Unit 2.2</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-3/">Unit 2.3</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/2-4/">Predicting Geometry</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/university_8988a097-b948-46f0-a5c5/content/courses/1100-chem/3-1/">Three-Dimensional Geometry</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+            <li class="current">Inferring Charge Distribution</li>
+        
+		
+    
+	
+
+
+			</menu>
+		
+		
+		
+		
+	
+
+
+			
+		
+	
+</nav>
+
+		</div>
+
+		
+
+		<div class="flex--1">
+			<div class="footer-item fixed right"><a class="unstyle" href="#">Back to Top</a></div>
+		</div>
+	</div>
+
+	</main>
+
+	
+	<footer id="footer">
+    <span class="footer-item"><a href="https://ascallion.com/">About</a></span>
+    <span class="footer-item"><a class="unstyle" href="#">Back to Top</a></span>
+    <span class="footer-item"><a href="https://github.com/gscanlon21">Github</a></span>
+</footer>
+	
+
+	
+	
+		
+
+		
+    	
+		
+
+	
+	
+		
+		
+
+		
+		
+		
+
+	
+	
+</body>
+
+</html>
+
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.js"></script>
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
