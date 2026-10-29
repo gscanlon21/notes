@@ -45,6 +45,14 @@ see_also = [
 
 # Brands
 
+**Altra Shoes**
+: Generally has no heel-to-toe drop.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+
 **Birkenstock**
 : Have a nice stiff base.
 : > [!TIP]
@@ -57,26 +65,18 @@ see_also = [
   > - [x] 
   > - [x] 
   > - [x] 
-  > - [x] 
+  > - [ ] 
 
 **K-Swiss**
-: Because they are court shoes, they have a large shoe drop.
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-
-**Altra Shoes**
-: Generally has no shoe drop.
-: > - [ ] 
+: Because these are court shoes, they have a large heel-to-toe drop.
+: > - [x] 
   > - [ ] 
   > - [ ] 
   > - [ ] 
   > - [ ] 
 
 **Topo**
-: Generally has a low, 5mm shoe drop.
+: Generally has a low, 5mm heel-to-toe drop.
 : > - [ ] 
   > - [ ] 
   > - [ ] 
@@ -84,6 +84,24 @@ see_also = [
   > - [ ] 
 
 # Products
+
+**[Men's Altra VIA Olympus 2](https://www.altrarunning.com/en-us/products/mens-via-olympus-2-al0a85na)**
+_Size 11_
+: Best.
+: > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+  > - [x] 
+
+**[ORA Recovery Slide 3](https://www.hoka.com/en/us/all-gender-footwear/ora-recovery-slide-3/1135061.html)**
+_Size 11_
+: ?
+: > - [x] 
+  > - [x] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
 
 **[Men's On Cloudswift Amp](https://www.on.com/en-us/products/cloudswift-amp-m-3mg1046)**
 _Size 11 Regular_
@@ -94,8 +112,8 @@ _Size 11 Regular_
 : > - [x] 
   > - [x] 
   > - [x] 
-  > - [x] 
-  > - [x] 
+  > - [ ] 
+  > - [ ] 
 
 
 **Men's Birkenstock Boston SFB**
