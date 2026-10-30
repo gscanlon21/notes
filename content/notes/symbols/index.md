@@ -124,6 +124,14 @@ _U+29F7_
 *U+00D7*
 : `×`
 
+**Multiplication X**
+*U+2715*
+: `✕`
+
+**Heavy Multiplication X**
+*U+2716*
+: `✖`
+
 **Middle Dot**
 *U+00B7*
 : `·`
