@@ -1,0 +1,23 @@
+
+
+{% component image(title: string, file: string, open: bool = false, inline: bool = false, style: string = "") %}
+{% if inline %}<dd>{% endif %}
+{% if open | default(value=false) %}
+<details open="open" class="image" style="{{ style | default(value="") }}">
+  <summary>
+  
+  {{ title | default(value=title) | safe }}
+  </summary>
+{% else %}
+<details class="image" style="{{ style | default(value="") }}">
+  <summary>
+
+  {{ body | default(value=title) | safe }}
+  </summary>
+{% endif %}
+
+![{{ title }}]({{ file | replace(from="/", to="") }})
+</details>
+{% if inline %}</dd>{% endif %}
+{% endcomponent image %}
+

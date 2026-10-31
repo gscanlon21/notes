@@ -1,0 +1,60 @@
++++
+title = "Everything"
+updated = 2026-03-25
+
+[extra]
+site = "https://www.voidtools.com/"
+see_also = [
+	{ title = "Searching", href = "https://www.voidtools.com/support/everything/searching/" },
+]
++++
+
+{{ <hidden page={page} section={section} /> }}
+
+
+
+# Options
+# _Ctrl+P
+
+## General
+**Search**
+: - [ ] _Match whole filename when using wildcards_
+
+**Results**
+: - [x] _Open path with double click in path column_
+
+## Indexes
+**Exclude**
+: **Exclude Folders**
+  : `**\notes\**\public\**`
+  : `**\notes\public\**`
+  : `**\_notes\**`
+
+
+
+# Search
+
+## Find Duplicates
+
+###### Only These File Types
+```powershell
+*.png|*.jpg|*.jpeg dupe:
+```
+
+###### Only These File Types Inside a Parent Folder
+```powershell
+path:"C:\Users\*\OneDrive\Pictures\" *.png|*.jpg|*.jpeg dupe:
+```
+
+
+## Find in a Folder
+
+###### Recursive Children
+```
+"C:\Users\*\OneDrive\Pictures\" test.png
+```
+
+###### Only the Parent Folder
+```
+parent:"C:\Users\*\OneDrive\Pictures\" test.png
+```

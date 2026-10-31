@@ -1,0 +1,22 @@
++++
+title = "Water Temperature"
+description = ""
+
+[extra]
+updated = 2026-06-01
+site_version = 1
+toc_level = 2
+see_also = []
++++
+
+{{ <hidden page={page} section={section} /> }}
+
+
+
+> [!NOTE]
+> Water temperature of 72 to 75 F is optimal.[^1]
+>> Optimum Water Temperature
+
+
+[^1]: [Electrical Conductivity and pH Guide for Hydroponics](一electrical-conductivity-and-ph-guide-for-hydroponics.pdf)
+

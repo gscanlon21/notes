@@ -1,0 +1,19 @@
++++
+title = "Lightshot"
+description = "The fastest way to take a customizable screenshot"
+
+[extra]
+site = "https://app.prntscr.com/en/index.html"
+updated = 2025-09-09
+see_also = []
++++
+
+{{ <hidden page={page} section={section} /> }}
+
+
+
+> [!TIP]
+> Before installing lightshot, turn off the Print Screen Shortcut under Ease of Access Keyboard Settings. 
+> Doing this should allow it to register "PrtScr" as the default keyboard shortcut.
+>> PrtScr Keybinding
+

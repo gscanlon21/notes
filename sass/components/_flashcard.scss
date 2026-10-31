@@ -1,0 +1,154 @@
+.flashcard-wrapper {
+	del {
+		text-decoration-line: none;
+		text-decoration-style: wavy;
+		color: rgb(var(--color-complete));
+
+		@media (prefers-color-scheme: light) {
+			text-decoration-color: color(--color-text, 0.3);
+		}
+
+		@media (prefers-color-scheme: dark) {
+			text-decoration-color: color(--color-text, 0.5);
+		}
+
+		& + ul {
+			color: rgb(var(--color-complete));
+		}
+	}
+}
+
+#flashcard-container {
+	&:empty {
+		display: none;
+	}
+
+	.flashcard-section {
+		margin-block-start: $base-padding * 1;
+		transform-style: preserve-3d;
+		transition: transform 400ms;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		user-select: none;
+		min-height: 200px;
+		cursor: pointer;
+		display: flex;
+		width: 100%;
+
+		&.flipped {
+			transform: rotateY(180deg);
+		}
+
+		.flashcard-front,
+		.flashcard-back {
+			padding-block: $base-padding * 1;
+			border: 2px solid currentColor;
+			backface-visibility: hidden;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			flex: 1 1 auto;
+			display: flex;
+			inset: 0;
+		}
+
+		.flashcard-front {
+			padding-inline: $base-padding * 1;
+			padding-block: $base-padding * 2;
+			min-height: min-content;
+			position: relative;
+			width: stretch;
+
+			& > strong {
+				font-size: $base-font-size * 1.75;
+				text-align: center;
+				line-height: 1;
+			}
+
+			& > em {
+				margin-block-start: $base-padding * 0.5;
+				color: color(--color-text, 0.75);
+				font-size: $base-padding * 1.2;
+				text-align: center;
+				line-height: 1;
+
+				&:empty {
+					display: none;
+				}
+			}
+		}
+
+		.flashcard-back {
+			background-color: color(--color-bg);
+			transform: rotateY(180deg);
+			scrollbar-width: none;
+			padding-block-end: 0;
+			position: absolute;
+
+			& > .front {
+				text-align: center;
+			}
+
+			strong {
+				padding-inline: $base-padding * 1;
+			}
+
+			.flashcard-list {
+				margin-block-start: $base-padding * 0.5;
+				padding-block-end: $base-padding * 1;
+				padding-inline: $base-padding * 1;
+    			margin-inline: $base-padding * -1;
+				scrollbar-width: none;
+				overflow-y: auto;
+				flex: 1 1 auto;
+
+				& > ul {
+					padding-inline-start: $base-padding * 2;
+					padding-inline-end: $base-padding * 1;
+					line-height: $line-height-tight;
+					margin: $base-padding * 0;
+
+					& > li:not(:first-of-type) {
+						margin-block-start: $base-padding * 0.5;
+					}
+				}
+			}
+		}
+
+		.card-header {
+			color: color(--color-text);
+			position: absolute;
+			line-height: 1;
+			left: 10px;
+			top: 10px;
+		}
+
+		.card-counter {
+			color: color(--color-text, 0.75);
+			position: absolute;
+			font-size: small;
+			line-height: 1;
+			z-index: -1;
+			bottom: 8px;
+			left: 8px;
+		}
+
+		.current-card {
+			color: color(--color-text, 0.75);
+			position: absolute;
+			font-size: small;
+			line-height: 1;
+			z-index: -1;
+			bottom: 8px;
+			right: 8px;
+		}
+
+		&[data-group="2"] {
+			.current-card {
+				font-weight: bold;
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+#site-header {
+	max-width: $body-width-max;
+	width: calc(100% - 2em);
+	align-self: center;
+
+	#site-nav {
+		column-gap: $base-padding * 2;
+		row-gap: $base-padding * 0.5;
+		margin-inline: $base-padding;
+		position: relative;
+		flex-wrap: wrap;
+		display: flex;
+
+		.nav-item {
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			flex: 1;
+		}
+	}
+}

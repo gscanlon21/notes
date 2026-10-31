@@ -1,0 +1,27 @@
+
+.sidebar-left, .sidebar-right {
+	width: $sidebar-width;
+	align-content: start;
+}
+
+.sidebar-left, .sidebar-right {
+	flex: 1 1 $sidebar-width;
+}
+
+.sidebar-left {
+	max-width: $body-width-max;
+	margin-inline: auto;
+}
+
+
+.footer-item.fixed {
+	padding-block-start: $base-padding;
+	pointer-events: all;
+	position: sticky;
+	z-index: 2;
+	inset: 0;
+
+	&.left {
+		text-align: end;
+	}
+}

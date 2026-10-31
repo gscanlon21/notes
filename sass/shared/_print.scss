@@ -1,0 +1,95 @@
+$print-margin-buffer: 3mm;
+
+article[data-orientation="portrait"] {
+	/* Subtract $print-margin twice for each page margin */
+	--page-size: calc(11in - #{$print-margin} - #{$print-margin});
+}
+
+article[data-orientation="landscape"] {
+	/* Subtract $print-margin twice for each page margin */
+	--page-size: calc(8.5in - #{$print-margin} - #{$print-margin});
+}
+
+@media screen {
+	article[data-orientation="portrait"] {
+		margin-block: $print-margin;
+
+		& > :first-child {
+			margin-block-start: 0 !important;
+		}
+
+		&::after {
+			background: repeating-linear-gradient(to bottom, transparent 0in var(--page-size), rgba(var(--color-text), 0.25) var(--page-size) calc(var(--page-size) + 2px));
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			content: '';
+			top: 0;
+		}
+	}
+
+	article[data-orientation="landscape"] {
+		margin-block: $print-margin;
+
+		& > :first-child {
+			margin-block-start: 0 !important;
+		}
+
+		&::after {
+			background: repeating-linear-gradient(to bottom, transparent 0in var(--page-size), rgba(var(--color-text), 0.25) var(--page-size) calc(var(--page-size) + 2px));
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			content: '';
+			top: 0;
+		}
+	}
+}
+
+@media screen and (min-width: $body-width-max) {
+	article[data-orientation="landscape"],
+	article[data-orientation="portrait"] {
+        margin-inline: $print-margin;
+    }
+}
+
+@media print {
+	.page, .section {
+		margin-inline: $print-margin-buffer !important;
+		padding-inline: 0 !important;
+		padding-block: 0 !important;
+		margin-block: 0 !important;
+		overflow: visible;
+	}
+
+	.context {
+		width: calc(100% - $print-margin-buffer);
+		justify-content: space-between;
+		writing-mode: vertical-lr;
+		display: flex !important;
+		letter-spacing: 0.1px;
+		align-items: flex-end;
+		position: absolute;
+		font-size: 12px;
+		height: 100%;
+    }
+
+	.header {
+		display: none;
+	}
+}
+
+/* @Page applies to all pages
+ and must have a consistent 
+ margin top and bottom */
+@page {
+	// For header # borders and print page name context.
+	margin-right: $print-margin - $print-margin-buffer;
+	margin-left: $print-margin - $print-margin-buffer;
+	margin-bottom: $print-margin;
+	margin-top: $print-margin;
+}
+
+.print {
+    display: none;
+}

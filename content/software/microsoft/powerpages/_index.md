@@ -1,0 +1,51 @@
++++
+title = "Power Pages"
+description = ""
+sort_by = "title"
+
+[extra]
+updated = 2026-03-01
+see_also = [
+  { title = "Liquid Objects", href = "https://learn.microsoft.com/en-us/power-pages/configure/liquid/liquid-objects" },
+  { title = "Liquid Filters", href = "https://learn.microsoft.com/en-us/power-pages/configure/liquid/liquid-filters" },
+]
++++
+
+{{ <hidden page={page} section={section} /> }}
+
+
+
+# Components
+
+**Rich Text Editor**
+: Must be enabled on Power Pages by clicking `Edit code component` and then `Enable custom component`.
+
+
+
+# Web Templates
+
+```html
+{% raw %}
+{% include 'Template Name' title: 'Hello World!' %}
+{% endraw %}
+```
+
+# Notes
+# `annotation`
+
+###### Display PDF Attachments
+```html
+{% raw %}
+{% if note.mimetype == "application/pdf" and note.documentbody %}
+<div class="attachment-preview">
+  <iframe
+    src="data:application/pdf;base64,{{ note.documentbody }}"
+    width="100%"
+    height="700"
+    style="border:0;"
+    title="{{ note.filename | escape }}">
+  </iframe>
+</div>
+{% endif %}
+{% endraw %}
+```

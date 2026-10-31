@@ -1,0 +1,28 @@
+article.v1 {
+	details.image {
+		border: 2px dashed color(--color-text);
+		margin-block: $base-padding * 1;
+
+		& > summary {
+			padding-block-start: $base-padding * 0.225;
+			margin-inline-start: $base-padding * 0.5;
+			padding-block-end: $base-padding * 0.25;
+			padding-inline: $base-padding * 0.1;
+
+			& > p {
+				margin-block: $base-padding * 0;
+				font-weight: normal;
+			}
+		}
+
+		& > p {
+			margin-block-start: $base-padding * 0.25;
+			padding: $base-padding * 0.5;
+
+			& > img {
+				max-height: 80vh;
+				max-width: 100%;
+			}
+		}
+	}
+}

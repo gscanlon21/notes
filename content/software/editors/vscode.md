@@ -1,0 +1,149 @@
++++
+title = "Visual Studio Code"
+updated = 2025-02-27
+
+[extra]
+site = "https://code.visualstudio.com/"
+key_words = ["vscode"]
+see_also = []
+alerts = []
++++
+
+{{ <hidden page={page} section={section} /> }}
+
+
+
+# Settings
+> [!NOTE]
+> Open settings with `Ctrl+,`
+>> Settings
+
+###### Editor Settings
+```json
+
+"editor.fontSize": 15,
+
+// When opening a file, `editor.tabSize` and `editor.insertSpaces`
+// will be detected based on the file contents. Set to false to keep
+// the values you've explicitly set, above.
+"editor.detectIndentation": false,
+
+// The number of spaces used for indentation or "tabSize" to use the value from Editor: Tab Size. 
+// This setting is overridden based on the file contents when Editor: Detect Indentation is on.
+"editor.indentSize": "tabSize",
+
+// The number of spaces a tab is equal to. This setting is overridden
+// based on the file contents when `editor.detectIndentation` is true.
+"editor.tabSize": 4,
+
+// Insert spaces when pressing Tab. This setting is overridden
+// based on the file contents when `editor.detectIndentation` is true.
+"editor.insertSpaces": false,
+```
+###### Workbench Settings
+```json
+
+// Controls the size of editor tabs. 
+"workbench.editor.wrapTabs": true,
+"workbench.editor.tabSizing": "fit",
+"workbench.editor.enablePreview": true,
+"workbench.editor.highlightModifiedTabs": true,
+	
+// Controls the maximum width of tabs when Workbench › Editor: Tab Sizing size is set to fixed.
+"workbench.editor.tabSizingFixedMaxWidth": 160,
+// Controls the minimum width of tabs when Workbench › Editor: Tab Sizing size is set to fixed.
+"workbench.editor.tabSizingFixedMinWidth": 80,
+
+"workbench.editor.tabActionReserveSpace": false,
+"workbench.editor.tabActionUnpinVisibility": true,
+"workbench.editor.tabActionCloseVisibility": true,
+
+"workbench.editor.splitOnDragAndDrop": false,
+"workbench.editor.showIcons": false,
+"workbench.editor.pinnedTabSizing": "normal",
+"workbench.editor.openPositioning": "last",
+"workbench.editor.limit.excludeDirty": false,
+"workbench.editor.labelFormat": "default",
+"workbench.editor.enablePreviewFromQuickOpen": true,
+"workbench.editor.enablePreviewFromCodeNavigation": true,
+"workbench.editor.closeOnFileDelete": true,
+"workbench.editor.enablePreview": false,
+
+// Controls the size of pinned editor tabs.
+"workbench.editor.pinnedTabSizing": "normal",
+"workbench.editor.pinnedTabsOnSeparateRow": true,
+
+// Controls the maximum number of opened editors. 
+"workbench.editor.limit.enabled": false,
+"workbench.editor.limit.value": 12,
+
+// Controls where editors open. 
+// Select first or last to open editors independently from the currently active one.
+// Select left or right to open editors to the left or right of the currently active one. 
+"workbench.editor.openPositioning": "last",
+```
+###### Language Settings
+```json
+
+// Markdown Specific Settings
+"[markdown]": {
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "off",
+},
+
+// JavaScript Specific Settings
+"[javascript]": {
+  "editor.codeLens": false,
+},
+
+// HTML Specific Settings
+"[html]": {
+  "editor.codeLens": false,
+},
+```
+###### Search Settings
+```json
+
+// Ignore search files
+"search.exclude": {
+  "**/.git": true,
+  "**/dist": true,
+  "**/public": true,
+  "**/node_modules": true,
+  "**/*.csv*": true,
+  "**/*.svg*": true,
+  "**/*.pdf*": true,
+  "**/*.ipynb*": true,
+},
+```
+###### Files Settings
+```json
+
+// Autosave after 10s
+"files.autoSave": "afterDelay",
+"files.autoSaveDelay": 10000,
+
+// Ignore solution files
+"files.exclude": {
+  "scripts": true,
+  "**/.git": true,
+  "**/dist": true,
+  "**/public": true,
+  "**/.vscode": true,
+  "**/.github": true,
+  "**/git_hooks": true,
+  "**/config.toml": true,
+  "**/node_modules": true,
+  "**/.gitmodules": true,
+  "**/.gitignore": true,
+  "**/LICENSE": true,
+  "**/CNAME": true,
+},
+```
+###### Window Settings
+```json
+
+// Increase the font size of the file explorer.
+"window.zoomLevel": 1,
+```

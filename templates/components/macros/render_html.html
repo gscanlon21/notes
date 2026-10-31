@@ -1,0 +1,23 @@
+{#
+    Renders a page's svg assets as html.
+#}
+{% component macros.render_html(page, section, types) %}
+{% for asset in page?.assets | default(value=section?.assets) %}
+	{% for type in types %}
+		{% if asset is ending_with(pat=type) %}
+			{% set_global has_asset = true %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+
+{% if has_asset | default(value=false) %} 
+{% for asset in page?.assets | default(value=section?.assets) %}
+	{% for type in types %}
+		{% if asset is ending_with(pat=type) %}
+			{% set filename = asset | split(pat="/") | last | split(pat="\\") | last | split(pat=".") | first %}
+			<div class="display--none" data-code="{{ filename }}">{{ load_data(path=asset, required=false) | safe }}</div>
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+{% endif %}
+{% endcomponent macros.render_html %}

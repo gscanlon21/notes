@@ -1,0 +1,82 @@
+// Sitemap title
+main > .sitemap-title {
+	margin-block-start: $site-padding * 2;
+
+	@media (min-width: $body-width-max) {
+		margin-block-start: $site-padding * 3;
+	}
+}
+
+// Sitemap titles
+.sitemap-title:has(+ .sitemap:empty),
+.sitemap-title:has(+ .sitemap > .sitemap-list:only-child:empty) {
+	display: none;
+}
+
+article.sitemap {
+	width: 100cqw;
+}
+
+// Sitemap
+.sitemap {
+	user-select: none;
+	margin-block-start: $base-padding * 0.36;
+
+	// If we want the sitemap to span multiple columns.
+	&.full {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	// Pad items.
+	li, details {
+		margin-block-start: $base-padding * 0.25;
+		margin-block-end: $base-padding * 0.1;
+		line-height: $line-height-tight;
+
+		& > a, & > summary > a {
+			padding-block-start: $base-padding * 0.1;
+			padding-block-end: $base-padding * 0.25;
+			display: inline-flex;
+		}
+	}
+
+	li.current, summary.current {
+		pointer-events: none;
+		font-weight: bold;
+	}
+
+	// Pad between submenus.
+	& > menu + menu, & > menu:not(:empty):has(> *) + details, & > details + details, & > li + details {
+		margin-block-start: $base-padding;
+	}
+
+	.sitemap-list {
+		li {
+			&.circle {
+				list-style-type: circle;
+			}
+
+			&.square {
+				list-style-type: square;
+			}
+
+			&.disclosure-open {
+				list-style-type: disclosure-open;
+			}
+
+			&.disclosure-closed {
+				list-style-type: disclosure-closed;
+			}
+		}
+
+		// Keep details inline w/ submenus.
+		& > details {
+			margin-inline-start: -2ch;
+		}
+
+		&:empty {
+			display: none;
+		}
+	}
+}

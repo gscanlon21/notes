@@ -1,0 +1,16 @@
++++
+title = "By Plant"
+description = ""
+
+[extra]
+updated = 2026-06-01
+site_version = 1
+toc_level = 2
+see_also = [
+  { title = "Johnny Seeds", href = "https://www.johnnyseeds.com/" },
+]
++++
+
+{{ <hidden page={page} section={section} /> }}
+
+

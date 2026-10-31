@@ -1,0 +1,13 @@
+
+
+@container (max-width: calc(#{$breakpoint-small})) {
+	.screen-medium, .screen-medium-up {
+		display: none !important;
+	}
+}
+
+@container (min-width: calc(#{$breakpoint-large})) {
+	.screen-small, .screen-medium {
+		display: none !important;
+	}
+}

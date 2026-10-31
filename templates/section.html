@@ -1,0 +1,53 @@
+{% extends "partials/base.html" %}
+
+{% block content %}
+	<div class="sidebar-left header">
+		<div class="header-wrap">
+			{% include "partials/summary.html" %}
+			{% include "partials/toc.html" %}
+
+			<div class="header-wrap screen-small">
+				<div class="header-item">
+					{{<macros.render_ancestors for={section} config={config} lang={lang} />}}
+				</div>
+
+				<div class="header-item">
+					{{<macros.render_siblings for={section} config={config} lang={lang} />}}
+				</div>
+			</div>
+		</div>
+
+		<div class="flex--1 screen-medium-up">
+			<div class="footer-item fixed left"><a class="unstyle" href="#">Back to Top</a></div>
+		</div>
+	</div>
+	
+	{% set orientation = section.extra.orientation | default(value="") %}
+	{% set site_version = section.extra.site_version | default(value=1) %}
+	<article id="content" class="section v{{ site_version }}" data-slug="{{ section.title }}" data-orientation="{{ orientation }}">
+		{{ section.content | safe }}
+	</article>
+
+	<div class="sidebar-right header">
+		<div class="header-item">
+			{{<macros.render_ancestors for={section} config={config} lang={lang} />}}
+		</div>
+
+		<div class="header-item">
+			{{<macros.render_siblings for={section} config={config} lang={lang} />}}
+		</div>
+
+		{% if config.default_language == lang %}
+			<div class="header-item screen-large">
+				<h3 class="sitemap-title">Sitemap</h3>
+				<nav class="sitemap">
+					{{<macros.render_sitemap path="_index.md" config={config} lang={lang} />}}
+				</nav>
+			</div>
+		{% endif %}
+
+		<div class="flex--1">
+			<div class="footer-item fixed right"><a class="unstyle" href="#">Back to Top</a></div>
+		</div>
+	</div>
+{% endblock content %}

@@ -1,0 +1,31 @@
+article {
+	order: 3;
+}
+
+.sidebar-right {
+	display: none;
+	order: 2;
+}
+
+@container (min-width: calc(#{$breakpoint-small})){
+	.sidebar-left {
+		display: flex;
+		min-height: 100%;
+		flex-direction: column;
+		justify-content: start;
+	}
+}
+
+@container (min-width: calc(#{$breakpoint-large})){
+  	article {
+		order: 2;
+	}
+
+	.sidebar-right {
+		order: 3;
+		display: flex;
+		min-height: 100%;
+		flex-direction: column;
+		justify-content: start;
+	}
+}
