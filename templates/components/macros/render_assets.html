@@ -28,7 +28,7 @@
 
 {% if has_asset | default(value=false) %} 
 	<dt class="asset {{ name }}">{{ name }}</dt>
-	{% for asset in page?.assets | default(value=section?.assets | default(value=[])) %}
+	{% for asset in page?.assets | default(value=section?.assets | default(value=[])) | sort | reverse %}
 		{% for type in types %}
 			{% if asset is ending_with(pat=type) %}
 				{% if asset is not containing(pat="一一") and asset is not containing(pat="10.") %}
@@ -39,7 +39,7 @@
 	{% endfor %}
 	{% if page and page.ancestors | last %}
 		{% set ancestor_section = get_section(path=page.ancestors | last) %}
-		{% for asset in ancestor_section.assets | default(value=[]) %}
+		{% for asset in ancestor_section.assets | default(value=[]) | sort | reverse %}
 			{% for type in types %}
 				{% if asset is ending_with(pat=type) %}
 					{% if asset is not containing(pat="一一") and asset is not containing(pat="10.") %}
