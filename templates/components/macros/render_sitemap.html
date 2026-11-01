@@ -22,16 +22,7 @@
 		{% endif %}
 		
 		{% for subsection in subsections %}
-			{% set subsection_info = get_section(path=subsection, lang=lang) %}
-			{% if subsection_info.relative_path == current_path %}
-				{{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={section_info.transparent} current_path={current_path} />}}
-			{% endif %}
-		{% endfor %}
-		{% for subsection in subsections %}
-			{% set subsection_info = get_section(path=subsection, lang=lang) %}
-			{% if subsection_info.relative_path != current_path %}
-				{{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={section_info.transparent} current_path={current_path} />}}
-			{% endif %}
+			{{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={section_info.transparent} current_path={current_path} />}}
 		{% endfor %}
 	{% else %}
 		{% if section_info.transparent %}
@@ -39,9 +30,9 @@
 				{{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={false} current_path={current_path} />}}
 			{% endfor %}
 		{% else %}
-			<details {% if current_path == section_info.relative_path %}open{% endif %}>
+			<details {% if current_path == section_info.relative_path and false %}open{% endif %}>
 				{% if current_path == section_info.relative_path %}
-					<summary class="current">{{ section_info.title }}</summary>
+					<summary class="font-weight--bold">{{ section_info.title }}</summary>
 				{% elif config.default_language != lang %}
 					{% set sub_path = section_info.relative_path | replace(from="_index.md", to="") | replace(from="index.md", to="") | replace(from="_index.no.md", to="") | replace(from="index.no.md", to="") %}
 					<summary><a href="{{ "/" ~ lang ~ "/" ~ sub_path }}">{{ section_info.title }}</a></summary>

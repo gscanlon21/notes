@@ -2,11 +2,11 @@
 {#
     Iterates though the site's ancestors and renders lists for each.
 #}
-{% component macros.render_ancestors(for, config, lang: string) %}
+{% component macros.render_ancestors(config, page = null, section = null, lang: string) %}
 <h3 class="sitemap-title header-title">Ancestors</h3>
 <nav class="sitemap">
 	<menu class="sitemap-list">
-		{% for ancestor in for.ancestors %}
+		{% for ancestor in page.ancestors | default(value=section.ancestors) %}
 			{% set ancestor_info = get_section(path=ancestor, lang=lang, allow_missing=false) %}
 			{% if not ancestor_info.transparent and ancestor_info.relative_path != "_index.no.md" %}
 				{% if config.default_language != lang %}
@@ -17,8 +17,21 @@
 				{% endif %}
 			{% endif %}
 		{% endfor %}
-		{% if for.transparent != true and for.relative_path != "_index.no.md" %}
-			<li class="current">{{ for.title | safe }}</li>
+		{% if page.transparent | default(value=section.transparent) != true and page.relative_path | default(value=section.relative_path) != "_index.no.md" %}
+			{% if section and section.pages | length > 0 %}
+				<details open="open">
+					<summary class="current">{{ section.title }}</summary>
+					<menu class="sitemap-list">
+						{{<macros.render_list_links config={config} pages={section.pages} current_path={section.relative_path} />}}
+
+						{% for subsection in section.subsections %}
+						{{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={false} current_path={section.relative_path} />}}
+					{% endfor %}
+					</menu>
+				</details>
+			{% else %}
+				<li class="current">{{ page.title | default(value=section.title) | safe }}</li>
+			{% endif %}
 		{% endif %}
 	</menu>
 </nav>
