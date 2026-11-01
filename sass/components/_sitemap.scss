@@ -34,7 +34,12 @@ article.sitemap {
 		margin-block-end: $base-padding * 0.1;
 		line-height: $line-height-tight;
 
-		& > a, & > summary > a {
+		& > summary {
+			padding-block-start: $base-padding * 0.1;
+			padding-block-end: $base-padding * 0.25;
+		}
+
+		& > a {
 			padding-block-start: $base-padding * 0.1;
 			padding-block-end: $base-padding * 0.25;
 			display: inline-flex;

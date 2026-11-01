@@ -13,4 +13,4 @@ see_also = [
 
 
 **The Slient Sky**
-: Henrietta Leavitt pioneers the discovery of a novel way to measure the distances between us an neighboring stars and thus, the size of our galaxy.
+: Henrietta Leavitt pioneers the discovery of a novel way to measure the distances between us and neighboring stars and thus, the size of our galaxy.

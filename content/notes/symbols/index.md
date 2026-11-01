@@ -16,7 +16,7 @@ see_also = [
 
 # Dashes
 
-**Solidus**
+**En Dash**
 *U+2013*
 : `–`
 
@@ -504,7 +504,7 @@ _U+29F7_
 *U+2171*
 : `ⅱ`
 
-# Quotation Marks**
+# Quotation Marks
 
 **Left Double Quotation Mark**
 *U+201C*
