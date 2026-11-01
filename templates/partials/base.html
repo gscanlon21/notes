@@ -121,7 +121,7 @@
 
 	{% set parent_section_path = section?.ancestors | default(value=page?.ancestors | default(value=[])) | last %}
 	{% if parent_section_path %}
-		{% set parent_section = get_section(path=parent_section_path) %}
+		{% set parent_section = get_section(path=parent_section_path, lang=lang) %}
 
 		{% set parent_js_lang = load_data(path=parent_section.path ~ "_index.no.js", required=false) %}
     	{% if parent_js_lang %}<script type="module">{{ parent_js_lang | safe }}</script>{% endif %}
