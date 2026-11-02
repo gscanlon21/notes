@@ -18,7 +18,7 @@
 			{% endif %}
 		{% endfor %}
 		{% if page.transparent | default(value=section.transparent) != true and page.relative_path | default(value=section.relative_path) != "_index.no.md" %}
-			{% if section and section.pages | length > 0 %}
+			{% if section and section.pages | length > 0 or section and section.subsections | length > 0 %}
 				<details open="open">
 					<summary class="current">{{ section.title }}</summary>
 					<menu class="sitemap-list">
