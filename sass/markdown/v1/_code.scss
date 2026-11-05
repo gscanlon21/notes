@@ -103,4 +103,8 @@ article.v1 {
 		display: inline-flex;
 		word-break: break-word;
 	}
+
+	dd:has(> code) {
+		overflow-x: visible !important;
+	}
 }

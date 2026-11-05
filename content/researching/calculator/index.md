@@ -23,41 +23,19 @@ alerts = [
 
 {{ <hidden page={page} section={section} /> }}
 
+{{ <image title="Right Triangle" file="一Right_Triangle.png" open={false} inline={false} /> }}
 
 <div class="calculator chart">
-    <div class="svg-wrap">
-        <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
-            <!-- Unit circle -->
-            <circle class="grid" cx="400" cy="400" r="300" />
-            <circle class="circle" cx="400" cy="400" r="300" />
-            <!-- Axes -->
-            <line class="axis" x1="55" y1="400" x2="745" y2="400" />
-            <line class="axis" x1="400" y1="55" x2="400" y2="745" />
-            <!-- Labels -->
-            <text class="axis-label" x="750" y="408">x</text>
-            <text class="axis-label" x="408" y="45">y</text>
-            <text class="tick-label" x="705" y="393">1</text>
-            <text class="tick-label" x="380" y="90">1</text>
-            <text class="tick-label" x="62" y="393" >−1</text>
-            <text class="tick-label" x="380" y="725">−1</text>
-            <!-- Dynamic drawing -->
-            <g id="drawing"></g>
-        </svg>
-    </div>
     <dl>
         <dt><strong>a</strong></dt>
-        <dd id="result-a">?</dd> 
+        <dd><code id="result-a">&nbsp;</code></dd>
         <dt><strong>b</strong></dt>
-        <dd id="result-b">?</dd>
+        <dd><code id="result-b">&nbsp;</code></dd>
         <dt><strong>c</strong></dt>
-        <dd id="result-c">?</dd>
+        <dd><code id="result-c">&nbsp;</code></dd>
         <dt><strong>A</strong></dt>
-        <dd id="result-A">?</dd>
+        <dd><code id="result-A">&nbsp;</code></dd>
         <dt><strong>B</strong></dt>
-        <dd id="result-B">?</dd>
-        <dt><strong>t.x</strong></dt>
-        <dd id="result-x">?</dd>
-        <dt><strong>t.y</strong></dt>
-        <dd id="result-y">?</dd>
+        <dd><code id="result-B">&nbsp;</code></dd>
     </dl>
 </div>

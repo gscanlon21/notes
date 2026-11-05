@@ -46,10 +46,10 @@ for (const second of document.querySelectorAll('dl + dl')) {
 for (const element of Array.from(document.getElementsByTagName('pre'))) {
     element.addEventListener('click', () => {
         navigator.clipboard.writeText(element.innerText.trim()).then(() => {
-            element.classList.add('copied');
-            setTimeout(() => {
-                element.classList.remove('copied');
-            }, 500);
+            element.classList.remove('copied');
+			requestAnimationFrame(() => {
+				element.classList.add('copied');
+			});
         });
     })
 }
@@ -58,10 +58,10 @@ for (const element of Array.from(document.getElementsByTagName('pre'))) {
 for (const element of Array.from(document.getElementsByTagName('code'))) {
     element.addEventListener('click', () => {
         navigator.clipboard.writeText(element.innerText.trim()).then(() => {
-            element.classList.add('copied');
-            setTimeout(() => {
-                element.classList.remove('copied');
-            }, 500);
+            element.classList.remove('copied');
+			requestAnimationFrame(() => {
+				element.classList.add('copied');
+			});
         });
     })
 }

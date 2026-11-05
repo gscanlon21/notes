@@ -8,13 +8,7 @@ const fields = {
 
 const calculateButton = document.getElementById("calculate");
 const resetButton = document.getElementById("reset");
-const drawing = document.getElementById("drawing");
 const status = document.getElementById("status");
-
-// SVG circle dimensions
-const CX = 400;
-const CY = 400;
-const R = 300;
 
 
 /* HELPERS
@@ -45,20 +39,6 @@ function format(value) {
     return Number(value.toFixed(4)).toString();
 }
 
-function clearDrawing() {
-    drawing.innerHTML = "";
-}
-
-function svgElement(name, attrs = {}) {
-    const element = document.createElementNS("http://www.w3.org/2000/svg", name);
-
-    for (const [key, value] of Object.entries(attrs)) {
-        element.setAttribute(key, value);
-    }
-
-    return element;
-}
-
 
 /* GET INPUTS
 ***************/
@@ -86,14 +66,12 @@ function validateInputs(v) {
     // Angles must be between 0 and 90.
     for (const key of ["A", "B"]) {
         if (v[key] !== null && (v[key] <= 0 || v[key] >= 90)) {
-
             return `${key} must be between 0° and 90°.`;
         }
     }
 
     // If both A and B are entered, they must add to 90.
     if (v.A !== null && v.B !== null) {
-
         if (Math.abs(v.A + v.B - 90) > 0.0001) {
             return "Angles A and B must add up to 90°.";
         }
@@ -110,6 +88,7 @@ function validateInputs(v) {
 
     return null;
 }
+
 
 /* SOLVE TRIANGLE
 *******************/
@@ -256,7 +235,7 @@ function solveTriangle(v) {
             }
         }
 
-        // Three sides can give angles
+        // Two sides can give angles
         if (v.a !== null && v.b !== null) {
             if (v.A === null) {
                 v.A = Math.atan2(v.a, v.b) * 180 / Math.PI;
@@ -298,225 +277,6 @@ function solveTriangle(v) {
 }
 
 
-/* DRAW UNIT CIRCLE
-*********************/
-function drawTriangle(v) {
-    clearDrawing();
-
-    /*
-        We use angle A as the unit-circle angle.
-
-        Mathematical convention:
-
-             A = 0° -> positive x-axis
-             A > 0 -> counterclockwise
-    */
-    const angle = v.A * Math.PI / 180;
-    const x = Math.cos(angle);
-    const y = Math.sin(angle);
-
-	document.getElementById("result-x").innerHTML = `<code>${x}</code>`;
-	document.getElementById("result-y").innerHTML = `<code>${y}</code>`;
-
-    // Unit-circle screen coordinates.
-    const pointX = CX + x * R;
-    const pointY = CY - y * R;
-
-    // Projection onto x-axis.
-    const projectionX = pointX;
-    const projectionY = CY;
-
-    // Triangle
-    const triangle = svgElement("polygon", {
-		points: `
-			${CX},${CY}
-			${projectionX},${projectionY}
-			${pointX},${pointY}
-		`,
-		class: "triangle"
-	});
-
-    drawing.appendChild(triangle);
-
-    // Horizontal projection
-    const horizontal = svgElement("line", {
-		x1: CX,
-		y1: CY,
-		x2: projectionX,
-		y2: projectionY,
-		class: "projection"
-	});
-
-    drawing.appendChild(horizontal);
-
-    // Vertical projection
-    const vertical = svgElement("line",
-	{
-		x1: projectionX,
-		y1: projectionY,
-		x2: pointX,
-		y2: pointY,
-		class: "projection"
-	});
-
-    drawing.appendChild(vertical);
-
-    // Hypotenuse / terminal ray
-    const ray = svgElement("line", {
-		x1: CX,
-		y1: CY,
-		x2: pointX,
-		y2: pointY,
-		class: "ray side-c"
-	});
-
-    drawing.appendChild(ray);
-
-    // Right angle marker
-    const size = 18;
-
-    const marker = svgElement("polyline", {
-		points: `
-			${projectionX - size},${projectionY}
-			${projectionX - size},${projectionY - size}
-			${projectionX},${projectionY - size}
-		`,
-		class: "right-angle"
-	});
-
-    drawing.appendChild(marker);
-
-    // Angle arc A
-    const arcRadius = 75;
-    const arcEndX = CX + arcRadius * Math.cos(angle);
-    const arcEndY = CY - arcRadius * Math.sin(angle);
-    const largeArc = v.A > 180 ? 1 : 0;
-
-    const arc = svgElement("path", {
-		d: `
-			M ${CX + arcRadius} ${CY}
-			A ${arcRadius} ${arcRadius}
-				0 ${largeArc} 0
-				${arcEndX} ${arcEndY}
-		`,
-		class: "angle-arc"
-	});
-
-    drawing.appendChild(arc);
-
-
-	// Angle arc B
-	const arcRadius2 = 75;
-
-	// Vector from vertex to the vertical-side endpoint.
-	const dx1 = projectionX - pointX;
-	const dy1 = projectionY - pointY;
-
-	// Vector from vertex toward the origin.
-	const dx2 = CX - pointX;
-	const dy2 = CY - pointY;
-
-	// Calculate the direction of each vector.
-	const startAngle2 = Math.atan2(dy1, dx1);
-	const endAngle2 = Math.atan2(dy2, dx2);
-
-	// Calculate the shortest angular difference.
-	let delta2 = endAngle2 - startAngle2;
-
-	while (delta2 > Math.PI) delta2 -= 2 * Math.PI;
-	while (delta2 <= -Math.PI) delta2 += 2 * Math.PI;
-
-	// Calculate arc endpoints.
-	const startX2 = pointX + arcRadius2 * Math.cos(startAngle2);
-	const startY2 = pointY + arcRadius2 * Math.sin(startAngle2);
-
-	const endX2 = pointX + arcRadius2 * Math.cos(endAngle2);
-	const endY2 = pointY + arcRadius2 * Math.sin(endAngle2);
-
-	// SVG sweep direction depends on the sign of the angle.
-	const sweep2 = delta2 >= 0 ? 1 : 0;
-
-	const arc2 = svgElement("path", {
-		d: `
-			M ${startX2} ${startY2}
-			A ${arcRadius2} ${arcRadius2}
-			0 0 ${sweep2}
-			${endX2} ${endY2}
-		`,
-		class: "angle-arc"
-	});
-
-	drawing.appendChild(arc2);
-
-    // Terminal point  
-    const point = svgElement("circle", {
-		cx: pointX,
-		cy: pointY,
-		r: 9,
-		class: "point"
-	});
-
-    drawing.appendChild(point);
-
-    // Origin
-    const origin = svgElement("circle", {
-		cx: CX,
-		cy: CY,
-		r: 6,
-		class: "origin"
-	});
-
-    drawing.appendChild(origin);
-
-	// Angle label
-    const labelAngle = Math.min(v.A / 2, 75);
-    const labelRad = labelAngle * Math.PI / 180;
-    const labelRadius = 105;
-
-    const angleLabel = svgElement("text", {
-		x: CX + labelRadius * Math.cos(labelRad),
-		y: CY - labelRadius * Math.sin(labelRad),
-		class: "angle-label",
-		"text-anchor": "middle"
-	});
-
-    angleLabel.textContent = `A°`;
-    drawing.appendChild(angleLabel);
-
-    // Side labels
-    const bLabel = svgElement("text",
-	{
-		x: (CX + projectionX) / 2,
-		y: CY + 30,
-		class: "side-label",
-		"text-anchor": "middle"
-	});
-
-    bLabel.textContent = `b`;
-    drawing.appendChild(bLabel);
-
-    const aLabel = svgElement("text",
-	{
-		x: projectionX + 18,
-		y: (projectionY + pointY) / 2,
-		class: "side-label"
-	});
-
-    aLabel.textContent = `a`;
-    drawing.appendChild(aLabel);
-
-    const cLabel = svgElement("text",
-	{
-		x: (CX + pointX) / 2 + 10,
-		y: (CY + pointY) / 2 - 10,
-		class: "side-label"
-	});
-
-    cLabel.textContent = `c`;
-    drawing.appendChild(cLabel);
-}
-
-
 /* MAIN CALCULATION
 *********************/
 function calculate() {
@@ -529,7 +289,6 @@ function calculate() {
         status.className = "status error";
         status.textContent = "Enter at least two independent values.";
 
-        clearDrawing();
         return;
     }
 
@@ -538,10 +297,8 @@ function calculate() {
 
     if (validation) {
         status.className = "status error";
-
         status.textContent = validation;
 
-        clearDrawing();
         return;
     }
 
@@ -549,11 +306,9 @@ function calculate() {
     try {
         values = solveTriangle(values);
     } catch (error) {
-
         status.className = "status error";
         status.textContent = error.message;
 
-        clearDrawing();
         return;
     }
 
@@ -575,16 +330,14 @@ function calculate() {
         return;
     }
 
-    document.getElementById("result-a").innerHTML = `<code>${values.a}</code>`;
-    document.getElementById("result-b").innerHTML = `<code>${values.b}</code>`;
-	document.getElementById("result-c").innerHTML = `<code>${values.c}</code>`;
-	document.getElementById("result-A").innerHTML = `<code>${values.A}</code>`;
-	document.getElementById("result-B").innerHTML = `<code>${values.B}</code>`;
+    document.getElementById("result-a").innerHTML = `${format(values.a)}`;
+    document.getElementById("result-b").innerHTML = `${format(values.b)}`;
+    document.getElementById("result-c").innerHTML = `${format(values.c)}`;
+    document.getElementById("result-A").innerHTML = `${format(values.A)}`;
+    document.getElementById("result-B").innerHTML = `${format(values.B)}`;
 
     status.className = "status success";
     status.textContent = "Triangle calculated successfully.";
-
-    drawTriangle(values);
 }
 
 
@@ -595,11 +348,8 @@ function reset() {
         field.value = "";
     }
 
-    clearDrawing();
-
     status.className = "status";
-    status.textContent = "Enter any two independent values.";
-    info.textContent = "Enter values to calculate the triangle.";
+    status.textContent = "...";
 }
 
 /* EVENTS
@@ -607,13 +357,11 @@ function reset() {
 calculateButton.addEventListener("click", calculate);
 resetButton.addEventListener("click", reset);
 
-
 // Calculate when Enter is pressed.
 for (const input of Object.values(fields)) {
     input.addEventListener("keydown", event => {
-            if (event.key === "Enter") {
-                calculate();
-            }
+        if (event.key === "Enter") {
+            calculate();
         }
-    );
+    });
 }
