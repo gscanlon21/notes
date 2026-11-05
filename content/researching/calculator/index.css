@@ -1,10 +1,35 @@
+article.v1 {
+	/* Reduce spacing between code blocks */
+	h6+h6:has(+pre), article.v1 pre+h6:has(+pre) {
+		margin-block-start: 0.5em;
+	}
 
-.graph {
-	min-width: 0;
-    grid-template-columns: 440px 1fr;
+	/* Make symbols larger */
+	code {
+		justify-content: center;
+		padding-block: 0.1em;
+		align-items: center;
+		line-height: 1.25;
+		font-size: 2rem;
+		display: flex;
+	}
+}
+
+.page {
+    justify-content: center;
+    padding-bottom: 3rem;
+    margin-bottom: -3rem;
     align-items: start;
-	display: grid;
-	gap: 35px;
+}
+
+.chart {
+    justify-self: center;
+    position: relative;
+    text-align: center;
+	line-height: 1;
+	color: black;
+	width: 100%;
+    gap: 8px;
 }
 
 .status {

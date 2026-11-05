@@ -33,7 +33,7 @@
 		{% if page?.extra?.alerts | default(value=section?.extra?.alerts) %} 
 			{% for alert in page?.extra?.alerts | default(value=section?.extra?.alerts) %}
 				<blockquote class="markdown-alert-{{ alert.type }}">
-					<p>{{ alert.content }}</p>
+					<p id="{{ alert.id | default(value='') }}">{{ alert.content }}</p>
 					{% if alert.title %} 
 						<blockquote>
 							<p>{{ alert.title }}</p>

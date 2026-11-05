@@ -10,7 +10,6 @@ const calculateButton = document.getElementById("calculate");
 const resetButton = document.getElementById("reset");
 const drawing = document.getElementById("drawing");
 const status = document.getElementById("status");
-const info = document.getElementById("info");
 
 // SVG circle dimensions
 const CX = 400;
@@ -316,6 +315,9 @@ function drawTriangle(v) {
     const x = Math.cos(angle);
     const y = Math.sin(angle);
 
+	document.getElementById("result-x").innerHTML = `<code>${x}</code>`;
+	document.getElementById("result-y").innerHTML = `<code>${y}</code>`;
+
     // Unit-circle screen coordinates.
     const pointX = CX + x * R;
     const pointY = CY - y * R;
@@ -365,7 +367,7 @@ function drawTriangle(v) {
 		y1: CY,
 		x2: pointX,
 		y2: pointY,
-		class: "ray"
+		class: "ray side-c"
 	});
 
     drawing.appendChild(ray);
@@ -384,7 +386,7 @@ function drawTriangle(v) {
 
     drawing.appendChild(marker);
 
-    // Angle arc 
+    // Angle arc A
     const arcRadius = 75;
     const arcEndX = CX + arcRadius * Math.cos(angle);
     const arcEndY = CY - arcRadius * Math.sin(angle);
@@ -401,6 +403,50 @@ function drawTriangle(v) {
 	});
 
     drawing.appendChild(arc);
+
+
+	// Angle arc B
+	const arcRadius2 = 75;
+
+	// Vector from vertex to the vertical-side endpoint.
+	const dx1 = projectionX - pointX;
+	const dy1 = projectionY - pointY;
+
+	// Vector from vertex toward the origin.
+	const dx2 = CX - pointX;
+	const dy2 = CY - pointY;
+
+	// Calculate the direction of each vector.
+	const startAngle2 = Math.atan2(dy1, dx1);
+	const endAngle2 = Math.atan2(dy2, dx2);
+
+	// Calculate the shortest angular difference.
+	let delta2 = endAngle2 - startAngle2;
+
+	while (delta2 > Math.PI) delta2 -= 2 * Math.PI;
+	while (delta2 <= -Math.PI) delta2 += 2 * Math.PI;
+
+	// Calculate arc endpoints.
+	const startX2 = pointX + arcRadius2 * Math.cos(startAngle2);
+	const startY2 = pointY + arcRadius2 * Math.sin(startAngle2);
+
+	const endX2 = pointX + arcRadius2 * Math.cos(endAngle2);
+	const endY2 = pointY + arcRadius2 * Math.sin(endAngle2);
+
+	// SVG sweep direction depends on the sign of the angle.
+	const sweep2 = delta2 >= 0 ? 1 : 0;
+
+	const arc2 = svgElement("path", {
+		d: `
+			M ${startX2} ${startY2}
+			A ${arcRadius2} ${arcRadius2}
+			0 0 ${sweep2}
+			${endX2} ${endY2}
+		`,
+		class: "angle-arc"
+	});
+
+	drawing.appendChild(arc2);
 
     // Terminal point  
     const point = svgElement("circle", {
@@ -422,7 +468,7 @@ function drawTriangle(v) {
 
     drawing.appendChild(origin);
 
-    // Angle label
+	// Angle label
     const labelAngle = Math.min(v.A / 2, 75);
     const labelRad = labelAngle * Math.PI / 180;
     const labelRadius = 105;
@@ -434,22 +480,8 @@ function drawTriangle(v) {
 		"text-anchor": "middle"
 	});
 
-    angleLabel.textContent = `A = ${format(v.A)}°`;
-
+    angleLabel.textContent = `A°`;
     drawing.appendChild(angleLabel);
-
-    // Coordinate
-    const coordinate = svgElement("text",
-	{
-		x: pointX + (x >= 0 ? 14 : -14),
-		y: pointY + (y >= 0 ? -15 : 28),
-		class: "coordinate",
-		"text-anchor": x >= 0 ? "start" : "end"
-	});
-
-    coordinate.textContent = `(${format(x)}, ${format(y)})`;
-
-    drawing.appendChild(coordinate);
 
     // Side labels
     const bLabel = svgElement("text",
@@ -460,8 +492,7 @@ function drawTriangle(v) {
 		"text-anchor": "middle"
 	});
 
-    bLabel.textContent = `b = ${format(v.b)}`;
-
+    bLabel.textContent = `b`;
     drawing.appendChild(bLabel);
 
     const aLabel = svgElement("text",
@@ -471,8 +502,7 @@ function drawTriangle(v) {
 		class: "side-label"
 	});
 
-    aLabel.textContent = `a = ${format(v.a)}`;
-
+    aLabel.textContent = `a`;
     drawing.appendChild(aLabel);
 
     const cLabel = svgElement("text",
@@ -482,8 +512,7 @@ function drawTriangle(v) {
 		class: "side-label"
 	});
 
-    cLabel.textContent = `c = ${format(v.c)}`;
-
+    cLabel.textContent = `c`;
     drawing.appendChild(cLabel);
 }
 
@@ -501,9 +530,6 @@ function calculate() {
         status.textContent = "Enter at least two independent values.";
 
         clearDrawing();
-
-        info.textContent = "Enter values to calculate the triangle.";
-
         return;
     }
 
@@ -516,9 +542,6 @@ function calculate() {
         status.textContent = validation;
 
         clearDrawing();
-
-        info.textContent = "Invalid triangle.";
-
         return;
     }
 
@@ -545,7 +568,6 @@ function calculate() {
     if (!complete) {
         status.className = "status";
         status.textContent = "At least one side is required.";
-		info.textContent = `A = ${format(values.A)}°   B = ${format(values.B)}°`;
 
         setValue("A", values.A);
         setValue("B", values.B);
@@ -553,15 +575,14 @@ function calculate() {
         return;
     }
 
-    setValue("a", values.a);
-    setValue("b", values.b);
-    setValue("c", values.c);
-    setValue("A", values.A);
-    setValue("B", values.B);
+    document.getElementById("result-a").innerHTML = `<code>${values.a}</code>`;
+    document.getElementById("result-b").innerHTML = `<code>${values.b}</code>`;
+	document.getElementById("result-c").innerHTML = `<code>${values.c}</code>`;
+	document.getElementById("result-A").innerHTML = `<code>${values.A}</code>`;
+	document.getElementById("result-B").innerHTML = `<code>${values.B}</code>`;
 
     status.className = "status success";
     status.textContent = "Triangle calculated successfully.";
-    info.textContent = `A = ${format(values.A)}°   •   B = ${format(values.B)}°   •   C = 90°`;
 
     drawTriangle(values);
 }

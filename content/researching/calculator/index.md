@@ -15,14 +15,16 @@ options = [
   { name = "Angle A", id = "A", type = "number", value = "" },
   { name = "Angle B", id = "B", type = "number", value = "" },
   { name = "Calculate", id = "calculate", type = "button" },
-  { name = "Status", id = "status", type = "output" },
+]
+alerts = [
+  { type = "note", id = "status", title = "Status", content = "..." },
 ]
 +++
 
 {{ <hidden page={page} section={section} /> }}
 
 
-<div class="calculator graph">
+<div class="calculator chart">
     <div class="svg-wrap">
         <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
             <!-- Unit circle -->
@@ -42,8 +44,20 @@ options = [
             <g id="drawing"></g>
         </svg>
     </div>
-    <div id="info" class="info">
-        Enter values to calculate the triangle.
-    </div>
+    <dl>
+        <dt><strong>a</strong></dt>
+        <dd id="result-a">?</dd> 
+        <dt><strong>b</strong></dt>
+        <dd id="result-b">?</dd>
+        <dt><strong>c</strong></dt>
+        <dd id="result-c">?</dd>
+        <dt><strong>A</strong></dt>
+        <dd id="result-A">?</dd>
+        <dt><strong>B</strong></dt>
+        <dd id="result-B">?</dd>
+        <dt><strong>t.x</strong></dt>
+        <dd id="result-x">?</dd>
+        <dt><strong>t.y</strong></dt>
+        <dd id="result-y">?</dd>
+    </dl>
 </div>
-
