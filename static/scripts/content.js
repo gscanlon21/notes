@@ -42,6 +42,13 @@ for (const second of document.querySelectorAll('dl + dl')) {
     second.remove();
 }
 
+// Set the color of a hex color code to the color of the hex color code.
+for (const element of Array.from(document.getElementsByTagName('code'))) {
+	if (/^#([\w\d]{3}|[\w\d]{6}|[\w\d]{8})$/.test(element.textContent)) {
+		element.style.color = element.textContent;
+	}
+}
+
 // Copy multi-line code elements when they are clicked. Flash the bg.
 for (const element of Array.from(document.getElementsByTagName('pre'))) {
     element.addEventListener('click', () => {

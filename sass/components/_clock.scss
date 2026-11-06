@@ -75,3 +75,9 @@
 		transform: rotate(540deg);
 	}
 }
+
+@media print {
+	.hour {
+		display: none;
+	}
+}

@@ -238,3 +238,11 @@ Code can also be displayed inline by surounding the code with back ticks. `/* Th
 | 160                | 13.7 seconds     | 25.6 seconds    | Instantaneous |
 | 165                | Instantaneous    | Instantaneous   | Instantaneous |
 
+
+
+# Arrow Lists
+> - > DNA 
+> - > (transcription) 
+> - > mRNA ("transcripts") 
+> - > (translation) 
+> - > Proteins
