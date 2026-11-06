@@ -13,6 +13,7 @@ const gridRefCheck = document.getElementById("grid-reference-checkbox");
 const startCheck = document.getElementById("start-checkbox");
 const lettersInput = document.getElementById("letters-text");
 const regenerate = document.getElementById("regenerate");
+const options = document.getElementById("options");
 
 const randomLetter = () => Array.from(lettersInput.value ?? letters).aRandom();
 const redOrGreen = () => ["red", "green"].aRandom();

@@ -9,6 +9,7 @@ const rowsColsRange = document.getElementById("row-col-range");
 const redGreenCheck = document.getElementById("red-green-checkbox");
 const sizeRange = document.getElementById("size-range");
 const gapRange = document.getElementById("gap-range");
+const options = document.getElementById("options");
 
 
 const randomShape = () => shapes.aRandom();

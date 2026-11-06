@@ -11,6 +11,7 @@ const widthRange = document.getElementById("width-range");
 const guessText = document.getElementById("lines-text");
 const redGreenCheck = document.getElementById("red-green-checkbox");
 const gapRange = document.getElementById("gap-range");
+const options = document.getElementById("options");
 
 const randomWidth = () => Math.floor(Math.random() * 10);
 const redOrGreen = () => ["red", "green"].aRandom();

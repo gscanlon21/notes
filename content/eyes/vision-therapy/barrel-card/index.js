@@ -2,6 +2,7 @@ const chart = document.getElementById("chart");
 const gapRange = document.getElementById("gap-range");
 const sizeRange = document.getElementById("size-range");
 const redGreenCheck = document.getElementById("red-green-checkbox");
+const options = document.getElementById("options");
 
 const setSize = () => chart.style.setProperty('--size', `${sizeRange.value}px`);
 options.addEventListener('reset', () => setTimeout(setSize));

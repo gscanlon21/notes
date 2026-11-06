@@ -4,6 +4,7 @@ const radiusRange = document.getElementById("radius-select");
 const circlesRange = document.getElementById("circles-select");
 const fontSizeRange = document.getElementById("font-size-select");
 const centerCircleCheckbox = document.getElementById("center-select");
+const options = document.getElementById("options");
 
 const generateCircleChart = (_, circles, radius) => {
 	circles = circlesRange.value = circles ?? circlesRange.value;

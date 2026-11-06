@@ -1,10 +1,54 @@
-@keyframes rotating {
-	from {
-		transform: rotate(180deg);
+.hand {
+	background-color: rgba(var(--color-text), var(--hand-opacity, 0.75));
+	transition: opacity 2500ms ease-in;
+	transform-origin: 50% 100%;
+	display: inline-block;
+	border-radius: 100px;
+	position: absolute;
+	height: 20vmin;
+	bottom: 100%;
+	opacity: 0;
+	width: 1px;
+	left: 0;
+}
+
+.hour {
+	background-color: rgba(var(--color-text), var(--hand-opacity, 0.75));
+	bottom: calc(50% - 5vmin);
+	transform-origin: 0% 0%;
+	position: fixed;
+	height: 10vmin;
+	width: 2px;
+	left: 50%;
+
+	& > .hand {
+		left: 0.5px;
 	}
 
-	to {
-		transform: rotate(540deg);
+	&::before {
+		background-color: color(--color-bg, 1);
+		transform: translateX(-50%);
+		position: absolute;
+		border-radius: 50%;
+		content: '';
+		height: 5px;
+		top: -2.5px;
+		width: 5px;
+		z-index: 1;
+		left: 50%;
+	}
+
+	&::after {
+		background-color: rgba(var(--color-text), var(--hand-opacity, 0.75));
+		transform: translateX(-50%);
+		position: absolute;
+		border-radius: 50%;
+		content: '';
+		height: 5px;
+		top: -2.5px;
+		width: 5px;
+		z-index: 2;
+		left: 50%;
 	}
 }
 
@@ -22,26 +66,12 @@
 	animation: rotating 43200s linear infinite;
 }
 
-.hand {
-	transition: opacity 2500ms ease-in;
-	display: inline-block;
-	transform-origin: 50% 100%;
-	width: 1px;
-	height: 20vmin;
-	position: absolute;
-	left: 0;
-	bottom: 100%;
-	opacity: 0;
-	background-color: color(--color-text, 0.75);
-	border-radius: 100px;
-}
+@keyframes rotating {
+	from {
+		transform: rotate(180deg);
+	}
 
-.hour {
-	position: fixed;
-	background-color: color(--color-text, 0.75);
-	left: 50%;
-	bottom: 50%;
-	width: 2px;
-	height: 10vmin;
-	transform-origin: 50% 50%;
+	to {
+		transform: rotate(540deg);
+	}
 }

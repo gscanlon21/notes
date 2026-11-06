@@ -8,6 +8,7 @@ const redGreenCheck = document.getElementById("red-green-checkbox");
 const fontSizeRange = document.getElementById("font-size-range");
 const numbersRange = document.getElementById("numbers-range");
 const gapRange = document.getElementById("gap-range");
+const options = document.getElementById("options");
 
 const redOrGreen = () => ["red", "green"].aRandom();
 

@@ -16,6 +16,7 @@ const randomnessRange = document.getElementById("randomness-range");
 const imgSizeRange = document.getElementById("image-size-range");
 const imgGapRange = document.getElementById("image-gap-range");
 const gapRange = document.getElementById("gap-range");
+const options = document.getElementById("options");
 
 const newImageScale = () => 1 - ((Math.random() * Consts.MAX_IMAGE_SCALE) / 100);
 const getImageArray = () => Array.from({ length: 100 }, (_, i) => String(i + 1).padStart(3, "0"));

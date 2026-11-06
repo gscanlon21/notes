@@ -7,6 +7,7 @@ const redGreenCheck = document.getElementById("red-green-checkbox");
 const circlesRange = document.getElementById("circles-select");
 const fontSizeRange = document.getElementById("font-size-select");
 const centerCheck = document.getElementById("center-select");
+const options = document.getElementById("options");
 
 const randomNumbers = (l) => Array.from({ length: l }, (_, i) => i + (startCheck.checked ? 1 : 0)).aShuffle();
 const redOrGreen = () => ["red", "green"].aRandom();

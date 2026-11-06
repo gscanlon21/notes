@@ -11,6 +11,7 @@ const redGreenCheck = document.getElementById("red-green-checkbox");
 const fontSizeRange = document.getElementById("font-size-range");
 const lettersRange = document.getElementById("letters-range");
 const gapRange = document.getElementById("gap-range");
+const options = document.getElementById("options");
 
 const redOrGreen = () => ["red", "green"].aRandom();
 const randomLetter = () => Array.from(lettersInput.value ?? uLetters).aRandom();

@@ -11,6 +11,7 @@ const letterGapRange = document.getElementById("letter-gap-select");
 const redGreenCheck = document.getElementById("red-green-checkbox");
 const arrows = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const gridRefCheck = document.getElementById("grid-reference-checkbox");
+const options = document.getElementById("options");
 
 const randomArrow = () => arrows.aRandom();
 const redOrGreen = () => ["red", "green"].aRandom();

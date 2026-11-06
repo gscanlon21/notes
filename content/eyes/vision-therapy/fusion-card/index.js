@@ -5,6 +5,7 @@ const chartRight = document.getElementById("right-eye");
 const redGreenCheck = document.getElementById("red-green-checkbox");
 const imgSizeRange = document.getElementById("image-size-range");
 const gapRange = document.getElementById("gap-range");
+const options = document.getElementById("options");
 
 const getImageArray = () => Array.from({ length: 100 }, (_, i) => String(i + 1).padStart(3, "0"));
 const getImage = (number) => `./pdshape_${number}.png`;

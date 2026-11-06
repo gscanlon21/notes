@@ -12,6 +12,7 @@ const arrowGapRange = document.getElementById("arrow-gap-select");
 const arrowSizeRange = document.getElementById("arrow-size-select");
 const chartSizeRange = document.getElementById("chart-size-select");
 const redGreenCheck = document.getElementById("red-green-checkbox");
+const options = document.getElementById("options");
 
 const randomArrow = () => arrows.aRandom();
 const redOrGreen = () => ["red", "green"].aRandom();

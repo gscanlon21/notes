@@ -16,6 +16,7 @@ const paragraphsRange = document.getElementById("paragraphs-range");
 const letterSpacingRange = document.getElementById("letter-spacing-range");
 const lineHeightRange = document.getElementById("line-height-range");
 const redGreenCheck = document.getElementById("red-green-checkbox");
+const options = document.getElementById("options");
 
 const randomLetter = () => Array.from(lettersInput.value ?? uLetters).aRandom();
 const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;

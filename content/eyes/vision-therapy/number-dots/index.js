@@ -2,6 +2,7 @@ const chart = document.getElementById("number-dots");
 const gapRange = document.getElementById("gap-range");
 const startCheck = document.getElementById("start-checkbox");
 const fontSizeRange = document.getElementById("font-size-range");
+const options = document.getElementById("options");
 
 const setFontSize = () => chart.style.setProperty('--font-size', `${fontSizeRange.value}px`);
 options.addEventListener('reset', () => setTimeout(setFontSize));

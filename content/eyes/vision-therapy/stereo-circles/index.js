@@ -5,6 +5,7 @@ const scaleInput = document.querySelector("#scale-input");
 const vergenceInput = document.querySelector("#vergence-input");
 const vergenceOutput = document.querySelector("#vergence-output");
 const scaleOutput = document.querySelector("#scale-output");
+const options = document.getElementById("options");
 
 onVergence();
 vergenceInput.addEventListener('input', onVergence);

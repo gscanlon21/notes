@@ -10,6 +10,7 @@ const letterGapRange = document.getElementById("letter-gap-select");
 const difficultyRange = document.getElementById("difficulty-range");
 const redGreenCheck = document.getElementById("red-green-checkbox");
 const altCheck = document.getElementById("alternate-checkbox");
+const options = document.getElementById("options");
 
 const redOrGreen = () => ["red", "green"].aRandom();
 

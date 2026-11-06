@@ -10,6 +10,7 @@ const fontSizeRange = document.getElementById("font-size-range");
 const redGreenCheck = document.getElementById("red-green-checkbox");
 const centerCheck = document.getElementById("center-checkbox");
 const lettersInput = document.getElementById("letters-text");
+const options = document.getElementById("options");
 
 const randomLetter = () => Array.from(lettersInput.value ?? letters).aRandom();
 const redOrGreen = () => ["red", "green"].aRandom();

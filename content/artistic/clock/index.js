@@ -1,6 +1,13 @@
 const STORAGE_KEY = "clock-options";
 const page = document.getElementById("content");
 const options = document.getElementById("options");
+const handOpacity = document.getElementById('hand-opacity');
+
+const setLineGap = () => document.body.style.setProperty('--hand-opacity', `${parseFloat(handOpacity.value)}`);
+options.addEventListener('reset', () => setTimeout(setLineGap));
+handOpacity.addEventListener("input", setLineGap);
+setLineGap();
+
 
 // Save form data to localStorage
 const saveFormData = () => {

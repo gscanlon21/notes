@@ -4,6 +4,7 @@ const imageCheck = document.getElementById("image-checkbox");
 const characterText = document.getElementById("alphanumeric-text");
 const redGreenCheck = document.getElementById("red-green-checkbox");
 const sizeRange = document.getElementById("size-range");
+const options = document.getElementById("options");
 
 const getImageArray = () => Array.from({ length: 100 }, (_, i) => String(i + 1).padStart(3, "0"));
 const getImage = (number) => `./pdshape_${number}.png`;
