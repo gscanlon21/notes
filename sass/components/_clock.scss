@@ -14,7 +14,7 @@
 
 .hour {
 	background-color: rgba(var(--color-text), var(--hand-opacity, 0.75));
-	bottom: calc(50% - 5vmin);
+	bottom: calc(50svh - 5vmin);
 	transform-origin: 0% 0%;
 	position: fixed;
 	height: 10vmin;

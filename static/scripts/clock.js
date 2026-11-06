@@ -1,7 +1,7 @@
 const STORAGE_KEY = "clock-options";
 let options = JSON.parse(localStorage.getItem(STORAGE_KEY));
 if (options?.enabled ?? true) {
-	console.debug(options);
+	console.debug('clock', options);
 
 	const total = 7;
 	const minOpacity = parseFloat(options?.opacityMin ?? 0.1);

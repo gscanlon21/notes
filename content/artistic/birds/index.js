@@ -35,7 +35,7 @@ const source = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
 
 // Restore form values
 for (const [name, value] of Object.entries(source)) {
-    const field = options.elements[name];
+    const field = options.elements[`birds-${name}`];
 
     if (field) {
         setField(field, value);
@@ -50,6 +50,9 @@ const speedLimit = document.getElementById("speedLimit");
 const separation = document.getElementById("separation");
 const alignment = document.getElementById("alignment");
 const cohesion = document.getElementById("cohesion");
+const colorMode = document.getElementById("colorMode");
+const color1 = document.getElementById("color1");
+const color2 = document.getElementById("color2");
 
 quantity.addEventListener("input", () => livelyPropertyListener("quantity", quantity.value));
 birdSize.addEventListener("input", () => livelyPropertyListener("birdSize", birdSize.value));
@@ -58,6 +61,9 @@ speedLimit.addEventListener("input", () => livelyPropertyListener("speedLimit", 
 separation.addEventListener("input", () => livelyPropertyListener("separation", separation.value));
 alignment.addEventListener("input", () => livelyPropertyListener("alignment", alignment.value));
 cohesion.addEventListener("input", () => livelyPropertyListener("cohesion", cohesion.value));
+colorMode.addEventListener("input", () => livelyPropertyListener("colorMode", colorMode.value));
+color1.addEventListener("input", () => livelyPropertyListener("color1", color1.value));
+color2.addEventListener("input", () => livelyPropertyListener("color2", color2.value));
 
 // Save whenever form changes
 options.addEventListener("change", saveFormData);

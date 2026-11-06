@@ -43,7 +43,7 @@ const source = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
 
 // Restore form values
 for (const [name, value] of Object.entries(source)) {
-    const field = options.elements[name];
+    const field = options.elements[`clock-${name}`];
 
     if (field) {
         setField(field, value);

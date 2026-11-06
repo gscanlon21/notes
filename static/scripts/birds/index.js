@@ -4,8 +4,13 @@ let options = JSON.parse(localStorage.getItem(STORAGE_KEY));
 if (options && options.enabledCheckbox) {
 	console.debug(options);
 
+	// Convert from hex to base-16.
 	options.color1 = parseInt(options.color1.substring(1), 16);
 	options.color2 = parseInt(options.color2.substring(1), 16);
+
+	const minDimension = Math.min(window.innerHeight, window.innerWidth);
+	options.minHeight = parseInt(options.minSize) * minDimension;
+	options.minWidth = parseInt(options.minSize) * minDimension;
 
 	const effect = VANTA.BIRDS({
 		touchControls: false,
@@ -15,7 +20,9 @@ if (options && options.enabledCheckbox) {
 		...options,
 	});
 
-	function livelyPropertyListener(name, val) {
+	console.debug('birds', effect, options);
+	window.livelyPropertyListener = (name, val) => {
+		console.debug(`livelyPropertyListener('${name}', '${val}')`);
 		if (name == "quantity") {
 			effect.setOptions({
 				quantity: val
@@ -60,11 +67,6 @@ if (options && options.enabledCheckbox) {
 			});
 			effect.valuesChanger();
 		}
-		else if (name == "backgroundColor") {
-			effect.setOptions({
-				backgroundColor: parseInt(val.substring(1), 16)
-			});
-		}
 		else if (name == "color1") {
 			effect.setOptions({
 				color1: parseInt(val.substring(1), 16)
@@ -78,26 +80,9 @@ if (options && options.enabledCheckbox) {
 			effect.restart();
 		}
 		else if (name == "colorMode") {
-			if (val == 0) {
-				effect.setOptions({
-					colorMode: "lerp"
-				});
-			}
-			else if (val == 1) {
-				effect.setOptions({
-					colorMode: "variance"
-				});
-			}
-			else if (val == 2) {
-				effect.setOptions({
-					colorMode: "lerpGradient"
-				});
-			}
-			else if (val == 3) {
-				effect.setOptions({
-					colorMode: "varianceGradient"
-				});
-			}
+			effect.setOptions({
+				colorMode: val
+			});
 			effect.restart();
 		}
 	}
