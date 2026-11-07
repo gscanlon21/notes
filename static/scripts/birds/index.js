@@ -1,6 +1,6 @@
 const STORAGE_KEY = "vanta-birds-options";
+const options = JSON.parse(localStorage.getItem(STORAGE_KEY));
 
-let options = JSON.parse(localStorage.getItem(STORAGE_KEY));
 if (options && options.enabledCheckbox) {
 	console.debug(options);
 
@@ -8,9 +8,8 @@ if (options && options.enabledCheckbox) {
 	options.color1 = parseInt(options.color1.substring(1), 16);
 	options.color2 = parseInt(options.color2.substring(1), 16);
 
-	const minDimension = Math.min(window.innerHeight, window.innerWidth);
-	options.minHeight = parseInt(options.minSize) * minDimension;
-	options.minWidth = parseInt(options.minSize) * minDimension;
+	options.minHeight = parseInt(options.minSize);
+	options.minWidth = parseInt(options.minSize);
 
 	const effect = VANTA.BIRDS({
 		touchControls: false,

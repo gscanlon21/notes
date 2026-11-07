@@ -88,4 +88,13 @@ article.v1 {
 	ol + blockquote {
 		margin-block-start: $base-padding * 1.25;
 	}
+
+	ul > li:has(> blockquote) {
+		margin-block-start: 0 !important;
+
+		& > blockquote {
+			margin-block-start: 0;
+			margin-block-end: 0;
+		}
+	}
 }
