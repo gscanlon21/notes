@@ -1,0 +1,61 @@
+article.v1 {
+	/* Reduce spacing between code blocks */
+	h6+h6:has(+pre), article.v1 pre+h6:has(+pre) {
+		margin-block-start: 0.5em;
+	}
+
+	/* Make symbols larger */
+	code {
+		justify-content: center;
+		padding-block: 0.1em;
+		align-items: center;
+		line-height: 1.25;
+		font-size: 2rem;
+		display: flex;
+	}
+}
+
+.page {
+    justify-content: center;
+    padding-bottom: 3rem;
+    margin-bottom: -3rem;
+    align-items: start;
+}
+
+.chart {
+    justify-self: center;
+    position: relative;
+    text-align: center;
+	line-height: 1;
+	color: black;
+	width: 100%;
+    gap: 8px;
+}
+
+.status {
+	width: 383px;
+    margin-top: 18px;
+    font-size: 1rem;
+    line-height: 1.35;
+    color: #555;
+
+	&.error {
+		color: #a40000;
+	}
+
+	&.success {
+		color: #175c17;
+	}
+}
+
+.svg-wrap {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}

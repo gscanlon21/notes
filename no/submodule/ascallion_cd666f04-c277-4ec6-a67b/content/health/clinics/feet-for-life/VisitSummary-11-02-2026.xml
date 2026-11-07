@@ -1,0 +1,2741 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" assigningAuthorityName="US Realm Clinical Document Header" extension="2023-05-01" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" assigningAuthorityName="US Realm Clinical Document Header" extension="2015-08-01" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" assigningAuthorityName="US Realm Clinical Document Header" />
+  <templateId root="2.16.840.1.113883.3.3251.1.1" assigningAuthorityName="HL7 Security" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" assigningAuthorityName="Consolidated CDA - CCD Document" extension="2015-08-01" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" assigningAuthorityName="Consolidated CDA - CCD Document" />
+  <id root="dee40e06-fec4-481e-9bd2-9cbc0bb085dd" />
+  <code code="34133-9" displayName="Summarization of Episode Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+  <title>Clinical Summary - Feet For Life Centers Inc.</title>
+  <effectiveTime value="20261102080655-0600" />
+  <confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" />
+  <languageCode code="en-US" />
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.3.140.1.71486.4.4" extension="32394" assigningAuthorityName="Intergy Patient Number" />
+      <id root="2.16.840.1.113883.3.140.1.71486.4.4.1" extension="163931" assigningAuthorityName="Intergy Patient ID" />
+      <addr use="HP">
+        <streetAddressLine>616 N Laclede Station Rd</streetAddressLine>
+        <city>Saint Louis</city>
+        <state>MO</state>
+        <country>US</country>
+        <postalCode>63119</postalCode>
+      </addr>
+      <addr>
+        <streetAddressLine nullFlavor="UNK" />
+        <city nullFlavor="UNK" />
+        <state nullFlavor="UNK" />
+        <postalCode nullFlavor="UNK" />
+        <country>US</country>
+      </addr>
+      <telecom value="tel:+1 314 783 7513" use="HP" />
+      <telecom value="tel:+1 314 783 7513" use="MC" />
+      <telecom value="mailto:gram@ascallion.com" />
+      <patient>
+        <name use="L">
+          <given>Graham</given>
+          <family>Scanlon</family>
+        </name>
+        <administrativeGenderCode code="M" displayName="Male" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" />
+        <birthTime value="19990522" />
+        <maritalStatusCode code="S" displayName="Never Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus" />
+        <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="CDC Race and Ethnicity" />
+        <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="CDC Race and Ethnicity" />
+        <languageCommunication>
+          <languageCode code="en" />
+          <preferenceInd value="true" />
+        </languageCommunication>
+      </patient>
+      <providerOrganization>
+        <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+        <name>Feet For Life Centers Inc.</name>
+        <telecom value="tel:+1 314 983 0303" use="WP" />
+        <addr use="HP">
+          <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+          <city>Saint Louis</city>
+          <state>MO</state>
+          <country>US</country>
+          <postalCode>63124-1906</postalCode>
+        </addr>
+      </providerOrganization>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <templateId root="2.16.840.1.113883.3.3251.1.2" assigningAuthorityName="HL7 Security" />
+    <time value="20261102080655-0600" />
+    <assignedAuthor>
+      <templateId root="2.16.840.1.113883.3.3251.1.3" assigningAuthorityName="HL7 Security" />
+      <id root="2.16.840.1.113883.3.140.1.71486.4.2" extension="390" />
+      <addr>
+        <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+        <city>Saint Louis</city>
+        <state>MO</state>
+        <country>US</country>
+        <postalCode>63124-1906</postalCode>
+      </addr>
+      <telecom use="WP" value="tel:+1 314 983 0303" />
+      <assignedPerson>
+        <name>Greenway Patient</name>
+      </assignedPerson>
+      <representedOrganization>
+        <id root="2.16.840.1.113883.3.140.1.71486.4" />
+        <name>Feet For Life Centers Inc.</name>
+        <telecom value="tel:+1 314 983 0303" use="WP" />
+        <addr>
+          <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+          <city>Saint Louis</city>
+          <state>MO</state>
+          <country>US</country>
+          <postalCode>63124-1906</postalCode>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <author>
+    <templateId root="2.16.840.1.113883.3.3251.1.2" assigningAuthorityName="HL7 Security" />
+    <time value="20261102080655-0600" />
+    <assignedAuthor>
+      <templateId root="2.16.840.1.113883.3.3251.1.3" assigningAuthorityName="HL7 Security" />
+      <id root="2.16.840.1.113883.3.140.1.71486.4.2" extension="390" />
+      <addr>
+        <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+        <city>Saint Louis</city>
+        <state>MO</state>
+        <country>US</country>
+        <postalCode>63124-1906</postalCode>
+      </addr>
+      <telecom use="WP" value="tel:+1 314 983 0303" />
+      <assignedAuthoringDevice>
+        <manufacturerModelName>22.00.05</manufacturerModelName>
+        <softwareName>Greenway Intergy Product Suite</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id root="2.16.840.1.113883.3.140.1.71486.4" />
+        <name>Feet For Life Centers Inc.</name>
+        <telecom value="tel:+1 314 983 0303" use="WP" />
+        <addr>
+          <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+          <city>Saint Louis</city>
+          <state>MO</state>
+          <country>US</country>
+          <postalCode>63124-1906</postalCode>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+        <name>Feet For Life Centers Inc.</name>
+        <telecom value="tel:+1 314 983 0303" use="WP" />
+        <addr use="HP">
+          <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+          <city>Saint Louis</city>
+          <state>MO</state>
+          <country>US</country>
+          <postalCode>63124-1906</postalCode>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <informationRecipient>
+    <intendedRecipient>
+      <id root="6d5255f8-af0c-43bf-bc9d-8c9cc0afd8db" />
+      <receivedOrganization>
+        <name>Patient Portal</name>
+        <telecom nullFlavor="NI" />
+        <addr nullFlavor="NI" />
+      </receivedOrganization>
+    </intendedRecipient>
+  </informationRecipient>
+  <legalAuthenticator>
+    <time value="20261029100423-0500" />
+    <signatureCode code="S" />
+    <assignedEntity classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.4.6" extension="1689762429" assigningAuthorityName="NPI" />
+      <id root="2.16.840.1.113883.3.140.1.71486.4.3" extension="55" assigningAuthorityName="Practice Provider ID" />
+      <code code="213ES0103X" displayName="Surgery,Foot &amp; Ankle" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Provider Codes" />
+      <addr>
+        <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+        <city>Saint Louis</city>
+        <state>MO</state>
+        <country>US</country>
+        <postalCode>63124</postalCode>
+      </addr>
+      <telecom value="tel:+1 314 983 0303" use="WP" />
+      <assignedPerson>
+        <name>
+          <given>Michael</given>
+          <family>Horwitz</family>
+          <suffix>DPM</suffix>
+        </name>
+      </assignedPerson>
+      <representedOrganization>
+        <id root="2.16.840.1.113883.3.140.1.71486.4" />
+        <name>Feet For Life Centers Inc.</name>
+        <telecom value="tel:+1 314 983 0303" use="WP" />
+        <addr>
+          <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+          <city>Saint Louis</city>
+          <state>MO</state>
+          <country>US</country>
+          <postalCode>63124-1906</postalCode>
+        </addr>
+      </representedOrganization>
+    </assignedEntity>
+  </legalAuthenticator>
+  <participant typeCode="IND">
+    <time value="20261102080655-0600" />
+    <associatedEntity classCode="ECON">
+      <id root="8ff102fe-47f5-4744-9c53-250160b3fbac" />
+      <code nullFlavor="OTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode">
+        <originalText>Patient's Relation:Other</originalText>
+      </code>
+      <addr use="HP">
+        <streetAddressLine nullFlavor="UNK" />
+        <city nullFlavor="UNK" />
+        <state nullFlavor="UNK" />
+        <country>US</country>
+        <postalCode nullFlavor="UNK" />
+      </addr>
+      <telecom value="tel:+1 314 288 8673" use="HP" />
+      <associatedPerson>
+        <name>
+          <given>Robert</given>
+          <family>Scanlon</family>
+        </name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+  <participant typeCode="IND">
+    <time value="20261102080655-0600" />
+    <associatedEntity classCode="NOK">
+      <id root="711199d6-4aa2-4515-ae2e-9a3b6325ffdc" />
+      <code nullFlavor="OTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode">
+        <originalText>Patient's Relation:Other</originalText>
+      </code>
+      <addr use="HP">
+        <streetAddressLine nullFlavor="UNK" />
+        <city nullFlavor="UNK" />
+        <state nullFlavor="UNK" />
+        <country>US</country>
+        <postalCode nullFlavor="UNK" />
+      </addr>
+      <telecom value="tel:+1 314 288 8673" use="HP" />
+      <associatedPerson>
+        <name>
+          <given>Robert</given>
+          <family>Scanlon</family>
+        </name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+  <participant typeCode="IND">
+    <templateId root="2.16.840.1.113883.10.20.22.5.8" extension="2023-05-01" />
+    <associatedEntity classCode="PRS">
+      <code nullFlavor="OTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode">
+        <originalText>Patient's Relation:Other</originalText>
+      </code>
+      <addr use="HP">
+        <streetAddressLine nullFlavor="UNK" />
+        <city nullFlavor="UNK" />
+        <postalCode>US</postalCode>
+      </addr>
+      <telecom value="tel:+1 314 288 8673" use="HP" />
+      <associatedPerson>
+        <name>
+          <given>Robert</given>
+          <family>Scanlon</family>
+        </name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+  <documentationOf>
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="20261028" />
+        <high value="20261102" />
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <time>
+          <low nullFlavor="NI" />
+          <high nullFlavor="NI" />
+        </time>
+        <assignedEntity classCode="ASSIGNED">
+          <id root="2.16.840.1.113883.4.6" extension="1689762429" assigningAuthorityName="NPI" />
+          <id root="2.16.840.1.113883.3.140.1.71486.4.3" extension="55" assigningAuthorityName="Practice Provider ID" />
+          <id root="2.16.840.1.113883.3.140.1.71486.4.3.1" extension="55" assigningAuthorityName="Assigned Provider ID" />
+          <code code="213ES0103X" displayName="Surgery,Foot &amp; Ankle" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Provider Codes" />
+          <addr>
+            <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+            <city>Saint Louis</city>
+            <state>MO</state>
+            <country>US</country>
+            <postalCode>63124</postalCode>
+          </addr>
+          <telecom value="tel:+1 314 983 0303" use="WP" />
+          <assignedPerson>
+            <name>
+              <given>Michael</given>
+              <family>Horwitz</family>
+              <suffix>DPM</suffix>
+            </name>
+          </assignedPerson>
+          <representedOrganization>
+            <id root="2.16.840.1.113883.3.140.1.71486.4" />
+            <name>Feet For Life Centers Inc.</name>
+            <telecom value="tel:+1 314 983 0303" use="WP" />
+            <addr>
+              <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+              <city>Saint Louis</city>
+              <state>MO</state>
+              <country>US</country>
+              <postalCode>63124-1906</postalCode>
+            </addr>
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <authorization typeCode="AUTH">
+    <consent classCode="CONS" moodCode="EVN">
+      <id root="6c520103-866e-4fde-9028-13ba1b24362d" />
+      <code code="N" displayName="Normal" codeSystem="1.3.6.1.4.1.21367.100.1" codeSystemName="Connectathon Confidentiality Codes" />
+      <statusCode code="completed" />
+    </consent>
+  </authorization>
+  <componentOf>
+    <encompassingEncounter>
+      <id root="2.16.840.1.113883.3.140.1.71486.4.10.16" extension="149079" assigningAuthorityName="Intergy Encounter ID" />
+      <id root="2.16.840.1.113883.3.140.1.71486.4.10.16.1" extension="146064" assigningAuthorityName="Intergy Encounter Number" />
+      <code code="99203" displayName="New Patient Level 3 30-44 min" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" />
+      <effectiveTime>
+        <low value="20261028105208-0500" />
+        <high value="20261028113400-0500" />
+      </effectiveTime>
+      <responsibleParty>
+        <assignedEntity classCode="ASSIGNED">
+          <id root="2.16.840.1.113883.4.6" extension="1689762429" assigningAuthorityName="NPI" />
+          <id root="2.16.840.1.113883.3.140.1.71486.4.3" extension="55" assigningAuthorityName="Practice Provider ID" />
+          <code code="213ES0103X" displayName="Surgery,Foot &amp; Ankle" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Provider Codes" />
+          <addr use="HP">
+            <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+            <city>Saint Louis</city>
+            <state>MO</state>
+            <country>US</country>
+            <postalCode>63124</postalCode>
+          </addr>
+          <telecom value="tel:+1 314 983 0303" use="WP" />
+          <assignedPerson>
+            <name>
+              <given>Michael</given>
+              <family>Horwitz</family>
+              <suffix>DPM</suffix>
+            </name>
+          </assignedPerson>
+          <representedOrganization>
+            <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+            <name>Feet For Life Centers Inc.</name>
+            <telecom value="tel:+1 314 983 0303" use="WP" />
+            <addr use="HP">
+              <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+              <city>Saint Louis</city>
+              <state>MO</state>
+              <country>US</country>
+              <postalCode>63124-1906</postalCode>
+            </addr>
+          </representedOrganization>
+        </assignedEntity>
+      </responsibleParty>
+      <location>
+        <healthCareFacility>
+          <id root="2.16.840.1.113883.3.140.1.71486.4.5" extension="5" />
+          <location>
+            <name>Feet For Life Centers Inc.</name>
+            <addr use="HP">
+              <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+              <city>Saint Louis</city>
+              <state>MO</state>
+              <country>US</country>
+              <postalCode>63124-1906</postalCode>
+            </addr>
+          </location>
+          <serviceProviderOrganization>
+            <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+            <name>Feet For Life Centers Inc.</name>
+            <telecom value="tel:+1 314 983 0303" use="WP" />
+            <addr use="HP">
+              <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+              <city>Saint Louis</city>
+              <state>MO</state>
+              <country>US</country>
+              <postalCode>63124-1906</postalCode>
+            </addr>
+          </serviceProviderOrganization>
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section nullFlavor="NI">
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.1" assigningAuthorityName="CCDA Reason for Referral Section" extension="2014-06-09" />
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.1" assigningAuthorityName="CCDA Reason for Referral Section" />
+          <id root="bb8317f3-14d0-4953-813c-fef7a7146f62" />
+          <code code="42349-1" displayName="REASON FOR REFERRAL" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Reason for Referral</title>
+          <text>
+            <content ID="RFRDescriptionID0">No Reason for Referral Recorded</content>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.13" assigningAuthorityName="CCDA Chief Complaint and Reason for Visit Section" />
+          <id root="5436c0c9-ef4d-4746-84e3-93acba882e1c" />
+          <code code="46239-0" displayName="CHIEF COMPLAINT AND REASON FOR VISIT" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Reason for Visit and Chief Complaint</title>
+          <text>
+            <content>Date of onset: 3/2026, Date of onset: 2020,   bone contusion on lower fibula/ the knub on the outside of the left ankle,   2nd MTP joint pain</content>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" assigningAuthorityName="CCDA Active Problems Section (Entries Required)" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" assigningAuthorityName="CCDA Active Problems Section (Entries Required)" />
+          <id root="c73b17d3-3427-4c1a-be17-d88aaf341122" />
+          <code code="11450-4" displayName="Problem list" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Problems</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Problems addressed during this encounter and other active Problems</paragraph>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>Current Visit</th>
+                  <th>Onset Date</th>
+                  <th>Date of Diagnosis</th>
+                  <th>Resolved Date</th>
+                  <th>Provider</th>
+                  <th>Condition Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="problemDescriptionid0">Capsulitis</td>
+                  <td>10/28/2026</td>
+                  <td ID="problemDateOfDiagnosisId0">10/28/2026</td>
+                  <td></td>
+                  <td>Michael Horwitz DPM</td>
+                  <td ID="problemStatusId0">Active</td>
+                </tr>
+                <tr>
+                  <td ID="ProvenanceInfoIdc0539853-56db-484c-934d-d162cf666941" colspan="1">Last Documented On 10/28/2026 11:25AM ; Feet For Life Centers Inc.</td>
+                  <td ID="problemCommentsId0" colspan="5">Note: sub 2nd L</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" assigningAuthorityName="CCDA Problem Concern Act" extension="2015-08-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" assigningAuthorityName="CCDA Problem Concern Act" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.7" extension="1317681-0" />
+              <code code="CONC" displayName="Concern" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" />
+              <statusCode code="active" />
+              <effectiveTime>
+                <low value="20261028" />
+                <high nullFlavor="NI" />
+              </effectiveTime>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261028112542-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" extension="2022-06-01" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" assigningAuthorityName="CCDA Problem Observation" extension="2015-08-01" />
+                  <id root="736ea905-e90f-4cdd-bfd0-5ca33f84ecee" />
+                  <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                    <translation code="75326-9" displayName="Problem" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  </code>
+                  <text>
+                    <reference value="#problemDescriptionid0" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low value="20261028" />
+                    <high nullFlavor="NI" />
+                  </effectiveTime>
+                  <value code="6858004" displayName="Capsulitis (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD">
+                    <originalText>
+                      <reference value="#problemDescriptionid0" />
+                    </originalText>
+                    <translation code="M77.9" displayName="Capsulitis" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD10" />
+                    <translation code="91431" displayName="Capsulitis" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+                  </value>
+                  <informant>
+                    <assignedEntity>
+                      <id root="3e23473a-f6a8-4d85-90e1-e424f405a7ac" />
+                      <addr use="HP">
+                        <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                        <city>Saint Louis</city>
+                        <state>MO</state>
+                        <country>US</country>
+                        <postalCode>63124-1906</postalCode>
+                      </addr>
+                      <telecom value="tel:+1 314 983 0303" use="WP" />
+                      <assignedPerson>
+                        <name nullFlavor="UNK" />
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                        <name>Feet For Life Centers Inc.</name>
+                        <telecom value="tel:+1 314 983 0303" use="WP" />
+                        <addr use="HP">
+                          <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                          <city>Saint Louis</city>
+                          <state>MO</state>
+                          <country>US</country>
+                          <postalCode>63124-1906</postalCode>
+                        </addr>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                  <entryRelationship typeCode="REFR" inversionInd="false">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.6" assigningAuthorityName="CCDA Problem Status Observation" />
+                      <templateId root="2.16.840.1.113883.10.20.22.4.6" assigningAuthorityName="CCDA Problem Status Observation" extension="2019-06-20" />
+                      <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <text>
+                        <reference value="#problemStatusId0" />
+                      </text>
+                      <statusCode code="completed" />
+                      <value code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CE" />
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.502" extension="2022-06-01" />
+                      <code code="77975-1" displayName="Earliest date of diagnosis" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <text>
+                        <reference value="#problemDateOfDiagnosisId0" />
+                      </text>
+                      <statusCode code="completed" />
+                      <effectiveTime value="20261028" />
+                    </act>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.64" assigningAuthorityName="CCDA Comment Activity" />
+                  <code code="48767-8" displayName="Annotation comment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>
+                    <reference value="#problemCommentsId0" />
+                  </text>
+                  <statusCode code="completed" />
+                </act>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10" assigningAuthorityName="CCDA Plan of Treatment Section" extension="2014-06-09" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.10" assigningAuthorityName="CCDA Plan of Treatment Section" />
+          <id root="1a0cab20-c77b-490a-a5e7-49e2f0019a60" />
+          <code code="18776-5" displayName="TREATMENT PLAN" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Plan of Treatment</title>
+          <text>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>Instructions to patient</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="instructionDescriptionID0">Instructions for patient</td>
+                </tr>
+                <tr ID="ProvenanceInfoId7dc7d3df-985a-4087-9797-c3977b70d0b9">
+                  <td>Last Documented On 10/28/2026 12:44PM ; Feet For Life Centers Inc.</td>
+                </tr>
+              </tbody>
+            </table>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>Education and Decision Aids were provided during visit for:</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="plannedInstructionDescriptionID3">Education and counseling</td>
+                </tr>
+                <tr ID="ProvenanceInfoIdbbd3c3bc-505b-4ab4-9d27-40c8e34d97b6">
+                  <td>Last Documented On 10/28/2026 12:44PM ; Feet For Life Centers Inc.</td>
+                </tr>
+              </tbody>
+            </table>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>Future Tests</th>
+                  <th>Order</th>
+                  <th>Diagnosis</th>
+                  <th>Results Due</th>
+                  <th>Ordering Provider</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="futureTestTypeDescriptionID0">ML7</td>
+                  <td ID="futureTestDescriptionID0">ML7</td>
+                  <td ID="futureTestDiagnosisID0">Enthesopathy, unspecified</td>
+                  <td>10/28/26</td>
+                  <td>Michael Horwitz DPM</td>
+                </tr>
+                <tr ID="ProvenanceInfoId0568f6d4-7b60-4be3-9815-933959b28f4e">
+                  <td>Last Documented On 10/28/2026 11:26AM ; Feet For Life Centers Inc.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" assigningAuthorityName="CCDA Instructions Act" extension="2014-06-09" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" assigningAuthorityName="CCDA Instructions Act" />
+              <id root="b5de7edb-fd96-4cba-a037-85bfaa760e89" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.16" extension="149079" assigningAuthorityName="Intergy Encounter ID" />
+              <code code="423564006" displayName="Provider instructions for treatment" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                <translation code="311401005" displayName="Patient education (procedure)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                <translation code="74937" displayName="Instructions For Patient" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+              </code>
+              <text>
+                <reference value="#instructionDescriptionID0" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20261028105000-0500" />
+                <high value="20261028105000-0500" />
+              </effectiveTime>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261028134400-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" assigningAuthorityName="CCDA Instructions Act" extension="2014-06-09" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" assigningAuthorityName="CCDA Instructions Act" />
+              <id root="6296624f-6aed-4660-a306-53172dbce6e7" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.16" extension="149079" assigningAuthorityName="Intergy Encounter ID" />
+              <code code="372919008" displayName="Patient education based on identified need" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                <translation code="Z71.9" displayName="Counseling, unspecified" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD10" />
+                <translation code="78725" displayName="Education And Counseling" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+              </code>
+              <text>
+                <reference value="#plannedInstructionDescriptionID3" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20261028105000-0500" />
+                <high value="20261028105000-0500" />
+              </effectiveTime>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261028134400-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+            </act>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.44" assigningAuthorityName="CCDA Plan of Treatment Activity Observation" extension="2014-06-09" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.44" assigningAuthorityName="CCDA Plan of Treatment Activity Observation" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.23" extension="57648" />
+              <code nullFlavor="UNK" />
+              <text>
+                <reference value="#futureTestDescriptionID0" />
+              </text>
+              <statusCode code="active" />
+              <effectiveTime value="20261028" />
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261028122601-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19" assigningAuthorityName="CCDA Plan of Treatment Diagnosis Indication Observation" extension="2023-05-01" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19" assigningAuthorityName="CCDA Plan of Treatment Diagnosis Indication Observation" />
+                  <id root="48b53457-d8a4-4ba1-a7d4-385e80f14998" />
+                  <code code="282291009" displayName="Diagnosis" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                    <translation code="29308-4" displayName="Diagnosis" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  </code>
+                  <text>
+                    <reference value="#futureTestDescriptionID0" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low nullFlavor="NI" />
+                    <high nullFlavor="NI" />
+                  </effectiveTime>
+                  <value nullFlavor="UNK" xsi:type="CD">
+                    <translation code="M77.9" displayName="Enthesopathy, unspecified" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD10" />
+                  </value>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.8" assigningAuthorityName="CCDA Assessments Section" />
+          <id root="ea69ba5e-37ec-415f-aa3d-11b7c1d1ac20" />
+          <code code="51848-0" displayName="ASSESSMENTS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Assessments</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Assessments from this encounter</paragraph>
+            <content>No Assessments Recorded</content>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.45" assigningAuthorityName="CCDA Instructions Section" extension="2014-06-09" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.45" assigningAuthorityName="CCDA Instructions Section" />
+          <id root="1432603c-66b5-4171-8a06-e00205551e66" />
+          <code code="69730-0" displayName="INSTRUCTIONS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Instructions</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Instructions from this encounter</paragraph>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>Instructions to patient</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="clinicalInstructionDescriptionID0">Instructions for patient</td>
+                </tr>
+                <tr ID="ProvenanceInfoId769260c7-8952-4dbd-8ef3-bf0ca626529e">
+                  <td>Last Documented On 10/28/2026 12:44PM ; Feet For Life Centers Inc.</td>
+                </tr>
+              </tbody>
+            </table>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>Education and Decision Aids were provided during visit for:</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="clinicalInstructionDescriptionID3">Education and counseling</td>
+                </tr>
+                <tr ID="ProvenanceInfoIdd11db746-9324-4237-b989-ff86f2592d64">
+                  <td>Last Documented On 10/28/2026 12:44PM ; Feet For Life Centers Inc.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" assigningAuthorityName="CCDA Instructions Act" extension="2014-06-09" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" assigningAuthorityName="CCDA Instructions Act" />
+              <id root="4f34f468-71a9-4089-a098-f39f1bb0dc53" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.16" extension="149079" assigningAuthorityName="Intergy Encounter ID" />
+              <code code="423564006" displayName="Provider instructions for treatment" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                <translation code="311401005" displayName="Patient education (procedure)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                <translation code="74937" displayName="Instructions For Patient" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+              </code>
+              <text>
+                <reference value="#clinicalInstructionDescriptionID0" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20261028105000-0500" />
+                <high value="20261028105000-0500" />
+              </effectiveTime>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261028134400-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" assigningAuthorityName="CCDA Instructions Act" extension="2014-06-09" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.20" assigningAuthorityName="CCDA Instructions Act" />
+              <id root="05abd71c-a056-4342-9e4e-83d109cf0154" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.16" extension="149079" assigningAuthorityName="Intergy Encounter ID" />
+              <code code="372919008" displayName="Patient education based on identified need" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                <translation code="Z71.9" displayName="Counseling, unspecified" codeSystem="2.16.840.1.113883.6.3" codeSystemName="ICD10" />
+                <translation code="78725" displayName="Education And Counseling" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+              </code>
+              <text>
+                <reference value="#clinicalInstructionDescriptionID3" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20261028105000-0500" />
+                <high value="20261028105000-0500" />
+              </effectiveTime>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261028134400-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.23" assigningAuthorityName="CCDA Medical Equipment Section" extension="2014-06-09" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.23" assigningAuthorityName="CCDA Medical Equipment Section" />
+          <id root="061ef744-1c9e-40e7-a6d7-bcba292e754c" />
+          <code code="46264-8" displayName="MEDICAL EQUIPMENT" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Medical Equipment - Implanted Devices</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Current Devices</paragraph>
+            <content ID="MedicalEquipment-Proc-ID0">No Medical Equipment Recorded</content>
+          </text>
+          <entry>
+            <procedure classCode="PROC" moodCode="EVN" negationInd="true">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="CCDA Procedure Activity Procedure" extension="2014-06-09" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="CCDA Procedure Activity Procedure" extension="2022-06-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="CCDA Procedure Activity Procedure" />
+              <id root="335d1511-2474-42b1-9230-ca5643b881d3" />
+              <code code="71388002" displayName="Procedure" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                <originalText>
+                  <reference value="#MedicalEquipment-Proc-ID0" />
+                </originalText>
+              </code>
+              <statusCode code="completed" />
+              <participant typeCode="DEV">
+                <participantRole classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.37" assigningAuthorityName="CCDA Product Instance" />
+                  <id nullFlavor="UNK" root="2.16.840.1.113883.3.3719" />
+                  <playingDevice>
+                    <code code="40388003" displayName="Implant" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                  </playingDevice>
+                  <scopingEntity>
+                    <id root="2.16.840.1.113883.3.3719" />
+                  </scopingEntity>
+                </participantRole>
+              </participant>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" assigningAuthorityName="CCDA Medications Section (Entries Required)" extension="2014-06-09" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" assigningAuthorityName="CCDA Medications Section (Entries Required)" />
+          <id root="5d0cd214-9b65-43c3-b99d-fe8d5515d728" />
+          <code code="10160-0" displayName="HISTORY OF MEDICATION USE" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Medications</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Medications discussed during this encounter and other current Medications</paragraph>
+            <content ID="medicationDescriptionID0">No Medications Taken</content>
+          </text>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="true">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" assigningAuthorityName="CCDA Medication Activity" extension="2014-06-09" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" assigningAuthorityName="CCDA Medication Activity" />
+              <id root="48ba81a8-a57f-4647-a464-151066fd04e8" />
+              <text>
+                <reference value="#medicationDescriptionID0" />
+              </text>
+              <statusCode code="active" />
+              <effectiveTime xsi:type="IVL_TS">
+                <low nullFlavor="NI" />
+                <high nullFlavor="NI" />
+              </effectiveTime>
+              <doseQuantity nullFlavor="UNK" />
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" assigningAuthorityName="CCDA Medication Information" extension="2014-06-09" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" assigningAuthorityName="CCDA Medication Information" />
+                  <manufacturedMaterial>
+                    <code nullFlavor="OTH" codeSystem="2.16.840.1.113883.6.88">
+                      <originalText>
+                        <reference value="#medicationDescriptionID0" />
+                      </originalText>
+                      <translation code="410942007" displayName="drug or medication" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.38" assigningAuthorityName="CCDA Medications Administered Section" extension="2014-06-09" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.38" assigningAuthorityName="CCDA Medications Administered Section" />
+          <id root="b256eb8a-c2ca-4e8e-9332-683dc2121a7a" />
+          <code code="29549-3" displayName="MEDICATIONS ADMINISTERED" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Medications Administered</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Administered Medications from this encounter</paragraph>
+            <content ID="medicationAdministeredDescriptionID0">No Administered Medications Recorded</content>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" assigningAuthorityName="CCDA Vital Signs Section (Entries Required)" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" assigningAuthorityName="CCDA Vital Signs Section (Entries Required)" />
+          <id root="7c0da3b3-2287-4437-8fe9-bc2ec8431000" />
+          <code code="8716-3" displayName="VITAL SIGNS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Vital Signs</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Vital Signs from this encounter</paragraph>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th align="center">Vital Name</th>
+                  <th>10/28/2026 12:43P</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Blood Pressure Sitting (mmHg)</td>
+                  <td>142/75</td>
+                </tr>
+                <tr>
+                  <td>Height (in)</td>
+                  <td ID="Vital-ID2">73</td>
+                </tr>
+                <tr>
+                  <td>Weight (lb)</td>
+                  <td ID="Vital-ID3">145</td>
+                </tr>
+                <tr>
+                  <td>Body Mass Index</td>
+                  <td ID="Vital-ID4">19.1</td>
+                </tr>
+                <tr>
+                  <td>Body Surface Area</td>
+                  <td ID="Vital-ID5">1.9</td>
+                </tr>
+                <tr ID="ProvenanceInfoIdb0ca7e43-c6dc-42ac-b9d0-7246b81ada6b">
+                  <td>Last Documented:</td>
+                  <td>On 10/28/2026 12:43PM ; Feet For Life Centers Inc.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" assigningAuthorityName="CCDA Vital Signs Organizer" extension="2015-08-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" assigningAuthorityName="CCDA Vital Signs Organizer" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.14" extension="81079" />
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                <translation code="74728-7" displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              </code>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20261028124300-0500" />
+                <high value="20261028124300-0500" />
+              </effectiveTime>
+              <informant>
+                <assignedEntity>
+                  <id root="522dc3d7-03e0-437b-8e15-11535f78f76a" />
+                  <addr use="HP">
+                    <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                    <city>Saint Louis</city>
+                    <state>MO</state>
+                    <country>US</country>
+                    <postalCode>63124-1906</postalCode>
+                  </addr>
+                  <telecom value="tel:+1 314 983 0303" use="WP" />
+                  <assignedPerson>
+                    <name nullFlavor="UNK" />
+                  </assignedPerson>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" assigningAuthorityName="CCDA Vital Sign Observation" extension="2014-06-09" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" assigningAuthorityName="CCDA Vital Sign Observation" />
+                  <id root="2.16.840.1.113883.3.140.1.71486.4.10.14.1" extension="81079-18" />
+                  <code code="8480-6" displayName="Blood Pressure Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>142</text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20261028124300-0500" />
+                  <value value="142" unit="mm[Hg]" xsi:type="PQ" />
+                  <methodCode code="Sitting" />
+                  <targetSiteCode nullFlavor="NA" />
+                  <informant>
+                    <assignedEntity>
+                      <id root="d2394d72-02ca-4201-896a-75a0f6d2e7ea" />
+                      <addr use="HP">
+                        <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                        <city>Saint Louis</city>
+                        <state>MO</state>
+                        <country>US</country>
+                        <postalCode>63124-1906</postalCode>
+                      </addr>
+                      <telecom value="tel:+1 314 983 0303" use="WP" />
+                      <assignedPerson>
+                        <name nullFlavor="UNK" />
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                        <name>Feet For Life Centers Inc.</name>
+                        <telecom value="tel:+1 314 983 0303" use="WP" />
+                        <addr use="HP">
+                          <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                          <city>Saint Louis</city>
+                          <state>MO</state>
+                          <country>US</country>
+                          <postalCode>63124-1906</postalCode>
+                        </addr>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" assigningAuthorityName="CCDA Vital Sign Observation" extension="2014-06-09" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" assigningAuthorityName="CCDA Vital Sign Observation" />
+                  <id root="2.16.840.1.113883.3.140.1.71486.4.10.14.1" extension="81079-19" />
+                  <code code="8462-4" displayName="Blood Pressure Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>75</text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20261028124300-0500" />
+                  <value value="75" unit="mm[Hg]" xsi:type="PQ" />
+                  <methodCode code="Sitting" />
+                  <targetSiteCode nullFlavor="NA" />
+                  <informant>
+                    <assignedEntity>
+                      <id root="9616383f-4404-4d7e-aec8-4a7ba187441e" />
+                      <addr use="HP">
+                        <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                        <city>Saint Louis</city>
+                        <state>MO</state>
+                        <country>US</country>
+                        <postalCode>63124-1906</postalCode>
+                      </addr>
+                      <telecom value="tel:+1 314 983 0303" use="WP" />
+                      <assignedPerson>
+                        <name nullFlavor="UNK" />
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                        <name>Feet For Life Centers Inc.</name>
+                        <telecom value="tel:+1 314 983 0303" use="WP" />
+                        <addr use="HP">
+                          <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                          <city>Saint Louis</city>
+                          <state>MO</state>
+                          <country>US</country>
+                          <postalCode>63124-1906</postalCode>
+                        </addr>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" assigningAuthorityName="CCDA Vital Sign Observation" extension="2014-06-09" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" assigningAuthorityName="CCDA Vital Sign Observation" />
+                  <id root="2.16.840.1.113883.3.140.1.71486.4.10.14.1" extension="81079-2" />
+                  <code code="8302-2" displayName="Height" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>73<reference value="#Vital-ID2" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20261028124300-0500" />
+                  <value value="73" unit="[in_i]" xsi:type="PQ" />
+                  <methodCode nullFlavor="NA" />
+                  <targetSiteCode nullFlavor="NA" />
+                  <informant>
+                    <assignedEntity>
+                      <id root="31da2f52-fc90-4fd8-a2f8-b5e80c6248d5" />
+                      <addr use="HP">
+                        <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                        <city>Saint Louis</city>
+                        <state>MO</state>
+                        <country>US</country>
+                        <postalCode>63124-1906</postalCode>
+                      </addr>
+                      <telecom value="tel:+1 314 983 0303" use="WP" />
+                      <assignedPerson>
+                        <name nullFlavor="UNK" />
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                        <name>Feet For Life Centers Inc.</name>
+                        <telecom value="tel:+1 314 983 0303" use="WP" />
+                        <addr use="HP">
+                          <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                          <city>Saint Louis</city>
+                          <state>MO</state>
+                          <country>US</country>
+                          <postalCode>63124-1906</postalCode>
+                        </addr>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" assigningAuthorityName="CCDA Vital Sign Observation" extension="2014-06-09" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" assigningAuthorityName="CCDA Vital Sign Observation" />
+                  <id root="2.16.840.1.113883.3.140.1.71486.4.10.14.1" extension="81079-1" />
+                  <code code="29463-7" displayName="Weight Measured" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>145<reference value="#Vital-ID3" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20261028124300-0500" />
+                  <value value="145" unit="[lb_av]" xsi:type="PQ" />
+                  <methodCode nullFlavor="NA" />
+                  <targetSiteCode nullFlavor="NA" />
+                  <informant>
+                    <assignedEntity>
+                      <id root="324b6ac1-4169-4416-a5db-2b22d11418ae" />
+                      <addr use="HP">
+                        <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                        <city>Saint Louis</city>
+                        <state>MO</state>
+                        <country>US</country>
+                        <postalCode>63124-1906</postalCode>
+                      </addr>
+                      <telecom value="tel:+1 314 983 0303" use="WP" />
+                      <assignedPerson>
+                        <name nullFlavor="UNK" />
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                        <name>Feet For Life Centers Inc.</name>
+                        <telecom value="tel:+1 314 983 0303" use="WP" />
+                        <addr use="HP">
+                          <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                          <city>Saint Louis</city>
+                          <state>MO</state>
+                          <country>US</country>
+                          <postalCode>63124-1906</postalCode>
+                        </addr>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" assigningAuthorityName="CCDA Vital Sign Observation" extension="2014-06-09" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" assigningAuthorityName="CCDA Vital Sign Observation" />
+                  <id root="2.16.840.1.113883.3.140.1.71486.4.10.14.1" extension="81079-8" />
+                  <code code="39156-5" displayName="BMI (Body Mass Index)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>19.1<reference value="#Vital-ID4" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20261028124300-0500" />
+                  <value value="19.1" unit="1" xsi:type="PQ" />
+                  <methodCode nullFlavor="NA" />
+                  <targetSiteCode nullFlavor="NA" />
+                  <informant>
+                    <assignedEntity>
+                      <id root="c6e263c5-11f4-41a6-9238-97d445e22483" />
+                      <addr use="HP">
+                        <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                        <city>Saint Louis</city>
+                        <state>MO</state>
+                        <country>US</country>
+                        <postalCode>63124-1906</postalCode>
+                      </addr>
+                      <telecom value="tel:+1 314 983 0303" use="WP" />
+                      <assignedPerson>
+                        <name nullFlavor="UNK" />
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                        <name>Feet For Life Centers Inc.</name>
+                        <telecom value="tel:+1 314 983 0303" use="WP" />
+                        <addr use="HP">
+                          <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                          <city>Saint Louis</city>
+                          <state>MO</state>
+                          <country>US</country>
+                          <postalCode>63124-1906</postalCode>
+                        </addr>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" assigningAuthorityName="CCDA Vital Sign Observation" extension="2014-06-09" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" assigningAuthorityName="CCDA Vital Sign Observation" />
+                  <id root="2.16.840.1.113883.3.140.1.71486.4.10.14.1" extension="81079-9" />
+                  <code code="3140-1" displayName="BSA (Body Surface Area)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>1.9<reference value="#Vital-ID5" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20261028124300-0500" />
+                  <value value="1.9" unit="1" xsi:type="PQ" />
+                  <methodCode nullFlavor="NA" />
+                  <targetSiteCode nullFlavor="NA" />
+                  <informant>
+                    <assignedEntity>
+                      <id root="769c1c02-e8a9-4485-ad5d-b9778ac2443d" />
+                      <addr use="HP">
+                        <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                        <city>Saint Louis</city>
+                        <state>MO</state>
+                        <country>US</country>
+                        <postalCode>63124-1906</postalCode>
+                      </addr>
+                      <telecom value="tel:+1 314 983 0303" use="WP" />
+                      <assignedPerson>
+                        <name nullFlavor="UNK" />
+                      </assignedPerson>
+                      <representedOrganization>
+                        <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                        <name>Feet For Life Centers Inc.</name>
+                        <telecom value="tel:+1 314 983 0303" use="WP" />
+                        <addr use="HP">
+                          <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                          <city>Saint Louis</city>
+                          <state>MO</state>
+                          <country>US</country>
+                          <postalCode>63124-1906</postalCode>
+                        </addr>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" assigningAuthorityName="CCDA Results Section (Entries Required)" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" assigningAuthorityName="CCDA Results Section (Entries Required)" />
+          <id root="184e1a82-e3d3-4a44-b56c-c6e20cedd071" />
+          <code code="30954-2" displayName="RESULTS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Results</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Results discussed during this encounter</paragraph>
+            <content ID="LabResultsDescriptionID0">No Results Recorded For Specified Dates</content>
+          </text>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN" nullFlavor="NA">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" assigningAuthorityName="CCDA Result Organizer" extension="2015-08-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" assigningAuthorityName="CCDA Result Organizer" extension="2023-05-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" assigningAuthorityName="CCDA Result Organizer" />
+              <id root="8d53a057-6566-4e74-a069-3a315b310db8" />
+              <code nullFlavor="NA">
+                <translation code="71388002" displayName="Procedure" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+              </code>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NI" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" assigningAuthorityName="CCDA Result Observation" extension="2015-08-01" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" assigningAuthorityName="CCDA Result Observation" extension="2023-05-01" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" assigningAuthorityName="CCDA Result Observation" />
+                  <id root="0ab8de99-cff8-450c-9e63-5b6ed0236f7d" />
+                  <code code="None" displayName="No Results" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>
+                    <reference value="#LabResultsDescriptionID0" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NI" />
+                  <value xsi:type="ST">No Results</value>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4" assigningAuthorityName="History of Present Illness Section" />
+          <id root="b22e7be0-79d1-47b0-bb92-2a9068a6efc1" />
+          <code code="10164-2" displayName="HISTORY OF PRESENT ILLNESS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>History of Present Illness</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: History of Present Illness from this encounter</paragraph>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>HPI</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <paragraph>
+                      <content>Graham Scanlon is a 27 year old male.  </content>
+                      <br />
+                      <content>- Allergy list reviewed</content>
+                      <br />
+                      <content>-  Problem list reviewed</content>
+                      <br />
+                      <content>-  Medication list reviewed</content>
+                    </paragraph>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="ASSERTION" displayName="Assertion" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" />
+              <text>medication list reviewed</text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20261028105000-0500" />
+                <high value="20261028105000-0500" />
+              </effectiveTime>
+              <value code="282573" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" xsi:type="CD">
+                <translation code="428191000124101" displayName="Documentation of current medications (procedure)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+              </value>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="ASSERTION" displayName="Assertion" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" />
+              <text>problem list reviewed</text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20261028105000-0500" />
+                <high value="20261028105000-0500" />
+              </effectiveTime>
+              <value code="282602" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" xsi:type="CD" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="ASSERTION" displayName="Assertion" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" />
+              <text>allergy list reviewed</text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20261028105000-0500" />
+                <high value="20261028105000-0500" />
+              </effectiveTime>
+              <value code="1000005271" displayName="allergy list reviewed" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" xsi:type="CD" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" assigningAuthorityName="CCDA Social History Section" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" assigningAuthorityName="CCDA Social History Section" />
+          <id root="8165efcd-d3b8-42ac-baac-77b39fd3b8ac" />
+          <code code="29762-2" displayName="SOCIAL HISTORY" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Social History</title>
+          <text>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th>Last Updated</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="socialHxDescriptionID0">No tobacco use</td>
+                  <td>10/28/2026</td>
+                </tr>
+                <tr ID="ProvenanceInfoId220797d1-3554-4b2d-9efd-ca6f1a2b8aa4">
+                  <td>Last Documented On 10/29/2026 10:04AM ; Feet For Life Centers Inc.</td>
+                </tr>
+                <tr>
+                  <td ID="socialHxDescriptionID1">Smoking status : Never smoker</td>
+                  <td>10/28/2026</td>
+                </tr>
+                <tr ID="ProvenanceInfoId340dbc82-6d67-4e8c-9bcf-b2ba72f5e563">
+                  <td>Last Documented On 10/29/2026 10:04AM ; Feet For Life Centers Inc.</td>
+                </tr>
+                <tr>
+                  <td ID="socialHxDescriptionID2">Never drank alcohol</td>
+                  <td>10/28/2026</td>
+                </tr>
+                <tr ID="ProvenanceInfoId9b876bc0-dbe3-430e-83ac-7566c33754cb">
+                  <td>Last Documented On 10/29/2026 10:04AM ; Feet For Life Centers Inc.</td>
+                </tr>
+                <tr>
+                  <td ID="socialHxDescriptionID3">Never smoked</td>
+                  <td>10/28/2026</td>
+                </tr>
+                <tr ID="ProvenanceInfoId1be27f2e-bd0b-460b-9821-cb5e63d8a07c">
+                  <td>Last Documented On 10/29/2026 10:04AM ; Feet For Life Centers Inc.</td>
+                </tr>
+                <tr>
+                  <td ID="socialHxDescriptionID5">Sex - Male</td>
+                  <td>10/29/2026</td>
+                </tr>
+                <tr ID="ProvenanceInfoId9f7660a0-17fe-451d-91f0-55e7aff6f590">
+                  <td>Last Documented On 10/29/2026 3:21PM ; Feet For Life Centers Inc.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN" negationInd="true">
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" assigningAuthorityName="CCDA Social History Observation" extension="2015-08-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" assigningAuthorityName="CCDA Social History Observation" extension="2022-06-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" assigningAuthorityName="CCDA Social History Observation" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.19" extension="1270734" />
+              <code code="ASSERTION" displayName="Assertion" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode">
+                <translation code="29762-2" displayName="SOCIAL HISTORY" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              </code>
+              <text>
+                <reference value="#socialHxDescriptionID0" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NI" />
+              <value code="110483000" displayName="Tobacco user (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD">
+                <translation code="120047" displayName="tobacco use" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+              </value>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261029110423-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.78" assigningAuthorityName="CCDA Smoking Status Observation" extension="2014-06-09" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.78" assigningAuthorityName="CCDA Smoking Status Observation" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.19" extension="1270729" />
+              <code code="72166-2" displayName="Tobacco smoking status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <text>
+                <reference value="#socialHxDescriptionID1" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime value="20261028105000" />
+              <value code="266919005" displayName="Never smoked tobacco (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD">
+                <translation code="1000005111" displayName="smoking status" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+              </value>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261029110423-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" assigningAuthorityName="CCDA Social History Observation" extension="2015-08-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" assigningAuthorityName="CCDA Social History Observation" extension="2022-06-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" assigningAuthorityName="CCDA Social History Observation" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.19" extension="1270622" />
+              <code code="ASSERTION" displayName="Assertion" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode">
+                <translation code="29762-2" displayName="SOCIAL HISTORY" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              </code>
+              <text>
+                <reference value="#socialHxDescriptionID2" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NI" />
+              <value nullFlavor="OTH" xsi:type="CD">
+                <translation code="123369" displayName="never drank alcohol" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+              </value>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261029110423-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" assigningAuthorityName="CCDA Social History Observation" extension="2015-08-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" assigningAuthorityName="CCDA Social History Observation" extension="2022-06-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" assigningAuthorityName="CCDA Social History Observation" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.19" extension="1270621" />
+              <code code="ASSERTION" displayName="Assertion" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode">
+                <translation code="29762-2" displayName="SOCIAL HISTORY" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              </code>
+              <text>
+                <reference value="#socialHxDescriptionID3" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NI" />
+              <value nullFlavor="OTH" xsi:type="CD">
+                <translation code="1000001371" displayName="Never Smoked" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+              </value>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261029110423-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.38" assigningAuthorityName="CCDA Social History Observation" extension="2022-06-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.507" assigningAuthorityName="Sex" extension="2023-06-28" />
+              <id root="2d8035fa-5f22-4002-b916-2a2241e71b00" />
+              <code code="46098-0" displayName="Sex" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <statusCode code="completed" />
+              <effectiveTime value="20261029" />
+              <value code="248153007" displayName="Male" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD" />
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261029162158-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" assigningAuthorityName="CCDA Procedures Section (Entries Required)" extension="2014-06-09" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" assigningAuthorityName="CCDA Procedures Section (Entries Required)" />
+          <id root="59de8dfa-201c-46fb-b931-2ea52487ef53" />
+          <code code="47519-4" displayName="HISTORY OF PROCEDURES" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Procedures and Surgical History</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Procedures from this encounter</paragraph>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>Procedures</th>
+                  <th>Code</th>
+                  <th>Diagnosis</th>
+                  <th>Performing Provider</th>
+                  <th>Service Location</th>
+                  <th>Service Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="procedureDescriptionID1">Xray of Foot 3 Views</td>
+                  <td>73630</td>
+                  <td ID="procedureDescription1">Capsulitis</td>
+                  <td>Michael Horwitz DPM</td>
+                  <td />
+                  <td>10/28/2026</td>
+                </tr>
+                <tr ID="ProvenanceInfoIdcecd6985-c97b-4ce3-a278-692744839a28">
+                  <td>Last Documented On 10/28/2026 11:26AM ; Feet For Life Centers Inc.</td>
+                </tr>
+                <tr>
+                  <td ID="findingProcedureDescriptionID1270728">Clinical summary provided to patient</td>
+                  <td colspan="5" />
+                </tr>
+                <tr ID="ProvenanceInfoId3c0638a4-aad4-475a-9056-16532c0f7fdc">
+                  <td>Last Documented On 10/28/2026 12:43PM ; Feet For Life Centers Inc.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="CCDA Procedure Activity Procedure" extension="2014-06-09" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="CCDA Procedure Activity Procedure" extension="2022-06-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="CCDA Procedure Activity Procedure" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.17.1" extension="475370" />
+              <code code="73630" displayName="Xray of Foot 3 Views" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4">
+                <originalText>
+                  <reference value="#procedureDescriptionID1" />
+                </originalText>
+              </code>
+              <text>
+                <reference value="#procedureDescriptionID1" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20261028" />
+                <high nullFlavor="NI" />
+              </effectiveTime>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id root="2.16.840.1.113883.4.6" extension="1689762429" assigningAuthorityName="NPI" />
+                  <id root="2.16.840.1.113883.3.140.1.71486.4.3" extension="55" assigningAuthorityName="Practice Provider ID" />
+                  <addr use="HP">
+                    <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                    <city>Saint Louis</city>
+                    <state>MO</state>
+                    <country>US</country>
+                    <postalCode>63124</postalCode>
+                  </addr>
+                  <telecom value="tel:+1 314 983 0303" use="WP" />
+                  <assignedPerson>
+                    <name>
+                      <given>Michael</given>
+                      <family>Horwitz</family>
+                      <suffix>DPM</suffix>
+                    </name>
+                  </assignedPerson>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261028122601-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+              <informant>
+                <assignedEntity>
+                  <id root="c2e92787-7781-4ca1-b01e-2b295ce93529" />
+                  <addr use="HP">
+                    <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                    <city>Saint Louis</city>
+                    <state>MO</state>
+                    <country>US</country>
+                    <postalCode>63124-1906</postalCode>
+                  </addr>
+                  <telecom value="tel:+1 314 983 0303" use="WP" />
+                  <assignedPerson>
+                    <name nullFlavor="UNK" />
+                  </assignedPerson>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="CCDA Procedure Activity Procedure" extension="2014-06-09" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="CCDA Procedure Activity Procedure" extension="2022-06-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="CCDA Procedure Activity Procedure" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.19" extension="1270728" />
+              <code nullFlavor="NA">
+                <originalText>
+                  <reference value="#findingProcedureDescriptionID1270728" />
+                </originalText>
+                <translation code="1000004521" displayName="~T Clinical summary provided to patient" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+              </code>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20261028" />
+                <high value="20261028" />
+              </effectiveTime>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261028134354-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.39" assigningAuthorityName="CCDA Medical History Section" />
+          <id root="29bf5bd5-b2d9-4c90-936c-2ce30f56f9b5" />
+          <code code="11329-0" displayName="HISTORY GENERAL" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Medical History</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Medical History addressed during this encounter</paragraph>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th>Last Updated</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="medicalHxDescriptionID0">History of anemia</td>
+                  <td>10/28/2026</td>
+                </tr>
+                <tr ID="ProvenanceInfoId64eec905-e67b-4153-b21c-387cb86468e9">
+                  <td>Last Documented On 10/29/2026 10:04AM ; Feet For Life Centers Inc.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="CCDA Procedure Activity Procedure" extension="2014-06-09" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="CCDA Procedure Activity Procedure" extension="2022-06-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="CCDA Procedure Activity Procedure" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.19" extension="1270620" />
+              <code code="275538002" displayName="History of anemia (situation)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                <originalText>
+                  <reference value="#medicalHxDescriptionID0" />
+                </originalText>
+                <translation code="30320" displayName="ANEMIA" codeSystem="2.16.840.1.113883.6.26" codeSystemName="MEDCIN" />
+                <translation code="312850006" displayName="History of disorder (situation)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                <translation code="271737000" displayName="Anemia (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                <translation code="392521001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+              </code>
+              <text>
+                <reference value="#medicalHxDescriptionID0" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20261028" />
+                <high nullFlavor="NI" />
+              </effectiveTime>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.15" assigningAuthorityName="CCDA Family History Section" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.15" assigningAuthorityName="CCDA Family History Section" />
+          <id root="0309ebfc-8c0c-42d4-ae93-7a2e860b3471" />
+          <code code="10157-6" displayName="HISTORY OF FAMILY MEMBER DISEASES" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Family History</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Family History addressed during this encounter</paragraph>
+            <content>No Family History Recorded</content>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.18" assigningAuthorityName="CCDA Review of Systems Section" />
+          <id root="b99c07df-ee36-4d7b-a939-e56f8dbb4a64" />
+          <code code="10187-3" displayName="REVIEW OF SYSTEMS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Review of Systems</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Review of Systems from this encounter</paragraph>
+            <content>No Review of Systems Recorded</content>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.56" assigningAuthorityName="CCDA Mental Status Section" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.56" assigningAuthorityName="CCDA Mental Status Section" />
+          <id root="662a0dfc-99ce-4b8a-958c-80d264a7de42" />
+          <code code="10190-7" displayName="MENTAL STATUS ASSESSMENT" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Mental Status</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Mental Status from this encounter</paragraph>
+            <content ID="mentalStatusDescriptionNoDataID">No Mental Status Recorded</content>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.14" assigningAuthorityName="CCDA Functional Status Section" extension="2014-06-09" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.14" assigningAuthorityName="CCDA Functional Status Section" />
+          <id root="24174cb1-7b1e-4d7c-888b-5f7bb6d7bde4" />
+          <code code="47420-5" displayName="FUNCTIONAL STATUS ASSESSMENT" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Functional Status</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Functional Status from this encounter</paragraph>
+            <content ID="functionalStatusDescriptionNoDataID">No Functional Status Recorded</content>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.2.10" assigningAuthorityName="CCDA Physical Exam Section" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.2.10" assigningAuthorityName="CCDA Physical Exam Section" />
+          <id root="8b22037e-fd78-4615-b253-82fe66c229d8" />
+          <code code="29545-1" displayName="PHYSICAL FINDINGS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Physical Exam</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Physical Exam from this encounter</paragraph>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.2.1" assigningAuthorityName="CCDA Immunizations Section (Entries Required)" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.2.1" assigningAuthorityName="CCDA Immunizations Section (Entries Required)" />
+          <id root="736699eb-5d28-4b09-b9c2-e469d22e9f8e" />
+          <code code="11369-6" displayName="HISTORY OF IMMUNIZATIONS" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Immunizations</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Immunizations addressed during this encounter</paragraph>
+            <content>No Immunizations Recorded</content>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" assigningAuthorityName="CCDA Allergies Section (Entries Required)" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" assigningAuthorityName="CCDA Allergies Section (Entries Required)" />
+          <id root="4cd2ad62-0675-4ec7-96de-bd8253b6a71e" />
+          <code code="48765-2" displayName="Allergies, adverse reactions, alerts" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Allergies</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Active Allergies</paragraph>
+            <content ID="allergyDescriptionID0">No Known Allergies</content>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30" assigningAuthorityName="CCDA Allergy Problem Act" extension="2015-08-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.30" assigningAuthorityName="CCDA Allergy Problem Act" />
+              <id root="ba269d64-29c5-4080-ac82-bb5e08b69ec7" />
+              <code code="CONC" displayName="Concern" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" />
+              <statusCode code="active" />
+              <effectiveTime>
+                <low value="20261028" />
+                <high nullFlavor="NI" />
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7" assigningAuthorityName="CCDA Allergy Observation" extension="2014-06-09" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7" assigningAuthorityName="CCDA Allergy Observation" />
+                  <id root="8ea365cc-bdce-42bd-a41d-865fe961d8e4" />
+                  <code code="ASSERTION" displayName="Assertion" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" />
+                  <text>
+                    <reference value="#allergyDescriptionID0" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low value="20261028" />
+                    <high nullFlavor="NI" />
+                  </effectiveTime>
+                  <value code="420134006" displayName="Propensity to adverse reaction (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD" />
+                  <participant typeCode="CSM">
+                    <participantRole classCode="MANU">
+                      <playingEntity classCode="MMAT">
+                        <code nullFlavor="NA">
+                          <originalText>
+                            <reference value="#allergyDescriptionID0" />
+                          </originalText>
+                        </code>
+                        <name>No Known Allergies</name>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.500" assigningAuthorityName="CCDA Care Team Section (Entries Required)" extension="2019-07-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.500" assigningAuthorityName="CCDA Care Team Section (Entries Required)" extension="2022-06-01" />
+          <id root="cba0b79c-e825-4632-ab45-f7519f4d5376" />
+          <code code="85847-2" displayName="Care Team" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Care Team</title>
+          <text>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>Member Name (Identifier)</th>
+                  <th>Role/Relation</th>
+                  <th>Location/Telecom</th>
+                  <th ID="ProvenanceInfoIdc747f9ee-2732-4490-9dd5-a3f3bf443807">Last Documented By</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="careteamentry0">
+                  <td>Michael Horwitz DPM (1689762429)</td>
+                  <td>Assigned practitioner (occupation)</td>
+                  <td ID="CareTeam_ContactInfo_0">
+                    <paragraph>8637 Delmar Blvd, Saint Louis, MO, US, 63124</paragraph>
+                    <paragraph>tel:+1 314 983 0303</paragraph>
+                    <paragraph />
+                  </td>
+                  <td ID="ProvenanceInfoId2b54b977-a205-4629-aac6-6c6fce4e87d4">Last Documented On 10/29/2026 3:21PM ; Feet For Life Centers Inc.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.500" assigningAuthorityName="CCDA Care Team Organizer" extension="2019-07-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.500" assigningAuthorityName="CCDA Care Team Organizer" extension="2022-06-01" />
+              <id root="2.16.840.1.113883.4.6" extension="1689762429" assigningAuthorityName="NPI" />
+              <code code="86744-0" displayName="Care Team" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                <originalText>
+                  <reference value="#careteamentry0" />
+                </originalText>
+              </code>
+              <statusCode code="active" />
+              <effectiveTime>
+                <low value="20261029" />
+                <high nullFlavor="NI" />
+              </effectiveTime>
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261029162158-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+              <participant typeCode="PPRF">
+                <participantRole>
+                  <id root="2.16.840.1.113883.4.6" extension="1689762429" assigningAuthorityName="NPI" />
+                </participantRole>
+              </participant>
+              <component>
+                <act classCode="PCPR" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.500.1" assigningAuthorityName="CCDA Care Team ACT" extension="2019-07-01" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.500.1" assigningAuthorityName="CCDA Care Team ACT" extension="2022-06-01" />
+                  <id root="2.16.840.1.113883.4.6" extension="1689762429" assigningAuthorityName="NPI" />
+                  <code code="85847-2" displayName="Care Team Information" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <statusCode code="active" />
+                  <effectiveTime>
+                    <low value="20261029" />
+                    <high nullFlavor="NI" />
+                  </effectiveTime>
+                  <performer>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.4.6" extension="1689762429" assigningAuthorityName="NPI" />
+                      <addr use="HP">
+                        <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                        <city>Saint Louis</city>
+                        <state>MO</state>
+                        <country>US</country>
+                        <postalCode>63124</postalCode>
+                      </addr>
+                      <telecom value="tel:+1 314 983 0303" />
+                      <assignedPerson>
+                        <name>
+                          <given>Michael</given>
+                          <family>Horwitz</family>
+                          <suffix>DPM</suffix>
+                        </name>
+                      </assignedPerson>
+                    </assignedEntity>
+                  </performer>
+                </act>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1" assigningAuthorityName="CCDA Encounters Section (Entries Required)" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1" assigningAuthorityName="CCDA Encounters Section (Entries Required)" />
+          <id root="867aa08f-e40b-417a-bdd7-9aeec74ee644" />
+          <code code="46240-8" displayName="History of encounters" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Encounters</title>
+          <text>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>Encounter</th>
+                  <th>Provider</th>
+                  <th>Location (Healthcare Service Location)</th>
+                  <th>Date</th>
+                  <th>Check-In Time</th>
+                  <th>Check-Out Time</th>
+                  <th>Diagnosis</th>
+                  <th>Encounter Disposition</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="encounterDescriptionID0">
+                  <td ID="encounterTypeDescriptionID0">New Patient Visit</td>
+                  <td>Michael Horwitz DPM</td>
+                  <td>Feet For Life Centers Inc.</td>
+                  <td>10/28/2026</td>
+                  <td>10:52AM</td>
+                  <td>11:34AM</td>
+                  <td />
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49" assigningAuthorityName="CCDA Encounter Activity" extension="2015-08-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.49" assigningAuthorityName="CCDA Encounter Activity" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.16" extension="149079" assigningAuthorityName="Intergy Encounter ID" />
+              <id root="2.16.840.1.113883.3.140.1.71486.4.10.16.1" extension="146064" assigningAuthorityName="Intergy Encounter Number" />
+              <code nullFlavor="UNK">
+                <originalText>
+                  <reference value="#encounterTypeDescriptionID0" />
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounterDescriptionID0" />
+              </text>
+              <effectiveTime>
+                <low value="20261028105208-0500" />
+                <high value="20261028113400-0500" />
+              </effectiveTime>
+              <sdtc:dischargeDispositionCode nullFlavor="UNK" />
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id root="2.16.840.1.113883.4.6" extension="1689762429" assigningAuthorityName="NPI" />
+                  <id root="2.16.840.1.113883.3.140.1.71486.4.3" extension="55" assigningAuthorityName="Practice Provider ID" />
+                  <addr use="HP">
+                    <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                    <city>Saint Louis</city>
+                    <state>MO</state>
+                    <country>US</country>
+                    <postalCode>63124</postalCode>
+                  </addr>
+                  <telecom value="tel:+1 314 983 0303" use="WP" />
+                  <assignedPerson>
+                    <name>
+                      <given>Michael</given>
+                      <family>Horwitz</family>
+                      <suffix>DPM</suffix>
+                    </name>
+                  </assignedPerson>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <informant>
+                <assignedEntity>
+                  <id root="b409359d-d32a-4554-a103-1326280196d2" />
+                  <addr use="HP">
+                    <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                    <city>Saint Louis</city>
+                    <state>MO</state>
+                    <country>US</country>
+                    <postalCode>63124-1906</postalCode>
+                  </addr>
+                  <telecom value="tel:+1 314 983 0303" use="WP" />
+                  <assignedPerson>
+                    <name nullFlavor="UNK" />
+                  </assignedPerson>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.32" assigningAuthorityName="CCDA Encounter Location" />
+                  <code nullFlavor="UNK" />
+                  <addr use="HP">
+                    <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                    <city>Saint Louis</city>
+                    <state>MO</state>
+                    <country>US</country>
+                    <postalCode>63124-1906</postalCode>
+                  </addr>
+                  <telecom value="tel:+1 314 983 0303" use="WP" />
+                  <playingEntity classCode="PLC">
+                    <name>Feet For Life Centers Inc.</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="REFR">
+                <act classCode="ACT" moodCode="EVN">
+                  <code code="99203" displayName="New Patient Level 3 30-44 min" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" />
+                </act>
+              </entryRelationship>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.18" assigningAuthorityName="CCDA Payers Section" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.18" assigningAuthorityName="CCDA Payers Section" />
+          <id root="d9b07c85-ea57-42f4-8971-8cb9b14eaa54" />
+          <code code="48768-6" displayName="PAYMENT SOURCES" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Payer</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Active Insurance Policies</paragraph>
+            <paragraph>
+              <content>No Insurance Coverage Recorded</content>
+            </paragraph>
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>Guarantor</th>
+                  <th>Relationship</th>
+                  <th>Guarantor Phone</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Scanlon, Graham</td>
+                  <td>Self</td>
+                  <td>3147837513</td>
+                </tr>
+                <tr>
+                  <td ID="ProvenanceInfoId1e7ad926-729d-4235-995f-3a7977a33676" colspan="4">Last Documented On 10/27/2026 1:20PM ; Feet For Life Centers Inc.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.60" assigningAuthorityName="CCDA Coverage Activity" extension="2023-05-01" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.60" assigningAuthorityName="CCDA Coverage Activity" />
+              <id root="03f8695c-3757-40ce-90e2-1efb82080259" />
+              <code code="48768-6" displayName="PAYMENT SOURCES" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <statusCode code="completed" />
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" extension="2019-10-01" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" assigningAuthorityName="Author Participation" />
+                <time value="20261027132056" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4" />
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+              <informant>
+                <assignedEntity>
+                  <id root="4504f82b-6a8f-4bcd-a916-8f793bd64a24" />
+                  <addr use="HP">
+                    <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                    <city>Saint Louis</city>
+                    <state>MO</state>
+                    <country>US</country>
+                    <postalCode>63124-1906</postalCode>
+                  </addr>
+                  <telecom value="tel:+1 314 983 0303" use="WP" />
+                  <assignedPerson>
+                    <name nullFlavor="UNK" />
+                  </assignedPerson>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+              <entryRelationship typeCode="COMP">
+                <sequenceNumber value="1" />
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.61" assigningAuthorityName="CCDA Policy Activity" extension="2023-05-01" />
+                  <templateId root="2.16.840.1.113883.10.20.22.4.61" assigningAuthorityName="CCDA Policy Activity" />
+                  <id root="2.16.840.1.113883.3.140.1.71486.4.10.6.6" extension="32394" />
+                  <code code="81" displayName="Self-pay" codeSystem="2.16.840.1.113883.3.221.5" codeSystemName="Source of Payment Typology (PHDSC)" />
+                  <statusCode code="completed" />
+                  <performer typeCode="PRF" nullFlavor="UNK">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.87" assigningAuthorityName="CCDA Payer Performer" />
+                    <assignedEntity classCode="ASSIGNED">
+                      <id nullFlavor="NI" />
+                      <code code="PAYOR" displayName="Invoice Payor" codeSystem="2.16.840.1.113883.5.110" codeSystemName="RoleClassRelationshipFormal" />
+                    </assignedEntity>
+                  </performer>
+                  <performer typeCode="PRF">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.88" assigningAuthorityName="CCDA Guarantor Performer" />
+                    <assignedEntity classCode="ASSIGNED">
+                      <id root="2.16.840.1.113883.3.140.1.71486.4.10.6.6" extension="32394" />
+                      <code code="GUAR" displayName="Guarantor" codeSystem="2.16.840.1.113883.5.110" codeSystemName="RoleClassRelationshipFormal" />
+                      <addr use="HP">
+                        <streetAddressLine>616 N Laclede Station Rd</streetAddressLine>
+                        <city>Saint Louis</city>
+                        <state>MO</state>
+                        <country>US</country>
+                        <postalCode>63119</postalCode>
+                      </addr>
+                      <telecom value="tel:+1 314 783 7513" use="HP" />
+                      <representedOrganization>
+                        <name nullFlavor="NI" />
+                        <telecom nullFlavor="NI" />
+                        <addr use="HP" nullFlavor="NI" />
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                  <participant typeCode="COV">
+                    <templateId root="2.16.840.1.113883.10.20.22.4.89" assigningAuthorityName="Covered Party Participant" />
+                    <participantRole classCode="PAT">
+                      <id root="2.16.840.1.113883.3.140.1.71486.4.4" extension="32394" />
+                      <code code="SELF" displayName="Self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" />
+                      <addr use="HP" nullFlavor="NI" />
+                      <telecom value="tel:+1 314 783 7513" use="HP" />
+                      <playingEntity>
+                        <name>
+                          <given>Graham</given>
+                          <family>Scanlon</family>
+                        </name>
+                        <sdtc:birthTime value="19990522" />
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="REFR">
+                    <act classCode="ACT" moodCode="DEF" negationInd="true">
+                      <id nullFlavor="NI" />
+                      <code nullFlavor="NA" />
+                      <text>No Insurance</text>
+                    </act>
+                  </entryRelationship>
+                </act>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.21" assigningAuthorityName="CCDA Advance Directives Section" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.21" assigningAuthorityName="CCDA Advance Directives Section" />
+          <id root="ea0cb7ae-02d6-4a5e-8be0-12080b945a48" />
+          <code code="42348-3" displayName="ADVANCE DIRECTIVES" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Advance Directives</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Current Advance Directives</paragraph>
+            <content>No Advance Directives Recorded</content>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.58" assigningAuthorityName="Health Concerns Section" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.58" assigningAuthorityName="Health Concerns Section" />
+          <id root="99fe347a-77c8-47a7-af65-4723dd771260" />
+          <code code="75310-3" displayName="HEALTH CONCERNS DOCUMENT" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Health Concerns</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Health Concerns addressed during this encounter</paragraph>
+            <content ID="concernDescriptionid0">No Active Health Concerns Recorded</content>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.60" assigningAuthorityName="Goals Section" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.60" assigningAuthorityName="Goals Section" />
+          <id root="802543fd-8f71-4844-a1ed-a37993c08aa5" />
+          <code code="61146-7" displayName="Goals" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Goals</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Goals addressed during this encounter</paragraph>
+            <content ID="goalReference0">No Active Goals Recorded</content>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01" />
+          <code code="34109-9" displayName="Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Clinical Notes</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Clinical Notes from this encounter</paragraph>
+            <list>
+              <item ID="Note1">
+                <paragraph styleCode="xContentHeader">Progress note</paragraph>
+                <table width="100%">
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Encounter</th>
+                      <th>Last Documented by</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10/28/2026</td>
+                      <td>New Patient Visit</td>
+                      <td>Last documented on 10/29/2026; 10:04 AM, Michael Horwitz DPM; Feet For Life Centers Inc.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width="100%">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <paragraph>
+                          <content>** Reason For Visit **</content>
+                          <br />
+                          <content>Date of onset: 2020 and Date of onset: 3/2026.</content>
+                          <br />
+                          <content>2nd MTP joint pain.</content>
+                          <br />
+                          <content>Bone contusion on lower fibula/ the knub on the outside of the left ankle.</content>
+                          <br />
+                          <content>Conservative measures-pads, orthotics, offloading, steriod shot, oral steroids, PT, contrast therapy, toe speaders.</content>
+                          <br />
+                          <content>R.I.C.E.</content>
+                          <br />
+                          <content></content>
+                          <br />
+                          <content>** Notes **</content>
+                          <br />
+                          <content>Date of Service: 10/28/2026</content>
+                          <br />
+                          <content>Patient: Graham Scanlon</content>
+                          <br />
+                          <content>Provider: Michael Horwitz, DPM</content>
+                          <br />
+                          <content>Visit Type: new; in-person</content>
+                          <br />
+                          <content>Chief Complaint: Left foot pain near the second toe joint</content>
+                          <br />
+                          <content>Subjective</content>
+                          <br />
+                          <content>1: Left foot pain</content>
+                          <br />
+                          <content>Seven months of pain near the second toe joint, initially a "pebble feeling" under the joint. Pain varies from 4 to 10 out of 10. Sharp pain occurs intermittently, including with firm pressure. Recently developed nighttime throbbing that can become "burning"; occasionally feels the toe "vibrate." No shooting pain, dull aching, or numbness between the toes. Prior X-rays reportedly showed no fracture; arthrogram reportedly showed no plantar plate tear. Previously diagnosed with capsulitis; patient reports MRI showed capsulitis. One cortisone injection at Horizon Foot and Ankle did not reduce peak pain but helped it settle faster. Walking tolerance increased from 15-20 minutes to about 30 minutes after injection.</content>
+                          <br />
+                          <content>Medications:</content>
+                          <br />
+                          <content>Allergies:</content>
+                          <br />
+                          <content>Objective</content>
+                          <br />
+                          <content>Vitals:</content>
+                          <br />
+                          <content>Exam:</content>
+                          <br />
+                          <content>- Left foot: Tenderness near the second toe joint. Minimal pain with rolling the foot. Limited first-ray hypermobility; preserved arch.</content>
+                          <br />
+                          <content>Data Reviewed:</content>
+                          <br />
+                          <content>- Left foot X-rays today, AP, lateral, and oblique: Long first ray with mild arthritic changes at the great toe joint. Lesser metatarsal parabola within normal limits; no cortical disruption. Normal first-ray declination on lateral view. Joint spaces preserved, with slight flattening of the metatarsal head.</content>
+                          <br />
+                          <content>Assessment &amp; Plan</content>
+                          <br />
+                          <content>1. Left second toe joint capsulitis: persistent</content>
+                          <br />
+                          <content>Assessment: Symptoms primarily suggest capsulitis, with possible adjacent nerve irritation or altered nerve course. Symptoms are not typical of a diagnosable Morton's neuroma. Limited response to one cortisone injection; prior arthrogram reportedly showed no plantar plate tear.</content>
+                          <br />
+                          <content>- Diagnostics: No additional MRI recommended at present.</content>
+                          <br />
+                          <content>- Counseling: Discussed possible nerve involvement from joint inflammation or compensation. Discussed uncertainty of cryotherapy benefit without a clear neuroma diagnosis. Reviewed risks of repeat cortisone injections, including capsular stretching and hammertoe. Discussed metatarsal shortening with a Weil osteotomy as a potential option for persistent pain. Discussed limited confidence in platelet-rich plasma or biologics for this inflammation.</content>
+                          <br />
+                          <content>- Non-pharmacologic: Discussed cold laser treatment. If the newer MIS laser is available in January and pain persists, consider twice-weekly treatment for 10 sessions, with response assessed after four sessions. The currently available M7 laser is an alternative, though effectiveness for foot conditions is uncertain. Send laser information to the patient.</content>
+                          <br />
+                          <content>- Follow-up: Reassess if pain persists; Return precautions: Seek earlier evaluation for worsening pain, new numbness or weakness, or difficulty bearing weight.</content>
+                          <br />
+                          <content>mh</content>
+                          <br />
+                          <content></content>
+                          <br />
+                          <content>** History of Present Illness **</content>
+                          <br />
+                          <content>Graham Scanlon is a 27 year old male.  </content>
+                          <br />
+                          <content>- Allergy list reviewed -  Problem list reviewed -  Medication list reviewed</content>
+                          <br />
+                          <content></content>
+                          <br />
+                          <content>** Current Medication **</content>
+                          <br />
+                          <content>Medication list reviewed.</content>
+                          <br />
+                          <content></content>
+                          <br />
+                          <content>** Past Medical/Surgical History **</content>
+                          <br />
+                          <content>Diagnoses: </content>
+                          <br />
+                          <content>Anemia </content>
+                          <br />
+                          <content></content>
+                          <br />
+                          <content>** Social History **</content>
+                          <br />
+                          <content>Tobacco use and exposure:  No tobacco use.  Never smoked.  Smoking status: Never smoker.</content>
+                          <br />
+                          <content>Alcohol: Never drank alcohol.</content>
+                          <br />
+                          <content></content>
+                          <br />
+                          <content>** Physical Findings **</content>
+                          <br />
+                          <content>-  Vitals taken 10/28/2026 12:43 pm</content>
+                          <br />
+                          <content>BP-Sitting		142/75 mmHg</content>
+                          <br />
+                          <content>Height		73 in</content>
+                          <br />
+                          <content>Weight		145 lbs</content>
+                          <br />
+                          <content>Body Mass Index		19.1 kg/m2</content>
+                          <br />
+                          <content>Body Surface Area		1.9 m2	</content>
+                          <br />
+                          <content></content>
+                          <br />
+                          <content>** Discussed **</content>
+                          <br />
+                          <content>- Education and instructions; </content>
+                          <br />
+                          <content>- Instructions for patient; </content>
+                          <br />
+                          <content>- Education and counseling</content>
+                          <br />
+                          <content></content>
+                          <br />
+                          <content>** Plan **</content>
+                          <br />
+                          <content>StartCited	-  Enthesopathy, unspecified</content>
+                          <br />
+                          <content>ML7: ML7</content>
+                          <br />
+                          <content>EndCited  </content>
+                          <br />
+                          <content>** Practice Management **</content>
+                          <br />
+                          <content>Clinical summary provided to patient.</content>
+                        </paragraph>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </item>
+            </list>
+          </text>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.202" extension="2016-11-01" />
+              <code code="34109-9" displayName="Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                <translation code="11506-3" displayName="Progress note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              </code>
+              <text>
+                <reference value="#Note1" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime value="20261028" />
+              <author>
+                <templateId root="2.16.840.1.113883.10.20.22.4.119" assigningAuthorityName="Author Participation" />
+                <templateId root="2.16.840.1.113883.10.20.22.5.6" extension="2019-10-01" />
+                <time value="20261029110423-0500" />
+                <assignedAuthor>
+                  <id root="2.16.840.1.113883.3.140.1.71486.4.2" extension="36" />
+                  <assignedPerson>
+                    <name>
+                      <given>Michael</given>
+                      <family>Horwitz</family>
+                      <suffix>DPM</suffix>
+                    </name>
+                  </assignedPerson>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.140.1.71486.4" extension="FFLC" />
+                    <name>Feet For Life Centers Inc.</name>
+                    <telecom value="tel:+1 314 983 0303" use="WP" />
+                    <addr use="HP">
+                      <streetAddressLine>8637 Delmar Blvd</streetAddressLine>
+                      <city>Saint Louis</city>
+                      <state>MO</state>
+                      <country>US</country>
+                      <postalCode>63124-1906</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedAuthor>
+              </author>
+              <entryRelationship typeCode="COMP" inversionInd="true">
+                <encounter classCode="ENC" moodCode="EVN">
+                  <id root="encounterDescriptionID0" />
+                </encounter>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.21.2.3" assigningAuthorityName="Intervention Section" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.21.2.3" assigningAuthorityName="Intervention Section" />
+          <id root="7b438dbe-ed1e-4964-9961-845e17b1cbf5" />
+          <code code="62387-6" displayName="Interventions" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Interventions</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Interventions addressed during this encounter</paragraph>
+            <content ID="interventionDescriptionid0">No Interventions Recorded</content>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.61" assigningAuthorityName="Outcome Section" extension="2015-08-01" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.61" assigningAuthorityName="Outcome Section" />
+          <id root="d70d203b-06c6-41ea-9efe-240e51d68483" />
+          <code code="11383-7" displayName="Patient Problem Outcome" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Evaluations &amp; Outcomes</title>
+          <text>
+            <paragraph styleCode="xH3RightExplain">Includes: Evaluations &amp; Outcomes addressed during this encounter</paragraph>
+            <content ID="outcomeReference0">No Outcomes Recorded</content>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
