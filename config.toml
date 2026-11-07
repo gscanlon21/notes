@@ -45,7 +45,7 @@ default_language = "en"
 include_title = true
 
 # Whether to include the description of the page/section in the index.
-include_description = false
+include_description = true
 
 # Whether to include the RFC3339 datetime of the page in the search index.
 include_date = false
