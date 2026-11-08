@@ -1,22 +1,42 @@
 +++
 title = "Git Submodules"
+description = ""
+
+[extra]
+updated = 2027-01-01
+see_also = []
 +++
 
 {{ <hidden page={page} section={section} /> }}
 
 
+# Config
 
-# Errors
+> [!TIP]
+> `cat .gitmodules`
+>> List Submodule Names
 
-## Submodule is Detached from Head
-
-```powershell
-cd C:/path/to/project/root
-git submodule update --remote --rebase
+###### Recommended Git Config
+```
+[submodule "content/submodule"]
+```
+```
+  update = rebase
 ```
 
+
+# Help
+
+###### Submodule is Detached from Head
 ```powershell
-git submodule update 
-git submodule foreach git checkout main 
-git submodule foreach git pull origin main 
+cd C:/code/notes/content/submodule;
+```
+```powershell
+git checkout main;
+```
+```powershell
+git submodule update --remote --rebase;
+```
+```powershell
+git pull origin main
 ```

@@ -4,16 +4,36 @@ article.v1 {
 	h1, h2, h3, h4 {
 		text-decoration-line: underline;
 		text-decoration-style: solid;
+
+		& > span::after {
+			/* Display a copy icon on hover. */
+			margin-inline-start: $base-padding * 0.2;
+			font-size: $base-font-size * 0.9;
+			color: color(--color-text, 0.75);
+			transition-timing-function: ease;
+			transition-property: opacity;
+			transition-duration: 250ms;
+			vertical-align: baseline;
+			display: inline-block;
+			cursor: pointer;
+			content: "#";
+			opacity: 0;
+		}
+
+		&:hover > span::after {
+			opacity: 1;
+		}
 	}
 
 	h2 {
 		position: relative;
 
-		&::after {
+		&::before {
 			content: '';
 			background-color: color(--color-h2, var(--side-opacity));
 			transform: translateX(8px);
 			left: $site-padding * -1;
+			pointer-events: none;
 			position: absolute;
 			top: 0.15em;
 			width: 2px;
@@ -28,11 +48,12 @@ article.v1 {
 	h3 {
 		position: relative;
 
-		&::after {
+		&::before {
 			content: '';
 			background-color: color(--color-h3, var(--side-opacity));
 			transform: translateX(8px);
 			left: $site-padding * -1;
+			pointer-events: none;
 			position: absolute;
 			top: 0.15em;
 			width: 2px;
@@ -47,11 +68,12 @@ article.v1 {
 	h4 {
 		position: relative;
 
-		&::after {
+		&::before {
 			content: '';
 			background-color: color(--color-h4, var(--side-opacity));
 			transform: translateX(8px);
 			left: $site-padding * -1;
+			pointer-events: none;
 			position: absolute;
 			top: 0.15em;
 			width: 2px;
@@ -74,7 +96,7 @@ article.v1 {
 	}
 
 	@media print {
-		h1::after, h2::after, h3::after, h4::after {
+		h1::before, h2::before, h3::before, h4::before {
 			display: none;
 		}
 	}

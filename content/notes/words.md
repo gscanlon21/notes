@@ -17,6 +17,10 @@ see_also = []
 >> Questions
 
 
+{% <flashcards header="Parts of Speech"> %} 
+~~**Pronoun**~~
+: Refers to a noun.
+
 **Noun**
 : People, places, or things.
 
@@ -25,6 +29,7 @@ see_also = []
 
 **Adverb**
 : A verb modifier.
+{% </flashcards> %}
 
 
 # Words

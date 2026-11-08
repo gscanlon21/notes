@@ -11,27 +11,24 @@ see_also = []
 
 {{ <hidden page={page} section={section} /> }}
 
-**Noun**
-: People, places, or things.
-
-**Verb**
-: An action word.
-
-**Adverb**
-: A verb modifier.
 
 
 # Prefixes
 
+{% <flashcards header="Prefixes"> %} 
 **Endo-**
 : Inside
 
 **Ect-**
 : Outside
+{% </flashcards> %}
+
 
 
 # Research Settings
 
+
+{% <flashcards header="Research Settings"> %} 
 _**In Vivo**_
 _Within the living_
 : It refers to work that’s performed in a whole, living organism.
@@ -47,7 +44,7 @@ _In its original place_
 _**In Silico**_
 _Within the glass_
 : An experiment performed on a computer or via computer simulation software.
-
+{% </flashcards> %}
 
 
 # Osmosis & Diffusion
@@ -84,8 +81,6 @@ Introgressive Hybridization
 
 
 ## Metabolomics
-
-
 
 **Proteome**
 : The entire set of proteins that is, or can be, expressed by a genome, cell, tissue, or organism at a certain time. 

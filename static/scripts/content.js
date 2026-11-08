@@ -10,12 +10,16 @@ for (const element of Array.from(document.getElementsByTagName('input'))) {
 
 // Remove whitespace from nav elements so they are :empty.
 for (const element of Array.from(document.getElementsByTagName('nav'))) {
-    element.innerHTML = element.innerHTML.trim();
+	if (element.childElementCount === 0) {
+		element.innerHTML = element.innerHTML.trim();
+	}
 }
 
 // Remove whitespace from menu elements so they are :empty.
 for (const element of Array.from(document.getElementsByTagName('menu'))) {
-    element.innerHTML = element.innerHTML.trim();
+    if (element.childElementCount === 0) {
+		element.innerHTML = element.innerHTML.trim();
+	}
 }
 
 // Remove whitespace from article elements so they are :empty.
@@ -23,7 +27,10 @@ for (const element of Array.from(document.getElementsByTagName('article'))) {
 	for (const hidden of element.getElementsByTagName('aside')) {
 		document.body.insertAdjacentElement('beforeend', hidden);
 	}
-    element.innerHTML = element.innerHTML.trim();
+    
+	if (element.childElementCount === 0) {
+		element.innerHTML = element.innerHTML.trim();
+	}
 }
 
 // Insert inline image <dd> elements into the end of the parent list.
@@ -71,6 +78,17 @@ for (const element of Array.from(document.getElementsByTagName('code'))) {
 			});
         });
     })
+}
+
+// Copy links to headers.
+for (const header of Array.from(document.querySelectorAll("h1, h2, h3, h4"))) {
+	header.append(document.createElement('span'));
+	header.addEventListener("click", () => {
+		if (header.hasAttribute('id')) {
+			window.location.hash = header.getAttribute('id');
+			navigator.clipboard.writeText(window.location.href);
+		}
+	});
 }
 
 let i, j = 0; // Allow checking the list items.

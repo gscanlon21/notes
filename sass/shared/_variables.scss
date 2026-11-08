@@ -41,6 +41,7 @@ $breakpoint-large: "#{$body-margin} + #{$body-margin} + #{$body-width-min} + 38r
 	--color-text-alt: #{to-rgb(#fff)};
 	--color-italic: #{to-rgb(#800000)};
 	--color-complete: #{to-rgb(#008000)};
+	--color-copy: #{to-rgb(#66CDAA)};
 
 	// Header colors
 	--color-h1: #{to-rgb(#000)};
@@ -76,6 +77,7 @@ $breakpoint-large: "#{$body-margin} + #{$body-margin} + #{$body-width-min} + 38r
 	--color-text-alt: #{to-rgb(#000)};
 	--color-italic: #{to-rgb(#FFB6C1)};
 	--color-complete: #{to-rgb(#008000)};
+	--color-copy: #{to-rgb(#66CDAA)};
 
 	// Header colors
 	--color-h1: #{to-rgb(#fff)};

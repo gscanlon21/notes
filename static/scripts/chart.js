@@ -25,7 +25,7 @@ document.querySelectorAll("table").forEach(table => {
 				y: raw.includes('<') ? y - 1 : y,
 				value: raw,
 			};
-		}),
+		}).slice(-10),
 		label: column.header,
         borderWidth: 2,
     }));
@@ -77,9 +77,9 @@ document.querySelectorAll("table").forEach(table => {
 				},
 				point: {
 					// Increase the radius around the point when the tooltip shows.
-					hitRadius: 6,
+					hitRadius: 10,
 					// Increase the size of the point when the user is withing the bounds of the hitRadius.
-					hoverRadius: 6,
+					hoverRadius: 10,
 				},
 			},
 			scales: {
@@ -108,16 +108,13 @@ document.querySelectorAll("table").forEach(table => {
 			plugins: {
 				// https://www.chartjs.org/docs/latest/configuration/tooltip.html
 				tooltip: {
-					mode: 'point',
+					mode: 'index',
 					intersect: true,
+					itemSort: (a, b) => b.parsed.y - a.parsed.y,
 					callbacks: {
-						title: (context) => {
-							// Pretty-print the x-axis date in the hover tooltip
-							return new Date(context[0].parsed.x).toDateString();
-						},
-						label: (context) => {
-							return `${context.dataset.label}: ${context.raw.value || context.raw}`;
-						},
+						// Pretty-print the x-axis date in the hover tooltip.
+						title: (context) => new Date(context[0].parsed.x).toDateString(),
+						label: (context) => `${context.dataset.label}: ${context.raw.value || context.raw}`,
 					},
 				},
 				legend: {

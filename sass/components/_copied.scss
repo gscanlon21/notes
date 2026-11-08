@@ -1,68 +1,38 @@
+.copied {
+	animation-timing-function: ease-in-out;
+	animation-duration: 1000ms; 
+	animation-fill-mode: none;
+	animation-name: fade;
+	position: relative;
 
-// Copy animation for inline code spans.
-code.copied:not(:has(span)) {
-	animation-timing-function: ease-in;
-	animation-fill-mode: forwards;
-	animation-name: copy-code;
-	animation-duration: 500ms;
+	background-blend-mode: hard-light;
+	background-image: linear-gradient(var(--angle, 90deg), 
+		color-mix(in srgb, color(--color-copy) var(--opacity), transparent), 
+		color-mix(in srgb, color(--color-copy, 0.1) var(--opacity), transparent)
+	);
 }
 
-// Copy animation for code blocks.
-pre.copied {
-	animation-timing-function: ease-in;
-	animation-fill-mode: forwards;
-	animation-name: copy-code;
-	animation-duration: 500ms;
-
-	& > code:has(span) {
-		background-color: transparent;
-	}
-}
-
-@keyframes copy-code {
-	0% {
-		background-color: color(--color-code-bg, 0.5) !important;
-	}
-
-
-	100% {
-		background-color: color(--color-code-bg);
-	}
+@property --opacity {
+	syntax: "<percentage>";
+	initial-value: 0%;
+	inherits: false;
 }
 
 @property --angle {
 	syntax: "<angle>";
-	initial-value: 0deg;
 	inherits: false;
 }
 
-.copied {
-	position: relative;
-}
-
-.copied::before,
-.copied::after {
-	content: "";
-	position: absolute;
-	inset: -0rem;
-	z-index: -1;
-	background: linear-gradient(var(--angle),
-			#032146, #C3F2FF, #b00);
-	animation: rotate 10s linear infinite;
-	border-radius: .25em;
-}
-
-.copied::after {
-	//filter: blur(10px);
-}
-
-@keyframes rotate {
+@keyframes fade {
 	0% {
-		--angle: -10deg;
+		--opacity: 25%;
+	}
+
+	5% {
+		--opacity: 50%;
 	}
 
 	100% {
-		--angle: 360deg;
+		--opacity: 0%;
 	}
 }
-

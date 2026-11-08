@@ -257,3 +257,10 @@ if (document.readyState === "complete" ||
 } else {
 	document.addEventListener("DOMContentLoaded", initSearch);
 }
+
+const searchInput = document.getElementById('search-input');
+const searchClear = document.getElementById('search-clear');
+searchClear.addEventListener('click', () => {
+	searchInput.value = '';
+	searchInput.dispatchEvent(new Event('input'));
+});

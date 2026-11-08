@@ -85,6 +85,8 @@ article.v1 {
 			margin: 0;
 			padding: 0;
 			display: inline;
+			background-image: none;
+			background-color: transparent !important;
 
 			&[data-lang]:not([data-lang="plain"])::before {
 				// Display the code lang.

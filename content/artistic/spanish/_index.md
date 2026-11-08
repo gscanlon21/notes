@@ -112,14 +112,16 @@ English is a germanic language with lots of latin vocabulary. Spanish is a moder
 > [!TIP]
 > In spanish, vowels are pronounced exactly as they sound. Pronounce the vowels as they are written.
 
-**es**
+
+{% <flashcards header="Nouns?"> %} 
+~~**es**~~
 : Is
 : If you know who the subject is
 : - It is
 : - He is
 : - She is
 
-**no**
+~~**no**~~
 : No
 : Not
 : Don't
@@ -127,4 +129,5 @@ English is a germanic language with lots of latin vocabulary. Spanish is a moder
 
 > It's not normal
 > No es normal.
+{% </flashcards> %}
 
