@@ -19,15 +19,20 @@ see_also = [
 
 > [!TIP]
 > alert tip
+>> With Title
 
 > [!NOTE]
-> alert note
+> - > alert note
+> - > Has Arrow List
 
 > [!CAUTION]
-> alert caution
+> - alert caution
+> - Is List
 
 > [!WARNING]
 > alert warning
+> 
+> Two para
 
 > [!IMPORTANT]
 > alert important
@@ -125,8 +130,13 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 ###### Sample Header
-> The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+>> The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 ###### Sample Footer
+
+- > **Sample Header**
+- > The quick brown fox
+  > jumps over the lazy dog.
+- > The quick brown fox jumps over the lazy dog.
 
 
 <br>

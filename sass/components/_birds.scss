@@ -6,12 +6,12 @@
 	z-index: -1;
 	left: 0;
 	top: 0;
-}
 
-.vanta-canvas {
-	transform: translate(-50%, -50%);
-	left: 50% !important;
-    top: 50% !important;
+	.vanta-canvas {
+		transform: translate(-50%, -50%);
+		left: 50% !important;
+		top: 50% !important;
+	}
 }
 
 @media print {

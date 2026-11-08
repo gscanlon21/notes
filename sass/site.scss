@@ -8,6 +8,7 @@
 @import 'shared/general';
 @import 'elements/headers';
 @import 'elements/user-agent';
+@import 'elements/horizontal-rule';
 @import 'elements/description-list';
 @import 'components/arrow-list';
 @import 'components/assessment';
@@ -18,7 +19,6 @@
 @import 'components/copied';
 @import 'components/header';
 @import 'components/footer';
-@import 'components/canvas';
 @import 'components/search';
 @import 'components/rating';
 @import 'components/alert';
@@ -30,6 +30,7 @@
 @import 'markdown/v1/table';
 @import 'markdown/v1/lists';
 @import 'markdown/v1/image';
+@import 'markdown/v1/charts';
 @import 'markdown/v1/article';
 @import 'markdown/v1/headers';
 @import 'markdown/v1/blockquote';

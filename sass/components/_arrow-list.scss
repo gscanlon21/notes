@@ -1,4 +1,4 @@
-blockquote:has(> ul > li > blockquote) {
+blockquote:not([class^="markdown-alert-"]):has(> ul > li > blockquote) {
 	padding-inline-start: 0 !important;
 	border-left: none !important;
 }
@@ -20,7 +20,7 @@ blockquote > ul:has(> li > blockquote) {
 	& > li:first-of-type > blockquote {
 		&::before {
 			bottom: $site-font-size * -0.55;
-			font-size: $base-font-size * 2;
+			font-size: $site-font-size * 2;
 			position: absolute;
 			content: '⤳';
 		}
@@ -33,7 +33,7 @@ blockquote > ul:has(> li > blockquote) {
 	& > li:has(> blockquote) + li > blockquote {
 		&::before {
 			bottom: $site-font-size * -0.55;
-			font-size: $base-font-size * 2;
+			font-size: $site-font-size * 2;
 			position: absolute;
 			content: '⤷';
 		}
