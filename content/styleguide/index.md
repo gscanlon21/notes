@@ -19,15 +19,20 @@ see_also = [
 
 > [!TIP]
 > alert tip
+>> With Title
 
 > [!NOTE]
-> alert note
+> - > alert note
+> - > Has Arrow List
 
 > [!CAUTION]
-> alert caution
+> - alert caution
+> - Is List
 
 > [!WARNING]
 > alert warning
+> 
+> Two para
 
 > [!IMPORTANT]
 > alert important
