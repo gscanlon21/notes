@@ -33,3 +33,9 @@ _Domain Match_
 `^`
 _Separator Character_
 : Matches a URL separator such as /, ?, &, =, :, or the end of the URL.
+
+## Filter Lists
+
+**Cookie Notices**
+: - [x] EasyList/uBO – Cookie Notices
+: - [x] AdGuard/uBO – Cookie Notices

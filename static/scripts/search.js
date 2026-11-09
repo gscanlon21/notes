@@ -263,4 +263,5 @@ const searchClear = document.getElementById('search-clear');
 searchClear.addEventListener('click', () => {
 	searchInput.value = '';
 	searchInput.dispatchEvent(new Event('input'));
+	searchInput.focus();
 });
