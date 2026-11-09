@@ -16,6 +16,7 @@ compile_sass = true
 # Example:
 # ignored_content = ["code_articles/**/{Cargo.lock,target}, *.rs"]
 # ignored_content = ["*.{graphml,xlsx}", "temp.*", "**/build_folder"]
+ignored_content = ["**/public/**"]
 
 # Similar to ignored_content, a list of glob patterns specifying asset files to
 # ignore when the static directory is processed. Defaults to none, which means
