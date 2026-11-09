@@ -32,11 +32,17 @@ see_also = []
 cd C:/code/notes/content/submodule;
 ```
 ```powershell
+git stash push -u -m "Detached Head Stash"
+```
+```powershell
 git checkout main;
 ```
 ```powershell
 git submodule update --remote --rebase;
 ```
 ```powershell
-git pull origin main
+git pull origin main --rebase
+```
+```powershell
+git stash apply
 ```
