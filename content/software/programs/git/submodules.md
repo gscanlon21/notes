@@ -18,7 +18,7 @@ see_also = []
 
 ###### Recommended Git Config
 ```
-[submodule "content/submodule"]
+[submodule "_notes"]
 ```
 ```
   update = rebase
