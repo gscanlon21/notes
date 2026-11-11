@@ -108,12 +108,16 @@
 	</header>
 	{% endblock header %}
 
-	
 
 	<main id="main">
 		{% block content %}
 		{% endblock content %}
 	</main>
+
+	<aside>
+		<div id="chart-options" data-type="{{ section?.extra?.chart_type | default(value=page?.extra?.chart_type | default(value='line')) }}"></div>
+	</aside>
+
 
 	{% block footer %}
 	{% include "partials/footer.html" %}

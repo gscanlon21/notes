@@ -3,7 +3,7 @@ title = "Newsletters"
 description = ""
 
 [extra]
-updated = 2026-06-01
+updated = 2027-01-01
 see_also = []
 +++
 
@@ -13,8 +13,8 @@ see_also = []
 
 
 **[Arnold's Pump Club](https://arnoldspumpclub.com/)**
-: Arnold's Pump Club is a daily newsletter by Arnold Schwarzenegger.
-: Simplify nutrition, fitness, and wellness with Arnold’s email each day.
+: "Arnold's Pump Club is a daily newsletter by Arnold Schwarzenegger."
+: "Simplify nutrition, fitness, and wellness with Arnold’s email each day."
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -22,7 +22,7 @@ see_also = []
   > - [x] 
 
 **[STL Bird of the Week](https://stlouisaudubon.org/bird-of-the-week/)**
-: ~~What's this about?~~
+: A bird of the week for the St. Louis region.
 : > - [x] 
   > - [x] 
   > - [x] 

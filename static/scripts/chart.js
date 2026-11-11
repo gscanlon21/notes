@@ -8,11 +8,11 @@ document.querySelectorAll("table").forEach(table => {
 		return;
 	}
 
-    const valueColumns = headers.map((header, index) => ({ header, index })).filter(column =>
-		column.index > dateIndex && column.index < minIndex
+    const valueColumns = headers.map((header, index) => ({ header, index })).filter(c =>
+		minIndex > -1 ? c.index > dateIndex && c.index < minIndex : c.index > dateIndex
 	);
 
-    const rows = Array.from(table.tBodies[0]?.rows || []);
+    const rows = Array.from(table.tBodies[0]?.rows || []).reverse().slice(-10);
     const labels = rows.map(row => row.cells[dateIndex].textContent.trim());
 	const title = valueColumns.map(column => column.header).join(", ");
 
@@ -25,7 +25,7 @@ document.querySelectorAll("table").forEach(table => {
 				y: raw.includes('<') ? y - 1 : y,
 				value: raw,
 			};
-		}).slice(-10),
+		}),
 		label: column.header,
         borderWidth: 2,
     }));
@@ -44,27 +44,33 @@ document.querySelectorAll("table").forEach(table => {
 	const ratio = getComputedStyle(canvas).aspectRatio;
 	const [w, h] = ratio.split('/').map(Number);
 
+	if (minIndex > -1) {
+		datasets.push({
+			data: rows.map(row => Number(row.cells[minIndex]?.textContent.trim() || 0)),
+			borderDash: [5, 5],
+			pointRadius: 0,
+			borderWidth: 2,
+			label: "Min",
+		});
+	}
+
+	if (maxIndex > -1) {
+		datasets.push({
+			data: rows.map(row => Number(row.cells[maxIndex]?.textContent.trim() || 0)),
+			borderDash: [5, 5],
+			pointRadius: 0,
+			borderWidth: 2,
+			label: "Max",
+		});
+	}
+
+	console.debug(datasets);
 	Chart.defaults.font.size = 14;
 	new Chart(canvas, {
-		type: "line",
+		type: document.getElementById('chart-options').dataset.type,
 		data: {
 			labels,
-			datasets: [ ...datasets,
-				{
-					data: rows.map(row => Number(row.cells[minIndex]?.textContent.trim() || 0)),
-					borderDash: [5, 5],
-					pointRadius: 0,
-					borderWidth: 2,
-					label: "Min",
-				},
-				{
-					data: rows.map(row => Number(row.cells[maxIndex]?.textContent.trim() || 0)),
-					borderDash: [5, 5],
-					pointRadius: 0,
-					borderWidth: 2,
-					label: "Max",
-				}
-			],
+			datasets: datasets,
 		},
 		options: {
 			responsive: true,
@@ -114,7 +120,7 @@ document.querySelectorAll("table").forEach(table => {
 					callbacks: {
 						// Pretty-print the x-axis date in the hover tooltip.
 						title: (context) => new Date(context[0].parsed.x).toDateString(),
-						label: (context) => `${context.dataset.label}: ${context.raw.value || context.raw}`,
+						label: (context) => `${context.dataset.label}: ${context.raw.value || context.parsed.y}`,
 					},
 				},
 				legend: {
