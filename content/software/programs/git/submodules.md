@@ -46,3 +46,6 @@ git pull origin main --rebase
 ```powershell
 git stash apply
 ```
+
+> [!IMPORTANT]
+> Fetch from the root repository after making changes to the submodule.
