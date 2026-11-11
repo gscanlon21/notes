@@ -3,6 +3,7 @@ title = "Birds"
 description = "Animated abstract birds in the background."
 
 [extra]
+authors = ["rocksdanister", "tengbao", "zz85"]
 updated = 2026-03-03
 see_also = []
 options = [

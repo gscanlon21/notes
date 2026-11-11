@@ -3,6 +3,7 @@ title = "Clock"
 updated = 2026-03-03
 
 [extra]
+authors = ["cakenggt"]
 see_also = []
 options = [
   { name = "Enabled", id = "enabled", type = "checkbox", value = true, },
