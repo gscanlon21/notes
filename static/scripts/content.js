@@ -82,8 +82,9 @@ for (const element of Array.from(document.getElementsByTagName('code'))) {
 
 // Copy links to headers.
 for (const header of Array.from(document.querySelectorAll("h1, h2, h3, h4"))) {
-	header.append(document.createElement('span'));
-	header.addEventListener("click", () => {
+	const span = document.createElement('span');
+	header.insertAdjacentElement('beforeend', span);
+	span.addEventListener("click", () => {
 		if (header.hasAttribute('id')) {
 			window.location.hash = header.getAttribute('id');
 			navigator.clipboard.writeText(window.location.href);

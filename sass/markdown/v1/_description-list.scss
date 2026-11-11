@@ -75,7 +75,7 @@ article.v1 {
 				margin-block: 0;
 			}
 
-			&:has(dl) {
+			&:has(> dl) {
 				margin-block-start: -1px;
 
 				&:has(+dt) {
@@ -189,7 +189,7 @@ article.v1 {
 				margin-block-start: $base-padding * 0.1;
 			}
 
-			& > dl {
+			& + dl {
 				margin-block-start: $base-padding * 0.5;
 			}
 		}
@@ -197,5 +197,23 @@ article.v1 {
 
 	blockquote + dl:not(+blockquote) {
 		margin-block-start: $base-padding * 2.5;
+	}
+
+	ul:has(> li > dl) {
+		padding-inline-start: 0;
+
+		& > li {
+			list-style-type: none;
+
+			& > dl {
+				margin-block-start: 0;
+				
+				& > dt {
+					margin-block-start: 0;
+					display: inline-flex;
+					border-top: none;
+				}
+			}
+		}
 	}
 }
