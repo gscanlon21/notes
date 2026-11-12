@@ -17,6 +17,10 @@ see_also = [
 # Forms of Vitamin B12
 
 
+>> [Comparative Bioavailability and Utilization of Particular Forms of B12 Supplements With Potential to Mitigate B12-related Genetic Polymorphisms](https://pmc.ncbi.nlm.nih.gov/articles/PMC5312744/)
+###### Paul and Brady, 2017
+
+
 >> [What is the Best Formulation of Vitamin B12?](https://www.drmcdougall.com/education/nutrition/what-is-the-best-formulation-of-vitamin-b12/)
 ###### Dr. McDougall
 
