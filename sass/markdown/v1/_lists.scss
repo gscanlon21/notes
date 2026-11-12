@@ -27,7 +27,7 @@ article.v1 {
 				font-weight: normal;
 				font-style: normal;
 
-				&::after {
+				&::before, &::after, & > span {
 					display: none;
 				}
 			}

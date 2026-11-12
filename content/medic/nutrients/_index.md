@@ -6,6 +6,7 @@ sort_by = "title"
 updated = 2027-01-01
 see_also = [
   { title = "Nutrition Facts", href = "https://nutritionfacts.org/" },
+  { title = "Ataxia", href = "https://www.ataxia.org/" },
 ]
 +++
 
