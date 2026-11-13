@@ -11,6 +11,8 @@ options = [
   { name = "Maximum Opacity", id = "opacityMax", type = "range", min = 0, max = 1, value = 0.5, step = 0.05 },
   { name = "Minimum Opacity", id = "opacityMin", type = "range", min = 0, max = 1, value = 0.1, step = 0.05 },
   { name = "Color Floor", id = "colorFloor", type = "range", min = 20, max = 200, value = 100, step = 10 },
+  { name = "Color Ceil", id = "colorCeil", type = "range", min = 155, max = 255, value = 255, step = 5 },
+  { name = "Color Rotate", id = "colorRotate", type = "range", min = 1, max = 60, value = 60, step = 1 },
   { name = "Reset", id = "reset", type = "reset" },
 ]
 +++

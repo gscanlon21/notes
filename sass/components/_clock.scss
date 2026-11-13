@@ -9,8 +9,8 @@
 	
 	.hand {
 		background-color: rgba(var(--color-text), var(--hand-opacity, 0.75));
+		transition: background-color var(--clock-rotate, 60s) linear, opacity 2500ms ease-in;
 		animation-delay: var(--clock-delay, 0s);
-		transition: opacity 2500ms ease-in;
 		opacity: var(--clock-opacity, 0);
 		display: inline-block;
 		border-radius: 100px;
