@@ -6,6 +6,7 @@ description = ""
 updated = 2027-01-01
 aliases = ["Vitamin B12 Deficiency"]
 see_also = [
+  { title = "Vitamin B12", href = "https://www.bmj.com/content/383/bmj-2022-071725" },
   { title = "Vitamin B12 deficiency", href = "https://www.harvardhealth.org/preventive-care/vitamin-b12-deficiency-a-to-z" },
   { title = "Vitamin B12 deficiency can be sneaky and harmful", href = "https://www.harvardhealth.org/blog/vitamin-b12-deficiency-can-be-sneaky-harmful-20130110562" },
   { title = "Vitamin B12 OSU", href = "https://lpi.oregonstate.edu/mic/vitamins/vitamin-B12" },
