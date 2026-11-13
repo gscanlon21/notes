@@ -1,12 +1,12 @@
 +++
-title = "Vitamin B-12"
+title = "Vitamin B12"
 description = ""
 
 [extra]
 updated = 2027-01-01
-aliases = ["Vitamin B12"]
+key_words = ["Vitamin B-12"]
 see_also = [
-  { title = "Vitamin B12", href = "https://nutritionfacts.org/topics/vitamin-b12/" },
+  { title = "Nutrition Facts", href = "https://nutritionfacts.org/topics/vitamin-b12/" },
 ]
 +++
 

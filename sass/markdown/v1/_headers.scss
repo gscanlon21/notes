@@ -85,6 +85,7 @@ article.v1 {
 		}
 	}
 
+	/* No clue what this was for... _spacing.scss now takes precedence over nested headers.
 	blockquote:has(>h1), blockquote:has(>h2), blockquote:has(>h3), blockquote:has(>h4) {
 		border-left: none !important;
 		padding: 0 !important;
@@ -93,7 +94,7 @@ article.v1 {
 		&:first-child > h1, &:first-child > h2, &:first-child > h3, &:first-child > h4 {
 			margin: 0 !important;
 		}
-	}
+	}*/
 
 	@media print {
 		h1::before, h2::before, h3::before, h4::before {

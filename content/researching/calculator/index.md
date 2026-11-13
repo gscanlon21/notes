@@ -5,7 +5,7 @@ weight = 1050
 
 [extra]
 updated = 2026-06-01
-theme = "light"
+theme = "system"
 see_also = []
 options = [
   { name = "Reset", id = "reset", type = "reset" },
