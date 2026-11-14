@@ -38,7 +38,7 @@
 		{% endfor %}
 	{% endfor %}
 	{% if page and page.ancestors | last %}
-		{% set ancestor_section = get_section(path=page.ancestors | last) %}
+		{% set ancestor_section = get_section(path=page.ancestors | last, allow_missing=true) %}
 		{% for asset in ancestor_section.assets | default(value=[]) | sort | reverse %}
 			{% for type in types %}
 				{% if asset is ending_with(pat=type) %}

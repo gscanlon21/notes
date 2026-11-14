@@ -12,6 +12,7 @@ see_also = [
   { title = "ClinVar", href = "https://www.ncbi.nlm.nih.gov/clinvar/" },
   { title = "Gene", href = "https://www.ncbi.nlm.nih.gov/gene/" },
   { title = "SNP", href = "https://www.ncbi.nlm.nih.gov/snp/" },
+  { title = "VEP", href = "https://www.ensembl.org/tools/vep" },
 ]
 +++
 
