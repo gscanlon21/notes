@@ -11,8 +11,6 @@
 @import 'elements/user-agent';
 @import 'elements/horizontal-rule';
 @import 'elements/description-list';
-@import 'components/arrow-list';
-@import 'components/assessment';
 @import 'components/flashcard';
 @import 'components/sitemap';
 @import 'components/sidebar';
@@ -26,7 +24,6 @@
 @import 'components/katex';
 @import 'components/birds';
 @import 'components/clock';
-@import 'components/data';
 @import 'markdown/v1/code';
 @import 'markdown/v1/table';
 @import 'markdown/v1/lists';
@@ -35,8 +32,11 @@
 @import 'markdown/v1/article';
 @import 'markdown/v1/headers';
 @import 'markdown/v1/spacing';
+@import 'markdown/v1/dl/index';
+@import 'markdown/v1/dl/dt/code';
 @import 'markdown/v1/blockquote';
-@import 'markdown/v1/description-list';
+@import 'markdown/v1/arrow-list';
+@import 'markdown/v1/equal-list';
 @import 'markdown/v1/footnotes';
 @import 'markdown/v1/syntax';
 @import 'markdown/v1/print';

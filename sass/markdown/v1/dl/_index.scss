@@ -199,6 +199,7 @@ article.v1 {
 		margin-block-start: $base-padding * 2.5;
 	}
 
+	/* Inline Grid Items */
 	ul:has(> li > dl) {
 		padding-inline-start: 0;
 

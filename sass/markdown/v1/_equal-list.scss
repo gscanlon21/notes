@@ -1,0 +1,31 @@
+/* dd > ul > li/li > blockquote */
+dd:has(> ul > li > blockquote) {
+	margin-block-end: 0;
+
+	& > ul {
+		padding-inline-start: 0;
+
+		& > li {
+			list-style-type: none;
+			display: inline-block;
+
+			&::before {
+				padding-inline-end: $base-padding * 0.2;
+				font-weight: bold;
+				content: "= ";
+			}
+
+			& > blockquote {
+				padding-inline-start: 0 !important;
+				margin-inline-end: 0 !important;
+				border-left: none !important;
+				margin-block-start: 0;
+				display: inline-flex;
+			}
+
+			& + li {
+				padding-inline-start: $base-padding * 0.2;
+			}
+		}
+	}
+}

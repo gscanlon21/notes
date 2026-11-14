@@ -32,42 +32,42 @@ _Leggy Plants_
 
 
 
-**https://pubmed.ncbi.nlm.nih.gov/27485855/**
+**Rhizophagus irregularis as an elicitor of rosmarinic acid and antioxidant production by transformed roots of Ocimum basilicum in an in vitro co-culture system**
 ? et al. ?
 _[Research Article](https://pubmed.ncbi.nlm.nih.gov/27485855/)_
 `doi`
 : ?
 
 
-**https://pubmed.ncbi.nlm.nih.gov/40015250/**
+**Recombinant DNA: unlocking untapped microbial potential for innovation in crop agriculture**
 ? et al. ?
 _[Research Article](https://pubmed.ncbi.nlm.nih.gov/40015250/)_
 `doi`
 : ?
 
 
-**https://pubmed.ncbi.nlm.nih.gov/34923398/**
+**Optimizing growing conditions for hydroponic farming of selected medicinal and aromatic plants**
 ? et al. ?
 _[Research Article](https://pubmed.ncbi.nlm.nih.gov/34923398/)_
 `doi`
 : ?
 
 
-**https://pubmed.ncbi.nlm.nih.gov/28000503/**
+**Essential oil composition of sweet basil (Ocimum basilicum L.) in symbiotic relationship with Piriformospora indica and paclobutrazol application under salt stress**
 ? et al. ?
 _[Research Article](https://pubmed.ncbi.nlm.nih.gov/28000503/)_
 `doi`
 : ?
 
 
-**https://pubmed.ncbi.nlm.nih.gov/38497647/**
+**Measuring Bacterial Colonization on Arabidopsis thaliana Roots in Hydroponic Condition**
 ? et al. ?
 _[Research Article](https://pubmed.ncbi.nlm.nih.gov/38497647/)_
 `doi`
 : ?
 
 
-**https://pubmed.ncbi.nlm.nih.gov/35771351/**
+**Inoculation with Trichoderma harzianum and Azospirillum brasilense increases nutrition and yield of hydroponic lettuce**
 ? et al. ?
 _[Research Article](https://pubmed.ncbi.nlm.nih.gov/35771351/)_
 `doi`
