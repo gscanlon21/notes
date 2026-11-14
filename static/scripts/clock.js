@@ -20,18 +20,20 @@ if (options?.enabled ?? true) {
 			rgba(var(--clock-red, ${randomColor()}), var(--clock-green, ${randomColor()}), var(--clock-blue, ${randomColor()}), ${opacity}));"`
 		document.querySelectorAll('.hand:empty').forEach(n => {
 			n.innerHTML = `
-				<div class="hand minute rotate-minute" ${style}></div>
-				<div class="hand second rotate-second" ${style}></div>
+				<div class="hand minute rotate-minute echo" data-index="${i}" ${style}></div>
+				<div class="hand second rotate-second echo" data-index="${i}" ${style}></div>
 			`;
 		});
 	}
 
-	setInterval(() => {
-		document.body.style.setProperty('--clock-red', randomColor());
-		document.body.style.setProperty('--clock-green', randomColor());
-		document.body.style.setProperty('--clock-blue', randomColor());
-	}, colorRotate * 1000);
-
+	if (options?.rotateColors) {
+		setInterval(() => {
+			document.body.style.setProperty('--clock-red', randomColor());
+			document.body.style.setProperty('--clock-green', randomColor());
+			document.body.style.setProperty('--clock-blue', randomColor());
+		}, colorRotate * 1000);
+	}
+	
 	const now = new Date();
 	const hour = now.getHours() % 12;
 	const minutes = now.getMinutes();

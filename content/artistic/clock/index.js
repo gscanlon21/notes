@@ -2,11 +2,18 @@ const STORAGE_KEY = "clock-options";
 const page = document.getElementById("content");
 const options = document.getElementById("options");
 const handOpacity = document.getElementById('hand-opacity');
+const blendMode = document.getElementById('blendMode');
 
 const setLineGap = () => document.body.style.setProperty('--hand-opacity', `${parseFloat(handOpacity.value)}`);
 options.addEventListener('reset', () => setTimeout(setLineGap));
 handOpacity.addEventListener("input", setLineGap);
 setLineGap();
+
+
+const setBlendMode = () => document.body.style.setProperty('--blend-mode', blendMode.value);
+options.addEventListener('reset', () => setTimeout(setBlendMode));
+blendMode.addEventListener("input", setBlendMode);
+setBlendMode();
 
 
 // Save form data to localStorage

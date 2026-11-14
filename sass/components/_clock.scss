@@ -1,5 +1,6 @@
 #clock {
 	pointer-events: none;
+	isolation: isolate;
 	position: fixed;
 	height: 100svh;
 	width: 100svw;
@@ -8,8 +9,9 @@
 	top: 0;
 	
 	.hand {
-		background-color: rgba(var(--color-text), var(--hand-opacity, 0.75));
+		//background-color: color-mix(in srgb, color(--color-text) calc(var(--hand-opacity, 0.75) * 100%), color(--color-bg));
 		transition: background-color var(--clock-rotate, 60s) linear, opacity 2500ms ease-in;
+		background-color: rgba(var(--color-text), var(--hand-opacity, 0.75));
 		animation-delay: var(--clock-delay, 0s);
 		opacity: var(--clock-opacity, 0);
 		display: inline-block;
@@ -86,6 +88,15 @@
 		animation-duration: 43200s;
 		animation-name: rotating;
 	}
+
+	/* Causes pretty poor performance...
+	.base.minute, .base.second, .echo[data-index="0"] {
+		mix-blend-mode: color-dodge;
+	}
+
+	.echo:not([data-index="0"]) {	
+		mix-blend-mode: var(--blend-mode, normal);
+	}*/
 }
 
 @keyframes rotating {
