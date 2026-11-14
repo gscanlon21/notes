@@ -1,0 +1,33 @@
+
+{% component images(section, page, open: bool = false, inline: bool = false, style: string = "") %}
+{% for asset in page?.assets | default(value=section?.assets | default(value=[])) %}
+	{% set filename_extension = asset | split(pat="/") | last | split(pat='\\') | last %}
+	{% set filename = asset | split(pat="/") | last | split(pat='\\') | last | split(pat='.') | first %}
+	{% set title = filename | replace(from="---", to=" - ") | replace(from="--", to=": ") | replace(from="_", to=" ") | replace(from="一", to="") %}
+
+	{{<image title={title} file={filename_extension} />}}
+{% endfor %}
+{% endcomponent images %}
+
+
+{% component image(title: string, file: string, open: bool = false, inline: bool = false, style: string = "") %}
+{% if inline %}<dd>{% endif %}
+{% if open | default(value=false) %}
+<details open="open" class="image" style="{{ style | default(value="") }}">
+  <summary>
+  
+  {{ title | default(value=title) | safe }}
+  </summary>
+{% else %}
+<details class="image" style="{{ style | default(value="") }}">
+  <summary>
+
+  {{ body | default(value=title) | safe }}
+  </summary>
+{% endif %}
+
+![{{ title }}]({{ file | replace(from="/", to="") }})
+</details>
+{% if inline %}</dd>{% endif %}
+{% endcomponent image %}
+
