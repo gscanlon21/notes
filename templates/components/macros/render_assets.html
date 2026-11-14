@@ -1,7 +1,7 @@
 {#
     Renders a page's assets.
 #}
-{% component macros.render_assets(page, section, name, types) %}
+{% component macros.render_assets(config, page, section, lang, name, types) %}
 {% for asset in page?.assets | default(value=section?.assets | default(value=[])) %}
 	{% for type in types %}
 		{% if asset is ending_with(pat=type) %}
@@ -12,7 +12,7 @@
 	{% endfor %}
 {% endfor %}
 {% if page and page.ancestors | last %}
-	{% set ancestor_section = get_section(path=page.ancestors | last, allow_missing=true) %}
+	{% set ancestor_section = get_section(path=page.ancestors | last, lang=lang, allow_missing=true) %}
 	{% if ancestor_section %}
 	{% for asset in ancestor_section.assets | default(value=[]) %}
 		{% for type in types %}
@@ -38,7 +38,7 @@
 		{% endfor %}
 	{% endfor %}
 	{% if page and page.ancestors | last %}
-		{% set ancestor_section = get_section(path=page.ancestors | last, allow_missing=true) %}
+		{% set ancestor_section = get_section(path=page.ancestors | last, lang=lang, allow_missing=true) %}
 		{% for asset in ancestor_section.assets | default(value=[]) | sort | reverse %}
 			{% for type in types %}
 				{% if asset is ending_with(pat=type) %}

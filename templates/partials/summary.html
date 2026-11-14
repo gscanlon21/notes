@@ -95,17 +95,17 @@
             {% endfor %}
             {% endif %}
 
-			{{<macros.render_assets page={page} section={section} name="PDFs" types={["pdf"]} />}}
-			{{<macros.render_assets page={page} section={section} name="SVGs" types={["svg"]} />}}
-			{{<macros.render_assets page={page} section={section} name="Images" types={["jif", "webp", "png", "jpg", "jpeg"]} />}}
-			{{<macros.render_assets page={page} section={section} name="Documents" types={["txt", "xml", "docx"]} />}}
-			{{<macros.render_assets page={page} section={section} name="Spreadsheets" types={["xls", "xlsx"]} />}}
-			{{<macros.render_assets page={page} section={section} name="Powerpoints" types={["ppt", "pptx"]} />}}
-			{{<macros.render_assets page={page} section={section} name="Programs" types={["py", "R"]} />}}
-			{{<macros.render_assets page={page} section={section} name="Scripts" types={["ps1", "csx"]} />}}
-			{{<macros.render_assets page={page} section={section} name="Audio" types={["mp3"]} />}}
-			{{<macros.render_assets page={page} section={section} name="HTML" types={["html"]} />}}
-			{{<macros.render_assets page={page} section={section} name="ZIPs" types={["zip"]} />}}
+			{{<macros.render_assets config={config} lang={lang} page={page} section={section} name="PDFs" types={["pdf"]} />}}
+			{{<macros.render_assets config={config} lang={lang} page={page} section={section} name="SVGs" types={["svg"]} />}}
+			{{<macros.render_assets config={config} lang={lang} page={page} section={section} name="Images" types={["jif", "webp", "png", "jpg", "jpeg"]} />}}
+			{{<macros.render_assets config={config} lang={lang} page={page} section={section} name="Documents" types={["txt", "xml", "docx"]} />}}
+			{{<macros.render_assets config={config} lang={lang} page={page} section={section} name="Spreadsheets" types={["xls", "xlsx"]} />}}
+			{{<macros.render_assets config={config} lang={lang} page={page} section={section} name="Powerpoints" types={["ppt", "pptx"]} />}}
+			{{<macros.render_assets config={config} lang={lang} page={page} section={section} name="Programs" types={["py", "R"]} />}}
+			{{<macros.render_assets config={config} lang={lang} page={page} section={section} name="Scripts" types={["ps1", "csx"]} />}}
+			{{<macros.render_assets config={config} lang={lang} page={page} section={section} name="Audio" types={["mp3"]} />}}
+			{{<macros.render_assets config={config} lang={lang} page={page} section={section} name="HTML" types={["html"]} />}}
+			{{<macros.render_assets config={config} lang={lang} page={page} section={section} name="ZIPs" types={["zip"]} />}}
 
 			{% if page?.extra?.options | default(value=section?.extra?.options) %} 
             <dt>Options</dt>
