@@ -440,10 +440,6 @@ _U+29F7_
 *U+2600*
 : `☀`
 
-**Electric Light Bulb**
-*U+1F4A1*
-: `💡`
-
 **Power Symbol**
 *U+23FB*
 : `⏻`

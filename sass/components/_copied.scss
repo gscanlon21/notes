@@ -4,13 +4,16 @@
 	animation-fill-mode: none;
 	animation-name: fade;
 	position: relative;
-
+	
+	///* Enable background color?
 	background-blend-mode: hard-light;
 	background-size: max(100%, 50lvw);
 	background-image: linear-gradient(var(--angle, 90deg), 
-		color-mix(in srgb, color(--color-copy) var(--opacity), transparent), 
+		color-mix(in srgb, color(--color-copy, 0.5) var(--opacity), transparent), 
 		color-mix(in srgb, color(--color-copy, 0.1) var(--opacity), transparent)
 	);
+
+	color: color-mix(in srgb, color(--color-copy) var(--opacity), color(--color-code));
 }
 
 @property --opacity {
@@ -26,11 +29,7 @@
 
 @keyframes fade {
 	0% {
-		--opacity: 25%;
-	}
-
-	5% {
-		--opacity: 50%;
+		--opacity: 100%;
 	}
 
 	100% {

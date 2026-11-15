@@ -8,7 +8,7 @@ see_also = []
 options = [
   { name = "Enabled", id = "enabled", type = "checkbox", value = true, },
   { name = "Rotate Colors", id = "rotateColors", type = "checkbox", value = false, },
-  { name = "Hand Opacity", id = "hand-opacity", type = "range", min = 0, max = 1, value = 0.75, step = 0.05 },
+  { name = "Hand Opacity", id = "handOpacity", type = "range", min = 0.5, max = 1, value = 0.75, step = 0.05 },
   { name = "Maximum Opacity", id = "opacityMax", type = "range", min = 0, max = 1, value = 0.5, step = 0.05 },
   { name = "Minimum Opacity", id = "opacityMin", type = "range", min = 0, max = 1, value = 0.1, step = 0.05 },
   { name = "Color Floor", id = "colorFloor", type = "range", min = 50, max = 150, value = 50, step = 5 },

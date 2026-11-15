@@ -98,10 +98,18 @@
 
 		<nav class="print context">
 			<div class="left">
-				{{ page?.title | default(value=section?.title | default(value="")) }}
+				<span>{{ now() | date(format="%Y-%m-%d") }}</span>
+				<span>
+					{% set ancestor_section = get_section(path=page?.ancestors | default(value=[]) | last, lang=lang, allow_missing=true) %}
+					{% if ancestor_section %}
+						<span>{{ ancestor_section?.title | default(value="") }}</span>
+						<span>/</span>
+					{% endif %}
+					<span>{{ page?.title | default(value=section?.title | default(value="")) }}</span>
+				</span>
 			</div>
 			<div class="right">
-				{{ page?.extra?.context | default(value=section?.extra?.context | default(value="")) }}
+				<span>{{ page?.extra?.context | default(value=section?.extra?.context | default(value="")) }}</span>
 			</div>
 		</nav>
 	</header>

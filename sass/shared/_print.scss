@@ -20,6 +20,7 @@ article[data-orientation="landscape"] {
 
 		&::after {
 			background: repeating-linear-gradient(to bottom, transparent 0in var(--page-size), rgba(var(--color-text), 0.25) var(--page-size) calc(var(--page-size) + 2px));
+			pointer-events: none;
 			position: absolute;
 			height: 100%;
 			width: 100%;
@@ -37,6 +38,7 @@ article[data-orientation="landscape"] {
 
 		&::after {
 			background: repeating-linear-gradient(to bottom, transparent 0in var(--page-size), rgba(var(--color-text), 0.25) var(--page-size) calc(var(--page-size) + 2px));
+			pointer-events: none;
 			position: absolute;
 			height: 100%;
 			width: 100%;
@@ -72,6 +74,11 @@ article[data-orientation="landscape"] {
 		position: absolute;
 		font-size: 12px;
 		height: 100%;
+
+		.left, .right {
+			display: inline-flex;
+			column-gap: 1rem;
+		}
     }
 
 	.print-none, .header {
@@ -86,8 +93,8 @@ article[data-orientation="landscape"] {
 	// For header # borders and print page name context.
 	margin-right: $print-margin - $print-margin-buffer;
 	margin-left: $print-margin - $print-margin-buffer;
+	margin-top: $print-margin + $print-margin-buffer;
 	margin-bottom: $print-margin;
-	margin-top: $print-margin;
 }
 
 .print {

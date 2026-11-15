@@ -58,7 +58,7 @@
 #}
 {% component macros.render_asset(name: string, asset: string) %}
 <dd class="summary-item asset {{ name }}">
-	{% set filename = asset | split(pat="/") | last | split(pat='\\') | last | split(pat='.') | first %}
+	{% set filename = asset | split(pat="/") | last | split(pat='\\') | last | split(pat='.')[:-1] | join(sep='.') %}
 	{% set title = filename | replace(from="---", to=" - ") | replace(from="--", to=": ") | replace(from="_", to=" ") | replace(from="一", to="") %}
 	{% if asset is starting_with(pat="/") %}
 		{% set url = get_url(path=asset) %}
