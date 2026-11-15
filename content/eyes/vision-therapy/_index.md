@@ -220,3 +220,18 @@ Visual Form Discrimination
 **Visual Acuity**
 : The measurement of how clearly we see at specific distances.
 
+
+# Testimonials
+
+>> Wow this is so gracious of you bless you. 
+>> I hope you are blessed with whatever you desire in life. 
+>> This is such a huge resource for those of us that can’t afford VT.
+###### DG
+
+>> Thank you very much for this. 
+>> 10 months postpartum in an area with no VT clinic, this is a LIFESAVER. 
+>> 🩶🩶 THANK YOU!
+###### OC
+
+>> Oh my gosh thank you so much ❤️❤️❤️
+###### SSV
