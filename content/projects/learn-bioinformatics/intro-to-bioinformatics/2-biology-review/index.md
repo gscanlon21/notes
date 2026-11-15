@@ -13,10 +13,12 @@ see_also = [
 +++
 
 {{ <hidden page={page} section={section} /> }}
+{{ <images page={page} section={section} /> }}
 
 
 
 # Molecular Biology Review
+{% <flashcards header="Molecular Biology Review"> %}
 It can be useful, though not accurate, to think about gene expression as a 1:1:1 ratio between genes:transcripts:proteins.
 
 **Protein Isoforms**
@@ -91,3 +93,4 @@ A chain of amino acids is folded together to produce the final protein structure
 ## Epigenetics
 Ways DNA can be regulated based on the 3D structure of the DNA. Useful for cell differentiation from stem cell.
 
+{% </flashcards> %}

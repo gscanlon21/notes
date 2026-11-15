@@ -16,6 +16,12 @@ see_also = [
 
 
 
+# Differential Expression Analysis
+{% <flashcards header="Differential Expression Analysis"> %}
+
+**Differential Expression Analysis**
+: Finding genes with differences in expression between two conditions.
+
 
 # Idiopathic Pulmonary Fibrosis
 
@@ -40,5 +46,4 @@ see_also = [
 - Quantifying how much mRNA content (fragments of cDNA) was found for each gene in each sample.
   - Higher value indicated more expression.
 
-**Differential Expression Analysis**
-: Finding genes with differences in expression between two conditions.
+{% </flashcards> %}

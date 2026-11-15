@@ -14,6 +14,8 @@ see_also = []
 
 
 
+# Quick Statistics Lesson
+{% <flashcards header="Quick Statistics Lesson"> %}
 
 ##### How many flips of a coin would it take to know with absolute certainty that a coin is biased (weighted on one side)?
 It could be a coincidence that the result is Heads every time with a fair coin, so it's impossible to tell. But, you can tell how big of a coincidence different results would be.
@@ -38,6 +40,7 @@ It could be a coincidence that the result is Heads every time with a fair coin, 
 **P-Value**
 : The smaller the p-value, the more severe coincidence would be required see the same result.
 : The probability of seeing a result at least this extreme, assuming the null hypothesis is true.
+{% </flashcards> %}
 
 
 # Idiopathic Pulmonary Fibrosis

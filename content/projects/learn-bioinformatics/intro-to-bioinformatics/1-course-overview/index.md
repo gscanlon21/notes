@@ -11,10 +11,10 @@ see_also = []
 +++
 
 {{ <hidden page={page} section={section} /> }}
-
-
+{{ <images page={page} section={section} /> }}
 
 # Course Overview
+{% <flashcards header="Course Overview"> %}
 
 ## Central Dogma of Molecular Biology
 ## _Gene Expression 
@@ -34,3 +34,5 @@ Can be thought of as a semi-random stochastic process, where quantities of trans
 
 **Genomics**
 : Big data study of genes.
+
+{% </flashcards> %}

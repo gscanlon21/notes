@@ -20,6 +20,7 @@ see_also = [
 
 
 # Terminology
+{% <flashcards header="Terminology"> %}
 
 **Sequencing Depth**
 : The total number of counts in a sample.
@@ -28,3 +29,5 @@ see_also = [
 CPM Normalization
 : Can help normalize differences in sensitivity of RNA sequencing between samples.
 : Divide the number of counts for each gene by the total number of counts in that sample, and multiply by 1 million.
+
+{% </flashcards> %}

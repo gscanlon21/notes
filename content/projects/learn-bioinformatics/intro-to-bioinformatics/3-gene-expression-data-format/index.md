@@ -11,11 +11,12 @@ see_also = []
 +++
 
 {{ <hidden page={page} section={section} /> }}
-
+{{ <images page={page} section={section} /> }}
 
 
 
 # Gene Expression Data Format
+{% <flashcards header="Gene Expression Data Format"> %}
 
 **Coding Strand**
 : Matches the mRNA nucleotides (with U's instead of T's).
@@ -30,6 +31,6 @@ see_also = []
 > You can sequence all the mRNA content in a cell, and use that to quantify the expression level of genes.[^1]
 
 
-
+{% </flashcards> %}
 
 [^1]: [A gentle introduction to RNA-seq](https://www.youtube.com/watch?v=tlf6wYJrwKY)

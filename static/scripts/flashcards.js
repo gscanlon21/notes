@@ -164,7 +164,12 @@ function renderFlashcards(flashcardSections) {
 	}
 
 	document.addEventListener("keypress", (e) => {
-		if (e.code === "Space" && e.target.tagName !== 'INPUT') {
+		// When input is empty, space controls flashcards, else space functions as normal.
+		if (e.target.tagName === 'INPUT' && e.target.value.trim().length > 0) {
+			return;
+		}
+
+		if (e.code === "Space") {
 			e.preventDefault();
 			for (const flashcard of document.querySelectorAll(".flashcard-section")) {
 				flashcard.dispatchEvent(new CustomEvent('flip', { detail: { back: e.ctrlKey } }));
