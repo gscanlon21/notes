@@ -2,6 +2,7 @@
 title = "Fusion Card"
 description = "Fusion card."
 aliases = ["vision-therapy/fusion-card"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

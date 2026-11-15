@@ -2,6 +2,7 @@
 title = "Single Target"
 description = "A single letter/number/image."
 aliases = ["vision-therapy/single-target"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

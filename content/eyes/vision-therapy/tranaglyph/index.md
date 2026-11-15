@@ -2,6 +2,7 @@
 title = "Tranaglyph"
 description = "Work in progress."
 aliases = ["vision-therapy/tranaglyph"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

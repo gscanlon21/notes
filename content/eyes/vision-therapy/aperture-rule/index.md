@@ -2,6 +2,7 @@
 title = "Aperture Rule"
 description = "Image maker for an aperture rule."
 aliases = ["vision-therapy/aperture-rule"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

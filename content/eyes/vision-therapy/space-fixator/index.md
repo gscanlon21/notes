@@ -2,6 +2,7 @@
 title = "Space Fixator"
 description = "A Space Fixator is a circle of circles used to train the visual system."
 aliases = ["vision-therapy/space-fixator"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

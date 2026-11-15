@@ -2,6 +2,7 @@
 title = "Arrow Chart"
 description = "An Arrow Chart is a grid of arrows used to train the visual system."
 aliases = ["vision-therapy/arrow-chart"]
+in_search_index = false
 updated = 2027-01-01
 
 [extra]

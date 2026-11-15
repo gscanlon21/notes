@@ -2,6 +2,7 @@
 title = "Closed/Open/Flat"
 description = "A grid of shapes used to train the visual system."
 aliases = ["vision-therapy/closed-open-flat"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

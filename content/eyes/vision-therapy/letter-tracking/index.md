@@ -2,6 +2,7 @@
 title = "Letter Tracking"
 description = "Find each letter of the alphabet in order from A-Z."
 aliases = ["vision-therapy/letter-tracking"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

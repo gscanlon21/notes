@@ -2,6 +2,7 @@
 title = "Number Saccades"
 description = "A Number Circle is a circle of numbers used to train the visual system."
 aliases = ["vision-therapy/number-saccades"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

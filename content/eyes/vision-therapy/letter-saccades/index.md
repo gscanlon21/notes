@@ -2,6 +2,7 @@
 title = "Letter Saccades"
 description = "Letter Circles is a circle of letters used to train the visual system."
 aliases = ["vision-therapy/letter-saccades"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

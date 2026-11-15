@@ -2,6 +2,7 @@
 title = "Slap Tap"
 description = "Slap Tap is a grid of symbols used to train the visual system."
 aliases = ["vision-therapy/slap-tap"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

@@ -2,6 +2,7 @@
 title = "Number Dots"
 description = "A line of numbered dots."
 aliases = ["vision-therapy/number-dots"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

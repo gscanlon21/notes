@@ -2,6 +2,7 @@
 title = "Line Counting"
 description = "Line Counting is a grid of lines used to train the visual system."
 aliases = ["vision-therapy/line-counting"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

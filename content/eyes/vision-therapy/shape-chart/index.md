@@ -2,6 +2,7 @@
 title = "Shape Chart"
 description = "A Shape Chart is a grid of shapes used to train the visual system."
 aliases = ["vision-therapy/shape-chart"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

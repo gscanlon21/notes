@@ -2,6 +2,7 @@
 title = "Spot the Match"
 description = "Find the matching image among the two sets."
 aliases = ["vision-therapy/spot-the-match"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

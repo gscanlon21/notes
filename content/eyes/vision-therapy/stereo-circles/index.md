@@ -2,6 +2,7 @@
 title = "Stereo Circles"
 description = "Stereo circles help train fusion, stereopsis, and binocularity."
 aliases = ["vision-therapy/stereo-circles"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

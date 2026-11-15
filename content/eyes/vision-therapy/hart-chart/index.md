@@ -2,6 +2,7 @@
 title = "Hart Chart"
 description = "A Hart Chart is a grid of letters used to train the visual system."
 aliases = ["vision-therapy/hart-chart"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

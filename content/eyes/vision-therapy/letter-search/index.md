@@ -2,6 +2,7 @@
 title = "Letter Search"
 description = "A random grid of letters."
 aliases = ["vision-therapy/letter-search"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

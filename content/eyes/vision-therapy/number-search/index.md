@@ -2,6 +2,7 @@
 title = "Number Search"
 description = "An Arrow Chart is a grid of arrows used to train the visual system."
 aliases = ["vision-therapy/number-search"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

@@ -2,6 +2,7 @@
 title = "Barrel Card"
 description = "Image generator for a barrel card."
 aliases = ["vision-therapy/barrel-card"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]

@@ -2,6 +2,7 @@
 title = "Shape Color Chart"
 description = "Use the decoding chart to match the arrows with their corresponding colors."
 aliases = ["vision-therapy/shape-color-chart"]
+in_search_index = false
 updated = 2026-02-01
 
 [extra]
