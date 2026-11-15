@@ -49,10 +49,12 @@ main {
 		min-width: 0;
 		flex-shrink: 1;
 		flex-grow: 99999;
-		flex-basis: $body-width-min;
-		max-width: $body-width-max;
-		margin-inline: auto;
 		min-height: 7rem;
+		margin-inline: auto;
+		max-width: $body-width-max;
+		flex-basis: $body-width-min;
+		/* For print margin page borders. */
+		position: relative;
 	}
 }
 
