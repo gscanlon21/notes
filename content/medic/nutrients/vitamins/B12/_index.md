@@ -30,24 +30,20 @@ see_also = [
 
 
 
+**Adenosylcobalamin**
+: The major form of vitamin B12 stored in the mitochondria of cellular tissues.
+
+**Hydroxocobalamin**
+: ?
+
+**Cyanocobalamin**
+: ?
+
 **Methylcobalamin**
 : Found in the cytosol of cells and predominates in blood and other fluids.
 : > [!WARNING]
   > Methylcobalamin is less stable and is more susceptible to degradation due to exposure to light.
 
-**Adenosylcobalamin**
-: The major form of vitamin B12 stored in the mitochondria of cellular tissues.
-
-**Cyanocobalamin**
-: ?
-
-**Hydroxocobalamin**
-: ?
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
 
 
 # Cofactors of Vitamin B12

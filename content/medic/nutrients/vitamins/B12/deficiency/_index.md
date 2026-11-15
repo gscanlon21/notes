@@ -15,6 +15,8 @@ see_also = [
   { title = "Do You Need More Vitamin B12?", href = "https://www.nutritionletter.tufts.edu/general-nutrition/do-you-need-more-vitamin-b12-2/" },
   { title = "VITAMIN B12 (COBALAMIN) OSU", href = "https://lpi.oregonstate.edu/sites/lpi.oregonstate.edu/files/2026-02/vitamin-B12.pdf" },
   { title = "Cobalamin (Vitamin B12) Information", href = "https://vetmed.tamu.edu/gilab/research/cobalamin/" },
+  { title = "Serum B12", href = "https://stichtingb12tekort.nl/english/serumb12/" },
+  { title = "Misconceptions", href = "https://stichtingb12tekort.nl/english/misconceptions-about-a-b12-deficiency/" },
   { title = "MSD Manuals", href = "https://www.msdmanuals.com/home/disorders-of-nutrition/vitamins/vitamin-b12-deficiency" },
 ]
 +++
