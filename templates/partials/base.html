@@ -45,13 +45,22 @@
 	{% endif %}
 
 	{% if lang != config.default_language %}
+		{% set parent_sub_path = section?.ancestors | default(value=page?.ancestors | default(value=[])) | last %}
+		{% if parent_sub_path %}
+			{% set parent_sub_section = get_section(path=parent_sub_path) %}
+
+			{% set parent_sub_css = load_data(path=parent_sub_section.path ~ "_index.no.css", required=false) %}
+			{% if parent_sub_css %}<style>{{ parent_sub_css | safe }}</style>{% endif %}
+		{% endif %}
+
 		{% set sub_path = section?.path | default(value=page?.path) | default(value=[]) | split(pat=lang) | last %}
-		
-		{% set sub_section_css = load_data(path=sub_path ~ "_index.no.css", required=false) %}
-		{% if sub_section_css %}<style>{{ sub_section_css | safe }}</style>{% endif %}
-		
-		{% set sub_page_css = load_data(path=sub_path ~ "index.no.css", required=false) %}
-		{% if sub_page_css %}<style>{{ sub_page_css | safe }}</style>{% endif %}
+		{% if sub_path %}
+			{% set sub_section_css = load_data(path=sub_path ~ "_index.no.css", required=false) %}
+			{% if sub_section_css %}<style>{{ sub_section_css | safe }}</style>{% endif %}
+			
+			{% set sub_page_css = load_data(path=sub_path ~ "index.no.css", required=false) %}
+			{% if sub_page_css %}<style>{{ sub_page_css | safe }}</style>{% endif %}
+		{% endif %}
 	{% endif %}
 
 	<script defer src="{{ get_url(path="/elasticlunr.min.js", cachebust=true) }}"></script>
