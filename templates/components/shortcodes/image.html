@@ -5,7 +5,11 @@
 	{% set filename = asset | split(pat="/") | last | split(pat='\\') | last | split(pat='.') | first %}
 	{% set title = filename | replace(from="---", to=" - ") | replace(from="--", to=": ") | replace(from="_", to=" ") | replace(from="一", to="") %}
 
-	{{<image title={title} file={filename_extension} />}}
+	{% for type in ["jpg", "jpeg", "webp", "svg", "png", "avif", "jif"] %}
+		{% if asset is ending_with(pat=type) %}
+			{{<image title={title} file={filename_extension} />}}
+		{% endif %}
+	{% endfor %}
 {% endfor %}
 {% endcomponent images %}
 

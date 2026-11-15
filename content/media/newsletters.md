@@ -46,7 +46,7 @@ _for Invertebrate Conservation_
   > - [x] 
   > - [x] 
 
-**[Harvard HealthBeat](https://www.harvardhealth.org/hho-plus)**
+**[Harvard HealthBeat](https://www.harvardhealth.org/healthbeat)**
 : "Get the latest in health news delivered to your inbox!"
 : > - [x] 
   > - [x] 
