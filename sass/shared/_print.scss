@@ -2,12 +2,12 @@ $print-margin-buffer: 3mm;
 
 article[data-orientation="portrait"] {
 	/* Subtract $print-margin twice for each page margin */
-	--page-size: calc(11in - #{$print-margin} - #{$print-margin});
+	--page-size: calc(11in - #{$print-margin} - #{$print-margin} - #{$print-margin-buffer});
 }
 
 article[data-orientation="landscape"] {
 	/* Subtract $print-margin twice for each page margin */
-	--page-size: calc(8.5in - #{$print-margin} - #{$print-margin});
+	--page-size: calc(8.5in - #{$print-margin} - #{$print-margin} - #{$print-margin-buffer});
 }
 
 @media screen {
