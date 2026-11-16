@@ -1,9 +1,9 @@
 +++
 title = "Homesteading"
-description = ""
-updated = 2025-12-12
+description = "Self-sufficiency in agriculture and food preservation."
 
 [extra]
+updated = 2027-01-01
 site_version = 1
 toc_level = 2
 see_also = []
@@ -22,5 +22,6 @@ see_also = []
 	1. Soak the walnuts in a bucket of water.
 	1. Use a drill-brush attachment or manual scrub brush to clean the walnut shells.
 1. Fully dry the walnuts out in the sun so they don't rot. 
+  - Make sure to protect them from squirrels!
 1. Hang them in a cool, dry place with ample airflow for up to 6 months.
 1. Use a walnut cracker to break open the walnuts and use some small snip-snip scissors to pick out the edible pieces.
