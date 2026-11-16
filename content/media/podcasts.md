@@ -13,13 +13,32 @@ see_also = [
 
 
 
-**LeVar Burton Reads**
+**[LeVar Burton Reads](https://levarburton.com/podcasts/)**
 : Short and sweet stories read by a short and sweet soul.
 : > - [x] 
   > - [x] 
   > - [x] 
   > - [x] 
   > - [x] 
+
+
+**[Hidden Gnome Publishing](https://www.willwight.com/a-blog-of-dubious-intent/the-hidden-gnome-podcast)**
+: ?
+: > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+
+
+**[Nature Boost](https://mdc.mo.gov/contact-engage/nature-boost)**
+Missouri Department of Conservation
+: ?
+: > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
+  > - [ ] 
 
 
 **[Darknet Diaries](https://darknetdiaries.com/)**
@@ -30,21 +49,3 @@ see_also = [
   > - [ ] 
   > - [ ] 
 
-
-**Hidden Gnome Publishing**
-: ?
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-
-
-**Nature Boost**
-Missouri Department of Conservation
-: ?
-: > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
