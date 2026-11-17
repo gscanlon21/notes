@@ -157,7 +157,6 @@ function makeTeaser(body, terms) {
 }
 
 function formatSearchResultItem(item, terms) { 
-	console.debug(item);
 	const itemPath = new URL(item.ref, window.location.origin).pathname.split('/no/').at(-1);
 	const [p2Path, p1Path] = [-4, -3].map(i => deSlugify(itemPath.split('/').at(i)));
 	const title = [p2Path, p1Path, ' '].filter(Boolean).join(' / ');

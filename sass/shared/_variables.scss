@@ -18,8 +18,8 @@ $body-margin: 0mm !default;
 $print-margin: 15mm !default;
 
 $breakpoint-buffer: 0.2px;
-$breakpoint-small: "#{$body-margin} + #{$body-margin} + #{$body-width-min} + 19rem + 2rem";
-$breakpoint-large: "#{$body-margin} + #{$body-margin} + #{$body-width-min} + 38rem + 2rem";
+$breakpoint-small: calc(#{$body-margin} + #{$body-margin} + #{$body-width-min} + 19rem + 2rem);
+$breakpoint-large: calc(#{$body-margin} + #{$body-margin} + #{$body-width-min} + 38rem + 2rem);
 
 @media (min-width: $body-width-max) {
     :root {

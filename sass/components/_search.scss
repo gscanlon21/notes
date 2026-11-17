@@ -34,9 +34,8 @@
 	background-color: color(--color-search-bg);
 	border-radius: $border-radius;
 	color: color(--color-search);
-	right: $base-padding;
-	left: $base-padding;
 	position: absolute;
+	inset-inline: 0;
 	z-index: 3;
 	top: 2rem;
 
@@ -54,5 +53,9 @@
 		.search-results__item {
 			display: unset;
 		}
+	}
+
+	@media (min-width: $breakpoint-small) {
+		inset-inline: $base-padding;
 	}
 }
