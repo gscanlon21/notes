@@ -46,6 +46,7 @@
 
 	{% if lang != config.default_language %}
 		{% set parent_sub_path = section?.ancestors | default(value=page?.ancestors | default(value=[])) | last %}
+		{{ parent_sub_path }}
 		{% if parent_sub_path %}
 			{% set parent_sub_section = get_section(path=parent_sub_path, lang=lang) %}
 
