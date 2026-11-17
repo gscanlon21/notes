@@ -33,9 +33,9 @@
 		{% if parent_css %}<style>{{ parent_css | safe }}</style>{% endif %}
 	{% endif %}
 	
-    {% set current_path = section?.relative_path | default(value=page?.relative_path | default(value='')) %}
-	{% if current_path %}
-		{% set current_css = load_data(path=current_path | replace(from=".md", to=".css"), required=false) %}
+    {% set relative_path = section?.relative_path | default(value=page?.relative_path | default(value='')) %}
+	{% if relative_path %}
+		{% set current_css = load_data(path=relative_path | replace(from=".md", to=".css"), required=false) %}
 		{% if current_css %}<style>{{ current_css | safe }}</style>{% endif %}
 	{% endif %}
 
