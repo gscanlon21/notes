@@ -22,7 +22,8 @@
   SOFTWARE.
 */
 
-function debounce(func, wait) {
+const deSlugify = (slug) => slug?.replace(/[-_-]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+const debounce = (func, wait) => {
 	let timeout;
 
 	return function (...args) {
@@ -34,6 +35,15 @@ function debounce(func, wait) {
 		}, wait);
 	};
 }
+
+const searchInput = document.getElementById('search-input');
+const searchClear = document.getElementById('search-clear');
+searchClear.addEventListener('click', () => {
+	searchInput.value = '';
+	searchInput.dispatchEvent(new Event('input'));
+	searchInput.focus();
+});
+
 
 // Taken from mdbook
 // The strategy is as follows:
@@ -147,9 +157,13 @@ function makeTeaser(body, terms) {
 }
 
 function formatSearchResultItem(item, terms) { 
-	const searchInput = document.getElementById("search-input");
+	console.debug(item);
+	const itemPath = new URL(item.ref, window.location.origin).pathname.split('/no/').at(-1);
+	const [p2Path, p1Path] = [-4, -3].map(i => deSlugify(itemPath.split('/').at(i)));
+	const title = [p2Path, p1Path, item.doc.title].filter(Boolean).join(' / ');
+	
 	return '<div class="search-results__item">'
-		+ `<a href="${item.ref.replace("/content/no/", "/content/")}?search=${searchInput.value}">${item.doc.title}</a>`
+		+ `<a href="${item.ref.replace("/content/no/", "/content/")}?search=${searchInput.value}">${title}</a>`
 		+ (item.doc.description ? `<span> - ${item.doc.description}</span>` : '')
 		+ `<div>${makeTeaser(item.doc.body, terms)}</div>`
 		+ '</div>';
@@ -257,11 +271,3 @@ if (document.readyState === "complete" ||
 } else {
 	document.addEventListener("DOMContentLoaded", initSearch);
 }
-
-const searchInput = document.getElementById('search-input');
-const searchClear = document.getElementById('search-clear');
-searchClear.addEventListener('click', () => {
-	searchInput.value = '';
-	searchInput.dispatchEvent(new Event('input'));
-	searchInput.focus();
-});
