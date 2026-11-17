@@ -7,6 +7,7 @@ updated = 2027-01-01
 key_words = ["Vitamin B-12"]
 see_also = [
   { title = "Nutrition Facts", href = "https://nutritionfacts.org/topics/vitamin-b12/" },
+  { title = "Pernicious Anaemia Society", href = "https://pernicious-anaemia-society.org" },
 ]
 +++
 
@@ -50,3 +51,7 @@ see_also = [
 
 **Potassium**
 : ?
+
+
+>> [Only One Chance](https://pernicious-anaemia-society.org/blog/only-one-chance/)
+###### Pernicious Anaemia Society

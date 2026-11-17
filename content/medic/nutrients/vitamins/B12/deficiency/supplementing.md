@@ -42,3 +42,9 @@ see_also = []
 >> [Oral vs. Intramuscular Vitamin B12 for Treating Vitamin B12 Deficiency](https://www.aafp.org/afp/2022/0600/p663)
 ###### American Family Physician
 
+
+**Oral vitamin B12 versus intramuscular vitamin B12 for vitamin B12 deficiency**
+Cochrane Metabolic and Endocrine Disorders Group 2018
+_[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC6494183/)_
+: ?
+
