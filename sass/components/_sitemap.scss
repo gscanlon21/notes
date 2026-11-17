@@ -2,7 +2,7 @@
 main > article > .sitemap-title {
 	margin-block-start: $site-padding * 2;
 
-	@media (min-width: $breakpoint-small) {
+	@media (min-width: #{$breakpoint-small}) {
 		margin-block-start: $site-padding * 3;
 	}
 }

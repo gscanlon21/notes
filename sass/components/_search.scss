@@ -55,7 +55,7 @@
 		}
 	}
 
-	@media (min-width: $breakpoint-small) {
+	@container body (min-width: #{$breakpoint-small}) {
 		inset-inline: $base-padding;
 	}
 }

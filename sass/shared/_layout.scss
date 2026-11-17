@@ -7,7 +7,7 @@ article {
 	order: 2;
 }
 
-@container (min-width: $breakpoint-small){
+@container (min-width: #{$breakpoint-small}){
 	.sidebar-left {
 		display: flex;
 		min-height: 100%;
@@ -16,7 +16,7 @@ article {
 	}
 }
 
-@container (min-width: $breakpoint-large){
+@container (min-width: #{$breakpoint-large}){
   	article {
 		order: 2;
 	}
