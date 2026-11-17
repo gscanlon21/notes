@@ -160,10 +160,10 @@ function formatSearchResultItem(item, terms) {
 	console.debug(item);
 	const itemPath = new URL(item.ref, window.location.origin).pathname.split('/no/').at(-1);
 	const [p2Path, p1Path] = [-4, -3].map(i => deSlugify(itemPath.split('/').at(i)));
-	const title = [p2Path, p1Path, item.doc.title].filter(Boolean).join(' / ');
+	const title = [p2Path, p1Path, ' '].filter(Boolean).join(' / ');
 	
 	return '<div class="search-results__item">'
-		+ `<a href="${item.ref.replace("/content/no/", "/content/")}?search=${searchInput.value}">${title}</a>`
+		+ `<a href="${item.ref.replace("/content/no/", "/content/")}?search=${searchInput.value}">${title}<b>${item.doc.title}</b></a>`
 		+ (item.doc.description ? `<span> - ${item.doc.description}</span>` : '')
 		+ `<div>${makeTeaser(item.doc.body, terms)}</div>`
 		+ '</div>';
