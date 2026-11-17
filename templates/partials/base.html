@@ -46,11 +46,9 @@
 
 	{% if lang != config.default_language %}
 		{% set parent_sub_path = section?.ancestors | default(value=page?.ancestors | default(value=[])) | last %}
-		-{{ parent_sub_path }}-
+		-{{ parent_sub_path | replace(from="_index.no.md", to="_index.no.css") }}-
 		{% if parent_sub_path %}
-			{% set parent_sub_section = get_section(path=parent_sub_path, lang=lang) %}
-
-			{% set parent_sub_css = load_data(path=parent_sub_section.path ~ "_index.no.css", required=false) %}
+			{% set parent_sub_css = load_data(path=parent_sub_path | replace(from="_index.no.md", to="_index.no.css"), required=false) %}
 			{% if parent_sub_css %}<style>{{ parent_sub_css | safe }}</style>{% endif %}
 		{% endif %}
 
