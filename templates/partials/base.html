@@ -55,6 +55,7 @@
 		{% endif %}
 
 		{% set sub_path = section?.path | default(value=page?.path) | default(value=[]) | split(pat=lang) | last %}
+		{{ sub_path }}
 		{% if sub_path %}
 			{% set sub_section_css = load_data(path=sub_path ~ "_index.no.css", required=false) %}
 			{% if sub_section_css %}<style>{{ sub_section_css | safe }}</style>{% endif %}
