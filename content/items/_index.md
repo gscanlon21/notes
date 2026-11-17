@@ -9,6 +9,7 @@ see_also = [
   { title = "Stop Overpaying Insurance", href = "https://stopoverpaying.org/" },
   { title = "Facebook Marketplace", href = "https://www.facebook.com/marketplace/" },
   { title = "Craigslist", href = "https://www.craigslist.org/area/stlouis" },
+  { title = "The Brand Ledger: Worse on Purpose", href = "https://ledger.worseonpurpose.com/" },
 ]
 +++
 
