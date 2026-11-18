@@ -15,3 +15,32 @@ see_also = [
 
 {{ <hidden page={page} section={section} /> }}
 
+
+> [!NOTE]
+> [Drug Disposal](http://safe.pharmacy/drug-disposal)
+
+
+# Overview
+
+**Subcutaneous Needles**
+SubQ
+: Uses a smaller needle to deliver medication to the fatty layer just under the skin.
+: Injection Sites
+: - Upper Arm
+  - Abdomen
+  - Thigh
+
+**Intramuscular Needles**
+: Uses a larger needle to deliver medication to the muscle.
+: Injection Sites
+: - Deltoid
+  - Quad
+
+
+# Supplies
+## Syringes
+
+**VanishPoint Syringe**
+_1 ml_
+: $$25G \times 1"$$
+: $$0.50mm \times 25mm$$

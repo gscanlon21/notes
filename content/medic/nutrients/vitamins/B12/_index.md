@@ -15,8 +15,12 @@ see_also = [
 
 
 
-# Forms of Vitamin B12
 
+>> [Only One Chance](https://pernicious-anaemia-society.org/blog/only-one-chance/)
+###### Pernicious Anaemia Society
+
+
+# Forms of Vitamin B12
 
 >> [Comparative Bioavailability and Utilization of Particular Forms of B12 Supplements With Potential to Mitigate B12-related Genetic Polymorphisms](https://pmc.ncbi.nlm.nih.gov/articles/PMC5312744/)
 ###### Paul and Brady, 2017
@@ -42,16 +46,4 @@ see_also = [
 
 **Methylcobalamin**
 : Found in the cytosol of cells and predominates in blood and other fluids.
-: > [!WARNING]
-  > Methylcobalamin is less stable and is more susceptible to degradation due to exposure to light.
 
-
-
-# Cofactors of Vitamin B12
-
-**Potassium**
-: ?
-
-
->> [Only One Chance](https://pernicious-anaemia-society.org/blog/only-one-chance/)
-###### Pernicious Anaemia Society

@@ -53,8 +53,10 @@ see_also = []
 
 
 **[Vian Izak](https://vianizak.com/)**
+: "Songs that say you matter in a world that says you don't."
 : > - [x] 
   > - [x] 
   > - [x] 
   > - [x] 
   > - [x] 
+
