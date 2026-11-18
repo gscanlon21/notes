@@ -17,9 +17,7 @@
 {% component image(file: string, title: string, open: bool = false, inline: bool = false, style: string = "") %}
 {% if inline %}<dd>{% endif %}
 <details class="image" style="{{ style }}" {% if open %}open="open"{% endif %}>
-	<summary>
-		<b>{{ title | safe }}</b>
-	</summary>
+	<summary class="font-weight--semibold">{{ title | safe }}</summary>
 
 ![{{ title }}]({{ file | replace(from="/", to="") }})
 </details>
