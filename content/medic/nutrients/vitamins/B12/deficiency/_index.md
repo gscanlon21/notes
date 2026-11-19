@@ -19,6 +19,7 @@ see_also = [
   { title = "Misconceptions", href = "https://stichtingb12tekort.nl/english/misconceptions-about-a-b12-deficiency/" },
   { title = "MSD Manuals", href = "https://www.msdmanuals.com/home/disorders-of-nutrition/vitamins/vitamin-b12-deficiency" },
   { title = "NICE Guidelines", href = "https://www.nice.org.uk/guidance/ng239" },
+  { title = "B12d", href = "https://b12d.org/" },
 ]
 +++
 
