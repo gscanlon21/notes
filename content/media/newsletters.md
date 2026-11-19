@@ -1,10 +1,12 @@
 +++
 title = "Newsletters"
-description = ""
+description = "Fun and informative email subscriptions."
 
 [extra]
 updated = 2027-01-01
-see_also = []
+see_also = [
+  { title = "Grow Native", href = "https://grownative.org/" },
+]
 +++
 
 {{ <hidden page={page} section={section} /> }}
@@ -48,11 +50,13 @@ _for Invertebrate Conservation_
 
 **[Harvard HealthBeat](https://www.harvardhealth.org/healthbeat)**
 : "Get the latest in health news delivered to your inbox!"
+: _Information is provided as an overview and rarely goes into depth._
+: _Will try to sell you a premium subscription to their detailed content._
 : > - [x] 
   > - [x] 
   > - [x] 
-  > - [x] 
-  > - [x] 
+  > - [ ] 
+  > - [ ] 
 
 
 **[Vestibular Disorders Association](https://vestibular.org/)**
@@ -69,3 +73,14 @@ _for Invertebrate Conservation_
 
 **[Worse on Purpose](https://www.worseonpurpose.com/)**
 : ?
+
+**[Missouri Conservation Corps](https://missouriconservationcorps.org/)**
+: ?
+
+**[Mo Invasives](https://moinvasives.org/join-newsletter/)**
+_Missouri Prairie Foundation_
+: ?
+
+**[WashU Ophthalmology & Visual Sciences](https://ophthalmology.wustl.edu/)**
+: Seminars
+
