@@ -18,6 +18,7 @@ see_also = [
   { title = "Serum B12", href = "https://stichtingb12tekort.nl/english/serumb12/" },
   { title = "Misconceptions", href = "https://stichtingb12tekort.nl/english/misconceptions-about-a-b12-deficiency/" },
   { title = "MSD Manuals", href = "https://www.msdmanuals.com/home/disorders-of-nutrition/vitamins/vitamin-b12-deficiency" },
+  { title = "NICE Guidelines", href = "https://www.nice.org.uk/guidance/ng239" },
 ]
 +++
 

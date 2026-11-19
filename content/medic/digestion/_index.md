@@ -1,12 +1,14 @@
 +++
 title = "Digestive System"
+description = ""
 sort_by = "title"
 
 [extra]
+updated = 2025-01-01
 see_also = [
-    { title = "BioCyc", href = "https://websvc.biocyc.org/" },
-    { title = "Microbiome Prescription", href = "https://microbiomeprescription.com/" },
-    { title = "Nutritional Epigenetics", href = "https://en.wikipedia.org/wiki/Nutritional_epigenetics" }
+  { title = "BioCyc", href = "https://websvc.biocyc.org/" },
+  { title = "Microbiome Prescription", href = "https://microbiomeprescription.com/" },
+  { title = "Nutritional Epigenetics", href = "https://en.wikipedia.org/wiki/Nutritional_epigenetics" }
 ]
 +++
 

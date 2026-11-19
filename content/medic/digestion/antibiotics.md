@@ -3,7 +3,7 @@ title = "Antibiotics"
 description = ""
 
 [extra]
-updated = 2025-03-05
+updated = 2025-01-01
 see_also = []
 +++
 
