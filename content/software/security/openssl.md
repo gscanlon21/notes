@@ -1,11 +1,10 @@
 +++
 title = "OpenSSL"
-updated = 2021-05-24
+description = ""
 
 [extra]
 site = "https://www.openssl.org/"
-version = "1.1.1k"
-license = "Apache-style"
+updated = 2027-01-01
 see_also = [
   { title = "Certificate Chains", href = "https://www.venafi.com/blog/how-do-certificate-chains-work" }
 ]

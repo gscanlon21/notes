@@ -4,7 +4,7 @@ sort_by = "title"
 
 [extra]
 site = "https://docs.microsoft.com/en-us/powershell/"
-version = "7.1.3"
+see_also = []
 +++
 
 {{ <hidden page={page} section={section} /> }}

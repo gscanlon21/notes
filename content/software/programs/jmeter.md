@@ -1,11 +1,11 @@
 +++
 title = "JMeter"
-updated = 2021-05-24
-draft = false
+description = ""
 
 [extra]
 site = "https://jmeter.apache.org/"
-version = "5.4.1"
+updated = 2027-01-01
+see_also = []
 +++
 
 {{ <hidden page={page} section={section} /> }}

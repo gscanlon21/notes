@@ -1,11 +1,11 @@
 +++
 title = "jq"
-aliases = ["jq"]
-updated = 2021-03-07
+description = ""
 
 [extra]
 site = "https://stedolan.github.io/jq/"
-version = "1.6"
+updated = 2027-01-01
+see_also = []
 +++
 
 

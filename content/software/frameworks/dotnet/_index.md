@@ -4,7 +4,7 @@ sort_by = "title"
 
 [extra]
 site = "https://dotnet.microsoft.com/"
-version = ".NET 5"
+updated = 2027-01-01
 see_also = [
   { title = ".NET Docs", href="https://docs.microsoft.com/en-us/dotnet/" },
   { title = ".NET Live Streams", href = "https://dotnet.microsoft.com/live" },

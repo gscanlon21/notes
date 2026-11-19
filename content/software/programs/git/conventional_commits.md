@@ -1,10 +1,11 @@
 +++
 title = "Conventional Commits"
-updated = 2021-05-24
+description = ""
 
 [extra]
 site = "https://www.conventionalcommits.org"
-version = "1.0.0"
+updated = 2027-01-01
+see_also = []
 +++
 
 {{ <hidden page={page} section={section} /> }}

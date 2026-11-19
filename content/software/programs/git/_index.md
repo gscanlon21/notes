@@ -6,7 +6,7 @@ sort_by = "title"
 [extra]
 site = "https://git-scm.com/"
 updated = 2027-01-01
-version = "2.30.1"
+see_also = []
 +++
 
 {{ <hidden page={page} section={section} /> }}

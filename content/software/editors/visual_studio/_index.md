@@ -4,7 +4,6 @@ sort_by = "title"
 
 [extra]
 site = "https://visualstudio.microsoft.com/"
-version = "2019"
 see_also = [
   { title = "C# Format Specifiers", href = "https://docs.microsoft.com/en-us/visualstudio/debugger/format-specifiers-in-csharp" }
 ]

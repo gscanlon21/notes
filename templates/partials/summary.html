@@ -16,9 +16,6 @@
             {% else %}
                 <span>{{ page?.title | default(value=section?.title) | safe }}</span>
             {% endif %}
-            {% if page?.extra?.version | default(value=section?.extra?.version) %} 
-                <sub class="version">{{ page?.extra?.version | default(value=section?.extra?.version) }}</sub>
-            {% endif %}  
         </h2> 
         {% if page?.extra?.subtitle | default(value=section?.extra?.subtitle) %} 
             <h4 class="subtitle">{{ page?.extra?.subtitle | default(value=section?.extra?.subtitle) }}</h4>
