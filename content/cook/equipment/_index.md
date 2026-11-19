@@ -3,7 +3,7 @@ title = "Equipment"
 sort_by = "title"
 
 [extra]
-updated = 2026-03-01
+updated = 2026-01-01
 site_version = 1
 toc_level = 2
 see_also = []
@@ -13,18 +13,15 @@ see_also = []
 
 
 
-
 # Equipment
 
-**Strainer**
-: _Fine-Mesh_
-	: Can hold small grains such as lentils.
-	: So water flows right through instead of splashing around.
+**Fine-Mesh Strainer**
+: Can hold small grains such as lentils.
+: Fine-mesh so water flows right through instead of splashing around.
 
 **Parchment Paper**
+_Silicone Free, Unbleached, Uncoated_
 : To keep from having to scrub clean pans.
-: _Silicone Free, Unbleached, Uncoated_
-	: Otherwise they bleed harmful chemicals.
 
 **Salad Spinner**
 : To dry salad leaves.
@@ -52,13 +49,18 @@ _10–12 inch_
 : For slicing bread, meat, and some fruits.
 : Ideal for cutting through thick skins without crushing the fleshy insides.
 
-**Honing Steel**
+
+### Knife Sharpeners
+
+> [!NOTE]
+> Rinse with warm tap water and dry completely with a cloth.
+>> Cleaning
+
+**Honing Steels**
 _10 inch_
 : Used to re-align the edge of the blade so that the sharpened bit is all facing in the right direction.
-: **Diamond Steels**
-  Sharpening Steels
-  : Honing steels that have fine diamond powder embedded in them.
-  : - This allows them to sharpen the edge as well as straighten it.
-: _Cleaning_
-	: Rinse with warm tap water and dry completely with a cloth.
 
+**Diamond Steels**
+Sharpening Steels
+: Honing steels that have fine diamond powder embedded in them.
+: - This allows them to sharpen the edge as well as straighten it.
