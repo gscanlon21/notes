@@ -249,11 +249,6 @@ Bedtime procrastination is usually about control. All day long, your time belong
 > If you want to wake up earlier, begin eating earlier. If you want to stay up later, eat later. And as with all circadian rhythm changes, once you’re on the schedule you desire, try to keep it consistent and eat meals at the same time each day.
 ###### [Sleep Foundation](https://www.sleepfoundation.org/circadian-rhythm/can-you-change-your-circadian-rhythm)
 
-# Supplements
-- Sustained-Release Melatonin
-- Magnesium Glycinate[^2]
-    - Magnesium helps ?
-    - Glycine is an inhibitory neurotransmitter and helps calm things down.
 
 
 # Equipment
