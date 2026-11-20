@@ -1,6 +1,6 @@
 +++
 title = "LeVar Burton Reads"
-description = ""
+description = "Short and sweet stories read by a short and sweet soul."
 
 [extra]
 rating = 5
@@ -14,8 +14,8 @@ see_also = []
 
 **"The Hidden Forests of Earth and Mars" by Anna Zumbro**
 2024-03-26
-: A young woman must decide her future: planting seeds and forging civilization on Mars, or caretaking for future generations on Earth. 
-: This story originally appeared in Cast of Wonders. Find more from the author at [annazumbro.com](https://annazumbro.com). 
+: "A young woman must decide her future: planting seeds and forging civilization on Mars, or caretaking for future generations on Earth."
+: "This story originally appeared in Cast of Wonders. Find more from the author at [annazumbro.com](https://annazumbro.com)."
 : > - [x] 
   > - [x] 
   > - [x] 
