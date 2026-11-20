@@ -72,7 +72,7 @@ _for Invertebrate Conservation_
 : ?
 
 **[Worse on Purpose](https://www.worseonpurpose.com/)**
-: ?
+: "Corporate autopsies on the brands you trust. Who bought them, who gutted them, and what's still worth buying."
 
 **[Missouri Conservation Corps](https://missouriconservationcorps.org/)**
 : ?
@@ -84,3 +84,15 @@ _Missouri Prairie Foundation_
 **[WashU Ophthalmology & Visual Sciences](https://ophthalmology.wustl.edu/)**
 : Seminars
 
+**[Patient-Centered Outcomes Research Institute](https://www.pcori.org/)**
+: ?
+
+**[Food Allergy Research & Education](https://www.foodallergy.org/)**
+: ?
+
+**[U.S. Food & Drug Administration](https://public.govdelivery.com/accounts/USFDA/subscriber/new)**
+: For notices about food and medical device recalls.
+: _This is a lot of email!_
+
+**[National Eye Institute](https://www.nei.nih.gov/)**
+: ?
