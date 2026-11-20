@@ -1,0 +1,15 @@
+.hide, .hidden {
+	background-color: rgba(var(--color-italic), 0.1);
+}
+
+@media print {
+	article {
+		.hide, .hidden {
+			display: none !important;
+		}
+
+		blockquote[class^="markdown-alert-"] {
+			display: none !important;
+		}
+	}
+}
