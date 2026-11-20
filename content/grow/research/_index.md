@@ -173,7 +173,7 @@ _[Article](https://link.springer.com/article/10.1186/1472-6750-11-36)_
 
 
 **Highly Specific Gene Silencing by Artificial MicroRNAs in Arabidopsis**
- et al. 
+Schwab et al. 2006
 _[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC1456875/)_
 : "The specificity of amiRNAs, as deduced from genome-wide expression profiling, was as high as that of natural plant miRNAs, supporting the notion that extensive base pairing with targets is required for plant miRNA function."
 : "The design principles for amiRNAs have been generalized and integrated into a Web-based tool [http://wmd.weigelworld.org](http://wmd.weigelworld.org)."
@@ -185,13 +185,6 @@ _[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC1456875/)_
  et al. 
 _[Article](https://www.cell.com/current-biology/fulltext/S0960-9822(07)01389-9)_
 : "Expression of an amiRNA against the FT mRNA (amiR-FT) from the constitutive 35S promoter delays flowering to the same extent as complete inactivation of the FT gene by genetic means [22]."
-
-
-
-**Highly Specific Gene Silencing by Artificial MicroRNAs in Arabidopsis**
- et al. 
-_[Article](https://academic.oup.com/plcell/article/18/5/1121/6114907)_
-: ?
 
 
 **RNA translocation between parasitic plants and their hosts**
