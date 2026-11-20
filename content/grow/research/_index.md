@@ -558,23 +558,27 @@ _[Research Article](https://www.cell.com/molecular-plant/fulltext/S1674-2052(23)
 `10.1016/j.molp.2023.09.013`
 : ?
 
-**[?](https://pubmed.ncbi.nlm.nih.gov/31234519/)**
+**Epigenetic Regulation of Plant Gametophyte Development**
 ? et al. ?
 _[Research Article](https://pubmed.ncbi.nlm.nih.gov/31234519/)_
 ``
 : ?
 
-
-**[?](https://pubmed.ncbi.nlm.nih.gov/25038583/)**
+**Somatic embryogenesis - Stress-induced remodeling of plant cell fate**
 ? et al. ?
 _[Research Article](https://pubmed.ncbi.nlm.nih.gov/25038583/)_
 ``
 : ?
 
-
-**[?](https://pubmed.ncbi.nlm.nih.gov/29338924/)**
+**Dynamic Epigenetic Changes during Plant Regeneration**
 ? et al. ?
 _[Research Article](https://pubmed.ncbi.nlm.nih.gov/29338924/)_
+``
+: ?
+
+**Chromatin regulation of somatic abiotic stress memory**
+? et al. ?
+_[Research Article](https://pubmed.ncbi.nlm.nih.gov/32076719/)_
 ``
 : ?
 
@@ -585,86 +589,6 @@ _[Research Article](https://www.nature.com/articles/s41477-021-01015-8)_
 ``
 : ?
 
-
-**[?](https://pubmed.ncbi.nlm.nih.gov/32076719/)**
-? et al. ?
-_[Research Article](https://pubmed.ncbi.nlm.nih.gov/32076719/)_
-``
-: ?
-
-
-
-## Agrobacterium-Mediated Infiltration
-
-**Heritable transgene-free genome editing in plants by grafting of wild-type shoots to transgenic donor rootstocks**
-Awan et al. 2026
-_[Review Article](https://www.nature.com/articles/s41587-022-01585-8)_
-`10.1038/s41587-022-01585-8`
-: Uses Agrobacterium-mediated infiltration.
-: " We postulated that the addition of TLS motifs to Cas9 and gRNA transcripts will result in their root-to-shoot movement and cause editing in recipient-grafted wild-type tissues."
-: > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [ ] 
-: {{ <image title="Procedure" file="10.1038⧸s41587-022-01585-8.webp" inline={true} /> }}
-
-
-**Plant gene editing through de novo induction of meristems**
-Maher et al. 2019
-_[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC6954279/)_
-`10.1038/s41587-019-0337-2`
-: "Here, we report that concomitant expression of DRs and gene editing reagents creates transgenic and gene edited shoots through de novo meristem induction. Further, these shoots produce flowers and seeds and ultimately transmit transgenes and gene edits to the next generation."
-: "The first step in Fast-TrACC is the optimization of A. tumefaciens cultures for gene transfer (1). Seedlings are germinated in 6-well plates and co-cultured with the optimized A. tumefaciens strains (2). After approximately two weeks, dark green growths begin to form (3) that ultimately produce shoot-like structures (4). The shoot-like growths are then induced to form roots."
-: > - [x] 
-  > - [x] 
-  > - [x] 
-  > - [ ] 
-  > - [ ] 
-: {{ <image title="Procedure" file="10.1038⧸s41587-019-0337-2.jpg" inline={true} /> }}
-
-
-
-## _In Planta_ Particle Bombardment
-## (iPB)
-
-**In planta particle bombardment (iPB): A new method for plant transformation and genome editing**
-Imai et al. 2020
-_[Research Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7434670/)_
-`10.5511/plantbiotechnology.20.0206a`
-: "Our in planta particle bombardment (iPB) method utilizes the shoot apical meristem (SAM) as a target tissue."
-: "The SAM contains a subepidermal cell layer termed L2, from which germ cells later develop during floral organogenesis."
-: > - [x] 
-  > - [x] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-: {{ <image title="Procedure" file="10.5511⧸plantbiotechnology.20.0206a.jpg" inline={true} /> }}
-
-**Efficient genome editing by CRISPR-Cas12a in common wheat via shoot apical meristem delivery**
-Luo et al. 2025
-_[Letter](https://pmc.ncbi.nlm.nih.gov/articles/PMC12673671/)_
-`10.1093/plphys/kiaf611`
-: Uses particle bombardment.
-: > - [x] 
-  > - [x] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
-: {{ <image title="Procedure" file="10.1093⧸plphys_kiaf611.jpg" inline={true} /> }}
-
-
-
-**An _in planta_ biolistic method for stable wheat transformation**
-Hamada et al. 2017
-_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC5597576/)_
-`10.1038/s41598-017-11936-0`
-: Uses _in planta_ particle bombardment.
-: > - [x] 
-  > - [x] 
-  > - [ ] 
-  > - [ ] 
-  > - [ ] 
 
 
 [^1]: [https://en.wikipedia.org/wiki/Meristem](https://en.wikipedia.org/wiki/Meristem)
