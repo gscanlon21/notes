@@ -39,7 +39,7 @@ A nucleic acid, made up of nucleotides. Double stranded.
 Sequences of base pairs encode information. 
 Possible for there to be a pair mismatch, though rare.
 
-**AC**
+**AT**
 _Base Pair_
 : **Adenine**
 

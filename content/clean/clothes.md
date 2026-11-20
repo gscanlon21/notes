@@ -29,11 +29,11 @@ see_also = [
 
 # Washing
 
+> [!TIP]
+> Run the **Clean Washer** cycle every 6 months or so to rinse out the tub.
+
 **Towels**
 : Use the **Pure Rinse** option to get all the leftover detergent residue off.
-: Try adding a ½-cup distilled white vinegar in the rinse cycle to strip out any acidic residue.
-: Try adding a ½-cup baking soda in the rinse cycle to break up the bonds of bacteria and residues.
-: Never use fabric softener on towels—it coats the terry cloth, so they get hard and stop absorbing.
-
-> Make sure to run the **Clean Washer** cycle every 6 months or so to rinse out the tub.
-
+: Try adding a ½-cup baking soda to the drum to break up the bonds of bacteria and residues.
+: Try adding a ½-cup distilled white vinegar to the fabric softener compartment to strip out any acidic residue.
+: - Never use fabric softener on towels—it coats the terry cloth, so they get hard and stop absorbing.
