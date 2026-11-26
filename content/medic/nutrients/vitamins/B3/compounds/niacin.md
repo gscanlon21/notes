@@ -1,6 +1,7 @@
 +++
 title = "Niacin"
 description = "A form of vitamin B3."
+aliases = ["niacin"]
 
 [extra]
 key_words = ["Vitamin B3"]

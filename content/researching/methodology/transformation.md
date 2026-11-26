@@ -96,11 +96,6 @@ Angulo et al. 2023
 _[Research Article](/doi/10.3389/fgeed.2023.1251557.pdf)_ 
 : ?
 
-**Direct protein delivery into intact _Arabidopsis_ cells for genome engineering**
-Furuhata et al. 2024
-_[Research Article](/doi/10.1038/s41598-024-72978-9.pdf)_ 
-: ?
-
 
 
 # CRISPR/Cas9

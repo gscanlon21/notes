@@ -17,7 +17,6 @@ see_also = []
 **Ender's Game**
 _The Ender Saga: Book 1_
 Orson Scott Card
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -28,7 +27,6 @@ Orson Scott Card
 **Speaker for the Dead**
 _The Ender Saga: Book 2_
 Orson Scott Card
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -39,7 +37,6 @@ Orson Scott Card
 **Xenocide**
 _The Ender Saga: Book 3_
 Orson Scott Card
-: ~~What was this book about?~~
 : > - [ ] 
   > - [ ] 
   > - [ ] 

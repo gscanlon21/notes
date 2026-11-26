@@ -11,3 +11,9 @@ see_also = []
 
 {{ <hidden page={page} section={section} /> }}
 
+
+# Overview
+
+**[Niacin](/niacin)**
+: A form of vitamin B3.
+

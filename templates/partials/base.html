@@ -87,10 +87,10 @@
 		<nav id="site-nav">
 			<div class="nav-item">{% include 'partials/search.html' %}</div>
 			<div class="nav-item"><a class="unstyle" href="{{ get_url(path="@/_index.md", lang=config.default_language) }}">ascallion</a></div>
-			{% if ancestor_section %}
+			{% if ancestor_section and ancestor_section.extra.in_sitemap | default(value=true) %}
 				<div class="nav-item"><a href="{{ ancestor_section?.permalink | default(value="/") }}">Previous</a></div>
 			{% else %}
-				<div class="nav-item"><a href="{{ section?.permalink | default(value=page?.permalink | default(value="/")) }}">Refresh</a></div>
+				<div class="nav-item"><a id="random-page" href="#">Random</a></div>
 			{% endif %}
 		</nav>
 

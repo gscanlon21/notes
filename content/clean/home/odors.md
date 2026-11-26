@@ -14,7 +14,8 @@ see_also = []
 
 
 # Dust
-Dust collects odors the way fabric can.
+> [!NOTE]
+> Dust collects odors the way fabric can.
 
 ##### Common Locations of Dust
 

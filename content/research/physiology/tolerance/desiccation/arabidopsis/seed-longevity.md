@@ -64,13 +64,13 @@ _[Research Article](/doi/10.1073/pnas.2202172119.pdf)_
 **The importance of safeguarding genome integrity in germination and seed longevity**
 Waterworth et al. 2015
 _[Research Article](/doi/10.1093/jxb/erv080.pdf)_
-: ~~What was this book about?~~
+: ?
 
 
 **Seed Longevity—The Evolution of Knowledge and a Conceptual Framework**
 Nadarajan et al. 2023
 _[Research Article](/doi/10.3390/plants12030471.pdf)_
-: ~~What was this book about?~~
+: ?
 
 
 **WHIRLY proteins maintain seed longevity by effects on seed oxygen signalling during imbibition**

@@ -25,8 +25,8 @@ map = []
 # Terminology
 
 **Log₂**
-: log₂(x) means 2^? = x
-: log₂(16) = 4
+: $$\log_{2}(x)$$ means $$2^? = x$$
+: $$\log_{2}(16) = 4$$
 
 
 # Tests
@@ -52,17 +52,17 @@ Both genes have twice expression, just in different direction.
 : mean(sample) = 4
 : mean(control) = 2
 : fold change = 4/2 = 2
-: log₂(2) = 1
+: $$log_{2}(2) = 1$$
 
 **Gene 1**
 : mean(sample) = 2
 : mean(control) = 4
 : fold change = 2/4 = 1/2
-: log₂(1/2) = -1
+: $$log_{2}(\frac{1}{2}) = -1$$
 
 > [!NOTE]
 > In order to avoid a divide by zero / log₂(0) error, we add a small number (epsilon, 1/0.1/0.01) to both numerator and denominator of the fold change.
-> This dilutes the fold change by a little bit because it swings the fold change closer to 1, and the log₂(1) = 0.
+> This dilutes the fold change by a little bit because it swings the fold change closer to 1, and the $$log_{2}(1) = 0$$.
 >> Divide by Zero
 
 

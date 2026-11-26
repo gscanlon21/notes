@@ -14,11 +14,9 @@ see_also = []
 
 # Terminology
 
-**Gene Body Methylation**
-: ?
+**Epidermal**
+: Refers to the outermost layer of skin.
 
-**Promoter Methylation**
-: ?
 
 
 # Review Articles

@@ -18,7 +18,7 @@ Native
 
 **Tree of Heaven**
 _Ailanthus altissima_
-Invasive
+Invasive in MO
 : Tree of Heaven, aka “Stink Tree” is an incredibly fast growing tree reaching up to 70 feet and
   spreading prolifically by seed. While pushing out native species, it produces a chemical
   compound, ailanthone, that inhibits the growth of other nearby plants.
@@ -30,13 +30,12 @@ Invasive
 
 **White Mulberry**
 _Morus alba_
-: White Mulberry poses an ecological threat by displacing
-  native species, possibly hybridizing with and transmitting a
-  root disease to the native Red Mulberry (Morus rubra). It
-  can also be easily mistaken for Red Mulberry. See
-  reference for identification. White mulberry seedlings may
-  be controlled by pulling or digging the plant out. Consult
-  the link above to learn about the plant’s ecology.
+Invasive in MO
+: White Mulberry poses an ecological threat by displacing native species, possibly hybridizing with and transmitting a root disease to the native Red Mulberry (Morus rubra). 
+  It can also be easily mistaken for Red Mulberry. 
+  See reference for identification.
+  White mulberry seedlings may be controlled by pulling or digging the plant out. 
+  Consult the link above to learn about the plant’s ecology.
 
 **Red Mulberry**
 _Morus rubra_

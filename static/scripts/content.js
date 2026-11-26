@@ -203,12 +203,12 @@ document.addEventListener("selectionchange", () => {
 	}
 });
 
-/* Push a history entry so popstate is called.
-history.pushState(null, "", location.href);
+// Navigate to a random page according to what is in the search index.
+document.getElementById("random-page").addEventListener("click", () => {
+    const pages = Object.keys(window.searchIndex.documentStore.docInfo)
+		.map(url => url.replace("/content/no/", "/content/"))
+		.map(url => new URL(url, window.location.origin))
+		.filter(url => url.pathname.length > 1);
 
-// Go to the last path segment on browser back.
-window.addEventListener("popstate", (e) => {
-	// FIXME: this breaks the browser forward button.
-	const parent = location.pathname.replace(/\/$/, "").split("/").slice(0, -1).join("/") + "/";
-	location.href = parent;
-});*/
+    window.location.href = pages[Math.floor(Math.random() * pages.length)];
+});

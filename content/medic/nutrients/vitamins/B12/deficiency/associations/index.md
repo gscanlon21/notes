@@ -23,6 +23,7 @@ see_also = []
 
 # Hyperhomocysteinemia
 **Vitamin B12 Deficiency: Recognition and Management**
+Langan & Goodbred 2017
 _[Article](https://www.aafp.org/afp/2017/0915/p384.pdf)_
 : "Vitamin B12 deficiency is a much more common cause of hyperhomocysteinemia in developed countries than folate deficiency because of widespread fortification of food with folate."
 

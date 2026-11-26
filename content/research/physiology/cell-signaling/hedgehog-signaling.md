@@ -6,24 +6,23 @@ weight = 999
 
 [extra]
 updated = 2026-01-01
-see_also = []
+see_also = [
+  { title = "Cell Signaling", href = "https://en.wikipedia.org/wiki/Cell_signaling" },
+  { title = "Wikipedia", href = "https://en.wikipedia.org/wiki/Hedgehog_signaling_pathway" },
+]
 +++
 
 {{ <hidden page={page} section={section} /> }}
 
 
 
-
 # Terminology
+{% <flashcards header="Terminology"> %}
+
+**Cell Signaling**
+: A system of three intertwined components, the messenger, the receptor, and the signal, that allows cells to communicate with themselves and other cells.
 
 **Hedgehog Signaling**
 : ?
 
-
-# Review Articles
-
-**The mechanisms of Hedgehog signalling and its roles in development and disease**
-? ? 
-_[Review Article](/doi/10.1038/nrm3598.pdf)_ 
-: ?
-
+{% </flashcards> %}

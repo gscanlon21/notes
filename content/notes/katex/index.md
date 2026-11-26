@@ -27,3 +27,8 @@ see_also = []
 : > - > - \hspace{2mm}
   >   > - $$\hspace{2mm}$$
 
+**Log**
+`\log_{}()`
+: > - > - \log_{2}(x+1)
+  >   > - $$log_{2}(x+1)$$
+  

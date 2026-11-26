@@ -18,7 +18,6 @@ see_also = []
 ## Susanna Clarke
 **Piranesi**
 Susanna Clarke
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -29,7 +28,6 @@ Susanna Clarke
 ## Becky Chambers
 **A Psalm for the Wild-Built**
 Becky Chambers
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -39,7 +37,6 @@ Becky Chambers
 ## China Miéville
 **Perdido Street Station**
 China Miéville
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -244,7 +241,6 @@ _Traveler's Gate_
 **The Combat Codes**
 Alexander Darwin
 _The Combat Codes Saga_
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 

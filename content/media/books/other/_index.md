@@ -43,7 +43,6 @@ Harper Susan Evergreen
 
 **Fifty-Two Stories**
 Anton Chekhov
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [ ] 

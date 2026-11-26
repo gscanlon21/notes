@@ -7,7 +7,7 @@ updated = 2026-01-01
 site_version = 1
 toc_level = 2
 see_also = [
-  { title = "Hydrogen Peroxide Scarification", href = "https://biologyinsights.com/how-to-germinate-seeds-with-hydrogen-peroxide/" },
+  { title = "Gibberellin", href = "https://en.wikipedia.org/wiki/Gibberellin" },
 ]
 +++
 
@@ -15,6 +15,13 @@ see_also = [
 
 
 
+# Terminology
+
+**Gibberellin**
+: ?
+
+
+# Overview
 
 Check on them in 1.5 weeks. If roots are at least 1.5 inches long, move into the hydroponics system. 
 If they are less than 1.5 inch keep them in the start tray for the rest of the week.
@@ -30,5 +37,3 @@ If they are less than 1.5 inch keep them in the start tray for the rest of the w
 >> Chemical Scarification
 
 
-
-[^1]: https://pmc.ncbi.nlm.nih.gov/articles/PMC2529229/

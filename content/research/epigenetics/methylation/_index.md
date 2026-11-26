@@ -11,14 +11,10 @@ see_also = []
 
 
 
-
 # Terminology
 
-**Gene Body Methylation**
-: ?
-
-**Promoter Methylation**
-: ?
+**DNA Methylation**
+: The repression of gene expression due to methylation - the process of restricting access to dna within a cell.
 
 
 # Author Manuscripts

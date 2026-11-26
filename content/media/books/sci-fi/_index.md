@@ -19,7 +19,6 @@ see_also = []
 
 **Revelation Space**
 Alistair Reynolds
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -28,16 +27,14 @@ Alistair Reynolds
 
 **Chasm City**
 Alistair Reynolds
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
-  > - [x] 
+  > - [ ] 
   > - [ ] 
 
 **Slow Bullets**
 Alistair Reynolds
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -59,7 +56,6 @@ _Rama_
 ## Andy Weir
 **Project Hail Mary**
 Andy Weir
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -69,7 +65,6 @@ Andy Weir
 ## Ursula K. Le Guin
 **The Left Hand of Darkness**
 Ursula K. Le Guin
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -79,7 +74,6 @@ Ursula K. Le Guin
 ## Robert A. Heinlein
 **The Moon is a Harsh Mistress**
 Robert A. Heinlein
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -89,7 +83,6 @@ Robert A. Heinlein
 ## John Steakley
 **Armor**
 John Steakley
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -99,7 +92,6 @@ John Steakley
 ## Larry Niven
 **Ringworld**
 Larry Niven
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -109,7 +101,6 @@ Larry Niven
 ## Joe Haldeman
 **The Forever War**
 Joe Haldeman
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 
@@ -280,7 +271,6 @@ _2026-04-30_
 
 **Annihilation**
 Jeff VanderMeer
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 

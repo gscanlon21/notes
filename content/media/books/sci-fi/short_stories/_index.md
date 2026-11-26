@@ -27,7 +27,6 @@ Edwin A. Abbott
 ## John C. Wright
 **Awake in the Night Land**
 John C. Wright
-: ~~What was this book about?~~
 : > - [x] 
   > - [x] 
   > - [x] 

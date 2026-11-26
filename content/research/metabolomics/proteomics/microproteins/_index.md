@@ -77,8 +77,8 @@ _[Review Article](/doi/10.3390/cells14120859.pdf)_
 : ?
 
 **The Small Open Reading Frame-Encoded Peptides: Advances in Methodologies and Functional Studies**
-? ? 
-_[Article](/doi/10.1002/cbic.202100534.pdf)_ 
+Chen et al. 2021 
+_[Article](https://ira.lib.polyu.edu.hk/bitstream/10397/95716/1/Chen_Open_Reading_Frame%E2%80%90Encoded.pdf)_ 
 : ?
 
 
@@ -95,19 +95,19 @@ _[Review Article](/doi/10.1146/annurev-biochem-080124-012840.pdf)_
 
 
 **Long non-coding RNA-encoded micropeptides: functions, mechanisms and implications**
-? ? 
-_[Article](/doi/10.1038/s41420-024-02175-0.pdf)_ 
+Xiao et al. 2024
+_[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC11499885/)_ 
 : ?
 
 
 **Noncanonical microprotein regulation of immunity**
-? ? 
-_[Article](/doi/10.1016/j.ymthe.2024.05.021.pdf)_ 
+Nichols et al. 2024
+_[Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC11403233/)_ 
 : ?
 
 
 **Unveiling the multifaceted roles of long non-coding RNA CTBP1-DT in human diseases: Special attention to its microprotein-encoding potential**
-? ? 
+Yang 2025
 _[Article](https://pubmed.ncbi.nlm.nih.gov/40020329/)_ 
 : ?
 

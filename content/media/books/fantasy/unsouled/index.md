@@ -7,7 +7,9 @@ authors = ["Will Wight"]
 updated = 2026-01-01
 site_version = 1
 toc_level = 2
-see_also = []
+see_also = [
+  { title = "Will Wight", href = "https://www.willwight.com/" },
+]
 +++
 
 {{ <hidden page={page} section={section} /> }}
