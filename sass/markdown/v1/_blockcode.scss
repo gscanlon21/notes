@@ -1,0 +1,22 @@
+blockquote[class^="markdown-alert-"]:has(pre) {
+	font-size: $base-font-size * 1.25;
+	padding: $base-padding * 0.25;
+
+	&::before {
+		display: none;
+	}
+
+	pre {
+		background-color: transparent !important;
+		background-image: none !important;
+		cursor: default;
+
+		code {
+			cursor: default;
+		}
+	}
+
+	& + blockquote[class^="markdown-alert-"]:has(pre) {
+		margin-block-start: $base-padding * 2;
+	}
+}

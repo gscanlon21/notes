@@ -1,0 +1,21 @@
+/* Description List Horizontal Rules */
+article.v1 dd:has(> hr) {
+	& > hr {
+		border-block-color: color(--color-text, 0.25);
+		border-block-style: dashed;
+		border-inline: none;
+	}
+
+	&:has(+dd > dl) {
+		& > hr {
+			margin-block-end: $base-padding * 0.1;
+		}
+
+		& + dd:has(> dl) {
+			& > dl > dt {
+				margin-block-start: 0;
+				border-top: none;
+			}
+		}
+	}
+}

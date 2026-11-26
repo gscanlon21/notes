@@ -1,0 +1,69 @@
+/******** Checkbox Rating System. ********/
+dd:has(blockquote input[type="checkbox"]) {
+	margin-block-start: 0 !important;
+	align-items: start;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+dd + dd:has(> blockquote input[type="checkbox"]) {
+	margin-block-start: $base-padding * -0.25 !important;
+}
+
+dd + dd + dd:has(> blockquote input[type="checkbox"]) {
+	margin-block-start: 0 !important;
+}
+
+blockquote:has(input[type="checkbox"]) {
+	margin-block-start: $base-padding * 0.1;
+	margin-inline-start: 0;
+	display: contents;
+	
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	ul {
+		counter-reset: item;
+		display: contents;
+		padding: 0;
+		border: 0;
+	}
+
+	li {
+		overflow: hidden;
+		align-items: center;
+		list-style-type: none;
+		width: $base-font-size;
+		height: $base-font-size;
+		font-size: $base-padding * 1.25;
+		margin-block-start: 0 !important;
+
+		&:has(input[type="checkbox"]:checked) {
+			counter-increment: item;
+		}
+
+		&:has(input[type="checkbox"]:checked)::before {
+			vertical-align: top;
+			content: "\2605";
+			line-height: 1;
+		}
+
+		&:has(input[type="checkbox"]:not(:checked))::before {
+			vertical-align: top;
+			content: "\2606";
+			line-height: 1;
+		}
+
+		&:last-child:not(:nth-child(5)) {
+			&::after {
+				font-size: $base-font-size;
+				min-width: $base-font-size;
+				content: counter(item);
+				text-align: center;
+				position: absolute;
+				line-height: 1;
+			}
+		}
+	}
+}

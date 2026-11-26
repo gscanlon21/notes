@@ -1,0 +1,24 @@
+article.v1 { 
+	blockquote + ul, blockquote + ol, blockquote + menu {
+		margin-block-start: $base-padding * 0.75;
+	}
+
+	ul, ol, menu {
+		margin-block-start: $base-padding * 0.25;
+
+		li {
+			& + li {
+				margin-block-start: $base-padding * 0.25;
+			}
+
+			// Nested Lists
+			ul, ol, menu {
+				margin-block-start: $base-padding * 0.1;
+
+				li + li {
+					margin-block-start: $base-padding * 0.1;
+				}
+			}
+		}
+	}
+}

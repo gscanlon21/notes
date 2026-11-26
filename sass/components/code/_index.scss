@@ -1,0 +1,12 @@
+code {
+	background-color: color(--color-code-bg);	
+	padding-block-end: .05em;
+	word-break: break-word;
+	display: inline-flex;
+	padding-inline: .2em;
+	border-radius: .25em;
+	margin-block-end: 0;
+	margin-inline: .1em;
+	font-size: 1.25em;
+	cursor: pointer;
+}

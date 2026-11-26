@@ -1,0 +1,116 @@
+#clock {
+	pointer-events: none;
+	isolation: isolate;
+	position: fixed;
+	height: 100svh;
+	width: 100svw;
+	z-index: -2;
+	left: 0;
+	top: 0;
+	
+	.hand {
+		//background-color: color-mix(in srgb, color(--color-text) calc(var(--hand-opacity, 0.75) * 100%), color(--color-bg));
+		transition: background-color var(--clock-rotate, 0s) linear, opacity 2500ms ease-in;
+		background-color: rgba(var(--color-text), var(--hand-opacity, 0.75));
+		animation-delay: var(--clock-delay, 0s);
+		opacity: var(--clock-opacity, 0);
+		display: inline-block;
+		border-radius: 100px;
+	}
+
+	.hour {
+		bottom: calc(50svh - 5vmin);
+		transform-origin: 0% 0%;
+		position: absolute;
+		height: 10vmin;
+		width: 2px;
+		left: 50%;
+
+		& > .hand {
+			left: 0.5px;
+		}
+
+		&::before {
+			background-color: color(--color-bg, 1);
+			transform: translateX(-50%);
+			position: absolute;
+			border-radius: 50%;
+			content: '';
+			height: 5px;
+			top: -2.5px;
+			width: 5px;
+			z-index: 1;
+			left: 50%;
+		}
+
+		&::after {
+			background-color: rgba(var(--color-text), var(--hand-opacity, 0.75));
+			transform: translateX(-50%);
+			position: absolute;
+			border-radius: 50%;
+			content: '';
+			height: 5px;
+			top: -2.5px;
+			width: 5px;
+			z-index: 2;
+			left: 50%;
+		}
+	}
+
+	.minute, .second {
+		transform-origin: 50% 100%;
+		position: absolute;
+		height: 20vmin;
+		bottom: 100%;
+		width: 1px;
+		left: 0;
+	}
+
+	.rotate-second {
+		/*(60*60*12)/((60*12)-1)*/
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		animation-duration: 60.083449s;
+		animation-name: rotating;
+	}
+
+	.rotate-minute {
+		/*(60*60*12)/(12-1)*/
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		animation-duration: 3927.27273s;
+		animation-name: rotating;
+	}
+
+	.rotate-hour {
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		animation-duration: 43200s;
+		animation-name: rotating;
+	}
+
+	/* Causes pretty poor performance...
+	.base.minute, .base.second, .echo[data-index="0"] {
+		mix-blend-mode: color-dodge;
+	}
+
+	.echo:not([data-index="0"]) {	
+		mix-blend-mode: var(--blend-mode, normal);
+	}*/
+}
+
+@keyframes rotating {
+	from {
+		transform: rotate(180deg);
+	}
+
+	to {
+		transform: rotate(540deg);
+	}
+}
+
+@media print {
+	#clock {
+		display: none;
+	}
+}

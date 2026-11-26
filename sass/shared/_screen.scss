@@ -1,0 +1,12 @@
+
+@container (max-width: #{$breakpoint-small}) {
+	.screen-medium, .screen-medium-up {
+		display: none !important;
+	}
+}
+
+@container (min-width: #{$breakpoint-large}) {
+	.screen-small, .screen-medium {
+		display: none !important;
+	}
+}

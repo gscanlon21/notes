@@ -1,0 +1,34 @@
++++
+title = "Nutrient Film Technique"
+description = "Too unwieldy"
+in_search_index = false
+render = true
+
+[extra]
+in_sitemap = false
+updated = 2026-01-01
+site_version = 1
+toc_level = 2
+see_also = []
++++
+
+{{ <hidden page={page} section={section} /> }}
+{{ <images page={page} section={section} /> }}
+
+
+
+
+# Inspiration
+
+
+
+
+
+
+
+# Checklist
+
+- [x] 4-inch ID Pipe
+- [x] 4-inch ID Elbow Fittings
+- [x] 4-inch ID End Caps
+

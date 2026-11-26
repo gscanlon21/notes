@@ -1,0 +1,47 @@
+ul > li > blockquote:not([class^="markdown-alert-"]):has(> ul > li) {
+	padding-inline-start: 0 !important;
+	border-left: none !important;
+}
+
+ul > li > blockquote > ul:not(:has(> li > blockquote)) {
+	margin-block-start: 0 !important;
+	padding-inline-start: 0 !important;
+	grid-template-columns: max-content;
+	grid-column-gap: $base-padding;
+	grid-auto-rows: max-content;
+	grid-auto-flow: row;
+	display: grid;
+
+	& > li {
+		display: flex;
+		grid-column: 2;
+
+		&:first-of-type {
+			align-items: start;
+			grid-row: span 99;
+			font-weight: 500;
+			grid-column: 1;
+
+			&:has(+ li:last-of-type) {
+				align-items: center;
+			}
+		}
+
+		& + li {
+			padding-inline-start: $base-padding * 1.85;
+			margin-block-start: 0 !important;
+			position: relative;
+			overflow-y: clip;
+
+			&::before {
+				font-size: $site-font-size * 2;
+				transform: translateY(-.2ch);
+				position: absolute;
+				align-self: center;
+				line-height: 1;
+				content: '=';
+				left: 0;
+			}
+		}
+	}
+}

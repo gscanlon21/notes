@@ -1,0 +1,17 @@
+input[type="text"], input[type="number"] {
+	background-color: color(--color-search-bg);
+	color: color(--color-search);
+
+	&::placeholder {
+		color: inherit;
+	}
+}
+
+button {
+	background-color: color(--color-search-bg);
+	color: color(--color-search);
+
+	&::placeholder {
+		color: inherit;
+	}
+}

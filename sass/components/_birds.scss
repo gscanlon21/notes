@@ -1,0 +1,21 @@
+#birds {
+	pointer-events: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	left: 0;
+	top: 0;
+
+	.vanta-canvas {
+		transform: translate(-50%, -50%);
+		left: 50% !important;
+		top: 50% !important;
+	}
+}
+
+@media print {
+	#birds {
+		display: none;
+	}
+}

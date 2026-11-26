@@ -1,0 +1,110 @@
+article.v1 {
+	--side-opacity: 1;
+
+	h1, h2, h3, h4 {
+		text-decoration-line: underline;
+		text-decoration-style: solid;
+		/* For the copy icon: */
+		overflow-x: clip;
+
+		/* COPY ICON
+		***************
+		* Display a copy icon on hover.
+		* Zero-width so it won't wrap by itself. */
+		& > span::after {
+			transform: translateX($base-padding * 0.2);
+			font-size: $base-font-size * 0.9;
+			color: color(--color-text, 0.75);
+			transition-timing-function: ease;
+			transition-property: opacity;
+			transition-duration: 250ms;
+			vertical-align: baseline;
+			display: inline-block;
+			cursor: pointer;
+			content: "#";
+			opacity: 0;
+			width: 0;
+		}
+
+		&:hover > span::after {
+			opacity: 1;
+		}
+	}
+
+	h2 {
+		position: relative;
+
+		&::before {
+			content: '';
+			background-color: color(--color-h2, var(--side-opacity));
+			transform: translateX(8px);
+			left: $site-padding * -1;
+			pointer-events: none;
+			position: absolute;
+			top: 0.15em;
+			width: 2px;
+			bottom: 0;
+		}
+
+		&+h2::before, &+h2::after {
+			display: none;
+		}
+	}
+
+	h3 {
+		position: relative;
+
+		&::before {
+			content: '';
+			background-color: color(--color-h3, var(--side-opacity));
+			transform: translateX(8px);
+			left: $site-padding * -1;
+			pointer-events: none;
+			position: absolute;
+			top: 0.15em;
+			width: 2px;
+			bottom: 0;
+		}
+
+		&+h3::before, &+h3::after {
+			display: none;
+		}
+	}
+
+	h4 {
+		position: relative;
+
+		&::before {
+			content: '';
+			background-color: color(--color-h4, var(--side-opacity));
+			transform: translateX(8px);
+			left: $site-padding * -1;
+			pointer-events: none;
+			position: absolute;
+			top: 0.15em;
+			width: 2px;
+			bottom: 0;
+		}
+
+		&+h4::before, &+h4::after {
+			display: none;
+		}
+	}
+
+	/* No clue what this was for... _spacing.scss now takes precedence over nested headers.
+	blockquote:has(>h1), blockquote:has(>h2), blockquote:has(>h3), blockquote:has(>h4) {
+		border-left: none !important;
+		padding: 0 !important;
+		margin: 0 !important;
+
+		&:first-child > h1, &:first-child > h2, &:first-child > h3, &:first-child > h4 {
+			margin: 0 !important;
+		}
+	}*/
+
+	@media print {
+		h1::before, h2::before, h3::before, h4::before {
+			display: none;
+		}
+	}
+}

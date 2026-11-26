@@ -1,0 +1,38 @@
+.copied {
+	animation-timing-function: ease-in;
+	animation-duration: 1000ms; 
+	animation-fill-mode: none;
+	animation-name: fade;
+	position: relative;
+	
+	///* Enable background color?
+	background-blend-mode: hard-light;
+	background-size: max(100%, 50lvw);
+	background-image: linear-gradient(var(--angle, 90deg), 
+		color-mix(in srgb, color(--color-copy, 0.5) var(--opacity), transparent), 
+		color-mix(in srgb, color(--color-copy, 0.1) var(--opacity), transparent)
+	);
+
+	color: color-mix(in srgb, color(--color-copy) var(--opacity), color(--color-code)) !important;
+}
+
+@property --opacity {
+	syntax: "<percentage>";
+	initial-value: 0%;
+	inherits: false;
+}
+
+@property --angle {
+	syntax: "<angle>";
+	inherits: false;
+}
+
+@keyframes fade {
+	0% {
+		--opacity: 100%;
+	}
+
+	100% {
+		--opacity: 0%;
+	}
+}

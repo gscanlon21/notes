@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<path style="fill:#FDCC98;" d="M154.187,120.299l81.268-46.92C217.361,30.275,174.759,0,125.082,0C59,0,5.429,53.57,5.429,119.652
+	S59,239.304,125.082,239.304c49.277,0,91.59-29.792,109.928-72.342L154.187,120.299z"/>
+<path style="fill:#FBAC50;" d="M154.187,120.299l81.268-46.92C217.361,30.275,174.759,0,125.082,0c0,36.73,0,164.73,0,239.304
+	c49.277,0,91.59-29.792,109.928-72.342L154.187,120.299z"/>
+<circle style="fill:#333333;" cx="157.162" cy="58.856" r="14.47"/>
+<path style="fill:#C7EAF0;" d="M506.571,512H305.142V353.375c0-55.623,45.092-100.714,100.714-100.714l0,0
+	c55.623,0,100.714,45.092,100.714,100.714V512H506.571z"/>
+<path style="fill:#88DEE0;" d="M506.571,512H405.478c0,0,0.378-210.365,0.378-259.339l0,0c55.623,0,100.714,45.092,100.714,100.714
+	V512z"/>
+<g>
+	<circle style="fill:#EBECEC;" cx="371.946" cy="334.113" r="14.47"/>
+	<circle style="fill:#EBECEC;" cx="440.543" cy="334.113" r="14.87"/>
+</g>
+<g>
+	<circle style="fill:#FBAC50;" cx="283.047" cy="119.096" r="13.913"/>
+	<circle style="fill:#FBAC50;" cx="343.708" cy="119.652" r="13.913"/>
+	<circle style="fill:#FBAC50;" cx="404.369" cy="119.652" r="13.913"/>
+	<circle style="fill:#FBAC50;" cx="404.09" cy="183.652" r="13.913"/>
+</g>
+</svg>

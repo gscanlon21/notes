@@ -1,0 +1,45 @@
+
+{#
+    Iterates though the site's ancestors and renders lists for each.
+#}
+{% component macros.render_ancestors(config, page = null, section = null, lang: string) %}
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap">
+	{% set show_current = page.transparent | default(value=section.transparent) != true and page.relative_path | default(value=section.relative_path) != "_index.no.md" %}
+	{% set has_subsections = section and section.pages | length > 0 or section and section.subsections | length > 0 %}
+	<menu class="sitemap-list">
+		{% for ancestor in page.ancestors | default(value=section.ancestors) %}
+			{% set ancestor_info = get_section(path=ancestor, lang=lang, allow_missing=false) %}
+			{% if not ancestor_info.transparent and ancestor_info.relative_path != "_index.no.md" %}
+				{% if config.default_language != lang %}
+					{% set sub_path = ancestor_info.relative_path | replace(from="_index.md", to="") | replace(from="index.md", to="") | replace(from="_index.no.md", to="") | replace(from="index.no.md", to="") %}
+					<li><a href="{{ "/" ~ lang ~ "/" ~ sub_path }}">{{ ancestor_info.title | trim_start(pat="一") }}</a></li>
+				{% else %}
+					<li><a href="{{ get_url(path="@/" ~ ancestor_info.relative_path) }}">{{ ancestor_info.title | trim_start(pat="一") }}</a></li>
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+		{% if show_current and not has_subsections %}
+			<li class="current">{{ page.title | default(value=section.title) | trim_start(pat="一") | safe }}</li>
+		{% endif %}
+	</menu>
+	{% if show_current and has_subsections %}
+		<details open="open">
+			<summary class="current">{{ section.title | trim_start(pat="一") }}</summary>
+			<menu class="sitemap-list">
+				{{<macros.render_list_links config={config} pages={section.pages} current_path={section.relative_path} />}}
+
+				{% if section.extra.section_sort_by | default(value="none") == "weight" %}
+					{% set subsections = section.subsections %}
+				{% else %}
+					{% set subsections = section.subsections | sort %}
+				{% endif %}
+				{% for subsection in subsections %}
+					{{<macros.render_sitemap config={config} lang={lang} path={subsection} first_pass={false} current_path={section.relative_path} />}}
+				{% endfor %}
+			</menu>
+		</details>
+	{% endif %}
+</nav>
+{% endcomponent macros.render_ancestors %}
+
