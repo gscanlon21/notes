@@ -3,9 +3,12 @@ title = "Clock"
 description = ""
 
 [extra]
-authors = ["cakenggt"]
+authors = ["Alec Lownes", "Rob Mayoff"]
 updated = 2026-01-01
-see_also = []
+see_also = [
+  { title = "Web Fractal Clock", href = "https://github.com/cakenggt/web-fractal-clock" },
+  { title = "Fractal Clock", href = "https://www.dqd.com/programs/FractalClock/" },
+]
 options = [
   { name = "Enabled", id = "enabled", type = "checkbox", value = true, },
   { name = "Rotate Colors", id = "rotateColors", type = "checkbox", value = false, },
