@@ -4,7 +4,9 @@ sort_by = "title"
 
 [extra]
 updated = 2027-01-01
-see_also = []
+see_also = [
+  { title = "Last.fm", href = "https://www.last.fm/" },
+]
 +++
 
 {{ <hidden page={page} section={section} /> }}

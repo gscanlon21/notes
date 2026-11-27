@@ -14,4 +14,13 @@ see_also = []
 Prohaska et al. 2022
 _[Article](一10.1515⧸pac-2019-0603.pdf)_
 `10.1515/pac-2019-0603`
-: ?
+: **Abridged Atomic Weights**
+: **Carbon**
+  C
+  : `12.011` 
+
+  **Nitrogen**
+  N
+  : `14.007`
+
+  

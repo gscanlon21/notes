@@ -15,11 +15,11 @@ see_also = []
 
 **Micro Essential Hydrion pH Test Roll**
 _4.5 – 8.5 pH_
+: "Hydrion papers work best with buffered solutions. For unbuffered solutions, use our Lo Ion kits."
+: - > - > Dip into solution.
+    > - > Remove at once.
+    > - > Immediately compare to color chart.
 : Good, but roll is a little small.
-: 1. Dip into solution.
-: 1. Remove at once.
-: 1. Immediately compare to color chart.
-: Hydrion papers work best with buffered solutions. For unbuffered solutions, use our Lo Ion kits.
 : > - [x] 
   > - [x] 
   > - [x] 

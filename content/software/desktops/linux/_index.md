@@ -15,41 +15,46 @@ see_also = [
 
 # Directory Structure
 
-- **/boot** - Boot files
+**/boot**
+: Boot files
 
-- **/root** - Root Home Directory
+**/root**
+: Root Home Directory
 
-- **/home** - Personal Data
+**/home**
+: Personal Data
 
-- **/media** - Removable Media
+**/media**
+: Removable Media
 
-- **/bin** - Binaries
+**/bin**
+: Binaries
 
-  Program executables
+## Program Executables
 
-- **/lib** - Shared Libraries
+**/lib**
+: Shared Libraries
 
-- **/usr** - User
+**/usr**
+: User
 
-  User specific binaries and program data
+## User Specific Binaries and Program Data
 
-- **/var** - Variable Data Files
+**/var**
+: Variable Data Files
 
-- **/dev** - Device
+**/dev**
+: Device
 
-  Device files
+## Device Files
 
-  - **/dev/null**
+**/dev/null**
+: Can be piped to to destroy any data
 
-    Can be piped to to destroy any data
-
-- **/etc** - Configuration
-
-  System configuration files
-
-  - **/etc/hosts**
-
-    Hostname mapping file
-
-- **/tmp** - Temporary Files
+**/etc**
+: System configuration files
+: **/etc/hosts**
+  : Hostname mapping file
+: **/tmp**
+  : Temporary Files
 

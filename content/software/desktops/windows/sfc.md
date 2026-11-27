@@ -1,9 +1,11 @@
 +++
 title = "sfc"
-updated = 2024-12-11
+description = ""
 
 [extra]
 site = "https://support.microsoft.com/en-us/topic/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files-79aa86cb-ca52-166a-92a3-966e85d4094e"
+updated = 2024-01-01
+see_also = []
 +++
 
 {{ <hidden page={page} section={section} /> }}

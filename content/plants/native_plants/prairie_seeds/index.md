@@ -3,9 +3,7 @@ title = "Prairie Seeds"
 updated = 2025-01-01
 
 [extra]
-see_also = [
-  { title = "Central Region Seedling ID Guide for Native Prarie Plants", file = "central_region_seedling_id_guide_for_native_prarie_plants.pdf" },
-]
+see_also = []
 +++
 
 {{ <hidden page={page} section={section} /> }}
@@ -29,13 +27,21 @@ Best if after the ground has frozen & thawed. You may need a carrier (e.g. sand,
 - Get direct seed-soil contact.
 - Watering and fertilizer will mainly help the weeds. Don't do it!
 
+
+
 # Maintenance
-- Year 1 - Prarie Sleeps
-    - Focus is on root development
-    - Mow vegetation to 6" when it reaches 18".
-- Year 2 - Prarie Creeps
-    - Focus is on above-ground growth.
-    - Continue to mow through mid-June.
-- Year 3 - Prarie Leaps
-    - Blooms from Spring-Fall
-    - Continue to mow through mid-June.
+
+**Year 1**
+_Prarie Sleeps_
+: Focus is on root development
+: Mow vegetation to 6" when it reaches 18".
+
+**Year 2**
+_Prarie Creeps_
+: Focus is on above-ground growth.
+: Continue to mow through mid-June.
+
+**Year 3**
+_Prarie Leaps_
+: Blooms from Spring-Fall
+: Continue to mow through mid-June.

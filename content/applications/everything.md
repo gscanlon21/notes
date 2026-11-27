@@ -1,9 +1,10 @@
 +++
 title = "Everything"
-updated = 2026-01-01
+description = "Locate files and folders by name instantly."
 
 [extra]
 site = "https://www.voidtools.com/"
+updated = 2026-01-01
 see_also = [
 	{ title = "Searching", href = "https://www.voidtools.com/support/everything/searching/" },
 ]
