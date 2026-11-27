@@ -1,6 +1,6 @@
 +++
 title = "Pubmed - Searching"
-updated = 2025-01-26
+updated = 2025-01-01
 
 [extra]
 site = "https://pubmed.ncbi.nlm.nih.gov/advanced/"

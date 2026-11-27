@@ -1,10 +1,10 @@
 +++
 title = "Neuroimmune Network Hypothesis"
-updated = 2025-01-26
+description = ""
 
 [extra]
-site = ""
-see_also = [ ]
+updated = 2025-01-01
+see_also = []
 +++
 
 {{ <hidden page={page} section={section} /> }}
