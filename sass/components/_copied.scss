@@ -12,8 +12,6 @@
 		color-mix(in srgb, color(--color-copy, 0.5) var(--opacity), transparent), 
 		color-mix(in srgb, color(--color-copy, 0.1) var(--opacity), transparent)
 	);
-
-	color: color-mix(in srgb, color(--color-copy) var(--opacity), color(--color-code)) !important;
 }
 
 @property --opacity {

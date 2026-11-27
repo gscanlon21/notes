@@ -23,19 +23,19 @@ see_also = []
 # Genetic Polymorphisms
 
 **Vitamin B12**
-? et al. ?
+Wolffenbuttel et al. 2023
 _The BMJ_
 _[Research Article](https://www.bmj.com/content/383/bmj-2022-071725)_
-`doi`
+`10.1136/bmj-2022-071725`
 : Serum B12 concentrations may be influenced by specific genetic polymorphisms or mutations; currently, more than 15 single nucleotide polymorphisms are known to influence serum B12.
 : Additionally, specific genetic polymorphisms41 and recent treatment with antibiotics may result in false normal MMA levels,42 and MMA is also elevated with impaired renal function.
 
 
 **Low Serum Vitamin B-12 Concentrations Are Prevalent in a Cohort of Pregnant Canadian Women**
-? et al. ?
+Visentin et al. 2016
 _The Journal of Nutrition_
 _[Research Article](https://jn.nutrition.org/article/S0022-3166(23)00605-3/fulltext)_
-`doi`
+`10.3945/jn.115.226845`
 : Twenty-eight SNPs in 16 candidate genes involved in vitamin B-12 absorption, metabolism, and transport (Supplemental Figure 1) or associated with adverse pregnancy outcomes (18, 21, 22, 32, 33) were genotyped at the Clinical Genomics Centre (Toronto, Canada). The specific SNPs genotyped were as follows: 
 : - methylenetetrahydrofolate reductase (MTHFR) rs1801133, MTHFR rs1801131, 
 : - methylenetetrahydrofolate dehydrogenase (MTHFD1) rs2236225, 

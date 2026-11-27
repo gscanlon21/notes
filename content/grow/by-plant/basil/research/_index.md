@@ -14,24 +14,24 @@ see_also = []
 
 
 **Yield, Phytonutritional and Essential Mineral Element Profiles of Selected Aromatic Herbs: A Comparative Study of Hydroponics, Soilless and In-Soil Production Systems**
-? et al. ?
+Mampholo et al. 2025
 _[Research Article](https://www.mdpi.com/2223-7747/14/14/2179)_
-`doi`
+`10.3390/plants14142179`
 : ?
 
 
 **Sweet Basil Functional Quality as Shaped by Genotype and Macronutrient Concentration Reciprocal Action**
-? et al. ?
+Ciriello et al. 2020
 _[Research Article](https://www.mdpi.com/2223-7747/9/12/1786)_
-`doi`
+`10.3390/plants9121786`
 : ?
 
 
 
 **Seed bio-priming with beneficial Trichoderma harzianum alleviates cold stress in maize**
-? et al. ?
+Afrouz et al. 2023
 _[Research Article](https://www.researchgate.net/publication/373368240_Seed_bio-priming_with_beneficial_Trichoderma_harzianum_alleviates_cold_stress_in_maize)_
-`doi`
+`10.7717/peerj.15644`
 : ?
 
 

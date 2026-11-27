@@ -1,6 +1,7 @@
 +++
 title = "Folic Acid"
 description = "A synthetic form of folate."
+aliases = ["folic-acid"]
 
 [extra]
 key_words = [""]

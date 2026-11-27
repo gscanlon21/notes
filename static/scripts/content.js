@@ -57,30 +57,16 @@ for (const element of Array.from(document.getElementsByTagName('code'))) {
 	}
 }
 
-// Copy multi-line code elements when they are clicked. Flash the bg.
-for (const element of Array.from(document.getElementsByTagName('pre'))) {
-    element.addEventListener('click', () => {
-        navigator.clipboard.writeText(element.innerText.trim()).then(() => {
-            element.classList.remove('copied');
+// Copy code elements when they are clicked. Flash the background.
+for (const element of Array.from(document.getElementsByTagName('code'))) {
+	element.addEventListener('click', () => {
+		navigator.clipboard.writeText(element.innerText.trim()).then(() => {
+			element.classList.remove('copied');
 			requestAnimationFrame(() => {
 				element.classList.add('copied');
 			});
-        });
-    });
-}
-
-// Copy inline :not(pre) > code elements when they are clicked. Flash the bg.
-for (const element of Array.from(document.getElementsByTagName('code'))) {
-	if (element.parentElement.tagName !== 'PRE') {
-		element.addEventListener('click', () => {
-			navigator.clipboard.writeText(element.innerText.trim()).then(() => {
-				element.classList.remove('copied');
-				requestAnimationFrame(() => {
-					element.classList.add('copied');
-				});
-			});
 		});
-	}
+	});
 }
 
 // Copy links to headers.

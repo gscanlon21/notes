@@ -37,25 +37,21 @@ see_also = [
 
 ## Find Duplicates
 
-###### Only These File Types
-```powershell
+```powershell, header=Only These File Types
 *.png|*.jpg|*.jpeg dupe:
 ```
 
-###### Only These File Types Inside a Parent Folder
-```powershell
+```powershell, header=Only These File Types Inside a Parent Folder
 path:"C:\Users\*\OneDrive\Pictures\" *.png|*.jpg|*.jpeg dupe:
 ```
 
 
 ## Find in a Folder
 
-###### Recursive Children
-```
+```powershell, header=Recursive Children
 "C:\Users\*\OneDrive\Pictures\" test.png
 ```
 
-###### Only the Parent Folder
-```
+```powershell, header=Only the Parent Folder
 parent:"C:\Users\*\OneDrive\Pictures\" test.png
 ```
