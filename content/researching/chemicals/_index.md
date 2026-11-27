@@ -14,42 +14,44 @@ see_also = []
 
 
 **[ph Buffer Solution](https://www.fishersci.com/shop/products/buffer-solution-ph-7-00-color-coded-yellow-certified-fisher-chemical-5/SB107500)**
-: Disposal:
+: **Disposal**
+  : ?
 
 
 # GHS Pictograms
-**1**
-: ?
-{{ <image title="1" file="GHS-pictogram-acid.svg.webp" inline={true} /> }}
 
-**1**
+**Corrosive**
+<img width="100" src="GHS-pictogram-acid.svg.webp" />
 : ?
-{{ <image title="1" file="GHS-pictogram-bottle.svg.webp" inline={true} /> }}
 
-**1**
+**Compressed**
+<img width="100" src="GHS-pictogram-bottle.svg.webp" />
 : ?
-{{ <image title="1" file="GHS-pictogram-exclam.svg.webp" inline={true} /> }}
 
-**1**
+**Irritant**
+<img width="100" src="GHS-pictogram-exclam.svg.webp" />
 : ?
-{{ <image title="1" file="GHS-pictogram-explos.svg.webp" inline={true} /> }}
 
-**1**
+**Explosive**
+<img width="100" src="GHS-pictogram-explos.svg.webp" />
 : ?
-{{ <image title="1" file="GHS-pictogram-flamme.svg.webp" inline={true} /> }}
 
-**1**
+**Flammable**
+<img width="100" src="GHS-pictogram-flamme.svg.webp" />
 : ?
-{{ <image title="1" file="GHS-pictogram-pollu.svg.webp" inline={true} /> }}
 
-**1**
+**Pollutant**
+<img width="100" src="GHS-pictogram-pollu.svg.webp" />
 : ?
-{{ <image title="1" file="GHS-pictogram-rondflam.svg.webp" inline={true} /> }}
 
-**1**
+**Oxidizer**
+<img width="100" src="GHS-pictogram-rondflam.svg.webp" />
 : ?
-{{ <image title="1" file="GHS-pictogram-silhouette.svg.webp" inline={true} /> }}
 
-**1**
+**Hazard**
+<img width="100" src="GHS-pictogram-silhouette.svg.webp" />
 : ?
-{{ <image title="1" file="GHS-pictogram-skull.svg.webp" inline={true} /> }}
+
+**Toxic**
+<img width="100" src="GHS-pictogram-skull.svg.webp" />
+: ?

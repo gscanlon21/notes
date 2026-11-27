@@ -1,6 +1,7 @@
 +++
 title = "Mefolinate"
 description = "A form of folate."
+aliases = ["mefolinate"]
 
 [extra]
 key_words = ["5-Methyltetrahydrofolate"]
