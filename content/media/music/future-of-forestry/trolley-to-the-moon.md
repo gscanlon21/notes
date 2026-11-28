@@ -12,7 +12,7 @@ see_also = []
 
 
 
-**Verse 1**
+**1**
 : Cotton candy
 : Smile of seeing brandy
 : I've been waiting
@@ -22,12 +22,12 @@ see_also = []
 : Songs and laughter
 : In the air, from here and after
 
-**Pre-Chorus**
+**2**
 : Youth and innocence
 : Grace and sweetness
 : Hasn't been worn by time
 
-**Chorus**
+**3**
 : If I could take the hurt away
 : I'd take it every night and day
 : And send it on a trolley to the moon
@@ -36,19 +36,19 @@ see_also = []
 : And send it on a trolley to the moon
 : A trolley to the moon
 
-**Verse 2**
+**4**
 : Come now, let's go
 : We're in San Francisco
 : Watching magic, juggling acts and acrobatics
 : Get some rest soon, all the work that we've done
 : Treading water, just to keep the world from getting smaller
 
-**Pre-Chorus**
+**5**
 : Youth and innocence
 : Grace and sweetness
 : Hasn't been worn by time
 
-**Chorus**
+**6**
 : If I could take the hurt away
 : I'd take it every night and day
 : And send it on a trolley to the moon

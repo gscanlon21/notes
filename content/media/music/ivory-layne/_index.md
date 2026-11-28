@@ -1,5 +1,5 @@
 +++
-title = "Lyrics"
+title = "Ivory Layne"
 sort_by = "title"
 
 [extra]
@@ -10,16 +10,3 @@ see_also = []
 {{ <hidden page={page} section={section} /> }}
 
 
-# Terminology
-
-**Intro**
-: ?
-
-**Verse**
-: ?
-
-**Chorus**
-: ?
-
-**Outro**
-: ?
