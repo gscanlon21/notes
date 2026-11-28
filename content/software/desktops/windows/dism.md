@@ -12,21 +12,24 @@ see_also = []
 
 
 
-# dism
-
+# Overview
 
 ## Fix Corrupted Files or Folders
 ```powershell
 Dism /Online /Cleanup-Image /CheckHealth
-
+```
+```powershell
 Dism /Online /Cleanup-Image /ScanHealth
-
+```
+```powershell
 Dism /Online /Cleanup-Image /RestoreHealth
-
-
+```
+```powershell
 Dism /online /Cleanup-Image /StartComponentCleanup
-
+```
+```powershell
 Dism /online /Cleanup-Image /StartComponentCleanup /ResetBase
 ```
 
-And then restart your computer.
+> [!NOTE]
+> Restart your computer after running the above commands.

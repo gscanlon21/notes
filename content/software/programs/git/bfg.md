@@ -14,8 +14,6 @@ see_also = [
 
 
 
-
-###### Remove all .jpg files
-```powershell
+```powershell,header=Remove all .jpg files
 .\java.exe -jar bfg.jar --delete-files '*.jpg'
 ```

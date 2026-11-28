@@ -29,7 +29,7 @@ article.v1 {
 		overflow-x: auto;
 
 		& + .table-wrapper {
-			margin-block-start: $base-padding;
+			margin-block-start: $base-padding * 2;
 		}
 		
 		// Attribution footer for tables.

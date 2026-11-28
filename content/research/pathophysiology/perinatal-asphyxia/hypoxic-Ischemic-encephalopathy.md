@@ -77,14 +77,14 @@ _[Review Article](/doi/10.1016/j.chembiol.2023.06.020.pdf)_
 _[Review Article](/doi/10.1128/mcb.5.12.3484-3496.1985.pdf)_ 
 : ?
 
-**?**
-et al.
-_[Article](https://www.sciencedirect.com/science/article/abs/pii/S0960894X2500352X)_
+**Design, synthesis and biological evaluation of novel HIF-1α PROTACs degrader as potent anti-cervical cancer agents**
+Zhu et al. 2026
+_[Short Communication](https://www.sciencedirect.com/science/article/abs/pii/S0960894X2500352X)_
 : ?
 
-**?**
-et al.
-_[Article](https://www.nature.com/articles/cdd200810)_
+**Role and regulation of prolyl hydroxylase domain proteins**
+Fong & Takeda 2008
+_[Review Article](https://www.nature.com/articles/cdd200810)_
 : ?
 
 **?**

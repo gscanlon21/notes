@@ -1,4 +1,88 @@
+pre {
+	background-color: unset !important;
 
+	&[data-footer]::after {
+		font-size: $site-font-size * 0.75;
+		content: attr(data-footer);
+		font-weight: 500;
+		order: 2;
+	}
+
+	& > code {
+		scrollbar-color: color(--color-scrollbar, .5) color(--color-scrollbar-bg);
+		background-color: color(--color-code-bg, .25) !important;
+		border: .2em solid color(--color-text, .5);
+		border-color: color(--color-code-bg, .5);
+		margin-block-start: $site-padding * .75;
+		margin-block-end: $site-padding * .75;
+		padding-block: $site-padding * .5;
+		font-size: $site-font-size * 1.1;
+		padding-inline: $site-padding;
+		column-gap: $site-padding;
+		box-sizing: border-box;
+		align-items: baseline;
+		align-content: start;
+		scrollbar-width: 1em;
+		position: relative;
+		margin-inline: 0;
+		overflow-x: auto;
+		cursor: pointer;
+		flex-wrap: wrap;
+		display: flex;
+		width: 100%;
+
+		& > :first-child {
+			margin-block-start: $base-padding * 0.3;
+		}
+
+		& > :last-child {
+			margin-block-end: 0;
+		}
+
+		& > :only-child {
+			width: auto;
+		}
+
+		// Has nested title
+		&[data-header] {
+			& > :first-child {
+				padding-block-start: $base-padding * 0.5;
+				border-top-style: solid;
+				border-top-width: 2px;
+				width: 100%;
+			}
+
+			& > :first-child:only-of-type {
+				padding-block-start: $base-padding * 0.3;
+			}
+		}
+
+		&::before {
+			font-size: $site-font-size * 1.25;
+			content: attr(data-lang) "$";
+			font-weight: 500;
+			order: -2;
+		}
+
+		&[data-header]::after {
+			font-size: $site-font-size * 1.25;
+			padding-inline-start: 0 !important;
+			margin-inline-start: 0 !important;
+			border-left: none !important;
+			content: attr(data-header);
+			color: color(--color-code);
+			width: auto !important;
+			margin-inline: 0;
+			font-weight: 500;
+			margin-block: 0;
+			order: -1;
+		}
+	}
+}
+
+
+
+/* Solid color code blocks:
 pre {
 	cursor: pointer;
 	overflow-x: auto;
@@ -102,4 +186,4 @@ article.v1 {
 	h6+h6:has(+pre), pre+h6:has(+pre) {
 		margin-block-start: $base-padding * 1.5;
 	}
-}
+}*/

@@ -209,26 +209,25 @@ World!
 ## This is a collection of multi-line fenced code blocks {#attribution}
 
 Code blocks may contain attribution footers
-###### 
+
 ```powershell
 echo "This is a multi-line fenced code block with attribution."
 ```
-```
+```footer=[Attribution](#attribution)
 This is a multi-line fenced code block with attribution.
 ```
-###### [Attribution](#attribution)
+
 
 As well as filename headers
-###### filename.cs
-```cs
+```cs,header=filename.cs
 
 /** 
  * This is a multi-line fenced code block that starts one line down. It also displays how a scrollbar looks when text overflows its container.
 **/
 ```
-######
 
-Code can also be displayed inline by surounding the code with back ticks. `/* This is one such inline code block */`
+
+Code can also be displayed inline by surrounding the code with back ticks. `/* This is one such inline code block */`
 
 
 <br>
