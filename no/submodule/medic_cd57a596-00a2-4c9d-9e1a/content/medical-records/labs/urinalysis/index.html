@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang=no data-theme="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	
+	
+		<title>Urinalysis</title>
+	
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://ascallion.com/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://ascallion.com/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://ascallion.com/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://ascallion.com/site.webmanifest?h=d3283d8cdd099d8504a1">
+
+	
+	<link rel="stylesheet" type="text/css" href="https://ascallion.com/site.css?h=5a14de08e9500c965af9" media="all">
+	
+	
+	
+	<script defer src="https://ascallion.com/elasticlunr.min.js?h=4f648b9e42abdef9c436"></script>
+	<script defer src="https://ascallion.com/search_index.en.js?h=4f52233f0b4f45d41c53"></script>
+
+	
+		
+		
+		
+		<script defer src="https://ascallion.com/scripts/lunr.stemmer.js?h=e017028ea92174715af2"></script>
+		<script defer src="https://ascallion.com/scripts/lunr.no.js?h=4993417f9c2ff596dbdf"></script>
+		<script defer src="/submodule/medic_cd57a596-00a2-4c9d-9e1a/public/search_index.no.js?h=oN/A7SrkAxubDCxbF5de27HG+pE4/9Y/3Ma9Ke4Q6enCqDulLjVoOpSeW5RR3miP"></script>
+	
+
+	<script type="module" src="https://ascallion.com/scripts/content.js?h=95d924f63f2cedb7b385"></script>
+	<script type="module" src="https://ascallion.com/scripts/flashcards.js?h=e46f26d3fa6080cfbead"></script>
+	<script type="module" src="https://ascallion.com/scripts/search.js?h=cc4d45c839bd33fee34a"></script>
+	<script type="module" src="https://ascallion.com/scripts/chart.js?h=6ace4eb0c52cb04d936c"></script>
+	<script type="module" src="https://ascallion.com/scripts/table.js?h=d48a7a8e79f64ce839d5"></script>
+
+	
+
+	
+		
+			<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		
+			<script src="https://cdn.jsdelivr.net/npm/date-fns"></script>
+		
+			<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+		
+	
+
+	
+	
+		
+		
+
+		
+		<script type="module">const downloadButton = document.getElementById('download');
+downloadButton.addEventListener("click", downloadFHIR);
+
+function downloadFHIR() {
+	const content = document.getElementById("content");
+
+	if (!content) {
+		alert('Could not find the element with id="content".');
+		return;
+	}
+
+	const observations = [];
+	const tables = content.querySelectorAll("table");
+
+	tables.forEach(function (table) {
+		const rows = Array.from(table.querySelectorAll("tr"));
+
+		if (rows.length < 2) return;
+
+		const headers = Array.from(rows[0].querySelectorAll("th, td"))
+			.map(cell => cell.textContent.trim());
+
+		const dateIndex = headers.findIndex(header =>
+			/^date$/i.test(header)
+		);
+
+		if (dateIndex === -1) return;
+
+		const minIndex = headers.findIndex(header =>
+			/^min(imum)?$/i.test(header)
+		);
+
+		const maxIndex = headers.findIndex(header =>
+			/^max(imum)?$/i.test(header)
+		);
+
+		const resultIndex = headers.findIndex((header, index) =>
+			index !== dateIndex &&
+			index !== minIndex &&
+			index !== maxIndex &&
+			!/^(unit|units|reference range|range|flag|status)$/i.test(header)
+		);
+
+		if (resultIndex === -1) return;
+
+		const testName = headers[resultIndex] || "Laboratory result";
+
+		rows.slice(1).forEach(function (row) {
+			const cells = Array.from(row.querySelectorAll("td, th"))
+				.map(cell => cell.textContent.trim());
+
+			if (cells.length <= Math.max(dateIndex, resultIndex)) {
+				return;
+			}
+
+			const date = normalizeDate(cells[dateIndex]);
+			const rawValue = cells[resultIndex];
+
+			if (!date || !rawValue) return;
+
+			const observation = createObservation({
+				testName: testName,
+				date: date,
+				rawValue: rawValue,
+				min: minIndex >= 0 ? cells[minIndex] : null,
+				max: maxIndex >= 0 ? cells[maxIndex] : null
+			});
+
+			if (observation) {
+				observations.push(observation);
+			}
+		});
+	});
+
+	if (observations.length === 0) {
+		alert("No laboratory results were found. Check the content element and table format.");
+		return;
+	}
+
+	const bundle = {
+		resourceType: "Bundle",
+		type: "collection",
+		timestamp: new Date().toISOString(),
+		total: observations.length,
+		entry: observations.map(function (observation) {
+			return {
+				fullUrl: "urn:uuid:" + observation.id,
+				resource: observation
+			};
+		})
+	};
+
+	downloadJSON(bundle, "lab-testing-fhir-r4.json");
+
+	console.log(
+		"FHIR R4 export complete:",
+		observations.length,
+		"observations"
+	);
+}
+
+function createObservation(data) {
+	const id = createUUID();
+	const parsed = parseResult(data.rawValue);
+
+	if (!parsed) return null;
+
+	const observation = {
+		resourceType: "Observation",
+		id: id,
+		status: "final",
+		category: [
+			{
+				coding: [
+					{
+						system: "http://terminology.hl7.org/CodeSystem/observation-category",
+						code: "laboratory",
+						display: "Laboratory"
+					}
+				]
+			}
+		],
+		code: {
+			text: data.testName
+		},
+		effectiveDateTime: data.date
+	};
+
+	if (parsed.type === "quantity") {
+		observation.valueQuantity = {
+			value: parsed.value,
+			unit: parsed.unit || "unknown",
+			system: "http://unitsofmeasure.org"
+		};
+	} else {
+		observation.valueString = parsed.value;
+	}
+
+	const referenceRange = {};
+
+	if (data.min) {
+		const min = parseFloat(data.min);
+		if (Number.isFinite(min)) {
+			referenceRange.low = {
+				value: min,
+				unit: parsed.unit || "unknown",
+				system: "http://unitsofmeasure.org"
+			};
+		}
+	}
+
+	if (data.max) {
+		const max = parseFloat(data.max);
+		if (Number.isFinite(max)) {
+			referenceRange.high = {
+				value: max,
+				unit: parsed.unit || "unknown",
+				system: "http://unitsofmeasure.org"
+			};
+		}
+	}
+
+	if (referenceRange.low || referenceRange.high) {
+		observation.referenceRange = [referenceRange];
+	}
+
+	return observation;
+}
+
+function parseResult(rawValue) {
+	const value = String(rawValue).trim();
+
+	if (!value) return null;
+
+	// Preserve qualitative or censored results such as:
+	// Positive, Negative, Trace, <2.0, >100.
+	const numericMatch = value.match(
+		/^([<>≤≥]?\s*-?\d+(?:\.\d+)?)\s*(.*)$/
+	);
+
+	if (!numericMatch) {
+		return {
+			type: "string",
+			value: value
+		};
+	}
+
+	const numberText = numericMatch[1].replace(/\s/g, "");
+	const unit = numericMatch[2].trim();
+
+	// A result with a comparison operator is preserved as text.
+	if (/^[<>≤≥]/.test(numberText)) {
+		return {
+			type: "string",
+			value: value
+		};
+	}
+
+	const number = Number(numberText);
+
+	if (!Number.isFinite(number)) {
+		return {
+			type: "string",
+			value: value
+		};
+	}
+
+	return {
+		type: "quantity",
+		value: number,
+		unit: unit
+	};
+}
+
+function normalizeDate(rawDate) {
+	if (!rawDate) return null;
+
+	const value = String(rawDate).trim();
+
+	// YYYY-MM-DD
+	if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+		return value;
+	}
+
+	// MM/DD/YYYY
+	const usDate = value.match(
+		/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/
+	);
+
+	if (usDate) {
+		const month = usDate[1].padStart(2, "0");
+		const day = usDate[2].padStart(2, "0");
+		const year = usDate[3];
+
+		return year + "-" + month + "-" + day;
+	}
+
+	// Attempt standard browser date parsing.
+	const parsed = new Date(value);
+
+	if (!Number.isNaN(parsed.getTime())) {
+		return parsed.toISOString().slice(0, 10);
+	}
+
+	return null;
+}
+
+function createUUID() {
+	if (
+		typeof crypto !== "undefined" &&
+		typeof crypto.randomUUID === "function"
+	) {
+		return crypto.randomUUID();
+	}
+
+	return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
+		/[xy]/g,
+		function (character) {
+			const random = Math.random() * 16 | 0;
+			const value = character === "x"
+				? random
+				: (random & 0x3 | 0x8);
+
+			return value.toString(16);
+		}
+	);
+}
+
+function downloadJSON(data, filename) {
+	const json = JSON.stringify(data, null, 2);
+
+	const blob = new Blob(
+		[json],
+		{ type: "application/fhir+json;charset=utf-8" }
+	);
+
+	const url = URL.createObjectURL(blob);
+	const link = document.createElement("a");
+
+	link.href = url;
+	link.download = filename;
+
+	document.body.appendChild(link);
+	link.click();
+	document.body.removeChild(link);
+
+	setTimeout(function () {
+		URL.revokeObjectURL(url);
+	}, 1000);
+}
+</script>
+	
+	
+    
+	
+		
+		
+
+		
+		
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+	<script defer="defer" src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+	<script defer="defer" src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+	
+	<header id="site-header">
+		<nav id="site-nav">
+			<div class="nav-item">
+
+<div id="search">
+	<div id="search-form">
+		<input id="search-input" type="text" placeholder="Search" autofocus />
+		<span id="search-clear">✕</span>
+	</div>
+
+	<div id="search-results" style="display: none;">
+		<ul id="search-results__items"></div>
+	</div>
+</div></div>
+			<div class="nav-item"><a class="unstyle" href="https://ascallion.com/">ascallion</a></div>
+			
+				<div class="nav-item"><a href="https://ascallion.com/no/submodule/medic_cd57a596-00a2-4c9d-9e1a/content/medical-records/labs/">Previous</a></div>
+			
+		</nav>
+
+		<nav class="print context">
+			<div class="left">
+				<span>2026-11-28</span>
+				<span>
+					
+						<span>Labs</span>
+						<span>/</span>
+					
+					<span>Urinalysis</span>
+				</span>
+			</div>
+			<div class="right">
+				<span></span>
+			</div>
+		</nav>
+	</header>
+
+	<main id="main">
+		
+	<div class="sidebar-left header">
+		<div class="header-wrap">
+			
+<form id="options" class="header-item">
+    <header id="summary">
+        <h2 class="header-title">
+            
+                <span>Urinalysis</span>
+            
+        </h2> 
+        
+
+		
+
+		
+
+        <dl>
+            
+
+            
+
+            
+
+             
+            <dt>See Also</dt>
+            
+                <dd class="summary-item">
+                     
+                        <a class="reverse-indent" href="https://www.functionhealth.com/" target="_blank" rel="noreferrer">
+							Function Health
+						</a>
+                    
+                </dd>
+            
+            
+
+			
+
+
+	
+	
+	
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+
+	
+	
+	
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+
+	
+	
+	
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+
+	
+	
+	
+		
+			
+		
+			
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+
+	
+	
+	
+		
+			
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+
+	
+	
+	
+		
+			
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+
+	
+	
+	
+		
+			
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+
+	
+	
+	
+		
+			
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+
+	
+	
+	
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+
+	
+	
+	
+		
+			
+		
+	
+	
+
+
+
+
+			
+
+
+	
+	
+	
+		
+			
+		
+	
+	
+
+
+
+
+
+			
+
+			
+
+             
+            <dt>Last Updated</dt>
+            <dd>2027-01-01</dd>
+            
+            
+            <dt>Reading Time</dt>
+            <dd>2 minute(s)</dd>
+
+			<dt>Word Count</dt>
+            <dd><span id="word-count">373</span> words</dd>
+
+			
+        </dl>
+
+		<div id="flashcard-container"></div>
+		
+
+
+
+
+    </header>
+</form>
+			
+
+
+<div class="header-item">
+	<h3 class="sitemap-title header-title">Table of Contents</h3>
+	<nav class="sitemap condensed">
+		
+			
+<ul class="sitemap-list">
+	
+		
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				<li>
+					<a href="https://ascallion.com/no/submodule/medic_cd57a596-00a2-4c9d-9e1a/content/medical-records/labs/urinalysis/#urinalysis">Urinalysis</a>
+				</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+	
+</ul>
+
+		
+	</nav>
+</div>
+
+
+
+			<div class="header-wrap screen-small">
+				<div class="header-item">
+					
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap">
+	
+	
+	<menu class="sitemap-list">
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/medic_cd57a596-00a2-4c9d-9e1a/content/">Medic</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/medic_cd57a596-00a2-4c9d-9e1a/content/medical-records/">Medical Records</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/medic_cd57a596-00a2-4c9d-9e1a/content/medical-records/labs/">Labs</a></li>
+				
+			
+		
+		
+			<li class="current">Urinalysis</li>
+		
+	</menu>
+	
+</nav>
+
+				</div>
+				
+				<div class="header-item">
+					
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap">
+	
+		
+		
+			
+				
+
+
+
+	
+
+
+
+
+	
+		
+		
+			<menu class="sitemap-list">
+				
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/medic_cd57a596-00a2-4c9d-9e1a/content/medical-records/labs/serum/">Blood Serum</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/medic_cd57a596-00a2-4c9d-9e1a/content/medical-records/labs/reference/">Reference</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+            <li class="current">Urinalysis</li>
+        
+		
+    
+	
+
+
+			</menu>
+		
+		
+		
+	
+
+
+			
+		
+	
+</nav>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="flex--1 screen-medium-up">
+			<div class="footer-item fixed left"><a class="unstyle" href="#">Back to Top</a></div>
+		</div>
+	</div>
+
+	
+	
+    <article id="content" class="page v1" data-slug="urinalysis" data-orientation="">
+		<aside class="display--none">
+  <div class="display--none">Function Health</div>
+</aside>
+<h1 id="urinalysis">Urinalysis</h1>
+<table><thead><tr><th>Date</th><th>Urine pH</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>7.5</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>8.0</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>7.5</td><td>5.0</td><td>8.0</td></tr>
+<tr><td>2024-11-19</td><td>6.5</td><td>5.0</td><td>8.0</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>Urine Specific Gravity</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>1.003</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>1.003</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>1.003</td><td>1.001</td><td>1.035</td></tr>
+<tr><td>2024-11-19</td><td>1.004</td><td>1.001</td><td>1.035</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>WBC, Urine</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>0</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>0</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>0</td><td>0</td><td>≤5</td></tr>
+<tr><td>2024-11-19</td><td>0</td><td>0</td><td>≤5</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>RBC, Urine</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>0</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>0</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>0</td><td>0</td><td>≤2</td></tr>
+<tr><td>2024-11-19</td><td>0</td><td>0</td><td>≤2</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>Albumin, Urine</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2024-11-19</td><td>0.5</td><td>0</td><td>30</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>Bacteria, Urine</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>0</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>0</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>2024-11-19</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>Bilirubin, Urine</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>0</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>0</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>2024-11-19</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>Glucose, Urine</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>0</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>0</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>2024-11-19</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>Ketones, Urine</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>0</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>0</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>2024-11-19</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>Protein, Urine</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>0</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>0</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>2024-11-19</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>Nitrite, Urine</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>0</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>0</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>2024-11-19</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>Occult Blood, Urine</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>0</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>0</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>2024-11-19</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>Hyaline Casts, Urine</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>0</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>0</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>2024-11-19</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>Leukocyte Esterase, Urine</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>0</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>0</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>2024-11-19</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody></table>
+<table><thead><tr><th>Date</th><th>Squamous Epithelial Cells, Urine</th><th>Min</th><th>Max</th></tr></thead><tbody>
+<tr><td>2026-10-30</td><td>0</td><td></td><td></td></tr>
+<tr><td>2026-08-17</td><td>0</td><td></td><td></td></tr>
+<tr><td>2025-04-03</td><td>0</td><td>0</td><td>5</td></tr>
+<tr><td>2024-11-19</td><td>0</td><td>0</td><td>5</td></tr>
+</tbody></table>
+
+	</article>
+	
+	<div class="sidebar-right header">
+		<div class="header-item">
+			
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap">
+	
+	
+	<menu class="sitemap-list">
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/medic_cd57a596-00a2-4c9d-9e1a/content/">Medic</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/medic_cd57a596-00a2-4c9d-9e1a/content/medical-records/">Medical Records</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/medic_cd57a596-00a2-4c9d-9e1a/content/medical-records/labs/">Labs</a></li>
+				
+			
+		
+		
+			<li class="current">Urinalysis</li>
+		
+	</menu>
+	
+</nav>
+
+		</div>
+		
+		<div class="header-item">
+			
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap">
+	
+		
+		
+			
+				
+
+
+
+	
+
+
+
+
+	
+		
+		
+			<menu class="sitemap-list">
+				
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/medic_cd57a596-00a2-4c9d-9e1a/content/medical-records/labs/serum/">Blood Serum</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/medic_cd57a596-00a2-4c9d-9e1a/content/medical-records/labs/reference/">Reference</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+            <li class="current">Urinalysis</li>
+        
+		
+    
+	
+
+
+			</menu>
+		
+		
+		
+	
+
+
+			
+		
+	
+</nav>
+
+		</div>
+
+		
+
+		<div class="flex--1">
+			<div class="footer-item fixed right"><a class="unstyle" href="#">Back to Top</a></div>
+		</div>
+	</div>
+
+	</main>
+
+	<footer id="footer">
+		<span class="footer-item"><a href="https://ascallion.com/">Sitemap</a></span>
+		<span class="footer-item"><a class="unstyle" href="#">Back to Top</a></span>
+		<span class="footer-item"><a href="https://github.com/gscanlon21">Github</a></span>
+	</footer>
+
+	
+		<section id="birds">
+	<script src="https://ascallion.com/scripts/birds/p5.min.js?h=bb35f94bb16d30d40302" defer="defer"></script>
+	<script src="https://ascallion.com/scripts/birds/three.r95.min.js?h=bc5ccd5a7e3f095f1b72" defer="defer"></script>
+	<script src="https://ascallion.com/scripts/birds/vanta.birds.min.js?h=c71c5602c81b83fa889a" defer="defer"></script>
+	<script src="https://ascallion.com/scripts/birds/index.js?h=b3bc0c347c2b479c368d" type="module"></script>
+</section>
+
+		<section id="clock">
+	<div class="hand hour rotate-hour base">
+		<div class="hand minute rotate-minute base"></div>
+		<div class="hand second rotate-second base"></div>
+	</div>
+	<script src="https://ascallion.com/scripts/clock.js?h=d231d8c08025392612e7" type="module"></script>
+</section>
+
+	
+
+	<aside class="display--none">
+		<div id="chart-options" 
+			 data-type="line"
+			 data-count="10">
+		</div>
+	</aside>
+
+	
+	
+</body>
+
+</html>

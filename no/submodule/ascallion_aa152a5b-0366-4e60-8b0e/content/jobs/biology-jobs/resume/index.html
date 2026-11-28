@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang=no data-theme="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	
+	
+		<title>Résumé</title>
+	
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://ascallion.com/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://ascallion.com/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://ascallion.com/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://ascallion.com/site.webmanifest?h=d3283d8cdd099d8504a1">
+
+	
+	<link rel="stylesheet" type="text/css" href="https://ascallion.com/portrait.css?h=6d5d4414d91bcf586941" media="all">
+	
+	
+	
+	<script defer src="https://ascallion.com/elasticlunr.min.js?h=4f648b9e42abdef9c436"></script>
+	<script defer src="https://ascallion.com/search_index.en.js?h=4f52233f0b4f45d41c53"></script>
+
+	
+		
+		
+		
+		<script defer src="https://ascallion.com/scripts/lunr.stemmer.js?h=e017028ea92174715af2"></script>
+		<script defer src="https://ascallion.com/scripts/lunr.no.js?h=4993417f9c2ff596dbdf"></script>
+		<script defer src="/submodule/ascallion_aa152a5b-0366-4e60-8b0e/public/search_index.no.js?h=avEcg1hoIsPHS7PM73KLrlz+5nytgt10AnEeUwvseC/AKv8nNWnSLd/7OxRfNDdo"></script>
+	
+
+	<script type="module" src="https://ascallion.com/scripts/content.js?h=95d924f63f2cedb7b385"></script>
+	<script type="module" src="https://ascallion.com/scripts/flashcards.js?h=e46f26d3fa6080cfbead"></script>
+	<script type="module" src="https://ascallion.com/scripts/search.js?h=cc4d45c839bd33fee34a"></script>
+	<script type="module" src="https://ascallion.com/scripts/chart.js?h=6ace4eb0c52cb04d936c"></script>
+	<script type="module" src="https://ascallion.com/scripts/table.js?h=d48a7a8e79f64ce839d5"></script>
+
+	
+		
+			<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">	
+		
+	
+
+	
+
+	
+	
+		
+		
+
+		
+		
+	
+	
+    
+	
+		
+		<style>:root {
+	--icon-size: 16px;
+	--color-accent: #dc2626;
+}
+
+article#content {
+	* {
+		font-size: 14px;
+		line-height: 1.4;
+		font-family: 'IBM Plex Serif', serif;
+	}
+
+	hr {
+		margin-block-end: 12px !important;
+		margin-block-start: 16px !important;
+		border-top: 1px solid var(--color-accent) !important;
+	}
+
+	ul {
+		margin-block-end: 10px !important;
+		padding-inline-start: 20px !important;
+	}
+
+	li {
+		margin-block-end: 4px !important;
+	}
+}
+
+#name {
+	font-size: 24px !important;
+}
+
+.section-header {
+	font-size: 15px !important;
+	font-weight: 500 !important;
+	margin-block-start: 16px !important;
+	color: var(--color-accent) !important;
+}
+
+.subheader + p {
+	margin-block-start: .25rem !important;
+}
+
+.title {
+	font-size: 14px !important;
+	font-weight: bold !important;
+}
+
+.item {
+	margin-block-end: 14px !important;
+}
+
+.dates {
+	font-weight: 500 !important;
+}
+
+.skills {
+	display: block !important;
+	font-size: 13px !important;
+	margin-block-start: 7px !important;
+}
+
+.inline-svg {
+	align-items: center !important;
+	display: inline-flex !important;
+}
+
+.inline-svg svg {
+	margin-inline-end: 3px !important;
+	width: var(--icon-size) !important;
+	color: var(--color-accent) !important;
+}
+
+.inline-svg .link {
+	margin-block-start: 1px !important;
+	margin-inline-start: 9px !important;
+}
+
+.inline-svg + .inline-svg {
+	margin-inline-start: 9px !important;
+}
+
+.space-between {
+	display: flex !important;
+	justify-content: space-between !important;
+}
+
+.underline {
+	text-decoration-line: underline !important;
+	text-decoration-thickness: 1px !important;
+	text-decoration-skip-ink: all !important;
+	text-underline-offset: 2px !important;
+}
+
+p {
+	margin-block-start: .25rem !important;
+
+	& + p {
+		margin-block-start: .75rem !important;
+	}	
+}
+
+img {
+	max-width: 100%;
+}
+
+.hide, .hidden {
+	background-color: rgba(var(--color-italic), 0.1);
+}
+
+@media print {
+	article {
+		.hide, .hidden {
+			display: none !important;
+		}
+
+		blockquote[class^="markdown-alert-"] {
+			display: none !important;
+		}
+	}
+}
+</style>
+
+		
+		
+	
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+	<script defer="defer" src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+	<script defer="defer" src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+	
+	<header id="site-header">
+		<nav id="site-nav">
+			<div class="nav-item">
+
+<div id="search">
+	<div id="search-form">
+		<input id="search-input" type="text" placeholder="Search" autofocus />
+		<span id="search-clear">✕</span>
+	</div>
+
+	<div id="search-results" style="display: none;">
+		<ul id="search-results__items"></div>
+	</div>
+</div></div>
+			<div class="nav-item"><a class="unstyle" href="https://ascallion.com/">ascallion</a></div>
+			
+				<div class="nav-item"><a href="https://ascallion.com/no/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/">Previous</a></div>
+			
+		</nav>
+
+		<nav class="print context">
+			<div class="left">
+				<span>2026-11-28</span>
+				<span>
+					
+						<span>Biology Jobs</span>
+						<span>/</span>
+					
+					<span>Résumé</span>
+				</span>
+			</div>
+			<div class="right">
+				<span></span>
+			</div>
+		</nav>
+	</header>
+
+	<main id="main">
+		
+	<div class="sidebar-left header">
+		<div class="header-wrap">
+			
+<form id="options" class="header-item">
+    <header id="summary">
+        <h2 class="header-title">
+            
+                <span>Résumé</span>
+            
+        </h2> 
+        
+
+		
+
+		
+
+        <dl>
+            
+
+            
+
+            
+
+             
+            <dt>See Also</dt>
+            
+                <dd class="summary-item">
+                     
+                        <a class="reverse-indent" href="https://phosphoricons.com/" target="_blank" rel="noreferrer">
+							Phosphor Icons (Copy Raw)
+						</a>
+                    
+                </dd>
+            
+                <dd class="summary-item">
+                    
+                        <div class="reverse-indent">Set margins to 0.25".</div>
+                    
+                </dd>
+            
+            
+
+			
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+
+	
+	
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+
+	
+	
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+		
+	
+		
+	
+		
+			
+				
+			
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+		
+			
+				
+			
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+		
+			
+				
+			
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+		
+			
+				
+			
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+		
+			
+				
+			
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+		
+			
+				
+			
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+		
+			
+				
+			
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+
+
+	
+	
+	
+	
+
+
+ 
+	<dt class="asset Images">Images</dt>
+	
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	
+		
+			
+		
+			
+		
+			
+		
+			
+				
+					
+<dd class="summary-item asset Images">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/resume/20261025_162521.jpg" target="_blank">20261025 162521</a>
+	
+</dd>
+
+				
+			
+		
+			
+		
+	
+		
+			
+		
+			
+		
+			
+		
+			
+				
+					
+<dd class="summary-item asset Images">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/resume/20260805_110358.jpg" target="_blank">20260805 110358</a>
+	
+</dd>
+
+				
+			
+		
+			
+		
+	
+		
+			
+		
+			
+		
+			
+		
+			
+				
+					
+<dd class="summary-item asset Images">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/resume/20260801_114809.jpg" target="_blank">20260801 114809</a>
+	
+</dd>
+
+				
+			
+		
+			
+		
+	
+		
+			
+		
+			
+		
+			
+		
+			
+				
+					
+<dd class="summary-item asset Images">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/resume/20260702_135844.jpg" target="_blank">20260702 135844</a>
+	
+</dd>
+
+				
+			
+		
+			
+		
+	
+		
+			
+		
+			
+		
+			
+		
+			
+				
+					
+<dd class="summary-item asset Images">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/resume/20260702_135840.jpg" target="_blank">20260702 135840</a>
+	
+</dd>
+
+				
+			
+		
+			
+		
+	
+		
+			
+		
+			
+		
+			
+		
+			
+				
+					
+<dd class="summary-item asset Images">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/resume/20260702_135828.jpg" target="_blank">20260702 135828</a>
+	
+</dd>
+
+				
+			
+		
+			
+		
+	
+		
+			
+		
+			
+		
+			
+		
+			
+				
+					
+<dd class="summary-item asset Images">
+	
+	
+	
+		
+		<a class="reverse-indent" href="https://ascallion.com/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/resume/20260702_135825.jpg" target="_blank">20260702 135825</a>
+	
+</dd>
+
+				
+			
+		
+			
+		
+	
+	
+		
+		
+	
+
+
+			
+
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+		
+	
+
+
+	
+	
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+
+	
+	
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+
+	
+	
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+
+	
+	
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+	
+		
+	
+		
+	
+
+
+	
+	
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+
+	
+	
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+
+	
+	
+	
+	
+
+
+
+
+			
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+
+	
+	
+	
+	
+
+
+
+
+
+			
+
+			 
+            <dt>Key Words</dt>
+            
+                <dd>Resume</dd>
+            
+            
+
+             
+            <dt>Last Updated</dt>
+            <dd>2027-01-01</dd>
+            
+            
+            <dt>Reading Time</dt>
+            <dd>11 minute(s)</dd>
+
+			<dt>Word Count</dt>
+            <dd><span id="word-count">2148</span> words</dd>
+
+			
+        </dl>
+
+		<div id="flashcard-container"></div>
+		
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+	
+		
+	
+
+
+
+
+    </header>
+</form>
+			
+
+
+
+
+			<div class="header-wrap screen-small">
+				<div class="header-item">
+					
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap">
+	
+	
+	<menu class="sitemap-list">
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/">ascallion</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/">Jobs</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/">Biology Jobs</a></li>
+				
+			
+		
+		
+			<li class="current">Résumé</li>
+		
+	</menu>
+	
+</nav>
+
+				</div>
+				
+				<div class="header-item">
+					
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap">
+	
+		
+		
+			
+				
+
+
+
+	
+
+
+
+
+	
+		
+		
+			<menu class="sitemap-list">
+				
+
+	
+    
+	
+        
+            <li class="current">Résumé</li>
+        
+		
+    
+	
+
+
+			</menu>
+		
+		
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					
+					<summary><a href="/no/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/job-search/">Job Search</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/job-search/full-time/">Full-Time Jobs</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/job-search/part-time/">Part-Time Jobs</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+	
+
+
+			
+		
+	
+</nav>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="flex--1 screen-medium-up">
+			<div class="footer-item fixed left"><a class="unstyle" href="#">Back to Top</a></div>
+		</div>
+	</div>
+
+	
+	
+    <article id="content" class="page v0" data-slug="resume" data-orientation="portrait">
+		<aside class="display--none">
+  <div class="display--none">Phosphor Icons (Copy Raw)</div>
+  <div class="display--none">Set margins to 0.25".</div>
+  <div class="display--none">Resume</div>
+  <div class="display--none">20260702 135825</div>
+  <div class="display--none">20260702 135828</div>
+  <div class="display--none">20260702 135840</div>
+  <div class="display--none">20260702 135844</div>
+  <div class="display--none">20260801 114809</div>
+  <div class="display--none">20260805 110358</div>
+  <div class="display--none">20261025 162521</div>
+  <div class="display--none">index</div>
+</aside>
+<div id="name">Graham Scanlon</div>
+<div class="inline-svg">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="104" r="32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+  <div>Saint Louis, MO</div>
+</div>
+<div class="inline-svg">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="32" y1="64" x2="32" y2="144" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M56,216c15.7-24.08,41.11-40,72-40s56.3,15.92,72,40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polygon points="224 64 128 96 32 64 128 32 224 64" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M169.34,82.22a56,56,0,1,1-82.68,0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+  <div>Webster University</div>
+</div>
+<div class="inline-svg">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M184,208c-15.21,10.11-36.37,16-56,16a96,96,0,1,1,96-96c0,22.09-8,40-28,40s-28-17.91-28-40V88" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+<p><a class="underline" href="mailto:grahamscanlon@webster.edu">grahamscanlon@webster.edu</a></p>
+</div>
+<hr>
+<section>
+  <div class="section-header">Personal Statement</div>
+  <div class="item">
+    <p>
+      I'm grateful to have met a really good eye doctor, Dr. Tonya Bourn. 
+      Several years back, while talking with her, she says to me, "Wow, you should become an eye doctor!" 
+      And I didn't think much about it at the time, but over time, I came to realize that yeah, I really like talking with her and hearing what she has to say. 
+      I enjoy those conversations because she loves digging deeper into the science of eye health, and I love learning about it and seeing all the ways that science can really help you lead a happier, healthier life.
+    </p>
+    <p>
+      One of my long-term goals is to help people better understand their own health so they can better advocate for what they need. 
+      Personally, I've used citizen science sites such as <a class="underline" href="https://microbiomeprescription.com">https://microbiomeprescription.com</a>, that aggregates research articles and compiles a whole host of relevant insights into understanding gut health, and I look to that as inspiration for my own personal projects. 
+      I started going back to school to learn about and understand the various data sources and data used by that site, how to read and understand scientific research, and how to apply that knowledge to pay it forward for others.
+    </p>
+  </div>
+</section>
+<section>
+  <div class="section-header">Education</div>
+  <div class="item">
+    <div class="space-between">
+      <div class="inline-svg">
+        <div class="title">Webster University</div>
+        <div class="link inline-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M141.38,64.68l11-11a46.62,46.62,0,0,1,65.94,0h0a46.62,46.62,0,0,1,0,65.94L193.94,144,183.6,154.34a46.63,46.63,0,0,1-66-.05h0A46.48,46.48,0,0,1,104,120.06" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M114.62,191.32l-11,11a46.63,46.63,0,0,1-66-.05h0a46.63,46.63,0,0,1,.06-65.89L72.4,101.66a46.62,46.62,0,0,1,65.94,0h0A46.45,46.45,0,0,1,152,135.94" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+          <a class="underline" target="_blank" href="https://www.webster.edu">
+            https://www.webster.edu
+          </a>
+        </div>
+      </div>
+      <div class="dates">2025 – Exp. 2030</div>
+    </div>
+    <div class="subheader space-between">
+      <div class="font-weight--semibold">B.S. Biological Sciences, Sophomore</div>
+      <div>GPA 3.91/4.00</div>
+    </div>
+    <p>As a student of Webster university and member of Dr. Miller-Struttmann's lab, I've been able to both learn and utilize various lab and research techniques. Additionally, I'm active in helping out around campus and assisting in volunteer events on campus.</p>
+    <i class="skills">Autoclaving, Micropipetting, PCR</i>
+  </div>
+  <div class="item hide">
+    <div class="space-between">
+      <div class="inline-svg">
+        <div class="title">St. Louis Community College</div>
+        <div class="link inline-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M141.38,64.68l11-11a46.62,46.62,0,0,1,65.94,0h0a46.62,46.62,0,0,1,0,65.94L193.94,144,183.6,154.34a46.63,46.63,0,0,1-66-.05h0A46.48,46.48,0,0,1,104,120.06" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M114.62,191.32l-11,11a46.63,46.63,0,0,1-66-.05h0a46.63,46.63,0,0,1,.06-65.89L72.4,101.66a46.62,46.62,0,0,1,65.94,0h0A46.45,46.45,0,0,1,152,135.94" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+          <a class="underline" target="_blank" href="https://stlcc.edu">
+            https://stlcc.edu
+          </a>
+        </div>
+      </div>
+      <div class="dates">2017 – 2026</div>
+    </div>
+    <div class="space-between">
+      <div>No Degree</div>
+      <div class="hide">GPA N.A./4.00</div>
+    </div>
+  </div>
+  <div class="item hide">
+    <div class="space-between">
+      <div class="inline-svg">
+        <div class="title">LaunchCode</div>
+        <div class="link inline-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M141.38,64.68l11-11a46.62,46.62,0,0,1,65.94,0h0a46.62,46.62,0,0,1,0,65.94L193.94,144,183.6,154.34a46.63,46.63,0,0,1-66-.05h0A46.48,46.48,0,0,1,104,120.06" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M114.62,191.32l-11,11a46.63,46.63,0,0,1-66-.05h0a46.63,46.63,0,0,1,.06-65.89L72.4,101.66a46.62,46.62,0,0,1,65.94,0h0A46.45,46.45,0,0,1,152,135.94" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+          <a class="underline" target="_blank" href="https://www.launchcode.org">
+            https://www.launchcode.org
+          </a>
+        </div>
+      </div>
+      <div class="dates">2017</div>
+    </div>
+    <i class="skills">Python, Bash</i>
+  </div>
+</section>
+<section class="">
+  <div class="section-header">Community</div>
+  <div class="item">
+    <div class="space-between">
+      <div class="inline-svg">
+        <div class="title">Hydroponic Produce</div>
+      </div>
+      <div class="dates">2026 – Present</div>
+    </div>
+    <p>
+      I've been growing hydroponic produce on campus with the goal of building food security on campus through year-round produce production.
+      My method of choice, the Kratky method (named after Dr. Bernard Kratky), was chosen for its simplicity and affordability.
+      Each plant is grown individually in a self-sustaining mason jar along the windowsills on campus.
+      I enjoy naming the jars fun names, such as "Duck, Duck, Produce!".
+    </p>
+    <p>
+      Over the summer and fall of 2026, I was able to harvest 2 salads-worth of pesticide-free lettuce and 16 cuttings of pesticide-free basil to distribute on campus with the help of others.
+    </p>
+    <i class="skills hide"></i>
+  </div>
+  <div class="item">
+    <div class="space-between">
+      <div class="inline-svg">
+        <div class="title">Community Garden</div>
+      </div>
+      <div class="dates">2025 – Present</div>
+    </div>
+    <p>I've been helping restore and maintain the community garden on campus at Webster university. Along with periodically utilizing iNaturalist to upload and identify pictures of insects and plants.</p>
+    <i class="skills hide">iNaturalist</i>
+  </div>
+</section>
+<section>
+  <div class="section-header">Personal Projects</div>
+  <div class="item">
+    <div class="space-between">
+      <div class="inline-svg">
+        <div class="title">Vision Therapy Tools</div>
+        <div class="link inline-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M141.38,64.68l11-11a46.62,46.62,0,0,1,65.94,0h0a46.62,46.62,0,0,1,0,65.94L193.94,144,183.6,154.34a46.63,46.63,0,0,1-66-.05h0A46.48,46.48,0,0,1,104,120.06" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M114.62,191.32l-11,11a46.63,46.63,0,0,1-66-.05h0a46.63,46.63,0,0,1,.06-65.89L72.4,101.66a46.62,46.62,0,0,1,65.94,0h0A46.45,46.45,0,0,1,152,135.94" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+          <a class="underline" target="_blank" href="https://tscanlon.com/vision-therapy">
+            https://tscanlon.com/vision-therapy/
+          </a>
+        </div>
+      </div>
+      <div class="dates">2025 – Present</div>
+    </div>
+    <p>
+      A collection of tools to generate the charts used in vision therapy. 
+      It's hard to find good vision therapy tools, especially the specialized eye charts necessary to perform some of the exercises. 
+      I'm working on this as a supplement to other resources used when performing at-home vision therapy.
+    </p>
+    <i class="skills">Testimonials</i>
+    <ul>
+      <li>"Wow this is so gracious of you bless you. This is such a huge resource for those of us that can’t afford VT."</li>
+      <li>"Thank you very much for this. 10 months postpartum in an area with no VT clinic, this is a LIFESAVER."</li>
+    </ul>
+    <i class="skills hide">JavaScript</i>
+  </div>
+  <div class="item hide">
+    <div class="space-between">
+      <div class="inline-svg">
+        <div class="title">A Feast a Day</div>
+        <div class="link inline-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M141.38,64.68l11-11a46.62,46.62,0,0,1,65.94,0h0a46.62,46.62,0,0,1,0,65.94L193.94,144,183.6,154.34a46.63,46.63,0,0,1-66-.05h0A46.48,46.48,0,0,1,104,120.06" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M114.62,191.32l-11,11a46.63,46.63,0,0,1-66-.05h0a46.63,46.63,0,0,1,.06-65.89L72.4,101.66a46.62,46.62,0,0,1,65.94,0h0A46.45,46.45,0,0,1,152,135.94" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+          <a class="underline" target="_blank" href="https://afeastaday.com">
+            https://afeastaday.com
+          </a>
+        </div>
+      </div>
+      <div class="dates">2024 – Present</div>
+    </div>
+    <p>A Feast a Day is an automated meal plan builder, tailored to each user's individual dietary preferences. My long-term goal is to incorporate microbiome and genetic data to hint at dietary changes that may be helpful.</p>
+    <i class="skills hide">C#, ASP.NET Core, .NET MAUI, Entity Framework Core, PostgreSQL, Azure Communication Services</i>
+  </div>
+  <div class="item hide">
+    <div class="space-between">
+      <div class="inline-svg">
+        <div class="title">A Workout a Day</div>
+        <div class="link inline-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M141.38,64.68l11-11a46.62,46.62,0,0,1,65.94,0h0a46.62,46.62,0,0,1,0,65.94L193.94,144,183.6,154.34a46.63,46.63,0,0,1-66-.05h0A46.48,46.48,0,0,1,104,120.06" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M114.62,191.32l-11,11a46.63,46.63,0,0,1-66-.05h0a46.63,46.63,0,0,1,.06-65.89L72.4,101.66a46.62,46.62,0,0,1,65.94,0h0A46.45,46.45,0,0,1,152,135.94" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+          <a class="underline" target="_blank" href="https://aworkoutaday.com">
+            https://aworkoutaday.com
+          </a>
+        </div>
+      </div>
+      <div class="dates">2024 – Present</div>
+    </div>
+    <p>A Workout a Day is an automated workout routine builder, tailored to each user's individual fitness preferences.</p>
+    <i class="skills">Testimonials</i>
+    <ul>
+      <li>"I just wanted to say thank you for this app man. I saw your post on Lemmy way back when and I finally managed to stick with working out recently thanks to you. I've never been unhealthy weight but I've never been fit, and I feel so much better these days its unreal."</li>
+    </ul>
+    <i class="skills hide">C#, ASP.NET Core, .NET MAUI, Entity Framework Core, PostgreSQL, Azure Communication Services</i>
+  </div>
+  <div class="item hide">
+    <div class="space-between">
+      <div class="inline-svg">
+        <div class="title">A Diary a Day</div>
+        <div class="link inline-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M141.38,64.68l11-11a46.62,46.62,0,0,1,65.94,0h0a46.62,46.62,0,0,1,0,65.94L193.94,144,183.6,154.34a46.63,46.63,0,0,1-66-.05h0A46.48,46.48,0,0,1,104,120.06" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M114.62,191.32l-11,11a46.63,46.63,0,0,1-66-.05h0a46.63,46.63,0,0,1,.06-65.89L72.4,101.66a46.62,46.62,0,0,1,65.94,0h0A46.45,46.45,0,0,1,152,135.94" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+          <a class="underline" target="_blank" href="https://adiaryaday.com">
+            https://adiaryaday.com
+          </a>
+        </div>
+      </div>
+      <div class="dates">2024 – Present</div>
+    </div>
+    <p>A Diary a Day is an automated task and health tracking newsletter.</p>
+    <i class="skills hide">C#, ASP.NET Core, .NET MAUI, Entity Framework Core, PostgreSQL, Azure Communication Services</i>
+  </div>
+<p><i class="skills hide">C#, ASP.NET Core, .NET MAUI, Entity Framework Core, PostgreSQL, Azure Communication Services, JavaScript</i></p>
+</section>
+<section class="hide">
+  <div class="section-header">Work Summary</div>
+  <p>Self-taught and highly motivated software developer with over 8 years of experience in developing, maintaining, testing, documenting, and troubleshooting web and mobile applications. Strong knowledge in web development principles, including responsive design, separation of concerns, testing, and security hardening. Demonstrated ability to manage projects from start to finish, including client communications and supporting customers. Committed to creating high-quality, readable code and delivering on-time results. Passionate about web application development and quick to learn new technologies.</p>
+</section>
+<section class="hide">
+  <div class="section-header">Work Experience</div>
+  <div class="item">
+    <div class="space-between">
+      <div class="inline-svg">
+        <div class="title">Webster University</div>
+        <div class="link inline-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M141.38,64.68l11-11a46.62,46.62,0,0,1,65.94,0h0a46.62,46.62,0,0,1,0,65.94L193.94,144,183.6,154.34a46.63,46.63,0,0,1-66-.05h0A46.48,46.48,0,0,1,104,120.06" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M114.62,191.32l-11,11a46.63,46.63,0,0,1-66-.05h0a46.63,46.63,0,0,1,.06-65.89L72.4,101.66a46.62,46.62,0,0,1,65.94,0h0A46.45,46.45,0,0,1,152,135.94" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+          <a class="underline" target="_blank" href="https://motechhq.com">
+            https://webster.edu
+          </a>
+        </div>
+      </div>
+      <div class="dates"">Aug. 2026 – Present</div>
+    </div>
+    <div class="space-between">
+      <div>Software Developer</div>
+      <div>Webster Groves</div>
+    </div>
+    <ul>
+      <li>Designed, architected, and built an opportunity database for students.</li>
+    </ul>
+    <i class="skills">Microsoft Power Pages, Dataverse, Power Query, Power BI, Javascript, Liquid, REST APIs</i>
+  </div>
+</section>
+<section>
+  <div class="section-header" style="margin-bottom:.25rem">Images (Hydroponic Produce)</div>
+  <div class="space-between">
+    <div><img src="../20260801_114809.jpg"></div>
+    <div><img src="../20261025_162521.jpg"></div>
+  </div>
+</section>
+
+	</article>
+	
+	<div class="sidebar-right header">
+		<div class="header-item">
+			
+<h3 class="sitemap-title header-title">Ancestors</h3>
+<nav class="sitemap">
+	
+	
+	<menu class="sitemap-list">
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/">ascallion</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/">Jobs</a></li>
+				
+			
+		
+			
+			
+				
+					
+					<li><a href="/no/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/">Biology Jobs</a></li>
+				
+			
+		
+		
+			<li class="current">Résumé</li>
+		
+	</menu>
+	
+</nav>
+
+		</div>
+		
+		<div class="header-item">
+			
+<h3 class="sitemap-title">Siblings</h3>
+<nav class="sitemap">
+	
+		
+		
+			
+				
+
+
+
+	
+
+
+
+
+	
+		
+		
+			<menu class="sitemap-list">
+				
+
+	
+    
+	
+        
+            <li class="current">Résumé</li>
+        
+		
+    
+	
+
+
+			</menu>
+		
+		
+		
+			
+
+
+
+	
+
+
+
+
+	
+		
+			<details >
+				
+					
+					<summary><a href="/no/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/job-search/">Job Search</a></summary>
+				
+				
+				<menu class="sitemap-list">
+					
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/job-search/full-time/">Full-Time Jobs</a></li>
+        
+    
+	
+
+	
+    
+	
+        
+			<li><a href="https://ascallion.com/no/submodule/ascallion_aa152a5b-0366-4e60-8b0e/content/jobs/biology-jobs/job-search/part-time/">Part-Time Jobs</a></li>
+        
+    
+	
+
+
+			
+					
+				</menu>
+			</details>
+		
+	
+
+
+		
+	
+
+
+			
+		
+	
+</nav>
+
+		</div>
+
+		
+
+		<div class="flex--1">
+			<div class="footer-item fixed right"><a class="unstyle" href="#">Back to Top</a></div>
+		</div>
+	</div>
+
+	</main>
+
+	<footer id="footer">
+		<span class="footer-item"><a href="https://ascallion.com/">Sitemap</a></span>
+		<span class="footer-item"><a class="unstyle" href="#">Back to Top</a></span>
+		<span class="footer-item"><a href="https://github.com/gscanlon21">Github</a></span>
+	</footer>
+
+	
+
+	<aside class="display--none">
+		<div id="chart-options" 
+			 data-type="line"
+			 data-count="10">
+		</div>
+	</aside>
+
+	
+	
+</body>
+
+</html>

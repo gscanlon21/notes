@@ -1,0 +1,13 @@
+{# Uses the Tera templating engine. https://keats.github.io/tera/ #}
+
+
+{% component flashcards(header: string = "") %}
+<div class="flashcard-wrapper" data-header="{{ header }}">
+
+{{ body | safe }}
+
+</div>
+{% endcomponent flashcards %}
+
+
+

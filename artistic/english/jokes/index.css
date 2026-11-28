@@ -1,0 +1,14 @@
+
+blockquote {
+	&::before {
+		display: none;
+	}
+
+	code {
+		color: rgb(var(--color-code-bg)) !important;
+	}
+
+	& + blockquote {
+		margin-block-start: 2rem !important;
+	}
+}
