@@ -1,5 +1,5 @@
-/* Default Styles */
-
+/* DEFAULT VARIABLES
+**********************/
 $border-radius: .5em;
 $base-padding: 1em;
 $site-padding: 1rem;
@@ -7,19 +7,28 @@ $base-font-size: 1em;
 $site-font-size: 1rem;
 $line-height-loose: 1.5;
 $line-height-tight: 1.35;
+
+
+/* EDITABLE VARIABLES
+***********************/
+$body-margin: 0mm !default;
+$print-margin: 15mm !default;
 $sidebar-width: 18rem !default;
 $body-width-min: 800px !default;
 $body-width-max: 1000px !default;
 /* min-width of header items for flex-wrap */
 $min-content-width: 16rem !default;
-$body-margin: 0mm !default;
 
-$print-margin: 15mm !default;
 
+/* CALCULATED VARIABLES
+*************************/
 $breakpoint-buffer: 0.2px;
 $breakpoint-small: calc(#{$body-margin} + #{$body-margin} + #{$body-width-min} + 19rem + 2rem);
 $breakpoint-large: calc(#{$body-margin} + #{$body-margin} + #{$body-width-min} + 38rem + 2rem);
 
+
+/* CSS VARIABLES
+******************/
 @media (min-width: $body-width-max) {
     :root {
         --body-width: #{$body-width-min};

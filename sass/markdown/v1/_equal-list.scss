@@ -44,4 +44,13 @@ ul > li > blockquote > ul:not(:has(> li > blockquote)) {
 			}
 		}
 	}
+
+	@media (max-width: (calc($breakpoint-small - 1px))) {
+		grid-template-columns: auto;
+
+		li {
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+	}
 }
