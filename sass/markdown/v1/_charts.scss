@@ -12,13 +12,13 @@ article.v1 {
 		margin-block-start: $base-padding * 2.25;
 	}
 
-	@media (max-width: (calc($small-breakpoint - 1px))) {
+	@media (max-width: (calc($breakpoint-small - 1px))) {
 		canvas {
 			aspect-ratio: 16 / 9;
 		}
 	}
 
-	@media (min-width: $small-breakpoint) {
+	@media (min-width: $breakpoint-small) {
 		canvas {
 			aspect-ratio: 21 / 6;
 		}	

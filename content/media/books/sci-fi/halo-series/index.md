@@ -1,5 +1,5 @@
 +++
-title = "Halo"
+title = "Halo Series"
 description = ""
 
 [extra]

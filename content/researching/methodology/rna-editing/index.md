@@ -16,17 +16,17 @@ see_also = []
 
 **Advances in RNA-based therapeutics: current breakthroughs, clinical translation, and future perspectives**
 Makkar 2025
-_[Review Article](/doi/10.3389/fgene.2025.1675209.pdf)_ 
+_[Review Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC12592931/)_ 
 : ???
 
 **RNA editing: Expanding the potential of RNA therapeutics**
 Booth et al. 2023
-_[Review Article](/doi/10.1016/j.ymthe.2023.01.005.pdf)_ 
+_[Review Article](https://www.cell.com/molecular-therapy-family/molecular-therapy/fulltext/S1525-0016%2823%2900005-9)_ 
 : ???
 
 
 **The Next Generation of Molecular and Cellular Therapeutics for Inherited Retinal Disease**
 Velazquez et al. 2021
-_[Review Article](/doi/10.3390/ijms222111542.pdf)_ 
+_[Review Article](https://www.mdpi.com/1422-0067/22/21/11542)_ 
 : ???
 

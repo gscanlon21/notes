@@ -18,8 +18,8 @@ see_also = []
 ## _Eye Masks
 
 **[Sleep Mask](https://albatrosshealth.com/products/blue-eye-mask-for-sleep)**
-[Albatross](https://albatrosshealth.com/)
-: This is great!
+[Albatross Health](https://albatrosshealth.com/)
+: These are great!
 : > - [x] 
   > - [x] 
   > - [x] 

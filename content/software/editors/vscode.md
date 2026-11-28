@@ -18,8 +18,8 @@ alerts = []
 > Open settings with `Ctrl+,`
 >> Settings
 
-###### Editor Settings
-```json
+
+```json, header=Editor Settings
 
 "editor.fontSize": 15,
 
@@ -40,8 +40,7 @@ alerts = []
 // based on the file contents when `editor.detectIndentation` is true.
 "editor.insertSpaces": false,
 ```
-###### Workbench Settings
-```json
+```json, header=Workbench Settings
 
 // Controls the size of editor tabs. 
 "workbench.editor.wrapTabs": true,
@@ -82,8 +81,7 @@ alerts = []
 // Select left or right to open editors to the left or right of the currently active one. 
 "workbench.editor.openPositioning": "last",
 ```
-###### Language Settings
-```json
+```json, header=Language Settings
 
 // Markdown Specific Settings
 "[markdown]": {
@@ -102,8 +100,7 @@ alerts = []
   "editor.codeLens": false,
 },
 ```
-###### Search Settings
-```json
+```json, header=Search Settings
 
 // Ignore search files
 "search.exclude": {
@@ -117,8 +114,7 @@ alerts = []
   "**/*.ipynb*": true,
 },
 ```
-###### Files Settings
-```json
+```json, header=Files Settings
 
 // Autosave after 10s
 "files.autoSave": "afterDelay",
@@ -141,8 +137,7 @@ alerts = []
   "**/CNAME": true,
 },
 ```
-###### Window Settings
-```json
+```json, header=Window Settings
 
 // Increase the font size of the file explorer.
 "window.zoomLevel": 1,

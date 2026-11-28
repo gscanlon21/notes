@@ -13,7 +13,7 @@ see_also = []
 
 
 
-**1**
+**1.**
 : Long before we saw them
 : We could hear the wild geese calling
 : High up in the clear light of the morning
@@ -22,7 +22,7 @@ see_also = []
 : And we gave them all our dreams to carry with them
 : As they fly
 
-**2**
+**2.**
 : Fly away
 : Fly away home
 : You've got your eyes on the skyline
@@ -30,7 +30,7 @@ see_also = []
 : Wherever you may go
 : Raising the eyes toward the sky
 
-**3**
+**3.**
 : Long after their leaving
 : We could hear their voices tumbling, jangling
 : Mingling with our grieving for the things that fly away
@@ -39,13 +39,13 @@ see_also = []
 : And I'll hear your clear voice carrying your shining dreams away
 : I'll hear your clear voice carrying your shining dreams away, away, away
 
-**4**
+**4.**
 : Away, away, away
 : Away, away, away, away
 : Away, away, away
 : Away
 
-**5**
+**5.**
 : Fly away
 : Fly away, child
 : You've got your eyes on the skyline

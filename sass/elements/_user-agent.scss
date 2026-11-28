@@ -146,7 +146,7 @@ details {
 		cursor: pointer;
 		user-select: none;
 		// Messes with img captions.
-		//max-width: $small-breakpoint;
+		//max-width: $breakpoint-small;
 
 		&:focus {
 			outline: none;
